@@ -13,22 +13,35 @@ class Deployer:
         self._pull_request = os.environ['TRAVIS_PULL_REQUEST']
         self._branch = os.environ['TRAVIS_BRANCH']
         self._github_token = os.environ['GITHUB_TOKEN']
+        os.environ['AWS_SECRET_ACCESS_KEY'] # just to raise an exception if missing
+        os.environ['AWS_SECRET_KEY_ID']
+        self._bucketURI = os.environ['AWS_BUCKET_URL'] # e.g. s3://apidocs.buddybuild.com'
+        self._bucketRegion = os.environ['AWS_BUCKET_REGION'] # e.g. us-west-2  
         self.domain = None
 
     def deploy(self):
         """Main function of the script."""
-        if self._pull_request == 'false':
-            self.deploy_branch()
-        else:
+        # crazy env var 'syntax'
+        if self._pull_request != 'false':  # we don't want to deploy anything but PRs
             self.deploy_pull_request()
+        else:
+            self.deploy_branch()
 
     def deploy_branch(self):
         """Deploy whenever a branch is pushed to github."""
         print('Deploying branch: {}'.format(self._branch))
-        if self._branch != 'master':
+        if self._branch == 'master':
+            self.deploy_s3()
+        else:
             branch = self._branch.replace('/', '-')
             self.domain = 'http://{}-bb-docs.surge.sh'.format(branch)
-        self.deploy_surge()
+            self.deploy_surge()
+
+
+    def deploy_s3(self):
+        command = 'aws s3 sync --delete --region ' + self._bucketRegion + ' --only-show-errors _book/ ' + self._bucketURI
+        print('Running command: `{}`'.format(command))
+        os.system(command)
 
     def deploy_pull_request(self):
         """Deploy whenever a pull request is made."""
@@ -41,7 +54,7 @@ class Deployer:
         """
         Trigger a deploy to surge.sh or to production if branch is master.
         """
-        command = 'surge --project ./'
+        command = 'surge --project _book/'
         if self.domain:
             command += ' --domain {}'.format(self.domain)
 
