@@ -10,6 +10,7 @@ branches:
   - master
 before_install:
   - pip3 install requests
+  - pip install --upgrade --user awscli
   - make setup
 script:
   - make book
