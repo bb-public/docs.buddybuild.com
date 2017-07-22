@@ -41,7 +41,7 @@ class Deployer:
         """
         Trigger a deploy to surge.sh or to production if branch is master.
         """
-        command = 'surge --project ./'
+        command = 'surge --project _book/'
         if self.domain:
             command += ' --domain {}'.format(self.domain)
 
