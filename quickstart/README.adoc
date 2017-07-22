@@ -1,0 +1,36 @@
+= Quickstart
+
+This section describes how to quickly get started using buddybuild.
+
+== Connect buddybuild to your project repository, one of:
+
+- link:bitbucket.adoc[Bitbucket]
+- link:bitbucket_server.adoc[Bitbucket Server]
+- link:github.adoc[GitHub]
+- link:github_enterprise.adoc[GitHub Enterprise]
+- link:gitlab.adoc[GitLab]
+- link:gitlab_private.adoc[a privately-hosted GitLab instance]
+- link:ssh.adoc[SSH (most other repositories)]
+
+== Device-specific topics
+
+[cols="1a,1a",options="header"]
+|===
+| For link:ios/README.adoc[iOS developers]
+| For link:android/README.adoc[Android developers]
+
+|
+- link:ios/select_a_repo_and_app_to_build.adoc[Selecting an App]
+- link:ios/invite_testers.adoc[Inviting Testers]
+- link:ios/integrate_sdk.adoc[Integrating SDK]
+- link:ios/apple_developer_portal_sync.adoc[Auto-syncing Provisioning Profiles]
+- link:ios/auto_versioning.adoc[Auto Versioning]
+
+|
+- link:android/select_an_app.adoc[Selecting an App]
+- link:android/integrate_sdk.adoc[Integrating SDK]
+- link:android/manual_sdk_integration.adoc[SDK Manual Integration]
+- link:android/auto_versioning.adoc[Auto Versioning]
+- link:android/build_variants.adoc[Build Variants]
+
+|===

@@ -1,0 +1,91 @@
+= Builds
+
+This section describes how buddybuild builds your projects.
+
+== Synopsis
+
+Here is a high-level summary of buddybuild's build process:
+
+. **Trigger** +
+  A build can be triggered in several ways:
++
+--
+- whenever a link:pull_requests.adoc[pull request] is created in your
+  link:repository/README.adoc[repository],
+
+- on a link:schedule_builds.adoc[schedule],
+
+- manually in the buddybuild dashboard.
+--
+
+. **Evaluation** +
+  Once a build is triggered, buddybuild evaluates the build
+  configuration to determine whether to link:skip_a_build.adoc[skip a
+  build], link:auto-cancel_builds.adoc[auto-cancel a build] (for any
+  queued or in-progress builds of the same branch), or to
+  link:selective_builds.adoc[build selectively].
+
+. **Queue** +
+  Once buddybuild determines that a build should proceed, it is queued
+  according to your plan level, and is executed as soon as an
+  appropriate build resource is available. Builds are typically queued
+  for only a few seconds.
+
+. **Execution** +
+  Once a build resource starts working on your build, the following
+  steps are taken:
++
+--
+[loweralpha]
+. Prepare the build environment according to build configuration.
+
+. Clone your app's source code from your repository.
+
+. Retrieve link:device_variables_1.adoc[device variables],
+  link:environment_variables.adoc[environment variables], and
+  link:secure_files.adoc[secure files] from secure storage.
+
+. Resolve your app's dependencies.
+
+. Perform build steps, including executing tests for successful builds,
+  and any link:custom_build_steps.adoc[custom steps] that may be
+  defined.
+--
+
+. **Finish up** +
+  After the build is complete, whether it is successful or not, the
+  following steps are taken:
++
+--
+- Securely store build artifacts, including link:build_logs.adoc[logs].
+
+- Send notifications.
+
+- For successful builds, deploy the build to testers (unless
+  link:disable_a_build.adoc[disabled]).
+--
+
+== Details
+
+[cols="1a,1a",options="headers"]
+|===
+| For all builds
+| iOS-specific builds
+
+| link:dependencies/README.adoc[Managing dependencies] +
+  link:build_logs.adoc[Build details and logs] +
+  link:custom_build_steps.adoc[Custom build steps] +
+  link:device_variables_1.adoc[Device variables] +
+  link:environment_variables.adoc[Environment variables] +
+  link:secure_files.adoc[Secure files]
+  link:pull_requests.adoc[Pull requests]
+  link:schedule_builds.adoc[Scheduling builds]
+  link:skip_a_build.adoc[Skipping a build]
+  link:auto-cancel_builds.adoc[Auto-cancel builds]
+  link:disable_a_build.adoc[Disable a build]
+  link:selective_builds.adoc[Selective builds]
+
+| link:xcode_versions.adoc[Xcode versions and Xcode preview]
+  link:provisioning_profile_explorer.adoc[Provisioning profile
+  inspector]
+|===

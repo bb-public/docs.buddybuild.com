@@ -1,0 +1,101 @@
+= Manage App Access
+
+There are two ways to invite team members to collaborate on your app in
+buddybuild!
+
+[NOTE]
+======
+**Quick links**
+
+- link:#option1[Option 1: Automatic team member access with GitHub,
+  Bitbucket or GitLab]
+
+- link:#option2[Option 2: Invite team members through buddybuild]
+======
+
+[[option1]]
+== Option 1: Automatic team member access with GitHub, Bitbucket or GitLab
+
+If you have signed up for buddybuild with
+link:../quickstart/github.adoc[GitHub],
+link:../quickstart/bitbucket.adoc[Bitbucket] or
+link:../quickstart/gitlab.adoc[GitLab] OAUTH, buddybuild automatically
+allows repository collaborators access to your app! These members simply
+need to sign up with buddybuild, and they will automatically see the
+app.
+
+First, select **App Settings** in the global navigation.
+
+image:img/Builds---Settings.png[,1500,483]
+
+In the left navigation, select **Manage collaborators**.
+
+image:img/Settings---Manage-Team---1.jpg[,1500,496]
+
+You will find team members who have automatic collaborator access to
+your app under **Synchronized from your repository**.
+
+Select **Manage their access in GitHub (or Bitbucket or GitLab)** to
+manage access for these collaborators.
+
+image:img/Settings---Manage-Team---5.jpg[,1500,798]
+
+=== App Access Roles
+
+To change a team member's access level, simply specify whether they
+should have 'Full Access' or 'Read-Only Access' through the Access
+dropdown by the name of each collaborator.
+
+[NOTE]
+======
+**Read only vs. Full Access**
+
+Members with **Read-Only Access** are able to view the buddybuild
+dashboard, click through build history, download and install builds,
+sort user feedback and draw insights from crash reports. They cannot
+make any changes to buddybuild's SDK settings, integrations,
+notifications, or perform any app management (such as renaming or
+deleting the app). They aren't able to create or deploy builds, upload
+to the App Store, or open/close user feedback or crash reports.
+
+Members with **‘Full Access’** in the buddybuild dashboard have complete
+control over the app, including all of the app settings, kicking off or
+scheduling builds, managing deployment groups and changing app and build
+configurations.
+
+Regardless of their access level, all users have the ability to manage
+their user profiles as well as their organization's plan and billing
+information.
+======
+
+image:img/Settings---Manage-Team---6.jpg[,1500,401]
+
+[[option2]]
+== Option 2: Invite team members through buddybuild
+
+If you have onboarded your app with buddybuild through SSH, or if you
+would like to invite someone who is not a repository collaborator in
+GitHub, Bitbucket or GitLab, you can manually invite them through
+buddybuild.
+
+Under **Manually invited through buddybuild**, invite one or more team
+members by entering their email addresses.
+
+image:img/Settings---Manage-Team---2.jpg[,1500,376]
+
+Next to the email addresses, specify whether they should have 'Full
+Access' or 'Read-Only Access' through the Access dropdown and click
+**Add** when you're done.
+
+image:img/Settings---Manage-Team---2a.jpg[,1500,496]
+
+Invited team members will receive an email invite to your app. From
+there, they can **accept the invite and join the project.**
+
+image:img/Settings---Manage-Team---3.jpg[,3000,1596]
+
+Invitees who do not have an account in buddybuild will be prompted to
+create one. When that process is complete, the specific team member will
+be able to access your app in buddybuild!
+
+image:img/Settings---Manage-Team---4.jpg[,1500,493]

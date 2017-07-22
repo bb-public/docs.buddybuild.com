@@ -1,0 +1,60 @@
+= Uploading Certificates Manually
+
+== Step 1: Find and Export Your Code Signing Identity
+
+Open the **Keychain Access.app** and select **Certificates** from the
+sidebar.
+
+image:img/p12-instructions-step-1.png[,1540,802]
+
+Click your certificate to expose your **Private Key**.
+
+image:img/p12-instructions-step-2.png[,1540,802]
+
+Choose **File > Export Items…** and save your **Private Key** to a
+location of your choice.
+
+image:img/p12-instructions-step-3.png[,1540,802]
+
+Create a password for your exported `.p12` file. You’ll need to add this
+password in buddybuild.
+
+image:img/p12-instructions-step-4.png[,944,652]
+
+Go back to buddybuild. Upload your `.p12` file and enter the password
+you created above.
+
+image:img/Onboarding---manual-certs.png[,1500,800]
+
+== Step 2: Upload Provisioning Profiles
+
+Your provisioning profiles can be found either on your development
+machine or can be downloaded directly from Apple.
+
+On your development machine, navigate to the following path to find your
+provisioning profiles.
+
+[[code-samples]]
+--
+[source,text]
+----
+~/Library/MobileDevice/Provisioning Profiles
+----
+--
+
+To open this path, open Finder, and select **Go -> Go to Folder** from
+the menu bar. Paste in the above path to open the folder containing your
+Provisioning Profiles.
+
+image:img/Screenshot-2015-11-06-17.53.25.png[,910,633]
+
+Upload the appropriate Provisioning Profiles to buddybuild.
+
+Alternatively, you can also download your Provisioning Profiles directly
+from Apple. Navigate to the developer Portals' Provisioning Profile
+page. Follow the link
+link:https://developer.apple.com/account/ios/profile/profileList.action[here].
+
+image:img/Screenshot-2015-11-06-17.57.28.png[,888,503]
+
+Download the appropriate profile and then upload it to buddybuild.

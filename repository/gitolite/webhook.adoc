@@ -1,0 +1,98 @@
+= Adding a Gitolite Webhook
+
+A webhook notifies buddybuild of code changes you make to your repo.
+Whenever a new change is pushed to Gitolite, buddybuild will
+automatically kick off a new build -- ensuring you have up-to-date build
+status and your testers have the very latest builds.
+
+Since Gitolite core does not have webhook functionality by default, we
+describe how to extend Gitolite to provide this functionality using the
+git post-receive script called
+link:https://github.com/metajack/notify-webhook[notify-webhook].
+
+[NOTE]
+======
+**Only a Gitolite admin user can add a Gitolite webhook**
+======
+
+== Step 1: Copy the webhook url from buddybuild
+
+On the Builds page, in the red banner at the top of the page, click on
+**Resolve this issue.**
+
+image:../img/resolve-banner.png[,1500,298]
+
+In the dialog box that appears, **select and copy the webhook URL**.
+This URL is specific to your app and will be used to identify your app
+when sending webhooks from Gitolite.
+
+image:../img/modal.png[,1500,838]
+
+[NOTE]
+======
+**notify-webhook requires python3 and simplejson**
+
+For more information see https://github.com/metajack/notify-webhook
+======
+
+== Step 2: Enable repo-specific-hooks, site-local gitolite code and whitelist notify-webhook keys
+
+In this section we will be following the
+link:http://gitolite.com/gitolite/cookbook.html#v3.6-variation-repo-specific-hooks[Gitolite
+documentation] to enable repository-specific webhooks, if not already
+enabled.
+
+On the Gitolite server modify the`.gitolite.rc` file as follows:
+
+- To enable `repo-specific-hooks` uncomment the `repo-specific-hooks`
+  line in the `gitolite.rc` file or add it to the `ENABLE` list if it
+  doesn't exist.
+
+- To enable site-local gitolite code add this line in the rc file,
+  within the `%RC` block, if it's not already present, or uncomment it
+  if it's already present and commented out:
++
+[source,bash]
+LOCAL_CODE => "$rc{GL_ADMIN_BASE}/local",
+
+- To whitelist the notify-webhook keys modify the `GIT_CONFIG_KEYS` to
+  include `hooks.webhookurl`:
++
+[source,bash]
+GIT_CONFIG_KEYS => 'hooks\.webhookurl',
+
+Then call `gitolite setup` to apply the changes on the Gitolite server.
+
+== Step 3: Install a git post-receive hook script
+
+link:https://github.com/metajack/notify-webhook[notify-webhook] is a git
+post-receive hook script that posts JSON data to a webhook capable
+service like buddybuild. Download and install the webhook as follows on
+a local Gitolite admin machine:
+
+[source,bash]
+----
+wget https://raw.githubusercontent.com/metajack/notify-webhook/master/notify-webhook.py
+
+mv notify-webhook.py gitolite-admin/local/hooks/repo-specific/notify-webhook
+
+git add gitolite-admin/local/hooks/repo-specific/notify-webhook
+----
+
+== Step 4: Configure the post-receive webhook
+
+Modify your `gitolite-admin/conf/gitolite.conf` file to register the git
+post-receive hook named `notify-webhook`. Then configure the buddybuild
+webhook URL that you copied from Step 1. The configuration for your
+repository should look like this:
+
+[source,bash]
+----
+repo my-ios-app
+  option hook.post-receive = notify-webhook
+  config hooks.webhookurl = "https://dashboard.buddybuild.com/api/webhook?appID=56fc8d0f9bdbfe01008b4f2c"
+----
+
+Commit and push the local Gitolite configuration changes to apply the
+settings. The next time you push code to your repository buddybuild will
+automatically build your app. Welcome to mobile continuous integration!

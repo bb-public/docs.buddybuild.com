@@ -1,0 +1,4 @@
+= Frameworks
+
+This section describes the app development frameworks that buddybuild
+supports.

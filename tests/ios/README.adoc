@@ -1,0 +1,4 @@
+= iOS
+
+This section covers buddybuild's infrastructure for testing iOS
+applications.

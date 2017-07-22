@@ -1,0 +1,22 @@
+= KeyStore Basics
+
+Android Applications need to be code signed to be installable on
+devices. The signing identities are bundled in a Java KeyStore file --
+typically with the extension `.keystore` or `.jks`.
+
+Debug builds are typically code signed with an auto-generated KeyStore.
+Release builds -- like the ones that eventually end up in the Play Store
+-- will require to be code signed with a KeyStore that is associated
+with a Developer.
+
+Typically, your KeyStores will be checked into your source control
+repository. The repo's build.gradle file will reference these KeyStores
+for each product flavor and build type.
+
+Buddybuild will auto-generate KeyStores for you. So you'll typically
+never have to manage KeyStores yourself. But if you already have a
+KeyStore that identifies you or your development team, you can upload
+this to buddybuild. Every subsequent build of your app will pick up your
+uploaded KeyStores.
+
+To upload your own KeyStores, follow the guide link:manage.adoc[here].

@@ -1,0 +1,3 @@
+= Billing and Plans
+
+This section describes how buddybuild charges for its services.

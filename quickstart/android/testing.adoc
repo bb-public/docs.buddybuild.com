@@ -1,0 +1,25 @@
+= Testing
+
+== Unit Test
+
+Buddybuild supports Unit Tests right out of the box, and here's how to
+set them up:
+
+. Click on the gear icon
++
+image:img/Android-Tests-1.png[,2558,1248]
+
+. Toggle on the **Unit Tests** switch
++
+image:img/Android-Tests-2.png[,2550,1476]
+
+. Now trigger a new build and wait for the build to finish
+
+. Click on the selected build and go to the **JUnit Tests** tab to see
+the test results
++
+image:img/Android-Tests-3.png[,2556,924]
+
+// === Emulator UI Test
+
+// === On-Device UI Test

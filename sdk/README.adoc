@@ -1,0 +1,3 @@
+= buddybuild SDK
+
+This section covers the buddybuild SDK.

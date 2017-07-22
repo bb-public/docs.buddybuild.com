@@ -1,0 +1,30 @@
+= Core Data generated classes not found by Xcode 8 during the build
+
+If you're experiencing compile errors that look like the logs below, you
+may be encountering an known issue with Xcode 8 which affects some
+projects with Swift Core Data generated classes.
+
+[[code-samples]]
+--
+.Logs
+[source,text]
+----
+✗ error: no such file or directory: /tmp/sandbox/587cee87183f3101000e6b6c/bbbuild/Build/Intermediates/ArchiveIntermediates/BBTestAppCoreData/IntermediateBuildFilesPath/BBTestAppCoreData.build/Release-iphoneos/BBTestAppCoreData.build/DerivedSources/CoreDataGenerated/BBTestAppCoreData/MyClass+CoreDataProperties.swift
+
+✗ error: no such file or directory: /tmp/sandbox/587cee87183f3101000e6b6c/bbbuild/Build/Intermediates/ArchiveIntermediates/BBTestAppCoreData/IntermediateBuildFilesPath/BBTestAppCoreData.build/Release-iphoneos/BBTestAppCoreData.build/DerivedSources/CoreDataGenerated/BBTestAppCoreData/MyClass+CoreDataClass.swift
+----
+--
+
+Here's what you can to do to resolve this build error:
+
+- link:https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreData/LifeofaManagedObject.html[Generate
+  the Core Data files] on your local machine
+
+- Check the files into your repo and commit and push them
+
+- Trigger a new build in buddybuild
+
+If you've followed the steps above and are still unable to find the
+cause of your build failure, please drop us a line via Intercom or at
+link:mailto:support@buddybuild.com[support@buddybuild.com] - we’re here
+to help!

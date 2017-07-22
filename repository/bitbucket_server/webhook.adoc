@@ -1,0 +1,74 @@
+= Adding a Bitbucket Server Webhook
+
+A webhook notifies buddybuild of code changes you make to your repo.
+Whenever a new change is pushed to Bitbucket Server, buddybuild will
+automatically kick off a new build -- ensuring you have up-to-date build
+status and your testers have the very latest builds.
+
+**Step 1: Copy the webhook URL from buddybuild**
+On the Builds page, in the red banner at the top of the page, click on
+**Resolve this issue**.
+
+image:../img/resolve-banner.png[,1500,298]
+
+In the dialog box that appears, **select and copy the webhook URL**.
+This URL is specific to your app and will be used to identify your app
+when sending webhooks from Bitbucket Server.
+
+image:../img/modal.png[,1500,838]
+
+**Step 2: Add a new hook if the Web Post Hooks Plugin is not already installed **
+In Bitbucket Server, navigate to the repo that contains your app. In the
+left navigation pane click **Settings**, then click on **Hooks**.
+
+Bitbucket Server provides a plugin called *Post-Receive WebHooks*, which
+is listed in the *Post receive* section of the *Hooks* page. If the
+*Post-Receive WebHooks* plugin has already been installed then you can
+skip ahead to **Step 5**. If the *Post-Receive WebHooks* plugin has not
+listed, then you can add the plugin by clicking on the **Add hook**
+button.
+
+image:img/step1.png[,2106,1196]
+
+**Step 3: Select search to visit the Atlassian Marketplace**
+The Atlassian Marketplace contains hundreds of useful plugins for
+development. Click **Search** to visit the marketplace.
+
+image:img/step2.png[,2105,1198]
+
+**Step 4: Install the Web Post Hooks Plugin**
+Search for the *Bitbucket Server Web Post Hooks Plugin*. Then click
+**Install**.
+
+[WARNING]
+=========
+**Do not use "HTTP Request Post Receive Hook"**
+
+Be careful not to choose the *HTTP Request Post Receive Hook* as this is
+not compatible with buddybuild.
+=========
+
+image:img/install.png[,2560,1218]
+
+**Step 5: Configure the Post-Receive WebHooks**
+From your repository settings page, select the **Post-Receive WebHooks**
+plugin to configure the post receive events for buddybuild.
+
+[WARNING]
+=========
+**Do not use "HTTP Request Post Receive Hook"**
+
+Be careful not to select the *HTTP Request Post Receive Hook* as this is
+not compatible with buddybuild.
+=========
+
+image:img/configure.png[,2560,1238]
+
+**Step 6: Enter the buddybuild webhook URL**
+Enter the buddybuild webhook URL that you copied from Step 1. Then click
+**Enable** to close the webhook editor dialog and enable. The next time
+that you push code code to your repository buddybuild will create a
+build for your app. Please remember that you will need to install a
+separate webhook for every app in buddybuild.
+
+image:img/edit.png[,2560,1276]

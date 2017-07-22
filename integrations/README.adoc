@@ -1,0 +1,4 @@
+= Integrations
+
+This section covers all of the integrations that buddybuild currently
+supports.

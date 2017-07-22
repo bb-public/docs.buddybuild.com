@@ -1,0 +1,76 @@
+= Bitbucket Pipelines
+
+As a back-end engineer, when you push code to the staging environment,
+you want to ensure that you don’t break the mobile app. Integrating
+Pipelines with buddybuild allows you to trigger automatic tests every
+time you push your back-end code.
+
+Here's how to get started!
+
+== Step 1: Onboard your app in buddybuild
+
+Start by signing up with buddybuild using an existing service with
+**Bitbucket**.
+
+image:img/sign_up_page-bitbucket.png[,3000,1600]
+
+Select your app and click **build**. In a few minutes, your app will be
+onboarded with buddybuild!
+
+image:img/Bitbucket---Pipelines---2.png[,1500,677]
+
+Next, on the buddybuild dashboard, locate the branch you would like to
+enable tests for, and select the cog icon.
+
+image:img/Builds---Branch-Settings.png[,1500,483]
+
+When the branch configurations window appears, click on **Test
+settings** in the left navigation, then click on **Configure**.
+
+image:img/Bitbucket---Pipelines---4.png[,1500,607]
+
+Turn on **Run tests**, and **select one or more simulator devices**.
+Buddybuild will now recognize any tests on the branch and automatically
+run them on every build!
+
+image:img/Bitbucket---Pipelines---4b.png[,1500,659]
+
+== Step 2: Set up Pipelines
+
+To trigger a build in buddybuild, you can curl the buddybuild API
+endpoint. All you need is the access token and app ID. We recommend
+using Environment Variables to store these two values.
+
+In your Source directory, create a `buddybuild.sh` file, and
+copy/paste the curl script below into it.
+
+[[code-samples]]
+--
+[source,curl]
+----
+#!/bin/bash
+
+curl -X POST -H "Authorization: Bearer $BUDDYBUILD_TOKEN" "https://api.buddybuild.com/v1/apps/$BUDDYBUILD_APPID/build"
+----
+--
+
+Next, set up environment variables for the buddybuild token and
+buddybuild app ID.
+
+image:img/Bitbucket---Pipelines---5.png[,3000,1188]
+
+Add BUDDYBUILD_TOKEN with your account token, and BUDDYBUILD_APPID with
+the App ID of your app.
+link:https://apidocs.buddybuild.com/builds/post-trigger.html[Not sure
+how to find it? Click here!]
+
+image:img/Bitbucket---Pipelines---7.png[,3000,1188]
+
+Lastly, define your build and deployment instructions by modifying the
+`bitbucketci.yml` file. Add in the additional line that references the
+buddybuild.sh file to trigger a build.
+
+image:img/Bitbucket---Pipelines---6.png[,3000,1188]
+
+That’s all the setup that’s required! Now, whenever commits are made,
+builds automatically get kicked off in Pipelines and buddybuild.

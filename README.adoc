@@ -1,0 +1,147 @@
+= buddybuild documentation
+:linkattrs:
+
+[.center.landing]
+--
+image:_img/header_graphic.svg[buddybuild, align="center"]
+
+[.land-head]
+Welcome to buddybuild docs!
+
+[.land-subhead]
+pass:[<nobr>]Buddybuild is a pass:[<wbr/>]continuous integration,
+pass:[<wbr/>]continuous deployment, pass:[<wbr/>]and user feedback
+platform pass:[<wbr/>]for iOS and Android pass:[<wbr/>]development teams.
+
+[.call-to-action]
+link:quickstart/README.adoc[Let’s begin!, role="button"]
+--
+
+[.divider]
+--
+Popular Docs
+--
+
+[.popular-doc]
+.link:troubleshooting/ios/install_builds.adoc[Trouble installing builds on iOS]
+****
+link:troubleshooting/README.adoc[Troubleshooting]
+>
+link:troubleshooting/ios/README.adoc[iOS]
+>
+link:troubleshooting/ios/install_builds.adoc[Trouble installing builds
+on iOS]
+****
+
+[.popular-doc]
+.link:builds/custom_build_steps.adoc[Custom Build Steps]
+****
+link:builds/README.adoc[Builds]
+>
+link:builds/custom_build_steps.adoc[Custom Build Steps]
+****
+
+[.popular-doc]
+.link:troubleshooting/ios/missing_schemes.adoc[Missing schemes]
+****
+link:troubleshooting/README.adoc[Troubleshooting]
+>
+link:troubleshooting/ios/README.adoc[iOS]
+>
+link:troubleshooting/ios/missing_schemes.adoc[Missing Schemes]
+****
+
+[.show-more-extra]
+--
+[.popular-doc]
+.link:repository/webhooks.adoc[Setting Up a Webhook]
+****
+link:builds/README.adoc[Builds]
+>
+link:repository/webhooks.adoc[Setting Up a Webhook]
+****
+
+[.popular-doc]
+.link:troubleshooting/android/common.adoc[Common Android build errors]
+****
+link:troubleshooting/README.adoc[Troubleshooting]
+>
+link:troubleshooting/android/README.adoc[Android]
+>
+link:troubleshooting/android/common.adoc[Common Android build errors]
+****
+
+[.popular-doc]
+.link:quickstart/ios/integrate_sdk.adoc[Integrating SDK]
+****
+link:quickstart/README.adoc[Quickstart]
+>
+link:quickstart/ios/README.adoc[iOS]
+>
+link:quickstart/ios/integrate_sdk.adoc[Integrating SDK]
+****
+--
+
+[.show-more]
+link:#[Show More]
+
+
+[.community]
+.Ask the Community!
+--
+Can’t find your answer here? Explore our
+http://discuss.buddybuild.com/[Discussion forum] or join our
+https://buddybuild.slack.com/[Slack community]. For more help, send us a
+message via intercom.
+--
+
+[.seo]
+.Start using buddybuild today
+****
+
+[.left-col]
+*****
+
+[.blurb]
+.Continuous deployment & instant delivery
+--
+Choose to deploy your app with every build, or on a schedule that works
+for you and your team -- no review process needed. For iOS developers,
+the headaches of dealing with code signing, provisioning profiles and
+testers’ devices are over. Beta testers and stakeholders get a
+streamlined, "one click" install experience as buddybuild manages
+provisioning profiles and devices for you. Then, when you’re ready, use
+buddybuild to submit directly to the App Store and Play Store.
+--
+
+*****
+
+[.right-col]
+*****
+
+[.blurb]
+.Continuous integration that just works
+--
+With every `git push` to GitHub, Bitbucket, GitLab or your preferred git
+server, buddybuild will: Create a secure build environment; Trigger a
+build of your iOS or Android app; Run any Unit or UI tests -- on
+physical devices if needed; Prepare your app for beta testing or
+deployment to the App Store / Play Store.
+--
+
+[.blurb]
+.Perfect insight into users’ issues
+--
+The buddybuild SDK unlocks a suite of features designed to give you
+crystal clear insight into users’ interactions with your app.
+--
+
+*****
+****
+
+[.get-started]
+.Get started faster than it takes to order a coffee.
+--
+link:quickstart/README.adoc[Learn more, role="button outline"]
+https://dashboard.buddybuild.com/signup[Get started, role="button"]
+--

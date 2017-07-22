@@ -1,0 +1,27 @@
+= Scheduling Builds
+
+Scheduled recurring builds let you kick off a new build for a branch on
+a set schedule. This is great when you need a new build at specific
+times but might not want to kick off automatic builds on every commit.
+
+== Create A Recurring Build
+
+Go to the **Builds** page of your app and click the blue gear icon of
+the branch for which you'd like a recurring build. This will bring up
+the **Branch Configurations** window for that branch.
+
+image:img/scheduled_builds_1.png[,1400,260]
+
+In that window, toggle the switch in the **Schedule builds** section to
+enable scheduled builds.
+
+image:img/Settings---Scheduled-builds.png[,1500,254]
+
+In the popup that appears, choose the time and days of week to
+automatically kick off a new build for your branch. To edit an existing
+build schedule, just click the existing time (highlighted in blue).
+
+image:img/Settings---Scheduled-builds---configuration.png[,1500,450]
+
+That's it! From now on, you'll always have a fresh build waiting exactly
+when you need it!

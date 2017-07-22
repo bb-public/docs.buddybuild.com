@@ -1,0 +1,14 @@
+sudo: false
+language: node_js
+os:
+  - linux
+node_js:
+  - 7
+before_install:
+  - pip install requests
+  - make setup
+script:
+  - make book
+after_success:
+  - chmod ugo+x ./deploy.py
+  - ./deploy.py

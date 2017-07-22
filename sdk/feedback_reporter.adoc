@@ -1,0 +1,36 @@
+= Feedback Reporter
+
+Gathering feedback from your beta users can often be a clumsy process.
+Feedback from your beta users often takes a variety of forms -- emails,
+slack messages or verbal comments.
+
+Most of the time, the context of the feedback is not entirely clear
+without an accompanying screenshot. Taking screenshots, attaching them
+to emails or uploading them to slack is an awkward and time-consuming
+process -- which disincentivizes testers from leaving feedback.
+
+The buddybuild SDK feedback reporter offers a way of submitting feedback
+painlessly right from within your app, as soon as an issue is noticed by
+your beta user. From anywhere within your app, taking a screenshot on
+iOS, or shaking your device on Android, brings up the **Feedback
+Reporter**. Beta users can annotate the screenshot and add a comment --
+providing you the exact context you need to iterate on your App.
+
+image:img/Feedback---Received.png[,3000,1600]
+
+Buddybuild marshals the feedback into whatever form works best for you
+-- Email, Slack, JIRA or even GitHub issues right in your project's
+repo!
+
+image:img/github_issues.png[,1500,900]
+
+To enable this feature,
+link:../quickstart/ios/integrate_sdk.adoc[integrate the buddybuild SDK]
+into your App.
+
+The SDK also offers several other features in addition to the Visual
+Feedback Reporter. Follow the links below to learn more about you can
+**supercharge** your app with the buddybuild SDK.
+
+- link:automatic_update.adoc[Automatic Update]
+- link:usage_tracking.adoc[Usage Tracking]

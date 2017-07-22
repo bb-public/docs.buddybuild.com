@@ -1,0 +1,54 @@
+= Code Signing 101
+
+Buddybuild takes away the pain of having to deal with code signing by
+link:../../../quickstart/ios/invite_testers.adoc[automatically uploading
+certificates] and
+link:../../../quickstart/ios/apple_developer_portal_sync.adoc[auto-syncing
+provisioning profiles] so you can focus on building great apps instead.
+
+If you'd like to learn more about code signing, read on.
+
+== Certificates and Private Keys
+
+Device builds on iOS require to be signed with a developer's
+certificate. Code signing allows iOS devices to verify the app
+developer's identity.
+
+Developer identities are tied to two artifacts - a certificate and a
+private key that unlocks the certificate. Both these artifacts are
+probably already present if you've ever deployed builds to a device.
+
+Typically, there are two types of certificates available to iOS
+developers -- one is a development certificate used for local development
+and testing -- the other is a distribution one meant for builds destined
+for the App Store.
+
+If you're part of the Apple Enterprise program, you will also have an
+Enterprise Distribution certificate that allows you to deploy apps
+within your enterprise.
+
+You must code sign iOS applications before any iOS devices will accept
+them for installation.
+
+Buddybuild creates builds on your behalf, so we need access to your
+developer identities in order to sign builds. Managing these can be a
+pain. Use the link:../../../quickstart/ios/invite_testers.adoc[Automatic
+Cert-Uploader] to quickly and easily upload the relevant certificates to
+buddybuild.
+
+== Provisioning Profiles
+
+Development devices also need to be included in the Provisioning Profile
+of the development signed app bundle before they can accept them for
+installation.
+
+Provisioning profiles are generated and signed by Apple. Any
+modifications - like adding a new device UDID - will require requesting
+Apple to regenerate the profile and then downloading and installing the
+generated profile on to your development machine - and then subsequently
+rebuilding your App with the updated profile.
+
+Buddybuild can also transparently manage these for you. Simple enable
+the
+link:../../../quickstart/ios/apple_developer_portal_sync.adoc[Auto_Syncing
+Provisioning Profiles] feature to take advantage of this functionality!

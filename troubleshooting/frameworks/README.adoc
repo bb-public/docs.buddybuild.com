@@ -1,0 +1,4 @@
+= Frameworks
+
+This section covers link:../frameworks/README.adoc[framework-specific]
+problems and errors.

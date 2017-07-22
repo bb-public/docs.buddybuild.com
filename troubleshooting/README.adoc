@@ -1,0 +1,4 @@
+= Troubleshooting
+
+This section covers common problems and errors that buddybuild users
+have encountered, and provides solutions that could help you.

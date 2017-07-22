@@ -1,0 +1,26 @@
+= Missing Podfile.lock
+
+== Summary
+
+Make sure your `Podfile.lock` is committed to your git repo for builds
+to function correctly in buddybuild.
+
+== What is Podfile.lock?
+
+When using CocoaPods, the `Podfile.lock` specifies the exact versions of
+that your app uses.
+
+== Why is this important?
+
+Without the `Podfile.lock`, when you run pod install on a new repo, you
+might get versions of CocoaPods that you are not expecting.
+
+This means that your colleagues and your build servers will be building
+with potentially different dependencies than the ones you built with and
+tested.
+
+It is very important to commit your `Podfile.lock` into your git repo.
+
+If you write to buddybuild Support about a broken build where the
+`Podfile.lock` is missing, the first thing support will ask you to do is
+commit your `Podfile.lock`.

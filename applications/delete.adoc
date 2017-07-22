@@ -1,0 +1,15 @@
+= Delete an app
+
+Here's how to delete an app from buddybuild:
+
+Click on **App Settings**.
+
+image:img/Builds---Settings.png[,1500,483]
+
+In the left navigation, click on **App details**, then **Delete app**.
+
+image:img/Settings---Delete-App-2.jpg[,1500,496]
+
+Type in the app's name, then click on **Delete this App**.
+
+image:img/Settings---Delete-App-3.jpg[,1500,601]

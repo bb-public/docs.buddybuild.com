@@ -1,0 +1,28 @@
+= Setting Up a Webhook
+
+A webhook notifies buddybuild of code changes you make to your repo.
+Whenever a new change is pushed, buddybuild will automatically kick off
+a new build -- ensuring you have up-to-date build status and your testers
+have the very latest builds.
+
+[NOTE]
+======
+**Select a source control system for specific instructions on how to add
+a webhook.**
+
+- link:beanstalk/webhook.adoc[Beanstalk]
+- link:bitbucket/webhook.adoc[Bitbucket]
+- link:bitbucket_server/webhook.adoc[Bitbucket Server]
+- link:github/webhook.adoc[GitHub]
+- link:gitlab/webhook.adoc[GitLab]
+- link:gitolite/webhook.adoc[Gitolite]
+- link:kiln/webhook.adoc[Kiln]
+- link:visual_studio_online/webhook.adoc[Visual Studio Online
+  / Team Foundation Server (TFS)]
+======
+
+If you are using a source control system that is not listed here, then
+please let us know. We'll add support for the source control system that
+you use on request. To get in touch with us, please use the Intercom
+button at the bottom right of this page or email us at
+team@buddybuild.com.

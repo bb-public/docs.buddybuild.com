@@ -1,0 +1,35 @@
+= Carthage
+
+link:https://github.com/Carthage/Carthage[Carthage] is a fantastic way
+to manage dependencies.
+
+In order to guarantee repeatability in builds -- we recommend you check
+in both your `Cartfile` and `Cartfile.resolved` files into your source
+control.
+
+== Carthage version
+
+You can set the Carthage version that is used on every build in your App
+Settings or in your branch settings.
+
+image:img/Carthage-1.png[,1500,800]
+
+== Running a custom Carthage command
+
+If the predefined Carthage command doesn't work for you, buddybuild lets
+you use your own. To achieve that, create a
+`buddybuild_carthage_command.sh` file with your custom command at the
+root of your project.
+
+[[code-samples]]
+--
+[source,bash]
+----
+#!/bin/bash
+
+carthage bootstrap --platform ios,tvOS --use-ssh --no-build
+----
+--
+
+Buddybuild automatically runs this script instead of the regular
+Carthage command if it's present in your repository.

@@ -1,0 +1,16 @@
+= Submodules
+
+Git Submodules are a way to manage your App's dependencies. In order for
+buddybuild to build your App, we need access to all your submodules in
+your source tree. We'll automatically use the Git credentials associated
+with your account.
+
+If your repo contains a `.gitmodules` file, then buddybuild will clone
+all of those submodules automatically. In other words, there's no need
+to explicitly run `git submodule update --init --recursive` in a custom
+post-clone script.
+
+Any private submodules that require additional credentials that are not
+in buddybuild will not be accessible during the cloud build. So ensure
+that all your private submodules are accessible using your git user
+identities known to buddybuild.

@@ -1,0 +1,23 @@
+= Skipping a Build
+
+If you don’t want to build a particular commit just add `[ci skip]` to
+the commit message.
+
+[source,bash]
+git commit --message='[ci skip] Fix typo in README'
+
+A build will not be created if buddybuild finds `[ci skip]` anywhere in
+the commit message of the head commit. You can use the **Build Now**
+button on the Builds page to build the tip of a branch if you decide
+that you want to run the build after all!
+
+== Skipping all pull request builds
+
+If you don't want to build any builds associated with a pull request,
+then add `[ci skip]` to the pull request title. This is more convenient
+than adding `[ci skip]` to every commit in the pull request.
+
+== Variations
+
+The order and case of the keywords is not important, meaning that you
+can also say `[CI SKIP]`, `[skip ci]`, `[skip CI]` and so on.

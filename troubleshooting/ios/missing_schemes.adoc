@@ -1,0 +1,40 @@
+= Missing schemes
+
+If you don't see your scheme, it very likely belongs to a different
+target.
+
+== Targets
+
+Buddybuild treats every target as a separate app. So each app in
+buddybuild maps to a single target in your Xcode project.
+
+If you have multiple targets, then they should be added to buddybuild as
+separate apps.
+
+== Schemes
+
+A scheme ties together a target with a build configuration.
+
+If you do not see your scheme, it is very likely because the target of
+the app in buddybuild is not included in the 'Build' section of the
+scheme you are trying to use.
+
+image:img/Screen-Shot-2016-05-31-at-5.51.42-PM.png[,889,630]
+
+Please check that the scheme matches the target of the app in
+buddybuild.
+
+== Make sure your scheme is shared
+
+You can make sure your scheme is shared, by going to 'Manage Schemes'
+from the schemes dropdown in Xcode.
+
+image:img/manage-schemes-1.png[,513,164]
+
+and then checking the 'Shared' option against the schemes you want to share
+
+image:img/manage-schemes-2.png[,776,440]
+
+Once you've changed this, commit and push the changes with git. After
+buddybuild has built that commit you will see the schemes available in
+buddybuild.

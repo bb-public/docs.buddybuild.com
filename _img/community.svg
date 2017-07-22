@@ -1,0 +1,39 @@
+<svg width="138px" height="127px" viewBox="0 0 138 127" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="11.485488" y="1.50030794" width="35.9536082" height="36" rx="9.58464"></rect>
+        <filter x="-55.6%" y="-27.8%" width="211.3%" height="211.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.781898425   0 0 0 0 0.841029896   0 0 0 0 0.890306122  0 0 0 0.527004076 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DOCS" transform="translate(-1085.000000, -1290.000000)">
+            <g id="Ask-the-community-" transform="translate(460.000000, 1290.000000)">
+                <g id="Group-17">
+                    <g transform="translate(625.193299, -3.000000)">
+                        <rect id="Rectangle-7-Copy-4" fill="#C9DAE8" transform="translate(87.387242, 14.500000) scale(-1, 1) rotate(5.000000) translate(-87.387242, -14.500000) " x="74.9033505" y="2" width="24.9677835" height="25" rx="6.656"></rect>
+                        <rect id="Rectangle-7-Copy-7" fill="#D7E0E8" transform="translate(110.316084, 31.458427) scale(-1, 1) rotate(5.000000) translate(-110.316084, -31.458427) " x="92.33928" y="13.4584274" width="35.9536082" height="36" rx="9.58464"></rect>
+                        <rect id="Rectangle-7-Copy-8" fill="#FFFFFF" transform="translate(69.660270, 58.750154) scale(-1, 1) rotate(5.000000) translate(-69.660270, -58.750154) " x="60.6718677" y="49.750154" width="17.9768041" height="18" rx="4.79232"></rect>
+                        <rect id="Rectangle-7-Copy-10" fill="#D7E0E8" transform="translate(58.674445, 92.750154) scale(-1, 1) rotate(5.000000) translate(-58.674445, -92.750154) " x="49.6860429" y="83.750154" width="17.9768041" height="18" rx="4.79232"></rect>
+                        <g id="Group-16" transform="translate(0.000000, 37.000000)">
+                            <rect id="Rectangle-7-Copy-11" fill="#C9DAE8" transform="translate(12.442475, 38.458530) scale(-1, 1) rotate(5.000000) translate(-12.442475, -38.458530) " x="0.95729485" y="26.9585301" width="22.9703608" height="23" rx="6.230016"></rect>
+                            <g id="Rectangle-7-Copy-6" transform="translate(29.462292, 19.500308) scale(-1, 1) rotate(5.000000) translate(-29.462292, -19.500308) ">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                        <g id="Group-18" transform="translate(30.137144, 57.449200) rotate(-5.000000) translate(-30.137144, -57.449200) translate(19.151320, 54.949200)" fill="#C9DAE8">
+                            <ellipse id="Oval-4" cx="2.45565494" cy="2.5" rx="2.45565494" ry="2.5"></ellipse>
+                            <ellipse id="Oval-4-Copy" cx="10.9858247" cy="2.5" rx="2.45565494" ry="2.5"></ellipse>
+                            <ellipse id="Oval-4-Copy-2" cx="19.5159945" cy="2.5" rx="2.45565494" ry="2.5"></ellipse>
+                        </g>
+                        <rect id="Rectangle-7-Copy-9" fill="#C9DAE9" transform="translate(109.109675, 101.250462) scale(-1, 1) rotate(5.000000) translate(-109.109675, -101.250462) " x="82.144469" y="74.2504619" width="53.9304124" height="54" rx="14.37696"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,75 @@
+= Secure Files
+
+You might have API keys and other secrets that your app needs to consume
+-- either at run time or during a build. However, you might not want to
+check these secrets into your source code to make them available to your
+app.
+
+In order to securely propagate your credentials to your build and app,
+buddybuild provides three sets of variables that you can define:
+
+. link:environment_variables.adoc[Environment Variables] (made available
+  to your build time scripts)
+
+. link:device_variables_1.adoc#step1[Device Variables] (available your
+  App at run time via the buddybuild SDK)
+
+. Secure Files (files made available to your build time scripts)
+
+Let's get started with Secure Files!
+
+== Step 1: Upload a Secure File to buddybuild
+
+Launch the buddybuild dashboard and select **App Settings**.
+
+image:img/Builds---Settings.png[,1500,483]
+
+In the left navigation, select **Build settings**, then **Secure
+files**.
+
+image:img/Settings---Secure-files---1.png[,1500,800]
+
+Select the file you would like to upload and select **Upload file**
+
+image:img/Settings---Secure-files---2.png[,1500,729]
+
+Your file is now ready to be consumed by your app.
+
+== Step 2: Consume the secure file in your build
+
+Your secure files will be automatically consumed by tools that are
+expecting them.
+
+== 2a. Consume in your custom build scripts.
+
+If you would like to access them in your
+link:custom_build_steps.adoc[custom build scripts], use
+the bash variable expansion syntax.
+
+[[code-samples]]
+--
+[source,bash]
+----
+./Example.framework/run ${BUDDYBUILD_SECURE_FILES}/file.txt
+----
+--
+
+== 2b. Consume in Android build.gradle file.
+
+If you are building an **Android** app with **Gradle** (Android Studio),
+you can also access them 2 ways inside your `build.gradle` file.
+
+You can access them via `System.getenv()`, like this:
+
+[[code-samples]]
+--
+[source,json]
+----
+signing.keyId=1234567
+signing.password=secret
+signing.secretKeyRingFile= new File(System.getenv("BUDDYBUILD_SECURE_FILES") + "/secring.gpg")
+----
+--
+
+That's it! For more details, refer to our link:../sdk/api.adoc[SDK API
+guide].

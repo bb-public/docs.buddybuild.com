@@ -1,0 +1,3 @@
+= Tests
+
+This section covers buddybuild's test infrastructure.

@@ -1,0 +1,54 @@
+= Migrate to buddybuild's GitHub Application
+
+[NOTE]
+======
+**Note**
+
+If you signed up a GitHub account with buddybuild before **May 25th
+2017** then this migration guide applies to you. Otherwise, this does
+not apply to you.
+======
+
+To provide a better experience for our users we created a buddybuild
+*GitHub Application*, which is an improvement over our existing *GitHub
+OAuth Application*. Our newer *GitHub Application* gives teams complete
+control over the repositories that buddybuild can access. You can grant
+buddybuild access to a specific organization or a specific repository,
+which is something that was not possible with *GitHub OAuth
+Applications*. The new *GitHub Application* also means that buddybuild
+can act as a helpful bot to assist in your app development.
+
+== Why should I migrate to the new GitHub Application?
+
+*GitHub Applications* gives teams greater control over the repositories
+that buddybuild can access. You can grant buddybuild access to a
+specific organization or a repository, which is something that was not
+possible with *GitHub OAuth Applications*.
+
+buddybuild can now act as a helpful bot to assist in your app
+development. Right now the bot can post new GitHub Issues when your app
+receives feedback and experiences crash reports. However, in the future
+the buddybuild bot will be capable of much more. Up till now buddybuild
+would have created GitHub Issues on behalf of a member in your team. The
+buddybuild bot is part of our *GitHub App* acting as a first class
+actor, and unlike a team member does not consume a user seat.
+
+== What happens if I do not migrate to GitHub Application?
+
+Migrating is optional. Your existing *GitHub OAuth Application* account
+in buddybuild will continue to operate normally. There will be no
+disruption to your service. We are maintaining support for our *GitHub
+OAuth Application* for the foreseeable future.
+
+== How to Migrate
+
+If you are interested in the benefits of the new buddybuild *GitHub
+Applications* integration, then you can use our wizard which will walk
+you through the quick process of migrating your buddybuild account and
+your apps to use *GitHub Applications*.
+
+To get started go to **My Profile**, then choose
+link:https://dashboard.buddybuild.com/account/github-migration[GitHub
+Migration].
+
+image:img/migrate_application[,247,167]

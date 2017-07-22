@@ -1,0 +1,28 @@
+= Source Control Systems
+
+You can sign up with buddybuild using your email to connect with
+Beanstalk, Bitbucket, GitHub, GitLab, TFS or any other source control
+system. Buddybuild automatically generates a secure SSH key for you
+to install into your source control system, and uses this key to clone
+your repository.
+
+[NOTE]
+======
+**Select your source control system to view Git Clone URL and SSH key
+instructions.**
+
+- link:beanstalk/README.adoc[Beanstalk]
+- link:bitbucket/README.adoc[Bitbucket]
+- link:github/README.adoc[GitHub]
+- link:gitlab/README.adoc[GitLab]
+- link:gitolite/README.adoc[Gitolite]
+- link:kiln/README.adoc[Kiln]
+- link:visual_studio_online/README.adoc[Visual Studio Online / Team
+  Foundation Server (TFS)]
+======
+
+If you are using a source control system that is not listed here, then
+please let us know. We'll add instructions for the source control system
+that you use on request. To get in touch with us, please use the
+Intercom button at the bottom right of this page or email us at
+team@buddybuild.com.

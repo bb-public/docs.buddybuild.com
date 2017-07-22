@@ -1,0 +1,143 @@
+= Connect with Bitbucket Server
+
+Connecting with Bitbucket Server grants buddybuild access to your
+repository so that it can build your app when you push code to your
+repository. Connecting also grants buddybuild API access to manage
+webhooks for you, generate commit status, enables the pull request flow,
+synchronizes access control for team management and more.
+
+Each member of your team that uses buddybuild should go through this
+guide to connect with Bitbucket Server. This is encouraged so that you
+can take advantage of team management features.
+
+**Prerequisite:** First make sure you have created an account with
+buddybuild by signing up with link:github.adoc[GitHub],
+link:bitbucket.adoc[Bitbucket], link:gitlab.adoc[GitLab] or by
+link:ssh.adoc#step1[email].
+
+[CAUTION]
+====
+Buddybuild rejects connecting to repositories via HTTPS that are
+provisioned with self-signed certificates.
+
+Using a self-signed certificate could make it possible for someone to
+spoof your repository and inject malicious code into your builds.
+====
+
+[NOTE]
+======
+**Quick links: Connect with Bitbucket Server in 3 easy steps!**
+
+- <<step1>>
+- <<step2>>
+- <<step3>>
+======
+
+[[step1]]
+== Step 1: Install the buddybuild add-on from the Atlassian Marketplace
+
+The following one-time setup must be done as a Bitbucket Server system
+administrator.
+
+From the Bitbucket Server dashboard click on the Administration
+**setting cog**.
+
+image:img/Bitbucket-Server-1.png[,1500,394]
+
+Under the **Add-ons** section, select **Find new add-ons.**
+
+image:img/Bitbucket-Server-2.png[,1500,833]
+
+Next, search for **buddybuild** and click **Install**.
+
+image:img/Bitbucket-Server-3.png[,1500,450]
+
+The add-on should take a few seconds to install. Once the installation
+is complete, you'll see the following message.
+
+image:img/Bitbucket-Server-4.png[,1500,786]
+
+You can choose to remove the installation at any time by clicking
+Uninstall on the Manage add-ons page.
+
+image:img/Bitbucket-Server-5.png[,1500,582]
+
+[[step2]]
+== Step 2: Generate your personal access token
+
+Visit the buddybuild plugin settings page by clicking on **buddybuild**
+in the left hand navigation. (You may need to refresh the page for this
+link to appear if you have just installed the plugin).
+
+image:img/Bitbucket-Server-6.png[,1500,390]
+
+Under the section **Getting started**, click on **Connect Personal
+Access Token**.
+
+image:img/Bitbucket-Server-7.png[,1500,548]
+
+Next, generate your personal access token by clicking on **Generate
+token.**
+
+image:img/Bitbucket-Server-7.png[,1500,786]
+
+**Copy your personal access token** and follow link:#step3[step 3] below
+to connect your Bitbucket Server repository with buddybuild.
+
+image:img/Bitbucket-Server-8.png[,1500,786]
+
+[[step3]]
+== Step 3: Connect your Bitbucket Server account
+
+To connect your Bitbucket Server account, launch the buddybuild
+dashboard and
+link:https://dashboard.buddybuild.com/apps/wizard/build/select-repo[Add
+a New App].
+
+image:img/Bitbucket-Server-11.png[,1500,718]
+
+Next, select
+link:https://dashboard.buddybuild.com/apps/wizard/build/select-source[Connect
+another source code provider].
+
+image:img/First-Build---Select-Source---Gitlab-Self-hosted.png[,1500,689]
+
+Select **Bitbucket Server**.
+
+image:img/Bitbucket-Server-10.png[,1500,781]
+
+Next, enter your Bitbucket Server endpoint and the Personal Access token
+you generated in link:#step2[step 2], and click **Connect your Bitbucket
+Server repository**.
+
+[NOTE]
+======
+**More about your Bitbucket Server endpoint and personal access token**
+
+Your Bitbucket Server endpoint is the hostname part of the URL when you
+visit your repositories in Bitbucket Server. Copy the hostname part of
+your Bitbucket Server server URL, which often looks something like
+`git.mycompany.com`. If your server uses a non-default HTTPS port, then
+please also copy the port part of the URL. For example,
+`git.mycompany.com:1234`.
+
+**Do you have a private DNS?** +
+Your Bitbucket Server hostname must be publicly addressable on the
+internet. If you use private DNS for your Bitbucket Server installation,
+then you can use the IP address of the server instead.
+
+**Do you have a firewall configured?** +
+If your network infrastructure restricts inbound access over HTTPS from
+a set of IP addresses, then you may need to whitelist the IP addresses
+used by the buddybuild fleet. Please contact us for the latest CIDR
+range used by buddybuild.
+
+**Create a personal access token** +
+Review link:#step2[Step 2] to create your personal access token.
+======
+
+image:img/Bitbucket-Server-13b.png[,1500,829]
+
+The dialog should close and display a list of your repositories. At this
+point you have successfully completed connecting buddybuild with
+Bitbucket Server!

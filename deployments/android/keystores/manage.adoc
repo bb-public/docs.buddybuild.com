@@ -1,0 +1,53 @@
+= Managing Your KeyStores
+
+If you wish to override the buddybuild generated KeyStore during your
+build, you can upload your own. Buddybuild will pick up the uploaded
+KeyStore and use it for code signing your App.
+
+[NOTE]
+======
+**Release build keystores**
+
+Release builds -- like the ones that eventually end up in the Play Store
+-- will require to be code signed with a KeyStore that is associated with
+a Developer.
+======
+
+[CAUTION]
+=========
+**Verify the keystore**
+
+You can run `keytool -list -keystore .keystore -alias foo` to verify
+that the keystore alias and password matches
+=========
+
+
+== Step 1: Upload a Keystore from your development machine
+
+Start by clicking on **App Settings**.
+
+image:img/Builds---Settings.png[,1500,483]
+
+Next, select **Build settings**, then **APK signing keystores**.
+
+image:img/Settings---APK-Signing-Keystores---menu.png[,1500,800]
+
+Locate the KeyStore on your local machine and upload it. It is typically
+a file with a .keystore or .jks extension. Enter your KeyStore password,
+alias and alias password.
+
+image:img/Settings---APK-Signing-Keystores.png[,1500,800]
+
+Once uploaded, you will see your keystore listed on the page.
+
+image:img/Settings---APK-Signing-Keystores---2.png[,1500,640]
+
+== Step 2: Assign the keystore to an application variant
+
+Next, assign your keystore to an application variant. Buddybuild will
+build and sign the variant with the selected keystore.
+
+image:img/Settings---APK-Signing-Keystores---3.png[,1500,640]
+
+That's it! Buddybuild will now use your uploaded KeyStore for subsequent
+builds.

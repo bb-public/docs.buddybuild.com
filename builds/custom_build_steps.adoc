@@ -1,0 +1,314 @@
+= Custom Build Steps
+
+Buddybuild will automatically analyze your repository and automatically
+configure itself with the best build settings.  However, if you require
+custom logic as part of your build, you can specify custom scripts to
+run at three points during the build.
+
+During the build, the VM is yours. This means you can run arbitrary
+scripts at several points during the build.
+
+[NOTE]
+======
+**Looking for a detailed walkthrough and common examples?**
+
+For a detailed walkthrough of how and when teams use custom build steps,
+and an ever growing list of examples, visit:
+https://www.buddybuild.com/blog/customizing-the-build-process
+======
+
+== Environment Variables
+
+=== Common buddybuild Variables
+
+[cols="a,10a",options="header"]
+|===
+| Variable Name
+| Description
+
+| `BUDDYBUILD_BUILD_NUMBER`
+| The numeric identifier for the current build.
+
+Example: `56`
+
+| `BUDDYBUILD_BUILD_ID`
+| A unique identifier for the current build job.
+
+Example: `564d3232d83277012014f915`
+
+| `BUDDYBUILD_APP_ID`
+| A unique identifier for the app. Useful if you have multiple apps in
+  the same repo.
+
+Example: `564d3232d83277010014e926`
+
+| `BUDDYBUILD_BRANCH`
+| The name of the branch currently being built.
+
+Example: `some-branch`
+
+| `BUDDYBUILD_BASE_BRANCH`
+| If the current build is a pull request, this is the name of the base
+  branch associated with the PR. Otherwise, this is the empty string
+  (`""`).
+
+Example: `master`
+
+| `BUDDYBUILD_REPO_SLUG`
+| The repository slug using the `owner/repo` format.
+
+Example: `buddybuild/2048-App`
+
+| `BUDDYBUILD_PULL_REQUEST`
+| If the current build is a pull request, this is the pull request number.
+
+Example: `526`
+
+| `BUDDYBUILD_WORKSPACE`
+| This is the location of the source code on the VM.
+
+Example: `/Users/buddybuild/workspace`
+
+For Android, the build output folder is in the exact relative location
+as in your local environment. For example, if the `build` output folder
+is in the `app` folder locally, this variable is set to
+`/Users/buddybuild/workspace/app/build`.
+
+| `BUDDYBUILD_SECURE_FILES`
+| This is the location of your link:secure_files.adoc[secure files] on
+  the VM.
+
+Example: `/Users/buddybuild/secure_files`
+
+| `BUDDYBUILD_TRIGGERED_BY`
+|
+
+Indicates the condition that triggered the build.
+
+Example: `webhook`
+
+Possible values:
+
+- `webhook`: +
+  build is triggered by a webhook
+- `webhook_pull_request_update`: +
+  build is triggered when a pull request is updated
+- `webhook_pull_request_open`: +
+  build is triggered when a pull request is created
+- `ui_triggered`: +
+  build is triggered by the "Build Now" button
+- `scheduler`: +
+  build is triggered by schedule
+- `rebuild_of_commit`: +
+  build is triggered by the "Rebuild" button
+- `api_triggered`: +
+  build is triggered by the
+  link:https://apidocs.buddybuild.com/builds/post-trigger.html[buddybuild API]
+|===
+
+=== iOS-specific variables
+
+[cols="a,10a", options="header"]
+|===
+| Variable Name
+| Description
+
+| `BUDDYBUILD_IPA_PATH`
+| Only available in post-build. Includes the filename in the path.
+
+Example: `/tmp/build.ipa`
+
+| `BUDDYBUILD_APP_STORE_IPA_PATH`
+| Only available in post-build. Includes the filename in the path.
+
+Example: `/tmp/build-appstore.ipa`
+
+| `BUDDYBUILD_SCHEME`
+| The scheme used for the current build.
+
+Example: `2048 - Release`
+
+| `BUDDYBUILD_TEST_DIR`
+| This is the location of the test product folder.
+
+Example: `/tmp/sandbox/app/test`
+
+Inside you will find multiple files related to tests including
+`Coverage.profdata`.
+|===
+
+=== Android-specific variables
+
+[cols="a,10a", options="header"]
+|===
+| Variable Name
+| Description
+
+| `BUDDYBUILD_VARIANTS`
+| The list of the variants being built.
+
+Example: `release`
+
+| `ANDROID_HOME`
+| The path to the Android SDK.
+
+Example: `/Users/buddybuild/.android-sdk`
+
+| `ANDROID_NDK_HOME`
+| The path to the Android NDK.
+
+Example: `/Users/buddybuild/android-ndk-r10e`
+|===
+
+
+[NOTE]
+======
+**Don't see the information you need?**
+
+No problem! Remember, the **VM is yours** at build step. For instance,
+you could expose `git` information for the build in the
+link:#post-clone[postclone step].
+======
+
+=== User-defined variables
+
+You can also define link:environment_variables.adoc[environment
+variables] through buddybuild's dashboard that will be securely stored
+and made available during the build.
+
+[[post-clone]]
+== Post-clone
+
+The post-clone script will run immediately after git clone, and before
+we do any analysis of what is in the repo.
+
+The **buddybuild_postclone.sh** script should be in the **root** of your
+repo.
+
+[[code-samples]]
+--
+.buddybuild_postclone.sh
+[source,bash]
+----
+#!/usr/bin/env bash
+
+# Example: Clone Parse example project
+git clone https://github.com/example/ParseCloudCode
+
+# Example: Expose the commit SHA accessible through $GIT_REVISION_SHA Environment Variable
+export GIT_REVISION_SHA=$(git rev-parse HEAD)
+
+# Example: Expose the commit author & email through the $GIT_REVISION_AUTHOR in the following format: Author Name &lt;author@example.com&gt;
+export GIT_REVISION_AUTHOR=$(git log -1 --pretty=format:"%an <%ae>")
+----
+--
+
+[IMPORTANT]
+===========
+**buddybuild_postclone.sh Examples**
+
+Some things you might want to do in a postclone step:
+
+- Clone other git repos (e.g., another repository contains your Parse
+  cloud code)
+
+- Generate or modify your Xcode project (e.g., some React Native and
+  Cordova projects require this).
+
+- Expose git information (e.g., the author or the commit SHA for the
+  build)
+===========
+
+== Pre-build
+
+This prebuild script will run before the build, but after we have
+automatically installed dependencies (eg. Cocoapods, Carthage).
+
+Add the following file to your repository, **next to your `.xcodeproj`
+or `build.gradle` files**, and we'll pick it up!
+
+[[code-samples]]
+--
+.buddybuild_prebuild.sh
+[source,bash]
+----
+#!/usr/bin/env bash
+
+# Example for adding a key to the Plist
+/usr/libexec/PlistBuddy -c "Add APP_BRANCH String $BUDDYBUILD_BRANCH"
+----
+--
+
+[NOTE]
+======
+**buddybuild_prebuild.sh**
+
+You might want to use a custom prebuild step, if you need to do some
+extra dependency compilation, add something custom to your plist.
+
+While you can use this to populate API keys or credentials, you can also
+access device keys that you've added on the dashboard through the
+BuddyBuildSDK without doing any custom build steps.
+======
+
+== Post-build
+
+This postbuild script will run after the build.
+
+Add the following file to your repository, **next to your .xcodeproj or
+build.gradle files**, and we'll pick it up!
+
+[[code-samples]]
+--
+.buddybuild_postbuild.sh
+[source,bash]
+----
+#!/usr/bin/env bash
+
+# Example of uploading a file to your archive service
+curl \
+ -F "file=@$BUDDYBUILD_IPA_PATH" \
+ -F "build_number=$BUDDYBUILD_BUILD_NUMBER" \
+ -F "https://archiveservice.example.com
+----
+--
+
+[NOTE]
+======
+**buddybuild_postbuild.sh Examples**
+
+Typically, you'll use this to upload specific artifacts to various
+service integrations you might have.
+
+- If you want to archive the `.ipa` / `.dSYM` files for yourself
+- Sending build artifacts to another service
+======
+
+
+If the postbuild step is not running for you, please check you have code
+signing set up.
+
+As with everything, if you need help with anything, please get in touch
+via Intercom and we will find the best way to solve your problem.
+
+== Manually failing the build from a custom build step
+
+When some conditions required for your build to be successful are not
+met, you may want to manually fail the build. To do that, exit from your
+script with a non-zero status code. That is how we'll know the build
+must fail.
+
+[[code-samples]]
+--
+[source,bash]
+----
+#!/usr/bin/env bash
+
+if [[ "$BUDDYBUILD_BRANCH" =~ "release" ]]; then
+  echo "This script should only be used on release branch!"
+  echo "Aborting build"
+
+  exit 1
+fi
+----
+--

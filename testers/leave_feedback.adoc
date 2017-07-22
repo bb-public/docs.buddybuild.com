@@ -1,0 +1,15 @@
+= Leaving Feedback
+
+Notice a typo in your App? Leave feedback for your developers in three
+short steps:
+
+. Take a screenshot (iOS) or shake the device (Android)
+. Draw a box around the area you would like to highlight
+. Enter a comment for your developers and hit send!
+
+Buddybuild will send your feedback straight into your developers'
+notification channels.
+
+image:img/Phone---Feedback.png[,1500,840]
+
+That's it! Leaving feedback has never been easier!

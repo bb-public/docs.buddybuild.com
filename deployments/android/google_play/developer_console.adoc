@@ -1,0 +1,78 @@
+= Create a private key and setup permissions
+
+To deploy builds to Google Play, the first step is to create a Private
+Key (`.JSON`) and setup the appropriate permissions from the Google Play
+Developer Console.
+
+Lets get started!
+
+Open the link:https://play.google.com/apps/publish[Google Play
+Developers Console], and Log In with your email and password.
+
+Next, select **Settings** from the left menu.
+
+image:img/Google-Play-1.jpg[,3000,1188]
+
+Select **API access**.
+
+image:img/Google-Play-2.jpg[,3000,1188]
+
+Next, select **Create Service Account**.
+
+image:img/Google-Play-3.jpg[,3000,1188]
+
+In the modal that pops up, select **Google API Console**.
+
+image:img/Google-Play-4.jpg[,3000,1188]
+
+On the next page, select the **Create credentials** dropdown, and then **Service account key**.
+
+image:img/Google-Play-5a.jpg[,3000,1188]
+
+Select the **Service account** dropdown and select **New service account**.
+
+image:img/Google-Play-6.jpg[,3000,1188]
+
+Next, fill in the **name** field.
+
+image:img/Google-Play-7aa.jpg[,3000,1188]
+
+Next select a role by first highlighting **Project**, then selecting
+**Owner**.
+
+image:img/Google-Play-7a.jpg[,3000,1188]
+
+Ensure that **JSON** is selected and click **Create**.
+
+image:img/Google-Play-7b.jpg[,3000,1188]
+
+Next, a popup will appear letting you know that the Service account has
+been created.
+
+[NOTE]
+======
+**Note: at this point the JSON file has been downloaded to your
+computer**
+
+This will be the JSON file that needs to be uploaded to buddybuild in
+the next step.
+======
+
+Next, select **Close**.
+
+image:img/Google-Play-8.jpg[,3000,1188]
+
+Head back to the Google Play Developers Console. The page will update
+with the new service account you created.
+
+Scroll down to the **Service Accounts** section, look for the unique
+Service Account ID, and select **Grant**.
+
+image:img/Google-Play-9.jpg[,3000,1188]
+
+Ensure that **Release manager** is selected from the role dropdown, then
+select **Add user**.
+
+image:img/Google-Play-10.jpg[,3000,1608]
+
+That's it for step 1! The next step is link:automatic.adoc[setting up buddybuild to automatically deploy to Google Play].

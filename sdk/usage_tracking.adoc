@@ -1,0 +1,20 @@
+= Usage Tracking
+
+Tracking various levels of engagement across your testers and beta users
+can be time-consuming and inaccurate.
+
+The buddybuild SDK can help track usage of your app. Get precise metrics
+on how many people downloaded your App and how many launched it.
+
+image:img/Builds---Deploy-History.png[,1500,615]
+
+To enable this feature, simply
+link:../quickstart/ios/integrate_sdk.adoc[integrate the buddybuild SDK]
+into your App.
+
+The SDK also offers several other features in addition to Usage
+Tracking. Follow the links below to learn more about you can
+**supercharge** your app with the buddybuild SDK.
+
+- link:feedback_reporter.adoc[Feedback Reporter]
+- link:automatic_update.adoc[Automatic Update]

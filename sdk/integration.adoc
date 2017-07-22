@@ -1,0 +1,199 @@
+= SDK Manual Installation (iOS)
+
+We highly recommend using the **automatic** buddybuild SDK integration
+right from the buddybuild dashboard.
+
+However, if you wish to install the buddybuild SDK **manually**, follow
+the steps on this page.
+
+[NOTE]
+======
+**Use CocoaPods?**
+
+Include the link:https://cocoapods.org/pods/BuddyBuildSDK[BuddyBuildSDK]
+pod in your Podfile and move on to link:#step4[Step 4]
+======
+
+[[step1]]
+== Step 1: Getting Started
+
+Navigate to your repository root directory.
+
+[[code-samples]]
+--
+[source,bash]
+----
+cd myAwesomeApp
+----
+--
+
+[[step2]]
+== Step 2: Download the buddybuild SDK
+
+Ensure that you remove previous versions of the buddybuild SDK before
+you start.
+
+[[code-samples]]
+--
+[source,bash]
+----
+rm -rf BuddyBuildSDK.framework*
+----
+--
+
+Download and unzip the `BuddyBuildSDK.framework.zip` file into your
+project root directory.
+
+[[code-samples]]
+--
+[source,bash]
+----
+wget https://s3-us-west-2.amazonaws.com/buddybuild-sdk-builds/master/BuddyBuildSDK.framework.zip
+unzip BuddyBuildSDK.framework.zip
+rm -f BuddyBuildSDK.framework.zip
+----
+--
+
+[[step3]]
+== Step 3: Add iOS frameworks
+
+* Open your project in Xcode.
+* Highlight your project in the 'Project Navigator'.
+* Select your target.
+* Select the 'Build Phases' tab.
+* Open 'Link Binaries With Libraries' expander.
+* Repeat for each of the **AssetsLibrary**, **BuddyBuildSDK**,
+  **CoreTelephony**, **CoreText**, **CoreMedia**, **AVFoundation**,
+  **CoreVideo**, **QuartzCore** and **SystemConfiguration** frameworks:
+** Click the + button.
+** Select the required framework name
+** Click 'Add'
+
+image:img/1.png[,1500,861]
+
+[[step4]]
+== Step 4 (Swift only): Include the SDK in your Bridging Header
+
+Make sure you have a bridging header in your **Build Settings** in
+Xcode.
+
+If you don't have a bridging header, the fastest way to create one is to
+temporarily add a new `.m` file to your project. Xcode will then prompt
+you to create a bridging header. After it's created you can delete that
+`.m` file.
+
+image:img/2.png[,1500,745]
+
+**Include the SDK by adding the line below to your bridging header**
+
+[[code-samples]]
+--
+[source,objectivec]
+----
+#import &lt;BuddyBuildSDK/BuddyBuildSDK.h&gt;
+----
+--
+
+
+== Step 5 (Swift only): Initialize the buddybuild SDK
+
+Find the class that implements the UIApplicationDelegate. The class
+implementation should look something like this.
+
+[[code-samples]]
+--
+[source,swift]
+----
+class AppDelegate: UIResponder, UIApplicationDelegate {
+----
+--
+
+Initialize the **BuddyBuildSDK** in the class, by adding the following
+line to the **didFinishLaunchingWithOptions** method.
+
+[[code-samples]]
+--
+[source,swift]
+----
+BuddyBuildSDK.setup()
+----
+--
+
+== Step 6 (Objective-C only): Initialize the buddybuild SDK
+
+Find the class that implements the **UIApplicationDelegate**. The class
+header file should look something like this.
+
+[[code-samples]]
+--
+[source,objectivec]
+----
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+----
+--
+
+We're interested in associated the class implementation file. Add this
+import to the class implementation file.
+
+[[code-samples]]
+--
+[source,objectivec]
+----
+#import &lt;BuddyBuildSDK/BuddyBuildSDK.h&gt;
+----
+--
+
+Initialize the **BuddyBuildSDK** in the class, by adding the following
+line to the **didFinishLaunchingWithOptions** method.
+
+[[code-samples]]
+--
+[source,objectivec]
+----
+[BuddyBuildSDK setup];
+----
+--
+
+== Step 7: Build
+
+Run your application in Xcode.
+
+== Step 8: Verify
+
+In the Xcode output pane you should see the following log line, which
+indicates that the buddybuild SDK has been successfully integrated.
+
+[[code-samples]]
+--
+.When running on a physical device
+[source,text]
+----
+2015-10-05 15:34:48.693 myAwesomeApp[25126:526527] BuddybuildSDK : Successfully integrated. Feedback tool, crash reporting and other features are disabled for local builds. Please build with https://dashboard.buddybuild.com to enable.
+----
+--
+
+[[code-samples]]
+--
+.When running in a simulator
+[source,text]
+----
+2015-10-05 15:33:24.562 myAwesomeApp[25126:526527] BuddybuildSDK : Disabled in the simulator
+----
+--
+
+== Step 9: Push
+
+Commit the change and push to your repo.
+
+[[code-samples]]
+--
+[source,bash]
+----
+git add --all
+git commit -m 'Adding buddybuild SDK'
+git push
+----
+--
+
+That's it! Your code push will be picked up by buddybuild. Subsequent
+builds of your App will now have the SDK integrated!

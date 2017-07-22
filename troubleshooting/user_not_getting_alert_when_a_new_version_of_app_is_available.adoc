@@ -1,0 +1,62 @@
+= User not getting alert when a new version of app is available
+
+Our SDK allows your testers to be notified when a new version of your
+application is available
+link:../sdk/automatic_update.adoc[via an alert]. Here's a
+checklist of the conditions required for this feature to work:
+
+[%interactive]
+- [ ] **Enable the automatic app-update** +
+The Automatic App-Update is activated by default but check your App
+Settings to make sure it is still enabled. If it's not, then your users
+won't get notified that a new version is available next time they open
+your app.
++
+image:img/SDK---Feature-settings---Automatic-App-Update.png[,3000,800]
+
+- [ ] **The build must be deployed via email** +
+Users will only be notified about new **deployed** versions of your
+application. Make sure that you either **manually deployed** a new
+build:
++
+image:img/Deployments---manual.png[,1500,869]
++
+Or that you use link:../deployments/automatic.adoc[automated deployment].
++
+image:img/Deployments---automatic---1.png[,1500,528]
+
+- [ ] **The SDK must be installed on the previous version of the app** +
+If your users are running a version they installed **before** you
+integrated the SDK into your application, they won't get notified about
+the new version available via the app.
++
+They will have to install the new build via the notification they got
+via email. Once this build is installed, they will be notified of the
+subsequent available versions of your application.
+
+- [ ] **The user must be identified** +
+We need to be able to identify the user before showing the new version
+alert. To achieve that, we use a certificate. To ensure that the user
+not getting the notification is properly identified, use the feedback
+feature of the SDK.
++
+--
+. Take a screenshot
+. Submit feedback
+--
++
+If the feedback appears from an **Unknown user** then something went
+wrong with the user's device. To fix it, ask your user to perform the
+following tasks in the **General** > **Profile** section of the
+**Settings panel**.
++
+image:img/Remove-certificate.png[,1500,915]
++
+Then, visit https://dashboard.buddybuild.com/reset **in Safari on your
+iPhone**. Once this is done, you can ask your users to visit the
+installation page again.
+
+- [ ] **User must only have one device registered** +
+Currently, the update notification is keyed to the user's **email
+address**, not the device. Installing a new version on the iPad will
+**cancel the update notification** from showing on the iPhone.

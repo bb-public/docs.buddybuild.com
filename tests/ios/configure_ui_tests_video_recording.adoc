@@ -1,0 +1,231 @@
+= Configure your iOS UI tests for Video Replay
+
+The buddybuild SDK is a lightweight yet powerful
+link:../../quickstart/ios/integrate_sdk.adoc[suite of tools] that
+integrates seamlessly into your application. Among the many features
+the SDK provides, you can use the buddybuild SDK to record video of your
+UI tests as they execute.
+
+Here are the step-by-step instructions to configure the SDK in your UI
+tests target:
+
+[[step1]]
+== Step 1: Install the buddybuild SDK
+
+The SDK needs to be integrated into your main app prior to configuring
+video recording for your UI tests target.
+
+We highly recommend using the
+link:../../quickstart/ios/integrate_sdk.adoc#step2[**automatic** buddybuild
+SDK integration] right from your dashboard. However, if you wish to
+install the buddybuild SDK **manually**, follow
+link:../../sdk/integration.adoc[these steps].
+
+[[step2]]
+== Step 2: Get the latest version
+
+Follow link:../../quickstart/ios/integrate_sdk.adoc#update[these
+instructions] to update the SDK on your local machine.
+
+[[step3]]
+== Step 3: Add framework dependencies to your UI test target
+
+* Open your project in Xcode.
+* Highlight your project in the 'Project Navigator'.
+* Select your target.
+* Select the 'Build Phases' tab.
+* Open 'Link Binaries With Libraries' expander.
+* Repeat for each of the **AssetsLibrary**, **BuddyBuildSDK**,
+  **CoreTelephony**, **CoreText**, **CoreMedia**, **AVFoundation**,
+  **CoreVideo**, **QuartzCore** and **SystemConfiguration** frameworks:
+
+** Click the + button.
+** Select the required framework name
+** Click 'Add'
++
+image:img/1.png[,1500,861]
+
+[[step4]]
+== Step 4 (Swift only): Include the SDK in your UI test target's Bridging Header
+
+Make sure you have a bridging header in your UI tests target in **Build
+Settings** in Xcode.
+
+image:img/bridging-header-edited.png[,1500,316]
+
+If you don't have a bridging header, the fastest way to create one is to
+temporarily add a new .m file to your project. Xcode will then prompt
+you to create a bridging header. After it's created you can delete that
+.m file.
+
+image:img/2.png[,1500,745]
+
+**Include the SDK by adding the following line to your bridging header:**
+
+[[code-samples]]
+--
+[source,objectivec]
+----
+#import <BuddyBuildSDK/BuddyBuildSDK.h>
+----
+--
+
+[[step5]]
+== Step 5: Initialize the buddybuild SDK
+
+Add the `uiTestsDidReceiveRemoteNotification` call in your app
+delegate's **didReceiveRemoteNotification** method.
+
+[[code-samples]]
+--
+.Swift
+[source,swift]
+----
+func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+  BuddyBuildSDK.uiTestsDidReceiveRemoteNotification(userInfo)
+  // Initial implementation below
+}
+----
+--
+
+[[code-samples]]
+--
+[source,objectivec]
+----
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [BuddyBuildSDK uiTestsDidReceiveRemoteNotification:userInfo];
+    // Initial implementation below
+}
+----
+--
+
+If you haven't already implemented **didReceiveRemoteNotification** in
+your app delegate, you'll need to create it.
+
+[NOTE]
+======
+**Important**
+
+**uiTestsDidReceiveRemoteNotification** will only run in buddybuild
+while your UI tests run. It will not run when you build from Xcode on
+your local machine, on real iOS devices, on TestFlight or on App Store
+installs.
+======
+
+[[step6]]
+== Step 6: Configure your UI test cases.
+
+=== Start video recording for your UI test cases
+
+Add the following line **after** each **XCUIApplication().launch()**
+(generally called in the `setUp` function), call in your UI tests
+code base. This will start recording the video right after your app is
+launched by the UI test case.
+
+[[code-samples]]
+--
+.Swift
+[source,swift]
+----
+...
+XCUIApplication().launch()
+BuddyBuildSDK.startUITests()
+...
+----
+--
+
+[[code-samples]]
+--
+.Objective-C
+[source,objectivec]
+----
+...
+[[[XCUIApplication alloc] init] launch];
+[BuddyBuildSDK startUITests];
+...
+----
+--
+
+=== Stop video recording for your UI test cases
+
+Add the following line **before** each **super.tearDown** call in your
+UI tests code base. This will stop the video recording and save the file
+at the end of each UI test case.
+
+[[code-samples]]
+--
+.Swift
+[source,swift]
+----
+override func tearDown() {
+  BuddyBuildSDK.stopUITests()
+  super.tearDown()
+}
+----
+--
+
+[[code-samples]]
+--
+.Objective-C
+[source,objectivec]
+----
+- (void)tearDown {
+  [BuddyBuildSDK stopUITests];
+  [super tearDown];
+}
+----
+--
+
+[[step7]]
+== Step 7: Verify - Run your UI tests locally in Xcode
+
+Run your UI tests locally (⌘+U) in Xcode. In the output pane you should
+see the following log line, which indicates that the buddybuild SDK has
+been successfully integrated.
+
+[[code-samples]]
+--
+.When running on a physical device
+[source,text]
+----
+2015-10-05 15:34:48.693 myAwesomeApp[25126:526527] BuddybuildSDK : Successfully integrated. Feedback tool, crash reporting and other features are disabled for local builds. Please build with https://dashboard.buddybuild.com to enable.
+----
+--
+
+[[code-samples]]
+--
+.When running in a simulator
+[source,text]
+----
+2015-10-05 15:33:24.562 myAwesomeApp[25126:526527] BuddybuildSDK : Disabled in the simulator
+----
+--
+
+[[step8]]
+== Step 8: Make sure Tests are enabled in buddybuild
+
+Go to the buddybuild dashboard and make sure that Tests are enabled in
+buddybuild. This setting can be found in the **'App Settings'** of your
+app.
+
+image:img/3.png[,1500,466]
+
+[[step9]]
+== Step 9: Commit and push
+
+Commit the change and push the changes to your repo to add the
+buddybuild SDK.
+
+[[code-samples]]
+--
+[source,bash]
+----
+git add - -all
+git commit -m 'Adding buddybuild SDK for UI tests video recording'
+git push
+----
+--
+
+That's it! Your code push will be picked up by buddybuild. All
+subsequent builds of your App will now record a video for each of your
+UI tests!

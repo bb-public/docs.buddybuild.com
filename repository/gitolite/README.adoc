@@ -1,0 +1,132 @@
+= Adding a Gitolite Repository
+
+This page explains how to add a Gitolite hosted repository to
+buddybuild. Let's get started!
+
+Firstly, if your repository is hosted on a Gitolite server, then you
+will need to link:../../quickstart/ssh.adoc[sign in with an
+email account].
+
+[NOTE]
+======
+**Quick Links**
+
+- link:#step1[Step 1: Enter the SSH Gitolite clone URL]
+
+- link:#step2[Step 2: Add a buddybuild user to Gitolite]
+
+- link:#step3[Step 3: Grant buddybuild access to your Gitolite repository]
+
+- link:#step4[Step 4: Build]
+======
+
+[[step1]]
+== Step 1: Enter the SSH Gitolite clone URL
+
+List your repositories in Gitolite and note the repository name that you
+would like to add to buddybuild.
+
+[[code-samples]]
+--
+[source,bash]
+----
+$ ssh git@my.company.com info
+Hello Richie, this is git@my.company.com running gitolite3 v3.6.5-4-g6ed0156 on git 2.8.0
+
+ R W  my-ios-app
+ R W  my-android-app
+----
+--
+
+Head over to dashboard, visit
+link:https://dashboard.buddybuild.com/apps/wizard/build/select-source[Select
+source] and choose **SSH**.
+
+image:../img/select_source-ssh.png[,1500,800]
+
+Construct the Gitolite SSH clone URL using the username (typically `git`
+or `gitolite` for most Gitolite installations), hostname, and repository
+name.
+
+[source,bash]
+\git@my.company.com:my-ios-app
+
+image:img/clone-url.png[,1500,765]
+
+[[step2]]
+== Step 2: Add a buddybuild user to Gitolite
+
+[NOTE]
+======
+**Only a Gitolite admin user can add new users**
+
+======
+
+In order to build your app on our fleet of build machines you will need
+to create a new user that is authorized to read from your Gitolite
+repository. When you enter the gitolite clone URL, buddybuild generates
+an SSH key-pair that securely identifies your account in buddybuild.
+
+Highlight and copy the generated public SSH key.
+
+image:img/ssh-key.png[,1500,765]
+
+To add a new Gitolite user named `buddybuild`, paste the public SSH key
+into the file below, then commit and push the admin changes to your
+gitolite server.
+
+[source,bash]
+gitolite-admin/keydir/buddybuild.pub
+
+[[step3]]
+== Step 3: Grant buddybuild access to your Gitolite repository
+
+Modify your `gitolite-admin/conf/gitolite.conf` to grant `buddybuild`
+read-only access to your repository.
+
+[source,bash]
+----
+repo my-ios-app
+    R = buddybuild
+----
+
+[NOTE]
+======
+**Automatic buddybuild SDK installation requires read-write access**
+
+======
+
+Granting buddybuild read-write access to your repository gives you the
+option of *automatically* installing the buddybuild SDK at a later
+point. To do this, modify your `gitolite-admin/conf/gitolite.conf` to
+grant `buddybuild` read-write access to your repository.
+
+[source,bash]
+----
+repo my-ios-app
+    RW = buddybuild
+----
+
+This is an optional step, since with read-only access you can still
+**manually** install the buddybuild SDK.
+
+[WARNING]
+=========
+**Private git submodules and private cocoapods**
+
+If your project depends on any code in other private git repositories,
+the buddybuild user needs to be added to those repositories as well.
+=========
+
+[[step4]]
+== Step 4: Build
+
+Now go back to buddybuild and click on the **Build** button.
+
+image:img/build.png[,1500,765]
+
+Buddybuild will checkout your project code and kick off a simulator
+build. That's it, you're now connected to buddybuild!
+
+The next step is to link:../../quickstart/ios/invite_testers.adoc[invite
+testers] to try out your app.

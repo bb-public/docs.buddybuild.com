@@ -1,0 +1,97 @@
+= Connect your privately-hosted GitLab instance
+
+Use this guide to connect any privately hosted GitLab instance with
+buddybuild. Buddybuild supports all
+link:https://about.gitlab.com/products/[GitLab products] including
+*GitLab Hosted*, *Community Edition* and *Enterprise Edition*. If you
+are looking to connect with GitLab.com instead see
+link:gitlab.adoc[Signing up with GitLab].
+
+Connecting with your GitLab instance grants buddybuild access to your
+repository so that it can build your app when you push code to your
+repository. Connecting also grants buddybuild API access to manage
+webhooks for you, generate commit status, enable the pull request flow,
+synchronize access control for team management and more.
+
+Each member of your team that uses buddybuild should go through this
+guide to connect with their GitLab account. This is encouraged so that
+you can take advantage of team management features.
+
+== Prerequisite
+
+First make sure you have created an account with buddybuild by signing
+up with link:github.adoc[GitHub], link:bitbucket.adoc[Bitbucket],
+link:gitlab.adoc[GitLab] or by link:ssh.adoc#step1[email].
+
+[CAUTION]
+====
+Buddybuild rejects connecting to repositories via HTTPS that are
+provisioned with self-signed certificates.
+
+Using a self-signed certificate could make it possible for someone to
+spoof your repository and inject malicious code into your builds.
+====
+
+== Connect your GitLab account
+
+To connect your privately hosted GitLab instance follow this URL:
+
+https://dashboard.buddybuild.com/apps/wizard/build/select-repo/gitlab-enterprise
+
+You will see a dialog with two input fields. If you already know your
+**GitLab instance endpoint** and have a **personal access token**, then
+enter those now. Otherwise, continue reading the next sections to learn
+how to get the endpoint name and generate a personal access token.
+
+image:img/Gitlab-Enterprise-2.png[,1500,877]
+
+== Configure your GitLab Enterprise endpoint
+
+Your GitLab endpoint is the hostname part of the URL when you visit your
+repositories in GitLab. Copy the hostname part of your GitLab server
+URL, which often looks something like `gitlab.mycompany.com`. If your
+server uses a non-default HTTPS port, then please also copy the port
+part of the URL. For example, `gitlab.mycompany.com:1234`.
+
+=== Do you have a private DNS?
+
+Your GitLab hostname must be publicly addressable on the internet. If
+you use private DNS for your GitLab installation, then you can use the
+IP address of the server instead.
+
+=== Do you have a firewall configured?
+
+If your network infrastructure restricts inbound access over HTTPS from
+a set of IP addresses, then you may need to whitelist the IP addresses
+used by the buddybuild fleet. Please contact us for the latest CIDR
+range used by buddybuild.
+
+== Create a personal access token
+
+Navigate to your GitLab instance and sign in with your individual
+account credentials. You do not need to sign in with a GitLab admin
+account.
+
+Choose **Settings** from the top right menu under your profile picture.
+
+image:img/Gitlab-Enterprise-5.png[,1500,646]
+
+You will see a list of tabs at the top of the page. Click on **Access
+tokens**. Create a new token by entering **buddybuild** as the name,
+then clicking on **Create Personal Access Token**.
+
+image:img/Gitlab-Enterprise-6.png[,1500,567]
+
+Copy the new personal access token, a 20 character string with numbers
+and letters.
+
+image:img/Gitlab-Enterprise-4.png[,1500,415]
+
+In buddybuild, paste the personal access token into the **Enter your
+Access Token** field. Then click **Connect Your GitLab instance**.
+
+image:img/Gitlab-Enterprise-3.png[,1500,877]
+
+The dialog should close and display a list of your repositories. At this
+point you have successfully completed connecting buddybuild with your
+GitLab instance!

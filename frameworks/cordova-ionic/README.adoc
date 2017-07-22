@@ -1,0 +1,46 @@
+= Cordova / Ionic Setup
+
+Buddybuild natively supports Cordova / Ionic apps -- for both iOS and
+Android.
+
+There are three steps to make sure that your Cordova / Ionic project is
+ready to onboard onto buddybuild.
+
+. The `config.xml` file is checked into your repository
+
+. The `package.json` file is checked into your repository
+
+. The `www` directory is checked into your repository
+
+After you've confirmed that both of those conditions have been meet,
+you're ready to add them to buddybuild!
+
+Instructions for how to add apps to buddybuild can be found here:
+link:../../quickstart/android/select_an_app.adoc[Sign up with buddybuild]
+
+NOTE: You'll need to add each platform as a separate app in buddybuild.
+
+== Does your app require custom tasks?
+
+If you have custom tasks (i.e gulp, webpack) that are required to
+correctly configure or setup your Cordova / Ionic application, the
+recommended solution is to add a **postinstall** step to your
+`package.json` file.
+
+[[code-samples]]
+--
+.package.json
+[source,json]
+----
+{
+  "scripts" : {
+    "postinstall" : "gulp sass build --force-build"
+  }
+}
+----
+--
+
+There's also a hook to do any further configuration in the midst of us
+running our Cordova workflow. By adding a `buddybuild_midcordova.sh`
+script, you can do arbitrary stuff such as gulp tasks etc. before we
+start adding your platform and generating resources.

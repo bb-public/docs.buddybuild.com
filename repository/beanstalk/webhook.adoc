@@ -1,0 +1,50 @@
+= Adding a Beanstalk Webhook
+
+A webhook notifies buddybuild of code changes you make to your repo.
+Whenever a new change is pushed, buddybuild will automatically kick off
+a new build -- ensuring you have up-to-date build status and your
+testers have the very latest builds.
+
+Let's get started!
+
+On the Builds page, in the red banner at the top of the page, click on
+**Resolve this issue**.
+
+image:../img/resolve-banner.png[,1500,298]
+
+In the dialog box that appears, **select and copy the webhook URL**.
+This URL is specific to your app and will be used to identify your app
+when sending webhooks from Beanstalk.
+
+image:../img/modal.png[,1500,838]
+
+Navigate to your Beanstalk repository. In the top navigation, select
+**Settings**. Then select **Integration**.
+
+image:img/integ.png[,1276,145]
+
+A list of integrations is displayed. Select the integration button that
+is labeled **Modular Webhooks**.
+
+image:img/modular-webhooks.png[,2558,1156]
+
+Next, select the **Add a webhook** button.
+
+image:img/settings-integration.png[,2554,1158]
+
+In the webhook dialog that appears, perform the following steps:
+
+- Name the webhook *buddybuild*.
+
+- Paste the buddybuild webhook URL you first copied into the **URL** field.
+
+- Select the *push*, *create_branch*, *delete_branch*, *create_tag* and
+  *delete_tag* webhook triggers.
+
+- Then click **Activate**
+
+image:img/paste-hook.png[,798,851]
+
+Finally, click **Finish** to complete the Beanstalk webhook setup.
+
+image:img/webhook-done.png[,1114,610]

@@ -1,0 +1,4 @@
+= Android
+
+This section covers Android-specific problems and errors, and provides
+solutions.

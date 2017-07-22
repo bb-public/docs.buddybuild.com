@@ -1,0 +1,33 @@
+= Transfer apps between organizations
+
+Apps that are associated with an organization consume the features and
+limits of the plan which it is on. To transfer apps between
+organizations, follow along below!
+
+Hover over your avatar and select **Billing & Plans**.
+
+image:img/Billings-and-Plans---Menu.png[,1500,800]
+
+Locate the organization that contains the app you want to transfer and
+select **Associated Apps**.
+
+image:img/Billings-and-Plans---Associated-apps---1.png[,3000,1600]
+
+Next, locate the app you want to transfer and click **Switch
+organizations**.
+
+image:img/Billings-and-Plans---Associated-apps---2.png[,3000,1600]
+
+Click on the dropdown and **select the organization** you want to
+transfer your app to.
+
+image:img/Billings-and-Plans---Associated-apps---3.png[,3000,1600]
+
+Click **Save**, and you're done!
+
+image:img/Billings-and-Plans---Associated-apps---4.png[,3000,1600]
+
+Your transferred app will start consuming the resources of the new
+organization immediately!
+
+image:img/Billings-and-Plans---Associated-apps---5.png[,3000,1600]

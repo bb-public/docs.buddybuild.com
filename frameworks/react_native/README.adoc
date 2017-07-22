@@ -1,0 +1,21 @@
+= React Native
+
+Buddybuild natively supports React Native apps - for both iOS and Android.
+
+There are two steps to make sure that your React Native project is ready
+to onboard onto buddybuild.
+
+- Run **react-native run-android** or **react-native run-ios**
+
+- Ensure that you can build and run the project in **Android Studio** or
+  **Xcode**
+
+After you've confirmed that both of those conditions have been meet,
+you're ready to add them to buddybuild!
+
+Instructions for how to add apps to buddybuild can be found here:
+link:../../quickstart/android/select_an_app.adoc[Sign up with
+buddybuild]
+
+**Note:** You'll need to add each platform as a separate app in
+buddybuild.

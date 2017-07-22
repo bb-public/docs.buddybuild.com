@@ -1,0 +1,45 @@
+= Apple Developer Portal
+
+Buddybuild can automatically sync with your Apple Developer Portal
+account. With this integration, buddybuild can:
+
+- link:../quickstart/ios/apple_developer_portal_sync.adoc[Automatically
+  sync your Provisioning Profiles]
+
+- link:../deployments/ios/itunes_connect.adoc[Upload specific builds to
+  iTunes Connect and TestFlight]
+
+In order to enable this integration, buddybuild will require your Apple
+Developer Portal credentials.
+
+Get started by clicking on **App Settings**.
+
+image:img/Builds---Settings.png[,1500,483]
+
+In the left navigation, select **Integrations**, then **Apple Developer
+Portal**.
+
+image:img/Settings---Apple-Developer---menu.png[,1500,800]
+
+Next, select **Connect New Apple Account**.
+
+image:img/Settings---Apple-Developer.png[,1500,800]
+
+Enter your Apple ID and password, then select **Store Credentials**.
+
+image:img/Settings---Apple-Developer---credentials.png[,3000,1600]
+
+[NOTE]
+======
+**Apple ID with Two-Factor Authentication or Two-Step Verification**
+
+If your Apple ID is protected using Two-Factor Authentication or
+Two-Step Verification, you will need to create an
+link:apple_2fa.adoc#app-specific-password[Create an App-Specific
+Password] to deploy your app to iTunes Connect.
+======
+
+Buddybuild will validate your account and might ask you to select a team
+if you're part of multiple.
+
+That's it! You're now integrated with the Apple Developer Portal!

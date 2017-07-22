@@ -1,0 +1,24 @@
+= Deployments
+
+This section covers everything you need to know to deploy builds of your
+project, including deploying builds to your testers, or to online stores
+(iOS App Store, via iTunes Connect, and Google Play).
+
+== General deployment information
+
+. link:automatic.adoc[Automatic deployments]
+. link:manual.adoc[Manual deployments]
+. link:scheduled.adoc[Scheduled deployments]
+. link:focus_message.adoc[Release Notes]
+
+== iOS-specific information
+
+. link:ios/README.adoc[Overview]
+. link:ios/code_signing/README.adoc[Code Signing]
+. link:ios/itunes_connect.adoc[Deploy to iTunes Connect]
+
+== Android-specific information
+
+. link:android/README.adoc[Overview]
+. link:android/keystores/README.adoc[KeyStores]
+. link:android/google_play/README.adoc[Google Play]

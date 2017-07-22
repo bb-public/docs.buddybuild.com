@@ -1,0 +1,45 @@
+= Installing Apple's Updated Intermediate WWDR Certificate
+
+On February 14th, 2016, the original Apple's Intermediate WWDR
+certificate expired. To make sure you can keep building locally, and
+using buddybuild's certificate uploader tools, you should make sure you
+have the latest version of the intermediate certificate.
+
+If you see something like this in keychain, then the problem affects
+you.
+
+image:img/Screen-Shot-2016-02-14-at-7.33.12-PM.png[,570,103]
+
+== Download and install the new certificate
+
+Go to
+link:https://www.apple.com/certificateauthority/[https://www.apple.com/certificateauthority/]
+and download the certificate marked **WWDR Certificate (Expiring
+02/07/23)**.
+
+Once you have downloaded that, double click on it to install it.
+
+== Remove any copies of the old certificate
+
+Simply installing the new certificate is not enough. You must remove
+copies of the old one too.
+
+By default, Keychain does not show expired certificates, which makes
+them had to find.
+
+Go to *View* and make sure you have clicked *Show Expired Certificates*.
+
+image:img/Screen-Shot-2016-02-14-at-7.33.23-PM.png[,372,192]
+
+Then look for **Apple Worldwide Developer Relations Certification
+Authority** in both the login and System keychains. You will see the red
+expired cross next to it. Delete it from both.
+
+image:img/Screen-Shot-2016-02-14-at-7.37.31-PM.png[,395,21]
+
+=== Certificates are now valid
+
+If you've performed all these steps, you will now see that your
+certificates are valid again.
+
+image:img/Screen-Shot-2016-02-14-at-7.30.07-PM.png[,526,102]

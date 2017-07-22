@@ -1,0 +1,52 @@
+= Displaying Build Number in an Android App without SDK Integration
+
+Here's an example of how you can display the build number for your app
+in a debug build.
+
+In this example, we are using BuildConfig in the gradle file whose value
+is set to the standard buddybuild gradle property
+"BUDDYBUILD_BUILD_NUMBER". This will auto-generate BuildConfig
+identifiers that we reference in our source code via
+"BuildConfig.BUILDNO".
+
+[[code-samples]]
+--
+.build.gradle
+[source,groovy]
+----
+
+def bbBuildNumber = "0";
+  if (project.hasProperty('BUDDYBUILD_BUILD_NUMBER')) {
+  bbBuildNumber = project.properties['BUDDYBUILD_BUILD_NUMBER'];
+}
+
+android {
+  defaultConfig {
+    buildConfigField "String", "BUILDNO", "\"${bbBuildNumber}\""
+  }
+  buildTypes {
+    debug {
+      buildConfigField "String", "BUILDNO", "\"${bbBuildNumber}\""
+  }
+}
+----
+--
+
+[[code-samples]]
+--
+.Source Code
+[source,java]
+----
+TextView buildTitle = (TextView)findViewById(R.id.build_title);
+try {
+  if (BuildConfig.BUILDNO.equals("0")) {
+    buildTitle.setText(getString(R.string.debug_build));
+  } else {
+    buildTitle.setText(getString(R.string.build, BuildConfig.BUILDNO));
+  }
+} catch(Exception e) {
+  e.printStackTrace();
+  buildTitle.setText(getString(R.string.debug_build));
+}
+----
+--

@@ -1,0 +1,4 @@
+= Applications
+
+This section describes how you can manage your applications within the
+buddybuild interface.

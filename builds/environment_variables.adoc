@@ -1,0 +1,146 @@
+= Environment Variables
+
+You might have API keys and other secrets that your app needs to consume
+-- either at run time or during a build. However, you might not want to
+check these secrets into your source code to make them available to your
+app.
+
+In order to securely propagate your credentials to your build and app,
+buddybuild provides two sets of variables that you can define:
+
+. Environment Variables (made available to your build time
+  scripts, more details at
+  link:custom_build_steps.adoc[Custom Build Steps])
+
+. link:device_variables_1.adoc#step1[Device Variables] (available your
+  App at run time via the buddybuild SDK)
+
+. link:secure_files.adoc[Secure Files] (files made available to your
+  build time scripts)
+
+You can create default Environment Variables, which are available to all
+branches, or branch-specific environment variables which are only
+available for a specific branch.
+
+[[create]]
+== Creating default environment variables
+
+Start by clicking on **App Settings**.
+
+image:img/Builds---Settings.png[,1500,483]
+
+In the left navigation, select **Build settings**, then the
+**Environment** tab.
+
+image:img/Settings---Environment-variables---menu.png[,1500,459]
+
+In the Environment variables row, click **Configure**.
+
+image:img/Settings---Environment-variables---configure.png[,1500,691]
+
+Enter a name and value to create a default environment variable. Your
+environment variable is now ready to be consumed by your app at build
+time.
+
+image:img/Settings---Environment-variables.png[,1500,760]
+
+== Create environment variables for a specific branch
+
+You can also create environment variables for a specific branch by
+creating a **branch-specific override**.
+
+Under Override build configuration, click **Add a branch** and select
+the branch you would like to create an environment variable for.
+
+image:img/Settings---Variants---Branch-specific-1.png[,1500,555]
+
+Select **Environment variables** from the dropdown and click
+**Configure**.
+
+image:img/Settings---Environment-variables---Branch---configure.png[,1500,540]
+
+Enter a name and value to create your branch-specific environment
+variable.
+
+image:img/Settings---Environment-variables---Branch---create.png[,1500,760]
+
+== Consume the variable in your build
+
+Your environment variables will be automatically consumed by tools that
+are expecting them.
+
+[NOTE]
+======
+- link:#step2a[2a. Consume in your custom build scripts].
+
+- link:#step2b[2b. Consume in Android build.gradle file].
+======
+
+[[step2a]]
+== 2a. Consume in your custom build scripts.
+
+If you would like to access them in your
+link:custom_build_steps.adoc[custom build scripts], use
+the bash variable expansion syntax.
+
+[[code-samples]]
+--
+[source,bash]
+----
+./Example.framework/run $Crashlytics_Token
+----
+--
+
+[[step2b]]
+== 2b. Consume in Android build.gradle file.
+
+If you are building an **Android** app with **Gradle** (Android Studio),
+you can also access them 2 ways inside your `build.gradle` file.
+
+You can access them via `System.getenv()`, like this:
+
+[[code-samples]]
+--
+[source,json]
+----
+buildscript {
+  repositories {
+    jcenter()
+    maven {
+      credentials {
+        username System.getenv("ARTIFACTORY_USERNAME")
+        password System.getenv("ARTIFACTORY_PASSWORD")
+      }
+      url System.getenv("ARTIFACTORY_URL")
+    }
+  }
+  ...
+}
+----
+--
+
+We also put these variables inside `gradle.properties` file, so you can
+access them directly like:
+
+[[code-samples]]
+--
+[source,json]
+----
+buildscript {
+  repositories {
+    jcenter()
+    maven {
+      credentials {
+        username ARTIFACTORY_USERNAME
+        password ARTIFACTORY_PASSWORD
+      }
+      url ARTIFACTORY_URL
+    }
+  }
+  ...
+}
+----
+--
+
+That's it! If you want to consume your variables from within your app,
+follow the link:device_variables_1.adoc[Device Variables] guide.

@@ -1,0 +1,69 @@
+= Automatic deployments
+
+With buddybuild, you can precisely control who gets what build, by
+managing your testers and beta users with deployment groups.
+Automatically deploy to your groups - either per build or on a set
+schedule.
+
+[NOTE]
+======
+**Quick Links**
+
+- link:#step1[Step 1: Configure Deployment Schedule]
+
+- link:#step2[Step 2: Select Branch Targets]
+======
+
+[[step1]]
+== Step 1: Configure Deployment Schedule
+
+To schedule automated deployments, first locate the group you would like
+to automatically deploy to, or create a new group if you prefer.
+
+image:img/Deployments---create-new-group.png[,1500,644]
+
+Next, click on the first dropdown to reveal the deployment options. To
+automatically deploy to a group, select either **each build**, or
+**scheduled**.
+
+[NOTE]
+======
+**Each build**: automatically deploys to a group after each successful
+build +
+**Scheduled**: automatically deploys to a group at a specific time on
+selected days of the week.
+======
+
+image:img/Deployments---automatic---1.png[,1500,528]
+
+[[step2]]
+== Step 2: Select Branch Targets
+
+You can configure your deployment groups to receive builds from specific
+branches. For example, you might only want to push builds from the
+'release' branch to the 'Product Managers' group.
+
+First, click on the branch dropdown to reveal a list of branches. Select
+one or more branches that you would like to automatically deploy from.
+
+image:img/Deployments---automatic---2.png[,1500,709]
+
+Next, select one or more schemes (iOS) or variants (Android) that you
+would like to deploy.
+
+[NOTE]
+======
+**Note: Selecting Multiple Schemes / Variants:**
+
+Buddybuild displays all schemes and variants found across all branches.
+However, buddybuild will only deploy successfully when the
+scheme/variant exists within the building branch.
+======
+
+image:img/Deployments---automatic---3.png[,1500,475]
+
+That's it! The next successful build, based on the criteria you set,
+will automatically be sent to the configured deployment group! 
+
+Curious about deploying manually? link:manual.adoc[Click here ]
+to learn more!

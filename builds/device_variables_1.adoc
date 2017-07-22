@@ -1,0 +1,63 @@
+= Device Variables
+
+You might have API keys and other secrets that your app needs to consume
+-- either at run time or during a build. However, you might not want to
+check these secrets into your source code to make them available to your
+app.
+
+In order to securely propagate your credentials to your build and app,
+buddybuild provides two sets of variables that you can define:
+
+. link:environment_variables.adoc[Environment Variables] (made available
+  to your build time scripts)
+
+. Device Variables (available your App at run time via the buddybuild
+  SDK)
+
+. link:secure_files.adoc[Secure Files] (files made available to your
+  build time scripts)
+
+Let's get started with Device Variables!
+
+[[step1]]
+== Step 1: Create Device Variables in buddybuild
+
+Launch the buddybuild dashboard and click on **App Settings**.
+
+image:img/Builds---Settings.png[,1500,483]
+
+In the left navigation, select **Build settings**, then **Device
+Variables**.
+
+image:img/Settings---Device-variables---menu.png[,1500,800]
+
+Enter a name, value and select **Create**.
+
+image:img/Settings---Device-variables.png[,1500,556]
+
+Buddybuild will securely embed your variable into the app when it is
+built next. Your variable will be consumable via the buddybuild SDK.
+
+== Step 2: Consuming the variable
+
+To consume the variable in your build, substitute the name of your
+device variable where applicable (see example below).
+
+[[code-samples]]
+--
+[source,swift]
+----
+let accessToken = BuddyBuildSDK.valueForDeviceKey("Facebook_Token")
+----
+
+[source,objectivec]
+----
+NSString* accessToken = [BuddyBuildSDK valueForDeviceKey:@"Facebook_Token"];
+----
+--
+
+That's it! For more details, refer to our link:../sdk/api.adoc[SDK API
+guide].
+
+If you want to consume your variables from within your build instead,
+follow the link:environment_variables.adoc[Environment Variables] guide.

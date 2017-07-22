@@ -1,0 +1,69 @@
+= Installing Builds from buddybuild
+
+As a tester or beta user, installing builds and submitting feedback is
+now easier than ever with buddybuild.
+
+Typically, your App's developers will send you an email containing the
+build they would like your valuable feedback on. Open this email and
+click on the 'Install' button.
+
+If this is your first time installing builds from buddybuild, you'll
+need to follow a short registration process.
+
+== Device Registration
+
+Simply tap on the 'Start Registration' button and then install the
+profile. buddybuild uses this registration to identify who sent feedback
+on builds.
+
+image:img/Phone---Registration.png[,1500,840]
+
+== Download and Install Build
+
+If you've already registered, you can download your app right away.
+Simply hit the 'Download' button and then tap 'Install' to install the
+build.
+
+image:img/phone---download_and_install.png[,1500,840]
+
+That's it! Open your App from the home screen. Next, let's
+link:leave_feedback.adoc[leave feedback] for your developers!
+
+== Enterprise Signing
+
+Enterprise organizations need to be trusted before their apps can be
+run. If you hit this error when opening your app, open up your settings
+and trust the organization's profile before launching the app.
+
+image:img/Phone-Registration.png[,914,512]
+
+=== Install the latest successful build from a specific branch
+
+As a tester, you may want to test a specific branch. For example, you
+want to make sure that you're always running the latest version
+available on your "staging" branch. To achieve this you can create an
+install URL which looks like this:
+
+[[code-samples]]
+--
+.Install URL
+[source,url]
+----
+https://dashboard.buddybuild.com/download/:platform?appID=:app_id&branch=:branch
+----
+--
+
+=== Parameters:
+
+. **:platform** -- the platform of your app. Its value can be **"ios"**
+  or **"android"**
+
+. **:app_id** -- the identifier of your app. You can find it in your
+  browser's search bar when you are viewing your app in the buddybuild
+  dashboard.
+
+. **:branch** -- the name of the branch that you want to test. For
+  example **"master"**, **"develop"** or **"staging"**
+
+. **:scheme** -- (Optional) - the scheme to install. This is useful if
+  your branch is building multiple schemes.

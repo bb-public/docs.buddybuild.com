@@ -1,0 +1,15 @@
+{
+  "description": "Documentation for buddbybuild",
+  "author": "The buddybuild team",
+  "language": "en",
+  "styles": {
+    "website": "_css/website.css"
+  },
+  "plugins": [
+    "explicit-url@0.0.3",
+    "-fontsettings",
+    "-sharing"
+  ],
+  "pluginsConfig": {
+  }
+}

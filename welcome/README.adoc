@@ -1,0 +1,14 @@
+= What is buddybuild?
+
+**Buddybuild ties together and automates building, deploying and gathering feedback for mobile apps.**
+
+If you’re developing a mobile application, and are looking for a mobile
+focused continuous integration, continuous deployment and iterative
+feedback solution that takes minutes to setup and get running,
+buddybuild is the right solution for you.
+
+**Buddybuild is very easy to set up! Let's get started!**
+
+- link:../quickstart/github.adoc[Signing up with GitHub]
+- link:../quickstart/bitbucket.adoc[Signing up with Bitbucket]
+- link:../quickstart/ssh.adoc[Signing up with SSH]

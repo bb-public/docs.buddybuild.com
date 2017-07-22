@@ -1,0 +1,77 @@
+= Pull Requests
+
+Buddybuild triggers a new build whenever a pull request is opened and
+when commits are added to an existing pull request. The commit's status
+is updated in GitHub, Bitbucket or GitLab so that you can tell if the
+pull request is safe to merge.
+
+== Merge commit behavior
+
+Rather than simply building each pull request commit, instead buddybuild
+builds the merge of that pull request commit and the tip of its base
+branch. In other words, we build the pull request *merge commit* so that
+you always know if your changes are safe to merge.
+
+Similarly when you click on **Build Now** on an open pull request in
+buddybuild we build the merge commit of the latest pull request commit
+against the tip of its base branch.
+
+== Enabling pull requests
+
+[WARNING]
+=========
+**Looking for Pull Request in buddybuild?**
+
+Pull request features are available for GitHub, Bitbucket or GitLab apps
+**if you have signed up with those services in buddybuild**.
+=========
+
+Visit your build settings and ensure that the **Build pull requests**
+setting is enabled.
+
+image:img/Builds---Settings---Build-pushes-and-Pull-Requests.png[,1500,390]
+
+If **Build pull requests** is enabled then buddybuild will build the
+pull request *merge commit* when you open a pull request and whenever
+you push code to a pull request, instead of building the pull request
+commit.
+
+Otherwise, if **Build pushes** is enabled then buddybuild will build
+your commit when you push code.
+
+== Optimizing your setup
+
+For larger teams we recommend that you enable pull requests by default
+for all branches and build pushes for base branches only. This will
+allow your team to have the latest pull request commit status and the
+latest commit status on your base branches (like *develop* and
+*master*), while reducing the noise of unstable feature branches.
+
+This can be done by ensuring that **Build pushes** is disabled by
+default but enabled for each of your base branches (*develop*, *master*
+and *release* for example) in the **Branch-specific configurations**.
+
+image:img/Builds---Settings---Build-pushes-override.png[,1500,542]
+
+== Cross-repository pull requests
+
+By default, cross-repository pull requests are disabled in buddybuild.
+To enable this feature, first click the **configure** link beneath the
+**Build pull requests** option. Then enable the **Build cross-repository
+pull requests** setting in the dialog that appears.
+
+image:img/Builds---Settings---Pull-Requests-toggle.png[,1500,183]
+
+Buddybuild offers two options that let you control which repositories
+you would like to build pull requests from:
+
+- If the **Build all forked repositories** setting is enabled,
+  buddybuild will create a new build for all incoming pull requests,
+  regardless of which organization or repository it came from.
+
+- For fine-grained control over which repositories buddybuild builds
+  pull requests for, you can disable the **Build all forked
+  repositories** setting and then enable pull requests from forks that
+  you trust.
+
+image:img/Builds---Settings---Pull-Requests-forked-repos.png[,1500,542]

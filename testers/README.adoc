@@ -1,0 +1,9 @@
+= Tester's Manual
+
+This section covers details and procedures for testers of
+buddybuild-built apps, including how to install apps from buddybuild's
+servers, and how to provide feedback:
+
+- link:install_builds.adoc[Install Builds from buddybuild]
+
+- link:leave_feedback.adoc[Leave Feedback]

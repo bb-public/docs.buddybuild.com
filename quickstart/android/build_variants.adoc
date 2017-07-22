@@ -1,0 +1,41 @@
+= Build Variants
+
+== Choose the variants to build
+
+Buddybuild allows you to select default variants to build.
+
+First click on **App Settings**, then select the **Variants** tab.
+
+image:img/Settings---Variants---tab.png[,1500,427]
+
+Next, select the variants you would like to build by default.
+
+image:img/Settings---Variants----Select.png[,1500,555]
+
+== Choose the variants to build for a specific branch
+
+You can also select variants to build for a specific branch by creating
+a **branch-specific override**.
+
+First, click **Add new branch**, then select the branch you would like
+to override.
+
+image:img/Settings---Variants---Branch-specific-1.png[,1500,555]
+
+Next, select **Variants** from the dropdown.
+
+image:img/Settings---Variants---Branch-specific-2.png[,1500,555]
+
+You can now select the variants you would like to build for your
+selected branch.
+
+image:img/Settings---Variants---Branch-specific-3.png[,1500,555]
+
+[NOTE]
+======
+**Product Flavors**
+
+If your project has Product Flavors, buddybuild will display them in the
+variants section. In the case of the screenshots above, **"production"**
+and **"staging"** are the product's Flavors
+======

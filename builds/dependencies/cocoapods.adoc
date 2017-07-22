@@ -1,0 +1,32 @@
+= CocoaPods
+
+link:https://cocoapods.org/[CocoaPods] are a fantastic way to manage
+dependencies. In buddybuild your CocoaPods dependencies are
+automatically detected, downloaded and installed during the build
+process. You do not need to make any configuration changes or install a
+buddybuild specific setup script.
+
+== Recommendations
+
+In order to guarantee repeatability in builds we recommend you check in
+your `Podfile.lock` file into source control. The `Podfile.lock`
+essentially freezes CocoaPods dependency tree versions so you'll have no
+nasty surprises when third party dependencies automatically update.
+
+=== CocoaPods version
+
+Buddybuild reads and switches to the Cocoapods version specified in your
+`Podfile.lock` file (the `COCOAPODS` field). When you run `pod install`
+on your local computer, the `Podfile.lock` file is updated with the
+CocoaPods version that you are using locally.
+
+If you change the CocoaPods version, simply commit the `Podfile.lock`
+file and buddybuild will pickup the changed version on the next build.
+
+=== Minimum CocoaPods Version
+
+We do not officially support cocoapods versions less than 1.0.0. The
+cocoapods community has upgraded the minimum cocoapods version supported
+in their
+link:https://github.com/CocoaPods/Specs/commit/d0ec5a65e80656c8d78e12ff19f251df879e0bc2[master
+specs repo] to 1.0.0 and, as a result, we're following suit.
