@@ -21,7 +21,8 @@ class Deployer:
 
     def deploy(self):
         """Main function of the script."""
-        if self._pull_request:  # we don't want to deploy anything but PRs
+        # crazy env var 'syntax'
+        if self._pull_request != 'false':  # we don't want to deploy anything but PRs
             self.deploy_pull_request()
 
     def deploy_branch(self):
