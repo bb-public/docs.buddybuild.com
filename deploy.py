@@ -24,6 +24,8 @@ class Deployer:
         # crazy env var 'syntax'
         if self._pull_request != 'false':  # we don't want to deploy anything but PRs
             self.deploy_pull_request()
+        if self._branch:
+            self.deploy_branch()
 
     def deploy_branch(self):
         """Deploy whenever a branch is pushed to github."""
