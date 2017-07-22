@@ -48,7 +48,7 @@ endif
 book: _book tidy
 
 _book: $(book_targets)
-	./node_modules/.bin/ build
+	./node_modules/.bin/gitbook build
 
 # Remove all built artifacts.
 clean:
@@ -82,4 +82,4 @@ js:
 debug: _debug tidy
 
 _debug: $(book_targets)
-	./node_modules/.bin/ build --log=debug --debug
+	./node_modules/.bin/gitbook build --log=debug --debug
