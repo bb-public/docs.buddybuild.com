@@ -38,7 +38,7 @@ class Deployer:
             self.deploy_surge()
 
 
-    def deploy_s3():
+    def deploy_s3(self):
         command = 'aws s3 sync --delete --region ' + self._bucketRegion + ' --only-show-errors _book/ ' + self._bucketURI
         print('Running command: `{}`'.format(command))
         os.system(command)
