@@ -41,7 +41,7 @@ class Deployer:
     def deploy_s3(self):
         command = 'aws s3 sync --delete --region ' + self._bucketRegion + ' --only-show-errors _book/ ' + self._bucketURI
         print('Running command: `{}`'.format(command))
-        retval = os.system(command):
+        retval = os.system(command)
         if retval:
             raise sys.exit(retval)
 
@@ -61,7 +61,7 @@ class Deployer:
             command += ' --domain {}'.format(self.domain)
 
         print('Running command: `{}`'.format(command))
-        retval = os.system(command):
+        retval = os.system(command)
         if retval:
             raise sys.exit(retval)
 
