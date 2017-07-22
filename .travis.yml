@@ -5,6 +5,9 @@ os:
   - linux
 node_js:
   - 7
+branches:
+  only:
+  - master
 before_install:
   - pip3 install requests
   - make setup
