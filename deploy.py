@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Deploy the website to surge."""
 
-import os
+import os, sys
 import requests
 
 
@@ -41,7 +41,9 @@ class Deployer:
     def deploy_s3(self):
         command = 'aws s3 sync --delete --region ' + self._bucketRegion + ' --only-show-errors _book/ ' + self._bucketURI
         print('Running command: `{}`'.format(command))
-        os.system(command)
+        retval = os.system(command):
+        if retval:
+            raise sys.exit(retval)
 
     def deploy_pull_request(self):
         """Deploy whenever a pull request is made."""
@@ -59,7 +61,9 @@ class Deployer:
             command += ' --domain {}'.format(self.domain)
 
         print('Running command: `{}`'.format(command))
-        os.system(command)
+        retval = os.system(command):
+        if retval:
+            raise sys.exit(retval)
 
     def _post_comment(self):
         """Post a comment on the PR linking to the deployment."""
