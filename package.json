@@ -36,9 +36,7 @@
     "readable-stream": "^2.2.9",
     "safe-buffer": "^5.0.1",
     "string_decoder": "^1.0.1",
-    "util-deprecate": "^1.0.2"
-  },
-  "devDependencies": {
+    "util-deprecate": "^1.0.2",
     "gitbook-cli": "2.3.0"
   },
   "repository": {
