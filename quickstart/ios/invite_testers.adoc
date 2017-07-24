@@ -70,7 +70,7 @@ specified.
 ======
 **Wondering what your testers receive?**
 
-Follow the link:../../welcome/testers/install_builds.adoc[Tester's
+Follow the link:../../testers/install_builds.adoc[Tester's
 Manual] to see their experience.
 ======
 

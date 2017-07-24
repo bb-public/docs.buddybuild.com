@@ -61,7 +61,7 @@ image:img/Bitbucket---Pipelines---5.png[,3000,1188]
 
 Add BUDDYBUILD_TOKEN with your account token, and BUDDYBUILD_APPID with
 the App ID of your app.
-link:https://apidocs.buddybuild.com/builds/post-trigger.html[Not sure
+link:http://apidocs.buddybuild.com/builds/post-trigger.html[Not sure
 how to find it? Click here!]
 
 image:img/Bitbucket---Pipelines---7.png[,3000,1188]

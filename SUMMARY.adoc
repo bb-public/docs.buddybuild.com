@@ -47,17 +47,17 @@
 ... link:repository/visual_studio_online/webhook.adoc[Webhook]
 .. link:repository/webhooks.adoc[Webhooks]
 
-. link:applications/README.adoc[Applications]
-.. link:applications/access.adoc[Manage Access]
-.. link:applications/rename.adoc[Rename]
-.. link:applications/change_repo_url.adoc[Change repo URL]
-.. link:applications/delete.adoc[Delete]
-
 . link:builds/README.adoc[Builds]
 .. link:builds/dependencies/README.adoc[Managing dependencies]
 ... link:builds/dependencies/submodules.adoc[Submodules]
 ... link:builds/dependencies/cocoapods.adoc[CocoaPods]
 ... link:builds/dependencies/carthage.adoc[Carthage]
+
+.. link:builds/frameworks/README.adoc[Cross-platform frameworks]
+... link:builds/frameworks/react_native/README.adoc[React Native]
+.... link:builds/frameworks/react_native/log_javascript.adoc[Log JavaScript using the buddybuild SDK (iOS)]
+... link:builds/frameworks/cordova-ionic/README.adoc[Cordova / Ionic]
+... link:builds/frameworks/meteor/README.adoc[Meteor]
 
 .. link:builds/build_logs.adoc[Build Details and Logs]
 .. link:builds/custom_build_steps.adoc[Custom Build Steps]
@@ -74,12 +74,6 @@
 .. link:builds/status_badges.adoc[Status Badges]
 .. link:builds/xcode_versions.adoc[Xcode Versions and Xcode Preview]
 .. link:builds/download_ipa.adoc[Downloading Build Artifacts]
-
-. link:frameworks/README.adoc[Frameworks]
-.. link:frameworks/react_native/README.adoc[React Native]
-... link:frameworks/react_native/log_javascript.adoc[Log JavaScript using the buddybuild SDK (iOS)]
-.. link:frameworks/cordova-ionic/README.adoc[Cordova / Ionic]
-... link:frameworks/cordova-ionic/meteor.adoc[Meteor]
 
 . link:tests/README.adoc[Tests]
 .. link:tests/ios/README.adoc[iOS]
@@ -112,14 +106,6 @@
 .... link:deployments/android/google_play/automatic.adoc[Automatic]
 .... link:deployments/android/google_play/manual.adoc[Manual]
 
-. link:sdk/README.adoc[buddybuild SDK]
-.. link:sdk/automatic_update.adoc[Automatic Update]
-.. link:sdk/feedback_reporter.adoc[Feedback Reporter]
-.. link:sdk/usage_tracking.adoc[Usage Tracking]
-.. link:sdk/feature_settings.adoc[Feature Settings]
-.. link:sdk/integration.adoc[Manual Installation (iOS)]
-.. link:sdk/api.adoc[SDK API]
-
 . link:integrations/README.adoc[Integrations]
 .. link:integrations/itunes_connect.adoc[Apple Developer Portal]
 .. link:integrations/apple_2fa.adoc[Using an Apple Account with Two-Factor Authentication]
@@ -132,9 +118,23 @@
 .. link:integrations/slack.adoc[Slack]
 .. link:integrations/trello.adoc[Trello]
 
+. link:sdk/README.adoc[buddybuild SDK]
+.. link:sdk/automatic_update.adoc[Automatic Update]
+.. link:sdk/feedback_reporter.adoc[Feedback Reporter]
+.. link:sdk/usage_tracking.adoc[Usage Tracking]
+.. link:sdk/feature_settings.adoc[Feature Settings]
+.. link:sdk/integration.adoc[Manual Installation (iOS)]
+.. link:sdk/api.adoc[SDK API]
+
 . link:testers/README.adoc[Tester's Manual]
 .. link:testers/install_builds.adoc[Installing Builds from buddybuild]
 .. link:testers/leave_feedback.adoc[Leaving Feedback]
+
+. link:applications/README.adoc[Managing your Applications]
+.. link:applications/access.adoc[Manage Access]
+.. link:applications/rename.adoc[Rename]
+.. link:applications/change_repo_url.adoc[Change repo URL]
+.. link:applications/delete.adoc[Delete]
 
 . link:billing/README.adoc[Billing and Plans]
 .. link:billing/create_organization.adoc[Create an organization]

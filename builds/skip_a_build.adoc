@@ -11,6 +11,12 @@ the commit message of the head commit. You can use the **Build Now**
 button on the Builds page to build the tip of a branch if you decide
 that you want to run the build after all!
 
+[TIP]
+=====
+Do you want to avoid builds when select files are committed? Check out
+link:selective_builds.adoc[Selective builds].
+=====
+
 == Skipping all pull request builds
 
 If you don't want to build any builds associated with a pull request,

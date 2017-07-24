@@ -10,8 +10,10 @@ Here is a high-level summary of buddybuild's build process:
   A build can be triggered in several ways:
 +
 --
+- whenever you push new commits to your repository,
+
 - whenever a link:pull_requests.adoc[pull request] is created in your
-  link:repository/README.adoc[repository],
+  link:../repository/README.adoc[repository],
 
 - on a link:schedule_builds.adoc[schedule],
 

@@ -12,7 +12,7 @@ Without it, buddybuild won't be able to build your project.
 First, we need to tell buddybuild how to build your meteor project.  We
 can do this by having a buddybuild_postclone.sh file in the root of your
 repository. You can find more information about our custom build steps
-link:../../builds/custom_build_steps.adoc[here].
+link:../../custom_build_steps.adoc[here].
 
 [[code-samples]]
 --
@@ -26,7 +26,7 @@ meteor build $PLATFORM --server $SERVER
 --
 
 Once you have that file in your repository, follow the steps to
-link:../../quickstart/android/select_an_app.adoc[sign up with
+link:../../../quickstart/android/select_an_app.adoc[sign up with
 buddybuild]. Your first build will fail, because buddybuild doesn't yet
 know about the `$PLATFORM` and `$SERVER` environment variables we are
 using in the post clone script.

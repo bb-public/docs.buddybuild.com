@@ -14,8 +14,8 @@ After you've confirmed that both of those conditions have been meet,
 you're ready to add them to buddybuild!
 
 Instructions for how to add apps to buddybuild can be found here:
-link:../../quickstart/android/select_an_app.adoc[Sign up with
+link:../../../quickstart/android/select_an_app.adoc[Sign up with
 buddybuild]
 
-**Note:** You'll need to add each platform as a separate app in
-buddybuild.
+[NOTE]
+You'll need to add each platform as a separate app in buddybuild.

@@ -1007,6 +1007,10 @@ normalize-package-data@^2.0.0, "normalize-package-data@~1.0.1 || ^2.0.0", normal
     semver "2 || 3 || 4 || 5"
     validate-npm-package-license "^3.0.1"
 
+now@^7.2.4:
+  version "7.2.4"
+  resolved "https://registry.yarnpkg.com/now/-/now-7.2.4.tgz#eeeddb2e7219133f1f1e183da0c691ae406a4925"
+
 npm-cache-filename@~1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/npm-cache-filename/-/npm-cache-filename-1.0.2.tgz#ded306c5b0bfc870a9e9faf823bc5f283e05ae11"

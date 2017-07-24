@@ -15,6 +15,10 @@ When determining the list of files that have changed for a pull request,
 buddybuild considers all files associated with the pull request, from the
 branch point to the latest change.
 
+[TIP]
+Do you want to avoid builds for specific commits? Check out
+link:skip_a_build.adoc[Skipping a build].
+
 == Steps to set up selective builds
 
 . Visit link:https://dashboard.buddybuild.com/[the buddybuild dashboard].

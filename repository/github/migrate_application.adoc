@@ -51,4 +51,4 @@ To get started go to **My Profile**, then choose
 link:https://dashboard.buddybuild.com/account/github-migration[GitHub
 Migration].
 
-image:img/migrate_application[,247,167]
+image:img/migrate_application.png["The GitHub Migration link",247,167]
