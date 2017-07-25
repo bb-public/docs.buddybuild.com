@@ -1,6 +1,6 @@
 = Topics
 
-. link:README.adoc[Welcome to buddybuild!]
+. link:INDEX.adoc[Welcome to buddybuild!]
 .. link:welcome/README.adoc[What is buddybuild?]
 
 . link:quickstart/README.adoc[Quickstart]
