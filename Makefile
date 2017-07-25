@@ -67,7 +67,7 @@ spell:
 	find . -name "*.adoc" -exec hunspell -d _dicts/buddybuild,_dicts/en_US -l '{}' \; | sort -u
 
 # Run htmlproofer on the artifacts to catch bad images, links, etc.
-proof: clean _book tidy
+proof: clean all tidy
 	@command -v htmlproofer >/dev/null 2>&1 || { echo >&2 "htmlproofer required for link testing."; exit 1; }
 	htmlproofer --url-ignore="#" _book
 
