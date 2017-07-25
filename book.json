@@ -3,7 +3,7 @@
   "author": "The buddybuild team",
   "language": "en",
   "structure": {
-    "readme": "INDEX.adoc"
+    "readme": "index.adoc"
   },
   "styles": {
     "website": "_css/website.css"
