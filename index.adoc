@@ -6,7 +6,7 @@
 image:_img/header_graphic.svg[buddybuild, align="center"]
 
 [.land-head]
-Welcome to the new buddybuild docs!
+Welcome to buddybuild docs!
 
 [.land-subhead]
 pass:[<nobr>]Buddybuild is a pass:[<wbr/>]continuous integration,
