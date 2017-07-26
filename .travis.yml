@@ -5,12 +5,15 @@ os:
   - linux
 node_js:
   - 7
+rvm: 2.0.0
 branches:
   only:
   - master
 before_install:
   - pip3 install requests
   - pip install --upgrade --user awscli
+before_script:
+  - bundle exec danger
 script:
   - make
 after_success:
