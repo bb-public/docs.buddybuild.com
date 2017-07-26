@@ -12,6 +12,7 @@ branches:
 before_install:
   - pip3 install requests
   - pip install --upgrade --user awscli
+  - bundle install
 before_script:
   - bundle exec danger
 script:
