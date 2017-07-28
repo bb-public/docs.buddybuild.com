@@ -5,17 +5,14 @@ os:
   - linux
 node_js:
   - 7
-rvm: 2.0.0
 branches:
   only:
   - master
 before_install:
   - pip3 install requests
   - pip install --upgrade --user awscli
-  - bundle install
-before_script:
-  - bundle exec danger
 script:
+  - make test || exit 1
   - make
 after_success:
   - npm install -g surge
