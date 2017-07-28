@@ -11,8 +11,9 @@ branches:
 before_install:
   - pip3 install requests
   - pip install --upgrade --user awscli
+  - bundle install
 script:
-  - make test || exit 1
+  - make test
   - make
 after_success:
   - npm install -g surge
