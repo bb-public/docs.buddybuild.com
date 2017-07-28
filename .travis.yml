@@ -5,13 +5,17 @@ os:
   - linux
 node_js:
   - 7
+addons:
+  apt:
+    packages:
+    - hunspell
+    - hunspell-en-us
 branches:
   only:
   - master
 before_install:
   - pip3 install requests
   - pip install --upgrade --user awscli
-  - apt-get install -y hunspell hunspell-en-us
   - bundle install
 script:
   - make test && make
