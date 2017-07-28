@@ -11,8 +11,7 @@ branches:
 before_install:
   - pip3 install requests
   - pip install --upgrade --user awscli
-  - sudo apt-get -qq update
-  - sudo apt-get install -y hunspell hunspell-en-us
+  - apt-get install -y hunspell hunspell-en-us
   - bundle install
 script:
   - make test && make
