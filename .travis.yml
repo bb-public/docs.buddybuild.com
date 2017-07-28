@@ -11,10 +11,12 @@ branches:
 before_install:
   - pip3 install requests
   - pip install --upgrade --user awscli
+  - sudo apt-get -qq update
+  - sudo apt-get install -y hunspell hunspell-en-us
   - bundle install
 script:
   - make test
-  - make
+  - make || exit 1
 after_success:
   - npm install -g surge
   - chmod ugo+x ./deploy.py
