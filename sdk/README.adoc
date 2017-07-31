@@ -1,3 +1,10 @@
 = buddybuild SDK
 
-This section covers the buddybuild SDK.
+This section covers the buddybuild SDK:
+
+- link:sdk/automatic_update.adoc[Automatic Update]
+- link:sdk/feedback_reporter.adoc[Feedback Reporter]
+- link:sdk/usage_tracking.adoc[Usage Tracking]
+- link:sdk/feature_settings.adoc[Feature Settings]
+- link:sdk/integration.adoc[Manual Installation (iOS)]
+- link:sdk/api.adoc[SDK API]

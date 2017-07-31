@@ -1,4 +1,7 @@
 = Android
 
 This section covers buddybuild's infrastructure for testing Android
-applications.
+applications:
+
+- link:android/physical_devices.adoc[UI tests on physical devices]
+- link:android/virtual_devices.adoc[UI tests on virtual devices]
