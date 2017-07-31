@@ -8,6 +8,7 @@ node_js:
 addons:
   apt:
     packages:
+    - ca-certificates
     - hunspell
     - hunspell-en-us
 branches:
