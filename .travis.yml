@@ -9,7 +9,6 @@ addons:
   apt:
     packages:
     - hunspell
-    - hunspell-en-us
 branches:
   only:
   - master
