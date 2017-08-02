@@ -20,7 +20,7 @@ before_install:
 script:
   - make test
 after_success:
-  - node ./docsRewriteToStubs.js
+  - node ./docsRewriteToStubs.js || exit 1
   - npm install -g surge
   - chmod ugo+x ./deploy.py
   - ./deploy.py || exit 1
