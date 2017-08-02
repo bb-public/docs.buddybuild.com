@@ -15,7 +15,7 @@ class Deployer:
         self._branch = os.environ['TRAVIS_BRANCH']
         self._github_token = os.environ['GITHUB_TOKEN']
         os.environ['AWS_SECRET_ACCESS_KEY'] # just to raise an exception if missing
-        os.environ['AWS_SECRET_KEY_ID']
+        os.environ['AWS_ACCESS_KEY_ID']
         self._bucketURI = os.environ['AWS_BUCKET_URL'] # e.g. s3://apidocs.buddybuild.com'
         self._bucketRegion = os.environ['AWS_BUCKET_REGION'] # e.g. us-west-2  
         self.domain = None

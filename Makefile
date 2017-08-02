@@ -69,7 +69,7 @@ spell:
 # Run htmlproofer on the artifacts to catch bad images, links, etc.
 proof: clean all tidy
 	@command -v htmlproofer >/dev/null 2>&1 || { echo >&2 "htmlproofer required for link testing."; exit 1; }
-	htmlproofer --url-ignore="#" _book
+	htmlproofer --url-ignore="#" --disable-external _book
 
 css:
 	cp _css/* _book/_css/
