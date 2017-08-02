@@ -3,7 +3,7 @@
 This section describes how you can manage your applications within the
 buddybuild interface:
 
-- link:applications/access.adoc[Manage Access]
-- link:applications/rename.adoc[Rename]
-- link:applications/change_repo_url.adoc[Change repo URL]
-- link:applications/delete.adoc[Delete]
+- link:access.adoc[Manage Access]
+- link:rename.adoc[Rename]
+- link:change_repo_url.adoc[Change repo URL]
+- link:delete.adoc[Delete]

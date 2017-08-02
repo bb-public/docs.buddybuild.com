@@ -3,7 +3,7 @@
 This section describes how buddybuild charges for its services, and how
 you adjust your billing:
 
-- link:billing/create_organization.adoc[Create an organization]
-- link:billing/change_plan.adoc[Change your plan]
-- link:billing/transfer_apps.adoc[Transfer apps between organizations]
-- link:billing/payment_details.adoc[Change payment details]
+- link:create_organization.adoc[Create an organization]
+- link:change_plan.adoc[Change your plan]
+- link:transfer_apps.adoc[Transfer apps between organizations]
+- link:payment_details.adoc[Change payment details]

@@ -3,8 +3,8 @@
 This section covers buddybuild's infrastructure for testing iOS
 applications:
 
-- link:ios/tests.adoc[Unit tests]
-- link:ios/code_coverage.adoc[Code coverage]
-- link:ios/configure_ui_tests_video_recording.doc[Configure UI tests for
+- link:tests.adoc[Unit tests]
+- link:code_coverage.adoc[Code coverage]
+- link:configure_ui_tests_video_recording.adoc[Configure UI tests for
   video replay]
 
