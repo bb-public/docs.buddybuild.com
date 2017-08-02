@@ -5,15 +5,21 @@ os:
   - linux
 node_js:
   - 7
+addons:
+  apt:
+    packages:
+    - hunspell
 branches:
   only:
   - master
 before_install:
   - pip3 install requests
   - pip install --upgrade --user awscli
+  - bundle install
 script:
-  - make
+  - make test
 after_success:
+  - node ./docsRewritesToStubs.js . || exit 1
   - npm install -g surge
   - chmod ugo+x ./deploy.py
   - ./deploy.py || exit 1
