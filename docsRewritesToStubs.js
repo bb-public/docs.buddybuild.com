@@ -5,8 +5,7 @@ const csv = require('csv-parser');
 const fs = require('fs');
 const path = require('path');
 
-const sourceFolder = '.'
-const host = 'docs.buddybuild.com'
+const sourceFolder = process.argv[2];
 
 function mkdirp(filepath) {
   const dirname = path.dirname(filepath);
@@ -20,9 +19,10 @@ function mkdirp(filepath) {
 fs.createReadStream(`${sourceFolder}/rewrites.csv`)
   .pipe(csv())
   .on('data', data => {
-    console.log("writing rewrite", data)
-    const destination = `http://${host}/${data.docs}`;
+    const host = data.docs ? 'docs.buddybuild.com' : 'apidocs.buddybuild.com';
+    const destination = `https://${host}/${data.docs || data.apidocs}`;
     const source = data.source.endsWith('.html') ? data.source : `${data.source}/index.html`;
+
     const sourcePath = `${sourceFolder}/_book/${source}`;
     mkdirp(sourcePath);
     fs.writeFileSync(sourcePath, `<meta http-equiv='refresh' content='0; url=${destination}'>`);
