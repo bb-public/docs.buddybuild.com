@@ -2,3 +2,40 @@
 
 This section covers common problems and errors that buddybuild users
 have encountered, and provides solutions that could help you.
+
+
+== General problems
+
+- link:user_not_getting_alert_when_a_new_version_of_app_is_available.adoc[User not getting alert when a new version of app is available]
+
+
+== Platform-specific problems
+
+[cols="1a,1a", options="header"]
+|===
+| iOS
+| Android
+
+|
+- link:ios/common_build_errors.adoc[Common iOS build errors]
+- link:ios/missing_podfilelock.adoc[Missing Podfile.lock]
+- link:ios/missing_schemes.adoc[Missing schemes]
+- link:ios/getting_device_logs_from_xcode.adoc[Getting device logs from Xcode]
+- link:ios/install_builds.adoc[Installing builds]
+- link:ios/spec_repo_not_compatible_with_older_cocoapods_versions.adoc[Spec repo not compatible with older CocoaPods versions]
+- link:ios/install_updated_wwdr_cert.adoc[Installing Apple's Updated Intermediate WWDR Certificate]
+- link:ios/core_data-generated_classes_not_found_by_xcode_8_during_the_build.adoc[Core Data generated classes not found by Xcode 8 during the build]
+
+|
+- link:android/common.adoc[Common Android build errors]
+- link:android/docker_environment.adoc[Tools and Platform versions for Android / Docker environment]
+- link:android/google_play.adoc[Google Play Errors]
+- link:android/common_google_play_deployment_errors.adoc[Google Play Deployment]
+- link:android/build_number_without_sdk.adoc[Displaying Build Number in an Android App without SDK Integration]
+|===
+
+
+== Development framework problems
+
+- link:frameworks/cordova_ionic.adoc[Common Cordova / Ionic build errors]
+- link:frameworks/react_native.adoc[Common React Native errors]

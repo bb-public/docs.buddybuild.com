@@ -1,4 +1,13 @@
 = iOS
 
 This section covers iOS-specific problems and errors, and provides some
-solutions.
+solutions:
+
+- link:common_build_errors.adoc[Common iOS build errors]
+- link:missing_podfilelock.adoc[Missing Podfile.lock]
+- link:missing_schemes.adoc[Missing schemes]
+- link:getting_device_logs_from_xcode.adoc[Getting device logs from Xcode]
+- link:install_builds.adoc[Installing builds]
+- link:spec_repo_not_compatible_with_older_cocoapods_versions.adoc[Spec repo not compatible with older CocoaPods versions]
+- link:install_updated_wwdr_cert.adoc[Installing Apple's Updated Intermediate WWDR Certificate]
+- link:core_data-generated_classes_not_found_by_xcode_8_during_the_build.adoc[Core Data generated classes not found by Xcode 8 during the build]

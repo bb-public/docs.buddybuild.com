@@ -1,3 +1,6 @@
 = iOS
 
-This section covers deployment details specific to iOS applications.
+This section covers deployment details specific to iOS applications:
+
+- link:code_signing/README.adoc[Code Signing]
+- link:itunes_connect.adoc[iTunes Connect]

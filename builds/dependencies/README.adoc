@@ -1,4 +1,8 @@
 = Dependencies
 
 This section covers how to manage your app's dependencies during a
-build.
+build:
+
+- link:submodules.adoc[Submodules]
+- link:cocoapods.adoc[Cocoapods]
+- link:carthage.adoc[Carthage]
