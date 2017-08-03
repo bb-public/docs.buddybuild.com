@@ -6,19 +6,25 @@ project, including deploying builds to your testers, or to online stores
 
 == General deployment information
 
-. link:automatic.adoc[Automatic deployments]
-. link:manual.adoc[Manual deployments]
-. link:scheduled.adoc[Scheduled deployments]
-. link:focus_message.adoc[Release Notes]
+- link:automatic.adoc[Automatic deployments]
+- link:manual.adoc[Manual deployments]
+- link:scheduled.adoc[Scheduled deployments]
+- link:focus_message.adoc[Release Notes]
 
-== iOS-specific information
+== Platform-specific information
 
-. link:ios/README.adoc[Overview]
-. link:ios/code_signing/README.adoc[Code Signing]
-. link:ios/itunes_connect.adoc[Deploy to iTunes Connect]
+[cols="1a,1a", options="header"]
+|===
+| iOS
+| Android
 
-== Android-specific information
+|
+- link:ios/README.adoc[Overview]
+- link:ios/code_signing/README.adoc[Code Signing]
+- link:ios/itunes_connect.adoc[Deploy to iTunes Connect]
 
-. link:android/README.adoc[Overview]
-. link:android/keystores/README.adoc[KeyStores]
-. link:android/google_play/README.adoc[Google Play]
+|
+- link:android/README.adoc[Overview]
+- link:android/keystores/README.adoc[KeyStores]
+- link:android/google_play/README.adoc[Google Play]
+|===

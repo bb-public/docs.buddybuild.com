@@ -336,7 +336,7 @@ correctly into the www folder during an ionic build.
 This indicates that the version of the Cordova Android tools is too old
 for our environment.
 
-Make sure that the version of Cordova Android Tools is > 6.+ under the
+Make sure that the version of Cordova Android Tools is > 6.2.0+ under the
 **Settings** tab.
 
 === Error: Cannot find `plugin.xml` for plugin "blah". Please try adding it again.

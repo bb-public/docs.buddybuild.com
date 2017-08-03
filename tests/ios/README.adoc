@@ -1,4 +1,10 @@
 = iOS
 
 This section covers buddybuild's infrastructure for testing iOS
-applications.
+applications:
+
+- link:tests.adoc[Unit tests]
+- link:code_coverage.adoc[Code coverage]
+- link:configure_ui_tests_video_recording.adoc[Configure UI tests for
+  video replay]
+

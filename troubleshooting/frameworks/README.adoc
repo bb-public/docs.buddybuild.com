@@ -1,4 +1,8 @@
 = Frameworks
 
-This section covers link:../frameworks/README.adoc[framework-specific]
-problems and errors.
+This section covers
+link:../../builds/frameworks/README.adoc[framework-specific] problems
+and errors:
+
+- link:cordova_ionic.adoc[Common Cordova / Ionic build errors]
+- link:react_native.adoc[Common React Native errors]

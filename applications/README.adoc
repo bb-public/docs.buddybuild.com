@@ -1,4 +1,9 @@
 = Managing your Applications
 
 This section describes how you can manage your applications within the
-buddybuild interface.
+buddybuild interface:
+
+- link:access.adoc[Manage Access]
+- link:rename.adoc[Rename]
+- link:change_repo_url.adoc[Change repo URL]
+- link:delete.adoc[Delete]

@@ -1,4 +1,15 @@
 = Integrations
 
 This section covers all of the integrations that buddybuild currently
-supports.
+supports:
+
+- link:itunes_connect.adoc[Apple Developer Portal]
+- link:apple_2fa.adoc[Using an Apple Account with Two-Factor Authentication]
+- link:bitbucket_pipelines.adoc[Bitbucket Pipelines]
+- link:ccmenu.adoc[CCMenu]
+- link:github_issues.adoc[GitHub Issues]
+- link:hipchat.adoc[HipChat]
+- link:jira.adoc[JIRA]
+- link:pivotal_tracker.adoc[Pivotal Tracker]
+- link:slack.adoc[Slack]
+- link:trello.adoc[Trello]
