@@ -1,16 +1,22 @@
-= Downloading Build Artifacts
+= Downloading build artifacts
 
-Buddybuild will automatically manage your app bundles and dSYMs securely
-for you. If you wish to deploy your app bundle to your testers and beta
+Buddybuild automatically manages your app bundles and dSYMs securely for
+you. If you wish to deploy your app bundle to your testers and beta
 users, use the **Deployments** tab.
+
+[NOTE]
+Build artifacts are not retained, nor are they available for download,
+unless you have
+link:../deployments/ios/code_signing/certificate_management.adoc[uploaded
+certificates and provisioning profiles].
 
 Buddybuild can automatically collect your crash reports and symbolicate
 them with your App's dSYMs producing human-readable crash reports. To
 enable this feature, link:../quickstart/ios/integrate_sdk.adoc[integrate
 the buddybuild SDK].
 
-You'll never have to manage your artifacts yourself, however, If you
+You never have to manage your artifacts yourself. However, if you
 require access to them, download them from the build details page of a
-specific build.
+specific build:
 
 image:img/Builds---Details---iOS-Artifacts.png[,1500,800]

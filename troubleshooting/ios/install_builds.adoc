@@ -1,5 +1,13 @@
 = Trouble installing builds on iOS
 
+== No build available to download
+
+Buddybuild does not retain, nor does it make available for download, any
+builds unless you have
+link:../deployments/ios/code_signing/certificate_management.adoc[uploaded
+certificates and provisioning profiles].
+
+
 == Build will not install on a device
 
 Almost every case of an app not installing on a device is caused by an
@@ -9,6 +17,7 @@ buddybuild's attempt to install it.
 In particular, buddybuild cannot install on top of an App Store version.
 Please delete any App Store versions before attempting to install an app
 through buddybuild.
+
 
 == "Unable to Download App" message
 
@@ -27,6 +36,7 @@ Sometimes a "Rebuild without cache" might get you going, but if you are
 still experiencing this, we recommend you
 link:getting_device_logs_from_xcode.adoc[get the device logs] and reach
 out to us on Intercom.
+
 
 == Private Browsing
 
@@ -48,6 +58,7 @@ on your device.
 
 image:img/Allow-Cookies.png[,1032,903]
 
+
 == Nothing happens when trying to register the device or to install the app
 
 
@@ -59,6 +70,7 @@ The issue can be fixed by forcing the link to open in Safari. Then to
 install from Safari:
 
 image:img/SFSafariViewController.png[,1242,2144]
+
 
 === Profile installation Failed: Couldn't communicate with a helper application
 
