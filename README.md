@@ -4,6 +4,8 @@ This repo contains the current buddybuild documentation source and
 toolchain for producing the HTML available at
 https://docs.buddybuild.com/.
 
+Note: buddybuild's REST API documentation exists in a separate repo:
+https://github.com/buddybuild-public/apidocs.buddybuild.com
 
 ## Copyright
 
@@ -12,14 +14,10 @@ under the Creative Common Attribution-NonCommerical-NoDerivatives 4.0
 International license ([CC BY-NC-ND
 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)).
 
-You are free to share, copy, and redistribute the material in this repo
-in any medium or format. Buddybuild cannot revoke these freedoms so long
-as you follow the license terms.
-
 
 ## Purpose
 
-Buddybuild makes this repo available for several reasons:
+Buddybuild makes this repo available for a couple of reasons:
 
 * GitHub issues make it easy to request specific fixes to the
   documentation.
@@ -30,9 +28,6 @@ Buddybuild makes this repo available for several reasons:
 
   Note: We review all pull requests, but we cannot promise to approve all
   submissions.
-
-* Provide a working implementation of a [GitBook](https://gitbook.com/)
-  book.
 
 
 ## Authors
