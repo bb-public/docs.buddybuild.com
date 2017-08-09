@@ -227,6 +227,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
       label: 'buddybuild links',
       className: 'bblinks',
       position: 'right',
+      index: 0,
       dropdown: [
         [
           {

@@ -684,7 +684,7 @@ h6, .markdown-section h6 {
   margin: 10px 0 0 0;
   position: relative;
   display: inline-block;
-  width: calc(100% - 100px);
+  width: calc(100% - 140px);
 }
 
 #book-search-input:before {
