@@ -5,10 +5,13 @@ you. If you wish to deploy your app bundle to your testers and beta
 users, use the **Deployments** tab.
 
 [NOTE]
-Build artifacts are not retained, nor are they available for download,
-unless you have
-link:../deployments/ios/code_signing/certificate_management.adoc[uploaded
-certificates and provisioning profiles].
+If you have not yet uploaded a
+link:http://localhost/~ewan/docs2/deployments/ios/code_signing/index.html[code
+signing certificate], buddybuild cannot properly sign your application.
+This means that a successful build cannot be installed on a device, and
+so buddybuild does not make the build artifact available for download.
+Tests can be run successfully, as unsigned builds can be installed in a
+simulator.
 
 Buddybuild can automatically collect your crash reports and symbolicate
 them with your App's dSYMs producing human-readable crash reports. To

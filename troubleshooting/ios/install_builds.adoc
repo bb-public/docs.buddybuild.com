@@ -2,10 +2,13 @@
 
 == No build available to download
 
-Buddybuild does not retain, nor does it make available for download, any
-builds unless you have
-link:../deployments/ios/code_signing/certificate_management.adoc[uploaded
-certificates and provisioning profiles].
+If you have not yet uploaded a
+link:http://localhost/~ewan/docs2/deployments/ios/code_signing/index.html[code
+signing certificate], buddybuild cannot properly sign your application.
+This means that a successful build cannot be installed on a device, and
+so buddybuild does not make the build artifact available for download.
+Tests can be run successfully, as unsigned builds can be installed in a
+simulator.
 
 
 == Build will not install on a device
