@@ -10,9 +10,17 @@
   },
   "plugins": [
     "explicit-url@0.0.3",
+    "edit-link@https://github.com/buddybuild-public/gitbook-plugin-edit-link.git",
     "-fontsettings",
     "-sharing"
   ],
   "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/buddybuild-public/docs.buddybuild.com/edit/master",
+      "label": "",
+      "aria": "Edit on GitHub",
+      "position": "right",
+      "cssclass": "bbedit"
+    }
   }
 }
