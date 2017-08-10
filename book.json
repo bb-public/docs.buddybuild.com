@@ -19,7 +19,8 @@
       "base": "https://github.com/buddybuild-public/docs.buddybuild.com/edit/master",
       "label": "",
       "aria": "Edit on GitHub",
-      "position": "right"
+      "position": "right",
+      "cssclass": "bbedit"
     }
   }
 }
