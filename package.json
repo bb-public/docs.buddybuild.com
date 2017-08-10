@@ -17,6 +17,7 @@
     "domutils": "^1.5.1",
     "entities": "^1.1.1",
     "gitbook-cli": "2.3.0",
+    "gitbook-plugin-theme-default": "^1.0.6",
     "htmlparser2": "^3.9.2",
     "inherits": "^2.0.3",
     "isarray": "^1.0.0",
