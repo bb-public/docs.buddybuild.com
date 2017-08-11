@@ -9,6 +9,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     enableSyntaxHighlighting();
     makePopularDocsClickable();
     makeShowMoreClickable();
+    initEditTooltip();
     initScroll();
 
     $(".book").removeClass("without-animation");
@@ -17,6 +18,17 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
   gitbook.events.bind('start', function(e, config) {
     updateToolbarButtons();
   });
+
+  var initEditTooltip = function () {
+    var $bbedit = $(".bbedit");
+    var $tip = $('<span>', {
+      'class': 'tip',
+      'html': 'Edit this page on GitHub'
+    });
+
+    $bbedit.addClass("tooltip");
+    $bbedit.append($tip);
+  };
 
   var makeCodeSamplesFancy = function () {
     $("pre.highlight").each(function () {
@@ -227,6 +239,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
       label: 'buddybuild links',
       className: 'bblinks',
       position: 'right',
+      index: 0,
       dropdown: [
         [
           {
