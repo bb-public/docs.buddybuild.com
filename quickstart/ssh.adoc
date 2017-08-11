@@ -1,6 +1,6 @@
 = Signing up with SSH
 
-If your repository lives in link:http://beanstalkapp.com/[Beanstalk] or
+If your repository lives in link:https://beanstalkapp.com/[Beanstalk] or
 your own source control system, you can sign up with buddybuild using
 SSH. Buddybuild will automatically generate a secure SSH key for you to
 install into your source control system. Buddybuild will use this key to

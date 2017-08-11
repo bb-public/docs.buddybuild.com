@@ -165,4 +165,4 @@
 ... link:troubleshooting/frameworks/cordova_ionic.adoc[Common Cordova / Ionic build errors]
 ... link:troubleshooting/frameworks/react_native.adoc[Common React Native errors]
 
-. link:http://apidocs.buddybuild.com/[REST API]
+. link:https://apidocs.buddybuild.com/[REST API]

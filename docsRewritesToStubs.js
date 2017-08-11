@@ -20,7 +20,7 @@ fs.createReadStream(`${sourceFolder}/rewrites.csv`)
   .pipe(csv())
   .on('data', data => {
     const host = data.docs ? 'docs.buddybuild.com' : 'apidocs.buddybuild.com';
-    const destination = `http://${host}/${data.docs || data.apidocs}`;
+    const destination = `https://${host}/${data.docs || data.apidocs}`;
     const source = data.source.endsWith('.html') ? data.source : `${data.source}/index.html`;
 
     const sourcePath = `${sourceFolder}/_book/${source}`;
