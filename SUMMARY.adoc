@@ -64,6 +64,7 @@
 .. link:builds/device_variables_1.adoc[Device Variables]
 .. link:builds/environment_variables.adoc[Environment Variables]
 .. link:builds/secure_files.adoc[Secure Files]
+.. link:builds/node.adoc[Node version]
 .. link:builds/provisioning_profile_explorer.adoc[Provisioning Profile Inspector]
 .. link:builds/pull_requests.adoc[Pull Requests]
 .. link:builds/schedule_builds.adoc[Scheduling Builds]
