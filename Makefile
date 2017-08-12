@@ -1,17 +1,3 @@
-book_targets := $(wildcard \
-	book.json \
-	README.adoc \
-	SUMMARY.adoc \
-	*/*.adoc \
-	*/*.gif \
-	*/*.png \
-	*/*.jpg \
-	_css/* \
-	_img/* \
-	_js/* \
-	_layouts/website/* \
-)
-
 YARN := $(shell command -v yarn 2> /dev/null)
 ASCIIDOCTOR := $(shell command -v asciidoctor 2> /dev/null)
 
@@ -45,9 +31,9 @@ ifndef ASCIIDOCTOR
 	bundle install
 endif
 # Build the main artifacts.
-book: _book tidy
+book: clean _book tidy
 
-_book: $(book_targets)
+_book:
 	./node_modules/.bin/gitbook build
 
 # Remove all built artifacts.
@@ -64,12 +50,19 @@ test: spell proof
 # Spell check the source files.
 spell:
 	@command -v hunspell >/dev/null 2>&1 || { echo >&2 "hunspell required for spell testing."; exit 1; }
-	find . -name "*.adoc" -exec hunspell -d _dicts/buddybuild,_dicts/en_US -l '{}' \; | sort -u
+	@echo "Checking spelling..."
+	@find . -name "*.adoc" -exec hunspell -d _dicts/buddybuild,_dicts/en_US -l '{}' \; | sort -u | grep . && (echo "^ Fix these spelling errors!" && exit 1) || exit 0;
+	@echo "No spelling errors found!"
 
 # Run htmlproofer on the artifacts to catch bad images, links, etc.
-proof: clean all tidy
+proof: all
 	@command -v htmlproofer >/dev/null 2>&1 || { echo >&2 "htmlproofer required for link testing."; exit 1; }
 	htmlproofer --url-ignore="#" --disable-external _book
+
+# Run htmlproofer, with external checks
+proofx: all
+	@command -v htmlproofer >/dev/null 2>&1 || { echo >&2 "htmlproofer required for link testing."; exit 1; }
+	htmlproofer --url-ignore="#" _book
 
 css:
 	cp _css/* _book/_css/
@@ -79,7 +72,7 @@ js:
 	cp -a _js _book/
 
 # Build the main artifacts with debugging output enabled.
-debug: _debug tidy
+debug: clean _debug tidy
 
-_debug: $(book_targets)
+_debug:
 	./node_modules/.bin/gitbook build --log=debug --debug
