@@ -50,9 +50,7 @@ test: spell proof
 # Spell check the source files.
 spell:
 	@command -v hunspell >/dev/null 2>&1 || { echo >&2 "hunspell required for spell testing."; exit 1; }
-	@echo "Checking spelling..."
-	@find . -name "*.adoc" -exec hunspell -d _dicts/buddybuild,_dicts/en_US -l '{}' \; | sort -u | grep . && (echo "^ Fix these spelling errors!" && exit 1) || exit 0;
-	@echo "No spelling errors found!"
+	@_tools/spellcheck.pl -d . -D _dicts
 
 # Run htmlproofer on the artifacts to catch bad images, links, etc.
 proof: all
