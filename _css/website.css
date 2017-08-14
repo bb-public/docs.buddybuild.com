@@ -1112,6 +1112,16 @@ span.image.frame > img {
   margin-bottom: 0;
 }
 
+/* icons ---------------------------------------------------------- */
+
+.fa-apple {
+  color: #999;
+}
+
+.fa-android {
+  color: #a4c639;
+}
+
 /* buttons -------------------------------------------------------- */
 
 .markdown-section a.button {
