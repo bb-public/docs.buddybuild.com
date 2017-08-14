@@ -10,7 +10,7 @@ the steps on this page.
 ======
 **Use CocoaPods?**
 
-Include the link:https://cocoapods.org/pods/BuddyBuildSDK[BuddyBuildSDK]
+Include the link:http://cocoapods.org/pods/BuddyBuildSDK[BuddyBuildSDK]
 pod in your Podfile and move on to link:#step4[Step 4]
 ======
 

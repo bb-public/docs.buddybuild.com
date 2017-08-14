@@ -1,6 +1,6 @@
 = CocoaPods
 
-link:https://cocoapods.org/[CocoaPods] are a fantastic way to manage
+link:http://cocoapods.org/[CocoaPods] are a fantastic way to manage
 dependencies. In buddybuild your CocoaPods dependencies are
 automatically detected, downloaded and installed during the build
 process. You do not need to make any configuration changes or install a
