@@ -1,7 +1,6 @@
 = Supported frameworks
-:checku: ✓
-:checki: pass:[<i class="fa fa-apple"></i>]
-:checka: pass:[<i class="fa fa-android"></i>]
+:logo-apple: pass:[<i class="fa fa-apple"></i>]
+:logo-android: pass:[<i class="fa fa-android"></i>]
 
 There are many, many testing frameworks available, from popular
 cross-platform frameworks, to custom testing infrastructure that could
@@ -39,8 +38,8 @@ buddybuild, and are setup and executed as part of your build:
 
 The following test frameworks are known to work with buddybuild,
 provided that you include the appropriate integration within your
-project. {checki} indicates iOS compatibility, {checka} indicates
-Android compatibility.
+project. {logo-apple} indicates iOS compatibility, {logo-android}
+indicates Android compatibility.
 
 [cols="5a,^1a,^1a", options="header"]
 |===
@@ -51,95 +50,95 @@ Android compatibility.
 | link:http://calaba.sh/[Calabash]
   (link:https://github.com/BuddyBuild/Custom-Testing/tree/master/Calabash[example
   integration])
-| {checki}
-| {checka}
+| {logo-apple}
+| {logo-android}
 
 | link:http://pivotal.github.io/cedar/[Cedar]
-| {checki}
+| {logo-apple}
 |
 
 | link:https://cucumber.io/[Cucumber]
   (link:https://github.com/BuddyBuild/Custom-Testing/tree/master/Cucumber[example
   integration])
 |
-| {checka}
+| {logo-android}
 
 | link:http://www.earl-grey.io/[Earl Grey]
-| {checki}
-| {checka}
+| {logo-apple}
+| {logo-android}
 
 | link:https://github.com/specta/expecta[Expecta]
-| {checki}
+| {logo-apple}
 |
 
 | link:https://github.com/facebook/ios-snapshot-test-case[FBSnapshotTestCase]
-| {checki}
+| {logo-apple}
 |
 
 | link:http://testingwithfrank.github.io/[Frank]
-| {checki}
-| {checka}
+| {logo-apple}
+| {logo-android}
 
 | link:https://jasmine.github.io/[Jasmine]
   (link:https://github.com/BuddyBuild/Custom-Testing/tree/master/Jasmine[example
   integration])
-| {checki}
-| {checka}
+| {logo-apple}
+| {logo-android}
 
 | link:https://facebook.github.io/jest/[Jest]
   (link:https://github.com/BuddyBuild/Custom-Testing/tree/master/Jest[example
   integration])
-| {checki}
-| {checka}
+| {logo-apple}
+| {logo-android}
 
 | link:https://karma-runner.github.io/1.0/index.html[Karma]
-| {checki}
-| {checka}
+| {logo-apple}
+| {logo-android}
 
 | link:https://github.com/kif-framework/KIF[KIF]
-| {checki}
+| {logo-apple}
 |
 
 | link:https://github.com/kiwi-bdd/Kiwi[Kiwi]
-| {checki}
+| {logo-apple}
 |
 
 | link:https://mochajs.org/[Mocha]
   (link:https://github.com/BuddyBuild/Custom-Testing/tree/master/Mocha[example
   integration])
-| {checki}
-| {checka}
+| {logo-apple}
+| {logo-android}
 
 | link:http://ocmock.org/[OCMock]
-| {checki}
+| {logo-apple}
 |
 
 | link:http://www.sente.ch/software/ocunit/[OCUnit]
-| {checki}
+| {logo-apple}
 |
 
 | link:http://www.protractortest.org/[Protractor]
-| {checki}
-| {checka}
+| {logo-apple}
+| {logo-android}
 
 | link:https://github.com/Quick/Quick[Quick]
-| {checki}
+| {logo-apple}
 |
 
 | link:https://github.com/specta/specta[Specta]
-| {checki}
+| {logo-apple}
 |
 
 | link:https://github.com/inkling/Subliminal[Subliminal]
-| {checki}
+| {logo-apple}
 |
 
 | link:https://developer.apple.com/documentation/xctest[XCTest]
-| {checki}
+| {logo-apple}
 |
 
 | link:http://www.methodsandtools.com/tools/zucchini.php[Zucchini]
-| {checki}
+| {logo-apple}
 |
 |===
 
@@ -147,8 +146,8 @@ Android compatibility.
 == Testing tools
 
 The following are tools that aid in performing various kinds of testing.
-{checki} indicates iOS compatibility, {checka} indicates Android
-compatibility.
+{logo-apple} indicates iOS compatibility, {logo-android} indicates
+Android compatibility.
 
 [cols="5a,^1a,^1a", options="header"]
 |===
@@ -157,7 +156,7 @@ compatibility.
 | Android
 
 | link:http://appium.io/[Appium]
-| {checki}
-| {checka}
+| {logo-apple}
+| {logo-android}
 
 |===
