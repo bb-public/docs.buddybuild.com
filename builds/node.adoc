@@ -72,28 +72,3 @@ settings", 1280, 619, role="frame"]
 
 That's it! From now on, builds of your app use the selected Node
 version.
-
-== Changing the Node version for testing
-
-In specific cases, you may need a specific Node version to build your
-app, but another version to execute your app's tests. Using a
-link:custom_build_steps.adoc[custom build step], you can use a script to
-change the version of Node:
-
-[source,bash]
-----
-#!/bin/bash
-
-n 6.2.1
-----
-
-The `n` tool is installed by default in buddybuild VMs. The syntax
-is `n version`, where `version` is one of:
-
-- a specific numeric version of Node, e.g. `6.2.1`
-- `latest` - the latest official release of Node
-- `stable` - the latest stable release (which often is not the latest
-  version).
-- `lts` - the latest long-term stable release
-
-See https://github.com/tj/n for more `n` details.
