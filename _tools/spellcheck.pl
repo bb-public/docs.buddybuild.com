@@ -3,7 +3,6 @@
 use strict;
 use warnings;
 
-use Data::Dumper;
 use File::Spec::Functions;
 use Getopt::Std;
 
@@ -52,7 +51,6 @@ foreach my $key (sort keys %$results) {
   }
 }
 exit 1;
-
 
 sub findadoc {
   my $dir = shift;
