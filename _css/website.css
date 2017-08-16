@@ -1112,6 +1112,16 @@ span.image.frame > img {
   margin-bottom: 0;
 }
 
+/* icons ---------------------------------------------------------- */
+
+.fa-apple {
+  color: #999;
+}
+
+.fa-android {
+  color: #a4c639;
+}
+
 /* buttons -------------------------------------------------------- */
 
 .markdown-section a.button {
@@ -1179,7 +1189,9 @@ th.valign-bottom {
 }
 
 td > *:last-child,
-th > *:last-child {
+th > *:last-child,
+td > *:last-child .paragraph p,
+th > *:last-child .paragraph p {
   margin-bottom: 0;
 }
 

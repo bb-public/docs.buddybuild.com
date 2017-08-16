@@ -25,6 +25,7 @@
 ... link:quickstart/android/manual_sdk_integration.adoc[SDK Manual Integration]
 ... link:quickstart/android/auto_versioning.adoc[Auto Versioning]
 ... link:quickstart/android/build_variants.adoc[Build Variants]
+... link:quickstart/android/testing.adoc[Testing]
 
 . link:repository/README.adoc[Source Control Systems]
 .. link:repository/beanstalk/README.adoc[Beanstalk]
@@ -76,6 +77,7 @@
 .. link:builds/download_ipa.adoc[Downloading Build Artifacts]
 
 . link:tests/README.adoc[Tests]
+.. link:tests/frameworks.adoc[Supported frameworks]
 .. link:tests/ios/README.adoc[iOS]
 ... link:tests/ios/tests.adoc[Unit Tests]
 ... link:tests/ios/code_coverage.adoc[Code Coverage]
