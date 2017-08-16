@@ -26,7 +26,7 @@ https://api.buddybuild.com/v1/ccmenu?access_token=API_TOKEN
 ----
 +
 where `API_TOKEN` is your
-link:http://apidocs.buddybuild.com/#authentication[buddybuild API
+link:https://apidocs.buddybuild.com/#authentication[buddybuild API
 access token]. You can also specify a branch by appending the
 `branch=BRANCH_NAME` query parameter. This presents a list of your
 buddybuild apps to choose from.

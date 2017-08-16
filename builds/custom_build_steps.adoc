@@ -105,7 +105,7 @@ Possible values:
   build is triggered by the "Rebuild" button
 - `api_triggered`: +
   build is triggered by the
-  link:http://apidocs.buddybuild.com/builds/post-trigger.html[buddybuild API]
+  link:https://apidocs.buddybuild.com/builds/post-trigger.html[buddybuild API]
 |===
 
 === iOS-specific variables

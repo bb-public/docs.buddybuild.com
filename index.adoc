@@ -90,7 +90,7 @@ link:#[Show More]
 .Ask the Community!
 --
 Can’t find your answer here? Explore our
-http://discuss.buddybuild.com/[Discussion forum] or join our
+https://discuss.buddybuild.com/[Discussion forum] or join our
 https://buddybuild.slack.com/[Slack community]. For more help, send us a
 message via intercom.
 --
