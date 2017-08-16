@@ -3,7 +3,7 @@
 == No build available to download
 
 If you have not yet uploaded a
-link:../../deployments/ios/code_signing/index.html[code signing
+link:../../deployments/ios/code_signing/README.adoc[code signing
 certificate], buddybuild cannot properly sign your application. This
 means that a successful build cannot be installed on a device, and so
 buddybuild does not make the build artifact available for download.
