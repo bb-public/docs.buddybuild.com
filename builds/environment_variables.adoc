@@ -22,6 +22,8 @@ You can create default Environment Variables, which are available to all
 branches, or branch-specific environment variables which are only
 available for a specific branch.
 
+{% include "../_common/important-environment_variable_scope.adoc" %}
+
 [[create]]
 == Creating default environment variables
 
@@ -42,7 +44,8 @@ Enter a name and value to create a default environment variable. Your
 environment variable is now ready to be consumed by your app at build
 time.
 
-image:img/Settings---Environment-variables.png[,1500,760]
+image:img/screen-settings-environment_variables.png["The Environment
+Variables screen", 1280, 620, role="frame"]
 
 == Create environment variables for a specific branch
 
@@ -62,7 +65,9 @@ image:img/Settings---Environment-variables---Branch---configure.png[,1500,540]
 Enter a name and value to create your branch-specific environment
 variable.
 
-image:img/Settings---Environment-variables---Branch---create.png[,1500,760]
+image:img/screen-settings-environment_variables-branch.png["The Environment
+Variables screen for a specific branch", 1280, 620, role="frame"]
+
 
 == Consume the variable in your build
 

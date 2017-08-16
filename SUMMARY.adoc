@@ -25,6 +25,7 @@
 ... link:quickstart/android/manual_sdk_integration.adoc[SDK Manual Integration]
 ... link:quickstart/android/auto_versioning.adoc[Auto Versioning]
 ... link:quickstart/android/build_variants.adoc[Build Variants]
+... link:quickstart/android/testing.adoc[Testing]
 
 . link:repository/README.adoc[Source Control Systems]
 .. link:repository/beanstalk/README.adoc[Beanstalk]
