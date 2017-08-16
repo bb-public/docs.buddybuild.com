@@ -1,12 +1,11 @@
 = Node version
 
 node.js, or just _Node_, is a popular javascript runtime that can be
-used for application development, testing, or system tools. Node
-itself is evolving rapidly, which means that new features are available
-regularly. It also means that existing features might change or become
-deprecated. Your use of Node may depend on specific versions in order
-to function correctly. This section describes how to use a specific
-version of Node.
+used for application development or system tools. Node itself is
+evolving rapidly, which means that new features are available regularly.
+It also means that existing features might change or become deprecated.
+Your use of Node may depend on specific versions in order to function
+correctly. This section describes how to use a specific version of Node.
 
 == Specify the Node version
 
