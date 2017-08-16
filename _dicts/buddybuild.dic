@@ -1,4 +1,4 @@
-368
+372
 10a
 13b
 1a
@@ -129,7 +129,7 @@ UTF8String
 UpdateSDK
 Uploader
 UserID
-VM
+VM/S
 VersionCode
 VersionName
 WebHooks
@@ -232,6 +232,7 @@ jessie
 jira
 jks
 jpg
+js
 jsBundleDirDebug
 json
 kapt
@@ -249,6 +250,7 @@ lineNumber
 linkattrs
 loweralpha
 lt
+lts
 m2repository
 md
 mergeReleaseResources
@@ -295,6 +297,7 @@ rc
 repo/S
 resolutionStrategy
 rf
+runtime
 s3
 sdk
 secretKeyRingFile
