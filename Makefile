@@ -45,7 +45,7 @@ tidy:
 	rm -rf _book/CNAME _book/Gemfile _book/Gemfile.lock _book/Makefile _book/_common _book/_dicts _book/deploy.py _book/npm-debug.log _book/package.json _book/package-lock.json _book/rewrites.csv _book/yarn.lock
 
 # 'test' the artifacts
-test: spell proof
+test: spell proof missed
 
 # Spell check the source files.
 spell:
@@ -61,6 +61,12 @@ proof: all
 proofx: all
 	@command -v htmlproofer >/dev/null 2>&1 || { echo >&2 "htmlproofer required for link testing."; exit 1; }
 	htmlproofer --url-ignore="#" _book
+
+# Check for unconverted topics in output folder; means they're missing
+# from the TOC.
+missed: _book
+	@echo "Checking for topics missing from the TOC..."
+	@find _book -name '*.adoc' | grep . && exit 1 || exit 0;
 
 css:
 	cp _css/* _book/_css/
