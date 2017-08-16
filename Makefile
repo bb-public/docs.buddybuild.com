@@ -42,7 +42,7 @@ clean:
 
 # Remove artifacts that shouldn't be published.
 tidy:
-	rm -rf _book/CNAME _book/Gemfile _book/Gemfile.lock _book/Makefile _book/_dicts _book/deploy.py _book/npm-debug.log _book/package.json _book/package-lock.json _book/rewrites.csv _book/yarn.lock
+	rm -rf _book/CNAME _book/Gemfile _book/Gemfile.lock _book/Makefile _book/_common _book/_dicts _book/deploy.py _book/npm-debug.log _book/package.json _book/package-lock.json _book/rewrites.csv _book/yarn.lock
 
 # 'test' the artifacts
 test: spell proof

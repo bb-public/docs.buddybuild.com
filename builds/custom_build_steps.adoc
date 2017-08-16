@@ -19,6 +19,8 @@ https://www.buddybuild.com/blog/customizing-the-build-process
 
 == Environment Variables
 
+{% include "../_common/important-environment_variable_scope.adoc" %}
+
 === Common buddybuild Variables
 
 [cols="a,10a",options="header"]

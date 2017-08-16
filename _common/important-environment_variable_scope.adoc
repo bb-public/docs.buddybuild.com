@@ -1,0 +1,22 @@
+[IMPORTANT]
+===========
+Any environment variables set by buddybuild are available to all phases
+of a build.
+
+However, environment variables set by scripts invoked by your build
+tool, tests, or other build-related operations, are **only available
+while those scripts are executing**.
+
+For example, the environment variable `BUILT_PRODUCTS_DIR` is only
+available while Xcode is running, specifically when a Run Script is
+executing.
+
+If you need to persist environment variables across script executions,
+you have a couple of options:
+
+- specify the environment variables in buddybuild -- buddybuild takes
+  care of making those environment variables for you.
+
+- write the definitions of the environment variables to a file,
+  and read those definitions every time your scripts execute.
+===========
