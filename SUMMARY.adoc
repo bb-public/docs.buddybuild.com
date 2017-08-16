@@ -25,6 +25,7 @@
 ... link:quickstart/android/manual_sdk_integration.adoc[SDK Manual Integration]
 ... link:quickstart/android/auto_versioning.adoc[Auto Versioning]
 ... link:quickstart/android/build_variants.adoc[Build Variants]
+... link:quickstart/android/testing.adoc[Testing]
 
 . link:repository/README.adoc[Source Control Systems]
 .. link:repository/beanstalk/README.adoc[Beanstalk]
@@ -64,6 +65,7 @@
 .. link:builds/device_variables_1.adoc[Device Variables]
 .. link:builds/environment_variables.adoc[Environment Variables]
 .. link:builds/secure_files.adoc[Secure Files]
+.. link:builds/node.adoc[Node version]
 .. link:builds/provisioning_profile_explorer.adoc[Provisioning Profile Inspector]
 .. link:builds/pull_requests.adoc[Pull Requests]
 .. link:builds/schedule_builds.adoc[Scheduling Builds]
@@ -76,6 +78,7 @@
 .. link:builds/download_ipa.adoc[Downloading Build Artifacts]
 
 . link:tests/README.adoc[Tests]
+.. link:tests/frameworks.adoc[Supported frameworks]
 .. link:tests/ios/README.adoc[iOS]
 ... link:tests/ios/tests.adoc[Unit Tests]
 ... link:tests/ios/code_coverage.adoc[Code Coverage]
@@ -165,4 +168,4 @@
 ... link:troubleshooting/frameworks/cordova_ionic.adoc[Common Cordova / Ionic build errors]
 ... link:troubleshooting/frameworks/react_native.adoc[Common React Native errors]
 
-. link:http://apidocs.buddybuild.com/[REST API]
+. link:https://apidocs.buddybuild.com/[REST API]

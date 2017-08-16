@@ -243,7 +243,7 @@ h6, .markdown-section h6 {
 .markdown-section ul,
 .markdown-section ol {
   padding: 0;
-  margin: 0 0 0 15px;
+  margin: 0 0 15px 25px;
   position: relative;
 }
 
@@ -325,6 +325,14 @@ h6, .markdown-section h6 {
 .markdown-section ol li > .paragraph:last-child p {
   margin-bottom: 0;
 }
+
+.markdown-section ol ol,
+.markdown-section ol ul,
+.markdown-section ul ol,
+.markdown-section ul ul {
+  margin-bottom: 15px;
+}
+
 
 /* landing page --------------------------------------------------- */
 
@@ -1107,9 +1115,19 @@ span.image.frame > img {
 
 /* lists ---------------------------------------------------------- */
 
-.markdown-section li .paragraph:last-child p,
-.markdown-section li *:last-child {
+.markdown-section li > .paragraph:last-child p,
+.markdown-section li > *:last-child {
   margin-bottom: 0;
+}
+
+/* icons ---------------------------------------------------------- */
+
+.fa-apple {
+  color: #999;
+}
+
+.fa-android {
+  color: #a4c639;
 }
 
 /* buttons -------------------------------------------------------- */
@@ -1179,7 +1197,9 @@ th.valign-bottom {
 }
 
 td > *:last-child,
-th > *:last-child {
+th > *:last-child,
+td > *:last-child .paragraph p,
+th > *:last-child .paragraph p {
   margin-bottom: 0;
 }
 
