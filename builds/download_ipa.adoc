@@ -6,12 +6,11 @@ users, use the **Deployments** tab.
 
 [NOTE]
 If you have not yet uploaded a
-link:http://localhost/~ewan/docs2/deployments/ios/code_signing/index.html[code
-signing certificate], buddybuild cannot properly sign your application.
-This means that a successful build cannot be installed on a device, and
-so buddybuild does not make the build artifact available for download.
-Tests can be run successfully, as unsigned builds can be installed in a
-simulator.
+link:../deployments/ios/code_signing/README.adoc[code signing
+certificate], buddybuild cannot properly sign your application. This
+means that a successful build cannot be installed on a device, and so
+buddybuild does not make the build artifact available for download.
+This situation does not prevent your tests from running.
 
 Buddybuild can automatically collect your crash reports and symbolicate
 them with your App's dSYMs producing human-readable crash reports. To
