@@ -1,42 +1,456 @@
 = Slack
 
-Slack is revolutionizing the way teams communicate. Buddybuild offers
-first-class integration with Slack. Be notified of build status,
-feedback submissions and crash reports directly in the channels you use.
+Slack is a popular team-based chat application that has revolutionized
+the way that development teams communicate. Buddybuild offers a
+first-class integration with Slack, providing notifications of build
+status, feedback submissions, and crash reports directly to the Slack
+channels that you use.
 
-Let's get started by launching the buddybuild dashboard and click the
-**App Settings** button.
+There are a number of sub-sections on this page:
 
-image:img/Builds---Settings.png[,1500,483]
+- <<navigate>>
+- <<connect>>
+- <<branches>>
+- <<channel>>
+- <<notifications>>
+- <<editing>>
+- <<remove_config>>
+- <<remove_connection>>
 
-Select **Slack** in the left panel.
+[[navigate]]
+== Navigate to the Slack integration settings
 
-image:img/Slack---1.png[,1500,650]
+This section describes how to navigate to the Slack integration
+settings, and is referred to by several procedures described on this
+page.
 
-Click on **Connect**.
+. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
+  dashboard].
 
-image:img/Slack---2.png[,1500,650]
+. image:../builds/img/button-app_settings.png["The App Settings button",
+  118, 64, role="right"]
+  Click **App Settings** button in the top toolbar. The **Default build
+  configuration** screen is displayed:
++
+image:img/screen-build_settings.png["The Default build configuration
+screen", 1280, 1024, role="frame"]
 
-You will now be prompted to authorize buddybuild use your Slack account.
-Click on **Authorize**.
+. image:img/button-integrations.png["The Integrations button", 210, 42,
+  role="right"]
+  In the left navigation bar, click the **Integrations** button. The
+  **Integrations** screen is displayed:
++
+image:img/screen-integrations.png["The Integrations screen", 1280,734,
+role="frame"]
 
-**Note:** If you are not signed into your Slack account, you will be asked to enter your Slack credentials.
+. image:img/button-slack.png["The Slack button", 210, 32, role="right"]
+  In the left navigation bar, click the **Slack** button. The **Slack**
+  screen is displayed:
++
+image:img/screen-slack-unconfigured.png["The Slack screen", 1280, 734,
+role="frame"]
++
+If you have previously configured Slack, you might instead see:
++
+image:img/screen-slack-configured.png["The Slack screen with existing
+configuration", 1280, 1024, role="frame"]
 
-image:img/Slack---3.png[,1500,977]
 
-Click on **Add New Channel**.
+[[connect]]
+== Connect your Slack team
 
-image:img/Slack---3.png[,1500,650]
+These steps describe how to establish a connection between buddybuild
+and a specific Slack team. You can create as many Slack team connections
+as required.
 
-In the **Channel** field, select the channel you'd like buddybuild to
-send notifications to from the drop-down list. Next, select the types of
-notification events buddybuild should send to this Slack channel.
+. <<navigate>>
 
-image:img/Slack---4.png[,1500,650]
+. image:img/button-connect_with_slack.png["The Connect with Slack
+  button", 154, 42, role="right"]
+  If you do not have an existing Slack connection, click the **Connect
+  with Slack** button.
++
+image:img/tab-slack-connected_teams.png["The Connected teams tab", 237,
+63, role="right"]
+image:img/button-add_new.png["The Add new button", 89, 30, role="right"]
+If you do have an existing Slack connection, click the **Connected
+teams** tab and then the **Add new** button.
 
-You can also configure multiple Slack channels by clicking **Add New
-Channel**.
+. When you are not logged in to Slack, the **Slack authentication**
+screen is displayed:
++
+image:img/screen-slack-login.png["The Slack authentication screen",
+1280, 1024, role="frame"]
++
+Enter your Slack team, email address, and then password to login to
+Slack.
 
-image:img/Slack---5.png[,1500,268]
+. Once you are logged in to Slack, the **Slack authorization** screen
+is displayed:
++
+image:img/screen-slack-authorize.png["The Slack authorization screen",
+1280, 568, role="frame"]
 
-That's it! Your Slack account is now connected to buddybuild.
+. image:img/button-slack-authorize.png["The Slack authorize button",
+  200, 36, role="right"]
+  Here, you are giving permission to buddybuild to connect to your Slack
+  team and send notifications to your channels. Click the **Authorize**
+  button. The **Slack** screen is displayed again, showing the
+  **configuration** tabs:
++
+image:img/screen-slack-configure_slack-connected.png["The Slack Screen
+with initial all branches configuration", 1280, 734, role="frame"]
+
+At this point, the initial connection process is complete! By default, a
+configuration panel for **All branches** is opened; continue with the
+<<channel>> section.
+
+
+[[branches]]
+== Configure branches
+
+This section describes how to configure buddybuild's Slack integration
+for branches, including for <<all>>, <<specific,specific branches>>, or
+<<pattern,patterns that can match branches and/or tags>>.
+
+
+[[all]]
+=== All branches
+
+You can configure notifications for all branches.
+
+. <<navigate>>
+
+. image:img/button-slack-add_new.png["The Add new button", 89, 30,
+  role="right"]
+  You can configure buddybuild notifications for all branches of your
+  application, or you can configure notifications for a
+  <<per-branch,specific branch>>.
+  Click the appropriate **Add new** button. The **Slack** screen is
+  displayed, which now includes the **All branches** notifications
+  configuration panel:
++
+image:img/panel-slack-all_branches-unconfigured.png["The All branches
+notifications configuration panel", 900, 446, role="frame"]
+
+. Continue with <<channel>>.
+
+
+[[per-branch]]
+=== Branch specification
+
+You can configure notifications for a specific branch, or a pattern that
+can match branches and/or tags.
+
+. <<navigate>>
+
+. image:img/button-slack-add_new.png["The Add new button", 89, 30,
+  role="right"]
+  Click the **Add new** button beside the **Notifications for specific
+branches** subheading.
++
+You can <<specific>> which configures notifications for one branch, or
+<<pattern>> which configures notifications for any matching branches or
+tags.
+
+
+[[specific]]
+==== Choose a specific branch
+
+. Click the **Choose a specific branch** tab. The **Specific Branch
+  selection** screen is displayed:
++
+image:img/screen-choose_branch-specific.png["The Specific Branch selection
+screen", 1280, 484, role="frame"]
+
+. If you have many branches, click the **branch filter field** and enter
+the name of the desired branch (or portion thereof); the list of
+branches displays only matching branches.
+
+. image:img/button-add.png["The Branch add button", 46, 30, role="right"]
+  Move your pointer over the branch you want to choose. An **Add**
+  button appears at the right of the row. Click the **Add** button.
+  The **Slack** screen is displayed, which now includes a
+  branch-specific notifications configuration panel:
++
+image:img/panel-slack-specific_branch-unconfigured.png["A
+branch-specific notification configuration panel", 900, 232,
+role="frame"]
+
+. Continue with <<channel>>.
+
+
+[[pattern]]
+==== Define a pattern to match
+
+. Click the **Define a pattern to match** tab.  The **Branch pattern
+  selection** screen is displayed:
++
+image:img/screen-choose_branch-pattern.png["The Branch pattern selection
+screen", 1280, 484, role="frame"]
+
+. Click the **branch filter field** and enter the pattern that the
+desired branches should match; the list of branches displays only
+matching branches.
+
+. By default, the pattern applies to both tags and branches. You can
+choose to apply the pattern to **Tags only**, or to **Branches only**.
+Click the appropriate checkbox. The list of branches updates
+accordingly.
+
+. image:img/button-create.png["The Create button", 61, 40, role="right"]
+  Click the **Create** button. The **Slack** screen is displayed, which
+  now includes a pattern-specific notifications configuration panel:
++
+image:img/panel-slack-pattern-unconfigured.png["A
+pattern-specific notifications configuration panel", 900, 232,
+role="frame"]
+
+. Continue with <<channel>>.
+
+
+[[channel]]
+== Channel selection
+
+This section describes show to select the Slack channel to which
+buddybuild should send notifications.
+
+. image:img/button-slack-channel_dropdown.png["The Channel selection
+  dropdown", 208, 46, role="right"]
+  In the appropriate notifications configuration panel,
+  click the **Channel selection** dropdown. The **Channel selection
+  menu** is displayed.
++
+[NOTE]
+If your team uses many Slack channels, you might notice a delay before
+the **Channel selection menu** is ready.
+
+. image:img/dropdown-slack-channel.png["The Channel selection menu",
+  219, 187, role="right"]
+  Select the channel to which buddybuild should send notifications. The
+  **Notifications configuration** tabs become enabled:
++
+image:img/tab-notifications-build.png["The Build tab", 598, 193,
+role="frame"]
+
+At this point, you can adjust the configuration for **Build**,
+**Deployment**, and **Feedback** notifications. Click the associated tab
+to display and adjust those specific settings.
+
+
+[[notifications]]
+== Configure notifications
+
+This section describes the available kinds of notifications and their
+options.
+
+
+[[build]]
+=== Build notifications
+
+image:img/tab-notifications-build.png["The Build tab", 598, 193,
+role="frame"]
+
+On the **Build** tab, the following notification configuration options
+are available:
+
+- image:img/dropdown-notifications-build_success.png["The Build success
+  menu", 231, 132, role="right"]
+  **Build success**: You can choose to receive buddybuild notifications
+  for:
++
+--
+- **All successful builds**: whenever your application builds
+  successfully.
+
+- **Only when the build gets fixed**: for the first successful build
+  after one or more build failures.
+
+- **None**: no notifications for build success are sent.
+--
+
+- image:img/dropdown-notifications-build_failures.png["The Build
+  failures menu", 231, 132, role="right"]
+  **Build failures**: You can choose to receive buddybuild notifications
+  for:
++
+--
+- **All build failures**: whenever your application fails to build
+  successfully.
+
+- **Only when the build breaks**: for the first failed build after one
+  or more successful builds.
+
+- **None**: no notifications for build failures are sent.
+--
+
+- **Xcode updates**: Click the toggle button to enable/disable
+  notifications whenever buddybuild makes a new version of Xcode
+  available.
++
+[NOTE]
+This option is only available for **All branches**. It is not available
+for specific-branch or pattern-specific configuration.
+
+
+[[deployment]]
+=== Deployment notifications
+
+image:img/tab-notifications-deployment.png["The Deployment tab", 598, 240,
+role="frame"]
+
+[NOTE]
+Deployment notifications are only available for **All branches**. They
+are not available for specific-branch or pattern-specific configuration.
+
+Click the associated toggle button to adjust these notification
+configuration options:
+
+- **User failed to install a build**: when enabled, receive a
+  notification whenever a test user fails to install a build.
+
+- **Device added to Apple account**: when enabled, receive a
+  notification whenever a new device is associated with your iTunes
+  Connect account.
+
+- **Failed upload to App Store**: when enabled, receive a notification
+  when buddybuild's attempt to upload a build to iTunes Connect fails
+  for any reason.
+
+- **Tester unsubscribed from a deployment group**: when enabled, receive a
+  notification when one of your test users elects to stop receiving
+  announcements of new builds.
+
+
+[[feedback]]
+=== Feedback notifications
+
+image:img/tab-notifications-feedback.png["The Feedback tab", 598, 240,
+role="frame"]
+
+- **User Feedback**: Click the toggle button to enable/disable
+  notifications whenever a test users sends feedback about your
+  application.
+
+- image:img/dropdown-notifications-crash_reports.png["The Crash reports
+  menu", 231, 132, role="right"]
+  **Crash reports**: You can choose to receive buddybuild notifications
+  for:
++
+--
+- **All crash reports**: whenever your application crashes on a test
+  user's device.
+
+- **New crash report types**: for new types of crashes that have not
+  previously been reported.
+
+- **None**: no notifications for application crashes are sent.
+--
+
+
+[[editing]]
+== Edit notification configuration
+
+Individual notification settings can be adjusted at any time.
+Adjustments take effect immediately for all future notifications.
+
+
+=== All branches
+
+You can only adjust individual settings in the **all branches** panel,
+or that <<remove_config>>; there are no other editing options.
+
+
+=== Branch-specific notifications
+
+Once branch-specific notifications settings are established, it is not
+possible to adjust which branch they apply to. If you need to accomplish
+this, create branch-specific settings for the "new" branch and then
+remove the original branch-specific settings. See <<per-branch>> and
+<<remove_config>> for details.
+
+
+=== Pattern-specific notifications
+
+image:img/button-pencil.png["The pencil button", 45, 47, role="right"]
+You can adjust the pattern for pattern-specific notification settings,
+by clicking the **Pencil** icon in the at the top right of the
+appropriate panel. The **Edit branch pattern** screen is displayed:
+
+image:img/screen-edit_branch_pattern.png["The Edit branch pattern
+screen", 1280, 354, role="frame"]
+
+image:img/button-save.png["The Save button", 51, 40, role="right"]
+Adjust the pattern as necessary (see <<pattern>> for more details), then
+click the **Save** button.
+
+
+[[remove_config]]
+== Remove notification configuration
+
+image:img/button-trashcan.png["The Trashcan icon", 57, 47, role="right"]
+When you need to remove notification configuration settings,
+for all branches, specific branches, or pattern-specific branches or
+tags, click the **Trashcan** icon at the top right of the appropriate
+panel. The panel is removed, and notifications based on the removed
+configuration cease immediately.
+
+
+[[remove_connection]]
+== Remove team connection
+
+To remove a team connection, there are several steps:
+
+. Visit your team's **Manage Apps** page on Slack. The URL looks like:
++
+[source,bash]
+https://team.slack.com/apps/manage
++
+Replace `team` with the name of your team. You should see a page that
+looks similar to this:
++
+image:img/screen-slack-manage_apps.png["The Manage Apps screen on
+Slack", 1280, 1024, role="frame"]
+
+. Click the **buddybuild** app name. The **App authorizations** page is
+displayed:
++
+image:img/screen-slack-app_authorizations.png["The App authorizations
+screen on Slack", 1280, 1024, role="frame"]
+
+. image:img/button-slack-remove_app.png["Slack's Remove App button",
+114, 36, role="right"]
+  Click the **Remove App** button to remove the buddybuild app from your
+  Slack team. A confirmation dialog appears:
++
+image:img/dialog-slack-confirm_app_removal.png["The Slack app removal
+confirmation dialog", 444, 183]
++
+Click the **Remove App** button in the dialog. The **App
+authorizations** screen updates to indicate that the buddybuild app no
+longer has any authorizations:
++
+image:img/screen-slack-app_authorizations-none.png["The App
+authorizations screen, with no authorizations", 1280, 1024,
+role="frame"]
+
+. <<navigate>>
+
+. image:img/tab-slack-connected_teams.png["The Connected Teams
+tab", 237, 63, role="right"]
+  Click the **Connected teams** tab. The **Connected teams** screen is
+  displayed:
++
+image:img/screen-slack-connected_teams-revoked.png["The Connected Teams
+screen showing the removed app", 1280, 734, role="frame"]
+
+. image:img/buttons-slack-reconnect-delete.png["The buttons for dealing
+with revoked Slack teams, re-connect or delete", 90, 62, role="right"]
+  The warning banner indicates that the team connection has been
+  revoked.
++
+If you want to undo the removal, click the **Re-connect** button; the
+<<connect>> process begins.
++
+Otherwise, click the **Delete** button to remove the team connection
+from buddybuild.
