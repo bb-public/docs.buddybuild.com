@@ -6,46 +6,60 @@ common causes for build failures.
 Here's what you can to do quickly diagnose and likely resolve build
 errors:
 
-* Rebuild without cache
-* Clone your repo and check if your app builds locally
-* Share your schemes
-* Ensure your tests pass
-* Double check your third party dependencies
+- <<rebuild>>
+- <<clone>>
+- <<schemes>>
+- <<tests>>
+- <<dependencies>>
+- <<logs>>
+- <<support>>
 
+
+[[rebuild]]
 == Rebuild without cache
 
 Caching is one of many techniques used by buddybuild to speed up build
 times. However, some build failures can be caused by a corrupted or
-out-of-date cache. Rebuilding without cache is a quick way to evict the
+out-of-date cache. Rebuilding without cache is a quick way to clear the
 cache and rebuild from the most recent committed code.
 
-To do this, select the build you’d like to rebuild, then navigate to the
-build’s “Details” and click “Rebuild without Cache”.
+To do this:
 
-image:https://s3-us-west-2.amazonaws.com/www.buddybuild.com/blog/engineering/iOS+Troubleshooting+Guide/1.jpg[]
+. Select the build you’d like to rebuild.
 
+. Navigate to the build’s **Details**.
++
+image:img/screen-build_details-failed.png["The Build details screen",
+1280, 664, role="frame"]
+
+. image:img/button-rebuild_without_cache.png["The Rebuild without Cache
+  button", 155, 30, role="right"]
+  Click **Rebuild without Cache**.
+
+
+[[clone]]
 === Clone your repo and check if your app builds locally
 
-It is important to make sure there are no discrepancies between your
-remote branch and local git state.
+It is important to make sure that there are no discrepancies between
+your remote branch and local git state.
 
 Buddybuild creates a fresh clone of your code and executes build
 commands on every commit.
 
-Here's how to replicate this process and ensure your remote branch is up
-to date:
+Here's how to replicate this process and ensure that your remote branch
+is up to date:
 
-* Clone your repo into a **new location / folder** on your machine
+. Clone your repo into a **new location / folder** on your machine.
 
-* Double check that you’re building the same target and scheme as
-  identified in buddybuild
+. Double check that you’re building the same target and scheme as
+  identified in buddybuild.
 
-* Open Xcode from the new location and simply **⌘B** to build your app
-  locally
+. Open Xcode from the new location and simply **⌘B** to build your app
+  locally.
 
 Similarly, if you’re experiencing issues when using buddybuild to push
 to iTunes Connect (for TestFlight or App Store deployments) make sure
-you can Archive and Export your build locally as well.
+that you can Archive and Export your build locally as well.
 
 In Xcode you can do this by navigating to **Product > Archive** then
 select "**Export...**" and follow the onscreen instructions to finalize
@@ -61,21 +75,30 @@ Mac to make sure that there are no discrepancies.
 
 image:https://s3-us-west-2.amazonaws.com/www.buddybuild.com/blog/engineering/iOS+Troubleshooting+Guide/3.jpg[]
 
+
+[[schemes]]
 == Share your schemes
 
-Sharing your schemes ensures buddybuild uses the correct build
+Sharing your schemes ensures that buddybuild uses the correct build
 configurations (like test targets) for your builds.
 
 image:https://s3-us-west-2.amazonaws.com/www.buddybuild.com/blog/engineering/iOS+Troubleshooting+Guide/4.jpg[]
 
-To share your scheme, open Xcode, select **Product > Scheme > Edit
-Scheme…** (or **⌘<**) and choose the checkbox associated with the
-schemes you’d like to share. 
+To share your scheme:
 
-NOTE: Make sure you commit and push the changes to your repo so
+. Open Xcode.
+
+. Select **Product > Scheme > Edit Scheme…** (or **⌘<**).
+
+. Select the checkbox(es) associated with the scheme(s) you'd like to share.
+
+[NOTE]
+Make sure that you commit and push the changes to your repo so that
 buddybuild can use them.
 
-=== Ensure your tests pass
+
+[[tests]]
+=== Ensure that your tests pass
 
 If your app has tests, make sure they run successfully on your Mac or
 local machine.
@@ -84,42 +107,74 @@ image:https://s3-us-west-2.amazonaws.com/www.buddybuild.com/blog/engineering/iOS
 
 If your tests are failing locally because of a known issue and you still
 want to them to run in buddybuild, you can always opt to treat them as
-warnings. This way failed tests won’t cause your builds to fail. To do
-this go to your App Settings and enable the “Treat tests as warnings”
-option.
+warnings. This way, failed tests won’t cause your builds to fail. To do
+this, go to your **App Settings** and enable the **Treat tests as
+warnings** option.
 
-image:https://s3-us-west-2.amazonaws.com/www.buddybuild.com/blog/engineering/iOS+Troubleshooting+Guide/6.jpg[]
+image:img/screen-test_settings.png["The Test Settings screen", 1280,
+517, role="frame"]
 
+
+[[dependencies]]
 == Double check your third party dependencies
 
+
+[[cocoapods]]
 === CocoaPods
 
-One of the most common causes of build failures is a Podfile.lock
-missing from your repo. When using CocoaPods, the Podfile.lock specifies
-the exact versions your app uses. Without the Podfile.lock, unexpected
-versions of CocoaPods might be used during `pod install` on a new repo. 
+One of the most common causes of build failures occurs when the
+`Podfile.lock` file is missing from your repo. When using CocoaPods, the
+`Podfile.lock` file specifies the exact versions that your app uses.
+Without the `Podfile.lock` file, unexpected versions of CocoaPods might
+be used during `pod install` on a new repo.
 
-Please double check the Podfile.lock is checked into your repo, as it
-oftentimes is in `.gitignore`.
+Please double check that the `Podfile.lock` file is checked into your
+repo, as it oftentimes is in `.gitignore`.
 
-Alternatively, you can also check-in the entire Pods directory in your
-repo. Buddybuild will detect checked-in pods, automatically skip the pod
-install step, and use the Pods exactly as they’re setup locally.
+Alternatively, you can also commit the entire Pods directory into your
+repo. Buddybuild detects committed pods, automatically skips the pod
+install step, and uses the Pods exactly as they’re setup locally.
 
 In either case, run `pod install` locally, then commit and push the
 changes to your repo.
 
+
+[[carthage]]
 === Carthage
 
-Make sure you set the Carthage version you use locally matches the one
-specified in your app settings in buddybuild.
+Make sure that the Carthage version that you set and use locally matches
+the one specified in your app settings in buddybuild.
 
-image:https://s3-us-west-2.amazonaws.com/www.buddybuild.com/blog/engineering/iOS+Troubleshooting+Guide/7.jpg[]
+image:img/screen-build_settings.png["The Build Settings screen", 1280,
+585, role="frame"]
 
-Also make sure that your `Cartfile` and your `Cartfile.resolved` are
+Also make sure that your `Cartfile` and `Cartfile.resolved` files are
 checked into your repo.
 
-=== Contact buddybuild support
+
+[[logs]]
+== Review the build logs
+
+Last, but not least, the build logs that buddybuild collects during a
+build and subsequent test runs can contain errors that can help identify
+problems in your project. We recommend that you review the test,
+simulator, and raw `xcodebuild` logs for errors.
+
+To access the logs:
+
+. Navigate to the build log page.
+
+. image:img/dropdown-download_logs.png["The Download logs dropdown", 248,
+  302, role="float right"]
+  Click **Download logs** on the right side of the page.
+
+. Select an available log to download.
+
+. Repeat the selection to download all avaiable logs.
+
+
+[[support]]
+== Contact buddybuild support
 
 If you've followed the steps above and are still unable to find the
 cause of your build failure, please drop us a line via Intercom or at
