@@ -212,7 +212,7 @@ role="frame"]
 [[channel]]
 == Channel selection
 
-This section describes show to select the Slack channel to which
+This section describes how to select the Slack channel to which
 buddybuild should send notifications.
 
 . image:img/button-slack-channel_dropdown.png["The Channel selection
