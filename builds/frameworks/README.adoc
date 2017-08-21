@@ -1,3 +1,6 @@
+---
+search: false
+---
 = Cross-platform frameworks
 
 This section describes the app development frameworks that buddybuild

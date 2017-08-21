@@ -1,3 +1,6 @@
+---
+search: false
+---
 = Android
 
 This section covers deployment details specific to Android applications:
