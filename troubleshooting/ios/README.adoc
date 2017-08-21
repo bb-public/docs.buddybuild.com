@@ -1,3 +1,6 @@
+---
+search: false
+---
 = iOS
 
 This section covers iOS-specific problems and errors, and provides some
