@@ -118,9 +118,9 @@ and **reporter** for new issues.
 
 By default, non-administrator is **not** able to modify the reporter when
 creating an issue. If you want to use another reporter, please make sure
-the Jira account you used on Buddybuild has the permission to do so - if
-not, you can let the board administrator set the permission for you in 
-**project settings**.
+that the JIRA account you used on Buddybuild has the permission to do so
+-- if not, you can let the JIRA board administrator set the permission for
+you in **project settings**.
 ======
 
 image:img/Settings---Jira-Issues---11.png[,1500,865]
