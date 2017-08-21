@@ -10,14 +10,14 @@ class Deployer:
     """Responsible for deploying the website."""
 
     def __init__(self):
-        self._repo = os.environ['TRAVIS_REPO_SLUG']
-        self._pull_request = os.environ['TRAVIS_PULL_REQUEST']
-        self._branch = os.environ['TRAVIS_BRANCH']
-        self._github_token = os.environ['GITHUB_TOKEN']
+        self._repo = os.environ.get('TRAVIS_REPO_SLUG')
+        self._pull_request = os.environ.get('TRAVIS_PULL_REQUEST')
+        self._branch = os.environ.get('TRAVIS_BRANCH')
+        self._github_token = os.environ.get('GITHUB_TOKEN')
         os.environ['AWS_SECRET_ACCESS_KEY'] # just to raise an exception if missing
         os.environ['AWS_ACCESS_KEY_ID']
-        self._bucketURI = os.environ['AWS_BUCKET_URL'] # e.g. s3://apidocs.buddybuild.com'
-        self._bucketRegion = os.environ['AWS_BUCKET_REGION'] # e.g. us-west-2  
+        self._bucketURI = os.environ.get('AWS_BUCKET_URL') # e.g. s3://apidocs.buddybuild.com'
+        self._bucketRegion = os.environ.get('AWS_BUCKET_REGION') # e.g. us-west-2
         self.domain = None
 
     def deploy(self):

@@ -1,3 +1,6 @@
+---
+search: false
+---
 = Android
 
 This section covers buddybuild's infrastructure for testing Android
