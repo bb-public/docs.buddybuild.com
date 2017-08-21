@@ -1,3 +1,6 @@
+---
+search: false
+---
 = Dependencies
 
 This section covers how to manage your app's dependencies during a
