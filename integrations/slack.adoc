@@ -222,8 +222,8 @@ buddybuild should send notifications.
   menu** is displayed.
 +
 [NOTE]
-If your team uses many Slack channels, you might notice a delay before
-the **Channel selection menu** is ready.
+If your team uses many Slack channels, you might notice a slight delay
+before the **Channel selection menu** is ready.
 
 . image:img/dropdown-slack-channel.png["The Channel selection menu",
   219, 187, role="right"]
@@ -232,6 +232,13 @@ the **Channel selection menu** is ready.
 +
 image:img/tab-notifications-build.png["The Build tab", 598, 193,
 role="frame"]
+
+[NOTE]
+image:img/dropdown-slack-team.png["The Team dropdown", 208, 45, role="right"]
+When you have multiple teams configured, each notification configuration
+panel includes the team selection dropdown. Click the dropdown and
+select the appropriate team. When you select a different team, the
+Channel dropdown updates accordingly.
 
 At this point, you can adjust the configuration for **Build**,
 **Deployment**, and **Feedback** notifications. Click the associated tab
