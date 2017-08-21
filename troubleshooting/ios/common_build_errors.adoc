@@ -170,7 +170,7 @@ To access the logs:
 
 . Select an available log to download.
 
-. Repeat the selection to download all avaiable logs.
+. Repeat the selection to download all available logs.
 
 
 [[support]]
