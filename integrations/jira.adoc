@@ -116,7 +116,7 @@ and **reporter** for new issues.
 ======
 **Permission to modify reporter**
 
-By default, non-adminstrator is **not** able to modify the reporter when
+By default, non-administrator is **not** able to modify the reporter when
 creating an issue. If you want to use another reporter, please make sure
 the Jira account you used on Buddybuild has the permission to do so - if
 not, you can let the board administrator set the permission for you in 
