@@ -110,7 +110,7 @@ image:img/Settings---Jira-Issues---10.png[,1500,800]
 
 Next, configure JIRA for Feedback and Crash Reports.  You can
 automatically create issues, and set the default **project**, **type**
-and **assignee** for new issues.
+and **reporter** for new issues.
 
 image:img/Settings---Jira-Issues---11.png[,1500,865]
 
