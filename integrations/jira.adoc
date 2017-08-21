@@ -112,6 +112,15 @@ Next, configure JIRA for Feedback and Crash Reports.  You can
 automatically create issues, and set the default **project**, **type**
 and **reporter** for new issues.
 
+[NOTE]
+======
+By default, non-adminstrator is **not** able to modify the reporter when
+creating an issue. If you want to use another reporter, please make sure
+the Jira account you used on Buddybuild has the permission to do so - if
+not, you can let the board administrator set the permission for you in 
+**project settings**.
+======
+
 image:img/Settings---Jira-Issues---11.png[,1500,865]
 
 That's it! Buddybuild is now connected to your JIRA. We will
