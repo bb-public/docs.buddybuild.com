@@ -147,11 +147,13 @@ subprojects {
 }
 ----
 
-=== fatal error: 'React/RCTViewManager.h' file not found
+=== fatal error: `React/RCTViewManager.h` file not found
 
-This generally indicates that you are using a Buddybuild generated scheme that is not correctly adding libReact.a as a target dependency.
-In these instances we recommend you share your scheme and configure your app to use your shared scheme rather than Buddybuild's generated scheme.
-https://docs.buddybuild.com/troubleshooting/ios/missing_schemes.html
+This generally indicates that you are using a buddybuild-generated scheme
+that is not correctly adding `libReact.a` as a target dependency.
+In these instances, we recommend that you share your scheme and configure your app
+to use your shared scheme rather than Buddybuild's generated scheme.
+See link:../ios/missing_schemes.adoc[Missing schemes] for details.
 
 === error: `FBSDKShareKit/FBSDKShareKit.h` file not found
 
