@@ -1059,6 +1059,10 @@ body.with-search .navigation {
   height: auto;
 }
 
+span.image, span.image img {
+  line-height: 1;
+}
+
 span.image:after {
   content: "";
   display: table;
