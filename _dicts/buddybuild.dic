@@ -1,4 +1,4 @@
-373
+374
 10a
 13b
 1a
@@ -179,6 +179,7 @@ cordova
 dSYM/S
 debuggable
 defaultConfig
+dev
 dex
 didFinishLaunchingWithOptions
 didReceiveRemoteNotification

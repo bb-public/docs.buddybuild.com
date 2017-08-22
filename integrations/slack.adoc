@@ -2,7 +2,7 @@
 
 Slack is a popular team-based chat application that has revolutionized
 the way that development teams communicate. Buddybuild offers a
-first-class integration with Slack, providing notifications of build
+first-class integration with Slack, providing notifications for build
 status, feedback submissions, and crash reports directly to the Slack
 channels that you use.
 
@@ -38,13 +38,14 @@ screen", 1280, 1024, role="frame"]
 . image:img/button-integrations.png["The Integrations button", 210, 42,
   role="right"]
   In the left navigation bar, click the **Integrations** button. The
-  **Integrations** screen is displayed:
+  first of the **Integrations** screens (**Apple Dev Connection**) is
+  displayed:
 +
-image:img/screen-integrations.png["The Integrations screen", 1280,734,
+image:img/screen-apple_dev_connection.png["The Apple Dev Connection screen", 1280,734,
 role="frame"]
 
 . image:img/button-slack.png["The Slack button", 210, 32, role="right"]
-  In the left navigation bar, click the **Slack** button. The **Slack**
+  In the left navigation, click the **Slack** button. The **Slack**
   screen is displayed:
 +
 image:img/screen-slack-unconfigured.png["The Slack screen", 1280, 734,
@@ -65,16 +66,22 @@ as required.
 
 . <<navigate>>
 
+. Depending on whether you have an existing connection, or not, perform
+  _one_ of the following:
++
+--
+[loweralpha]
 . image:img/button-connect_with_slack.png["The Connect with Slack
   button", 154, 42, role="right"]
-  If you do not have an existing Slack connection, click the **Connect
-  with Slack** button.
-+
-image:img/tab-slack-connected_teams.png["The Connected teams tab", 237,
-63, role="right"]
-image:img/button-add_new.png["The Add new button", 89, 30, role="right"]
-If you do have an existing Slack connection, click the **Connected
-teams** tab and then the **Add new** button.
+  If you _do not_ already have a Slack connection configured, click
+  the **Connect with Slack** button.
+
+. image:img/button-add_new.png["The Add new button", 89, 30, role="right"]
+  image:img/tab-slack-connected_teams.png["The Connected teams tab", 237,
+  63, role="right"]
+  If you _do_ have an existing Slack connection, click the **Connected
+  teams** tab and then the **Add new** button.
+--
 
 . When you are not logged in to Slack, the **Slack authentication**
 screen is displayed:
@@ -381,8 +388,8 @@ remove the original branch-specific settings. See <<per-branch>> and
 
 image:img/button-pencil.png["The pencil button", 45, 47, role="right"]
 You can adjust the pattern for pattern-specific notification settings,
-by clicking the **Pencil** icon in the at the top right of the
-appropriate panel. The **Edit branch pattern** screen is displayed:
+by clicking the **Pencil** icon at the top right of the appropriate
+panel. The **Edit branch pattern** screen is displayed:
 
 image:img/screen-edit_branch_pattern.png["The Edit branch pattern
 screen", 1280, 354, role="frame"]
@@ -406,58 +413,99 @@ configuration cease immediately.
 [[remove_connection]]
 == Remove team connection
 
-To remove a team connection, there are several steps:
+The steps to remove a team connection differ between connections that
+are available for all apps and connections available for select apps.
 
-. Visit your team's **Manage Apps** page on Slack. The URL looks like:
+[loweralpha]
+. image:img/badge-all_apps.png["The all-apps indicator", 187, 47,
+role="right"]
+  **For connections available for all apps**
 +
-[source,bash]
-https://team.slack.com/apps/manage
-+
-Replace `team` with the name of your team. You should see a page that
-looks similar to this:
-+
-image:img/screen-slack-manage_apps.png["The Manage Apps screen on
-Slack", 1280, 1024, role="frame"]
+--
+. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
+  dashboard].
 
-. Click the **buddybuild** app name. The **App authorizations** page is
-displayed:
-+
-image:img/screen-slack-app_authorizations.png["The App authorizations
-screen on Slack", 1280, 1024, role="frame"]
+. image:../_img/dropdown-user-manage_org.png["Select Manage Org in
+  the avatar dropdown", 121, 207, role="right"]
+  Move your mouse pointer over your avatar in the top right corner. A
+  dropdown menu appears.
 
-. image:img/button-slack-remove_app.png["Slack's Remove App button",
-114, 36, role="right"]
-  Click the **Remove App** button to remove the buddybuild app from your
-  Slack team. A confirmation dialog appears:
+. Select **Manage Org**. The **Manage Organization** screen appears:
 +
-image:img/dialog-slack-confirm_app_removal.png["The Slack app removal
-confirmation dialog", 444, 183]
+image:../_img/screen-manage_org.png["The Manage Organization", 1280,
+568, role="frame"]
+
+. image:../_img/button-integrations.png["The Integrations button", 206,
+  42, role="right"]
+  In the left navigation, click the **Integrations** link. The first of
+  the **Integrations** screens (**Apple Dev Connection**) is displayed:
 +
-Click the **Remove App** button in the dialog. The **App
-authorizations** screen updates to indicate that the buddybuild app no
-longer has any authorizations:
+image:../_img/screen-apple_dev_connection.png["The Apple Dev Connection
+screen", 1280, 569, role="frame"]
+
+. image:img/button-slack.png["The Slack button", 210, 32, role="right"]
+  In the left navigation, click the **Slack** button. The **Slack**
+  screen is displayed, showing all of the shared Slack teams:
 +
-image:img/screen-slack-app_authorizations-none.png["The App
-authorizations screen, with no authorizations", 1280, 1024,
+image:../_img/screen-slack.png["The Slack screen", 1280, 1024,
 role="frame"]
 
+. image:img/button-trashcan.png["The Trashcan icon", 57, 47, role="right"]
+  Click the **Trashcan** icon beside the team connection you wish to
+  remove. A delete confirmation appears:
++
+image:img/panel-connection_delete_confirmation.png["The Connection delete
+confirmation panel", 900, 46]
+
+. image:img/button-delete.png["The Delete button",61, 30, role="right"]
+  Click the **Delete** button to complete the deletion of the
+  connection.
+--
+
+. **For other connections, not available to all apps**
++
+--
 . <<navigate>>
 
-. image:img/tab-slack-connected_teams.png["The Connected Teams
-tab", 237, 63, role="right"]
-  Click the **Connected teams** tab. The **Connected teams** screen is
-  displayed:
+. Click the **Connected teams** tab. The connected teams are displayed:
 +
+image:img/panel-slack-connected_teams.png["The list of connected teams",
+905, 219]
+
+. image:img/button-trashcan.png["The Trashcan icon", 57, 47, role="right"]
+  Click the **Trashcan** icon beside the team connection you wish to
+  remove. A delete confirmation appears:
++
+image:img/panel-connection_delete_confirmation.png["The Connection delete
+confirmation panel", 900, 46]
+
+. image:img/button-delete.png["The Delete button",61, 30, role="right"]
+  Click the **Delete** button to complete the deletion of the
+  connection.
+--
+
+[NOTE]
+======
+If buddybuild's authorization to send notifications to a teams is ever
+revoked, notifications for this team connection are not sent and the
+**Connected teams** tab displays a banner indicating the situation:
+
 image:img/screen-slack-connected_teams-revoked.png["The Connected Teams
 screen showing the removed app", 1280, 734, role="frame"]
 
-. image:img/buttons-slack-reconnect-delete.png["The buttons for dealing
-with revoked Slack teams, re-connect or delete", 90, 62, role="right"]
-  The warning banner indicates that the team connection has been
-  revoked.
-+
-If you want to undo the removal, click the **Re-connect** button; the
-<<connect>> process begins.
-+
-Otherwise, click the **Delete** button to remove the team connection
-from buddybuild.
+You now have a choice:
+
+[loweralpha]
+. image:img/button-reconnect.png["The Re-connect button", 88, 30,
+  role="right"]
+  Click the **Re-connect** button to re-authorize notifications from
+  buddybuild; the <<connect>> process begins.
+
+. image:img/button-delete-banner.png["The Delete button", 62, 31,
+  role="right"]
+  To remove of the connection from buddybuild, click the
+  **Delete** button.
+
+After reconnection, you may have to perform <<channel>> again,
+especially if you use different credentials to authorize buddybuild.
+======
