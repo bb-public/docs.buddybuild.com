@@ -151,6 +151,7 @@ subprojects {
 
 This generally indicates that you are using a buddybuild-generated scheme
 that is not correctly adding `libReact.a` as a target dependency.
+
 In these instances, we recommend that you share your scheme and configure your app
 to use your shared scheme rather than Buddybuild's generated scheme.
 See link:../ios/missing_schemes.adoc[Missing schemes] for details.
