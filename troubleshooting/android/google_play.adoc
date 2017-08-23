@@ -1,6 +1,14 @@
-= Troubleshooting Google Play Errors
+= Common Google Play Deployment Errors
 
-Google Play errors are generally rooted in the following issues:
+The number one issue related to Google Play errors occurs when one of
+your tracks is listed as being "Superseded" by a later track. This
+precludes any automated system from pushing an APK to any earlier track,
+as the system is in a state whereby a later track (i.e. production) has
+a version code greater than an earlier track (i.e. alpha, beta).
+
+image:img/google_play-tracks.png[,777,469]
+
+Other common issues are:
 
 . You are attempting to upload an APK signed with a different keystore
   that what's already uploaded.
@@ -16,19 +24,30 @@ Google Play errors are generally rooted in the following issues:
 . You are attempting to run two tests across two different tracks in
   Google Play at the same time.
 
-Google has documented the restrictions on version codes/testing/tracks here (we've quoted the relevant portions):
+Google has documented the restrictions on version codes/testing/tracks
+here (we've quoted the relevant portions):
 https://support.google.com/googleplay/android-developer/answer/3131213#availability
 
 [NOTE]
 ======
 **Version code requirements**
 
-Alpha testing group users are eligible for the alpha, beta, or production version of your app (with the highest version code that's compatible with their device). Beta testing group users are only eligible for the beta or production version of your app (with the highest version code that's compatible with their device).
+Alpha testing group users are eligible for the alpha, beta, or
+production version of your app (with the highest version code that's
+compatible with their device). Beta testing group users are only
+eligible for the beta or production version of your app (with the
+highest version code that's compatible with their device).
 
-**This means your alpha APKs should have the highest version codes, followed by beta, and finally production.
-**
-If a beta APK is uploaded with a higher version code than an alpha APK, alpha users who can install both will install the beta APK instead of the alpha APK.
-If a production APK is uploaded with a higher version code than an alpha or beta APK, some or all of your alpha and beta users will install the production APK, instead of APKs of the testing tracks. 
+**This means your alpha APKs should have the highest version codes, followed by beta, and finally production.**
+
+If a beta APK is uploaded with a higher version code than an alpha APK,
+alpha users who can install both will install the beta APK instead of
+the alpha APK.
+
+If a production APK is uploaded with a higher version code than an alpha
+or beta APK, some or all of your alpha and beta users will install the
+production APK, instead of APKs of the testing tracks.
+
 For more information, learn about versioning your apps.
 ======
 
@@ -57,7 +76,7 @@ when deploying using Google's APIs, compared to uploading APKs manually
 using the Google Play console.
 
 In other words, you might be able to upload an APK manually while
-uploading using buddybuild might fail due to additional rules that must
+uploading using Buddybuild might fail due to additional rules that must
 be respected when using their APIs.
 =========
 
@@ -75,5 +94,8 @@ uploading your APK.
 One of the likely reasons for this error is that you're trying to push
 an APK with a higher version code to a later track (i.e. beta) than what
 is in your earlier tracks (i.e. alpha).
+
+Another possibly reason is that one of your tracks is listed as being
+"Superseded" by a later track in your Google Play console.
 
 You are **not** allowed to do this via automated deployment.
