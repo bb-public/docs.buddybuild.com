@@ -30,7 +30,6 @@ have encountered, and provides solutions that could help you.
 - link:android/common.adoc[Common Android build errors]
 - link:android/docker_environment.adoc[Tools and Platform versions for Android / Docker environment]
 - link:android/google_play.adoc[Google Play Errors]
-- link:android/common_google_play_deployment_errors.adoc[Google Play Deployment]
 - link:android/build_number_without_sdk.adoc[Displaying Build Number in an Android App without SDK Integration]
 |===
 

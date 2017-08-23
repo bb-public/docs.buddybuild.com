@@ -1,6 +1,14 @@
-= Troubleshooting Google Play Errors
+= Google Play Errors
 
-Google Play errors are generally rooted in the following issues:
+The number one issue related to Google Play errors occurs when one of
+your tracks is listed as being "Superseded" by a later track. This
+precludes any automated system from pushing an APK to any earlier track,
+as the system is in a state whereby a later track (i.e. production) has
+a version code greater than an earlier track (i.e. alpha, beta).
+
+image:img/google_play-tracks.png[,777,469]
+
+Other common issues are:
 
 . You are attempting to upload an APK signed with a different keystore
   that what's already uploaded.
@@ -88,5 +96,8 @@ uploading your APK.
 One of the likely reasons for this error is that you're trying to push
 an APK with a higher version code to a later track (i.e. beta) than what
 is in your earlier tracks (i.e. alpha).
+
+Another possibly reason is that one of your tracks is listed as being
+"Superseded" by a later track in your Google Play console.
 
 You are **not** allowed to do this via automated deployment.
