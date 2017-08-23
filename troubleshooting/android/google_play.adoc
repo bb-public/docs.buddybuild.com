@@ -26,6 +26,7 @@ Other common issues are:
 
 Google has documented the restrictions on version codes/testing/tracks
 here (we've quoted the relevant portions):
+
 https://support.google.com/googleplay/android-developer/answer/3131213#availability
 
 [NOTE]
@@ -38,7 +39,8 @@ compatible with their device). Beta testing group users are only
 eligible for the beta or production version of your app (with the
 highest version code that's compatible with their device).
 
-**This means your alpha APKs should have the highest version codes, followed by beta, and finally production.**
+**This means your alpha APKs should have the highest version codes,
+followed by beta, and finally production.**
 
 If a beta APK is uploaded with a higher version code than an alpha APK,
 alpha users who can install both will install the beta APK instead of

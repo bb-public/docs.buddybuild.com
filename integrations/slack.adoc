@@ -20,7 +20,9 @@ image:img/Slack---2.png[,1500,650]
 You will now be prompted to authorize buddybuild use your Slack account.
 Click on **Authorize**.
 
-**Note:** If you are not signed into your Slack account, you will be asked to enter your Slack credentials.
+[NOTE]
+If you are not signed into your Slack account, you will be asked to
+enter your Slack credentials.
 
 image:img/Slack---3.png[,1500,977]
 

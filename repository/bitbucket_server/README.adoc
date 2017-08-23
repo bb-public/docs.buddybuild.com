@@ -54,7 +54,8 @@ Next, select **Add key**.
 
 image:img/click-add-key.png[,3000,1248]
 
-Enter **Buddybuild** as the title, and paste the copied SSH key into the **key** field.
+Enter **Buddybuild** as the title, and paste the copied SSH key into the
+**key** field.
 
 image:img/paste-ssh-key.png[,3000,1424]
 
