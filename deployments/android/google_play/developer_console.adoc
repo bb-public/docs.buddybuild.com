@@ -25,7 +25,8 @@ In the modal that pops up, select **Google API Console**.
 
 image:img/Google-Play-4.jpg[,3000,1188]
 
-On the next page, select the **Create credentials** dropdown, and then **Service account key**.
+On the next page, select the **Create credentials** dropdown, and then
+**Service account key**.
 
 image:img/Google-Play-5a.jpg[,3000,1188]
 
