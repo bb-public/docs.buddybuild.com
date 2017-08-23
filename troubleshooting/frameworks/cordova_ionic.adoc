@@ -36,7 +36,7 @@ npm install -g cordova@{selectedCordovaVersion} ionic@{selectedIonicVersion}
 === Install node dependencies
 
 In addition to installing node dependencies, you can be execute
-postInstall tasks that perform additional setup required for Buddybuild
+postInstall tasks that perform additional setup required for buddybuild
 to build your application.
 
 [[code-samples]]
@@ -263,7 +263,7 @@ folder and then commit the change.
 
 This indicates that the ios platform tools version we're using is
 incompatible with your project. In these instances, the best way to
-guarantee that Buddybuild is using the exact version you're using is to
+guarantee that buddybuild is using the exact version you're using is to
 ensure that there's the below entry in your `config.xml`:
 
 [[code-samples]]
@@ -276,7 +276,7 @@ ensure that there's the below entry in your `config.xml`:
 
 === Cannot find module 'shelljs'
 
-This indicates that Buddybuild's cordova/ionic setup steps were not run
+This indicates that buddybuild's cordova/ionic setup steps were not run
 because we didn't recognize your project as a cordova/ionic project.
 Please make sure that your project satisfies the prerequisites listed
 under "Cordova / Ionic setup in buddybuild", namely that it at least has
@@ -303,7 +303,7 @@ resources {platform}"
 
 This indicates a failure that's been masked by the ionic CLI while
 running requisite commands to build the plugins. Please contact
-Buddybuild support so that they can attempt to manually add the plugins
+buddybuild support so that they can attempt to manually add the plugins
 using "cordova plugin add <pluginname>" and determine the actual error
 message.
 
@@ -316,7 +316,7 @@ it's not already present.
 
 === fatal error: 'Cordova/CDVPlugin.h' file not found
 
-This indicates that Buddybuild's cordova/ionic setup steps were not run
+This indicates that buddybuild's cordova/ionic setup steps were not run
 because we didn't recognize your project as a cordova/ionic project.
 Please make sure that your project satisfies the prerequisites listed
 under "Cordova / Ionic setup in buddybuild", namely that it at least has

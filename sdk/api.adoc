@@ -60,7 +60,7 @@ reporting.
 ----
 // Make sure it gets called before BuddyBuildSDK.setup()
 BuddyBuildSDK.setUserDisplayNameCallback { () -> String! in
-  return "Johnny Buddybuild"
+  return "Johnny App Builder"
 }
 
 // Later on call setup
