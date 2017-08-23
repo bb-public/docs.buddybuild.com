@@ -3,7 +3,10 @@
 Now that you're deploying builds, it is time to connect your Apple
 Developer Account.
 
-Managing testing and development device UDIDs in your provisioning profiles can be a huge pain. Buddybuild can manage this entire process for you. All we need to manage your provisioning profiles on your behalf are your Apple Developer Credentials. Let's get started!
+Managing testing and development device UDIDs in your provisioning
+profiles can be a huge pain. Buddybuild can manage this entire process
+for you. All we need to manage your provisioning profiles on your behalf
+are your Apple Developer Credentials. Let's get started!
 
 == Step 1: Configure Apple Developer Portal
 

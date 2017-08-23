@@ -6,6 +6,7 @@ automatically kick off a new build -- ensuring you have up-to-date build
 status and your testers have the very latest builds.
 
 **Step 1: Copy the webhook URL from buddybuild**
+
 On the Builds page, in the red banner at the top of the page, click on
 **Resolve this issue**.
 
@@ -17,7 +18,9 @@ when sending webhooks from Bitbucket Server.
 
 image:../img/modal.png[,1500,838]
 
-**Step 2: Add a new hook if the Web Post Hooks Plugin is not already installed **
+**Step 2: Add a new hook if the Web Post Hooks Plugin is not already
+installed**
+
 In Bitbucket Server, navigate to the repo that contains your app. In the
 left navigation pane click **Settings**, then click on **Hooks**.
 
@@ -31,12 +34,14 @@ button.
 image:img/step1.png[,2106,1196]
 
 **Step 3: Select search to visit the Atlassian Marketplace**
+
 The Atlassian Marketplace contains hundreds of useful plugins for
 development. Click **Search** to visit the marketplace.
 
 image:img/step2.png[,2105,1198]
 
 **Step 4: Install the Web Post Hooks Plugin**
+
 Search for the *Bitbucket Server Web Post Hooks Plugin*. Then click
 **Install**.
 

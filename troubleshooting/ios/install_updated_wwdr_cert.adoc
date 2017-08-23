@@ -12,10 +12,8 @@ image:img/Screen-Shot-2016-02-14-at-7.33.12-PM.png[,570,103]
 
 == Download and install the new certificate
 
-Go to
-link:https://www.apple.com/certificateauthority/[https://www.apple.com/certificateauthority/]
-and download the certificate marked **WWDR Certificate (Expiring
-02/07/23)**.
+Go to https://www.apple.com/certificateauthority/ and download the
+certificate marked **WWDR Certificate (Expiring 02/07/23)**.
 
 Once you have downloaded that, double click on it to install it.
 
