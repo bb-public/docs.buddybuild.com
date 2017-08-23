@@ -1,4 +1,4 @@
-= Common Google Play Deployment Errors
+= Google Play Errors
 
 The number one issue related to Google Play errors occurs when one of
 your tracks is listed as being "Superseded" by a later track. This
@@ -78,7 +78,7 @@ when deploying using Google's APIs, compared to uploading APKs manually
 using the Google Play console.
 
 In other words, you might be able to upload an APK manually while
-uploading using Buddybuild might fail due to additional rules that must
+uploading using buddybuild might fail due to additional rules that must
 be respected when using their APIs.
 =========
 
