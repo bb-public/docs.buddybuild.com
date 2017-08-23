@@ -3,7 +3,6 @@
 use strict;
 use warnings;
 
-use File::Slurp;
 use File::Spec::Functions;
 use Getopt::Std;
 
@@ -73,13 +72,16 @@ sub check_length {
   my %results;
   foreach my $file (@_) {
     DEBUG "Checking line length in '$file'...\n";
-    my @lines = read_file($file);
+    open my $fh, '<', $file
+      or die "Couldn't open file '$file': $!\n";
+    chomp(my @lines = <$fh>);
+    close $fh;
+
     my $count = 0;
     my $in_source = 0;
     my $delimiter = '';
 
     foreach my $line (@lines) {
-      chomp $line;
       $count++;
       DEBUG "Line $count: '$line'\n";
 
