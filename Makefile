@@ -45,16 +45,16 @@ tidy:
 	rm -rf _book/CNAME _book/Gemfile _book/Gemfile.lock _book/Makefile _book/_common _book/_dicts _book/deploy.py _book/npm-debug.log _book/package.json _book/package-lock.json _book/rewrites.csv _book/yarn.lock
 
 # 'test' the artifacts
-test: spell length proof missed
+test: setup spell length proof missed
 
 # Spell check the source files.
 spell:
 	@command -v hunspell >/dev/null 2>&1 || { echo >&2 "hunspell required for spell testing."; exit 1; }
-	@_tools/spellcheck.pl -d . -D _dicts
+	@node_modules/gitbook-plugin-buddybuild/scripts/spellcheck.pl -d . -D node_modules/gitbook-plugin-buddybuild/dictionaries
 
 # Check for line length violations
 length:
-	@_tools/linelength.pl -d . -l 80
+	@node_modules/gitbook-plugin-buddybuild/scripts/linelength.pl -d . -l 80
 
 # Run htmlproofer on the artifacts to catch bad images, links, etc.
 proof: all
