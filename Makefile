@@ -50,6 +50,7 @@ test: setup spell length proof missed
 # Spell check the source files.
 spell:
 	@command -v hunspell >/dev/null 2>&1 || { echo >&2 "hunspell required for spell testing."; exit 1; }
+	@command -v node_modules/gitbook-plugin-buddybuild/scripts/spellcheck.pl >/dev/null 2>&1 || { echo >&2 "run make setup before spell testing."; exit 1; }
 	@node_modules/gitbook-plugin-buddybuild/scripts/spellcheck.pl -d . -D node_modules/gitbook-plugin-buddybuild/dictionaries
 
 # Check for line length violations
