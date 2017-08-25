@@ -16,7 +16,7 @@ uploading.
 
 . The APK must be uploaded manually, at least once, through the Google
   Play Developer Console, which sets up the application inside the
-  Google Play Developer Console allowing Buddybuild to automatically
+  Google Play Developer Console allowing buddybuild to automatically
   deploy on your behalf from then on.
 =========
 

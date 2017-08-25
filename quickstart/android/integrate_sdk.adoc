@@ -44,7 +44,8 @@ link:../../sdk/usage_tracking.adoc[Learn more.]
 =========
 **Can I turn off the SDK feature for production?**
 
-The SDK features are turned off by default, you have control over which feature to enable when deploying via email or directly to Google Play
+The SDK features are turned off by default, you have control over which
+feature to enable when deploying via email or directly to Google Play.
 =========
 
 == How to install

@@ -228,7 +228,6 @@ buddybuild should send notifications.
   click the **Channel selection** dropdown. The **Channel selection
   menu** is displayed.
 +
-[NOTE]
 If your team uses many Slack channels, you might notice a slight delay
 before the **Channel selection menu** is ready.
 
@@ -471,6 +470,8 @@ confirmation panel", 900, 46]
 +
 image:img/panel-slack-connected_teams.png["The list of connected teams",
 905, 219]
+If you are not signed into your Slack account, you will be asked to
+enter your Slack credentials.
 
 . image:img/button-trashcan.png["The Trashcan icon", 57, 47, role="right"]
   Click the **Trashcan** icon beside the team connection you wish to

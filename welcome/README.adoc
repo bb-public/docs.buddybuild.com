@@ -1,6 +1,7 @@
 = What is buddybuild?
 
-**Buddybuild ties together and automates building, deploying and gathering feedback for mobile apps.**
+**Buddybuild ties together and automates building, deploying and
+gathering feedback for mobile apps.**
 
 If you’re developing a mobile application, and are looking for a mobile
 focused continuous integration, continuous deployment and iterative

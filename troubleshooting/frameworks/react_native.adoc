@@ -24,7 +24,8 @@ to date:
 
 - Clone your repo into a new location / folder on your machine
 
-- **Make sure that the node version installed on your machine is what's being used on buddybuild**
+- **Make sure that the node version installed on your machine is what's
+  being used on buddybuild**
 
 - Do a fresh npm install and attempt to build your app
 
@@ -146,6 +147,15 @@ subprojects {
   }
 }
 ----
+
+=== fatal error: `React/RCTViewManager.h` file not found
+
+This generally indicates that you are using a buddybuild-generated scheme
+that is not correctly adding `libReact.a` as a target dependency.
+
+In these instances, we recommend that you share your scheme and configure your app
+to use your shared scheme rather than buddybuild's generated scheme.
+See link:../ios/missing_schemes.adoc[Missing schemes] for details.
 
 === error: `FBSDKShareKit/FBSDKShareKit.h` file not found
 
