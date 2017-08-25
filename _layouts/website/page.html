@@ -50,7 +50,7 @@ ga('custom.send', 'pageview');
     <script src="https://use.typekit.net/wtm6grz.js"></script>
     <style type="text/css">
 .tk-proxima-nova{ font-family:"proxima-nova",sans-serif; }
-		
+
 @font-face{
 	font-family: proxima-nova;
 	src: url(https://use.typekit.net/af/6d80a1/00000000000000003b9aefb8/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),
@@ -117,6 +117,7 @@ try {
 {% block javascript %}
     <script src="{{ "gitbook.js"|resolveAsset }}"></script>
     <script src="{{ "theme.js"|resolveAsset }}"></script>
+    <script src="{{ "../_js/highlight/highlight.pack.js"|resolveAsset }}"></script>
     {% for resource in plugins.resources.js %}
         {% if resource.url %}
         <script src="{{ resource.url }}"></script>
@@ -124,7 +125,6 @@ try {
         <script src="{{ resource.path|resolveAsset }}"></script>
         {% endif %}
     {% endfor %}
-    <script src="{{ "../_js/highlight/highlight.pack.js"|resolveAsset }}"></script>
     <script src="{{ "../_js/docs.js"|resolveAsset }}"></script>
 {% endblock %}
 
@@ -134,7 +134,7 @@ try {
         {% block book_sidebar %}
             <div class="logo">
               <a href="{{ "index.adoc"|resolveFile }}">
-                <img src="{{ "../_img/logo-bb.svg" | resolveAsset }}" alt="buddybuildi docs"/>
+                <img src="{{ "gitbook-plugin-buddybuild/logo-bb.svg" | resolveAsset }}" alt="buddybuild docs"/>
                 Docs
               </a>
             </div>
