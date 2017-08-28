@@ -16,6 +16,7 @@ There are a number of sub-sections on this page:
 - <<remove_config>>
 - <<remove_connection>>
 
+
 [[navigate]]
 == Navigate to the HipChat integration settings
 
@@ -52,7 +53,6 @@ role="frame"]
 +
 If you have previously configured HipChat, you might instead see:
 +
-FIXME
 image:img/screen-hipchat-configured.png["The HipChat screen with existing
 configuration", 1280, 1024, role="frame"]
 
@@ -133,7 +133,7 @@ configuration screen", 1280, 861, role="frame"]
 . Copy the contents of the **Send messages to this room by posting to
   this URL** field.
 
-. In your original browser window, or tab, <<navigate>>
+. In your original browser window, or tab, <<navigate>>.
 
 . Depending on whether you have an existing connection, or not, perform
   _one_ of the following:
@@ -145,9 +145,16 @@ configuration screen", 1280, 861, role="frame"]
   If you _do not_ already have a HipChat connection configured, click
   the **Add a HipChat room** button.
 
-. FIXME: add a screenshot here
-  If you _do_ have an existing HipChat connection, click the ... and
-  then the ...
+. image:img/tab-hipchat-connected_rooms.png["The Connected rooms tab",
+239, 63, role="right"]
+  If you _do_ have an existing HipChat connection, click the **Connected
+  rooms** tab. The **Connected rooms** screen is displayed:
++
+image:img/screen-hipchat-connected_rooms.png["The Connected rooms
+screen", 1280, 1024, role="frame"]
++
+image:img/button-add_new.png["The Add new button", 89, 30, role="right"]
+Click the **Add new** button.
 --
 +
 For both options, the **Add a HipChat room** screen is displayed:
@@ -160,8 +167,8 @@ image:img/screen-hipchat-add_room.png["The Add a HipChat room screen",
 . Paste the URL that you copied from the HipChat **Integration
   configuration** screen into the **Webhook URL** field.
 
-. image:img/button....
-  Click the ** FIXME ** button. The **Connection confirmation** screen
+. image:img/button-add_room.png["The Add room button", 89, 42, role="right"]
+  Click the **Add room** button. The **Connection confirmation** screen
   is displayed:
 +
 image:img/screen-hipchat-connection_confirmation.png["The Connection
@@ -171,23 +178,23 @@ confirmation screen", 1280, 1024, role="frame"]
 +
 --
 [loweralpha]
+. image:img/button-share_with_all_apps.png["The Yes, share with all apps
+  button", 230, 42, role="right"]
+  If you _do_ wish to share this room connection with all apps, click
+  the **Yes, share with all apps** button.
+
 . image:img/button-no_thanks.png["The No thanks! button", 230, 42,
   role="right"]
   If you _do not_ wish to share this room connection with all apps,
   click the **No thanks!** button. The room connection is associated
   only with the current application.
-
-. image:img/button-share_with_all_apps.png["The Yes, share with all apps
-  button", 230, 42, role="right"]
-  If you _do_ wish to share this room connection with all apps, click
-  the **Yes, share with all apps** button.
 --
 +
 For both options, the **HipChat** screen is displayed:
 +
-image:img/screen-hipchat... FIXME!
+image:img/screen-hipchat-no_branches.png["The HipChat screen, with no
+notifications yet configured", 1280, 1024, role="frame"]
 
-FIXME: Slack image filenames, jumps to Slack channel selection.
 
 [[branches]]
 == Configure branches
@@ -204,7 +211,7 @@ You can configure notifications for all branches.
 
 . <<navigate>>
 
-. image:img/button-slack-add_new.png["The Add new button", 89, 30,
+. image:img/button-add_new.png["The Add new button", 89, 30,
   role="right"]
   You can configure buddybuild notifications for all branches of your
   application, or you can configure notifications for a
@@ -213,10 +220,10 @@ You can configure notifications for all branches.
   displayed, which now includes the **All branches** notifications
   configuration panel:
 +
-image:img/panel-slack-all_branches-unconfigured.png["The All branches
+image:img/panel-hipchat-all_branches-unconfigured.png["The All branches
 notifications configuration panel", 900, 446, role="frame"]
 
-. Continue with <<channel>>.
+. Continue with <<room>>.
 
 
 [[per-branch]]
@@ -227,7 +234,7 @@ can match branches and/or tags.
 
 . <<navigate>>
 
-. image:img/button-slack-add_new.png["The Add new button", 89, 30,
+. image:img/button-add_new.png["The Add new button", 89, 30,
   role="right"]
   Click the **Add new** button beside the **Notifications for specific
 branches** subheading.
@@ -236,6 +243,8 @@ You can <<specific>> which configures notifications for one branch, or
 <<pattern>> which configures notifications for any matching branches or
 tags.
 
+
+FIXME: review/tweak below.
 
 [[specific]]
 ==== Choose a specific branch
@@ -553,7 +562,7 @@ confirmation panel", 900, 46]
 
 [NOTE]
 ======
-If buddybuild's authorization to send notifications to a teams is ever
+If buddybuild's authorization to send notifications to a room is ever
 revoked, notifications for this team connection are not sent and the
 **Connected teams** tab displays a banner indicating the situation:
 
