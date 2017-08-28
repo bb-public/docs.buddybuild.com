@@ -102,8 +102,29 @@ image:img/screen-slack-authorize.png["The Slack authorization screen",
   200, 36, role="right"]
   Here, you are giving permission to buddybuild to connect to your Slack
   team and send notifications to your channels. Click the **Authorize**
-  button. The **Slack** screen is displayed again, showing the
-  **configuration** tabs:
+  button. The **Connection confirmation** screen is displayed:
++
+image:img/screen-slack-connection_confirmation.png["The Connection
+confirmation screen", 1280, 451, role="frame"]
+
+. Choose whether you want to use this Slack connection for all apps, or
+  just the current app:
++
+--
+[loweralpha]
+. image:img/button-share_with_all_apps.png["The Yes, share with all apps
+  button", 230, 41, role="right"]
+  Click the **Yes, share with all apps** button if you want to use this
+  Slack connection with all apps.
+
+. image:img/button-no_thanks.png["The No thanks! button", 230, 41,
+  role="right"]
+  Click the **No thanks!** button if you want to use this Slack
+  connection with only the current app.
+--
++
+In either case, the **Slack** screen is displayed again, showing the
+**Configure Slack** tab:
 +
 image:img/screen-slack-configure_slack-connected.png["The Slack Screen
 with initial all branches configuration", 1280, 734, role="frame"]
@@ -451,14 +472,20 @@ role="frame"]
 
 . image:img/button-trashcan.png["The Trashcan icon", 57, 47, role="right"]
   Click the **Trashcan** icon beside the team connection you wish to
-  remove. A delete confirmation appears:
+  remove. A delete confirmation dialog appears:
 +
-image:img/panel-connection_delete_confirmation.png["The Connection delete
-confirmation panel", 900, 46]
+image:img/screen-slack-delete_confirmation.png["The Slack connection
+delete confirmation dialog", 1280, 1024, role="frame"]
 
-. image:img/button-delete.png["The Delete button",61, 30, role="right"]
-  Click the **Delete** button to complete the deletion of the
+. image:img/button-delete_confirmation-delete_slack_team.png["The Delete
+  button", 249, 42, role="right"]
+  Click the **Delete Slack team** button to complete the deletion of the
   connection.
++
+image:img/button-delete_confirmation-cancel.png["The Cancel button",
+249, 42, role="right"]
+  If you want to continue using the Slack team connectio, click the
+  **Cancel** button.
 --
 
 . **For other connections, not available to all apps**
@@ -470,8 +497,8 @@ confirmation panel", 900, 46]
 +
 image:img/panel-slack-connected_teams.png["The list of connected teams",
 905, 219]
-If you are not signed into your Slack account, you will be asked to
-enter your Slack credentials.
+If you are not signed into your Slack account, you are asked to enter
+your Slack credentials.
 
 . image:img/button-trashcan.png["The Trashcan icon", 57, 47, role="right"]
   Click the **Trashcan** icon beside the team connection you wish to
