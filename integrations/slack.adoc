@@ -484,7 +484,7 @@ delete confirmation dialog", 1280, 1024, role="frame"]
 +
 image:img/button-delete_confirmation-cancel.png["The Cancel button",
 249, 42, role="right"]
-  If you want to continue using the Slack team connectio, click the
+  If you want to continue using the Slack team connection, click the
   **Cancel** button.
 --
 
