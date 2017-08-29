@@ -515,7 +515,7 @@ confirmation panel", 900, 46]
 
 [NOTE]
 ======
-If buddybuild's authorization to send notifications to a teams is ever
+If buddybuild's authorization to send notifications to a team is ever
 revoked, notifications for this team connection are not sent and the
 **Connected teams** tab displays a banner indicating the situation:
 
