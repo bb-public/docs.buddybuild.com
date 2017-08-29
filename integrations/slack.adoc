@@ -479,7 +479,7 @@ image:img/screen-slack-delete_confirmation.png["The Slack connection
 delete confirmation dialog", 1280, 1024, role="frame"]
 
 . image:img/button-delete_confirmation-delete_slack_team.png["The Delete
-  button", 249, 42, role="right"]
+  Slack team button", 249, 42, role="right"]
   Click the **Delete Slack team** button to complete the deletion of the
   connection.
 +

@@ -20,7 +20,7 @@ There are a number of sub-sections on this page:
 [[navigate]]
 == Navigate to the HipChat integration settings
 
-This section desribes how to navigate to the HipChat integration
+This section describes how to navigate to the HipChat integration
 settings, and is referred to by several procedures described on this
 page.
 
@@ -33,7 +33,7 @@ page.
   configuration** screen is displayed:
 +
 image:img/screen-build_settings.png["The Default build configuration
-screen", 1280, 1024, role="frame"]
+screen", 1280, 737, role="frame"]
 
 . image:img/button-integrations.png["The Integrations button", 210, 42,
   role="right"]
@@ -41,8 +41,8 @@ screen", 1280, 1024, role="frame"]
   first of the **Integrations** screens (**Apple Dev Connection**) is
   displayed:
 +
-image:img/screen-apple_dev_connection.png["The Apple Dev Connection screen", 1280,734,
-role="frame"]
+image:img/screen-apple_dev_connection.png["The Apple Dev Connection
+screen", 1280,734, role="frame"]
 
 . image:img/button-hipchat.png["The HipChat button", 210, 32, role="right"]
   In the left navigation, click the **HipChat** button. The **HipChat**
@@ -54,7 +54,7 @@ role="frame"]
 If you have previously configured HipChat, you might instead see:
 +
 image:img/screen-hipchat-configured.png["The HipChat screen with existing
-configuration", 1280, 1024, role="frame"]
+configuration", 1280, 734, role="frame"]
 
 
 [[connect]]
@@ -68,11 +68,11 @@ connections as required.
 link:https://www.hipchat.com/sign_in[log in to HipChat].
 +
 image:img/screen-hipchat-login.png["The HipChat login screen", 1280,
-1024, role="frame"]
+474, role="frame"]
 
 . Navigate to the room you would like to connect with buddybuild.
 +
-image:img/screen-hipchat-room.png["A HipChat room", 1280, 1024,
+image:img/screen-hipchat-room.png["A HipChat room", 1280, 780,
 role="frame"]
 
 . image:img/button-hipchat-integrations.png["The HipChat Integrations
@@ -88,7 +88,7 @@ integrations or not. Proceed with _one_ of the following:
   appears:
 +
 image:img/screen-hipchat-integrations_dialog-unconfigured.png["The
-HipChat Integrations dialog", 1280, 1024, role="frame"]
+HipChat Integrations dialog", 1280, 780, role="frame"]
 +
 image:img/button-hipchat-check_out_hipchat_integrations.png["The Check
 out HipChat integrations button", 232, 30, role="right"]
@@ -97,8 +97,8 @@ Click the **Check out HipChat integrations button**.
 . If you _do_ have configured integrations, the following dialog
 appears:
 +
-image:img/screen-hipchat-integrations_dialog-configured.png["The
-HipChat Integrations dialog, with configured integrations", 1280, 1024,
+image:img/screen-hipchat-integrations_dialog-configured.png["The HipChat
+Integrations dialog, with configured integrations", 1280, 780,
 role="frame"]
 +
 image:img/button-hipchat-install_new_integrations.png["The Install new
@@ -111,13 +111,13 @@ In either case, the **Integrations showcase** screen is displayed:
 image:img/screen-hipchat-integrations.png["The Integrations showcase
 screen", 1280, 565, role="frame"]
 
-. image:img/button-hipchat-byo.png["The Build your own integration
-  button", 320, 150, role="right"]
+. image:img/button-hipchat-build_your_own.png["The Build your own
+  integration button", 320, 150, role="right"]
   Click the **Build your own integration** button. The **Build your
   own** screen is displayed;
 +
-image:img/screen-hipchat-byo.png["The Build your own screen", 1280,
-1024, role="frame"]
+image:img/screen-hipchat-build_your_own.png["The Build your own screen",
+1280, 671, role="frame"]
 
 . Enter a name for the integration in the **Name your integration
   field**. We recommend calling this integration `buddybuild`.
@@ -133,9 +133,9 @@ configuration screen", 1280, 861, role="frame"]
 . Copy the contents of the **Send messages to this room by posting to
   this URL** field.
 
-. In your original browser window, or tab, <<navigate>>.
+. In your original browser window or tab, <<navigate>>.
 
-. Depending on whether you have an existing connection, or not, perform
+. Depending on whether you have an existing connection or not, perform
   _one_ of the following:
 +
 --
@@ -151,7 +151,7 @@ configuration screen", 1280, 861, role="frame"]
   rooms** tab. The **Connected rooms** screen is displayed:
 +
 image:img/screen-hipchat-connected_rooms.png["The Connected rooms
-screen", 1280, 1024, role="frame"]
+screen", 1280, 617, role="frame"]
 +
 image:img/button-add_new.png["The Add new button", 89, 30, role="right"]
 Click the **Add new** button.
@@ -160,7 +160,7 @@ Click the **Add new** button.
 For both options, the **Add a HipChat room** screen is displayed:
 +
 image:img/screen-hipchat-add_room.png["The Add a HipChat room screen",
-1280, 1024, role="frame"]
+1280, 379, role="frame"]
 
 . Enter a name for the room connection in the **Room name** field.
 
@@ -172,7 +172,7 @@ image:img/screen-hipchat-add_room.png["The Add a HipChat room screen",
   is displayed:
 +
 image:img/screen-hipchat-connection_confirmation.png["The Connection
-confirmation screen", 1280, 1024, role="frame"]
+confirmation screen", 1280, 447, role="frame"]
 +
 . Here, you have a choice:
 +
@@ -193,7 +193,7 @@ confirmation screen", 1280, 1024, role="frame"]
 For both options, the **HipChat** screen is displayed:
 +
 image:img/screen-hipchat-no_branches.png["The HipChat screen, with no
-notifications yet configured", 1280, 1024, role="frame"]
+notifications yet configured", 1280, 617, role="frame"]
 
 
 [[branches]]
@@ -244,8 +244,6 @@ You can <<specific>> which configures notifications for one branch, or
 tags.
 
 
-FIXME: review/tweak below.
-
 [[specific]]
 ==== Choose a specific branch
 
@@ -291,12 +289,11 @@ Click the appropriate checkbox. The list of branches updates
 accordingly.
 
 . image:img/button-create.png["The Create button", 61, 40, role="right"]
-  Click the **Create** button. The **Slack** screen is displayed, which
+  Click the **Create** button. The **HipChat** screen is displayed, which
   now includes a pattern-specific notifications configuration panel:
 +
-image:img/panel-slack-pattern-unconfigured.png["A
-pattern-specific notifications configuration panel", 900, 232,
-role="frame"]
+image:img/panel-hipchat-pattern-unconfigured.png["A pattern-specific
+notifications configuration panel", 900, 232, role="frame"]
 
 . Continue with <<room>>.
 
@@ -307,17 +304,13 @@ role="frame"]
 This section describes how to select the HipChat room to which
 buddybuild should send notifications.
 
-. image:img/button-slack-channel_dropdown.png["The Channel selection
+. image:img/button-hipchat-room_dropdown.png["The Room selection
   dropdown", 208, 46, role="right"]
   In the appropriate notifications configuration panel,
-  click the **Channel selection** dropdown. The **Channel selection
+  click the **Room selection** dropdown. The **Room selection
   menu** is displayed.
-+
-[NOTE]
-If your team uses many Slack channels, you might notice a slight delay
-before the **Channel selection menu** is ready.
 
-. image:img/dropdown-slack-channel.png["The Channel selection menu",
+. image:img/dropdown-hipchat-room.png["The Room selection menu",
   219, 187, role="right"]
   Select the channel to which buddybuild should send notifications. The
   **Notifications configuration** tabs become enabled:
@@ -325,8 +318,6 @@ before the **Channel selection menu** is ready.
 image:img/tab-notifications-build.png["The Build tab", 598, 193,
 role="frame"]
 
-
-FIXME: Lots of Slack references below
 
 [[notifications]]
 == Configure notifications
@@ -487,9 +478,9 @@ configuration cease immediately.
 
 
 [[remove_connection]]
-== Remove team connection
+== Remove room connection
 
-The steps to remove a team connection differ between connections that
+The steps to remove a room connection differ between connections that
 are available for all apps and connections available for select apps.
 
 [loweralpha]
@@ -519,23 +510,29 @@ image:../_img/screen-manage_org.png["The Manage Organization", 1280,
 image:../_img/screen-apple_dev_connection.png["The Apple Dev Connection
 screen", 1280, 569, role="frame"]
 
-. image:img/button-slack.png["The Slack button", 210, 32, role="right"]
-  In the left navigation, click the **Slack** button. The **Slack**
-  screen is displayed, showing all of the shared Slack teams:
+. image:img/button-hipchat.png["The HipChat button", 210, 32, role="right"]
+  In the left navigation, click the **HipChat** button. The **HipChat**
+  screen is displayed, showing all of the shared HipChat rooms:
 +
-image:../_img/screen-slack.png["The Slack screen", 1280, 1024,
+image:img/screen-hipchat.png["The HipChat screen", 1280, 569,
 role="frame"]
 
 . image:img/button-trashcan.png["The Trashcan icon", 57, 47, role="right"]
-  Click the **Trashcan** icon beside the team connection you wish to
-  remove. A delete confirmation appears:
+  Click the **Trashcan** icon beside the room connection you wish to
+  remove. A delete confirmation dialog appears:
 +
-image:img/panel-connection_delete_confirmation.png["The Connection delete
-confirmation panel", 900, 46]
+image:img/screen-hipchat-delete_confirmation.png["The HipChat connection
+delete confirmation dialog", 1280, 569, role="frame"]
 
-. image:img/button-delete.png["The Delete button",61, 30, role="right"]
-  Click the **Delete** button to complete the deletion of the
-  connection.
+. image:img/button-delete_confirmation-delete_hipchat_room.png["The Delete
+  HipChat room button", 249, 42, role="right"]
+  Click the **Delete HipChat room** button to complete the deletion of
+  the connection.
++
+image:img/button-delete_confirmation-cancel.png["The Cancel button",
+249, 42, role="right"]
+  If you want to continue using the HipChat room connection, click the
+  **Cancel** button.
 --
 
 . **For other connections, not available to all apps**
@@ -543,13 +540,13 @@ confirmation panel", 900, 46]
 --
 . <<navigate>>
 
-. Click the **Connected teams** tab. The connected teams are displayed:
+. Click the **Connected rooms** tab. The connected room are displayed:
 +
-image:img/panel-slack-connected_teams.png["The list of connected teams",
+image:img/panel-hipchat-connected_rooms.png["The list of connected rooms",
 905, 219]
 
 . image:img/button-trashcan.png["The Trashcan icon", 57, 47, role="right"]
-  Click the **Trashcan** icon beside the team connection you wish to
+  Click the **Trashcan** icon beside the room connection you wish to
   remove. A delete confirmation appears:
 +
 image:img/panel-connection_delete_confirmation.png["The Connection delete
@@ -559,29 +556,3 @@ confirmation panel", 900, 46]
   Click the **Delete** button to complete the deletion of the
   connection.
 --
-
-[NOTE]
-======
-If buddybuild's authorization to send notifications to a room is ever
-revoked, notifications for this team connection are not sent and the
-**Connected teams** tab displays a banner indicating the situation:
-
-image:img/screen-slack-connected_teams-revoked.png["The Connected Teams
-screen showing the removed app", 1280, 734, role="frame"]
-
-You now have a choice:
-
-[loweralpha]
-. image:img/button-reconnect.png["The Re-connect button", 88, 30,
-  role="right"]
-  Click the **Re-connect** button to re-authorize notifications from
-  buddybuild; the <<connect>> process begins.
-
-. image:img/button-delete-banner.png["The Delete button", 62, 31,
-  role="right"]
-  To remove of the connection from buddybuild, click the
-  **Delete** button.
-
-After reconnection, you may have to perform <<channel>> again,
-especially if you use different credentials to authorize buddybuild.
-======
