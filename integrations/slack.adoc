@@ -14,8 +14,8 @@ There are a number of sub-sections on this page:
 - <<channel>>
 - <<notifications>>
 - <<editing>>
-- <<remove_config>>
-- <<remove_connection>>
+- <<delete_config>>
+- <<delete_connection>>
 
 [[navigate]]
 == Navigate to the Slack integration settings
@@ -392,7 +392,8 @@ Adjustments take effect immediately for all future notifications.
 === All branches
 
 You can only adjust individual settings in the **all branches** panel,
-or that <<remove_config>>; there are no other editing options.
+or by <<delet_config,deleting notification configuration>>; there are
+no other editing options.
 
 
 === Branch-specific notifications
@@ -400,8 +401,8 @@ or that <<remove_config>>; there are no other editing options.
 Once branch-specific notifications settings are established, it is not
 possible to adjust which branch they apply to. If you need to accomplish
 this, create branch-specific settings for the "new" branch and then
-remove the original branch-specific settings. See <<per-branch>> and
-<<remove_config>> for details.
+delete the original branch-specific settings. See <<per-branch>> and
+<<delete_config>> for details.
 
 
 === Pattern-specific notifications
@@ -419,21 +420,21 @@ Adjust the pattern as necessary (see <<pattern>> for more details), then
 click the **Save** button.
 
 
-[[remove_config]]
-== Remove notification configuration
+[[delete_config]]
+== Delete notification configuration
 
 image:img/button-trashcan.png["The Trashcan icon", 57, 47, role="right"]
-When you need to remove notification configuration settings,
+When you need to delete notification configuration settings,
 for all branches, specific branches, or pattern-specific branches or
 tags, click the **Trashcan** icon at the top right of the appropriate
-panel. The panel is removed, and notifications based on the removed
+panel. The panel is removed, and notifications based on the deleted
 configuration cease immediately.
 
 
-[[remove_connection]]
-== Remove team connection
+[[delete_connection]]
+== Delete team connection
 
-The steps to remove a team connection differ between connections that
+The steps to delete a team connection differ between connections that
 are available for all apps and connections available for select apps.
 
 [loweralpha]
@@ -472,7 +473,7 @@ role="frame"]
 
 . image:img/button-trashcan.png["The Trashcan icon", 57, 47, role="right"]
   Click the **Trashcan** icon beside the team connection you wish to
-  remove. A delete confirmation dialog appears:
+  delete. A delete confirmation dialog appears:
 +
 image:img/screen-slack-delete_confirmation.png["The Slack connection
 delete confirmation dialog", 1280, 1024, role="frame"]
@@ -502,7 +503,7 @@ your Slack credentials.
 
 . image:img/button-trashcan.png["The Trashcan icon", 57, 47, role="right"]
   Click the **Trashcan** icon beside the team connection you wish to
-  remove. A delete confirmation appears:
+  delete. A delete confirmation appears:
 +
 image:img/panel-connection_delete_confirmation.png["The Connection delete
 confirmation panel", 900, 46]
@@ -519,7 +520,7 @@ revoked, notifications for this team connection are not sent and the
 **Connected teams** tab displays a banner indicating the situation:
 
 image:img/screen-slack-connected_teams-revoked.png["The Connected Teams
-screen showing the removed app", 1280, 734, role="frame"]
+screen showing the revoked app", 1280, 734, role="frame"]
 
 You now have a choice:
 
@@ -531,8 +532,7 @@ You now have a choice:
 
 . image:img/button-delete-banner.png["The Delete button", 62, 31,
   role="right"]
-  To remove of the connection from buddybuild, click the
-  **Delete** button.
+  To delete the connection from buddybuild, click the **Delete** button.
 
 After reconnection, you may have to perform <<channel>> again,
 especially if you use different credentials to authorize buddybuild.
