@@ -2,6 +2,9 @@
   "description": "Documentation for buddbybuild",
   "author": "The buddybuild team",
   "language": "en",
+  "styles": {
+    "website": "_css/docs.css"
+  },
   "structure": {
     "readme": "index.adoc"
   },
