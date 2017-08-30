@@ -14,7 +14,7 @@
 .book-summary ul.summary li:hover .svgstroke2,
 .book-summary ul.summary li.active .svgstroke2 { stroke:#8BC7E9; }
 
-svg.inlined-svg {
+.book-summary ul.summary li a svg {
   width: 16px;
   margin-right: 8px;
   vertical-align: middle;
