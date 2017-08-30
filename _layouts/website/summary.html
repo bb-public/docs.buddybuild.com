@@ -1,10 +1,32 @@
+{% set _svgs = {
+    "index.adoc":                       "_img/icon-welcome.svg",
+    "quickstart/README.adoc":           "_img/icon-quickstart.svg",
+    "repository/README.adoc":           "_img/icon-repository.svg",
+    "builds/README.adoc":               "_img/icon-builds.svg",
+    "tests/README.adoc":                "_img/icon-tests.svg",
+    "deployments/README.adoc":          "_img/icon-deployments.svg",
+    "integrations/README.adoc":         "_img/icon-integrations.svg",
+    "sdk/README.adoc":                  "_img/icon-sdk.svg",
+    "testers/README.adoc":              "_img/icon-testers.svg",
+    "applications/README.adoc":         "_img/icon-applications.svg",
+    "billing/README.adoc":              "_img/icon-billing.svg",
+    "troubleshooting/README.adoc":      "_img/icon-troubleshooting.svg",
+    "https://apidocs.buddybuild.com/":  "_img/icon-api.svg"
+   }
+-%}
 {% macro articles(_articles) %}
   {% for article in _articles %}
     <li class="chapter {% if article.path == file.path and not article.anchor %}active{% endif %}" data-level="{{ article.level }}" {% if article.path %}data-path="{{ article.path }}"{% endif %}>
     {% if article.path and getPageByPath(article.path) %}
       <a href="{{ article.path|resolveFile }}{{ article.anchor }}">
+      {% if _svgs.hasOwnProperty(article.path) %}
+        <img class="svg" src="{{ _svgs[article.path] | resolveFile }}" alt=""/>
+      {% endif %}
     {% elif article.url %}
       <a target="_blank" href="{{ article.url }}">
+      {% if _svgs.hasOwnProperty(article.url) %}
+        <img class="svg" src="{{ _svgs[article.url] | resolveFile }}" alt=""/>
+      {% endif %}
     {% else %}
       <span>
     {% endif %}

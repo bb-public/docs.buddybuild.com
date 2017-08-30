@@ -1,0 +1,34 @@
+.svgfill1 { fill: #34495E; }
+.svgfill2 { fill: #5C6C7D; }
+
+.svgstroke1 { stroke: #34495E; }
+.svgstroke2 { stroke: #5C6C7D; }
+
+.book-summary ul.summary li:hover .svgfill1,
+.book-summary ul.summary li.active .svgfill1 { fill:#1F98DE; }
+.book-summary ul.summary li:hover .svgfill2,
+.book-summary ul.summary li.active .svgfill2 { fill:#8BC7E9; }
+
+.book-summary ul.summary li:hover .svgstroke1,
+.book-summary ul.summary li.active .svgstroke1 { stroke:#1F98DE; }
+.book-summary ul.summary li:hover .svgstroke2,
+.book-summary ul.summary li.active .svgstroke2 { stroke:#8BC7E9; }
+
+svg.inlined-svg {
+  width: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.book-summary ul.summary li > ul {
+  padding-left: 28px;
+}
+
+.book-summary ul.summary li > ul li ul {
+  padding-left: 15px;
+}
+
+.book-summary ul.summary li a,
+.book-summary ul.summary li span {
+  padding-right: 10px;
+}

@@ -8,6 +8,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     BB.makeShowMoreClickable();
     BB.initEditTooltip();
     BB.initScroll();
+    inlineSVG.init({ svgSelector: 'img.svg' });
 
     $(".book").removeClass("without-animation");
   });
