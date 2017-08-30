@@ -1,18 +1,57 @@
 {% set _svgs = {
-    "index.adoc":                       "_img/icon-welcome.svg",
-    "quickstart/README.adoc":           "_img/icon-quickstart.svg",
-    "repository/README.adoc":           "_img/icon-repository.svg",
-    "builds/README.adoc":               "_img/icon-builds.svg",
-    "tests/README.adoc":                "_img/icon-tests.svg",
-    "deployments/README.adoc":          "_img/icon-deployments.svg",
-    "integrations/README.adoc":         "_img/icon-integrations.svg",
-    "sdk/README.adoc":                  "_img/icon-sdk.svg",
-    "testers/README.adoc":              "_img/icon-testers.svg",
-    "applications/README.adoc":         "_img/icon-applications.svg",
-    "billing/README.adoc":              "_img/icon-billing.svg",
-    "troubleshooting/README.adoc":      "_img/icon-troubleshooting.svg",
-    "https://apidocs.buddybuild.com/":  "_img/icon-api.svg"
-   }
+    "index.adoc": {
+      "src": "_img/icon-welcome.svg",
+      "alt": "The Welcome icon"
+    },
+    "quickstart/README.adoc": {
+      "src": "_img/icon-quickstart.svg",
+      "alt": "The Quickstart icon"
+    },
+    "repository/README.adoc": {
+      "src": "_img/icon-repository.svg",
+      "alt": "The Source Control Systems icon"
+    },
+    "builds/README.adoc": {
+      "src": "_img/icon-builds.svg",
+      "alt": "The Builds icon"
+    },
+    "tests/README.adoc": {
+      "src": "_img/icon-tests.svg",
+      "alt": "The Tests icon"
+    },
+    "deployments/README.adoc": {
+      "src": "_img/icon-deployments.svg",
+      "alt": "The Deployments icon"
+    },
+    "integrations/README.adoc": {
+      "src": "_img/icon-integrations.svg",
+      "alt": "The Integrations icon"
+    },
+    "sdk/README.adoc": {
+      "src": "_img/icon-sdk.svg",
+      "alt": "The SDK icon"
+    },
+    "testers/README.adoc": {
+      "src": "_img/icon-testers.svg",
+      "alt": "The Tester's Manual icon"
+    },
+    "applications/README.adoc": {
+      "src": "_img/icon-applications.svg",
+      "alt": "The Manage your Applications icon"
+    },
+    "billing/README.adoc": {
+      "src": "_img/icon-billing.svg",
+      "alt": "The Billing and Plans icon"
+    },
+    "troubleshooting/README.adoc": {
+      "src": "_img/icon-troubleshooting.svg",
+      "alt": "The Troubleshooting icon"
+    },
+    "https://apidocs.buddybuild.com/": {
+      "src": "_img/icon-api.svg",
+      "alt": "The API icon"
+    }
+  }
 -%}
 {% macro articles(_articles) %}
   {% for article in _articles %}
@@ -20,12 +59,12 @@
     {% if article.path and getPageByPath(article.path) %}
       <a href="{{ article.path|resolveFile }}{{ article.anchor }}">
       {% if _svgs.hasOwnProperty(article.path) %}
-        <img class="svg" src="{{ _svgs[article.path] | resolveFile }}" alt=""/>
+        <img class="svg" src="{{ _svgs[article.path].src | resolveFile }}" alt="{{ _svgs[article.path].alt }}"/>
       {% endif %}
     {% elif article.url %}
       <a target="_blank" href="{{ article.url }}">
       {% if _svgs.hasOwnProperty(article.url) %}
-        <img class="svg" src="{{ _svgs[article.url] | resolveFile }}" alt=""/>
+        <img class="svg" src="{{ _svgs[article.url].src | resolveFile }}" alt="{{ _svgs[article.url].alt }}"/>
       {% endif %}
     {% else %}
       <span>
