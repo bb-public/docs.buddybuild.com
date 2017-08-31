@@ -11,7 +11,12 @@ available build settings. If you do not find a specific setting listed
 in the default build settings, you need to configure that setting for
 each individual app.
 
+This page contains the following sub-sections:
 
+- <<access>>
+- <<apply>>
+
+[[access]]
 == How to access default app settings
 
 . Log in to the link:https://dashboard.buddybuild.com/[buddybuild
@@ -63,10 +68,11 @@ groups together under the **iOS-specific** and **Android-specific**
 sub-headings respectively.
 
 
+[[apply]]
 == How to apply default settings
 
 Once default app settings are defined, they automatically apply to any
-new applications that added to buddybuild.
+new applications that are added to buddybuild.
 
 To apply any specific setting to already-configured applications:
 
@@ -91,7 +97,7 @@ image:img/dropdown-magic_wand.png["The magic wand's dropdown menu",
   to all Android applications connected to the current organization.
   iOS application configuration is not affected.
 
-- **Select apps to apply to...***: lets you choose which apps should
+- **Select apps to apply to...**: lets you choose which apps should
   receive the new setting. When you choose this item, the **Select
   apps** screen is displayed:
 +
@@ -101,7 +107,7 @@ Use the search field to show only matching apps.
 +
 image:img/button-add.png["The Add button", 46, 30, role="right"]
 When you hover your pointer over an app, an **Add** button appears.
-Click the **Add** button to add the app to the list of apps to which the
+Click the **Add** button. The app is added to the list of apps to which the
 new setting should apply. The list appears as highlighted items within
 the input field:
 +
@@ -117,5 +123,3 @@ image:img/screen-setting_applied.png["The Setting applied screen",
 Click the **Done** button to return to the **Build configurations**
 screen.
 --
-
-
