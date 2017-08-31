@@ -12,21 +12,7 @@ Welcome to buddybuild docs!
 pass:[<nobr>]Buddybuild is a pass:[<wbr/>]continuous integration (CI),
 pass:[<wbr/>]continuous deployment (CD), pass:[<wbr/>]and user feedback
 platform pass:[<wbr/>]for iOS and Android pass:[<wbr/>]development teams.
---
 
-[TIP]
-=====
-We try to automate everything, from discovering your app's dependencies
-and build configuration, to providing a smooth deployment to your app's
-testers and on to your favorite application store. Setup typically takes
-just a few minutes.
-
-We also make collecting feedback from your testers easy and intuitive,
-so you get targeted feedback as you iterate on your app.
-=====
-
-[.center.landing]
---
 [.call-to-action]
 link:quickstart/README.adoc[Let’s begin!, role="button"]
 --
