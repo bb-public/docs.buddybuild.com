@@ -76,6 +76,7 @@
 .. link:builds/status_badges.adoc[Status Badges]
 .. link:builds/xcode_versions.adoc[Xcode Versions and Xcode Preview]
 .. link:builds/download_ipa.adoc[Downloading Build Artifacts]
+.. link:builds/vm_environment.adoc[Virtualization environment]
 .. link:builds/default_settings/README.adoc[Default build settings]
 
 . link:tests/README.adoc[Tests]
