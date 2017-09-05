@@ -1,3 +1,7 @@
+---
+description: buddybuild documentation, covering all aspects of the continuous integration (CI) and continuous deployment (CD) service that buddybuild provides to mobile developers (iOS and Android).
+keywords: buddybuild,continuous integration,ci,continuous deployment,cd,mobile,ios,iOS,android,Android,build,test,deploy,notifications
+---
 = buddybuild documentation
 :linkattrs:
 
