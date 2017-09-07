@@ -41,23 +41,29 @@ organization", 206, 40, role="right"]
 . Select the organization that requires a change to the default app
   settings.
 
-. image:img/panel-default_app_settings.png["Default App Settings", 206,
+. image:img/panel-settings_for_all_apps.png["Settings for all apps", 206,
   102, role="right"]
-  On the left side of screen, find the **Default App Settings** links.
+  On the left side of screen, find the **Settings for all apps** links.
   Click **Builds**. The **Build Configurations** screen is displayed:
 +
 image:img/screen-build_configurations.png["The Build Configurations
 screen", role="frame"]
 
 . Make adjustments as necessary to the default build settings.
-
-image:img/tab-build.png["The Build tab", 92, 52, role="right"]
-Settings that enable or disable build features appear in the **Build**
-tab.
-
-image:img/tab-environment.png["The Environment tab", 137, 52, role="right"]
-Settings that apply throughout the build's execution appear in the
-**Environment tab**:
++
+[.clear]
+--
+- image:img/tab-build.png["The Build tab", 92, 52, role="right"]
+  Settings that enable or disable build features appear in the **Build**
+  tab.
+--
++
+--
+- image:img/tab-environment.png["The Environment tab", 137, 52,
+  role="right"]
+  Settings that apply throughout the build's execution appear in the
+  **Environment tab**.
+--
 
 image:img/screen-build_configurations-environment.png["The Environment
 settings screen",role="frame"]
