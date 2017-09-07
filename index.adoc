@@ -19,8 +19,8 @@ image:_img/header_graphic.svg[buddybuild, align="center"]
 Welcome to buddybuild docs!
 
 [.land-subhead]
-pass:[<nobr>]Buddybuild is a pass:[<wbr/>]continuous integration,
-pass:[<wbr/>]continuous deployment, pass:[<wbr/>]and user feedback
+pass:[<nobr>]Buddybuild is a pass:[<wbr/>]continuous integration (CI),
+pass:[<wbr/>]continuous deployment (CD), pass:[<wbr/>]and user feedback
 platform pass:[<wbr/>]for iOS and Android pass:[<wbr/>]development teams.
 
 [.call-to-action]
@@ -36,59 +36,89 @@ Popular Docs
 .link:troubleshooting/ios/install_builds.adoc[Trouble installing builds on iOS]
 ****
 link:troubleshooting/README.adoc[Troubleshooting]
->
+➛
 link:troubleshooting/ios/README.adoc[iOS]
->
+➛
 link:troubleshooting/ios/install_builds.adoc[Trouble installing builds
 on iOS]
 ****
 
 [.popular-doc]
-.link:builds/custom_build_steps.adoc[Custom Build Steps]
-****
-link:builds/README.adoc[Builds]
->
-link:builds/custom_build_steps.adoc[Custom Build Steps]
-****
-
-[.popular-doc]
-.link:troubleshooting/ios/missing_schemes.adoc[Missing schemes]
+.link:troubleshooting/ios/common_build_errors.adoc[Common iOS build errors]
 ****
 link:troubleshooting/README.adoc[Troubleshooting]
->
+➛
 link:troubleshooting/ios/README.adoc[iOS]
->
-link:troubleshooting/ios/missing_schemes.adoc[Missing Schemes]
-****
-
-[.show-more-extra]
---
-[.popular-doc]
-.link:repository/webhooks.adoc[Setting Up a Webhook]
-****
-link:builds/README.adoc[Builds]
->
-link:repository/webhooks.adoc[Setting Up a Webhook]
+➛
+link:troubleshooting/ios/common_build_errors.adoc[Common iOS build errors]
 ****
 
 [.popular-doc]
 .link:troubleshooting/android/common.adoc[Common Android build errors]
 ****
 link:troubleshooting/README.adoc[Troubleshooting]
->
+➛
 link:troubleshooting/android/README.adoc[Android]
->
+➛
 link:troubleshooting/android/common.adoc[Common Android build errors]
+****
+
+[.popular-doc]
+.link:builds/custom_build_steps.adoc[Custom Build Steps]
+****
+link:builds/README.adoc[Builds]
+➛
+link:builds/custom_build_steps.adoc[Custom Build Steps]
+****
+
+[.show-more-extra]
+--
+[.popular-doc]
+.link:troubleshooting/frameworks/cordova_ionic.adoc[Common Cordova / Ionic build errors]
+****
+link:troubleshooting/README.adoc[Troubleshooting]
+➛
+link:troubleshooting/frameworks/README.adoc[Frameworks]
+➛
+link:troubleshooting/frameworks/cordova_ionic.adoc[Common Cordova / Ionic build errors]
 ****
 
 [.popular-doc]
 .link:quickstart/ios/integrate_sdk.adoc[Integrating SDK]
 ****
 link:quickstart/README.adoc[Quickstart]
->
+➛
 link:quickstart/ios/README.adoc[iOS]
->
+➛
 link:quickstart/ios/integrate_sdk.adoc[Integrating SDK]
+****
+
+[.popular-doc]
+.link:troubleshooting/ios/missing_schemes.adoc[Missing schemes]
+****
+link:troubleshooting/README.adoc[Troubleshooting]
+➛
+link:troubleshooting/ios/README.adoc[iOS]
+➛
+link:troubleshooting/ios/missing_schemes.adoc[Missing Schemes]
+****
+
+[.popular-doc]
+.link:repository/webhooks.adoc[Setting Up a Webhook]
+****
+link:builds/README.adoc[Builds]
+➛
+link:repository/webhooks.adoc[Setting Up a Webhook]
+****
+
+[.popular-doc]
+.link:troubleshooting/frameworks/react_native.adoc[Common React Native errors]
+****
+link:troubleshooting/README.adoc[Troubleshooting]
+➛
+link:troubleshooting/frameworks/README.adoc[Frameworks]
+➛
+link:troubleshooting/frameworks/react_native.adoc[Common React Native errors]
 ****
 --
 

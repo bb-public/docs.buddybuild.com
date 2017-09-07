@@ -1,7 +1,6 @@
 = Topics
 
 . link:index.adoc[Welcome to buddybuild!]
-.. link:welcome/README.adoc[What is buddybuild?]
 
 . link:quickstart/README.adoc[Quickstart]
 .. link:quickstart/github.adoc[Sign up with GitHub]
