@@ -12,12 +12,28 @@ available while Xcode is running, specifically when a Run Script is
 executing.
 
 If you need to persist environment variables across script executions,
-you have a couple of options:
+you have a few options:
 
-- specify the environment variables in the buddybuild dashboard --
+- Specify the environment variables in the buddybuild dashboard --
   buddybuild takes care of making those environment variables available
-  to your builds.
+  to every step of your builds.
 
-- write the definitions of the environment variables to a file,
-  and read those definitions every time your scripts execute.
+- Append `export` commands to the `.bashrc` file; `.bashrc` is sourced
+  every time a (subsequent) Bash script is executed. For example, within
+  `buddybuild_postclone.sh` you could define environment variables like
+  this:
++
+[source,bash]
+----
+APP_VERSION=$(node -pe "require('./package.json').version")
+echo "export APP_VERSION=$APP_VERSION" >> $HOME/.bashrc
+----
++
+The first line captures the `version` key from your repository's
+`package.json` file using node.js. The second line appends the
+environment variable definition to `.bashrc`.
+
+- If you're not using Bash, write the definitions of the environment
+  variables to a file, and read those definitions every time your
+  scripts execute.
 ===========
