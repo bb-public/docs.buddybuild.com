@@ -369,7 +369,7 @@ link:https://www.buddybuild.com/blog/using-danger-with-buddybuild/[blog
 post "Using Danger with buddybuild"] for details.
 
 It is also your last opportunity to upload any build artifacts to any
-service integrations that you may have; once `buddybild_finally.sh`
+service integrations that you may have; once `buddybuild_finally.sh`
 completes, the build VM is destroyed.
 ======
 
