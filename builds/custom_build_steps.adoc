@@ -8,7 +8,7 @@ your repository to run at four points during the build:
 - <<postclone,immediately after `git clone`>>
 - <<prebuild,immediately before the build, after dependencies are
   resolved>>
-- <<postbuild,immediately after the build completes>>
+- <<postbuild,immediately after the build completes successfully>>
 - <<finally,after all build, test, and deployment operations have
   completed>>
 
@@ -298,7 +298,8 @@ BuddyBuildSDK without doing any custom build steps.
 [[postbuild]]
 == Post-build script
 
-The post-build script runs after the build.
+The post-build script runs after a successful build (if the build fails,
+for any reason, the post-build script **does not run**).
 
 Add the `buddybuild_postbuild.sh` script to your repository, **next to
 your `.xcodeproj` or `build.gradle` files**.
@@ -365,6 +366,12 @@ Typically, you would use this script to perform any required operations,
 whether your build, test execution, or deployment was successful or not.
 One example would be to fetch test output that buddybuild does not
 currently parse and present within the dashboard.
+
+Another example would be to use `buddybuild_finally.sh` to integrate
+Danger (a CI automation tool) as part of your build, so that it can
+apply its set of rules whether the build succeeds or fails. See our
+link:https://www.buddybuild.com/blog/using-danger-with-buddybuild/[blog
+post "Using Danger with buddybuild"] for details.
 ======
 
 
