@@ -1,12 +1,19 @@
 = Custom Build Steps
 
-Buddybuild will automatically analyze your repository and automatically
-configure itself with the best build settings.  However, if you require
-custom logic as part of your build, you can specify custom scripts to
-run at three points during the build.
+Buddybuild automatically analyzes your repository and automatically
+configures itself with the best build settings. However, if you require
+custom logic as part of your build, you can include custom scripts in
+your repository to run at four points during the build:
 
-During the build, the VM is yours. This means you can run arbitrary
-scripts at several points during the build.
+- <<postclone,immediately after `git clone`>>
+- <<prebuild,immediately before the build, after dependencies are
+  resolved>>
+- <<postbuild,immediately after the build completes successfully>>
+- <<finally,after all build, test, and deployment operations have
+  completed>>
+
+During the build, the VM is yours. This means that you can run arbitrary
+operations during those four points.
 
 [NOTE]
 ======
@@ -17,10 +24,28 @@ and an ever growing list of examples, visit:
 https://www.buddybuild.com/blog/customizing-the-build-process
 ======
 
+This page contains several sub-sections:
+
+- <<environment>>
+** <<environment-common>>
+** <<environment-ios>>
+** <<environment-android>>
+** <<environment-user>>
+- <<postclone>>
+- <<prebuild>>
+- <<postbuild>>
+- <<finally>>
+- <<manual-fail>>
+- <<support>>
+
+
+[[environment]]
 == Environment Variables
 
 {% include "../_common/important-environment_variable_scope.adoc" %}
 
+
+[[environment-common]]
 === Common buddybuild Variables
 
 [cols="a,10a",options="header"]
@@ -83,9 +108,7 @@ is in the `app` folder locally, this variable is set to
 Example: `/Users/buddybuild/secure_files`
 
 | `BUDDYBUILD_TRIGGERED_BY`
-|
-
-Indicates the condition that triggered the build.
+| Indicates the condition that triggered the build.
 
 Example: `webhook`
 
@@ -93,21 +116,30 @@ Possible values:
 
 - `webhook`: +
   build is triggered by a webhook
+
 - `webhook_pull_request_update`: +
   build is triggered when a pull request is updated
+
 - `webhook_pull_request_open`: +
   build is triggered when a pull request is created
+
 - `ui_triggered`: +
   build is triggered by the "Build Now" button
+
 - `scheduler`: +
   build is triggered by schedule
+
 - `rebuild_of_commit`: +
   build is triggered by the "Rebuild" button
+
 - `api_triggered`: +
   build is triggered by the
+
   link:https://apidocs.buddybuild.com/builds/post-trigger.html[buddybuild API]
 |===
 
+
+[[environment-ios]]
 === iOS-specific variables
 
 [cols="a,10a", options="header"]
@@ -139,6 +171,8 @@ Inside you will find multiple files related to tests including
 `Coverage.profdata`.
 |===
 
+
+[[environment-android]]
 === Android-specific variables
 
 [cols="a,10a", options="header"]
@@ -167,29 +201,32 @@ Example: `/Users/buddybuild/android-ndk-r10e`
 ======
 **Don't see the information you need?**
 
-No problem! Remember, the **VM is yours** at build step. For instance,
-you could expose `git` information for the build in the
-link:#post-clone[postclone step].
+No problem! Remember, the **VM is yours** at each build step. For
+instance, you could expose `git` information for the build in the
+<<postclone>>.
 ======
 
+
+[[environment-user]]
 === User-defined variables
 
-You can also define link:environment_variables.adoc[environment
-variables] through buddybuild's dashboard that will be securely stored
-and made available during the build.
+You can also define your own link:environment_variables.adoc[environment
+variables] through buddybuild's dashboard. User-defined environment
+variables are stored securely and made available during the build.
 
-[[post-clone]]
-== Post-clone
 
-The post-clone script will run immediately after git clone, and before
-we do any analysis of what is in the repo.
+[[postclone]]
+== Post-clone script
 
-The **buddybuild_postclone.sh** script should be in the **root** of your
-repo.
+The post-clone script runs immediately after `git clone`, before
+buddybuild does any analysis of what is in the repository.
+
+The `buddybuild_postclone.sh` script should be in the **root** of your
+repository.
 
 [[code-samples]]
 --
-.buddybuild_postclone.sh
+.`buddybuild_postclone.sh`
 [source,bash]
 ----
 #!/usr/bin/env bash
@@ -197,41 +234,45 @@ repo.
 # Example: Clone Parse example project
 git clone https://github.com/example/ParseCloudCode
 
-# Example: Expose the commit SHA accessible through $GIT_REVISION_SHA Environment Variable
+# Example: Expose the commit SHA accessible through $GIT_REVISION_SHA
+# Environment Variable
 export GIT_REVISION_SHA=$(git rev-parse HEAD)
 
-# Example: Expose the commit author & email through the $GIT_REVISION_AUTHOR in the following format: Author Name &lt;author@example.com&gt;
+# Example: Expose the commit author & email through the $GIT_REVISION_AUTHOR
+# in the following format: Author Name &lt;author@example.com&gt;
 export GIT_REVISION_AUTHOR=$(git log -1 --pretty=format:"%an <%ae>")
 ----
 --
 
 [IMPORTANT]
 ===========
-**buddybuild_postclone.sh Examples**
+**`buddybuild_postclone.sh` examples**
 
-Some things you might want to do in a postclone step:
+Some things you might want to do in a post-clone step:
 
-- Clone other git repos (e.g., another repository contains your Parse
-  cloud code)
+- Clone other git repositories (e.g. another repository contains your
+  Parse cloud code)
 
-- Generate or modify your Xcode project (e.g., some React Native and
+- Generate or modify your Xcode project (e.g. some React Native and
   Cordova projects require this).
 
-- Expose git information (e.g., the author or the commit SHA for the
+- Expose git information (e.g. the author or the commit SHA for the
   build)
 ===========
 
-== Pre-build
 
-This prebuild script will run before the build, but after we have
-automatically installed dependencies (eg. Cocoapods, Carthage).
+[[prebuild]]
+== Pre-build script
 
-Add the following file to your repository, **next to your `.xcodeproj`
-or `build.gradle` files**, and we'll pick it up!
+The pre-build script runs before the build, but after buddybuild has
+automatically installed dependencies (eg. Cocoapods, Carthage, etc.).
+
+Add the `buddybuild_prebuild.sh` script to your repository, **next to
+your `.xcodeproj` or `build.gradle` files**.
 
 [[code-samples]]
 --
-.buddybuild_prebuild.sh
+.`buddybuild_prebuild.sh`
 [source,bash]
 ----
 #!/usr/bin/env bash
@@ -243,26 +284,29 @@ or `build.gradle` files**, and we'll pick it up!
 
 [NOTE]
 ======
-**buddybuild_prebuild.sh**
+**`buddybuild_prebuild.sh` examples**
 
-You might want to use a custom prebuild step, if you need to do some
-extra dependency compilation, add something custom to your plist.
+You might want to use a custom pre-build step if you need to do some
+extra dependency compilation, or add something custom to your plist.
 
 While you can use this to populate API keys or credentials, you can also
 access device keys that you've added on the dashboard through the
 BuddyBuildSDK without doing any custom build steps.
 ======
 
-== Post-build
 
-This postbuild script will run after the build.
+[[postbuild]]
+== Post-build script
 
-Add the following file to your repository, **next to your .xcodeproj or
-build.gradle files**, and we'll pick it up!
+The post-build script runs after a successful build (if the build fails,
+for any reason, the post-build script **does not run**).
+
+Add the `buddybuild_postbuild.sh` script to your repository, **next to
+your `.xcodeproj` or `build.gradle` files**.
 
 [[code-samples]]
 --
-.buddybuild_postbuild.sh
+.`buddybuild_postbuild.sh`
 [source,bash]
 ----
 #!/usr/bin/env bash
@@ -277,28 +321,66 @@ curl \
 
 [NOTE]
 ======
-**buddybuild_postbuild.sh Examples**
+**`buddybuild_postbuild.sh` examples**
 
-Typically, you'll use this to upload specific artifacts to various
-service integrations you might have.
+Typically, you would use this script to upload specific artifacts to
+various service integrations you might have.
 
 - If you want to archive the `.ipa` / `.dSYM` files for yourself
+
 - Sending build artifacts to another service
 ======
 
+If the post-build step is not running for you, please check that you
+have code signing set up.
 
-If the postbuild step is not running for you, please check you have code
-signing set up.
 
-As with everything, if you need help with anything, please get in touch
-via Intercom and we will find the best way to solve your problem.
+[[finally]]
+== Finally script
 
+The finally script runs last, after the build, tests, and any deployment
+operations.
+
+Add the `buddybuild_finally.sh` script to the **root** of your repository.
+
+[[code-samples]]
+--
+.`buddybuild_finally.sh`
+[source,bash]
+----
+#!/usr/bin/env bash
+
+bundle install
+bundle exec danger --fail-on-errors=true
+----
+--
+
+[NOTE]
+======
+**`buddybuild_finally.sh` examples**
+
+You would use this script to perform any required operations,
+whether your build, test execution, or deployment was successful or not.
+
+One example would be to use `buddybuild_finally.sh` to integrate
+Danger (a CI automation tool) as part of your build, so that it can
+apply its set of rules whether the build succeeds or fails. See our
+link:https://www.buddybuild.com/blog/using-danger-with-buddybuild/[blog
+post "Using Danger with buddybuild"] for details.
+
+It is also your last opportunity to upload any build artifacts to any
+service integrations that you may have; once `buddybuild_finally.sh`
+completes, the build VM is destroyed.
+======
+
+
+[[manual-fail]]
 == Manually failing the build from a custom build step
 
 When some conditions required for your build to be successful are not
 met, you may want to manually fail the build. To do that, exit from your
-script with a non-zero status code. That is how we'll know the build
-must fail.
+script with a non-zero status code. That is how buddybuild knows that
+the build must fail.
 
 [[code-samples]]
 --
@@ -314,3 +396,10 @@ if [[ "$BUDDYBUILD_BRANCH" =~ "release" ]]; then
 fi
 ----
 --
+
+[[support]]
+== Support
+
+As with everything, if you need help with anything, please get in touch
+via Intercom or email support@buddybuild.com and we will find the best
+way to solve your problem.
