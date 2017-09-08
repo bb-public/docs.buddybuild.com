@@ -246,7 +246,7 @@ export GIT_REVISION_AUTHOR=$(git log -1 --pretty=format:"%an <%ae>")
 
 [IMPORTANT]
 ===========
-**`buddybuild_postclone.sh` Examples**
+**`buddybuild_postclone.sh` examples**
 
 Some things you might want to do in a post-clone step:
 
@@ -284,7 +284,7 @@ your `.xcodeproj` or `build.gradle` files**.
 
 [NOTE]
 ======
-**buddybuild_prebuild.sh**
+**`buddybuild_prebuild.sh` examples**
 
 You might want to use a custom pre-build step if you need to do some
 extra dependency compilation, or add something custom to your plist.
@@ -321,7 +321,7 @@ curl \
 
 [NOTE]
 ======
-**`buddybuild_postbuild.sh` Examples**
+**`buddybuild_postbuild.sh` examples**
 
 Typically, you would use this script to upload specific artifacts to
 various service integrations you might have.
@@ -350,28 +350,27 @@ Add the `buddybuild_finally.sh` script to the **root** of your repository.
 ----
 #!/usr/bin/env bash
 
-# Example of uploading a file to your archive service
-curl \
- -F "file=@$BUDDYBUILD_IPA_PATH" \
- -F "build_number=$BUDDYBUILD_BUILD_NUMBER" \
- -F "https://archiveservice.example.com
+bundle install
+bundle exec danger --fail-on-errors=true
 ----
 --
 
 [NOTE]
 ======
-**`buddybuild_finally.sh` Examples**
+**`buddybuild_finally.sh` examples**
 
-Typically, you would use this script to perform any required operations,
+You would use this script to perform any required operations,
 whether your build, test execution, or deployment was successful or not.
-One example would be to fetch test output that buddybuild does not
-currently parse and present within the dashboard.
 
-Another example would be to use `buddybuild_finally.sh` to integrate
+One example would be to use `buddybuild_finally.sh` to integrate
 Danger (a CI automation tool) as part of your build, so that it can
 apply its set of rules whether the build succeeds or fails. See our
 link:https://www.buddybuild.com/blog/using-danger-with-buddybuild/[blog
 post "Using Danger with buddybuild"] for details.
+
+It is also your last opportunity to upload any build artifacts to any
+service integrations that you may have; once `buddybild_finally.sh`
+completes, the build VM is destroyed.
 ======
 
 
@@ -404,4 +403,3 @@ fi
 As with everything, if you need help with anything, please get in touch
 via Intercom or email support@buddybuild.com and we will find the best
 way to solve your problem.
-
