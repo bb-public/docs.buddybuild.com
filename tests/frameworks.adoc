@@ -67,6 +67,10 @@ indicates Android compatibility.
 | {logo-apple}
 | {logo-android}
 
+| link:https://developer.android.com/training/testing/espresso/index.html[Espresso]
+|
+| {logo-android}
+
 | link:https://github.com/specta/expecta[Expecta]
 | {logo-apple}
 |
@@ -74,6 +78,10 @@ indicates Android compatibility.
 | link:https://github.com/facebook/ios-snapshot-test-case[FBSnapshotTestCase]
 | {logo-apple}
 |
+
+| link:https://firebase.google.com/products/test-lab/[Firebase Test Lab]
+|
+| {logo-android}
 
 | link:http://testingwithfrank.github.io/[Frank]
 | {logo-apple}
