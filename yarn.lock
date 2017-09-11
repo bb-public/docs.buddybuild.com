@@ -524,9 +524,9 @@ gitbook-cli@2.3.0:
     tmp "0.0.28"
     user-home "2.0.0"
 
-gitbook-plugin-theme-default@^1.0.6:
+gitbook-plugin-theme-buddybuild@buddybuild-public/gitbook-plugin-theme-buddybuild:
   version "1.0.7"
-  resolved "https://registry.yarnpkg.com/gitbook-plugin-theme-default/-/gitbook-plugin-theme-default-1.0.7.tgz#51f71fbca74a261054e9e9d141c42167afefce88"
+  resolved "https://codeload.github.com/buddybuild-public/gitbook-plugin-theme-buddybuild/tar.gz/6cb21666d5f8668eb2ee4a9bc9f57cf3d8d21ac0"
 
 github-url-from-git@~1.4.0:
   version "1.4.0"

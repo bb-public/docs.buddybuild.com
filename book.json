@@ -12,8 +12,10 @@
     "explicit-url@0.0.3",
     "edit-link@https://github.com/buddybuild-public/gitbook-plugin-edit-link.git",
     "buddybuild@https://github.com/buddybuild-public/gitbook-plugin-buddybuild.git",
+    "theme-buddybuild@https://github.com/buddybuild-public/gitbook-plugin-theme-buddybuild.git",
     "-fontsettings",
-    "-sharing"
+    "-sharing",
+    "-theme-default"
   ],
   "pluginsConfig": {
     "edit-link": {
