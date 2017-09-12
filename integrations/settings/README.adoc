@@ -1,18 +1,17 @@
-= Default integration settings
+= Integration settings for all apps
 
 Each of the available link:../README.adoc[integration] settings are
-app-specific. This section describes how you can specify default
-integration settings that automatically apply to new apps, or that can
-be applied to any applications that already exist within an
-organization.
+app-specific. This section describes how you can specify integration
+settings that automatically apply to new apps, or that can be applied to
+any applications that already exist within an organization.
 
 [IMPORTANT]
-Default integration settings are available for the following
-integrations: the link:../itunes_connect.adoc[Apple Developer Portal],
-link:../hipchat.adoc[HipChat], link:../jira.adoc[JIRA],
-link:../pivotal_tracker.adoc[Pivotal Tracker], and
-link:../slack.adoc[Slack]. For the remaining integrations, the settings
-need to be configured for each individual app.
+Integration settings that can be applied to all apps are available for
+the following integrations: the link:../itunes_connect.adoc[Apple
+Developer Portal], link:../hipchat.adoc[HipChat],
+link:../jira.adoc[JIRA], link:../pivotal_tracker.adoc[Pivotal Tracker],
+and link:../slack.adoc[Slack]. For the remaining integrations, the
+settings need to be configured for each individual app.
 
 This page contains the following sub-sections:
 
@@ -25,7 +24,7 @@ This page contains the following sub-sections:
 
 
 [[access]]
-== How to access default integration settings
+== How to access integration settings for all apps
 
 . Log in to the link:https://dashboard.buddybuild.com/[buddybuild
   dashboard].
@@ -46,24 +45,24 @@ organization", 206, 40, role="right"]
   organization selected. Click the dropdown menu to list all of the
   organizations that you currently belong to.
 
-. Select the organization that requires a change to the default
-  integration settings.
+. Select the organization that requires a change to the integration
+  settings.
 
-. image:img/panel-default_app_settings.png["Default App Settings", 206,
-102, role="right"]
-  On the left side of screen, find the **Default App Settings** links.
+. image:../../_img/panel-settings_for_all_apps.png["Settings for all
+  apps", 206, 102, role="right"]
+  On the left side of screen, find the **Settings for all apps** links.
   Click **Integrations**. The **Apple Developer Connection** screen is
   displayed:
 +
 image:img/screen-apple_developer_connection.png["The Apple Developer
 Connection screen", 1280, 569, role="frame"]
 
-. image:img/panel-default_app_settings-integrations.png["Default App
-  Settings for Integrations", 206, 256, role="right"]
-  On the left side of the screen, click the name of an integration that
-  needs default settings. The appropriate screen is displayed.
+. image:img/panel-settings_for_all_apps-integrations.png["Settings for
+  all apps, showing Integrations", 206, 256, role="right"]
+  On the left side of the screen, click the name of an integration.
+  The appropriate screen is displayed.
 +
-Find coverage of each integration's default settings below:
+Find coverage of each integration's settings below:
 +
 --
 - <<apple>>
@@ -86,10 +85,10 @@ account(s). With this integration, buddybuild can:
 - link:../../deployments/ios/itunes_connect.adoc[Upload specific builds
   to iTunes Connect and TestFlight]
 
-The default settings screen lets you connect multiple accounts:
+The settings screen lets you connect multiple accounts:
 
 image:img/screen-apple_developer_connection-bb.png["The Apple Developer
-Connection screen for buddybuild", role="frame"]
+Connection screen for buddybuild", 1280, 714, role="frame"]
 
 Learn more about the settings for link:../itunes_connect.adoc[Apple
 Developer Connection].
@@ -103,7 +102,7 @@ sharing. Buddybuild's integration with HipChat can automatically notify
 you and your team of build status, feedback submissions, and crash
 reports directly in the rooms you use.
 
-image:img/screen-hipchat.png["The HipChat default settings", 1280, 569
+image:img/screen-hipchat.png["The HipChat settings", 1280, 569,
 role="frame"]
 
 Learn more about the settings for link:../hipchat.adoc[HipChat].
@@ -116,8 +115,7 @@ JIRA is a powerful issues and project tracker used by many agile teams.
 Buddybuild's integration can automatically open a JIRA issue for each
 piece of feedback and crash report that you receive for your apps.
 
-image:img/screen-jira.png["The JIRA default settings", 1280, 716
-role="frame"]
+image:img/screen-jira.png["The JIRA settings", 1280, 716, role="frame"]
 
 Learn more about the settings for link:../jira.adoc[JIRA].
 
@@ -130,7 +128,7 @@ software teams. Buddybuild's integration with Pivotal Tracker can
 automatically open a Pivotal Tracker issue for each piece of feedback
 that you receive for your apps.
 
-image:img/screen-pivotal_tracker.png["The Pivotal Tracker default settings",
+image:img/screen-pivotal_tracker.png["The Pivotal Tracker settings",
 1280, 569, role="frame"]
 
 Learn more about the settings for link:../pivotal_tracker.adoc[Pivotal
@@ -144,9 +142,10 @@ Buddybuild offers a first-class integration with Slack, which allows
 you and your team to be notified of build status, feedback submissions,
 and crash reports directly in the channels you use.
 
-image:img/screen-slack.png["The Slack default settings", 1280, 569, role="frame"]
+image:img/screen-slack.png["The Slack settings", 1280, 569,
+role="frame"]
 
-The default Slack settings allow you to configure the Slack teams that
+The Slack settings allow you to configure the Slack teams that
 buddybuild should use. The Slack channel is configured for each app
 individually.
 

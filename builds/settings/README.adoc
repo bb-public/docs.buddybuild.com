@@ -1,15 +1,14 @@
-= Default build settings
+= Build settings for all apps
 
 Each of the available link:../README.adoc[build] settings are
-app-specific. This section describes how you can specify default build
-settings that automatically apply to new apps, or that can be applied to
-any applications that already exist within an organization.
+app-specific. This section describes how you can specify build settings
+that automatically apply to new apps, or that can be applied to any
+applications that already exist within an organization.
 
 [IMPORTANT]
-Default build settings are available for most, but not all, of the
-available build settings. If you do not find a specific setting listed
-in the default build settings, you need to configure that setting for
-each individual app.
+Some build settings cannot be applied in bulk. If you do not find a
+specific setting listed in the build settings for all apps, you need to
+configure that setting for each individual app.
 
 This page contains the following sub-sections:
 
@@ -17,7 +16,7 @@ This page contains the following sub-sections:
 - <<apply>>
 
 [[access]]
-== How to access default app settings
+== How to access builds settings for all apps
 
 . Log in to the link:https://dashboard.buddybuild.com/[buddybuild
   dashboard].
@@ -38,18 +37,17 @@ organization", 206, 40, role="right"]
   organization selected. Click the dropdown menu to list all of the
   organizations that you currently belong to.
 
-. Select the organization that requires a change to the default app
-  settings.
+. Select the organization that requires a change to the build settings.
 
-. image:img/panel-settings_for_all_apps.png["Settings for all apps", 206,
-  102, role="right"]
+. image:../../_img/panel-settings_for_all_apps.png["Settings for all
+  apps", 206, 102, role="right"]
   On the left side of screen, find the **Settings for all apps** links.
   Click **Builds**. The **Build Configurations** screen is displayed:
 +
 image:img/screen-build_configurations.png["The Build Configurations
 screen", role="frame"]
 
-. Make adjustments as necessary to the default build settings.
+. Make adjustments as necessary to the build settings for all apps.
 +
 [.clear]
 --
@@ -75,10 +73,10 @@ sub-headings respectively.
 
 
 [[apply]]
-== How to apply default settings
+== How to apply build settings for all apps
 
-Once default app settings are defined, they automatically apply to any
-new applications that are added to buddybuild.
+Once builds settings for all apps are defined, they automatically apply
+to any new applications that are added to buddybuild.
 
 To apply any specific setting to already-configured applications:
 
