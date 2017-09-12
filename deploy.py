@@ -4,7 +4,7 @@
 import os, sys
 import subprocess
 import requests
-
+import json
 
 class Deployer:
     """Responsible for deploying the website."""
@@ -71,9 +71,9 @@ class Deployer:
         url = 'https://api.github.com/repos/{}/issues/{}/comments'.format(
             self._repo, self._pull_request)
         headers = {'Authorization': 'token {}'.format(self._github_token)}
-        data = {'body': 'See the website here: {}'.format(self.domain)}
+        payload = {'body': 'See the website here: {}'.format(self.domain)}
         print('Posting comment to: {}'.format(url))
-        requests.post(url, headers=headers, json=data)
+        requests.post(url, headers=headers, data=json.dumps(payload))
 
 
 if __name__ == '__main__':
