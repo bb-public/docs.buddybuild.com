@@ -524,10 +524,6 @@ gitbook-cli@2.3.0:
     tmp "0.0.28"
     user-home "2.0.0"
 
-gitbook-plugin-theme-buddybuild@buddybuild-public/gitbook-plugin-theme-buddybuild:
-  version "1.0.7"
-  resolved "https://codeload.github.com/buddybuild-public/gitbook-plugin-theme-buddybuild/tar.gz/6cb21666d5f8668eb2ee4a9bc9f57cf3d8d21ac0"
-
 github-url-from-git@~1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/github-url-from-git/-/github-url-from-git-1.4.0.tgz#285e6b520819001bde128674704379e4ff03e0de"
@@ -1629,15 +1625,15 @@ sshpk@^1.7.0:
     jsbn "~0.1.0"
     tweetnacl "~0.14.0"
 
-string_decoder@^1.0.1, string_decoder@~1.0.0:
+string_decoder@~0.10.x:
+  version "0.10.31"
+  resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-0.10.31.tgz#62e203bc41766c6c28c9fc84301dab1c5310fa94"
+
+string_decoder@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-1.0.2.tgz#b29e1f4e1125fa97a10382b8a533737b7491e179"
   dependencies:
     safe-buffer "~5.0.1"
-
-string_decoder@~0.10.x:
-  version "0.10.31"
-  resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-0.10.31.tgz#62e203bc41766c6c28c9fc84301dab1c5310fa94"
 
 stringstream@~0.0.4:
   version "0.0.5"
