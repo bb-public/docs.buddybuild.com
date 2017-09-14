@@ -72,30 +72,7 @@ rm -f BuddyBuildSDK.framework.zip
 image:img/1.png[,1500,861]
 
 [[step4]]
-== Step 4 (Swift only): Include the SDK in your Bridging Header
-
-Make sure you have a bridging header in your **Build Settings** in
-Xcode.
-
-If you don't have a bridging header, the fastest way to create one is to
-temporarily add a new `.m` file to your project. Xcode will then prompt
-you to create a bridging header. After it's created you can delete that
-`.m` file.
-
-image:img/2.png[,1500,745]
-
-**Include the SDK by adding the line below to your bridging header**
-
-[[code-samples]]
---
-[source,objectivec]
-----
-#import &lt;BuddyBuildSDK/BuddyBuildSDK.h&gt;
-----
---
-
-
-== Step 5 (Swift only): Initialize the buddybuild SDK
+== Step 4 (Swift only): Initialize the buddybuild SDK
 
 Find the class that implements the UIApplicationDelegate. The class
 implementation should look something like this.
@@ -105,6 +82,16 @@ implementation should look something like this.
 [source,swift]
 ----
 class AppDelegate: UIResponder, UIApplicationDelegate {
+----
+--
+
+Add this import to the top of the file containing this class.
+
+[[code-samples]]
+--
+[source,swift]
+----
+import BuddyBuildSDK
 ----
 --
 
@@ -119,7 +106,7 @@ BuddyBuildSDK.setup()
 ----
 --
 
-== Step 6 (Objective-C only): Initialize the buddybuild SDK
+== Step 5 (Objective-C only): Initialize the buddybuild SDK
 
 Find the class that implements the **UIApplicationDelegate**. The class
 header file should look something like this.
@@ -132,8 +119,7 @@ header file should look something like this.
 ----
 --
 
-We're interested in associated the class implementation file. Add this
-import to the class implementation file.
+Add this import to the class implementation (`.m`) file.
 
 [[code-samples]]
 --
@@ -154,11 +140,11 @@ line to the **didFinishLaunchingWithOptions** method.
 ----
 --
 
-== Step 7: Build
+== Step 6: Build
 
 Run your application in Xcode.
 
-== Step 8: Verify
+== Step 7: Verify
 
 In the Xcode output pane you should see the following log line, which
 indicates that the buddybuild SDK has been successfully integrated.
@@ -181,7 +167,7 @@ indicates that the buddybuild SDK has been successfully integrated.
 ----
 --
 
-== Step 9: Push
+== Step 8: Push
 
 Commit the change and push to your repo.
 
