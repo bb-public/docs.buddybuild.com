@@ -4,30 +4,56 @@ Apps that are associated with an organization consume the features and
 limits of the plan which it is on. To transfer apps between
 organizations, follow along below!
 
-Hover over your avatar and select **Billing & Plans**.
+. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
+  dashboard].
 
-image:img/Billings-and-Plans---Menu.png[,1500,800]
+. image:../_img/dropdown-user-manage_org.png["Select Manage Org in the
+  avatar dropdown", 121, 207, role="right"]
+  Move your mouse pointer over your avatar in the top right corner. A
+  dropdown menu appears.
 
-Locate the organization that contains the app you want to transfer and
-select **Associated Apps**.
+. Select **Manage Org**. The **Manage Organization** screen appears:
++
+image:../_img/screen-manage_org.png["The Manage Organization", 1280, 568,
+role="frame"]
 
-image:img/Billings-and-Plans---Associated-apps---1.png[,3000,1600]
+. image:../_img/dropdown-organizations.png["The current organization", 206,
+  40, role="right"]
+  In the left navigation, a dropdown menu exists with the current
+  organization selected. Click the dropdown menu to list all of the
+  organizations that you currently belong to.
 
-Next, locate the app you want to transfer and click **Switch
-organizations**.
+. Select the organization that is associated with the app you wish to
+  transfer.
 
-image:img/Billings-and-Plans---Associated-apps---2.png[,3000,1600]
+. In the **Apps in this org** section, find the app you wish to
+  transfer. Then click the **Switch orgs** link associated with the app
+  you wish to transfer.
++
+image:img/area-apps_in_this_org.png["The Apps in this org
+section",650,118]
++
+[TIP]
+=====
+If you have many apps listed, enter the app name (or portion
+thereof) in the **Filter by app name** field, which causes only matching
+apps to be displayed.
+=====
++
+The **Switch Organizations** screen is displayed:
++
+image:img/screen-switch_organizations.png["The Switch Organizations
+screen", 1280, 590, role="frame"]
 
-Click on the dropdown and **select the organization** you want to
-transfer your app to.
+. Use the dropdown menu to select the organization which should receive
+  the app.
 
-image:img/Billings-and-Plans---Associated-apps---3.png[,3000,1600]
+. Click the **Save** button. The **Manage Organization** screen is
+  displayed, and the **Apps in the org** section displays a banner
+  indicating the success of the transfer:
++
+image:img/area-apps_in_this_org-transferred.png["The Apps in this org
+section with transfer success banner",650,206]
 
-Click **Save**, and you're done!
-
-image:img/Billings-and-Plans---Associated-apps---4.png[,3000,1600]
-
-Your transferred app will start consuming the resources of the new
+Your transferred app starts consuming the resources of the new
 organization immediately!
-
-image:img/Billings-and-Plans---Associated-apps---5.png[,3000,1600]

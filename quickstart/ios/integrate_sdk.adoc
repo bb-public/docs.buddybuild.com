@@ -36,7 +36,7 @@ interactions with your App's UI right up to the point where it crashed
 
 === Automatic Update
 
-Receiving feedback on old builds is pointless - you've probably already
+Receiving feedback on old builds is pointless -- you've probably already
 fixed the issue you've received feedback on! It is crucial to keep your
 testers and beta users updated on the very latest builds. If a newer
 build is available, the buddybuild SDK can automatically prompt to
@@ -57,18 +57,7 @@ Enabling the SDK requires code changes in your iOS Application. We can
 make these changes automatically so you don't have to! Enable the
 buddybuild SDK in just two easy steps.
 
-[NOTE]
-======
-**SDK features for App Store and TestFlight Deployments**
-
-App Store installs have all buddybuild SDK features **disabled** except
-for crash reporting.
-
-TestFlight builds deployed with buddybuild have all the buddybuild SDK
-features that were enabled. If you don't want your TestFlight
-deployments to have these features, you will have to turn them off in
-settings in the dashboard and submit a new build to TestFlight.
-======
+{% include "../../_common/note-sdk-ios-app_store_deployments.adoc" %}
 
 [[step1]]
 === Step 1: Configure SDK Installation
@@ -131,4 +120,5 @@ curl -Ls tools.buddybuild.com.s3-website-us-west-2.amazonaws.com/UpdateSDK | sh
 [[uninstall]]
 === Uninstall the SDK
 
-If for some reason, you wish to uninstall the SDK, you simply need to revert the commit which installed it in the first place.
+If for some reason, you wish to uninstall the SDK, you simply need to
+revert the commit which installed it in the first place.

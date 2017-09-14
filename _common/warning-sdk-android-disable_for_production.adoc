@@ -1,0 +1,11 @@
+[WARNING]
+=========
+**Can I turn off the SDK features for Android in production?**
+
+The SDK features are turned off by default, you have control over which
+feature to enable when deploying via email or directly to Google Play.
+
+However, this is only true when you deploy from buddybuild. If you
+download the `.apk` file and manually deploy it to Google Play, any
+enabled SDK features remain active in that version.
+=========

@@ -30,51 +30,38 @@ instructions] to update the SDK on your local machine.
 [[step3]]
 == Step 3: Add framework dependencies to your UI test target
 
-* Open your project in Xcode.
-* Highlight your project in the 'Project Navigator'.
-* Select your target.
-* Select the 'Build Phases' tab.
-* Open 'Link Binaries With Libraries' expander.
-* Repeat for each of the **AssetsLibrary**, **BuddyBuildSDK**,
+[loweralpha]
+. Open your project in Xcode.
+. Highlight your project in the **Project Navigator**.
+. Select your target.
+. Select the **Build Phases** tab.
+. Open **Link Binaries With Libraries** expander.
+. Repeat for each of the **AssetsLibrary**, **BuddyBuildSDK**,
   **CoreTelephony**, **CoreText**, **CoreMedia**, **AVFoundation**,
   **CoreVideo**, **QuartzCore** and **SystemConfiguration** frameworks:
-
-** Click the + button.
-** Select the required framework name
-** Click 'Add'
++
+--
+[upperalpha]
+. Click the **`+`** button.
+. Select the required framework name.
+. Click the **Add** button.
+--
 +
 image:img/1.png[,1500,861]
 
 [[step4]]
-== Step 4 (Swift only): Include the SDK in your UI test target's Bridging Header
-
-Make sure you have a bridging header in your UI tests target in **Build
-Settings** in Xcode.
-
-image:img/bridging-header-edited.png[,1500,316]
-
-If you don't have a bridging header, the fastest way to create one is to
-temporarily add a new .m file to your project. Xcode will then prompt
-you to create a bridging header. After it's created you can delete that
-.m file.
-
-image:img/2.png[,1500,745]
-
-**Include the SDK by adding the following line to your bridging header:**
-
-[[code-samples]]
---
-[source,objectivec]
-----
-#import <BuddyBuildSDK/BuddyBuildSDK.h>
-----
---
-
-[[step5]]
-== Step 5: Initialize the buddybuild SDK
+== Step 4: Initialize the buddybuild SDK
 
 Add the `uiTestsDidReceiveRemoteNotification` call in your app
-delegate's **didReceiveRemoteNotification** method.
+delegate's `didReceiveRemoteNotification` method.
+
+[IMPORTANT]
+===========
+If you have an
+`application:didReceiveRemoteNotification:fetchCompletionHandler`
+method, it takes priority over the `didReceiveRemoteNotification`
+method; place the `uiTestsDidReceiveRemoteNotification` call there.
+===========
 
 [[code-samples]]
 --
@@ -90,6 +77,7 @@ func application(_ application: UIApplication, didReceiveRemoteNotification user
 
 [[code-samples]]
 --
+.Objective-C
 [source,objectivec]
 ----
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
@@ -100,20 +88,18 @@ func application(_ application: UIApplication, didReceiveRemoteNotification user
 --
 
 If you haven't already implemented **didReceiveRemoteNotification** in
-your app delegate, you'll need to create it.
+your app delegate, you need to create it.
 
-[NOTE]
-======
-**Important**
-
-**uiTestsDidReceiveRemoteNotification** will only run in buddybuild
-while your UI tests run. It will not run when you build from Xcode on
-your local machine, on real iOS devices, on TestFlight or on App Store
+[IMPORTANT]
+===========
+**uiTestsDidReceiveRemoteNotification** only runs in buddybuild
+while your UI tests run. It does not run when you build from Xcode on
+your local machine, on real iOS devices, on TestFlight, or on App Store
 installs.
-======
+===========
 
-[[step6]]
-== Step 6: Configure your UI test cases.
+[[step5]]
+== Step 5: Configure your UI test cases.
 
 === Start video recording for your UI test cases
 
@@ -176,8 +162,8 @@ override func tearDown() {
 ----
 --
 
-[[step7]]
-== Step 7: Verify - Run your UI tests locally in Xcode
+[[step6]]
+== Step 6: Verify - Run your UI tests locally in Xcode
 
 Run your UI tests locally (⌘+U) in Xcode. In the output pane you should
 see the following log line, which indicates that the buddybuild SDK has
@@ -201,8 +187,8 @@ been successfully integrated.
 ----
 --
 
-[[step8]]
-== Step 8: Make sure Tests are enabled in buddybuild
+[[step7]]
+== Step 7: Make sure Tests are enabled in buddybuild
 
 Go to the buddybuild dashboard and make sure that Tests are enabled in
 buddybuild. This setting can be found in the **'App Settings'** of your
@@ -210,8 +196,8 @@ app.
 
 image:img/3.png[,1500,466]
 
-[[step9]]
-== Step 9: Commit and push
+[[step8]]
+== Step 8: Commit and push
 
 Commit the change and push the changes to your repo to add the
 buddybuild SDK.

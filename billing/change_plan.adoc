@@ -1,47 +1,72 @@
 = Change your plan
 
 If you'd like to change the number of concurrent builds, limits on
-feedback and instant replays, or any other features, you can do so easily
-by changing the plan associated with each organization.
+feedback and instant replays, or any other features, you can do so
+easily by changing the plan associated with each organization.
 
 == Let's get started!
 
-Hover over your avatar and click **Billing & Plans.**
+. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
+  dashboard].
 
-image:img/Billings-and-Plans---Menu.png[,1500,800]
+. image:../_img/dropdown-user-manage_org.png["Select Manage Org in the
+  avatar dropdown", 121, 207, role="right"]
+  Move your mouse pointer over your avatar in the top right corner. A
+  dropdown menu appears.
 
-In the left navigation, locate the organization for which you'd like to
-change plans for, and select **Manage Plan.**
+. Select **Manage Org**. The **Manage Organization** screen appears:
++
+image:../_img/screen-manage_org.png["The Manage Organization", 1280, 568,
+role="frame"]
 
-image:img/Billings-and-Plans---Change-plan---1.png[,3000,1600]
+. image:../_img/dropdown-organizations.png["The current organization", 206,
+  40, role="right"]
+  In the left navigation, a dropdown menu exists with the current
+  organization selected. Click the dropdown menu to list all of the
+  organizations that you currently belong to.
 
-Under your current plan details, click on **Change Plan.** 
+. Select the organization that requires a plan change.
 
-image:img/Billings-and-Plans---Change-plan---2.png[,3000,1600]
+. image:img/panel-plan_summary.png["The Plan Summary", 250, 333,
+  role="right"]
+  On the right side of screen, find the **Plan Summary**. Click the
+  **Change plan** button. The **Plan Pricing** screen, with your
+  current plan in view, is displayed:
++
+image:img/screen-plan_pricing-current.png["The Plan Pricing screen, with
+current plan",1280,920,role="frame"]
 
-Next, select the new plan that you would like to change to. If you have
-any questions about our plans, or would like to inquire about a custom
-plan, please don't hesitate to link:mailto:support@buddybuild.com[get in
-touch!]
-
+. Select from one of our plans by clicking the appropriate **Choose
+  plan** button, including the free tier. If you'd prefer to discuss a
+  plan customized to your needs, click the **Let's talk** button.
++
+If you have any questions about our plans, or would like to inquire
+about a custom plan, please don't hesitate to
+link:mailto:support@buddybuild.com[get in touch!]
++
 [WARNING]
 =========
 **When does my plan change take effect?**
 
-If you are **upgrading to a higher tier**, you will have access to the
-new features and limits effective immediately.
+If you are **upgrading to a higher tier**, you have access to the new
+features and limits effective immediately.
 
-If you are **downgrading to a lower tier**, the plan change will take
-effect at the end of your billing cycle. This means you get to enjoy the
-benefits of your higher tiered plan for a little longer!
+If you are **downgrading to a lower tier**, the plan change takes
+effect at the end of your billing cycle. This means that you get to
+enjoy the benefits of your higher tiered plan for a little longer!
 =========
++
+The **Payment summary** screen is displayed:
++
+image:img/screen-payment_summary.png["The Payment Summary screen", 1280,
+658, role="frame"]
 
-image:img/Billings-and-Plans---Change-plan---3.png[,3000,1600]
+. Review your payment summary and click **Pay now**. The **Payment
+  Confirmation** screen is displayed:
++
+image:img/screen-payment_confirmation.png["The Payment Confirmation
+screen", 1280, 556, role="frame"]
 
-Next, confirm your payment summary and hit Pay Now.
-
-image:img/Billings-and-Plans---Change-plan---4.png[,3000,1600]
+. Click **Continue** to return to the **Manage Organization** screen.
 
 That's it! You've now updated your organization's plan!
-
-image:img/Billings-and-Plans---Change-plan---5.png[,3000,1600]
