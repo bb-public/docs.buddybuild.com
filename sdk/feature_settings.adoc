@@ -24,8 +24,8 @@ link:../quickstart/android/integrate_sdk.adoc[Android; just enable it!]
 image:../integrations/img/screen-build_settings.png["The Default build
 configuration screen", 1280, 1024, role="frame"]
 
-. image:img/button-buddybuild_sdk.png["The Buddybuild SDK button",
-  role="right"]
+. image:img/button-buddybuild_sdk.png["The Buddybuild SDK button", 210,
+  42, role="right"]
   In the left navigation bar, click the **Buddybuild SDK** button. The
   **Install the SDK** screen is displayed:
 +
@@ -33,7 +33,7 @@ image:img/screen-install_sdk.png["The Install the SDK screen", 1280,
 579, role="frame"]
 
 . image:img/button-feature_settings.png["The Feature settings button",
-  role="right"]
+  210, 32, role="right"]
   In the left navigation bar, click the **Feature settings** button. The
   **Feature settings** screen is displayed.
 +
@@ -46,8 +46,11 @@ image:img/screen-feature_settings-unconfigured.png["The Feature settings
 screen, when not configured", 1280, 579, role="frame"]
 +
 image:img/button-install_sdk.png["The Install the buddybuild SDK
-button", role="right"]
-  If so, click the **Install the buddybuild SDK** button.
+button", 202, 42, role="right"]
+  If so, click the **Install the buddybuild SDK** button. The follow the
+  instructions for link:../quickstart/ios/integrate_sdk.adoc[iOS
+  integration], or link:../quickstart/android/integrate_sdk.adoc[Android
+  integration].
 
 . If you have installed the buddybuild SDK on at least one branch, you
   see:

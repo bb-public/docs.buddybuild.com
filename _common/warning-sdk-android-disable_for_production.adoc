@@ -1,6 +1,6 @@
 [WARNING]
 =========
-**Can I turn off the SDK features for production?**
+**Can I turn off the SDK features for Android in production?**
 
 The SDK features are turned off by default, you have control over which
 feature to enable when deploying via email or directly to Google Play.
