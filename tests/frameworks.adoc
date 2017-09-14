@@ -141,6 +141,11 @@ indicates Android compatibility.
 | {logo-apple}
 |
 
+| link:https://developer.android.com/training/testing/ui-automator.html[UI
+Automator]
+|
+| {logo-android}
+
 | link:https://developer.apple.com/documentation/xctest[XCTest]
 | {logo-apple}
 |
