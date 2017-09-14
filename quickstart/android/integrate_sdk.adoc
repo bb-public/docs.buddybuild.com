@@ -40,13 +40,7 @@ they tested. Correlate this with feedback and crash reports to
 understand your customers' experience.
 link:../../sdk/usage_tracking.adoc[Learn more.]
 
-[WARNING]
-=========
-**Can I turn off the SDK feature for production?**
-
-The SDK features are turned off by default, you have control over which
-feature to enable when deploying via email or directly to Google Play.
-=========
+{% include "../../_common/warning-sdk-android-disable_for_production.adoc" %}
 
 == How to install
 
