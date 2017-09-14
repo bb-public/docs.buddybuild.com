@@ -1,27 +1,48 @@
 = Change payment details
 
-Changing the payment details associated with an organization is a simple
-4 step process. Follow along below to change your payment details!
+Changing the payment details associated with an organization is simple.
+Follow along below to change your payment details!
 
-First, hover over your avatar and select **Billing & Plans**.
+. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
+  dashboard].
 
-image:img/Billings-and-Plans---Menu.png[,1500,800]
+. image:../_img/dropdown-user-manage_org.png["Select Manage Org in the
+  avatar dropdown", 121, 207, role="right"]
+  Move your mouse pointer over your avatar in the top right corner. A
+  dropdown menu appears.
 
-Next, locate the organization for which you would like to change payment
-details for, and click **Payment Details**.
+. Select **Manage Org**. The **Manage Organization** screen appears:
++
+image:../_img/screen-manage_org.png["The Manage Organization", 1280, 568,
+role="frame"]
 
-image:img/Billings-and-Plans---Change-payment-details---1.png[,3000,1600]
+. image:../_img/dropdown-organizations.png["The current organization", 206,
+  40, role="right"]
+  In the left navigation, a dropdown menu exists with the current
+  organization selected. Click the dropdown menu to list all of the
+  organizations that you currently belong to.
 
-Then, on the credit card that displays your existing payment details,
-click **Change**.
+. Select the organization that requires a payment change.
 
-image:img/Billings-and-Plans---Change-payment-details---2.png[,3000,1600]
+. image:img/panel-org_settings.png["The Organization Settings
+panel",206,255, role="right"]
+  On the left side of the screen, click the **Payment details** link in
+  the **Organization Settings** screen. The **Payment details** screen
+  is displayed:
++
+image:img/screen-payment_details-change.png["The Payment details screen",
+role="frame"]
 
-Re-enter your new payment details and click **Save Payment Info**.
+. Click the **(change)** link. The payment details fields are displayed:
++
+image:img/screen-payment_details.png["The Payment details fields", 1280,
+1024, role="frame"]
 
-image:img/Billings-and-Plans---Change-payment-details---3.png[,3000,1600]
+. Enter your new payment details, then click **Save payment info**. The
+**Payment Details** screen updates and displays a confirmation banner:
++
+image:img/screen-payment_details-confirmed.png["The Payment Details
+screen with change confirmation", role="frame"]
 
 That's it! Your new payment details have been saved and will be charged
 at the beginning of your next billing cycle.
-
-image:img/Billings-and-Plans---Change-payment-details---4.png[,3000,1600]
