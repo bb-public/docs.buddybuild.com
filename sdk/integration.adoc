@@ -119,7 +119,7 @@ header file should look something like this.
 ----
 --
 
-Add this import to the class implementation (.m) file.
+Add this import to the class implementation (`.m`) file.
 
 [[code-samples]]
 --
