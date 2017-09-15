@@ -1,79 +1,120 @@
 = Create a private key and setup permissions
 
-To deploy builds to Google Play, the first step is to create a Private
-Key (`.JSON`) and setup the appropriate permissions from the Google Play
-Developer Console.
+To deploy builds to Google Play, the first stage of the process is to
+create a service account with a JSON-formatted private key (`.json`) and
+setup the appropriate permissions from the Google Play Developer
+Console.
 
 Lets get started!
 
-Open the link:https://play.google.com/apps/publish[Google Play
-Developers Console], and Log In with your email and password.
+. Open the link:https://play.google.com/apps/publish[Google Play
+  Developers Console]
++
+If you are not already logged into a Google application, the login
+dialog appears:
++
+image:img/screen-google-login.png["The Google login dialog", 1280, 565,
+role="frame"]
++
+Log in with your email address and password.
++
+The **Developer Console** screen is displayed:
++
+image:img/screen-play-console.png["The Google Play Developer Console
+Screen", 1280, 446, role="frame"]
 
-Next, select **Settings** from the left menu.
+. image:img/button-play-settings.png["The Settings button", 90, 20,
+  role="right"]
+  In the left navigation area, click the **Settings** button. The
+  **Settings** screen is displayed:
++
+image:img/screen-play-settings.png["The Settings screen", 1280, 644,
+role="frame"]
 
-image:img/Google-Play-1.jpg[,3000,1188]
+. image:img/button-play-api_access.png["The API access button", 70, 11,
+  role="right"]
+  In the left navigation area, click the **API access** button. The
+  **API access** screen is displayed:
++
+image:img/screen-play-api_access.png["The API access screen", 1280,
+644, role="frame"]
 
-Select **API access**.
+. image:img/button-play-create_service_account.png["The Create Service
+  Account button", 218, 45, role="right"]
+  Scroll down to the **Service Accounts** panel, then click the **Create
+  Service Account** button. The **Create Service Account** dialog is
+  displayed:
++
+image:img/dialog-play-create_service_account.png["The Create Service
+Account dialog", 1280, 758, role="frame"]
 
-image:img/Google-Play-2.jpg[,3000,1188]
+. image:img/button-play-google_api_console.png["The Google API Console
+  link", 115, 14, role="right"]
+  Click the **Google API Console** link. In a new tab (or window), the
+  **Google API Console** is displayed:
++
+image:img/screen-api-service_accounts.png["The Google API Console
+screen", 1280, 780, role="frame"]
 
-Next, select **Create Service Account**.
+. image:img/button-api-create_service_account.png["The Create Service
+  Account button", 187, 14, role="right"]
+  Click the **Create Service Account** button. The **Create service
+  account** dialog is displayed.
++
+image:img/screen-api-create_service_account_dialog.png["The Create
+service account dialog", 1280, 736, role="frame"]
 
-image:img/Google-Play-3.jpg[,3000,1188]
+. In the **Service account name** field, specify the name for this
+  service account.
 
-In the modal that pops up, select **Google API Console**.
+. In the **Role** dropdown, select an appropriate role for this service
+  account.
 
-image:img/Google-Play-4.jpg[,3000,1188]
+. Check the **Furnish a new private key** checkbox. The dialog expands:
++
+image:img/screen-api-create_service_account_dialog-key.png["The expanded Create
+service account dialog", 1280, 736, role="frame"]
 
-On the next page, select the **Create credentials** dropdown, and then
-**Service account key**.
+. Make sure that the **key type** field has **JSON** selected.
 
-image:img/Google-Play-5a.jpg[,3000,1188]
-
-Select the **Service account** dropdown and select **New service account**.
-
-image:img/Google-Play-6.jpg[,3000,1188]
-
-Next, fill in the **name** field.
-
-image:img/Google-Play-7aa.jpg[,3000,1188]
-
-Next select a role by first highlighting **Project**, then selecting
-**Owner**.
-
-image:img/Google-Play-7a.jpg[,3000,1188]
-
-Ensure that **JSON** is selected and click **Create**.
-
-image:img/Google-Play-7b.jpg[,3000,1188]
-
-Next, a popup will appear letting you know that the Service account has
-been created.
-
-[NOTE]
-======
-**Note: at this point the JSON file has been downloaded to your
+. image:img/button-api-create.png["The Create button", 51, 11,
+  role="right"]
+  Click the **Create** button to create the service account. The private
+  key for the service account downloads, and the **Service account
+  created** dialog is displayed:
++
+image:img/screen-api-create_service_account_dialog-created.png["The
+Service account created dialog", 1280, 1024, role="frame"].
++
+[IMPORTANT]
+===========
+**At this point the JSON private key has been downloaded to your
 computer**
 
-This will be the JSON file that needs to be uploaded to buddybuild in
-the next step.
-======
+You need to upload this file to buddybuild in the next stage.
 
-Next, select **Close**.
+Make sure that you store the private key in a secure place. If the
+private key is deleted or otherwise lost, you cannot retrieve it.
+===========
 
-image:img/Google-Play-8.jpg[,3000,1188]
+. Return to the **Google Play Developer Console**. Find it in the original
+  browser window or tab.
 
-Head back to the Google Play Developers Console. The page will update
-with the new service account you created.
+. image:img/button-play-grant_access.png["The Grant Access button", 143,
+  45, role="right"]
+  Find the just-created service account in the **Service Accounts**
+  panel, and click the **Grant Access** button in the same row. The
+  **Add a new user** dialog is displayed:
++
+image:img/screen-play-add_new_user.png["The Add a new user dialog",
+1280, 780, role="frame"]
 
-Scroll down to the **Service Accounts** section, look for the unique
-Service Account ID, and select **Grant**.
+. Adjust permissions for the service account as you see fit. Make sure
+that the **Role** dropdown has **Release manager** selected.
 
-image:img/Google-Play-9.jpg[,3000,1188]
+. image:img/button-play-add_user.png["The Add User button", 66, 11,
+  role="right"]
+  Click the **Add User** button.
 
-Ensure that **Release manager** is selected from the role dropdown, then
-select **Add user**.
-
-image:img/Google-Play-10.jpg[,3000,1608]
-
-That's it for step 1! The next step is link:automatic.adoc[setting up buddybuild to automatically deploy to Google Play].
+That's it for stage 1! The next stage is to link:automatic.adoc[set up
+buddybuild to automatically deploy to Google Play].
