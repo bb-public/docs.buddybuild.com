@@ -35,6 +35,16 @@ successfully, you'll see a success message.
 Next, select the variant dropdown and **select the variant you want to
 upload to Google Play**.
 
+[NOTE]
+======
+**You must select a _release_ variant to deploy to the Google Play
+store.**
+
+If you do not see any release variants in the dropdown menu, it likely
+means that no release variants have been built by buddybuild. Buddybuild
+does not offer to deploy _debug_ variants to Google Play.
+======
+
 image:img/Builds---Details---Google-Play---Variant.png[,3000,1600]
 
 A Version Name and Version Code will be automatically filled in for you.
