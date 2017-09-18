@@ -17,7 +17,6 @@
     "domutils": "^1.5.1",
     "entities": "^1.1.1",
     "gitbook-cli": "2.3.0",
-    "gitbook-plugin-theme-default": "^1.0.6",
     "htmlparser2": "^3.9.2",
     "inherits": "^2.0.3",
     "isarray": "^1.0.0",
@@ -37,18 +36,17 @@
     "process-nextick-args": "^1.0.7",
     "readable-stream": "^2.2.9",
     "safe-buffer": "^5.0.1",
-    "string_decoder": "^1.0.1",
     "util-deprecate": "^1.0.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BuddyBuild/BB.git"
+    "url": "https://github.com/buddybuild-public/docs.buddybuild.com.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BuddyBuild/BB/issues"
+    "url": "https://github.com/buddybuild-public/docs.buddybuild.com/issues"
   },
-  "homepage": "https://github.com/BuddyBuild/BB",
+  "homepage": "https://github.com/buddybuild-public/docs.buddybuild.com",
   "scripts": {
     "build": "make book"
   },

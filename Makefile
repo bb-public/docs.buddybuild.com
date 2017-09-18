@@ -22,6 +22,7 @@ endif
 # GitBook setup
 setup_gitbook:
 	./node_modules/.bin/gitbook install
+	cd ./node_modules/gitbook-plugin-theme-buddybuild && npm install
 
 # Asciidoctor setup
 setup_asciidoctor:
