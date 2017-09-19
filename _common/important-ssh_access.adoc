@@ -1,0 +1,14 @@
+[IMPORTANT]
+===========
+For GitHub, GitLab, and BitBucket repositories, it is better to use
+buddybuild's integration with the repository API than it is to use SSH
+access.
+
+The buddybuild repository API integration provides immediate status
+updates, support for pull request workflows, and automated access
+management.
+
+If you choose to use SSH to connect to your repo, buddybuild can only
+access your repository's file content, and the features noted above do
+not work.
+===========
