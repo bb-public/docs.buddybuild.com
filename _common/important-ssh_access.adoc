@@ -1,6 +1,6 @@
 [IMPORTANT]
 ===========
-For GitHub, GitLab, and BitBucket repositories, it is better to use
+For GitHub, GitLab, and Bitbucket repositories, it is better to use
 buddybuild's integration with the repository API than it is to use SSH
 access.
 
