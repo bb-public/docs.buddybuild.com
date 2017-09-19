@@ -9,6 +9,7 @@
     "readme": "index.adoc"
   },
   "plugins": [
+    "sitemap",
     "explicit-url@https://github.com/buddybuild-public/gitbook-plugin-explicit-url.git",
     "edit-link@https://github.com/buddybuild-public/gitbook-plugin-edit-link.git",
     "buddybuild@https://github.com/buddybuild-public/gitbook-plugin-buddybuild.git",
@@ -24,6 +25,9 @@
       "aria": "Edit on GitHub",
       "position": "right",
       "cssclass": "bbedit"
+    },
+    "sitemap": {
+      "hostname": "https://docs.buddybuild.com/"
     }
   }
 }
