@@ -28,7 +28,7 @@ repositories {
 dependencies {
     compile 'com.buddybuild:sdk:0.0.84@aar'
     compile 'com.squareup:seismic:1.0.2'
-    compile 'ch.faendir:acra:4.10.0'
+    compile 'com.faendir:acra:4.10.0'
 }
 ----
 --
