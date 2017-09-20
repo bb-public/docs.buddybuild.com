@@ -1,0 +1,26 @@
+[IMPORTANT]
+===========
+Buddybuild has first-class integrations with the following repo
+providers:
+
+- link:{{readme.path}}/../repository/github/README.adoc[GitHub],
+  GitHub Enterprise
+- link:{{readme.path}}/../repository/gitlab/README.adoc[GitLab],
+  GitLab self-hosted
+- link:{{readme.path}}/../repository/bitbucket/README.adoc[Bitbucket],
+  link:{{readme.path}}/../repository/bitbucket_server/README.adoc[Bitbucket Server]
+
+Buddybuild's integrations provide the following features:
+
+- Commit status updates
+- Support for pull request workflows
+- Integration with issue tracking
+- Selective builds
+- Federated login
+- Automated access management
+- Ability to select from available repositories
+
+If you choose to use SSH to connect to your repo, buddybuild can only
+access your repository's file content, and the features noted above do
+not work.
+===========
