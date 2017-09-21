@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block head %}
-  {{ super() }}
+{{ super() }}
   <meta name="HandheldFriendly" content="true"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -14,31 +14,29 @@
   {### Include theme css before plugins css ###}
   <link rel="stylesheet" href="{{ "style.css"|resolveAsset }}">
 
-
   {### Custom stylesheets for the book ###}
   <link rel="stylesheet" href="{{ "../_js/highlight/styles/default.css" |resolveAsset }}">
   <link rel="stylesheet" href="{{ "../_js/highlight/styles/github.css" |resolveAsset }}">
 
-  {{ super() }}
+{{ super() }}
 
-  {% for type, style in config.styles %}
-    {% if fileExists(style) and type == "website" %}
-      <link rel="stylesheet" href="{{ style|resolveFile }}">
-    {% endif %}
-  {% endfor %}
+{% for type, style in config.styles -%}
+{% if fileExists(style) and type == "website" %}
+    <link rel="stylesheet" href="{{ style|resolveFile }}">
+{%- endif %}
+{% endfor -%}
 {% endblock %}
 
 {% block preload %}
   <link rel="preload" as="style" href="{{ "style.css"|resolveAsset }}">
   <link rel="preload" as="style" href="{{ "../_js/highlight/styles/default.css" |resolveAsset }}">
   <link rel="preload" as="style" href="{{ "../_js/highlight/styles/github.css" |resolveAsset }}">
-  {{ super() }}
-  {% for type, style in config.styles %}
-    {% if fileExists(style) and type == "website" %}
-      <link rel="preload" as="style" href="{{ style|resolveFile }}">
-    {% endif %}
-  {% endfor %}
+{{ super() }}
+{% for type, style in config.styles -%}
+{% if fileExists(style) and type == "website" %}
+    <link rel="preload" as="style" href="{{ style|resolveFile }}">
+{%- endif %}
+{% endfor -%}
 {% endblock %}
-
 
 {% block body %}{% endblock %}
