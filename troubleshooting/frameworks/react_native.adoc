@@ -10,6 +10,9 @@ errors:
 - <<error2>>
 - <<error3>>
 
+See <<errors>> for coverage of specific errors.
+
+
 [[error1]]
 == Clone your repo and check if your app builds locally
 
@@ -96,15 +99,17 @@ apply from: "../../node_modules/react-native/react.gradle"
 ----
 --
 
+[[errors]]
 == Troubleshooting Errors
 
-=== Unable to resolve module <module name> from <path>: Module does not exist in the module map or in these directories:
+=== Unable to resolve module &amp;lt;module name&amp;gt; from &amp;lt;path&amp;gt;: Module does not exist in the module map or in these directories:
 
 We've found that this error is generally caused by using wildcards (`^` or
 `~`) in your `package.json`.
 
 Our recommendation is to either remove the wildcards, or to move to
 using yarn and committing your yarn.lock.
+
 
 === Could not get BatchedBridge, make sure your bundle is packaged properly
 
@@ -114,7 +119,8 @@ integration systems like buddybuild.
 
 Look to <<error3>> as to how to configure your app to resolve this.
 
-=== error: package <name> does not exist
+
+=== error: package &amp;lt;name&amp;gt; does not exist
 
 This is generally caused by two different issues.
 
@@ -147,6 +153,7 @@ subprojects {
   }
 }
 ----
+
 
 === fatal error: `React/RCTViewManager.h` file not found
 
@@ -213,3 +220,21 @@ The following Stack Overflow article explains the issue and resolutions
 in more detail:
 
 https://stackoverflow.com/questions/44190829/facebook-sdk-android-error-building
+
+
+=== /node_modules/react-native-root-siblings/lib/AppRegistryInjection.js: Module does not exist in the module map
+
+This error indicate that there is an incompatibility between one of your
+dependencies and the version of React Native set in your `package.json`
+file. For this specific error, `react-native` version 0.48 (or higher)
+is required.
+
+
+=== error: method does not override or implement a method from a supertype
+
+If you have upgraded to React Native 0.48 (or higher) and start seeing
+these errors, it means that one of your dependencies set in your
+`package.json` file is incompatible with that version of React Native
+and needs to be updated.
+
+
