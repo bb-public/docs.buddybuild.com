@@ -67,6 +67,19 @@ Here is a high-level summary of buddybuild's build process:
   link:disable_a_build.adoc[disabled]).
 --
 
+[TIP]
+=====
+If you need to build a specific commit, you have several options:
+
+- Create a branch pointing to the specific commit. Then use the
+  link:https://apidocs.buddybuild.com/builds/post-trigger.html[REST API]
+  to trigger a build for that branch.
+
+- Push a tag the includes the desired commit.
+
+- Click the **Rebuild** button for a previous build of the commit.
+=====
+
 == Details
 
 [cols="1a,1a",options="headers"]
