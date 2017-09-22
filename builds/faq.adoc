@@ -1,0 +1,29 @@
+= Builds FAQ
+
+This section provides answers to frequently-asked build questions. See
+the link:../troubleshooting/README.adoc[Troubleshooting] section for
+solutions to a variety of build problems.
+
+== How do I build a specific commit?
+
+- Create a branch pointing to the specific commit. Then use the
+  link:https://apidocs.buddybuild.com/builds/post-trigger.html[REST API]
+  to trigger a build for that branch.
+
+- Push a tag the includes the desired commit.
+
+- Click the **Rebuild** button for a previous build of the commit.
+
+
+== How do I delete the history of builds from an old branch?
+
+It is not possible to do so. Buddybuild tracks the history of all
+builds; this detail is often useful and helps buddybuild improve its
+service.
+
+You can make an old branch less visible:
+
+- Create additional branches; new branches push old branches out of
+  view.
+
+- Delete the branch. The branch ... FIXME.
