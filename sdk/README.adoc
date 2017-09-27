@@ -18,7 +18,6 @@ This section includes the following topics:
 The SDK includes a lot of functionality in a small package; including
 the SDK adds less than 1 MB to your app's size.
 
-The following chart visualizes the number of methods available in the
-SDK for Android:
-
-image:img/dex_counts.png["API method count", 697, 762]
+For Android developers, the buddybuild SDK includes 279 methods. This is
+useful to know as the limit, without setting `jumboMode`, is 65,536
+methods.
