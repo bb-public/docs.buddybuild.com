@@ -5,7 +5,8 @@
     {% endif %}
 
     <div id="book-search-input" role="search">
-      <input type="text" tabindex="1" placeholder="{{ 'SEARCH_PLACEHOLDER'|t }}" />
+      <label for="book-search-input-field" class="sr-only">{{ 'SEARCH_PLACEHOLDER'|t }}</label>
+      <input id="book-search-input-field" type="text" tabindex="1" placeholder="{{ 'SEARCH_PLACEHOLDER'|t }}" />
     </div>
 
     <!-- Title -->
