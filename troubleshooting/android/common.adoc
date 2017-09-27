@@ -1,20 +1,18 @@
 = Common Android build errors
 
-== Points to Remember
+[NOTE]
+======
+Buddybuild uses Linux machines for building Android code. That means
+that case sensitivity with regards to file paths/file names are fully
+enforced, and you might notice build failures that you are not able to
+reproduce locally because you're either using a Mac or a Windows system.
+======
 
-* Buddybuild uses Linux machines for building Android code. That means
-  that case sensitivity with regards to file paths/file names are fully
-  enforced, and you might notice build failures that you are not able to
-  reproduce locally because you're either using a mac or a windows
-  system.
-
-== Common Errors
-
-=== A problem occurred evaluating project
+== A problem occurred evaluating project
 
 There are a few possible causes for the issue:
 
-==== build.gradle refers to a file that's not in the repo
+=== `build.gradle` refers to a file that's not in the repo
 
 [[code-samples]]
 --
@@ -26,10 +24,10 @@ There are a few possible causes for the issue:
 ----
 --
 
-If you get an error like this, it means the `build.gradle` refers to a
-file that is not checked into the repo. To resolve this error, you can
-use an 'if' condition to avoid the error by checking if the file exists
-or not:
+If you get an error like this, it means that the `build.gradle` file
+refers to a file that is not checked into the repo. To resolve this
+error, you can use an `if` condition to avoid the error by checking if
+the file exists or not:
 
 [[code-samples]]
 --
@@ -41,7 +39,7 @@ if (file("signing.properties").exists()) {
 ----
 --
 
-==== The file path is platform dependent
+=== The file path is platform dependent
 
 [[code-samples]]
 --
@@ -74,13 +72,13 @@ signingConfigs {
 
 === org.gradle.api.tasks.Sync.getInputs()Lorg/gradle/api/internal/TaskInputsInternal;
 
-This error generally indicates that the gradle wrapper is misconfigured,
+This error generally indicates that the Gradle wrapper is misconfigured,
 please follow the following steps:
 
-==== 1. Make sure you are using gradle wrapper
-
-A gradle wrapper consists of the following files/directories:
-
+. **Make sure you are using a Gradle wrapper**
++
+A Gradle wrapper consists of the following files/directories:
++
 [[code-samples]]
 --
 [source,bash]
@@ -92,35 +90,35 @@ A gradle wrapper consists of the following files/directories:
 │       └── gradle-wrapper.properties
 ----
 --
-
-If you don't, the following is how to generate a gradle wrapper, and you
-should commit this into your repository.
-
++
+If you don't have a Gradle wrapper, use the following command to
+generate one. You should commit the Gradle wrapper into your repository.
++
 [[code-samples]]
 --
 .Generating a gradle wrapper
 [source,bash]
 ----
-gradle wrapper --gradle-version <gradle_version>
+gradle wrapper --gradle-version &lt;gradle_version&gt;
 ----
 --
 
-==== 2. If you are using gradle wrapper, make sure it matches your gradle plugin
-
+. **If you are using a Gradle wrapper, make sure it matches your Gradle
+  plugin**
++
 You can read more about it here:
 https://developer.android.com/studio/releases/gradle-plugin.html#updating-gradle
++
+For example, if your Gradle plugin version is 2.2.3, make sure that the
+Gradle wrapper version is 2.14.1+
 
-For example, if your gradle plugin version is 2.2.3, make sure the
-gradle wrapper version is 2.14.1+
+. **Make sure that the `gradle-wrapper.jar` file is checked in**
++
+We see this fairly frequently, please make sure that the
+`gradle-wrapper.jar` file is checked in.
 
-==== 3. Make sure the gradle-wrapper.jar file is checked in
 
-We see this fairly frequently, please make sure the `gradle-wrapper.jar`
-file is checked in.
-
-=== Other Errors
-
-==== Multiple dex files define <x>
+== Multiple dex files define &amp;lt;x&amp;gt;
 
 This is almost always due to dependencies dragging in different versions
 of a shared dependency (quite frequently noticed with
@@ -144,9 +142,9 @@ configurations.all {
 ----
 --
 
-==== error: Annotation processor '__gen.AnnotationProcessorWrapper.*$AnnotationProcessor' not found
+== error: Annotation processor '__gen.AnnotationProcessorWrapper.*$AnnotationProcessor' not found
 
-This is generally caused by some breaking changes introduced with gradle
+This is generally caused by some breaking changes introduced with Gradle
 3.4+ whereby it requires certain changes when using annotation
 processors with Kotlin code.
 
@@ -156,10 +154,10 @@ the documentation below:
 https://kotlinlang.org/docs/reference/kapt.html
 
 If you are unable to reproduce this, your issues might be a result of
-Buddybuild upgrading your version of gradle to a specific version based
+buddybuild upgrading your version of Gradle to a specific version based
 off your com.android.tools.build version.
 
-==== fatal error: '*.h' file not found
+== fatal error: '*.h' file not found
 
 If this is an NDK build, there can be two reasons behind that error.
 
@@ -171,9 +169,33 @@ If this is an NDK build, there can be two reasons behind that error.
   case-insensitive file systems, but you can't get away with this on
   Linux boxes used by buddybuild.
 
-==== com.android.build.api.transform.TransformException: java.util.zip.ZipException: duplicate entry: com/google/common/base/FinalizableReference.class
+== com.android.build.api.transform.TransformException: java.util.zip.ZipException: duplicate entry: com/google/common/base/FinalizableReference.class
 
 https://stackoverflow.com/questions/44536567/java-util-zip-zipexception-duplicate-entry-com-google-common-base-finalizabler
 
 This was a bug with Google Play Services version 11.0.0. Please upgrade
 to 11.0.1 or greater.
+
+== build/intermediates/res/merged/release/values-v26/values-v26.xml:15:21-54: AAPT: No resource found that matches the given name: attr 'android:keyboardNavigationCluster'
+
+This occurs because buddybuild has updated its ACRA (Application Crash
+Reports for Android) dependencies.
+
+To resolve this problem, edit your `build.gradle` file and make the
+following changes:
+
+[[code-samples]]
+--
+[source,groovy]
+----
+compileSdkVersion 26
+buildToolsVersion '26.0.1'
+
+defaultConfig {
+    targetSdkVersion 26
+}
+----
+--
+
+Additional discussion about this issue can be found on
+link:https://stackoverflow.com/questions/45301203/no-resource-found-that-matches-the-given-name-attr-androidkeyboardnavigationc[StackOverflow].
