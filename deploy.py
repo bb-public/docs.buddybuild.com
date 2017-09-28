@@ -48,7 +48,7 @@ class Deployer:
             raise sys.exit(retval)
 
     def invalidate_cloudfront(self):
-        command = "aws cloudfront create-invalidation --distribution-id E1LSU35IEMRW04 --paths '/*'"
+        command = "aws cloudfront create-invalidation --distribution-id E1LSU35IEMRW04 --paths /*"
         print('Running command: `{}`'.format(command))
         retval = subprocess.call(command.split())
         if retval:
