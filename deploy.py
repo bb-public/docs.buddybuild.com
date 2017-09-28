@@ -4,7 +4,7 @@
 import os, sys
 import subprocess
 import requests
-
+import json
 
 class Deployer:
     """Responsible for deploying the website."""
@@ -33,6 +33,7 @@ class Deployer:
         print('Deploying branch: {}'.format(self._branch))
         if self._branch == 'master':
             self.deploy_s3()
+            self.invalidate_cloudfront()
         else:
             branch = self._branch.replace('/', '-')
             self.domain = 'http://{}-bb-docs.surge.sh'.format(branch)
@@ -46,6 +47,14 @@ class Deployer:
         if retval:
             raise sys.exit(retval)
 
+    def invalidate_cloudfront(self):
+        command = "aws cloudfront create-invalidation --distribution-id E1LSU35IEMRW04 --paths /*"
+        print('Running command: `{}`'.format(command))
+        retval = subprocess.call(command.split())
+        if retval:
+            raise sys.exit(retval)
+
+            
     def deploy_pull_request(self):
         """Deploy whenever a pull request is made."""
         print('Deploying pull request: {}'.format(self._pull_request))
@@ -71,9 +80,9 @@ class Deployer:
         url = 'https://api.github.com/repos/{}/issues/{}/comments'.format(
             self._repo, self._pull_request)
         headers = {'Authorization': 'token {}'.format(self._github_token)}
-        data = {'body': 'See the website here: {}'.format(self.domain)}
+        payload = {'body': 'See the website here: {}'.format(self.domain)}
         print('Posting comment to: {}'.format(url))
-        requests.post(url, headers=headers, json=data)
+        requests.post(url, headers=headers, data=json.dumps(payload))
 
 
 if __name__ == '__main__':

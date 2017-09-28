@@ -9,11 +9,16 @@
     "readme": "index.adoc"
   },
   "plugins": [
-    "explicit-url@0.0.3",
+    "sitemap",
+    "explicit-url@https://github.com/buddybuild-public/gitbook-plugin-explicit-url.git",
     "edit-link@https://github.com/buddybuild-public/gitbook-plugin-edit-link.git",
     "buddybuild@https://github.com/buddybuild-public/gitbook-plugin-buddybuild.git",
+    "theme-buddybuild@https://github.com/buddybuild-public/gitbook-plugin-theme-buddybuild.git",
+    "search@https://github.com/buddybuild-public/plugin-search.git",
+    "lunr@https://github.com/buddybuild-public/plugin-lunr.git",
     "-fontsettings",
-    "-sharing"
+    "-sharing",
+    "-theme-default"
   ],
   "pluginsConfig": {
     "edit-link": {
@@ -22,6 +27,9 @@
       "aria": "Edit on GitHub",
       "position": "right",
       "cssclass": "bbedit"
+    },
+    "sitemap": {
+      "hostname": "https://docs.buddybuild.com/"
     }
   }
 }

@@ -75,6 +75,7 @@
 .. link:builds/status_badges.adoc[Status Badges]
 .. link:builds/xcode_versions.adoc[Xcode Versions and Xcode Preview]
 .. link:builds/download_ipa.adoc[Downloading Build Artifacts]
+.. link:builds/settings/README.adoc[Build settings for all apps]
 
 . link:tests/README.adoc[Tests]
 .. link:tests/frameworks.adoc[Supported frameworks]
@@ -119,6 +120,7 @@
 .. link:integrations/pivotal_tracker.adoc[Pivotal Tracker]
 .. link:integrations/slack.adoc[Slack]
 .. link:integrations/trello.adoc[Trello]
+.. link:integrations/settings/README.adoc[Integration settings for all apps]
 
 . link:sdk/README.adoc[buddybuild SDK]
 .. link:sdk/automatic_update.adoc[Automatic Update]

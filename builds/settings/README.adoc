@@ -1,0 +1,129 @@
+= Build settings for all apps
+
+Each of the available link:../README.adoc[build] settings are
+app-specific. This section describes how you can specify build settings
+that automatically apply to new apps, or that can be applied to any
+applications that already exist within an organization.
+
+[IMPORTANT]
+Some build settings cannot be applied in bulk. If you do not find a
+specific setting listed in the build settings for all apps, you need to
+configure that setting for each individual app.
+
+This page contains the following sub-sections:
+
+- <<access>>
+- <<apply>>
+
+[[access]]
+== How to access builds settings for all apps
+
+. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
+  dashboard].
+
+. image:../../_img/dropdown-user-manage_org.png["Select Manage Org in
+  the avatar dropdown", 121, 207, role="right"]
+  Move your mouse pointer over your avatar in the top right corner. A
+  dropdown menu appears.
+
+. Select **Manage Org**. The **Manage Organization** screen appears:
++
+image:../../_img/screen-manage_org.png["The Manage Organization", 1280,
+568, role="frame"]
+
+. image:../../_img/dropdown-organizations.png["The current
+organization", 206, 40, role="right"]
+  In the left navigation, a dropdown menu exists with the current
+  organization selected. Click the dropdown menu to list all of the
+  organizations that you currently belong to.
+
+. Select the organization that requires a change to the build settings.
+
+. image:../../_img/panel-settings_for_all_apps.png["Settings for all
+  apps", 206, 102, role="right"]
+  On the left side of screen, find the **Settings for all apps** links.
+  Click **Builds**. The **Build Configurations** screen is displayed:
++
+image:img/screen-build_configurations.png["The Build Configurations
+screen", role="frame"]
+
+. Make adjustments as necessary to the build settings for all apps.
++
+[.clear]
+--
+- image:img/tab-build.png["The Build tab", 92, 52, role="right"]
+  Settings that enable or disable build features appear in the **Build**
+  tab.
+--
++
+--
+- image:img/tab-environment.png["The Environment tab", 137, 52,
+  role="right"]
+  Settings that apply throughout the build's execution appear in the
+  **Environment tab**.
+--
+
+image:img/screen-build_configurations-environment.png["The Environment
+settings screen",role="frame"]
+
+Generic app settings are grouped together under the **iOS & Android**
+sub-heading. Settings specific to iOS builds or Android builds are
+groups together under the **iOS-specific** and **Android-specific**
+sub-headings respectively.
+
+
+[[apply]]
+== How to apply build settings for all apps
+
+Once builds settings for all apps are defined, they automatically apply
+to any new applications that are added to buddybuild.
+
+To apply any specific setting to already-configured applications:
+
+.  image:img/button-magic_wand.png["The magic wand button", 63, 62, role="right"]
+  Click the **magic wand** button beside the setting you want to apply
+  to one or more applications. A drop-down menu appears:
++
+image:img/dropdown-magic_wand.png["The magic wand's dropdown menu",
+230, 178]
+
+. Select one of the options from the dropdown menu:
++
+--
+- **Apply to all existing apps**: applies the associated setting to
+  all applications connected to the current organization.
+
+- **Apply to all existing iOS apps**: applies the associated setting to
+  all iOS applications connected to the current organization. Android
+  application configuration is not affected.
+
+- **Apply to all existing Android apps**: applies the associated setting
+  to all Android applications connected to the current organization.
+  iOS application configuration is not affected.
+
+- **Select apps to apply to...**: lets you choose which apps should
+  receive the new setting. When you choose this item, the **Select
+  apps** screen is displayed:
++
+image:img/screen-select_apps.png["The Select apps screen", 1280, role="frame"]
++
+Use the search field to show only matching apps.
++
+image:img/button-add.png["The Add button", 46, 30, role="right"]
+When you hover your pointer over an app, an **Add** button appears.
+Click the **Add** button. The app is added to the list of apps to which the
+new setting should apply. The list appears as highlighted items within
+the input field:
++
+image:img/field-selected_apps.png["Selected apps", 730, 42]
++
+Once the list of apps includes every app to which the new setting should
+be applied, click the **Apply** button. The setting is applied to all of
+the selected apps, and the **Setting applied** screen is displayed:
++
+image:img/screen-setting_applied.png["The Setting applied screen",
+1280, 454, role="frame"]
++
+Click the **Done** button to return to the **Build configurations**
+screen.
+--

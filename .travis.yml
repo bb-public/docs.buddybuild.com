@@ -9,6 +9,7 @@ addons:
   apt:
     packages:
     - hunspell
+    - python3-pip
 branches:
   only:
   - master
