@@ -1,7 +1,8 @@
 ---
 search: false
+titletext: iOS troubleshooting
 ---
-= iOS
+= iOS troubleshooting
 
 This section covers iOS-specific problems and errors, and provides some
 solutions:

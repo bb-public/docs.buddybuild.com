@@ -1,7 +1,8 @@
 ---
 search: false
+titletext: Android quickstart
 ---
-= Android Quickstart
+= Android quickstart
 
 This section describes how to quickly get started with buddybuild for
 Android developers:

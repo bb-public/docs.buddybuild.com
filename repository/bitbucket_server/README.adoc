@@ -1,3 +1,6 @@
+---
+titletext: Adding a Bitbucket Server Repository
+---
 = Adding a Bitbucket Server Repository
 
 If your repository lives in Bitbucket Server (or Stash), you can sign

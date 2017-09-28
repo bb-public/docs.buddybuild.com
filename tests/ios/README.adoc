@@ -1,7 +1,8 @@
 ---
 search: false
+titletext: iOS tests
 ---
-= iOS
+= iOS tests
 
 This section covers buddybuild's infrastructure for testing iOS
 applications:

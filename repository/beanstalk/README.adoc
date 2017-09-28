@@ -1,3 +1,6 @@
+---
+titletext: Beanstalk repositories
+---
 = Beanstalk repositories
 
 If your repository lives in Beanstalk, you can connect to it via SSH.

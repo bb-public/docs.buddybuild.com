@@ -1,3 +1,6 @@
+---
+titletext: Adding a Kiln Repository
+---
 = Adding a Kiln Repository
 
 If your repository lives in Kiln, you can connect to it via SSH.

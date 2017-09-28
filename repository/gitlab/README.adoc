@@ -1,3 +1,6 @@
+---
+titletext: Adding a GitLab Repository
+---
 = Adding a GitLab Repository
 
 If your repository lives in GitLab, you can

@@ -1,3 +1,6 @@
+---
+titletext: Adding a GitHub Repository
+---
 = Adding a GitHub Repository
 
 If your repository lives in GitHub, you can

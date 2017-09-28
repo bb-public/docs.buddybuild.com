@@ -1,4 +1,7 @@
-= Selecting an App
+---
+titletext: Selecting an Android app from the repository
+---
+= Selecting an Android app from the repository
 
 Now that we've connected with your Source Control account, you'll need
 to point to the Repo containing your Android App.

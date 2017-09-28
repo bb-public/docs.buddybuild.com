@@ -1,6 +1,6 @@
 {% extends "./layout.html" %}
 
-{% block title %}{{ page.title }} // buddybuild docs{% endblock %}
+{% block title %}{{ page.titletext | d(page.title, true) }} // buddybuild docs{% endblock %}
 
 {% block description %}{{ page.description }}{% endblock %}
 

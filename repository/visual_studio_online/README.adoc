@@ -1,3 +1,6 @@
+---
+titletext: Adding a Visual Studio Online Repository
+---
 = Adding a Visual Studio Online Repository
 
 If your repository lives in Visual Studio Online / Team Foundation

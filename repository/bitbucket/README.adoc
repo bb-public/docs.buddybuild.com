@@ -1,3 +1,6 @@
+---
+titletext: Adding a Bitbucket Repository
+---
 = Adding a Bitbucket Repository
 
 If your repository lives in Bitbucket, you can

@@ -1,7 +1,8 @@
 ---
 search: false
+titletext: Android troubleshooting
 ---
-= Android
+= Android troubleshooting
 
 This section covers Android-specific problems and errors, and provides
 solutions:

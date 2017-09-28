@@ -1,3 +1,6 @@
+---
+titletext: Deploying manually to Google Play
+---
 = Deploying manually to Google Play
 
 With buddybuild, you have the ability to manually deploy to Google Play.

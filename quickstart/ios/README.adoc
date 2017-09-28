@@ -1,7 +1,8 @@
 ---
 search: false
+titletext: iOS quickstart
 ---
-= iOS Quickstart
+= iOS quickstart
 
 This section describes how to quickly get started with buddybuild for
 iOS developers:

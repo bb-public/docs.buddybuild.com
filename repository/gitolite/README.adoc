@@ -1,3 +1,6 @@
+---
+titletext: Adding a Gitolite Repository
+---
 = Adding a Gitolite Repository
 
 This page explains how to add a Gitolite hosted repository to

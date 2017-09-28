@@ -1,4 +1,7 @@
-= Selecting an App
+---
+titletext: Selecting an iOS app from the repository
+---
+= Selecting an iOS app from the repository
 
 Now that we've connected with to your source control system, you'll need
 to select the repository containing your iOS App.

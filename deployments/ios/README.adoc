@@ -1,7 +1,8 @@
 ---
+titletext: iOS deployments
 search: false
 ---
-= iOS
+= iOS deployments
 
 This section covers deployment details specific to iOS applications:
 

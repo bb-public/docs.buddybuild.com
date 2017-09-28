@@ -1,3 +1,6 @@
+---
+titletext: Adding a GitLab Webhook
+---
 = Adding a GitLab Webhook
 
 A webhook notifies buddybuild of code changes you make to your repo.

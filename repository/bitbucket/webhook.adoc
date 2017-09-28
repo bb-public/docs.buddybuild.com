@@ -1,3 +1,6 @@
+---
+titletext: Adding a Bitbucket Webhook
+---
 = Adding a Bitbucket Webhook
 
 A webhook notifies buddybuild of code changes you make to your repo.

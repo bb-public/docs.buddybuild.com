@@ -1,3 +1,6 @@
+---
+titletext: Adding a Gitolite Webhook
+---
 = Adding a Gitolite Webhook
 
 A webhook notifies buddybuild of code changes you make to your repo.

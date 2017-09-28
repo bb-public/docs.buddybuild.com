@@ -1,4 +1,7 @@
-= Integrating SDK
+---
+titletext: Integrating the buddybuild SDK for Android
+---
+= Integrating the buddybuild SDK for Android
 
 == About the buddybuild SDK
 

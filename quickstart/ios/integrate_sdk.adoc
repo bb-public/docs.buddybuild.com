@@ -1,4 +1,7 @@
-= Integrating SDK
+---
+titletext: Integrating the buddybuild SDK for iOS
+---
+= Integrating the buddybuild SDK for iOS
 
 == About the buddybuild SDK
 
