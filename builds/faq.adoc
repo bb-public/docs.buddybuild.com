@@ -17,13 +17,13 @@ solutions to a variety of build problems.
 
 == How do I delete the history of builds from an old branch?
 
-It is not possible to do so. Buddybuild tracks the history of all
-builds; this detail is often useful and helps buddybuild improve its
-service.
+While buddybuild tracks the history and feedback for all builds, you can
+make builds for old branches less visible:
 
-You can make an old branch less visible:
+- Delete the branch if you no longer need it. When you have deleted
+  branches, a **deleted branches** link appears at the bottom of the
+  **Builds** page in the Dashboard; click that link to view the builds
+  for deleted branches.
 
 - Create additional branches; new branches push old branches out of
-  view.
-
-- Delete the branch. The branch ... FIXME.
+  view on the **Builds** page.
