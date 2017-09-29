@@ -11,7 +11,7 @@ the steps on this page.
 **Use CocoaPods?**
 
 Include the link:http://cocoapods.org/pods/BuddyBuildSDK[BuddyBuildSDK]
-pod in your Podfile and move on to link:#step4[Step 4]
+pod in your Podfile and move on to link:#add-frameworks[Step 4]
 ======
 
 == Manual integration steps
@@ -51,7 +51,8 @@ rm -f BuddyBuildSDK.framework.zip
 ----
 --
 
-. **Add iOS frameworks**
+
+. [[add-frameworks]] **Add iOS frameworks**
 +
 ****
 [loweralpha]
