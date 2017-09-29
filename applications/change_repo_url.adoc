@@ -1,27 +1,27 @@
 = Change your app's repo URL
 
-If you’ve changed the location of your source code hosting provider to
+If you've changed the location of your source code hosting provider to
 another, or renamed the repo, the repo clone URL will need to be updated
 in buddybuild as well.
 
 Instead of deleting and re-adding the app and losing any buddybuild
-settings, you can quickly update your repo’s URL in buddybuild.
+settings, you can quickly update your repo's URL in buddybuild.
 
 Here's how to change your apps's repo URL in buddybuild:
 
 Click on **App Settings**.
 
-image:img/Builds---Settings.png[,1500,483]
+image:img/Builds---Settings.png[The buddybuild dashboard", 1500, 483]
 
 In the left navigation, click on **App details**, then **Repository
 URL**.
 
-image:img/Repository-URL-2.png[,1500,532]
+image:img/Repository-URL-2.png["The Repository URL button", 1500, 532]
 
 Enter in the new URL for your repository, and click on **Change
 repository**.
 
-image:img/Repository-URL-3.png[,1500,657]
+image:img/Repository-URL-3.png["The Repository URL screen", 1500, 657]
 
 [NOTE]
 ======
@@ -38,7 +38,8 @@ further instructions on finding the repository's clone URL.
 You can now start a new build to verify that your app is being built
 from the new repository. To do this, click on **Build Now**.
 
-image:img/Builds---Build-Now.png[,1500,483]
+image:img/Builds---Build-Now.png["The buddybuild dashboard", 1500, 483]
+
 
 == Did you switch away from GitHub, Bitbucket or GitLab?
 
