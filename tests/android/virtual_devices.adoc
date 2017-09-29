@@ -1,9 +1,9 @@
 = UI Tests on Virtual Devices
 
-Ensure your Android app runs seamlessly on the exact devices your user
-base owns. Buddybuild supports numerous mobile devices across different
-OS versions and vendors. Select which virtual devices to run your UI
-tests against, and buddybuild will automate the rest!
+To ensure that your Android app runs seamlessly on the exact devices
+your user base owns, buddybuild supports numerous mobile devices across
+different OS versions and vendors. Select which virtual devices to run
+your UI tests against, and buddybuild automates the rest!
 
 [NOTE]
 ======
@@ -24,24 +24,28 @@ branches.
 
 Start by clicking on **App Settings**.
 
-image:img/Builds---Settings.png[,1500,483]
+image:img/Builds---Settings.png["The buddybuild dashboard", 1500, 483]
 
 In the left navigation, click on **Test settings**.
 
-image:img/Tests---menu.jpg[,1500,606]
+image:img/Tests---menu.jpg["The Test settings button", 1500, 606]
 
 Next, locate **Run UI tests on virtual devices** and click **Configure**.
 
-image:img/Tests---virtual-configure.jpg[,1500,606]
+image:img/Tests---virtual-configure.jpg["The Default test configuration
+screen", 1500, 606]
 
 Turn on **UI tests on virtual devices**, then select the **variant** you
 would like to run UI tests against.
 
-image:img/Tests---virtual-select-variant.jpg[,1500,543]
+image:img/Tests---virtual-select-variant.jpg["Selecting a variant for UI
+testing", 1500, 543]
 
 Lastly, select the virtual devices you want to run UI tests on.
 
-image:img/Tests---virtual-select-device.jpg[,1500,543]
+image:img/Tests---virtual-select-device.jpg["The Select virtual device
+screen", 1500, 543]
+
 
 == Run UI tests on virtual devices for a specific branch only
 
@@ -51,12 +55,14 @@ creating a **branch-specific override**.
 Under Override build configuration, click **Add a branch** and select
 the branch you would like to run UI tests on virtual devices for.
 
-image:img/Builds---Branch-override---1.png[,1500,555]
+image:img/Builds---Branch-override---1.png["The branch override dropdown
+menu", 1500, 555]
 
 Select **Run UI tests on virtual devices** from the dropdown, then click
 the **Configure** button.
 
-image:img/Tests---virtual-branch-override.jpg[,1500,543]
+image:img/Tests---virtual-branch-override.jpg["Enabling UI tests for a
+specific branch", 1500, 543]
 
 You can now select the virtual devices you want to run UI tests on for
 your selected branch.

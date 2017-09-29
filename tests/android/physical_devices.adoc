@@ -26,32 +26,36 @@ all branches.
 
 Start by clicking on **App Settings**.
 
-image:img/Builds---Settings.png[,1500,483]
+image:img/Builds---Settings.png["The buddybuild dashboard", 1500, 483]
 
 In the left navigation, click on **Test settings**.
 
-image:img/Tests---menu.jpg[,1500,606]
+image:img/Tests---menu.jpg["The Test settings button", 1500, 606]
 
 Next, locate **Run UI tests on physical devices** and click **Configure**.
 
-image:img/Tests---physical-configure.jpg[,1500,606]
+image:img/Tests---physical-configure.jpg["The Default test configuration
+screen", 1500, 606]
 
 [WARNING]
 =========
 **Running UI tests on physical devices are charged per minute of use**
 
-Annual plan subscribers will be invoiced once a month for running UI
-tests on physical devices.
+Annual plan subscribers are invoiced once a month for running UI tests
+on physical devices.
 =========
 
 Turn on **UI tests on physical devices**, then select the **variant**
 you would like to run UI tests against.
 
-image:img/Tests---physical-select-variant.jpg[,1500,543]
+image:img/Tests---physical-select-variant.jpg["Selecting a variant to
+test", 1500, 543]
 
 Lastly, select the physical devices you want to run UI tests on.
 
-image:img/Tests---physical-select-device.jpg[,1500,543]
+image:img/Tests---physical-select-device.jpg["The physical device
+selection screen", 1500, 543]
+
 
 === Run UI tests on physical devices for a specific branch only
 
@@ -62,12 +66,14 @@ Under **Override build configuration**, click **Add a branch** and
 select the branch you would like to run UI tests on physical devices
 for.
 
-image:img/Builds---Branch-override---1.png[,1500,555]
+image:img/Builds---Branch-override---1.png["The branch override dropdown
+menu", 1500, 555]
 
 Select **Run UI tests on physical devices** from the dropdown, then
 click the **Configure** button.
 
-image:img/Tests---physical-branch-override.jpg[,1500,543]
+image:img/Tests---physical-branch-override.jpg["Enabling UI tests for a
+specific branch", 1500, 543]
 
 You can now select the physical devices you want to run UI tests on for
 your selected branch.
