@@ -16,24 +16,28 @@ separate apps.
 A scheme ties together a target with a build configuration.
 
 If you do not see your scheme, it is very likely because the target of
-the app in buddybuild is not included in the 'Build' section of the
+the app in buddybuild is not included in the **Build** section of the
 scheme you are trying to use.
 
-image:img/Screen-Shot-2016-05-31-at-5.51.42-PM.png[,889,630]
+image:img/Screen-Shot-2016-05-31-at-5.51.42-PM.png[The Xcode schemes
+dialog, with the Build section selected", 889, 630]
 
 Please check that the scheme matches the target of the app in
 buddybuild.
 
 == Make sure your scheme is shared
 
-You can make sure your scheme is shared, by going to 'Manage Schemes'
-from the schemes dropdown in Xcode.
+You can make sure your scheme is shared, by going to **Manage Schemes**
+from the schemes dropdown in Xcode:
 
-image:img/manage-schemes-1.png[,513,164]
+image:img/manage-schemes-1.png["The Schemes dropdown in Xcode", 513,
+164]
 
-and then checking the 'Shared' option against the schemes you want to share
+And then checking the **Shared** option against the schemes you want to
+share:
 
-image:img/manage-schemes-2.png[,776,440]
+image:img/manage-schemes-2.png[The Manage Schemes dialog in Xcode", 776,
+440]
 
 Once you've changed this, commit and push the changes with git. After
 buddybuild has built that commit you will see the schemes available in
