@@ -155,7 +155,7 @@ indicates that the buddybuild SDK has been successfully integrated.
 --
 
 . **Commit the change and push to your repo**.
-
++
 [[code-samples]]
 --
 [source,bash]
