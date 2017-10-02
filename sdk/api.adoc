@@ -112,12 +112,13 @@ the reporter is triggered in your app.
 
 [source,swift]
 ----
-BuddyBuildSDK.takeScreenshotAndShowFeedbackScreen()  
+BuddyBuildSDK.takeScreenshotAndShowFeedbackScreen()
 ----
 --
 
 If you would like to turn off the screenshot feedback trigger, simply
 turn it off in the SDK feature settings in the Dashboard.
+
 
 == Attach Custom Metadata to your Feedback and Crash Reports
 
@@ -137,11 +138,12 @@ Call these methods anywhere in your app to attach metadata.
 [source,swift]
 ----
 BuddyBuildSDK.setMetadataObject("576af2a10077a7dd", forKey:"UserID")
-BuddyBuildSDK.setMetadataObject("Login Page", forKey: "CurrentState")  
+BuddyBuildSDK.setMetadataObject("Login Page", forKey: "CurrentState")
 ----
 --
 
 Now when your app crashes, or your users submit feedback, you'll see
 this metadata when viewing the details in the dashboard.
 
-image:img/Pasted-image-at-2016_06_22-04_08-PM.png[,640,505]
+image:img/Pasted-image-at-2016_06_22-04_08-PM.png["A screen showing the
+metadata that accompanies crash reports and user feedback", 640, 505]
