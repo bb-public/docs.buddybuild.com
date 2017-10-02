@@ -16,6 +16,7 @@ Let's get started!
 - link:#step2[Step 2: Add the SSH Key to Your Kiln Account]
 ======
 
+
 [[step1]]
 == Step 1: Enter the SSH Git Clone URL
 
@@ -24,46 +25,53 @@ buddybuild. Within the main page of that repository, look to the
 top-right for the **Clone URL**. Click on the dropdown menu and select
 **SSH**.
 
-image:img/clone_url-ssh.png[,1447,383]
+image:img/clone_url-ssh.png["The Kiln project page, with clone selection
+dropdown menu active", 1447, 383]
 
 Highlight and copy the **SSH** clone URL.
 
-image:img/clone_url.png[,986,328]
+image:img/clone_url.png["The Kiln project page with SSH-based clone URL
+selected", 986, 328]
 
 Head over to dashboard, visit
 link:https://dashboard.buddybuild.com/apps/wizard/build/select-source[Select
 source] and choose **SSH**.
 
-image:../img/select_source-ssh.png[,1500,800]
+image:../img/select_source-ssh.png["The buddybuild select source
+screen", 1500, 800]
 
 Paste the SSH URL you copied into the **Git clone URL** field.
 
-image:img/paste-clone-url.png[,1500,765]
+image:img/paste-clone-url.png["The buddybuild git clone screen", 1500,
+765]
+
 
 [[step2]]
 == Step 2: Add the SSH Key to Your Kiln Account
 
 Highlight and copy the generated SSH key.
 
-image:img/ssh-key.png[,1500,765]
+image:img/ssh-key.png["The buddybuild git clone screen, with SSH key
+selected", 1500, 765]
 
 Navigate to your Kiln Account by first selecting your account photo, and
 then select **SSH Keys**.
 
-image:img/ssh_keys.png[,1068,349]
+image:img/ssh_keys.png["The Kiln project screen, with user-specific menu
+active", 1068, 349]
 
-Next, select **Add a New Key.** 
+Next, select **Add a New Key**.
 
-image:img/add_new_ssh_key.png[,1777,713]
+image:img/add_new_ssh_key.png["The Kiln SSH keys screen", 1777, 713]
 
 Paste the copied SSH key into the **Public Key** field and enter
 **Buddybuild** as the name.
 
-image:img/paste-ssh-key.png[,1576,837]
+image:img/paste-ssh-key.png["The Kiln Add a New Key dialog", 1576, 837]
 
 Next, click **Save Key**.
 
-image:img/save-key.png[,1023,286]
+image:img/save-key.png["The Kiln Save Key button", 1023, 286]
 
 [WARNING]
 =========
@@ -75,11 +83,11 @@ the SSH key needs to be added to those repositories as well.
 
 Navigate back to buddybuild and click on the **Build** button.
 
-image:img/build.png[,1500,765]
+image:img/build.png["The buddybuild git clone screen", 1500, 765]
 
 Buddybuild will checkout your project code and kick off a simulator
 build. The build should finish within a few seconds.
 
 That's it. You're now connected to buddybuild. The next step is to
 link:../../quickstart/ios/invite_testers.adoc[invite testers] to try out
-your App.
+your app.

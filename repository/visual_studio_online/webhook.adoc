@@ -6,22 +6,25 @@ Studio Online.
 Here are the instructions to do it manually. It should only take a
 couple of minutes.
 
-First, go to the project settings, and the 'Service Hooks' tab. You can
-create a subscription.
+First, go to the project settings, and the **Service Hooks** tab. You
+can create a subscription.
 
 Choose the **Web Hooks** option.
 
-image:img/click-web-hooks.png[,668,670]
+image:img/click-web-hooks.png["The Visual Studio Online Service Hooks
+screen with Web Hooks selected", 668, 670]
 
 Then choose your triggers. Select **Code pushed** and **Any** branch and
 **Any** member.
 
-image:img/set-triggers.png[,705,717]
+image:img/set-triggers.png["The Visual Studio Online Trigger screen for
+defining the condition that triggers the web hook", 705, 717]
 
 Then paste in the **buddybuild webhook URL** that was provided in
 buddybuild's dashboard.
 
-image:img/paste-webhook-url.png[,761,738]
+image:img/paste-webhook-url.png["The Visual Studio Online Action screen
+for defining a web hooks action", 761, 738]
 
-That's it! Next time you git push to your repo, buddybuild will trigger
-a build.
+That's it! Next time you git push to your repo, buddybuild triggers a
+build.

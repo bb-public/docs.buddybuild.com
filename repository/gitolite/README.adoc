@@ -20,6 +20,7 @@ email account].
 - link:#step4[Step 4: Build]
 ======
 
+
 [[step1]]
 == Step 1: Enter the SSH Gitolite clone URL
 
@@ -42,16 +43,21 @@ Head over to dashboard, visit
 link:https://dashboard.buddybuild.com/apps/wizard/build/select-source[Select
 source] and choose **SSH**.
 
-image:../img/select_source-ssh.png[,1500,800]
+image:../img/select_source-ssh.png["The buddybuild Select source
+screen", 1500, 800]
 
 Construct the Gitolite SSH clone URL using the username (typically `git`
 or `gitolite` for most Gitolite installations), hostname, and repository
 name.
 
 [source,bash]
-\git@my.company.com:my-ios-app
+----
+git@my.company.com:my-ios-app
+----
 
-image:img/clone-url.png[,1500,765]
+image:img/clone-url.png["The buddybuild git clone URL screen", 1500,
+765]
+
 
 [[step2]]
 == Step 2: Add a buddybuild user to Gitolite
@@ -59,7 +65,6 @@ image:img/clone-url.png[,1500,765]
 [NOTE]
 ======
 **Only a Gitolite admin user can add new users**
-
 ======
 
 In order to build your app on our fleet of build machines you will need
@@ -69,7 +74,8 @@ an SSH key-pair that securely identifies your account in buddybuild.
 
 Highlight and copy the generated public SSH key.
 
-image:img/ssh-key.png[,1500,765]
+image:img/ssh-key.png["The buddybuild git clone URL screen, with SSH key
+selected", 1500, 765]
 
 To add a new Gitolite user named `buddybuild`, paste the public SSH key
 into the file below, then commit and push the admin changes to your
@@ -118,12 +124,13 @@ If your project depends on any code in other private git repositories,
 the buddybuild user needs to be added to those repositories as well.
 =========
 
+
 [[step4]]
 == Step 4: Build
 
 Now go back to buddybuild and click on the **Build** button.
 
-image:img/build.png[,1500,765]
+image:img/build.png["The buddybuild git clone URL screen", 1500, 765]
 
 Buddybuild will checkout your project code and kick off a simulator
 build. That's it, you're now connected to buddybuild!
