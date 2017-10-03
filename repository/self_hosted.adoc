@@ -1,6 +1,6 @@
 = Self-hosted repositories
 
-Buddybuild works with any git-based repository, over SSH or SSL,
+Buddybuild works with any git-based repository, over SSH or HTTPS,
 including repositories that you may be hosting yourself (instead of
 using cloud services such as link:github/README.adoc[GitHub],
 link:gitlab/README.adoc[GitLab], and
@@ -50,7 +50,7 @@ details and pricing.
 == SSL certificates
 
 If you choose to disable, or otherwise avoid providing SSH access to
-your self-hosted repository, SSL access does work. You should be aware
+your self-hosted repository, HTTPS access does work. You should be aware
 of the following points related to SSL certificates:
 
 * Buddybuild does not support the use of self-signed certificates. If
