@@ -27,6 +27,7 @@
 ... link:quickstart/android/testing.adoc[Testing]
 
 . link:repository/README.adoc[Source Control Systems]
+.. link:repository/self_hosted.adoc[Self-hosted repositories]
 .. link:repository/beanstalk/README.adoc[Beanstalk]
 ... link:repository/beanstalk/webhook.adoc[Webhook]
 .. link:repository/bitbucket/README.adoc[Bitbucket]
