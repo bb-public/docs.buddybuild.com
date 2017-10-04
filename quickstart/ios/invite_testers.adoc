@@ -7,7 +7,9 @@ But before we do that, buddybuild requires your
 link:../../deployments/ios/code_signing/README.adoc[Code Signing
 Identities and Provisioning Profiles] to create signed device builds.
 
-image:img/Onboarding---first-step.png[,1500,800]
+image:img/Onboarding---first-step.png["The Invite testers screen", 1500,
+800]
+
 
 [[step1]]
 == Step 1: Upload Certificates
@@ -20,15 +22,16 @@ buddybuild Cert-Uploader tool.
 Simply **copy the `curl` line in the page and paste it into your
 terminal**.
 
-image:img/Onboarding---cert-tool-quick-way.png[,1500,800]
+image:img/Onboarding---cert-tool-quick-way.png["The Upload Certificates
+scfeen", 1500, 800]
 
-This `curl` script will automatically export certificates and
+This `curl` script automatically exports certificates and
 provisioning profiles that are required for creating signed builds of
 your app. We've already analyzed your project during your first build --
 and so we only pull what you need to build your project and nothing
 more.
 
-image:img/Terminal.png[,696,318]
+image:img/Terminal.png["Cert-Uploader output", 696, 318]
 
 [NOTE]
 ======
@@ -46,7 +49,9 @@ Once the upload is complete, buddybuild will have everything it needs to
 perform device builds. Now all we need is a set of emails to send these
 builds to -- which brings us to the next step!
 
-image:img/Onboarding---cert-tool-success.png[,1500,800]
+image:img/Onboarding---cert-tool-success.png["The Apple Developer Portal
+Synced screen", 1500, 800]
+
 
 == Step 2: Invite Testers
 
@@ -60,11 +65,12 @@ You can also configure deployment frequencies and branch targets
 specific to each group. These options allow you to fine tune who gets
 which build and how often.
 
-image:img/Onboarding---invite-testers.png[,1500,800]
+image:img/Onboarding---invite-testers.png["The Invite Testers screen",
+1500, 800]
 
-Once you're done configuring your groups, hit the **Invite Testers**
+Once you're done configuring your groups, click the **Invite Testers**
 button. We'll spin up a device build and email it to the groups you've
-specified. 
+specified.
 
 [NOTE]
 ======
