@@ -64,13 +64,15 @@ link:builds/custom_build_steps.adoc[Custom Build Steps]
 [.show-more-extra]
 --
 [.popular-doc]
-.link:troubleshooting/frameworks/cordova_ionic.adoc[Common Cordova / Ionic build errors]
+.link:troubleshooting/frameworks/cordova_ionic.adoc[Common Cordova /
+Ionic build errors]
 ****
 link:troubleshooting/README.adoc[Troubleshooting]
 ➛
 link:troubleshooting/frameworks/README.adoc[Frameworks]
 ➛
-link:troubleshooting/frameworks/cordova_ionic.adoc[Common Cordova / Ionic build errors]
+link:troubleshooting/frameworks/cordova_ionic.adoc[Common Cordova /
+Ionic build errors]
 ****
 
 [.popular-doc]
