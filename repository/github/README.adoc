@@ -41,13 +41,13 @@ Head over to dashboard, visit
 link:https://dashboard.buddybuild.com/apps/wizard/build/select-source[Select
 source] and choose **SSH**.
 
-image:../img/select_source-ssh.png["The buddybuild Select source sceen",
+image:../img/select_source-ssh.png["The buddybuild Select source screen",
 1500, 800]
 
 Paste the SSH URL you copied into the **Git clone URL** field.
 
-image:img/paste-clone-url.png["The buddybuild git clone screen", 1500,
-765]
+image:img/paste-clone-url.png["The buddybuild Connect another Git
+service screen", 1500, 765]
 
 
 [[step2]]
@@ -55,8 +55,8 @@ image:img/paste-clone-url.png["The buddybuild git clone screen", 1500,
 
 Highlight and copy the generated SSH key.
 
-image:img/copy-ssh-key.png["The buddybuild git clone screen, with SSH
-key selected", 1500, 765]
+image:img/copy-ssh-key.png["The buddybuild Connect another Git service
+screen, with SSH key selected", 1500, 765]
 
 Navigate to your GitHub Account by first selecting your account photo,
 and then selecting **Settings.**
@@ -95,7 +95,8 @@ key needs to be added to those repos as well.
 
 Navigate back to buddybuild and click on the **Build** button.
 
-image:img/build.png["The buddybuild git clone screen", 1500, 765]
+image:img/build.png["The buddybuild Connect another Git service screen",
+1500, 765]
 
 Buddybuild will checkout your project code and kick off a simulator
 build. The build should finish within a few seconds.

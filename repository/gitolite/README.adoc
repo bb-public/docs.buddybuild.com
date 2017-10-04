@@ -55,8 +55,8 @@ name.
 git@my.company.com:my-ios-app
 ----
 
-image:img/clone-url.png["The buddybuild git clone screen", 1500,
-765]
+image:img/clone-url.png["The buddybuild Connect another Git service
+screen", 1500, 765]
 
 
 [[step2]]
@@ -74,8 +74,8 @@ an SSH key-pair that securely identifies your account in buddybuild.
 
 Highlight and copy the generated public SSH key.
 
-image:img/ssh-key.png["The buddybuild git clone screen, with SSH key
-selected", 1500, 765]
+image:img/ssh-key.png["The buddybuild Connect another Git service
+screen, with SSH key selected", 1500, 765]
 
 To add a new Gitolite user named `buddybuild`, paste the public SSH key
 into the file below, then commit and push the admin changes to your
@@ -130,7 +130,8 @@ the buddybuild user needs to be added to those repositories as well.
 
 Now go back to buddybuild and click on the **Build** button.
 
-image:img/build.png["The buddybuild git clone screen", 1500, 765]
+image:img/build.png["The buddybuild Connect another Git service screen",
+1500, 765]
 
 Buddybuild will checkout your project code and kick off a simulator
 build. That's it, you're now connected to buddybuild!

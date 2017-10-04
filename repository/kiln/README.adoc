@@ -42,8 +42,8 @@ screen", 1500, 800]
 
 Paste the SSH URL you copied into the **Git clone URL** field.
 
-image:img/paste-clone-url.png["The buddybuild git clone screen", 1500,
-765]
+image:img/paste-clone-url.png["The buddybuild Connect another Git
+service screen", 1500, 765]
 
 
 [[step2]]
@@ -51,8 +51,8 @@ image:img/paste-clone-url.png["The buddybuild git clone screen", 1500,
 
 Highlight and copy the generated SSH key.
 
-image:img/ssh-key.png["The buddybuild git clone screen, with SSH key
-selected", 1500, 765]
+image:img/ssh-key.png["The buddybuild Connect another Git service
+screen, with SSH key selected", 1500, 765]
 
 Navigate to your Kiln Account by first selecting your account photo, and
 then select **SSH Keys**.
@@ -83,7 +83,8 @@ the SSH key needs to be added to those repositories as well.
 
 Navigate back to buddybuild and click on the **Build** button.
 
-image:img/build.png["The buddybuild git clone screen", 1500, 765]
+image:img/build.png["The buddybuild Connect another Git service screen",
+1500, 765]
 
 Buddybuild will checkout your project code and kick off a simulator
 build. The build should finish within a few seconds.

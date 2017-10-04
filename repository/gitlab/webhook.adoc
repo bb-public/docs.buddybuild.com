@@ -14,8 +14,8 @@ image:../img/resolve-banner.png["The auto-build resolution banner in the
 buddybuild dashboard", 1500, 298]
 
 In the dialog box that appears, **select and copy the webhook URL**.
-This URL is specific to your app and will be used to identify your app
-when sending webhooks from GitLab.
+This URL is specific to your app and is used to identify your app when
+sending webhooks from GitLab.
 
 image:../img/modal.png["The webhook URL dialog", 1500, 838]
 

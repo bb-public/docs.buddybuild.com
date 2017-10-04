@@ -21,7 +21,8 @@ screen", 1500, 800]
 Once you see this screen in buddybuild, head over to Visual Studio
 online. The URL looks like: https://myteam.visualstudio.com.
 
-image:img/connect.png["The buddybuild git clone screen", 1500, 765]
+image:img/connect.png["The buddybuild Connect another Git service
+screen", 1500, 765]
 
 Go into your personal profile (hover over your username in the top
 right, and select **My Profile**), select the **Security** Tab, and then
@@ -68,8 +69,8 @@ we offer. They don't apply to Visual Studio online hosted git repos.
 
 Click on the **Build** button.
 
-image:img/build.png["The buddybuild git clone screen, with repo URL
-and personal access token filled in", 1500, 765]
+image:img/build.png["The buddybuild Connect another Git service screen,
+clicking the I'm ready to build! button", 1500, 765]
 
 That's it! You're done -- we'll start building your repo and in a couple
 of minutes you'll have a working, modern CI, for your iOS or Android

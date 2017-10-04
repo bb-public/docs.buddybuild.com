@@ -28,12 +28,12 @@ Within the main page of your repository, look to the middle of the page
 for the **HTTPS/SSH dropdown**. Click it and select **SSH** (if it is
 not already selected).
 
-image:img/select-ssh.png["A GitLab project screen; selecting SSH", 3000,
+image:img/select-ssh.png["A GitLab project screen, selecting SSH", 3000,
 800]
 
 Highlight and copy the **SSH URL**.
 
-image:img/copy-clone-url.png["A GitLab project screen; copying the clone
+image:img/copy-clone-url.png["A GitLab project screen, copying the clone
 URL", 3000, 800]
 
 Head over to dashboard, visit
@@ -45,8 +45,8 @@ screen", 1500, 800]
 
 Paste the SSH URL you copied into the **Git clone URL** field.
 
-image:img/paste-clone-url.png["The buddybuild git clone screen",
-1500, 765]
+image:img/paste-clone-url.png["The buddybuild Connect another Git
+service screen", 1500, 765]
 
 
 [[step2]]
@@ -54,8 +54,8 @@ image:img/paste-clone-url.png["The buddybuild git clone screen",
 
 Highlight and copy the generated SSH key.
 
-image:img/copy-ssh-key.png["The buddybuild git clone screen, with
-the SSH key selected", 1500, 765]
+image:img/copy-ssh-key.png["The buddybuild Connect another Git service
+screen, with the SSH key selected", 1500, 765]
 
 Navigate to your Profile Settings by first selecting the **menu icon**
 in the top left corner.
@@ -79,7 +79,8 @@ image:img/paste-ssh-key.png["The GitLab SSH Keys screen", 3000, 1180]
 
 Next, click **Add Key.**
 
-image:img/build.png["The buddybuild git clone screen", 3000, 800]
+image:img/build.png["The buddybuild Connect another Git service screen",
+3000, 800]
 
 [WARNING]
 =========
@@ -91,7 +92,8 @@ key needs to be added to those repos as well.
 
 Navigate back to buddybuild and click on the **Build** button.
 
-image:img/build.png["The buddybuild git clone screen",1500,765]
+image:img/build.png["The buddybuild Connect another Git service
+screen",1500,765]
 
 Buddybuild will checkout your project code and kick off a simulator
 build. The build should finish within a few seconds.
