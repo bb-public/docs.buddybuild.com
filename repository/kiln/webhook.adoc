@@ -1,9 +1,9 @@
 = Adding a Kiln Webhook
 
-A webhook notifies buddybuild of code changes you make to your
-repository. Whenever a new change is pushed, buddybuild will
-automatically build your app -- ensuring you have up-to-date build
-status and your testers have the very latest changes.
+A webhook notifies buddybuild of code changes that you make to your
+repository. Whenever a new change is pushed, buddybuild automatically
+builds your app -- ensuring that you have up-to-date build status and
+your testers have the very latest changes.
 
 Let's get started!
 
@@ -15,8 +15,8 @@ image:../img/resolve-banner.png["The auto-build resolution banner in the
 buddybuild dashboard", 1500, 298]
 
 In the dialog box that appears, **select and copy the webhook URL**.
-This URL is specific to your app and will be used to identify your app
-when sending webhooks from Kiln.
+This URL is specific to your app and is used to identify your app when
+sending webhooks from Kiln.
 
 image:../img/modal.png["The webhook URL dialog", 1500, 838]
 
