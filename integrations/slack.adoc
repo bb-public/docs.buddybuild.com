@@ -41,8 +41,8 @@ screen", 1280, 1024, role="frame"]
   first of the **Integrations** screens (**Apple Dev Connection**) is
   displayed:
 +
-image:img/screen-apple_dev_connection.png["The Apple Dev Connection screen", 1280,734,
-role="frame"]
+image:img/screen-apple_dev_connection.png["The Apple Dev Connection
+screen", 1280, 734, role="frame"]
 
 . image:img/button-slack.png["The Slack button", 210, 32, role="right"]
   In the left navigation, click the **Slack** button. The **Slack**
