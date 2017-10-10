@@ -8,7 +8,8 @@ providers:
 - link:{{readme.path}}/../repository/gitlab/README.adoc[GitLab],
   GitLab self-hosted
 - link:{{readme.path}}/../repository/bitbucket/README.adoc[Bitbucket],
-  link:{{readme.path}}/../repository/bitbucket_server/README.adoc[Bitbucket Server]
+  link:{{readme.path}}/../repository/bitbucket_server/README.adoc[Bitbucket
+  Server]
 
 Buddybuild's integrations provide the following features:
 
