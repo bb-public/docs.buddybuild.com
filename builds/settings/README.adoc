@@ -80,7 +80,8 @@ to any new applications that are added to buddybuild.
 
 To apply any specific setting to already-configured applications:
 
-.  image:img/button-magic_wand.png["The magic wand button", 63, 62, role="right"]
+. image:img/button-magic_wand.png["The magic wand button", 63, 62,
+  role="right"]
   Click the **magic wand** button beside the setting you want to apply
   to one or more applications. A drop-down menu appears:
 +
