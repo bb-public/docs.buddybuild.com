@@ -19,36 +19,44 @@ below to automatically deploy to Google Play!
 Navigate to the Deployments page on buddybuild and select the **Deploy
 to Google Play** tab.
 
-image:img/Deployments---auto-deploy-to-Google-Play---0.png[,1500,400]
+image:img/Deployments---auto-deploy-to-Google-Play---0.png["The
+Deployment screen, with the Deploy to Google Play tab selected", 1500,
+400]
 
 Next, select **Connect Your Account**.
 
-image:img/Deployments---auto-deploy-to-Google-Play---1.png[,1500,529]
+image:img/Deployments---auto-deploy-to-Google-Play---1.png["The
+Deployment screen, with the Deploy to Google Play tab selected ,clicking
+the Connect Your Account button", 1500, 529]
 
 Authenticate with Google Play by clicking **select a file**, and
 locating the **Google Private Key (.JSON) **that you created and
 downloaded in the previous step.
 
-image:img/Deployments---auto-deploy-to-Google-Play---2.png[,3000,1600]
+image:img/Deployments---auto-deploy-to-Google-Play---2.png["The Deploy
+to Google Play dialog", 3000, 1600]
 
 Once connected, you now have the option of changing the next
 versionCode. You can also choose to leave the default value and click
 **Continue**.
 
-image:img/Deployments---auto-deploy-to-Google-Play---3.png[,1500,800]
+image:img/Deployments---auto-deploy-to-Google-Play---3.png["The Deploy
+to Google Play dialog, specifying the next versionCode", 1500, 800]
 
 Next, select the track you want to deploy to, how often you want to
 deploy to Google Play, and from which branch and variant.
 
 Once you're done that, select **Save Settings**.
 
-image:img/Deployments---auto-deploy-to-Google-Play---4.png[,3000,1600]
+image:img/Deployments---auto-deploy-to-Google-Play---4.png["The Deploy
+to Google Play dialog, with more configuration options", 3000, 1600]
 
 That's it! You're now ready to automatically deploy builds to Google
 Play.
 
 If you'd prefer to link:manual.adoc[manually deploy builds to Google
 Play], buddybuild allows you to do that as well!
+
 
 == Troubleshooting Errors
 
