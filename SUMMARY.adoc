@@ -9,13 +9,15 @@
 .. link:quickstart/bitbucket.adoc[Sign up with Bitbucket]
 .. link:quickstart/bitbucket_server.adoc[Connect with Bitbucket Server]
 .. link:quickstart/github_enterprise.adoc[Connect with GitHub Enterprise]
-.. link:quickstart/gitlab_private.adoc[Connect your privately-hosted GitLab instance]
+.. link:quickstart/gitlab_private.adoc[Connect your privately-hosted
+   GitLab instance]
 
 .. link:quickstart/ios/README.adoc[iOS]
 ... link:quickstart/ios/select_a_repo_and_app_to_build.adoc[Selecting an App]
 ... link:quickstart/ios/invite_testers.adoc[Inviting Testers]
 ... link:quickstart/ios/integrate_sdk.adoc[Integrating SDK]
-... link:quickstart/ios/apple_developer_portal_sync.adoc[Auto-Syncing Provisioning Profiles]
+... link:quickstart/ios/apple_developer_portal_sync.adoc[Auto-Syncing
+    Provisioning Profiles]
 ... link:quickstart/ios/auto_versioning.adoc[Auto Versioning]
 
 .. link:quickstart/android/README.adoc[Android]
@@ -56,7 +58,8 @@
 
 .. link:builds/frameworks/README.adoc[Cross-platform frameworks]
 ... link:builds/frameworks/react_native/README.adoc[React Native]
-.... link:builds/frameworks/react_native/log_javascript.adoc[Log JavaScript using the buddybuild SDK (iOS)]
+.... link:builds/frameworks/react_native/log_javascript.adoc[Log
+     JavaScript using the buddybuild SDK (iOS)]
 ... link:builds/frameworks/cordova-ionic/README.adoc[Cordova / Ionic]
 ... link:builds/frameworks/meteor/README.adoc[Meteor]
 
@@ -66,7 +69,8 @@
 .. link:builds/environment_variables.adoc[Environment Variables]
 .. link:builds/secure_files.adoc[Secure Files]
 .. link:builds/node.adoc[Node version]
-.. link:builds/provisioning_profile_explorer.adoc[Provisioning Profile Inspector]
+.. link:builds/provisioning_profile_explorer.adoc[Provisioning Profile
+   Inspector]
 .. link:builds/pull_requests.adoc[Pull Requests]
 .. link:builds/schedule_builds.adoc[Scheduling Builds]
 .. link:builds/skip_a_build.adoc[Skipping a Build]
@@ -83,7 +87,8 @@
 .. link:tests/ios/README.adoc[iOS]
 ... link:tests/ios/tests.adoc[Unit Tests]
 ... link:tests/ios/code_coverage.adoc[Code Coverage]
-... link:tests/ios/configure_ui_tests_video_recording.adoc[Configure UI tests for Video Replay]
+... link:tests/ios/configure_ui_tests_video_recording.adoc[Configure UI
+    tests for Video Replay]
 
 .. link:tests/android/README.adoc[Android]
 ... link:tests/android/physical_devices.adoc[UI Tests on Physical Devices]
@@ -96,9 +101,12 @@
 .. link:deployments/focus_message.adoc[Release Notes]
 .. link:deployments/ios/README.adoc[iOS]
 ... link:deployments/ios/code_signing/README.adoc[Code Signing]
-.... link:deployments/ios/code_signing/upload_manually.adoc[Upload Certificates Manually]
-.... link:deployments/ios/code_signing/certificate_management.adoc[Managing Certificates and Provisioning Profiles]
-.... link:deployments/ios/code_signing/create_a_code_signing_identity.adoc[Creating a Code Signing Identity]
+.... link:deployments/ios/code_signing/upload_manually.adoc[Upload
+     Certificates Manually]
+.... link:deployments/ios/code_signing/certificate_management.adoc[Managing
+     Certificates and Provisioning Profiles]
+.... link:deployments/ios/code_signing/create_a_code_signing_identity.adoc[Creating
+     a Code Signing Identity]
 ... link:deployments/ios/itunes_connect.adoc[iTunes Connect]
 
 .. link:deployments/android/README.adoc[Android]
@@ -106,13 +114,15 @@
 .... link:deployments/android/keystores/manage.adoc[Managing Your KeyStores]
 
 ... link:deployments/android/google_play/README.adoc[Google Play]
-.... link:deployments/android/google_play/developer_console.adoc[Create a private key and setup permissions]
+.... link:deployments/android/google_play/developer_console.adoc[Create
+     a private key and setup permissions]
 .... link:deployments/android/google_play/automatic.adoc[Automatic]
 .... link:deployments/android/google_play/manual.adoc[Manual]
 
 . link:integrations/README.adoc[Integrations]
 .. link:integrations/itunes_connect.adoc[Apple Developer Portal]
-.. link:integrations/apple_2fa.adoc[Using an Apple Account with Two-Factor Authentication]
+.. link:integrations/apple_2fa.adoc[Using an Apple Account with
+   Two-Factor Authentication]
 .. link:integrations/bitbucket_pipelines.adoc[Bitbucket Pipelines]
 .. link:integrations/ccmenu.adoc[CCMenu]
 .. link:integrations/github_issues.adoc[GitHub Issues]
@@ -148,25 +158,34 @@
 .. link:billing/payment_details.adoc[Change payment details]
 
 . link:troubleshooting/README.adoc[Troubleshooting]
-.. link:troubleshooting/user_not_getting_alert_when_a_new_version_of_app_is_available.adoc[User not getting alert when a new version of app is available]
+.. link:troubleshooting/user_not_getting_alert_when_a_new_version_of_app_is_available.adoc[User
+   not getting alert when a new version of app is available]
 .. link:troubleshooting/ios/README.adoc[iOS]
 ... link:troubleshooting/ios/common_build_errors.adoc[Common iOS build errors]
 ... link:troubleshooting/ios/missing_podfilelock.adoc[Missing Podfile.lock]
 ... link:troubleshooting/ios/missing_schemes.adoc[Missing schemes]
-... link:troubleshooting/ios/getting_device_logs_from_xcode.adoc[Getting device logs from Xcode]
+... link:troubleshooting/ios/getting_device_logs_from_xcode.adoc[Getting
+    device logs from Xcode]
 ... link:troubleshooting/ios/install_builds.adoc[Installing builds]
-... link:troubleshooting/ios/spec_repo_not_compatible_with_older_cocoapods_versions.adoc[Spec repo not compatible with older CocoaPods versions]
-... link:troubleshooting/ios/install_updated_wwdr_cert.adoc[Installing Apple's Updated Intermediate WWDR Certificate]
-... link:troubleshooting/ios/core_data-generated_classes_not_found_by_xcode_8_during_the_build.adoc[Core Data generated classes not found by Xcode 8 during the build]
+... link:troubleshooting/ios/spec_repo_not_compatible_with_older_cocoapods_versions.adoc[Spec
+    repo not compatible with older CocoaPods versions]
+... link:troubleshooting/ios/install_updated_wwdr_cert.adoc[Installing
+    Apple's Updated Intermediate WWDR Certificate]
+... link:troubleshooting/ios/core_data-generated_classes_not_found_by_xcode_8_during_the_build.adoc[Core
+    Data generated classes not found by Xcode 8 during the build]
 
 .. link:troubleshooting/android/README.adoc[Android]
 ... link:troubleshooting/android/common.adoc[Common Android build errors]
-... link:troubleshooting/android/docker_environment.adoc[Tools and Platform versions for Android / Docker environment]
+... link:troubleshooting/android/docker_environment.adoc[Tools and
+    Platform versions for Android / Docker environment]
 ... link:troubleshooting/android/google_play.adoc[Google Play Errors]
-... link:troubleshooting/android/build_number_without_sdk.adoc[Displaying Build Number in an Android App without SDK Integration]
+... link:troubleshooting/android/build_number_without_sdk.adoc[Displaying
+    Build Number in an Android App without SDK Integration]
 
 .. link:troubleshooting/frameworks/README.adoc[Frameworks]
-... link:troubleshooting/frameworks/cordova_ionic.adoc[Common Cordova / Ionic build errors]
-... link:troubleshooting/frameworks/react_native.adoc[Common React Native errors]
+... link:troubleshooting/frameworks/cordova_ionic.adoc[Common Cordova /
+    Ionic build errors]
+... link:troubleshooting/frameworks/react_native.adoc[Common React
+    Native errors]
 
 . link:https://apidocs.buddybuild.com/[REST API]

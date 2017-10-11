@@ -7,6 +7,11 @@ This section covers Android-specific problems and errors, and provides
 solutions:
 
 - link:common.adoc[Common Android build errors]
-- link:docker_environment.adoc[Tools and Platform versions for Android / Docker environment]
+
+- link:docker_environment.adoc[Tools and Platform versions for Android /
+  Docker environment]
+
 - link:google_play.adoc[Google Play Errors]
-- link:build_number_without_sdk.adoc[Displaying Build Number in an Android App without SDK Integration]
+
+- link:build_number_without_sdk.adoc[Displaying Build Number in an
+  Android App without SDK Integration]

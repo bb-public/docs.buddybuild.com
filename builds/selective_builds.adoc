@@ -23,7 +23,8 @@ link:skip_a_build.adoc[Skipping a build].
 
 . Visit link:https://dashboard.buddybuild.com/[the buddybuild dashboard].
 
-. image:img/button-app_settings.png[App Settings button,118,64,role="right thumb"]
+. image:img/button-app_settings.png[App Settings
+  button,118,64,role="right thumb"]
   Click **App Settings** in the top navigation bar. The **App Settings**
   page is displayed:
 +
@@ -34,7 +35,8 @@ image:img/page-app_settings.png[App Settings page,role="frame"]
   click the **Configure** button on the right side of the row. The
   **Enable selective builds** page is displayed:
 +
-image:img/page-build_skipping-disabled.png[Enable Selective Builds page,role="frame"]
+image:img/page-build_skipping-disabled.png["Enable Selective Builds
+page", role="frame"]
 
 . image:img/button-toggle.png[Toggle button,33,16,role="right"]
   Click the toggle button to enable selective builds. One of the lower
