@@ -10,7 +10,7 @@ solutions to a variety of build problems.
   link:https://apidocs.buddybuild.com/builds/post-trigger.html[REST API]
   to trigger a build for that branch.
 
-- Push a tag the includes the desired commit.
+- Push a tag that includes the desired commit.
 
 - Click the **Rebuild** button for a previous build of the commit.
 
