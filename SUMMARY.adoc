@@ -51,6 +51,7 @@
 .. link:repository/webhooks.adoc[Webhooks]
 
 . link:builds/README.adoc[Builds]
+.. link:builds/faq.adoc[Builds FAQ]
 .. link:builds/dependencies/README.adoc[Managing dependencies]
 ... link:builds/dependencies/submodules.adoc[Submodules]
 ... link:builds/dependencies/cocoapods.adoc[CocoaPods]
