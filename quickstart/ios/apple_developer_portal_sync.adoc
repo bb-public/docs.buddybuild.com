@@ -6,7 +6,11 @@ Developer Account.
 Managing testing and development device UDIDs in your provisioning
 profiles can be a huge pain. Buddybuild can manage this entire process
 for you. All we need to manage your provisioning profiles on your behalf
-are your Apple Developer Credentials. Let's get started!
+are your Apple Developer Credentials.
+
+{% include "../../_common/important-provisioning_profiles.adoc" %}
+
+Let's get started!
 
 == Step 1: Configure Apple Developer Portal
 
@@ -47,4 +51,4 @@ select a Team if you're part of multiple teams.
 
 That's it! You're good to go. Now all of your testers are able to
 install builds of your App. Buddybuild transparently retrieves their
-device IDs and adds them to your Provisioning Profiles!
+device IDs and adds them to your provisioning profiles!
