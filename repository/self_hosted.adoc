@@ -11,9 +11,8 @@ for connecting to a self-hosted repository.
 == Access
 
 Buddybuild needs to be able to access your self-hosted repository.
-Typically, your repository would be behind a firewall on your network.
-Your firewall needs to allow SSH connections from buddybuild IP
-addresses.
+If you are using a firewall, it needs to allow SSH and/or HTTPS
+connections from buddybuild IP addresses.
 
 You can discover the current IP address ranges for buddybuild build
 machines by querying the
