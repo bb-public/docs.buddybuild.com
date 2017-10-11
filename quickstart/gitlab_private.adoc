@@ -43,7 +43,7 @@ You will see a dialog with two input fields. If you already know your
 enter those now. Otherwise, continue reading the next sections to learn
 how to get the endpoint name and generate a personal access token.
 
-image:img/Gitlab-Enterprise-2.png["The Connect with GitLan Host,
+image:img/Gitlab-Enterprise-2.png["The Connect with GitLab Host,
 Community, or Enterprise screen", 1500, 877]
 
 

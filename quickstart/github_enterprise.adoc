@@ -120,7 +120,7 @@ Personal Access Token** field. Then click **Connect Your GitHub
 Enterprise Repositories**.
 
 image:img/Github-Enterprise-3.png["The buddybuild Connect with GitHub
-Enterprise screen, with personal access token poasted", 1500, 877]
+Enterprise screen, with personal access token posted", 1500, 877]
 
 The dialog should close and display a list of your repositories. At this
 point you have successfully completed connecting buddybuild with GitHub

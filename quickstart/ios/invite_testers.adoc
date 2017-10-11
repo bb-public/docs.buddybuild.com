@@ -23,7 +23,7 @@ Simply **copy the `curl` line in the page and paste it into your
 terminal**.
 
 image:img/Onboarding---cert-tool-quick-way.png["The Upload Certificates
-scfeen", 1500, 800]
+screen", 1500, 800]
 
 This `curl` script automatically exports certificates and
 provisioning profiles that are required for creating signed builds of
