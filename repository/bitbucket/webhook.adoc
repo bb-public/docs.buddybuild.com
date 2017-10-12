@@ -10,37 +10,41 @@ Let's get started!
 On the Builds page, in the red banner at the top of the page, click on
 **Resolve this issue**.
 
-image:../img/resolve-banner.png[,1500,298]
+image:../img/resolve-banner.png["The auto-build resolution banner in the
+buddybuild dashboard", 1500, 298]
 
 In the dialog box that appears, **select and copy the webhook URL**.
-This URL is specific to your app and will be used to identify your app
+This URL is specific to your app and is used to identify your app
 when sending webhooks from Bitbucket.
 
-image:../img/modal.png[,1500,838]
+image:../img/modal.png["The webhook URL dialog",1500,838]
 
 Navigate to your Bitbucket repository. In the left navigation, select
 **Settings**.
 
-image:img/click-settings.png[,3000,1188]
+image:img/click-settings.png["A Bitbucket project screen", 3000, 1188]
 
 Select **Webhooks**.
 
-image:img/click-webhooks.png[,3000,1188]
+image:img/click-webhooks.png["The Bitbucket Settings screen", 3000, 1188]
 
 Next, select **Add webhook**.
 
-image:img/click-add-webhook.png[,3000,1188]
+image:img/click-add-webhook.png["The Bitbucket Webhooks screen", 3000, 1188]
 
 In the **Title** field, enter **Buddybuild** and paste the URL you first
 copied into the **URL** field.
 
-image:img/paste-webhook-url.png[,3000,1188]
+image:img/paste-webhook-url.png["Specifying webhook details in
+Bitbucket", 3000, 1188]
 
 Select **choose from a full list of triggers.**
 
-image:img/click-choose-triggers.png[,3000,1188]
+image:img/click-choose-triggers.png["Specifying triggers in the
+Bitbucket Webhooks screen", 3000, 1188]
 
 Once that expands, select **Push, Created, Updated, Merged, Declined,**
 and click **Save**. You're now done!
 
-image:img/click-save.png[,3000,1760]
+image:img/click-save.png["Saving the webhook in the Bitbucket Webhooks
+screen", 3000, 1760]

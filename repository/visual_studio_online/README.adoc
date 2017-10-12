@@ -15,35 +15,37 @@ Head over to dashboard, visit
 link:https://dashboard.buddybuild.com/apps/wizard/build/select-source[Select
 source] and choose **SSH**.
 
-image:../img/select_source-ssh.png[,1500,800]
+image:../img/select_source-ssh.png["The buddybuild Select source
+screen", 1500, 800]
 
 Once you see this screen in buddybuild, head over to Visual Studio
 online. The URL looks like: https://myteam.visualstudio.com.
 
-image:img/connect.png[,1500,765]
+image:img/connect.png["The buddybuild Connect another Git service
+screen", 1500, 765]
 
 Go into your personal profile (hover over your username in the top
 right, and select **My Profile**), select the **Security** Tab, and then
 add a **Personal Access Token.**
 
-image:img/personal-access-token.png[,1232,717]
+image:img/personal-access-token.png["The Visual Studio Online, Create a
+personal access token screen", 1232, 717]
 
 Make a note of the **personal access token** that is generated.
+
 
 == Find your repo URL
 
 Go to your project page and click the **Clone** button on the top right.
 
-image:img/clone.png[,1230,399]
+image:img/clone.png["The Visual Studio Online project page", 1230, 399]
 
- You will get an HTTPS URL like this.
-[[code-samples]]
---
+You will get an HTTPS URL like this:
+
 [source,text]
 ----
 https://buddybuild.visualstudio.com/DefaultCollection/_git/My%20First%20Project
 ----
---
 
 == Combine the repo URL and personal access token
 
@@ -52,24 +54,23 @@ into the repo URL. Paste it into the repo URL, so it looks like this,
 replacing `MY_ACCESS_TOKEN` with your personal access token and adding
 an `@`.
 
-[[code-samples]]
---
 [source,text]
 ----
 https://MY_ACCESS_TOKEN@buddybuild.visualstudio.com/DefaultCollection/_git/My%20First%20Project
 ----
---
+
 
 == Finishing sign up
 
-Back on buddybuild, paste the https URL into the git clone URL text box.
+Back on buddybuild, paste the HTTPS URL into the git clone URL text box.
 
 You can ignore the formatting suggestions, and also ignore the SSH key
 we offer. They don't apply to Visual Studio online hosted git repos.
 
 Click on the **Build** button.
 
-image:img/build.png[,1500,765]
+image:img/build.png["The buddybuild Connect another Git service screen,
+clicking the I'm ready to build! button", 1500, 765]
 
 That's it! You're done -- we'll start building your repo and in a couple
 of minutes you'll have a working, modern CI, for your iOS or Android

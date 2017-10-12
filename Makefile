@@ -48,7 +48,7 @@ tidy:
 	rm -rf _book/CNAME _book/Gemfile _book/Gemfile.lock _book/Makefile _book/_common _book/_dicts _book/deploy.py _book/npm-debug.log _book/package.json _book/package-lock.json _book/rewrites.csv _book/yarn.lock
 
 # 'test' the artifacts
-test: setup spell length proof missed
+test: setup spell alt length proof missed
 
 # Spell check the source files.
 spell:
@@ -60,15 +60,24 @@ spell:
 length:
 	@node_modules/gitbook-plugin-buddybuild/scripts/linelength.pl -d . -l 80
 
+# Check for unspecified image alt tags
+alt:
+	@node_modules/gitbook-plugin-buddybuild/scripts/unassigned_alt.pl -d .
+
 # Run htmlproofer on the artifacts to catch bad images, links, etc.
 proof: all
 	@command -v htmlproofer >/dev/null 2>&1 || { echo >&2 "htmlproofer required for link testing."; exit 1; }
-	htmlproofer --url-ignore="#" --disable-external _book
+	htmlproofer --allow-hash-href  --disable-external _book
 
 # Run htmlproofer, with external checks
 proofx: all
 	@command -v htmlproofer >/dev/null 2>&1 || { echo >&2 "htmlproofer required for link testing."; exit 1; }
-	htmlproofer --url-ignore="#" _book
+	htmlproofer --allow-hash-href  _book
+
+# Run htmlproofer, assuming build already performed
+proofq:
+	@command -v htmlproofer >/dev/null 2>&1 || { echo >&2 "htmlproofer required for link testing."; exit 1; }
+	htmlproofer --allow-hash-href  _book
 
 # Check for unconverted topics in output folder; means they're missing
 # from the TOC.

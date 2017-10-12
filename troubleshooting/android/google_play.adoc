@@ -3,10 +3,11 @@
 The number one issue related to Google Play errors occurs when one of
 your tracks is listed as being "Superseded" by a later track. This
 precludes any automated system from pushing an APK to any earlier track,
-as the system is in a state whereby a later track (i.e. production) has
-a version code greater than an earlier track (i.e. alpha, beta).
+as the system is in a state whereby a later track (i.e. `production`) has
+a version code greater than an earlier track (i.e. `alpha`, `beta`).
 
-image:img/google_play-tracks.png[,777,469]
+image:img/google_play-tracks.png["Google Play tracks, where the Beta
+track has been superseded by the Production track", 777, 469]
 
 Other common issues are:
 

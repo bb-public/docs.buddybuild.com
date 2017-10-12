@@ -15,6 +15,7 @@ with new features.
 android:minSdkVersion="8"
 =========
 
+
 === Feedback Reporter
 
 With buddybuild, you simply shake the device to share feedback. Our
@@ -22,6 +23,7 @@ feedback reporter sends graphically annotated screenshots, feedback
 notes and device metadata to your team. Integrate with GitHub, JIRA and
 Pivotal Tracker to track feedback as issues.
 link:../../sdk/feedback_reporter.adoc[Learn more.]
+
 
 === Automatic Update
 
@@ -31,6 +33,7 @@ testers and beta users updated on the very latest builds. If a newer
 build is available, the buddybuild SDK can automatically prompt to
 install the latest version of your app.
 link:../../sdk/automatic_update.adoc[Learn more.]
+
 
 === Usage Tracking
 
@@ -42,17 +45,21 @@ link:../../sdk/usage_tracking.adoc[Learn more.]
 
 {% include "../../_common/warning-sdk-android-disable_for_production.adoc" %}
 
+
 == How to install
 
 Enabling the buddybuild Android SDK requires no code changes. Enabling
 the SDK is as simple as clicking a button.
+
 
 === Step 1: Configure SDK Installation
 
 On your App's page, under the **Feedback** tab, click on the **Try the
 buddybuild SDK** button.
 
-image:img/SDK---Android-Install-Button.png[,1500,869]
+image:img/SDK---Android-Install-Button.png["The screen asking you to
+install the SDK", 1500, 869]
+
 
 === Step 2: Enable the SDK
 
@@ -60,10 +67,11 @@ Enable the SDK in whatever branch you'd like. Typically, the SDK will be
 used by your testers, so you'll want to enable the SDK on the branches
 that deploy to your testers.
 
-image:img/SDK---Turn-on-branch-Android.png[,1500,667]
+image:img/SDK---Turn-on-branch-Android.png["The Install the SDK screen",
+1500, 667]
 
-That's it! A new build will be kicked off with the SDK enabled. Install
-this build on your device. Open your app and shake your device. See what
+That's it! A new build is kicked off with the SDK enabled. Install this
+build on your device. Open your app and shake your device. See what
 happens!
 
 You're all set now to deploy your app broadly to all your testers and to

@@ -25,6 +25,7 @@ Using a self-signed certificate could make it possible for someone to
 spoof your repository and inject malicious code into your builds.
 ====
 
+
 == Step 1: Signing up with an existing service
 
 Let's get started by visiting the
@@ -32,21 +33,21 @@ link:https://dashboard.buddybuild.com/signup[Sign up page].
 
 Simply click on the **GitLab** button to sign up with your credentials.
 
-image:img/sign_up-gitlab.png[,3000,1600]
+image:img/sign_up-gitlab.png["The Signup screen", 3000, 1600]
 
 == Step 2: Enter Credentials
 
 Enter your GitLab credentials and click **Sign in**.
 
-image:img/Gitlab---OAuth-1.png[,3000,1280]
+image:img/Gitlab---OAuth-1.png["The GitLab Sign in screen", 3000, 1280]
 
 == Step 3: Grant buddybuild access to your GitLab account by clicking Authorize
 
-image:img/Gitlab---OAuth-2.png[,3000,1796]
+image:img/Gitlab---OAuth-2.png["The GitLab authorization screen", 3000, 1796]
 
 That's it! You're now connected to buddybuild!
 
-**The next step is to select a repository to build with buddybuild!** 
+**The next step is to select a repository to build with buddybuild!**
 
 - For iOS apps, continue to the
   link:ios/select_a_repo_and_app_to_build.adoc[iOS

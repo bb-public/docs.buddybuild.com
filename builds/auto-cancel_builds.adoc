@@ -12,4 +12,5 @@ triggered by webhook for the same branch.
 To enable this behavior go to *App Settings* for your app and enable
 the *Auto-cancel builds* setting.
 
-image:img/Settings---Auto-cancel-builds.png[,1500,147]
+image:img/Settings---Auto-cancel-builds.png["The Auto-cancel builds
+option", 1500, 147]

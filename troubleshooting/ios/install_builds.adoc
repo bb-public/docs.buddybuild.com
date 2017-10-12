@@ -27,9 +27,13 @@ This error is quite generic and could be caused by the following
 reasons, but not limited to:
 
 - UDID is not included in the provisioning profile
+
 - The build was incorrectly signed or has broken entitlements
+
 - Device or iOS version is incompatible with the build
+
 - Device storage is full
+
 - You've reached your device provisioning limit in your Apple Developer
   Account (See your  "Remaining devices" in your **App Settings >
   Integrations > Apple Developer Portal**)
@@ -45,24 +49,25 @@ out to us on Intercom.
 This issue is caused when opening the link in **Private** mode in
 Safari. Here's how to turn off Private browsing:
 
-. Tap the tabs button (the right most button in the toolbar below)
+. Tap the tabs button (the right-most button in the bottom toolbar below)
 +
-image:img/IMG_3643.png[,1242,2151]
+image:img/IMG_3643.png["Buddybuild's Private Browsing error page, as
+displayed on an iPhone", 1242, 2151]
 
-. Tap on "Private" to deselect it.
+. Tap on **Private** to deselect it.
 +
-image:img/IMG_3644.png[,1242,2208]
+image:img/IMG_3644.png["The iOS Safari Tabs display", 1242, 2208]
 
 . Quit Safari, then click on the install link again.
 
 If you still see this error message, make sure cookies are not disabled
 on your device.
 
-image:img/Allow-Cookies.png[,1032,903]
+image:img/Allow-Cookies.png["Two iPhone screenshots showing how to
+navigate to Safari's cookie settings", 1032, 903]
 
 
 == Nothing happens when trying to register the device or to install the app
-
 
 This issue is caused when opening the link in a
 **SFSafariViewController** (a stripped down version of Safari in third
@@ -71,7 +76,9 @@ party apps) and not **Safari**, the main app itself.
 The issue can be fixed by forcing the link to open in Safari. Then to
 install from Safari:
 
-image:img/SFSafariViewController.png[,1242,2144]
+image:img/SFSafariViewController.png["Buddybuild's Register Your Device
+screen as displayed on an iPhone, with the 'Install Profile' popup
+displayed", 1242, 2144]
 
 
 === Profile installation Failed: Couldn't communicate with a helper application
@@ -79,9 +86,13 @@ image:img/SFSafariViewController.png[,1242,2144]
 When you get this error while trying to install the buddybuild profile,
 try the following:
 
-* Open the Settings app
-* Go to General > Profiles on the device
-* Remove the buddybuild config profile
-* Visit https://dashboard.buddybuild.com/reset
-* Try to reinstall the build, buddybuild should ask to install the
+- Open the Settings app
+
+- Go to **General** > **Profiles** on the device
+
+- Remove the buddybuild config profile
+
+- Visit https://dashboard.buddybuild.com/reset
+
+- Try to reinstall the build, buddybuild should ask to install the
   profile again.

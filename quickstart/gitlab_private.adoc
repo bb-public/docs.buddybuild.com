@@ -43,7 +43,9 @@ You will see a dialog with two input fields. If you already know your
 enter those now. Otherwise, continue reading the next sections to learn
 how to get the endpoint name and generate a personal access token.
 
-image:img/Gitlab-Enterprise-2.png[,1500,877]
+image:img/Gitlab-Enterprise-2.png["The Connect with GitLab Host,
+Community, or Enterprise screen", 1500, 877]
+
 
 == Configure your GitLab Enterprise endpoint
 
@@ -53,11 +55,13 @@ URL, which often looks something like `gitlab.mycompany.com`. If your
 server uses a non-default HTTPS port, then please also copy the port
 part of the URL. For example, `gitlab.mycompany.com:1234`.
 
+
 === Do you have a private DNS?
 
 Your GitLab hostname must be publicly addressable on the internet. If
 you use private DNS for your GitLab installation, then you can use the
 IP address of the server instead.
+
 
 === Do you have a firewall configured?
 
@@ -65,6 +69,7 @@ If your network infrastructure restricts inbound access over HTTPS from
 a set of IP addresses, then you may need to whitelist the IP addresses
 used by the buddybuild fleet. Please contact us for the latest CIDR
 range used by buddybuild.
+
 
 == Create a personal access token
 
@@ -74,23 +79,28 @@ account.
 
 Choose **Settings** from the top right menu under your profile picture.
 
-image:img/Gitlab-Enterprise-5.png[,1500,646]
+image:img/Gitlab-Enterprise-5.png["The GitLab Enterprise account
+dropdown menu", 1500, 646]
 
 You will see a list of tabs at the top of the page. Click on **Access
 tokens**. Create a new token by entering **buddybuild** as the name,
 then clicking on **Create Personal Access Token**.
 
-image:img/Gitlab-Enterprise-6.png[,1500,567]
+image:img/Gitlab-Enterprise-6.png["The GitLab Enterprise Profile
+Settings screen, with the Access Tokens tab selected", 1500, 567]
 
-Copy the new personal access token, a 20 character string with numbers
+Copy the new personal access token, a 20-character string with numbers
 and letters.
 
-image:img/Gitlab-Enterprise-4.png[,1500,415]
+image:img/Gitlab-Enterprise-4.png["The GitLab Enterprise Personal Access
+Tokens screen", 1500, 415]
 
 In buddybuild, paste the personal access token into the **Enter your
 Access Token** field. Then click **Connect Your GitLab instance**.
 
-image:img/Gitlab-Enterprise-3.png[,1500,877]
+image:img/Gitlab-Enterprise-3.png["The buddybuild Connect with GitLab
+Hosted, Community, or Enterprise screen, clicking the Connect your
+GitLab repository button", 1500, 877]
 
 The dialog should close and display a list of your repositories. At this
 point you have successfully completed connecting buddybuild with your

@@ -20,7 +20,7 @@ schedule.
 To schedule automated deployments, first locate the group you would like
 to automatically deploy to, or create a new group if you prefer.
 
-image:img/Deployments---create-new-group.png[,1500,644]
+image:img/Deployments---create-new-group.png["The Deployment page", 1500, 644]
 
 Next, click on the first dropdown to reveal the deployment options. To
 automatically deploy to a group, select either **each build**, or
@@ -34,7 +34,9 @@ build +
 selected days of the week.
 ======
 
-image:img/Deployments---automatic---1.png[,1500,528]
+image:img/Deployments---automatic---1.png["The Create Deployment Target
+screen, with the deployment frequency dropdown open", 1500, 528]
+
 
 [[step2]]
 == Step 2: Select Branch Targets
@@ -46,24 +48,26 @@ branches. For example, you might only want to push builds from the
 First, click on the branch dropdown to reveal a list of branches. Select
 one or more branches that you would like to automatically deploy from.
 
-image:img/Deployments---automatic---2.png[,1500,709]
+image:img/Deployments---automatic---2.png["The Create Deployment Target
+screen, with the branch selector dropdown open", 1500, 709]
 
 Next, select one or more schemes (iOS) or variants (Android) that you
 would like to deploy.
 
 [NOTE]
 ======
-**Note: Selecting Multiple Schemes / Variants:**
+**Selecting Multiple Schemes / Variants:**
 
 Buddybuild displays all schemes and variants found across all branches.
 However, buddybuild will only deploy successfully when the
 scheme/variant exists within the building branch.
 ======
 
-image:img/Deployments---automatic---3.png[,1500,475]
+image:img/Deployments---automatic---3.png["The Create Deployment Target
+screen, with the scheme/variant dropdown open", 1500, 475]
 
 That's it! The next successful build, based on the criteria you set,
-will automatically be sent to the configured deployment group! 
+will automatically be sent to the configured deployment group!
 
 Curious about deploying manually? link:manual.adoc[Click here ]
 to learn more!
