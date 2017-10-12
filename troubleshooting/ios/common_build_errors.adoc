@@ -1,3 +1,7 @@
+---
+search:
+    keywords: ['slow']
+---
 = Common iOS build errors
 
 We’ve put together a quick checklist to help teams troubleshoot the most
