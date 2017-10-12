@@ -10,6 +10,7 @@ Here are the step-by-step instructions to configure your app to capture
 JavaScript logs emitted by `console.log`, `console.error`, etc. using
 the buddybuild SDK:
 
+
 == Step 1: Install the buddybuild SDK
 
 The SDK needs to be integrated into your main app prior to configuring
@@ -21,28 +22,26 @@ buddybuild SDK integration] right from your dashboard. However, if you
 wish to install the buddybuild SDK **manually**, follow
 link:../../../sdk/integration.adoc[these steps].
 
+
 == Step 2: Get the latest version
 
 Follow link:../../../quickstart/ios/integrate_sdk.adoc#update[these
 instructions] to update the SDK on your local machine.
 
+
 == Step 3: Make the following changes in your app delegate:
 
 First, add the following imports.
-[[code-samples]]
---
+
 [source,objectivec]
 ----
 #import &lt;asl.h&gt;
 #import "RCTLog.h"
 ----
---
 
 Then, add the following lines in `application:
 didFinishLaunchingWithOptions:`, right after `[BuddyBuildSDK setup];`.
 
-[[code-samples]]
---
 [source,objectivec]
 ----
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -56,15 +55,12 @@ didFinishLaunchingWithOptions:`, right after `[BuddyBuildSDK setup];`.
   return YES;
 }
 ----
---
 
 And finally, implement `BuddyBuildReactNativeLogFunction`
 
 Copy/paste the snippet below at the very bottom of your app delegate,
 right before the `@end`.
 
-[[code-samples]]
---
 [source,objectivec]
 ----
 RCTLogFunction BuddyBuildReactNativeLogFunction = ^(RCTLogLevel level, __unused RCTLogSource source, NSString *fileName, NSNumber *lineNumber, NSString *message) {
@@ -92,46 +88,39 @@ RCTLogFunction BuddyBuildReactNativeLogFunction = ^(RCTLogLevel level, __unused 
   asl_log(NULL, NULL, aslLevel, "%s", message.UTF8String);
 };
 ----
---
+
 
 == Step 4: Verify
 
 Add a `console.log` line (similar to the example below) in your
 JavaScript code base.
 
-[[code-samples]]
---
 [source,javascript]
 ----
 console.log("Testing React Native logging with the buddybuild SDK");
 ----
---
 
 Then run your application in Xcode. In the Xcode output pane you should
 see the following log line, which indicates that the buddybuild SDK will
 now log JavaScript logs.
-[[code-samples]]
---
+
 .Xcode logs
 [source,text]
 ----
 2017-05-08 14:35:36.512 myAwesomeApp[5320:521089] [BuddyBuildSDKLog] [REACT NATIVE LOG] 2017-05-08 14:35:36.512 [info][tid:com.facebook.react.JavaScript] Testing React Native logging with the buddybuild SDK
 ----
---
 
 == Step 5: Commit and push
 
 Commit and push the changes to your repo to add the buddybuild SDK.
 
-[[code-samples]]
---
 [source,bash]
 ----
 git commit -am 'The buddybuild SDK now captures JavaScript console.logs'
 git push
 ----
---
 
-Your code push will be picked up by buddybuild. All subsequent Feedback and Crash Reports will capture JavaScript logs.
+Your code push will be picked up by buddybuild. All subsequent Feedback
+and Crash Reports will capture JavaScript logs.
 
-image:img/1.png[,1274,702]
+image:img/1.png["The Crash Details dialog", 1274, 702]

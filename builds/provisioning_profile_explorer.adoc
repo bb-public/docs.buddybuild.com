@@ -9,17 +9,22 @@ Navigate to the build details page of a particular build and then click
 on **View Details** under the **Code Signing and Versioning** section to
 open the inspector.
 
-image:img/Builds---Details-lower.png[,3000,1600]
+image:img/Builds---Details-lower.png["The Build details screen, with the
+Code Signing and Versioning panel displayed", 3000, 1600]
 
 Get details about the Provisioning Profile in the **Overview** tab.
 
-image:img/Settings---prov-profile-details---overview.png[,1500,800]
+image:img/Settings---prov-profile-details---overview.png["The iOS Team
+Provisioning Profile screen", 1500, 800]
 
 Inspect the **devices** and their UDIDs included in the Provisioning
 Profile.
 
-image:img/Settings---prov-profile-details---devices.png[,1500,516]
+image:img/Settings---prov-profile-details---devices.png["The iOS Team
+Provisioning Profile screen, with the Devices tab selected", 1500, 516]
 
 Lastly, find out what **entitlements** are configured for your App!
 
-image:img/Settings---prov-profile-details---entitlements.png[,1500,800]
+image:img/Settings---prov-profile-details---entitlements.png["The iOS
+Team Provisioning Profile screen, with the Entitlements tab selected",
+1500, 800]

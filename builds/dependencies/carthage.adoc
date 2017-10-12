@@ -12,7 +12,8 @@ control.
 You can set the Carthage version that is used on every build in your App
 Settings or in your branch settings.
 
-image:img/Carthage-1.png[,1500,800]
+image:img/Carthage-1.png["The Default build configuration screen", 1500,
+800]
 
 == Running a custom Carthage command
 
@@ -21,15 +22,12 @@ you use your own. To achieve that, create a
 `buddybuild_carthage_command.sh` file with your custom command at the
 root of your project.
 
-[[code-samples]]
---
 [source,bash]
 ----
 #!/bin/bash
 
 carthage bootstrap --platform ios,tvOS --use-ssh --no-build
 ----
---
 
 Buddybuild automatically runs this script instead of the regular
 Carthage command if it's present in your repository.

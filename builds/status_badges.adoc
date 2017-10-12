@@ -4,35 +4,39 @@ Show up-to-date build status with a buddybuild badge in your
 repository's `README.md` file. The badge also acts as a quick shortcut to
 navigate between the repo and buddybuild.
 
-image:img/Github-status-badge.png[,3000,1600]
+image:img/Github-status-badge.png["A status badge displayed in a GitHub
+project", 3000, 1600]
 
-The process for adding the badge is simple. Buddybuild will
-automatically generate markdown code for your app. Simply copy-paste
-this markdown to your `README.md`.
+The process for adding the badge is simple. Buddybuild automatically
+generates markdown code for your app. Simply copy+paste this markdown to
+your `README.md`.
 
 == Step 1: Open Status Badge Generator
 
 Start by clicking on **App Settings**.
 
-image:img/Builds---Settings.png[,1500,483]
+image:img/Builds---Settings.png["The buddybuild dashboard", 1500, 483]
 
 In the left navigation, select **Build settings**, then **Build Status
 Badges**.
 
-image:img/Settings---Status-badge---menu.png[,1500,800]
+image:img/Settings---Status-badge---menu.png["The Build status badges
+button", 1500, 800]
+
 
 == Step 2: Add badge to README.md
 
-Status badges are specific to branches. Typically, you will want to
-display your default branch status in your Repo. Select the specific
-branch you would like to use.
+Status badges are specific to branches. Typically, you want to
+display your default branch status in your repository. Select the
+specific branch you would like to use.
 
 Buddybuild will generate markdown for you.
 
-image:img/Settings---Status-badge.png[,1500,800]
+image:img/Settings---Status-badge.png["The Build status badges page",
+1500, 800]
 
-Simply copy and paste the generated Markdown into your README.md -
-ideally at the very top.
+Simply copy and paste the generated Markdown into your `README.md` file
+-- ideally at the very top.
 
 That's it! You're good to go! Try clicking on the badge and see what
 happens! The build status page for your app is publicly accessible if
