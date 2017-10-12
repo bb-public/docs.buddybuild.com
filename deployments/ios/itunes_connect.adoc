@@ -85,6 +85,8 @@ Deployments to iTunes Connect may take anywhere from several minutes to
 several hours before a build appears there. The delay may increase in a
 variety of situations, including attempts to deploy builds using beta
 versions of Xcode.
+
+Apple sends you an email once they have completed processing your build.
 ===========
 
 [[section2]]
