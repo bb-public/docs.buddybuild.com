@@ -10,18 +10,21 @@ Go to the **Builds** page of your app and click the blue gear icon of
 the branch for which you'd like a recurring build. This will bring up
 the **Branch Configurations** window for that branch.
 
-image:img/scheduled_builds_1.png[,1400,260]
+image:img/scheduled_builds_1.png["The buddybuild dashboard, clicking the
+settings icon for a specific branch", 1400, 260]
 
 In that window, toggle the switch in the **Schedule builds** section to
 enable scheduled builds.
 
-image:img/Settings---Scheduled-builds.png[,1500,254]
+image:img/Settings---Scheduled-builds.png["The Schedule builds toggle",
+1500, 254]
 
 In the popup that appears, choose the time and days of week to
 automatically kick off a new build for your branch. To edit an existing
 build schedule, just click the existing time (highlighted in blue).
 
-image:img/Settings---Scheduled-builds---configuration.png[,1500,450]
+image:img/Settings---Scheduled-builds---configuration.png["The Schedule
+builds option, with the schedule dropdown open", 1500, 450]
 
 That's it! From now on, you'll always have a fresh build waiting exactly
 when you need it!

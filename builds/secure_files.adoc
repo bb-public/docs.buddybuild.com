@@ -22,23 +22,27 @@ Let's get started with Secure Files!
 
 Launch the buddybuild dashboard and select **App Settings**.
 
-image:img/Builds---Settings.png[,1500,483]
+image:img/Builds---Settings.png["The buddybuild dashboard", 1500, 483]
 
 In the left navigation, select **Build settings**, then **Secure
 files**.
 
-image:img/Settings---Secure-files---1.png[,1500,800]
+image:img/Settings---Secure-files---1.png["The Secure files button",
+1500, 800]
 
 Select the file you would like to upload and select **Upload file**
 
-image:img/Settings---Secure-files---2.png[,1500,729]
+image:img/Settings---Secure-files---2.png["The Secure files screen",
+1500, 729]
 
 Your file is now ready to be consumed by your app.
 
+
 == Step 2: Consume the secure file in your build
 
-Your secure files will be automatically consumed by tools that are
-expecting them.
+Your secure files are automatically consumed by tools that are expecting
+them.
+
 
 == 2a. Consume in your custom build scripts.
 
@@ -46,30 +50,25 @@ If you would like to access them in your
 link:custom_build_steps.adoc[custom build scripts], use
 the bash variable expansion syntax.
 
-[[code-samples]]
---
 [source,bash]
 ----
 ./Example.framework/run ${BUDDYBUILD_SECURE_FILES}/file.txt
 ----
---
 
-== 2b. Consume in Android build.gradle file.
+
+== 2b. Consume in Android `build.gradle` file.
 
 If you are building an **Android** app with **Gradle** (Android Studio),
 you can also access them 2 ways inside your `build.gradle` file.
 
 You can access them via `System.getenv()`, like this:
 
-[[code-samples]]
---
 [source,json]
 ----
 signing.keyId=1234567
 signing.password=secret
 signing.secretKeyRingFile= new File(System.getenv("BUDDYBUILD_SECURE_FILES") + "/secring.gpg")
 ----
---
 
 That's it! For more details, refer to our link:../sdk/api.adoc[SDK API
 guide].

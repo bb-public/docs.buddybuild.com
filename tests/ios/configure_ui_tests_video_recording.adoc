@@ -47,7 +47,7 @@ instructions] to update the SDK on your local machine.
 . Click the **Add** button.
 --
 +
-image:img/1.png[,1500,861]
+image:img/1.png["The Project Navigator view in Xcode", 1500, 861]
 
 [[step4]]
 == Step 4: Initialize the buddybuild SDK
@@ -194,7 +194,7 @@ Go to the buddybuild dashboard and make sure that Tests are enabled in
 buddybuild. This setting can be found in the **'App Settings'** of your
 app.
 
-image:img/3.png[,1500,466]
+image:img/3.png["The Tests setting in the buddybuild dashboard", 1500, 466]
 
 [[step8]]
 == Step 8: Commit and push

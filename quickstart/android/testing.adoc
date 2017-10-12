@@ -7,18 +7,21 @@ set them up:
 
 . Click on the gear icon
 +
-image:img/Android-Tests-1.png[,2558,1248]
+image:img/Android-Tests-1.png["The buddybuild dashboard, clicking on a
+specific build's Settings button", 2558, 1248]
 
 . Toggle on the **Unit Tests** switch
 +
-image:img/Android-Tests-2.png[,2550,1476]
+image:img/Android-Tests-2.png["The Build settings dialog, clicking on
+the Unit Tests setting", 2550, 1476]
 
 . Now trigger a new build and wait for the build to finish
 
 . Click on the selected build and go to the **JUnit Tests** tab to see
 the test results
 +
-image:img/Android-Tests-3.png[,2556,924]
+image:img/Android-Tests-3.png["The Build details screen, with the JUnit
+Tests tab selected", 2556, 924]
 
 // === Emulator UI Test
 

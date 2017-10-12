@@ -7,15 +7,14 @@ To start with, ensure you have checked in the `.meteor` folder in your
 project, excluding the `local` folder as buddybuild doesn't need it.
 Without it, buddybuild won't be able to build your project.
 
+
 == New Project
 
 First, we need to tell buddybuild how to build your meteor project.  We
-can do this by having a buddybuild_postclone.sh file in the root of your
+can do this by having a `buddybuild_postclone.sh` file in the root of your
 repository. You can find more information about our custom build steps
 link:../../custom_build_steps.adoc[here].
 
-[[code-samples]]
---
 .buddybuild_postclone.sh
 [source,bash]
 ----
@@ -23,15 +22,15 @@ curl https://install.meteor.com/ | sh
 meteor add-platform $PLATFORM
 meteor build $PLATFORM --server $SERVER
 ----
---
 
 Once you have that file in your repository, follow the steps to
 link:../../../quickstart/android/select_an_app.adoc[sign up with
 buddybuild]. Your first build will fail, because buddybuild doesn't yet
 know about the `$PLATFORM` and `$SERVER` environment variables we are
-using in the post clone script.
+using in the `buddybuild_postclone.sh` script.
 
-image:img/Screen-Shot-2017-05-08-at-15.23.31.png[,828,772]
+image:img/Screen-Shot-2017-05-08-at-15.23.31.png["The build failure
+screen", 828, 772]
 
 The `$PLATFORM` variable should be either **ios** or **android**,
 depending on which platform you want to build this project for. The
@@ -39,10 +38,12 @@ depending on which platform you want to build this project for. The
 format server:port. Once you've added those 2 variables, retry the
 build.
 
-buddybuild will detect many apps and frameworks within your project,
-make sure to select the correct one.
+Buddybuild detects many apps and frameworks within your project; make
+sure to select the correct one.
 
-image:img/Screen-Shot-2017-05-08-at-15.39.53.png[,748,1194]
+image:img/Screen-Shot-2017-05-08-at-15.39.53.png["The app selection
+screen", 748, 1194]
 
 For iOS projects, you should select the workspace project, the one not
-within a .meteor folder. For android you can select the Android project.
+within a `.meteor` folder. For Android, you can select the Android
+project.

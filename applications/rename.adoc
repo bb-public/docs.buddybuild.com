@@ -19,13 +19,13 @@ Here are the instructions to rename your app in buddybuild:
 
 Click on **App Settings**:
 
-image:img/Builds---Settings.png[,1500,483]
+image:img/Builds---Settings.png["The buddybuild dashboard", 1500, 483]
 
 In the left navigation, click on **App details**, then **Rename app**.
 
-image:img/Settings---Rename-App-2.jpg[,1500,496]
+image:img/Settings---Rename-App-2.jpg["The Rename app button", 1500, 496]
 
 Enter a new name, then click on **Save**. You can even enter
 link:http://getemoji.com/[emojis] in the app name.
 
-image:img/Settings---Rename-App-3.jpg[,1500,601]
+image:img/Settings---Rename-App-3.jpg["The Rename app screen", 1500, 601]

@@ -17,7 +17,8 @@ below.
 * Code Signing and Versioning
 * Build Artifacts
 
-image:img/Builds---Details.png[,1500,578]
+image:img/Builds---Details.png["The build details screen", 1500, 578]
+
 
 == Build Logs
 
@@ -25,7 +26,8 @@ Want to see exactly what happened during a build? Buddybuild shows live
 build logs as they happen. Simply open a build from the builds page to
 see its build log output.
 
-image:img/Builds---Logs.png[,1500,800]
+image:img/Builds---Logs.png["The build details screen, with the Logs tab
+selected", 1500, 800]
 
 The log is useful for debugging issues with your build. We automatically
 parse out the relevant information in each build step.

@@ -23,13 +23,15 @@ characters. Leading zeros are truncated from each integer and will be
 ignored (that is, `1.02.3` is equivalent to `1.2.3`).
 =========
 
-image:img/Settings---Auto-versioning---iOS.png[,1500,800]
+image:img/Settings---Auto-versioning---iOS.png["The Auto-versioning
+screen", 1500, 800]
+
 
 == Build number
 
-Every buddybuild build will have its own unique build number. Buddybuild
+Every buddybuild build has its own unique build number. Buddybuild
 allows you to choose the build number of the next build. Subsequent
-build will be incremented by 1.
+builds are incremented by 1.
 
 This is can be helpful when you start a new release cycle or sprint. For
 example, if you start working on major version of your app (let's say

@@ -6,26 +6,26 @@ testers which specific areas they should target for feedback.
 
 In buddybuild, release notes can be entered in two ways:
 
-== Option 1: In the buddybuild dashboard
-
+. **In the buddybuild dashboard**
++
 Within the buddybuild dashboard, select the build you'd like to publish
 release notes for and enter them under the 'Deploy' tab of the build
 details.
++
+image:img/Builds---Deploy-Manually---1.png["The build details screen,
+with the Deploy tab selected", 1500, 800]
 
-image:img/Builds---Deploy-Manually---1.png[,1500,800]
 
-== Option 2: The text file within your repository
-
+. **The text file within your repository**
++
 You can also add release notes by creating and checking in a file called
 `buddybuild_release_notes.txt` in the root of your repository.
 Buddybuild will automatically use the content included in this file to
 build release notes.
-
++
 [NOTE]
 ======
-**Note**
-
-If you don't specify a focus message, buddybuild will automatically use
-the commit message of your last commit as your next deployment's release
+If you don't specify a focus message, buddybuild automatically uses the
+commit message of your last commit as your next deployment's release
 notes!
 ======

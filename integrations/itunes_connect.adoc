@@ -14,20 +14,23 @@ Developer Portal credentials.
 
 Get started by clicking on **App Settings**.
 
-image:img/Builds---Settings.png[,1500,483]
+image:img/Builds---Settings.png["The buddybuild dashboard", 1500, 483]
 
 In the left navigation, select **Integrations**, then **Apple Developer
 Portal**.
 
-image:img/Settings---Apple-Developer---menu.png[,1500,800]
+image:img/Settings---Apple-Developer---menu.png["The Apple Dev
+Connection button", 1500, 800]
 
 Next, select **Connect New Apple Account**.
 
-image:img/Settings---Apple-Developer.png[,1500,800]
+image:img/Settings---Apple-Developer.png["The Connect your Apple
+Developer Account screen", 1500, 800]
 
 Enter your Apple ID and password, then select **Store Credentials**.
 
-image:img/Settings---Apple-Developer---credentials.png[,3000,1600]
+image:img/Settings---Apple-Developer---credentials.png["The Connect your
+account screen", 3000, 1600]
 
 [NOTE]
 ======
@@ -39,7 +42,7 @@ link:apple_2fa.adoc#app-specific-password[Create an App-Specific
 Password] to deploy your app to iTunes Connect.
 ======
 
-Buddybuild will validate your account and might ask you to select a team
-if you're part of multiple.
+Buddybuild validates your account and might ask you to select a team if
+you're part of multiple.
 
 That's it! You're now integrated with the Apple Developer Portal!

@@ -17,7 +17,8 @@ Each buddybuild app maps to a single target in your Xcode project.
 You'll need to follow this process for each target you'd like to build.
 ======
 
-image:img/First-Build---Select-Repo.png[,1500,677]
+image:img/First-Build---Select-Repo.png["The Choose a repository to
+build screen", 1500, 677]
 
 Buddybuild pulls down your source code and analyzes the repo for apps.
 
@@ -25,11 +26,12 @@ If we find multiple Apps, you'll be prompted to select one. If you have
 a single app, it'll be automatically detected and buddybuild will kick
 off a build!
 
-image:img/Selecting-an-app---2.jpg[,2360,1074]
+image:img/Selecting-an-app---2.jpg["The Preparing to build your app...
+screen", 2360, 1074]
 
 Once the build is finished, **Go to the Dashboard.**
 
-image:img/Selecting-an-app---3.jpg[,2348,1174]
+image:img/Selecting-an-app---3.jpg["The build success screen", 2348, 1174]
 
 That's it! You've just created a build of your app in buddybuild.
 Proceed to the next step to link:invite_testers.adoc[invite testers] to

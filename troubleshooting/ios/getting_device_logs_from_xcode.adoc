@@ -5,16 +5,25 @@ your app or our SDK, it can be useful to retrieve device logs.
 
 . Connect your phone to your laptop and open Xcode
 
-. Select 'Devices' from the 'Window' menu
+. image:img/menu-xcode_window-devices.png["The Window menu in Xcode",
+  299, 327, role="right"]
+  Select **Device and Simulators** from the **Window** menu.
+  The **Devices and Simulators** screen is displayed:
 +
-image:img/Screen-Shot-2016-01-05-at-11.37.45-AM.png[,329,251]
+image:img/window-devices_and_simulators.png["The Devices and Simulators
+window in Xcode", 829, 494, role="frame"]
 
-. Select your phone from the left panel
-+
-image:img/Screen-Shot-2016-01-05-at-11.39.35-AM.png[,895,714]
+. Select your device from the left panel.
 
-. Make sure the logs are expanded
+. image:img/button-logs_toggle.png["The toggle logs button",
+role="right"]
+  Make sure that the logs are expanded. If they are not, press the small
+  up arrow in the bottom left corner of the main pane.
 +
-If they are not, press the small up arrow in the bottom left corner
-+
-image:img/Screen-Shot-2016-01-05-at-11.39.54-AM.png[,899,709]
+image:img/window-devices_and_simulators-logs.png["The Devices and Simulators
+window in Xcode, with logs displayed", 829, 494, role="frame"]
+
+. image:img/button-save_console.png["The Save Console button",
+role="right"]
+  Click the **Save Console** button (at the bottom right) to save the
+  log information within the console.

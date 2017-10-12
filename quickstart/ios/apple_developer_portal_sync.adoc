@@ -16,16 +16,18 @@ Let's get started!
 
 Click on the **App Settings** button.
 
-image:img/Deployments---Settings.png[,1500,644]
+image:img/Deployments---Settings.png["The Deployments screen", 1500, 644]
 
 In the left navigation, select **Integrations**, then **Apple Dev
 Connection**.
 
-image:img/Settings---Apple-Developer---menu.png[,1500,800]
+image:img/Settings---Apple-Developer---menu.png["The App settings
+screen, focused on the Integrations settings", 1500, 800]
 
 Click on **Connect New Apple Account.**
 
-image:img/Settings---Apple-Developer.png[,1500,800]
+image:img/Settings---Apple-Developer.png["The Connect your Apple
+Developer Account screen", 1500, 800]
 
 [NOTE]
 ======
@@ -41,10 +43,11 @@ privileges to create provisioning profiles.
 Type in your Apple Developer Credentials. We'll securely manage them for
 you.
 
-image:img/Settings---Apple-Developer---credentials.png[,1500,800]
+image:img/Settings---Apple-Developer---credentials.png["The Connect your
+account screen", 1500, 800]
 
 Buddybuild validates the credentials for you and may prompt you to
-select a Team if you're part of multiple.
+select a Team if you're part of multiple teams.
 
 That's it! You're good to go. Now all of your testers are able to
 install builds of your App. Buddybuild transparently retrieves their

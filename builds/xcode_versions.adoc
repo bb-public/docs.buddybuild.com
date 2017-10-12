@@ -7,28 +7,32 @@ beta versions for the latest Xcode release are also available.
 
 Start by clicking on **App Settings**.
 
-image:img/Builds---Settings.png[,1500,483]
+image:img/Builds---Settings.png["The buddybuild dashboard", 1500, 483]
 
 Select **Build Settings**, then the **Environment** tab, and select the
 **Xcode version** from the dropdown to change the default version for
 your app.
 
-image:img/Builds---Settings---Environment-tab.png[,1500,657]
+image:img/Builds---Settings---Environment-tab.png["The Default build
+configuration screen, with the Environment tab selected", 1500, 657]
 
 You can set a different version of Xcode for a specific branch. To do
 this scroll down to the **Branch-specific configurations** section, add
 your branch and select the Xcode version. This allows you to easily
 transition Xcode versions safely in a feature branch.
 
-image:img/Builds---Settings---Xcode---Override.png[,1500,538]
+image:img/Builds---Settings---Xcode---Override.png["The Override build
+configuration area, specifying the Xcode version", 1500, 538]
+
 
 == Xcode Preview
 
-When we release support for the latest Xcode version, we will
-automatically select the last successfully built commit of your app and
-build it with the latest version to see if it works. We'll let you know
-if your app succeeds or fails with the latest version so that you can
-  make informed decision before you decide to upgrade.
+When we release support for the latest Xcode version, we automatically
+select the last successfully-built commit of your app and build it with
+the latest version to see if it works. We let you know if your app
+succeeds or fails with the latest version so that you can make informed
+decision before you decide to upgrade.
+
 
 == Upgrade automatically
 
@@ -36,13 +40,13 @@ To keep your app up to date with the latest version of Xcode then you
 can choose the `Latest` or `Latest stable` version from the Xcode
 version dropdown.
 
-If you select `Latest` then buddybuild will update your app to use the
+If you select `Latest` then buddybuild updates your app to use the
 latest version of Xcode (including beta releases) as soon as it is
 released.
 
-If you select `Latest stable` then buddybuild will update your app to
-use the latest stable version of Xcode (not beta releases) as soon as it
-is released.
+If you select `Latest stable` then buddybuild updates your app to use
+the latest stable version of Xcode (not beta releases) as soon as it is
+released.
 
-We'll also send you a friendly notification when this happens so that
-this is not a surprise.
+We also send you a friendly notification when this happens so that this
+is not a surprise.

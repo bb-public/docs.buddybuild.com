@@ -19,15 +19,17 @@ Log in to buddybuild and head over to the Builds page by selecting
 
 Next, click on the successful build you want to deploy.
 
-image:img/Builds---Android---Point---Details.png[,1500,483]
+image:img/Builds---Android---Point---Details.png["The buddybuild
+dashboard", 1500, 483]
 
 Navigate to the **Google Play** tab and click **select a file**. Locate
-and upload the **Google Private Key (`.JSON` file)** that was
+and upload the **Google Private Key** (`.JSON` file) that was
 automatically downloaded when you created a Service Account.
 
 Click **Connect with Google Play**.
 
-image:img/Builds---Details---Google-Play---JSON.png[,3000,1600]
+image:img/Builds---Details---Google-Play---JSON.png["The Google Play
+screen", 3000, 1600]
 
 Once the Google Private Key (`.JSON`) file has been uploaded
 successfully, you'll see a success message.
@@ -45,13 +47,15 @@ means that no release variants have been built by buddybuild. Buddybuild
 does not offer to deploy _debug_ variants to Google Play.
 ======
 
-image:img/Builds---Details---Google-Play---Variant.png[,3000,1600]
+image:img/Builds---Details---Google-Play---Variant.png["The Google Play
+screen, with the variant dropdown open", 3000, 1600]
 
 A Version Name and Version Code will be automatically filled in for you.
 You may choose to give your build a unique Version Name and Version
 Code, or choose to leave the default values.
 
-image:img/Builds---Details---Google-Play---Version.png[,3000,1600]
+image:img/Builds---Details---Google-Play---Version.png["The Google Play
+screen, selecting the Version Name", 3000, 1600]
 
 Next, select either the **Production, Beta Testing or Alpha Testing
 track** that you want to deploy to Google Play.
@@ -65,7 +69,8 @@ to select which SDK features to include in the build that you are
 uploading to Google Play.
 ======
 
-image:img/Builds---Details---Google-Play---Track-SDK.png[,3000,1600]
+image:img/Builds---Details---Google-Play---Track-SDK.png["The Google
+Play screen, with SDK features panel displayed", 3000, 1600]
 
 Next, select **Upload to the Google Play Store**.
 
@@ -83,10 +88,13 @@ make your app available to your specified testers from the Google Play
 Developer Console.
 =========
 
-image:img/Builds---Details---Google-Play---Upload.png[,3000,1600]
+image:img/Builds---Details---Google-Play---Upload.png["The Google Play
+screen, clicking the Upload to the Google Play Store button", 3000,
+1600]
 
 If your app has not previously been published to the Google Play Store,
 head over to the Google Play Developer Console to complete the
 deployment process.
 
-image:img/Builds---Details---Google-Play---Upload-Success.png[,3000,1600]
+image:img/Builds---Details---Google-Play---Upload-Success.png["The
+Google Play screen, with upload success message", 3000, 1600]

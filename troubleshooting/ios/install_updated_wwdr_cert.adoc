@@ -5,10 +5,11 @@ certificate expired. To make sure you can keep building locally, and
 using buddybuild's certificate uploader tools, you should make sure you
 have the latest version of the intermediate certificate.
 
-If you see something like this in keychain, then the problem affects
+If you see something like this in Keychain, then the problem affects
 you.
 
-image:img/Screen-Shot-2016-02-14-at-7.33.12-PM.png[,570,103]
+image:img/Screen-Shot-2016-02-14-at-7.33.12-PM.png["A Keychain entry
+with an invalid issuer", 570, 103]
 
 == Download and install the new certificate
 
@@ -27,17 +28,20 @@ them had to find.
 
 Go to *View* and make sure you have clicked *Show Expired Certificates*.
 
-image:img/Screen-Shot-2016-02-14-at-7.33.23-PM.png[,372,192]
+image:img/Screen-Shot-2016-02-14-at-7.33.23-PM.png["The Keychain View
+menu, with 'Show Expired Certificates' selected", 372, 192]
 
 Then look for **Apple Worldwide Developer Relations Certification
 Authority** in both the login and System keychains. You will see the red
 expired cross next to it. Delete it from both.
 
-image:img/Screen-Shot-2016-02-14-at-7.37.31-PM.png[,395,21]
+image:img/Screen-Shot-2016-02-14-at-7.37.31-PM.png["The Apple WWDR
+Certificate Authority label in Keychain", 395, 21]
 
 === Certificates are now valid
 
 If you've performed all these steps, you will now see that your
 certificates are valid again.
 
-image:img/Screen-Shot-2016-02-14-at-7.30.07-PM.png[,526,102]
+image:img/Screen-Shot-2016-02-14-at-7.30.07-PM.png["A Keychain entry
+that is now valid", 526, 102]

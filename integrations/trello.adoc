@@ -7,37 +7,37 @@ on your app.
 
 Start by launching the buddybuild dashboard and select **App Settings**.
 
-image:img/Builds---Settings.png[,1500,483]
+image:img/Builds---Settings.png["The buddybuild dashboard", 1500, 483]
 
 In the left navigation, select **Integrations**, then **Trello**.
 
-image:img/Trello---1.jpg[,1500,658]
+image:img/Trello---1.jpg["The Trello button", 1500, 658]
 
 Click on **Connect with Trello**.
 
-image:img/Trello---2.jpg[,1500,655]
+image:img/Trello---2.jpg["The Trello screen", 1500, 655]
 
 Next, under "Let buddybuild use your account?", select **Log In**.
 
-image:img/Trello---3.jpg[,3000,1426]
+image:img/Trello---3.jpg["The Trello login request screen", 3000, 1426]
 
 Enter the **Email and Password** to your Trello account. Alternatively,
 if you have authorized your Trello account with Google, you can click on
   **Log in with Google**.
 
-image:img/Trello---4.jpg[,3000,1426]
+image:img/Trello---4.jpg["The Trello log in screen", 3000, 1426]
 
 Next, you'll be prompted to let buddybuild use your account. Select
 **Allow**.
 
-image:img/Trello---5.jpg[,3000,1426]
+image:img/Trello---5.jpg["The Trello authorization screen", 3000, 1426]
 
 Next, configure Trello for Feedback and Crash Reports.  You can
 automatically create issues, and set the default **board**, **list** and
 **labels** for new cards.
 
-image:img/Trello---6.jpg[,1500,1095]
+image:img/Trello---6.jpg["The Trello configuration screen", 1500, 1095]
 
-That's it! Your Trello account is now connected! Buddybuild will
-automatically create a Trello card for every piece of feedback you
+That's it! Your Trello account is now connected! Buddybuild
+automatically creates a Trello card for every piece of feedback you
 receive.

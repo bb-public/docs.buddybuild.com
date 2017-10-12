@@ -16,23 +16,27 @@ account:
 
 Get started by clicking on **App Settings**.
 
-image:img/Builds---Settings.png[,1500,483]
+image:img/Builds---Settings.png["The buddybuild dashboard", 1500, 483]
 
 In the left navigation, select **Integrations**, then **Apple Developer
 Portal**.
 
-image:img/Settings---Apple-Developer---menu.png[,1500,800]
+image:img/Settings---Apple-Developer---menu.png["The Apple Dev
+Connection button", 1500, 800]
 
 Next, select **Connect New Apple Account**.
 
-image:img/Settings---Apple-Developer.png[,1500,800]
+image:img/Settings---Apple-Developer.png["The Connect your Apple
+Developer Account screen", 1500, 800]
 
 Enter your Apple ID and password, then select **Store Credentials.**
 
-image:img/Settings---Apple-Developer---credentials.png[,1500,800]
+image:img/Settings---Apple-Developer---credentials.png["The Connect your
+account screen", 1500, 800]
+
 
 [[app-specific-password]]
-== App-Specific Password
+== App-specific password
 
 Since your iTunes Connect account is protected by
 link:https://support.apple.com/en-ca/HT204915[Two-Factor Authentication]
@@ -40,7 +44,8 @@ or link:https://support.apple.com/en-ca/HT204152[Two-Step Verification],
 you will now receive a verification code on your device, which you will
 need to enter in buddybuild.
 
-image:img/Settings---Apple-Developer---2FA.png[,1500,630]
+image:img/Settings---Apple-Developer---2FA.png["The Two-factor
+authentication screen", 1500, 630]
 
 You also need to enter an
 link:https://support.apple.com/en-us/HT204397[App-Specific Password]
@@ -51,24 +56,31 @@ Log in to your link:https://appleid.apple.com/[Apple ID account].  In
 the **Security** section, under **App-Specific Passwords**, click on
 **Generate Password**.
 
-image:img/Settings---Apple-Developer---apple-account.png[,1500,392]
+image:img/Settings---Apple-Developer---apple-account.png["The Apple
+account Security screen", 1500, 392]
 
 Label the password and click **Create**.
 
-image:img/Settings---Apple-Developer---generate-password.png[,1500,542]
+image:img/Settings---Apple-Developer---generate-password.png["The Apple
+account Security screen, filling in an app-specific password", 1500,
+542]
 
 Copy the resulting password.
 
-image:img/Settings---Apple-Developer---app-specific-password.png[,1500,542]
+image:img/Settings---Apple-Developer---app-specific-password.png["The
+Apple account security screen, viewing an app-specific password", 1500,
+542]
 
 Paste the password into buddybuild and click **Continue**.
 
-image:img/Settings---Apple-Developer---app-specific-password-field.png[,1500,691]
+image:img/Settings---Apple-Developer---app-specific-password-field.png["The
+buddybuild App-specific password screen", 1500, 691]
 
 You can now deploy your app to iTunes Connect using the app-specific
 password you just generated.
 
-== Re-authenticating your Apple Account
+
+== Re-authenticating your Apple account
 
 The verification codes Apple provides for Two-Factor Authentication and
 Two-Step Verification are valid for **30 days**. You will need to
@@ -79,7 +91,8 @@ Buddybuild will send you an email before the code expires to remind you
 to re-authenticate. You will also be reminded to re-authenticate in the
 buddybuild dashboard.
 
-image:img/Settings---Apple-Developer---2FA-prompt.png[,1500,691]
+image:img/Settings---Apple-Developer---2FA-prompt.png["The buddybuild
+dashboard, with verification code expiry warning", 1500, 691]
 
 Here's how to re-authenticate your Apple account:
 
@@ -88,7 +101,8 @@ Here's how to re-authenticate your Apple account:
 
 - Enter the new code in the dashboard
 
-image:img/Settings---Apple-Developer---2FA-reenter.png[,1500,691]
+image:img/Settings---Apple-Developer---2FA-reenter.png["The Two-factor
+authentication dialog", 1500, 691]
 
 That's it! You're Apple Account is now connected to buddybuild. You will
 be notified when it's time to re-authenticate!

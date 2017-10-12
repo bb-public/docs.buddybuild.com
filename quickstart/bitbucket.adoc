@@ -1,6 +1,6 @@
 = Signing up with Bitbucket
 
-First things first! Let's sign up with buddybuild. 
+First things first! Let's sign up with buddybuild.
 
 Signing up with buddybuild via Bitbucket allows buddybuild to access
 your iOS or Android Apps' source code. Buddybuild will associate with
@@ -31,18 +31,20 @@ link:https://dashboard.buddybuild.com/signup[Sign up page].
 
 Simply click on the **Bitbucket** button to sign up with your credentials.
 
-image:img/sign_up-bitbucket.png[,3000,1600]
+image:img/sign_up-bitbucket.png["The Sign up screen", 3000, 1600]
 
 == Step 2: Enter Credentials
 
 Enter your Bitbucket credentials and click **Log in**.
 
-image:img/bitbucket_oauth-1.png[,3000,1600]
+image:img/bitbucket_oauth-1.png["The Bitbucket Log in screen", 3000,
+1600]
 
 Next, grant buddybuild access to your Bitbucket account by clicking
 **Grant access**.
 
-image:img/bitbucket_oauth-2.png[,3000,1600]
+image:img/bitbucket_oauth-2.png["The Bitbucket Confirm access to your
+account screen", 3000, 1600]
 
 That's it! You're now connected to buddybuild!
 

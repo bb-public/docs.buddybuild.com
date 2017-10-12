@@ -10,6 +10,7 @@ short steps:
 Buddybuild will send your feedback straight into your developers'
 notification channels.
 
-image:img/Phone---Feedback.png[,1500,840]
+image:img/Phone---Feedback.png["Three iPhone screenshots demonstrating
+the process of sending feedback via the SDK", 1500, 840]
 
 That's it! Leaving feedback has never been easier!

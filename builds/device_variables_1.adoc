@@ -24,27 +24,28 @@ Let's get started with Device Variables!
 
 Launch the buddybuild dashboard and click on **App Settings**.
 
-image:img/Builds---Settings.png[,1500,483]
+image:img/Builds---Settings.png["The buddybuild dashboard", 1500, 483]
 
 In the left navigation, select **Build settings**, then **Device
 Variables**.
 
-image:img/Settings---Device-variables---menu.png[,1500,800]
+image:img/Settings---Device-variables---menu.png["The Device variables
+button", 1500, 800]
 
 Enter a name, value and select **Create**.
 
-image:img/Settings---Device-variables.png[,1500,556]
+image:img/Settings---Device-variables.png["The Device variables screen",
+1500, 556]
 
-Buddybuild will securely embed your variable into the app when it is
-built next. Your variable will be consumable via the buddybuild SDK.
+Buddybuild securely embeds your variable into the app when it is built
+next. Your variable is consumable via the buddybuild SDK.
+
 
 == Step 2: Consuming the variable
 
 To consume the variable in your build, substitute the name of your
 device variable where applicable (see example below).
 
-[[code-samples]]
---
 [source,swift]
 ----
 let accessToken = BuddyBuildSDK.valueForDeviceKey("Facebook_Token")
@@ -54,7 +55,6 @@ let accessToken = BuddyBuildSDK.valueForDeviceKey("Facebook_Token")
 ----
 NSString* accessToken = [BuddyBuildSDK valueForDeviceKey:@"Facebook_Token"];
 ----
---
 
 That's it! For more details, refer to our link:../sdk/api.adoc[SDK API
 guide].

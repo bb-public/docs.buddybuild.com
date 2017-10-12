@@ -28,63 +28,75 @@ Within the main page of your repository, look for the green **Clone or
 Download** button and click it to reveal a dropdown window. Click on
 **Use SSH.**
 
-image:img/click-use-ssh.png[,3000,1460]
+image:img/click-use-ssh.png["A GitHub project screen, showing the Clone
+or Download dropdown menu to select SSH", 3000, 1460]
 
 With SSH selected, copy the SSH URL by clicking the **copy to
 clipboard** button.
 
-image:img/copy-clone-url.png[,3000,1460]
+image:img/copy-clone-url.png["Clicking the Copy to clipboard button on
+the GitHub project screen", 3000, 1460]
 
 Head over to dashboard, visit
 link:https://dashboard.buddybuild.com/apps/wizard/build/select-source[Select
 source] and choose **SSH**.
 
-image:../img/select_source-ssh.png[,1500,800]
+image:../img/select_source-ssh.png["The buddybuild Select source screen",
+1500, 800]
 
 Paste the SSH URL you copied into the **Git clone URL** field.
 
-image:img/paste-clone-url.png[,1500,765]
+image:img/paste-clone-url.png["The buddybuild Connect another Git
+service screen", 1500, 765]
+
 
 [[step2]]
 == Step 2: Add the SSH Key to Your GitHub Account
 
 Highlight and copy the generated SSH key.
 
-image:img/copy-ssh-key.png[,1500,765]
+image:img/copy-ssh-key.png["The buddybuild Connect another Git service
+screen, with SSH key selected", 1500, 765]
 
 Navigate to your GitHub Account by first selecting your account photo,
 and then selecting **Settings.**
 
-image:img/select-settings.png[,3000,1460]
+image:img/select-settings.png["A GitHub project screen with account
+dropdown menu open", 3000, 1460]
 
 In the left navigation, select **SSH keys**.
 
-image:img/select-ssh-keys.png[,3000,1460]
+image:img/select-ssh-keys.png["The GitHub account settings screen",
+3000, 1460]
 
 Next, select **Add SSH key**.
 
-image:img/click-add-ssh-key.png[,3000,770]
+image:img/click-add-ssh-key.png["The GitHub account SSH keys screen",
+3000, 770]
 
 Enter **Buddybuild** as the title, and paste the copied SSH key into the
 **key** field.
 
-image:img/paste-ssh-key.png[,3000,1568]
+image:img/paste-ssh-key.png["Pasting the buddybuild SSH key into the
+GitHub account SSH keys screen", 3000, 1568]
 
 Next, click **Add key.**
 
-image:img/add-key.png[,3000,1264]
+image:img/add-key.png["Clicking the Add key button on the GitHub account
+SSH keys screen", 3000, 1264]
 
 [WARNING]
 =========
 **Private git submodules and private cocoapods**
 
-If your project depends on any code in other private git repos, the ssh
-key will need to be added to those repos as well.
+If your project depends on any code in other private git repos, the SSH
+key needs to be added to those repos as well.
 =========
 
 Navigate back to buddybuild and click on the **Build** button.
 
-image:img/build.png[,1500,765]
+image:img/build.png["The buddybuild Connect another Git service screen",
+1500, 765]
 
 Buddybuild will checkout your project code and kick off a simulator
 build. The build should finish within a few seconds.
