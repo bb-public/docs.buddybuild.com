@@ -174,5 +174,5 @@ screen", 1280, 686, role="frame"]
   Click the **Authorize <organization name>** button (in this example,
   **Authorize test**). The buddybuild dashboard is displayed.
 
-That's it! You have now seccessfully connected buddybuild to your GitHub
+That's it! You have now successfully connected buddybuild to your GitHub
 Enterprise instance.
