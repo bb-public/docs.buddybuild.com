@@ -214,11 +214,9 @@ ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{va
         }
       }
       var gitbook = gitbook || [];
-      $(window).on('load', function() {
-        gitbook.push(function() {
-          defer(function () {
-            gitbook.page.hasChanged({{ template.getJSContext()|dump|safe }});
-          });
+      gitbook.push(function() {
+        defer(function () {
+          gitbook.page.hasChanged({{ template.getJSContext()|dump|safe }});
         });
       });
     </script>
