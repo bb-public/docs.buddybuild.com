@@ -207,8 +207,10 @@ ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{va
 
     <script>
       var gitbook = gitbook || [];
-      gitbook.push(function() {
-        gitbook.page.hasChanged({{ template.getJSContext()|dump|safe }});
+      $(window).on('load', function() {
+        gitbook.push(function() {
+          gitbook.page.hasChanged({{ template.getJSContext()|dump|safe }});
+        });
       });
     </script>
 </div>
