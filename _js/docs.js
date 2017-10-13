@@ -16,4 +16,5 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     BB.updateToolbarButtons();
   });
 });
-window.BB = true;
+
+window.BBLoaded["docs"] = true;

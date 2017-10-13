@@ -111,17 +111,26 @@ try {
 {% endblock %}
 
 {% block javascript %}
-    <script src="{{ "gitbook.js"|resolveAsset }}"></script>
-    <script src="{{ "theme.js"|resolveAsset }}"></script>
+    <script>
+      window.BBLoaded = {
+        "plugin": false,
+        "search": false,
+        "engine": false,
+        "lunr":   false,
+        "docs":   false
+      };
+    </script>
+    <script src="{{ "gitbook.js"|resolveAsset }}" defer></script>
+    <script src="{{ "theme.js"|resolveAsset }}" defer></script>
     <script src="{{ "../_js/highlight/highlight.pack.js"|resolveAsset }}" async></script>
 {% for resource in plugins.resources.js -%}
 {% if resource.url %}
-    <script src="{{ resource.url }}"></script>
+    <script src="{{ resource.url }}" defer></script>
 {%- else %}
-    <script src="{{ resource.path|resolveAsset }}"></script>
+    <script src="{{ resource.path|resolveAsset }}" defer></script>
 {%- endif %}
 {%- endfor %}
-    <script src="{{ "../_js/docs.js"|resolveAsset }}"></script>
+    <script src="{{ "../_js/docs.js"|resolveAsset }}" defer></script>
 
     <script>window.intercomSettings = { app_id: "jhcdgof4" };</script>
     <script>(function(){var w=window;var ic=w.Intercom;if(typeof
@@ -134,8 +143,24 @@ ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{va
 
     <script>
       var gitbook = gitbook || [];
+      function defer(method) {
+        var loaded = true;
+        for (var key in window.BBLoaded) {
+          if (!window.BBLoaded[key]) {
+            loaded = false;
+            break;
+          }
+        }
+        if (loaded) {
+          method();
+        } else {
+          setTimeout(function() { defer(method) }, 50);
+        }
+      }
       gitbook.push(function() {
-        gitbook.page.hasChanged({{ template.getJSContext()|dump|safe }});
+        defer(function () {
+          gitbook.page.hasChanged({{ template.getJSContext()|dump|safe }});
+        });
       });
     </script>
 {% endblock %}
