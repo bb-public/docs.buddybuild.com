@@ -42,25 +42,30 @@ administrator.
 From the Bitbucket Server dashboard click on the Administration
 **setting cog**.
 
-image:img/Bitbucket-Server-1.png[,1500,394]
+image:img/Bitbucket-Server-1.png["A Bitbucket project page, clicking on
+the Settings button", 1500, 394]
 
 Under the **Add-ons** section, select **Find new add-ons.**
 
-image:img/Bitbucket-Server-2.png[,1500,833]
+image:img/Bitbucket-Server-2.png["The Bitbucket Add-ons screen, with
+Find new add-ons highlighted", 1500, 833]
 
 Next, search for **buddybuild** and click **Install**.
 
-image:img/Bitbucket-Server-3.png[,1500,450]
+image:img/Bitbucket-Server-3.png["The Bitbucket Find new add-ons screen,
+with the buddybuild search result displayed", 1500, 450]
 
 The add-on should take a few seconds to install. Once the installation
 is complete, you'll see the following message.
 
-image:img/Bitbucket-Server-4.png[,1500,786]
+image:img/Bitbucket-Server-4.png["The Bitbucket Installed and ready to
+go! dialog", 1500, 786]
 
 You can choose to remove the installation at any time by clicking
 Uninstall on the Manage add-ons page.
 
-image:img/Bitbucket-Server-5.png[,1500,582]
+image:img/Bitbucket-Server-5.png["Configuration for the buddybuild
+add-on in Bitbucket", 1500, 582]
 
 [[step2]]
 == Step 2: Generate your personal access token
@@ -69,22 +74,27 @@ Visit the buddybuild plugin settings page by clicking on **buddybuild**
 in the left hand navigation. (You may need to refresh the page for this
 link to appear if you have just installed the plugin).
 
-image:img/Bitbucket-Server-6.png[,1500,390]
+image:img/Bitbucket-Server-6.png["The Bitbucket settings screen, focused
+on the buddybuild add-on menu item", 1500, 390]
 
 Under the section **Getting started**, click on **Connect Personal
 Access Token**.
 
-image:img/Bitbucket-Server-7.png[,1500,548]
+image:img/Bitbucket-Server-7.png["The buddybuild add-on screen in
+Bitbucket, clicking on the Generate token button", 1500, 548]
 
 Next, generate your personal access token by clicking on **Generate
 token.**
 
-image:img/Bitbucket-Server-7.png[,1500,786]
+image:img/Bitbucket-Server-7.png["The buddybuild add-on screen in
+Bitbucket, clicking on the Generate token button", 1500, 786]
 
 **Copy your personal access token** and follow link:#step3[step 3] below
 to connect your Bitbucket Server repository with buddybuild.
 
-image:img/Bitbucket-Server-8.png[,1500,786]
+image:img/Bitbucket-Server-8.png["The buddybuild add-on screen in
+Bitbucket, copying the personal access token", 1500, 786]
+
 
 [[step3]]
 == Step 3: Connect your Bitbucket Server account
@@ -94,17 +104,20 @@ dashboard and
 link:https://dashboard.buddybuild.com/apps/wizard/build/select-repo[Add
 a New App].
 
-image:img/Bitbucket-Server-11.png[,1500,718]
+image:img/Bitbucket-Server-11.png["The buddybuild dashboard, with the
+app dropdown menu open", 1500, 718]
 
 Next, select
 link:https://dashboard.buddybuild.com/apps/wizard/build/select-source[Connect
 another source code provider].
 
-image:img/First-Build---Select-Source---Gitlab-Self-hosted.png[,1500,689]
+image:img/First-Build---Select-Source---Gitlab-Self-hosted.png["The
+Connect another source code provider panel", 1500, 689]
 
 Select **Bitbucket Server**.
 
-image:img/Bitbucket-Server-10.png[,1500,781]
+image:img/Bitbucket-Server-10.png["The Where is your source code
+screen", 1500, 781]
 
 Next, enter your Bitbucket Server endpoint and the Personal Access token
 you generated in link:#step2[step 2], and click **Connect your Bitbucket
@@ -136,7 +149,8 @@ range used by buddybuild.
 Review link:#step2[Step 2] to create your personal access token.
 ======
 
-image:img/Bitbucket-Server-13b.png[,1500,829]
+image:img/Bitbucket-Server-13b.png["The Connect with Bitbucket Server
+screen", 1500, 829]
 
 The dialog should close and display a list of your repositories. At this
 point you have successfully completed connecting buddybuild with

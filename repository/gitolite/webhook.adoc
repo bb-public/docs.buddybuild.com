@@ -23,13 +23,14 @@ link:https://github.com/metajack/notify-webhook[notify-webhook].
 On the Builds page, in the red banner at the top of the page, click on
 **Resolve this issue.**
 
-image:../img/resolve-banner.png[,1500,298]
+image:../img/resolve-banner.png[The auto-build resolution banner in the
+buddybuild dashboard", 1500, 298]
 
 In the dialog box that appears, **select and copy the webhook URL**.
 This URL is specific to your app and will be used to identify your app
 when sending webhooks from Gitolite.
 
-image:../img/modal.png[,1500,838]
+image:../img/modal.png[The webhook URL dialog", 1500, 838]
 
 [NOTE]
 ======

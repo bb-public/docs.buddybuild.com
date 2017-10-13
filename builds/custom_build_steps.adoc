@@ -157,6 +157,12 @@ Example: `/tmp/build.ipa`
 
 Example: `/tmp/build-appstore.ipa`
 
+| `BUDDYBUILD_PRODUCT_DIR`
+| This is the location of `.ipa` and `.dsym` files generated during the
+  build. Useful if you need to apply further processing to these files.
+
+Example: `/tmp/sandbox/app/product/`
+
 | `BUDDYBUILD_SCHEME`
 | The scheme used for the current build.
 
@@ -179,6 +185,12 @@ Inside you will find multiple files related to tests including
 |===
 | Variable Name
 | Description
+
+| `BUDDYBUILD_APKS_DIR`
+| This is the location of `.apk` files generated during the build.
+  Useful if you need to apply further processing to these files.
+
+Example: `/tmp/sandbox/app/apks`
 
 | `BUDDYBUILD_VARIANTS`
 | The list of the variants being built.

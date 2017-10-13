@@ -63,9 +63,9 @@ indicates Android compatibility.
 |
 | {logo-android}
 
-| link:http://www.earl-grey.io/[Earl Grey]
+| link:https://github.com/google/EarlGrey[EarlGrey]
 | {logo-apple}
-| {logo-android}
+|
 
 | link:https://developer.android.com/training/testing/espresso/index.html[Espresso]
 |

@@ -29,16 +29,19 @@ available for a specific branch.
 
 Start by clicking on **App Settings**.
 
-image:img/Builds---Settings.png[,1500,483]
+image:img/Builds---Settings.png["The buddybuild dashboard", 1500, 483]
 
 In the left navigation, select **Build settings**, then the
 **Environment** tab.
 
-image:img/Settings---Environment-variables---menu.png[,1500,459]
+image:img/Settings---Environment-variables---menu.png["The Default build
+configuration screen, with the Environment tab selected", 1500, 459]
 
 In the Environment variables row, click **Configure**.
 
-image:img/Settings---Environment-variables---configure.png[,1500,691]
+image:img/Settings---Environment-variables---configure.png["The Default
+build configuration screen, clicking the Configure button for
+Environment variables", 1500, 691]
 
 Enter a name and value to create a default environment variable. Your
 environment variable is now ready to be consumed by your app at build
@@ -55,12 +58,16 @@ creating a **branch-specific override**.
 Under Override build configuration, click **Add a branch** and select
 the branch you would like to create an environment variable for.
 
-image:img/Settings---Variants---Branch-specific-1.png[,1500,555]
+image:img/Settings---Variants---Branch-specific-1.png["The Override
+build configuration area, with the branch selection dropdown open",
+1500, 555]
 
 Select **Environment variables** from the dropdown and click
 **Configure**.
 
-image:img/Settings---Environment-variables---Branch---configure.png[,1500,540]
+image:img/Settings---Environment-variables---Branch---configure.png["The
+Override build configuration area, clicking the Configure button for the
+Environment variables option", 1500, 540]
 
 Enter a name and value to create your branch-specific environment
 variable.
@@ -88,13 +95,10 @@ If you would like to access them in your
 link:custom_build_steps.adoc[custom build scripts], use
 the bash variable expansion syntax.
 
-[[code-samples]]
---
 [source,bash]
 ----
 ./Example.framework/run $Crashlytics_Token
 ----
---
 
 [[step2b]]
 == 2b. Consume in Android build.gradle file.
@@ -104,8 +108,6 @@ you can also access them 2 ways inside your `build.gradle` file.
 
 You can access them via `System.getenv()`, like this:
 
-[[code-samples]]
---
 [source,json]
 ----
 buildscript {
@@ -122,13 +124,10 @@ buildscript {
   ...
 }
 ----
---
 
 We also put these variables inside `gradle.properties` file, so you can
 access them directly like:
 
-[[code-samples]]
---
 [source,json]
 ----
 buildscript {
@@ -145,7 +144,6 @@ buildscript {
   ...
 }
 ----
---
 
 That's it! If you want to consume your variables from within your app,
 follow the link:device_variables_1.adoc[Device Variables] guide.

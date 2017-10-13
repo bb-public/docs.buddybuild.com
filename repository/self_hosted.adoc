@@ -1,0 +1,62 @@
+= Self-hosted repositories
+
+Buddybuild works with any git-based repository, over SSH or HTTPS,
+including repositories that you may be hosting yourself (instead of
+using cloud services such as link:github/README.adoc[GitHub],
+link:gitlab/README.adoc[GitLab], and
+link:bitbucket/README.adoc[Bitbucket]. This section covers requirements
+for connecting to a self-hosted repository.
+
+
+== Access
+
+Buddybuild needs to be able to access your self-hosted repository.
+If you are using a firewall, it needs to allow SSH and/or HTTPS
+connections from buddybuild IP addresses.
+
+You can discover the current IP address ranges for buddybuild build
+machines by querying the
+link:https://apidocs.buddybuild.com/misc/get-ip_ranges.html[REST API]:
+
+. Acquire your API access token from the
+  link:https://dashboard.buddybuild.com/account/access-token[dashboard].
+
+. Fetch the list of buddybuild IP addresses:
++
+[source,bash]
+----
+curl -X GET \
+  -H 'Authorization: Bearer {\{api-access-token}}' \
+  'https://api.buddybuild.com/v1/ip-ranges'
+----
+
+Once your firewall allows connections from buddybuild, you can
+link:../quickstart/ssh.adoc[connect your repo via SSH].
+
+
+== VPN connections
+
+You may prefer greater control over how buddybuild accesses your
+self-hosted repository. Buddybuild can support a site-to-site VPN
+configuration.
+
+As this type of VPN requires configuration at both ends of the
+connection, we require that you make arrangements with one of our
+link:mailto:sales@buddybuild.com[sales representatives] to discuss
+details and pricing.
+
+
+== SSL certificates
+
+If you choose to disable, or otherwise avoid providing SSH access to
+your self-hosted repository, HTTPS access does work. You should be aware
+of the following points related to SSL certificates:
+
+* Buddybuild does not support the use of self-signed certificates. If
+  you use a self-signed certificate, it could be possible for a 3rd
+  party to gain access to your source code.
+
+* The SSL certificate you use should be a bundle certificate containing
+  the appropriate intermediate CA certificates. If it does not,
+  buddybuild is unable to verify the chain of trust between your SSL
+  certificate and the root certificate authority.

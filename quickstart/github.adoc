@@ -24,24 +24,27 @@ Using a self-signed certificate could make it possible for someone to
 spoof your repository and inject malicious code into your builds.
 ====
 
+
 == Step 1: Signing up with an existing service
 
 Let's get started by visiting the
 link:https://dashboard.buddybuild.com/signup[Sign up page].
 
-Simply click on the "GitHub" button to sign up with your credentials.
+Simply click on the **GitHub** button to sign up with your credentials.
 
-image:img/sign_up-github.png[,3000,1600]
+image:img/sign_up-github.png["The Sign up screen", 3000, 1600]
+
 
 == Step 2: Enter Credentials
 
 Enter your GitHub credentials and Sign in.
 
-image:img/github_oauth-1.png[,3000,1600]
+image:img/github_oauth-1.png["The Sign in the GitHub screen", 3000,
+1600]
 
 That's it! You're now connected to buddybuild!
 
-**The next step is to select a repository to build with buddybuild!** 
+**The next step is to select a repository to build with buddybuild!**
 
 - For iOS apps, continue to the
   link:ios/select_a_repo_and_app_to_build.adoc[iOS

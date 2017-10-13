@@ -11,6 +11,7 @@ Each member of your team that uses buddybuild should go through this
 guide to connect with GitHub Enterprise. This is encouraged so that you
 can take advantage of team management features.
 
+
 == Prerequisite
 
 First make sure you have created an account with buddybuild by signing
@@ -26,6 +27,7 @@ Using a self-signed certificate could make it possible for someone to
 spoof your repository and inject malicious code into your builds.
 ====
 
+
 == Connect your GitHub Enterprise account
 
 To connect your GitHub Enterprise account follow this URL:
@@ -37,7 +39,9 @@ GitHub Enterprise endpoint and have a personal access token, then enter
 those now. Otherwise continue reading the next sections to learn how to
 get the endpoint name and generate a personal access token.
 
-image:img/Github-Enterprise-2.png[,1500,877]
+image:img/Github-Enterprise-2.png["The Connect with GitHub Enterprise
+screen", 1500, 877]
+
 
 == Configure your GitHub Enterprise endpoint
 
@@ -69,22 +73,26 @@ GitHub Enterprise admin account.
 
 Choose **Settings** from the top right menu under your profile picture.
 
-image:img/Github-Enterprise-4.png[,1500,640]
+image:img/Github-Enterprise-4.png["The GitHub Enterprise account
+dropdown menu", 1500, 640]
 
 You will see a list of menu items of the left side of the page. Click on
 **Personal access tokens**. Then create a new token by clicking on
-**Generate new token**. 
+**Generate new token**.
 
-image:img/Github-Enterprise-5.png[,1500,786]
+image:img/Github-Enterprise-5.png["The GitHub Enterprise Personal access
+tokens screen", 1500, 786]
 
 Enter *buddybuild* as the **Token description**.
 
-image:img/Github-Enterprise-6.png[,1500,500]
+image:img/Github-Enterprise-6.png["The GitHub Enterprise New personal
+access token screen", 1500, 500]
 
 Carefully select the `repo`, `write:repo_hook` and `user` scopes. When
 you are done it should look like this.
 
-image:img/Github-Enterprise-7.png[,1500,1388]
+image:img/Github-Enterprise-7.png["The GitHub Enterprise Select scopes
+fields", 1500, 1388]
 
 [NOTE]
 ======
@@ -102,15 +110,17 @@ The `user` scope if required so that buddybuild can access your GitHub
 username for team management features.
 ======
 
-Copy the personal access token, a 40 character hexadecimal string.
+Copy the personal access token, a 40-character hexadecimal string.
 
-image:img/Github-Enterprise-8.png[,1500,615]
+image:img/Github-Enterprise-8.png["The GitHub Enterprise Personal access
+tokens screen, with personal access token displayed", 1500, 615]
 
 In buddybuild, paste the personal access token into the **Enter your
 Personal Access Token** field. Then click **Connect Your GitHub
 Enterprise Repositories**.
 
-image:img/Github-Enterprise-3.png[,1500,877]
+image:img/Github-Enterprise-3.png["The buddybuild Connect with GitHub
+Enterprise screen, with personal access token posted", 1500, 877]
 
 The dialog should close and display a list of your repositories. At this
 point you have successfully completed connecting buddybuild with GitHub

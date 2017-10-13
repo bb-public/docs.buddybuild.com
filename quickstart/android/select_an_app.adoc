@@ -3,17 +3,17 @@ titletext: Selecting an Android app from the repository
 ---
 = Selecting an Android app from the repository
 
-Now that we've connected with your Source Control account, you'll need
-to point to the Repo containing your Android App.
+Now that we've connected with your Source Control account, you need
+to point to the repository containing your Android app.
 
 link:../github.adoc[Sign up with buddybuild] if you haven't done so
 already.
 
-After signing up, buddybuild will present you with a list of
-repositories you have access to. Simply choose the one you want to
-build.
+After signing up, buddybuild presents you with a list of repositories
+that you have access to. Simply choose the one you want to build.
 
-image:img/First-Build---Select-Repo.png[,1500,677]
+image:img/First-Build---Select-Repo.png["The Choose a repository to
+build screen", 1500, 677]
 
 Buddybuild will pull down your source code and analyze the repo for
 apps.
@@ -22,12 +22,14 @@ If we find multiple Apps, you'll be prompted to select one. If you have
 a single app, it'll be automatically detected and buddybuild will kick
 off a build!
 
-image:img/First-Build---Preparing-to-Build.png[,1500,800]
+image:img/First-Build---Preparing-to-Build.png["The Preparing to build
+your app... screen", 1500, 800]
 
 The build should finish in a few seconds. Next, click on **Go to the
 Dashboard**.
 
-image:img/First-Build---Build-success-Android.png[,1500,800]
+image:img/First-Build---Build-success-Android.png["The build success
+screen", 1500, 800]
 
 That's it! You've built your app with buddybuild. You will receive an
 email containing a link to install the build of your App. Open this
@@ -36,4 +38,5 @@ email on your phone to try out the build you've just created.
 See how easy that was? There is just one more simple step --
 link:integrate_sdk.adoc[Integrating the buddybuild SDK] into your app.
 
-image:img/Onboarding---Android-Successful-Build.png[,3000,1740]
+image:img/Onboarding---Android-Successful-Build.png["The prompt dialog to
+integrate the buddybuild SDK", 3000, 1740]

@@ -32,48 +32,58 @@ with buddybuild. Within the main page of that repository, look to the
 top-right for **HTTPS URL.** Click on the HTTPS dropdown menu and select
 **SSH**.
 
-image:img/select-ssh.png[,3000,1138]
+image:img/select-ssh.png["A Bitbucket project screen, selecting SSH",
+3000, 1138]
 
 Highlight and copy the **SSH URL.**
 
-image:img/copy-clone-url.png[,3000,978]
+image:img/copy-clone-url.png["A Bitbucket project screen, copying the
+clone URL", 3000, 978]
 
 Head over to dashboard, visit link:https://dashboard.buddybuild.com/apps/wizard/build/select-source[Select source] and choose **SSH**.
 
-image:../img/select_source-ssh.png[,1500,800]
+image:../img/select_source-ssh.png["The buddybuild Select source
+screen", 1500, 800]
 
 Paste the SSH URL you copied into the **Git clone URL** field.
 
-image:img/clone-url.png[,1500,765]
+image:img/clone-url.png["The buddybuild Connect another Git service
+screen", 1500, 765]
+
 
 [[step2]]
 == Step 2: Add the SSH Key to Your Bitbucket Account
 
 Highlight and copy the generated SSH key.
 
-image:img/ssh-key.png[,1500,765]
+image:img/ssh-key.png["The buddybuild Connect another Git service
+screen, with the SSH selected", 1500, 765]
 
 Navigate to your Bitbucket Account by first selecting your account
 photo, and then selecting **Settings.**
 
-image:img/select-bitbucket-settings.png[,3000,1138]
+image:img/select-bitbucket-settings.png["A Bitbucket project screen,
+with the user account dropdown open", 3000, 1138]
 
 Select **SSH keys.**
 
-image:img/select-ssh-keys.png[,3000,1138]
+image:img/select-ssh-keys.png["The Bitbucket Settings screen, clicking
+the SSH keys button", 3000, 1138]
 
 Next, select **Add key.**
 
-image:img/click-add-key.png[,3000,978]
+image:img/click-add-key.png["The Bitbucket SSH keys screen", 3000, 978]
 
 Enter **Buddybuild** as the title, and paste the copied SSH key into the
 **key** field.
 
-image:img/paste-ssh-key.png[,3000,1600]
+image:img/paste-ssh-key.png["The Bitbucket SSH keys screen, pasting the
+buddybuild SSH key", 3000, 1600]
 
 Next, click **Add key**.
 
-image:img/paste-key-add-button.png[,3000,1544]
+image:img/paste-key-add-button.png["The Bitbucket SSH keys screen,
+clicking the Add key button", 3000, 1544]
 
 [WARNING]
 =========
@@ -85,7 +95,8 @@ key will need to be added to those repos as well.
 
 Navigate back to buddybuild and click on the **Build** button.
 
-image:img/build.png[,1500,765]
+image:img/build.png["The buddybuild Connect another Git service screen",
+1500, 765]
 
 Buddybuild will checkout your project code and kick off a simulator
 build. The build should finish within a few seconds.

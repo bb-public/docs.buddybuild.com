@@ -9,15 +9,18 @@ latest improvements.
 Go to the **Deployments** page of your app and choose the scheduled
 option from the first drop down for your target testing group.
 
-image:img/Deployments---Schedule---1.png[,1500,494]
+image:img/Deployments---Schedule---1.png["The Deployments screen, with
+the deployment frequency dropdown open", 1500, 494]
 
 In the popup that appears, choose the time and days of the week to
 automatically deploy the last successful build of a branch to your
 testers.
 
-image:img/Deployments---Schedule---2.png[,1500,494]
+image:img/Deployments---Schedule---2.png["The Deployments screen, with a
+scheduled deployment selected, and the scheduling dropdown menu
+displayed", 1500, 494]
 
 That's it! Builds of that branch will now be deployed according to your
-set schedule. Each build will only be deployed to a group once, so your
+set schedule. Each build is only be deployed to a group once, so your
 testers won’t be spammed if no new builds have been created since the
 last deployment.

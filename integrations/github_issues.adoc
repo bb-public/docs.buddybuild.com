@@ -7,6 +7,7 @@ shared and discussed with the rest of your team.
 Buddybuild can be configured to automatically open a GitHub issue for
 each piece of feedback you receive on your app.
 
+
 == Prerequisite
 
 In order to create GitHub Issues on buddybuild, issue creation needs to
@@ -14,37 +15,40 @@ be enabled on GitHub.
 
 [NOTE]
 ======
-**Note:**
-
 Issues are enabled by default for GitHub repositories.
 ======
 
 You can check if issues are enabled by navigating to your app's
 repository settings.
 
-image:img/github_issues-settings_1.png[,1500,431]
+image:img/github_issues-settings_1.png["A project page on GitHub", 1500,
+431]
 
 Make sure that the box beside **Issues** is checked.
 
-image:img/github_issues-settings_2.png[,1500,642]
+image:img/github_issues-settings_2.png["The Features pane in GitHub
+project settings", 1500, 642]
+
 
 == Configure Feedback
 
 To set up GitHub Issues on buddybuild, start by clicking on **App
 Settings**.
 
-image:img/Builds---Settings.png[,1500,483]
+image:img/Builds---Settings.png["The buddybuild dashboard", 1500, 483]
 
 In the left navigation, select **Integrations**, then **GitHub Issues**.
 
-image:img/Settings---GitHub-Issues---menu.png[,1500,800]
+image:img/Settings---GitHub-Issues---menu.png["The GitHub Issues
+button", 1500, 800]
 
-Next, configure GitHub Issues for Feedback and Crash Reports.  You can
+Next, configure GitHub Issues for Feedback and Crash Reports. You can
 automatically create issues, and choose to tag issues with custom labels
 by filling in the "custom label" field.
 
-image:img/Settings---GitHub-Issues.png[,1500,481]
+image:img/Settings---GitHub-Issues.png["The GitHub Issues screen", 1500,
+481]
 
-That's it! buddybuild will now automatically open a GitHub issue on your
-project for each piece of feedback and crash report you receive from
-users of your app!
+That's it! buddybuild automatically opens a GitHub issue on your project
+for each piece of feedback and crash report you receive from users of
+your app!

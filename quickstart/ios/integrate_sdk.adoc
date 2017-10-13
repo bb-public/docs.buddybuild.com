@@ -62,22 +62,25 @@ buddybuild SDK in just two easy steps.
 
 {% include "../../_common/note-sdk-ios-app_store_deployments.adoc" %}
 
+
 [[step1]]
 === Step 1: Configure SDK Installation
 
 On your App's page, under the **Feedback** tab, click on the **Try the
 buddybuild SDK** button.
 
-image:img/SDK---iOS-Install-Button.png[,1500,792]
+image:img/SDK---iOS-Install-Button.png["The SDK screen, when it is not
+yet installed", 1500, 792]
+
 
 [[step2]]
 === Step 2: Install the SDK
 
-Install the SDK in whatever branch you'd like. Typically, the SDK will
-be used by your testers, so you'll want to install the SDK on the
-branches that deploy to your testers.
+Install the SDK in whatever branch you'd like. Typically, the SDK is
+used by your testers, so install the SDK on the branches that deploy to
+your testers.
 
-image:img/SDK---Turn-on-branch.png[,1500,677]
+image:img/SDK---Turn-on-branch.png["The Install the SDK screen", 1500, 677]
 
 That's it! A new build will be kicked off with the SDK enabled. Install
 this build on your device. Open your app and take a screenshot -- and

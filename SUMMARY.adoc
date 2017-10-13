@@ -29,6 +29,7 @@
 ... link:quickstart/android/testing.adoc[Testing]
 
 . link:repository/README.adoc[Source Control Systems]
+.. link:repository/self_hosted.adoc[Self-hosted repositories]
 .. link:repository/beanstalk/README.adoc[Beanstalk]
 ... link:repository/beanstalk/webhook.adoc[Webhook]
 .. link:repository/bitbucket/README.adoc[Bitbucket]
@@ -50,6 +51,7 @@
 .. link:repository/webhooks.adoc[Webhooks]
 
 . link:builds/README.adoc[Builds]
+.. link:builds/faq.adoc[Builds FAQ]
 .. link:builds/dependencies/README.adoc[Managing dependencies]
 ... link:builds/dependencies/submodules.adoc[Submodules]
 ... link:builds/dependencies/cocoapods.adoc[CocoaPods]

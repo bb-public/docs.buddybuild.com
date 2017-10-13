@@ -31,4 +31,4 @@ access token]. You can also specify a branch by appending the
 `branch=BRANCH_NAME` query parameter. This presents a list of your
 buddybuild apps to choose from.
 
-image:img/dialog-ccmenu.png[,454,527]
+image:img/dialog-ccmenu.png["The Feed URL dialog in CCMenu", 454, 527]

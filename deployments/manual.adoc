@@ -8,11 +8,13 @@ your existing groups, or to a specific individual at any time!
 
 Start by selecting a successful build from the Builds table.
 
-image:img/Builds---Android---Point---Details.png[,1500,483]
+image:img/Builds---Android---Point---Details.png["The buddybuild
+dashboard", 1500, 483]
 
 Next, select the **Deploy** tab.
 
-image:img/Builds---Deploy-Manually---1.png[,1500,800]
+image:img/Builds---Deploy-Manually---1.png["The build details screen,
+with the Deploy tab selected", 1500, 800]
 
 Next, select **Deploy This Build Again**.
 
@@ -20,7 +22,9 @@ From here, you can manually deploy the successful build to one of your
 existing Deployment Groups, or add new individuals by typing in their
 email address.
 
-image:img/Builds---Deploy-Manually---2.png[,1500,800]
+image:img/Builds---Deploy-Manually---2.png["The build details screen,
+with the Deploy tab selected, and clicking on the Deploy This Build
+Again button", 1500, 800]
 
 Once you're done select the **Deploy** button to send the build to your
 selected recipients!

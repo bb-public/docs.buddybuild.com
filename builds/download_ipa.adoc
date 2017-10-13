@@ -21,4 +21,5 @@ You never have to manage your artifacts yourself. However, if you
 require access to them, download them from the build details page of a
 specific build:
 
-image:img/Builds---Details---iOS-Artifacts.png[,1500,800]
+image:img/Builds---Details---iOS-Artifacts.png["The build details
+screen, showing the Build Artifacts panel", 1500, 800]

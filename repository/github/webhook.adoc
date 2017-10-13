@@ -3,51 +3,57 @@ titletext: Adding a GitHub Webhook
 ---
 = Adding a GitHub Webhook
 
-A webhook notifies buddybuild of code changes you make to your repo.
-Whenever a new change is pushed, buddybuild will automatically kick off
-a new build -- ensuring you have up-to-date build status and your
-testers have the very latest builds.
+A webhook notifies buddybuild of code changes that you make to your
+repo.  Whenever a new change is pushed, buddybuild automatically kicks
+off a new build -- ensuring that you have up-to-date build status and
+your testers have the very latest builds.
 
 Let's get started!
 
 On the Builds page, in the red banner at the top of the page, click on
 **Resolve this issue.**
 
-image:../img/resolve-banner.png[,1500,298]
+image:../img/resolve-banner.png["The auto-build resolution banner in the
+buddybuild dashboard", 1500, 298]
 
 In the dialog box that appears, **select and copy the webhook URL.**
 This URL is specific to your app and will be used to identify your app
 when sending webhooks from GitHub.
 
-image:../img/modal.png[,1500,838]
+image:../img/modal.png["The webhook URL dialog", 1500, 838]
 
 Navigate to your GitHub repository. In the right panel, select
 **Settings**.
 
-image:img/click-settings.png[,3000,1188]
+image:img/click-settings.png["A GitHub project page, showing the
+settings button", 3000, 1188]
 
 In the left navigation, select **Webhooks and services**.
 
-image:img/click-webhooks.png[,3000,1188]
+image:img/click-webhooks.png["The GitHub Settings screen", 3000, 1188]
 
 Next, select **Add webhook.**
 
-image:img/click-add-webhook.png[,3000,1188]
+image:img/click-add-webhook.png["The GitHub webhooks screen", 3000, 1188]
 
 Paste the URL you first copied into the **Payload URL** field.
 
-image:img/paste-webhook-url.png[,3000,1188]
+image:img/paste-webhook-url.png["Pasting the buddybuild webhook URL into
+the GitHub webhooks screen", 3000, 1188]
 
 Under **Content type,** select **application/x-www-form-urlencoded.**
 You can leave the **Secret** field blank.
 
-image:img/set-content-type.png[,3000,1188]
+image:img/set-content-type.png["Specifying the content type on the
+GitHub webhooks screen", 3000, 1188]
 
-Next, choose **let me select individual events**.
+Next, choose **Let me select individual events**.
 
-image:img/select-individual-events.png[,3000,1188]
+image:img/select-individual-events.png["Setting 'Let me select
+individual events' on the GitHub webhooks screen", 3000, 1188]
 
 Once that expands, select **Pull Request** and **Push.** Ensure that
 **Active** is selected, and click **Add webhook**. You're now done!
 
-image:img/add-webhook.png[,3000,1188]
+image:img/add-webhook.png["Clicking the Add webhook button on the GitHub
+webhooks screen", 3000, 1188]

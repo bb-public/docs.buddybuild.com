@@ -26,11 +26,12 @@ app.
 
 First, select **App Settings** in the global navigation.
 
-image:img/Builds---Settings.png[,1500,483]
+image:img/Builds---Settings.png["The Builds screen", 1500, 483]
 
 In the left navigation, select **Manage collaborators**.
 
-image:img/Settings---Manage-Team---1.jpg[,1500,496]
+image:img/Settings---Manage-Team---1.jpg["The Manage collaborators
+button",1500,496]
 
 You will find team members who have automatic collaborator access to
 your app under **Synchronized from your repository**.
@@ -38,13 +39,18 @@ your app under **Synchronized from your repository**.
 Select **Manage their access in GitHub (or Bitbucket or GitLab)** to
 manage access for these collaborators.
 
-image:img/Settings---Manage-Team---5.jpg[,1500,798]
+image:img/Settings---Manage-Team---5.jpg["The Manage collaborators
+screen", 1500, 798]
+
 
 === App Access Roles
 
 To change a team member's access level, simply specify whether they
 should have 'Full Access' or 'Read-Only Access' through the Access
 dropdown by the name of each collaborator.
+
+image:img/Settings---Manage-Team---6.jpg["Using the access dropdown menu
+for a specific collaborator", 1500, 401]
 
 [NOTE]
 ======
@@ -55,7 +61,7 @@ dashboard, click through build history, download and install builds,
 sort user feedback and draw insights from crash reports. They cannot
 make any changes to buddybuild's SDK settings, integrations,
 notifications, or perform any app management (such as renaming or
-deleting the app). They aren't able to create or deploy builds, upload
+deleting the app). They aren't able to deploy builds, upload
 to the App Store, or open/close user feedback or crash reports.
 
 Members with **‘Full Access’** in the buddybuild dashboard have complete
@@ -68,7 +74,6 @@ their user profiles as well as their organization's plan and billing
 information.
 ======
 
-image:img/Settings---Manage-Team---6.jpg[,1500,401]
 
 [[option2]]
 == Option 2: Invite team members through buddybuild
@@ -81,21 +86,25 @@ buddybuild.
 Under **Manually invited through buddybuild**, invite one or more team
 members by entering their email addresses.
 
-image:img/Settings---Manage-Team---2.jpg[,1500,376]
+image:img/Settings---Manage-Team---2.jpg["Manually inviting additional
+collaborators", 1500, 376]
 
 Next to the email addresses, specify whether they should have 'Full
 Access' or 'Read-Only Access' through the Access dropdown and click
 **Add** when you're done.
 
-image:img/Settings---Manage-Team---2a.jpg[,1500,496]
+image:img/Settings---Manage-Team---2a.jpg["Adjusting the access for new
+collaborators", 1500, 496]
 
 Invited team members will receive an email invite to your app. From
 there, they can **accept the invite and join the project.**
 
-image:img/Settings---Manage-Team---3.jpg[,3000,1596]
+image:img/Settings---Manage-Team---3.jpg["The collaboration invitation
+email", 3000, 1596]
 
 Invitees who do not have an account in buddybuild will be prompted to
 create one. When that process is complete, the specific team member will
 be able to access your app in buddybuild!
 
-image:img/Settings---Manage-Team---4.jpg[,1500,493]
+image:img/Settings---Manage-Team---4.jpg["The list of manually invited
+collaborators", 1500, 493]

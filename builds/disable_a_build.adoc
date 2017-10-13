@@ -8,21 +8,26 @@ Disabled builds no longer receive Feedback and Crash Reports.
 
 Here's how to disable a build:
 
-**Step 1:** Select the build you wish to disable.
+. Select the build you wish to disable.
++
+image:img/Builds---Disable-a-build---1.png["The buddybuild dashboard,
+clicking on a specific build", 1500, 644]
 
-image:img/Builds---Disable-a-build---1.png[,1500,644]
+. Click on the **Disable this build** button.
++
+image:img/Builds---Disable-a-build---2.png["The build details screen,
+clicking the Disable this build button", 1500, 644]
 
-**Step 2:** Click on the **Disable this build** button.
+. Confirm that you wish to disable the build.
++
+image:img/Builds---Disable-a-build---3.png["The Disable build
+confirmation dialog", 1500, 644]
 
-image:img/Builds---Disable-a-build---2.png[,1500,644]
-
-**Step 3:** Confirm that you wish to disable the build.
-
-image:img/Builds---Disable-a-build---3.png[,1500,644]
 
 == Re-enable a build
 
 You can also re-enable a build you previously disabled. To do this just
 click on the **Re-enable this build** button.
 
-image:img/Builds---Disable-a-build---4.png[,1500,736]
+image:img/Builds---Disable-a-build---4.png["The build details screen,
+showing a disabled build", 1500, 736]

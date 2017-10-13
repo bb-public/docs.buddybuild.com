@@ -7,9 +7,9 @@ If your repository lives in GitLab, you can
 link:../../quickstart/gitlab_private.adoc[connect your repository
 automatically], or connect via SSH if you prefer.
 
-If you prefer SSH, buddybuild will automatically generate a secure SSH
-key for you to install into your source control system. Buddybuild will
-use this key to clone your repository.
+If you prefer SSH, buddybuild automatically generates a secure SSH key
+for you to install into your source control system. Buddybuild uses this
+  key to clone your repository.
 
 {% include "../../_common/important-ssh_access.adoc" %}
 
@@ -31,62 +31,72 @@ Within the main page of your repository, look to the middle of the page
 for the **HTTPS/SSH dropdown**. Click it and select **SSH** (if it is
 not already selected).
 
-image:img/select-ssh.png[,3000,800]
+image:img/select-ssh.png["A GitLab project screen, selecting SSH", 3000,
+800]
 
 Highlight and copy the **SSH URL**.
 
-image:img/copy-clone-url.png[,3000,800]
+image:img/copy-clone-url.png["A GitLab project screen, copying the clone
+URL", 3000, 800]
 
 Head over to dashboard, visit
 link:https://dashboard.buddybuild.com/apps/wizard/build/select-source[Select
 source] and choose **SSH**.
 
-image:../img/select_source-ssh.png[,1500,800]
+image:../img/select_source-ssh.png["The buddybuild Select source
+screen", 1500, 800]
 
 Paste the SSH URL you copied into the **Git clone URL** field.
 
-image:img/paste-clone-url.png[,1500,765]
+image:img/paste-clone-url.png["The buddybuild Connect another Git
+service screen", 1500, 765]
+
 
 [[step2]]
 == Step 2: Add the SSH Key to Your GitLab Account
 
 Highlight and copy the generated SSH key.
 
-image:img/copy-ssh-key.png[,1500,765]
+image:img/copy-ssh-key.png["The buddybuild Connect another Git service
+screen, with the SSH key selected", 1500, 765]
 
 Navigate to your Profile Settings by first selecting the **menu icon**
 in the top left corner.
 
-image:img/click-settings-menu.png[,3000,1188]
+image:img/click-settings-menu.png["A GitLab project screen, showing the
+menu icon", 3000, 1188]
 
 In the menu that slides out, select **Profile Settings**.
 
-image:img/click-profile-settings.png[,3000,1188]
+image:img/click-profile-settings.png["A GitLab project screen, showing
+the opened application menu with Profile Settings selected", 3000, 1188]
 
 Next, select **SSH Keys**.
 
-image:img/click-ssh-keys.png[,3000,590]
+image:img/click-ssh-keys.png["The GitLab Profile Settings screen", 3000, 590]
 
 Add a new SSH Key by pasting the copied SSH key into the **Key** field,
 and entering **Buddybuild** as the title.
 
-image:img/paste-ssh-key.png[,3000,1180]
+image:img/paste-ssh-key.png["The GitLab SSH Keys screen", 3000, 1180]
 
 Next, click **Add Key.**
 
-image:img/build.png[,3000,800]
+image:img/build.png["The buddybuild Connect another Git service screen",
+3000, 800]
 
 [WARNING]
 =========
 **Private git submodules and private cocoapods**
 
-If your project depends on any code in other private git repos, the ssh
-key will need to be added to those repos as well.
+If your project depends on any code in other private git repos, the SSH
+key needs to be added to those repos as well.
 =========
 
 Navigate back to buddybuild and click on the **Build** button.
 
-image:img/build.png[,1500,765]
+image:img/build.png["The buddybuild Connect another Git service
+screen",1500,765]
 
 Buddybuild will checkout your project code and kick off a simulator
 build. The build should finish within a few seconds.
