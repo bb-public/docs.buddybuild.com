@@ -37,7 +37,7 @@ Enter your Apple ID and Password, then click **Sync credentials**.
 
 [WARNING]
 =========
-**Note: This account must have access to iTunes Connect and the Apple
+**This account must have access to iTunes Connect and the Apple
 Developer Portal.**
 =========
 
@@ -79,11 +79,20 @@ here, you can now choose to deploy the latest successful build.
 image:img/Deployments---auto-deploy-to-iTunes-Connect---5.png["The
 Deploy to iTunes Connect confirmation dialog", 3000, 1600]
 
+[IMPORTANT]
+===========
+Deployments to iTunes Connect may take anywhere from several minutes to
+several hours before a build appears there. The delay may increase in a
+variety of situations, including attempts to deploy builds using beta
+versions of Xcode.
+
+Apple sends you an email once they have completed processing your build.
+===========
 
 [[section2]]
 == Deploying automatically to iTunes Connect
 
-You have the ability to automatically deploy to iTunes Connect - either
+You have the ability to automatically deploy to iTunes Connect -- either
 per build or on a set schedule. Here's how!
 
 First, ensure that you are on the **Deployments** page, with the
