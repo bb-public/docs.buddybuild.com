@@ -61,7 +61,7 @@ dashboard, click through build history, download and install builds,
 sort user feedback and draw insights from crash reports. They cannot
 make any changes to buddybuild's SDK settings, integrations,
 notifications, or perform any app management (such as renaming or
-deleting the app). They aren't able to create or deploy builds, upload
+deleting the app). They aren't able to deploy builds, upload
 to the App Store, or open/close user feedback or crash reports.
 
 Members with **‘Full Access’** in the buddybuild dashboard have complete
