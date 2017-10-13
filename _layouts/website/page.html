@@ -206,10 +206,19 @@ ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{va
             x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 
     <script>
+      function defer(method) {
+        if (window.BB) {
+          method();
+        } else {
+          setTimeout(function() { defer(method) }, 50);
+        }
+      }
       var gitbook = gitbook || [];
       $(window).on('load', function() {
         gitbook.push(function() {
-          gitbook.page.hasChanged({{ template.getJSContext()|dump|safe }});
+          defer(function () {
+            gitbook.page.hasChanged({{ template.getJSContext()|dump|safe }});
+          });
         });
       });
     </script>
