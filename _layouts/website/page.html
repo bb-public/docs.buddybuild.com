@@ -111,17 +111,17 @@ try {
 {% endblock %}
 
 {% block javascript %}
-    <script src="{{ "gitbook.js"|resolveAsset }}" defer></script>
-    <script src="{{ "theme.js"|resolveAsset }}" defer></script>
+    <script src="{{ "gitbook.js"|resolveAsset }}"></script>
+    <script src="{{ "theme.js"|resolveAsset }}"></script>
     <script src="{{ "../_js/highlight/highlight.pack.js"|resolveAsset }}" async></script>
 {% for resource in plugins.resources.js -%}
 {% if resource.url %}
-    <script src="{{ resource.url }}" defer></script>
+    <script src="{{ resource.url }}"></script>
 {%- else %}
-    <script src="{{ resource.path|resolveAsset }}" defer></script>
+    <script src="{{ resource.path|resolveAsset }}"></script>
 {%- endif %}
 {%- endfor %}
-    <script src="{{ "../_js/docs.js"|resolveAsset }}" defer></script>
+    <script src="{{ "../_js/docs.js"|resolveAsset }}"></script>
 {% endblock %}
 
 {% block body %}
@@ -206,18 +206,9 @@ ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{va
             x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 
     <script>
-      function defer(method) {
-        if (window.BBSearch) {
-          method();
-        } else {
-          setTimeout(function() { defer(method) }, 50);
-        }
-      }
       var gitbook = gitbook || [];
       gitbook.push(function() {
-        defer(function () {
-          gitbook.page.hasChanged({{ template.getJSContext()|dump|safe }});
-        });
+        gitbook.page.hasChanged({{ template.getJSContext()|dump|safe }});
       });
     </script>
 </div>
