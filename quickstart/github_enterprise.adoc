@@ -7,9 +7,16 @@ webhooks for you, generate commit status, integrate with the GitHub
 issue tracker, enables the pull request flow, synchronizes access
 control for team management and more.
 
+
 Each member of your team that uses buddybuild should go through this
 guide to connect with GitHub Enterprise. This is encouraged so that you
 can take advantage of team management features.
+
+The full process to connect to a specific GitHub Enterprise instance
+only needs to be completed once. Afterwards, anyone connecting with the
+same GitHub Enterprise instance (by specifying the same `hostname:port`,
+in step #4) adopts the same connection configuration, and they can skip
+to <<the_end,the end of the process>>.
 
 [CAUTION]
 ====
@@ -58,14 +65,31 @@ the server instead of the hostname.
 
 . image:img/button-continue.png["The Continue button", 84, 42,
   role="right"]
-  Click the **Continue** button. The **Add buddybuild as an OAuth app**
-  screen is displayed:
+  Click the **Continue** button. Two different screens could be
+  displayed here:
++
+--
+[loweralpha]
+. If this is the first time that this GitHub Enterprise instance is
+  being connected, the **Add buddybuild as an OAuth app** screen is
+  displayed:
 +
 image:img/screen-add_bb_as_oauth.png["The Add buddybuild as an OAuth app
 screen", 1280, 548, role="frame"]
++
+If you see this screen, continue with <<callback_url_step,step #6>>.
 
-. image:img/button-copy_to_clipboard.png["The copy to clipboard button",
-  39, 42, role="right"]
+. If the GitHub Enterprise instance has been previously connected to
+buddybuild, the **already configured** screen is displayed:
++
+image:img/screen-ghe-already_configured.png["The Your GitHub Enterprise
+instance is already configured! screen", 1280, 548, role="frame"]
++
+If you see this screen, continue with <<authorize_step,step #26>>.
+--
+
+. [[callback_url_step]] image:img/button-copy_to_clipboard.png["The copy
+  to clipboard button", 39, 42, role="right"]
   Click the copy to clipboard button beside the **Callback URL** field.
 
 . In another browser window or tab, log in to your GitHub Enterprise
@@ -161,8 +185,8 @@ screen", 1280, 531, role="frame"]
 At this point, buddybuild can connect to your GitHub Enterprise
 instance, but it is not yet authorized to perform any actions.
 
-. image:img/button-authorize_ghe.png["The Authorize your GitHub
-  Enterprise account button", 326, 42, role="right"]
+. [[authorize_step]] image:img/button-authorize_ghe.png["The Authorize
+  your GitHub Enterprise account button", 326, 42, role="right"]
   Click the **Authorize your GitHub Enterprise account** button. The
   GitHub Enterprise authorization screen is displayed:
 +
@@ -177,6 +201,7 @@ screen", 1280, 686, role="frame"]
 That's it! You have now successfully connected buddybuild to your GitHub
 Enterprise instance.
 
+[[the_end]]
 **The next step is to select a repository to build with buddybuild!**
 
 - For iOS apps, continue to the
