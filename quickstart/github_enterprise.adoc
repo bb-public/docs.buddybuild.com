@@ -172,7 +172,16 @@ screen", 1280, 686, role="frame"]
 . image:img/button-ghe-authorize_test.png["The Authorize <organization>
   button", 224, 34, role="right"]
   Click the **Authorize <organization name>** button (in this example,
-  **Authorize test**). The buddybuild dashboard is displayed.
+  **Authorize test**).
 
 That's it! You have now successfully connected buddybuild to your GitHub
 Enterprise instance.
+
+**The next step is to select a repository to build with buddybuild!**
+
+- For iOS apps, continue to the
+  link:ios/select_a_repo_and_app_to_build.adoc[iOS
+  Quickstart]
+
+- For Android apps, continue to the
+  link:android/select_an_app.adoc[Android Quickstart]
