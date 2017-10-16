@@ -42,35 +42,3 @@ and trust the organization's profile before launching the app.
 
 image:img/Phone-Registration.png["Three iPhone screenshots demonstrating
 how to install and trust an enterprise provisioning profile", 914, 512]
-
-
-=== Install the latest successful build from a specific branch
-
-As a tester, you may want to test a specific branch. For example, you
-want to make sure that you're always running the latest version
-available on your _staging_ branch. To achieve this you can create an
-install URL which looks like this:
-
-[[code-samples]]
---
-.Install URL
-[source,url]
-----
-https://dashboard.buddybuild.com/download/:platform?appID=:app_id&branch=:branch
-----
---
-
-=== Parameters:
-
-. **:platform** -- the platform of your app. Its value can be **"ios"**
-  or **"android"**
-
-. **:app_id** -- the identifier of your app. You can find it in your
-  browser's search bar when you are viewing your app in the buddybuild
-  dashboard.
-
-. **:branch** -- the name of the branch that you want to test. For
-  example _master_, _develop_ or _staging_.
-
-. **:scheme** -- (Optional) the scheme to install. This is useful if
-  your branch is building multiple schemes.

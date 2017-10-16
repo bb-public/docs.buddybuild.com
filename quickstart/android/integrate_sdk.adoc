@@ -11,12 +11,32 @@ graphical feedback reporter, a crash reporting and analysis tool,
 automatic app updating and usage tracking. The SDK is regularly updated
 with new features.
 
-[WARNING]
-=========
+[IMPORTANT]
+===========
 **What's the minimum API version supported?**
 
-android:minSdkVersion="8"
-=========
+android:minSdkVersion="19"
+
+
+**What version of the Android SDK does buddybuild target?**
+
+android:targetSdkVersion="21"
+
+Example `build.gradle` configuration:
+
+[source,gradle]
+----
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.1.2'
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 21
+    }
+}
+----
+===========
 
 
 === Feedback Reporter
