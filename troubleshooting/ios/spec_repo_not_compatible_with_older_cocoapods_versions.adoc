@@ -1,16 +1,16 @@
 = Spec repo not compatible with older CocoaPods versions
 
-On Nov 11, 2016, introduced a breaking change that affects customers
-using 0.x versions of CocoaPods.
+On Nov 11, 2016, the CocoaPods team introduced a breaking change that
+affects customers using 0.x versions of CocoaPods.
 
 You can read the the details of this change on their blog here:
 https://blog.cocoapods.org/Sharding/
 
 If you are using an older version of CocoaPods, you might start seeing
-failures in buddybuild. You will very likely see the same errors if you
-run 'pod install' locally.
+failures in buddybuild. You would very likely see the same errors if you
+run `pod install` locally.
 
 There are a few options you can try:
 
 - Upgrade to CocoaPods 1.x
-- Check your Pods folder into your git repo
+- Check your `Pods` folder into your git repository
