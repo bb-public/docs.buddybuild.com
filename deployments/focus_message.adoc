@@ -1,7 +1,7 @@
 = Release Notes
 
 Notify users of recent changes in your app with release notes. They can
-be used to as a change log for your app's latest features, or to notify
+be used as a change log for your app's latest features, or to notify
 testers which specific areas they should target for feedback.
 
 In buddybuild, release notes can be entered in two ways:
