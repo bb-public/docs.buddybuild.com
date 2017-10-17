@@ -16,7 +16,7 @@ The full process to connect to a specific GitHub Enterprise instance
 only needs to be completed once. Afterwards, anyone connecting with the
 same GitHub Enterprise instance (by specifying the same `hostname:port`,
 in step #4) adopts the same connection configuration, and they can skip
-to <<the_end,the end of the process>>.
+to <<authorize_step,the account authorization step>>.
 
 [CAUTION]
 ====
