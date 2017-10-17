@@ -10,8 +10,8 @@ commits on a branch or versioning schemes that depend on the
 output of these commands will not be accurate, since there may be
 insufficient information available from the optimized repository:
 
-* git describe --tags
-* git rev-list --count
+* `git describe --tags`
+* `git rev-list --count`
 
 == Workarounds
 
