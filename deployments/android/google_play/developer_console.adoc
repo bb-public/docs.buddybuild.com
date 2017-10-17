@@ -1,3 +1,9 @@
+--- 
+titletext: Create a Google Play serivce account development account
+description: >
+  Buddybuild integrated with Google Play to autodeploy your Android apps.  You
+  must first create a service account and set up the proper permisissions.
+---
 = Create a private key and setup permissions
 
 To deploy builds to Google Play, the first stage of the process is to

@@ -1,5 +1,9 @@
 ---
 search: false
+titletext: Troubleshooting common hybrid mobile app frameworks
+description: >
+  Troubleshooting guide for common Cordorva / Ionic and React Native mobile
+  application build issues.
 ---
 = Frameworks
 

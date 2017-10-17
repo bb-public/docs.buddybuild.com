@@ -1,3 +1,9 @@
+--- 
+titletext: How to add Bitbucket Webhook to mobile CI/CD
+description: >
+  Use Bitbucket Webhooks to notify buddybuild of repo code changes so we can
+  kick off new builds, update bulid statuses and notify testers of latest builds.
+---
 = Adding a Bitbucket Webhook
 
 A webhook notifies buddybuild of code changes you make to your repo.

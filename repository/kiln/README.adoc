@@ -1,3 +1,9 @@
+--- 
+titletext: Connecting Kiln to buddybuild mobile CI via SSH
+description: >
+  Connect your Kiln repo to buddybuild via SSH. Buddybuild will automatically
+  create a SSH key to add to your source control and use it to clone your repo.
+---
 = Adding a Kiln Repository
 
 If your repository lives in Kiln, you can connect to it via SSH.

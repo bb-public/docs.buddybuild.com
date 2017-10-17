@@ -1,3 +1,9 @@
+--- 
+titletext: iOS Unit Tests XCTests autodectection and exectution
+description: >
+  Buddybuild automatically scans for your iOS unit tests, XCTests, and runs them
+  for you as part of every build! No configuration required!
+---
 = Unit Tests
 
 Buddybuild automatically scans for your **XCTests** and runs them for

@@ -1,3 +1,9 @@
+--- 
+titletext: How to add a BitBucket repo to your mobile CI/CD process
+description: >
+  If your repository lives in Bitbucket, you can connect your repository
+  automatically by signing in with Bitbucket, or you can also connect via SSH.
+---
 = Adding a Bitbucket Repository
 
 If your repository lives in Bitbucket, you can

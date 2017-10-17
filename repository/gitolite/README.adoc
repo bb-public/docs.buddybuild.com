@@ -1,3 +1,8 @@
+--- 
+titletext: How to add a Gitolite repsoitory for mobile CI/CD
+description: >
+  Add a Gitolite hosted repository to buddybuild using SSH.
+---
 = Adding a Gitolite Repository
 
 This page explains how to add a Gitolite hosted repository to

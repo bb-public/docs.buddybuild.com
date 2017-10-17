@@ -1,3 +1,9 @@
+--- 
+titletext: Send buddybuild notifications to Slack channels 
+description: >
+  Buddybuild offers first-class integration with Slack, providing notifications
+  for build status, feedback submissions, and crash reports directly to channels
+---
 = Slack
 
 Slack is a popular team-based chat application that has revolutionized

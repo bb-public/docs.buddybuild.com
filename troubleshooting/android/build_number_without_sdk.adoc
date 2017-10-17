@@ -1,3 +1,9 @@
+--- 
+titletext: Show Android Build Number in App without SDK Integration
+description: >
+  An example of how you can display the build number for your Android app in a
+  debug build without using the buddbybuild SDK.
+---
 = Displaying Build Number in an Android App without SDK Integration
 
 Here's an example of how you can display the build number for your app

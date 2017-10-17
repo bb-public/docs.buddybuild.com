@@ -1,3 +1,9 @@
+--- 
+titletext: Mobile testers not getting new app version alert
+description: >
+  Buddybuilds SDK is used alert mobile app testers when a new build is
+  available.  To enable this feature the following configurations are required.
+---
 = User not getting alert when a new version of app is available
 
 Our SDK allows your testers to be notified when a new version of your

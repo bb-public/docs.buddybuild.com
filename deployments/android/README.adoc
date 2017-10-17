@@ -1,5 +1,9 @@
 ---
 search: false
+titletext: Overview of Continuous Deployment for Android Mobile Apps
+description: >
+  Android continuous deployment including managing your KeyStores and
+  integrating your Google Play Account for automatic deployments.
 ---
 = Android
 

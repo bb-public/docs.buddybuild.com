@@ -1,3 +1,9 @@
+--- 
+titletext: Enable buddybuild SDK tracking and feedback features
+description: >
+  Configure which buddybuild SDK feedback and tracking features to include when
+  builds are deployed from buddybuild for both iOS and Android.
+---
 = SDK Feature Settings
 
 Buddybuild lets you select which SDK features to include when builds are

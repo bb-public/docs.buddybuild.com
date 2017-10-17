@@ -1,3 +1,9 @@
+--- 
+titletext: How to add a BitBucket Server repo to your mobile CI/CD
+description: >
+  For Bitbucket Server (or Stash) repositories, buddybuild automatically
+  generates a secure SSH key which is used to close the repository.
+---
 = Adding a Bitbucket Server Repository
 
 If your repository lives in Bitbucket Server (or Stash), you can sign

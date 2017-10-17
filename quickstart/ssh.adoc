@@ -1,3 +1,9 @@
+--- 
+titletext: Mobile CI/CD repositories using SSH integration
+description: >
+  If your repository lives in Beanstalk or your own source control system, use
+  these step-by step instruction signing up with buddybuild using SSH. 
+---
 = Signing up with SSH
 
 If your repository lives in link:https://beanstalkapp.com/[Beanstalk] or

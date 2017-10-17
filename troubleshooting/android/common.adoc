@@ -1,3 +1,9 @@
+--- 
+titletext: How to troubleshoot common Android build errors
+description: >
+  Troubleshooting common Android build issues.  Buddybuild uses Linux machines
+  for building Android Code and all case sensitivity rules are enforced.
+---
 = Common Android build errors
 
 [NOTE]

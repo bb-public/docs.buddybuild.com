@@ -1,3 +1,9 @@
+--- 
+titletext: Add a Visual Studio Online Webhook to mobile CI process
+description: >
+  Use Visual Stuido Webhooks to notify buddybuild of repo code changes so we can
+  kick off new builds, update bulid statuses.
+---
 = Adding a Visual Studio Online Webhook
 
 We're not currently able to automatically add a webhook with Visual

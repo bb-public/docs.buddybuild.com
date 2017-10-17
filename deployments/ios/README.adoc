@@ -1,5 +1,9 @@
 ---
 search: false
+titletext: How to do Continous Deployment for iOS applications 
+description: >
+  iOS continuous deployment, no more headaches from code signing and configuring
+  provisioning profiles. Try it today.
 ---
 = iOS
 

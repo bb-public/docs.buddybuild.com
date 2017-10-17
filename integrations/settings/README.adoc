@@ -1,3 +1,9 @@
+--- 
+titletext: Apply CI/CD 3rd party integrations to all new apps
+description: >
+  Buddybuild integration settings for the Apple Developer Portal, HipChat, JIRA,
+  Pivotal Tracker, and Slack can be set in one place and applied to all apps.
+---
 = Integration settings for all apps
 
 Each of the available link:../README.adoc[integration] settings are

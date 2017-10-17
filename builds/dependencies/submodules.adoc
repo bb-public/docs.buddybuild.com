@@ -1,3 +1,10 @@
+--- 
+titletext: Accessibility of mobile app Submodules during build
+description: >
+  Add the .gitmodules file to our repo and buddybuild willl use the Git
+  credentials associated with your account to clone all of the submodules
+  automatically.
+---
 = Submodules
 
 Git Submodules are a way to manage your App's dependencies. In order for

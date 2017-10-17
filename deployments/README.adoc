@@ -1,3 +1,9 @@
+--- 
+titletext: Continuous Deployment for iOS and Android Applications
+description: >
+  Remove the complexity of iOS and Android app deployment. iOS and Android
+  Continuous Deployment as it should be: one click to send, one click to install
+---
 = Deployments
 
 This section covers everything you need to know to deploy builds of your

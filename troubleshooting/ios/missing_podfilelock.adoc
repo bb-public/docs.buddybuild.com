@@ -1,3 +1,9 @@
+--- 
+titletext: Troubleshooting Missing Podfile.lock in iOS repo
+description: >
+  When using Cocoapods in iOS apps, make sure the Podfile.lock is committed to
+  your git repo for builds to function correctly in buddybuild.
+---
 = Missing Podfile.lock
 
 == Summary

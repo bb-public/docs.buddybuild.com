@@ -1,3 +1,9 @@
+--- 
+titletext: How to schedule reoccuring builds for mobile apps 
+description: >
+  Need a new build at a specific time?  You can schedule reoccuring builds of a
+  specific branch to happen on a set schedule. 
+---
 = Scheduling Builds
 
 Scheduled recurring builds let you kick off a new build for a branch on

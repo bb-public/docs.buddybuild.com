@@ -1,3 +1,9 @@
+--- 
+titletext: How to integrated buddybuild's iOS SDK 
+description: >
+  Integrate the buddybuild iOS SDK to access graphical user feedback reports,
+  crash reporting, tester usage and analytics, and automatic app updates.
+---
 = Integrate the buddybuild SDK
 
 == About the buddybuild SDK

@@ -1,3 +1,9 @@
+--- 
+titletext: Add a GitLab Repository to your mobile CI
+description: >
+  Sign up for buddybuild via GitLab allows building of apps everytime a commit
+  is pushed, ensuring there is always a green build ready to deploy to testers.
+---
 = Signing up with GitLab
 
 First things first! Let's sign up with buddybuild.

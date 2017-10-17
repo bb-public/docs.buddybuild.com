@@ -1,3 +1,10 @@
+--- 
+titletext: Trigger a mobile CI build only when certain files changes
+description: >
+  Selective Builds allows you to trigger an app build only when certain files
+  are changed. Skipping builds for commits unrelated to the project’s source
+  files
+---
 = Selective Builds
 
 Selective Builds allows you to trigger a build of an app only when

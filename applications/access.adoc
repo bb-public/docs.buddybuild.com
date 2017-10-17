@@ -1,3 +1,9 @@
+--- 
+titletext: Manage access control for your mobile apps repos
+description: >
+  Manage your repo access control by leverage your git provider privlieges or by
+  inviting team members directly to buddbybuild. 
+---
 = Manage App Access
 
 There are two ways to invite team members to collaborate on your app in

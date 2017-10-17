@@ -1,3 +1,10 @@
+--- 
+titletext: Let mobile beta testers submit feedback directly from app
+description: >
+  The buddybuild SDK feedback reporter allows testers to submit feedback
+  painlessly from within your mobile app. Feedback goes directly to your bug
+  tracker.
+---
 = Feedback Reporter
 
 Gathering feedback from your beta users can often be a clumsy process.

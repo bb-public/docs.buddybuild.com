@@ -1,3 +1,10 @@
+--- 
+titletext: How to integrate Apple Developer Portal with mobile CI/CD
+description: >
+  Connect your Apple Developer Portal account to simplify code signing,
+  automatically sync provisioning profiles, and push builds to iTunes &
+  TestFlight.
+---
 = Apple Developer Portal
 
 Buddybuild can automatically sync with your Apple Developer Portal

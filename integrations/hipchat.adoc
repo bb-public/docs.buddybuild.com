@@ -1,3 +1,10 @@
+--- 
+titletext: Send buddybuild notifications to HipChat rooms
+description: >
+  Buddybuild offers first-class integration with HipChat, providing
+  notifications for build status, feedback submissions, and crash reports
+  directly to rooms.
+---
 = HipChat
 
 HipChat is a chat service designed for groups, providing video chat and

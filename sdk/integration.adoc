@@ -1,3 +1,9 @@
+--- 
+titletext: How to Manually Install the buddybuild iOS SDK
+description: >
+  We highly recommend using the automatic buddybuild SDK integration from the
+  buddybuild dashboard. However, you can install the buddybuild SDK manually.
+---
 = SDK Manual Installation (iOS)
 
 We highly recommend using the **automatic** buddybuild SDK integration

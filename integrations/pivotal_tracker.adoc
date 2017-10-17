@@ -1,3 +1,9 @@
+--- 
+titletext: Integrating mobile user feedback into Pivotal Tracker
+description: >
+  Buddybuild provides integration with Pivotal Tracker allowing tickets to be
+  open directly from from each piece of feedback recieved from mobile testers.
+---
 = Pivotal Tracker
 
 Pivotal Tracker is a lightweight, agile project management tool for

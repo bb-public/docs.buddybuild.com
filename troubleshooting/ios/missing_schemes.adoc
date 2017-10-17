@@ -1,3 +1,9 @@
+--- 
+titletext: How to trouble shoot missing schemas during iOS CI build
+description: >
+  Not seeing your schema? It is likely because the target of the app in
+  buddybuild is not included in the Build section of the scheme you are using.
+---
 = Missing schemes
 
 If you don't see your scheme, it very likely belongs to a different

@@ -1,3 +1,9 @@
+--- 
+titletext: Invite testers to reviece your iOS mobile apps builds 
+description: >
+  Buddybuild manages Code Signing and Provisioning Profiles complexities to
+  create signed device builds, allowing you to send apps to testers easily.
+---
 = Inviting Testers
 
 Now that we have a green build of your app, the next step is to deploy

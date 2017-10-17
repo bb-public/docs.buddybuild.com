@@ -1,3 +1,9 @@
+--- 
+titletext: How to connect GitHub Enterprise to mobile CI/CD
+description: >
+  Register with your GitHub Enterprise account to associate your iOS and Android
+  mobile app repositories.  Auto build apps every time a commit is pushed.
+---
 = Connect with GitHub Enterprise
 
 Connecting with GitHub Enterprise grants buddybuild access to your

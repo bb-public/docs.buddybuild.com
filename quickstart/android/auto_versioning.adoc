@@ -1,3 +1,9 @@
+--- 
+titletext: Auto updating Android VersionCode with no repo changes
+description: >
+  Buddybuild can update the Android VersionCode automatically without requiring
+  write access to the repo, and no changes will be committed back to the repo.
+---
 = Auto Versioning
 
 == VersionCode

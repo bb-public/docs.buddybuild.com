@@ -1,3 +1,9 @@
+--- 
+titletext: Auto-Syncing Provisioning Profiles for dev and test UDIDs
+description: >
+  Buddybuild can manage and automate provisioning profile management simply
+  connect your Apple Developer Account and buddybuild will handle the rest.
+---
 = Auto-Syncing Provisioning Profiles
 
 Now that you're deploying builds, it is time to connect your Apple

@@ -1,3 +1,9 @@
+--- 
+titletext: Auto Versioning CFBundleVersion for iOS Mobile apps
+description: >
+  Buddybuild can update the iOS CFBundleVersion automatically without requiring
+  write access to the repo, and no changes will be committed back to the repo.
+---
 = Auto Versioning
 
 == CFBundleVersion

@@ -1,5 +1,10 @@
 ---
 search: false
+titletext: Android Continuous Integration, Delivery, & User Feedback
+description: >
+  Buddybuild's mobile iteration platform ties together Android continuous
+  integration, continuous delivery, and iterative feedback into a single
+  platform.
 ---
 = Android Quickstart
 

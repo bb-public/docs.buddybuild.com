@@ -1,3 +1,9 @@
+--- 
+titletext: How to create device variable to secure password and keys
+description: >
+  The buddbybuild SDK allows you to set device variables to store API keys and
+  other secrets that are needed by your app during the build process and runtime.
+---
 = Device Variables
 
 You might have API keys and other secrets that your app needs to consume

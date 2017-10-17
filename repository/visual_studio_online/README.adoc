@@ -1,3 +1,9 @@
+--- 
+titletext: Add a Visual Studio Online Repository to your mobile CI
+description: >
+  Buddybuild supports connecting to repositories that lives in Visual Studio
+  Online / Team Foundation Server (TFS) via SSH. 
+---
 = Adding a Visual Studio Online Repository
 
 If your repository lives in Visual Studio Online / Team Foundation

@@ -1,3 +1,10 @@
+--- 
+titletext: How to integrated buddybuild's Android SDK 
+description: >
+  Integrate the buddybuild Android SDK to access graphical user feedback
+  reports, crash reporting, tester usage and analytics, and automatic app
+  updates.
+---
 = Integrating SDK
 
 == About the buddybuild SDK

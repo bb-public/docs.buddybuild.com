@@ -1,3 +1,9 @@
+--- 
+titletext: Auto open a Trello card for each piece of feedback
+description: >
+  Buddybuild can be configured to automatically open a Trello card for each
+  piece of tester feedback you receive about your mobile app. 
+---
 = Trello
 
 Trello’s boards, lists, and cards enable you to organize and prioritize

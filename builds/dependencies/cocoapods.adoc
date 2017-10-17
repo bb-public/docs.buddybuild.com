@@ -1,3 +1,9 @@
+--- 
+titletext: Managing cocoapod dependencies for automated builds
+description: >
+  CocoaPods dependencies are automatically detected, downloaded and installed
+  during the build process. No configuration changes are needed.
+---
 = CocoaPods
 
 link:http://cocoapods.org/[CocoaPods] are a fantastic way to manage

@@ -1,3 +1,9 @@
+--- 
+titletext: How to connect your mobile app repositories to buddybuild 
+description: >
+  Buddybuild supports Bitbucket, Bitbucket Server, GitHub, GitHub Enterprise,
+  GitLab, a privately-hosted GitLab instance, SSH (most other repositories)
+---
 = Quickstart
 
 This section describes how to quickly get started using buddybuild.

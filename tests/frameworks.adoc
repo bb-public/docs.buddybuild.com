@@ -1,3 +1,10 @@
+--- 
+titletext: Supported testing frameworks and tools
+description: >
+  Buddybuild support most testing frameworks that  can run on Unix-like
+  operating systems, can be installed during the build or is included in your
+  repo.
+---
 = Supported frameworks
 :logo-apple: pass:[<i class="fa fa-apple"></i>]
 :logo-android: pass:[<i class="fa fa-android"></i>]

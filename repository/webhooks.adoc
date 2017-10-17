@@ -1,3 +1,9 @@
+--- 
+titletext: Using Webhooks for repo code change notifications
+description: >
+  Buddybuild supports Webhooks to notify of repo code changes so we can kick off
+  new builds, update bulid statuses and notify testers of latest builds.
+---
 = Setting Up a Webhook
 
 A webhook notifies buddybuild of code changes you make to your repo.

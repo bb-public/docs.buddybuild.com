@@ -1,3 +1,9 @@
+--- 
+titletext: Adding a Kiln Webhook to mobile your CI Process
+description: >
+  Use Kiln Webhooks to notify buddybuild of repo code changes so we can kick off
+  new builds, update bulid statuses and notify testers of latest builds.
+---
 = Adding a Kiln Webhook
 
 A webhook notifies buddybuild of code changes that you make to your

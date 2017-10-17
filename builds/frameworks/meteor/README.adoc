@@ -1,3 +1,8 @@
+--- 
+titletext: How to integrate Meteor into your mobile CI Process
+description: >
+  Step by Step instructions to integrate Meteor into your build.
+---
 = Meteor Setup
 
 While buddybuild natively supports Cordova, additional steps are

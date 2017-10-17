@@ -1,3 +1,9 @@
+--- 
+titletext: How to add a GitLab repo to your mobile CI/CD process
+description: >
+  If your repository lives in Gitlab, you can connect your repository
+  automatically by signing in with Gitlab, or you can also connect via SSH.
+---
 = Adding a GitLab Repository
 
 If your repository lives in GitLab, you can

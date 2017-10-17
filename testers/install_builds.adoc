@@ -1,3 +1,9 @@
+--- 
+titletext: How to install iOS and Android Beta Apps on tester devices
+description: >
+  Buddybuild streamlines notifying testers of new mobile apps, installation on
+  testers devices and the ability for testers to send feedback.
+---
 = Installing Builds from buddybuild
 
 As a tester or beta user, installing builds and submitting feedback is

@@ -1,3 +1,9 @@
+--- 
+titletext: How to add a GitHub repo to your mobile CI/CD process
+description: >
+  Adding your GitHub repositories is simple. You can connect your repository
+  directly, or connect via SSH.
+---
 = Adding a GitHub Repository
 
 If your repository lives in GitHub, you can

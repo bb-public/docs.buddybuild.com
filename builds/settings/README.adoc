@@ -1,3 +1,9 @@
+--- 
+titletext: Apply Default Build settings to all apps in an org
+description: >
+  Org level build settings allow you to set defaults build configurations that
+  get apply to all new apps added or can be apply retroactively to existing apps.
+---
 = Build settings for all apps
 
 Each of the available link:../README.adoc[build] settings are

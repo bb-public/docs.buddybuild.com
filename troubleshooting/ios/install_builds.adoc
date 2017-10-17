@@ -1,3 +1,9 @@
+--- 
+titletext: Troubleshooting iOS Mobile App build installations
+description: >
+  Troubleshoot common iOS build installation issues such as no build available
+  to download, build will not install on device, unable to download app, and more
+---
 = Trouble installing builds on iOS
 
 == No build available to download

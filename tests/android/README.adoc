@@ -1,5 +1,9 @@
 ---
-search: false
+search: false 
+titletext: Overview of Android Mobile CI UI tests
+description: >
+  Buddybuild’s infrastructure for testing Android applications including support
+  for both virtual and physical devices.
 ---
 = Android
 

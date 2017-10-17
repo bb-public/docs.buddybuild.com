@@ -1,3 +1,9 @@
+--- 
+titletext: Issues with iOS XCode 8 and Core Data generated classes 
+description: >
+  Steps to resolve iOS compile errors for Core Data generated classes not found
+  by Xcode 8 during the build process.
+---
 = Core Data generated classes not found by Xcode 8 during the build
 
 If you're experiencing compile errors that look like the logs below, you

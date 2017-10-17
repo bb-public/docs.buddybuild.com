@@ -1,3 +1,9 @@
+--- 
+titletext: Disable a Build to prevent testers from installing
+description: >
+  Buddybuild supports disabling deployed builds, providing a quick way of
+  preventing testers from installing that specific build.
+---
 = Disable a Build
 
 Buddybuild allows you to disable deployed builds. Disabling a build

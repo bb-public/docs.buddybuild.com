@@ -1,3 +1,9 @@
+--- 
+titletext: Access logs and detail information for mobile builds
+description: >
+  Build details and logs answer: Which commit got built? Who pushed? How long
+  did a build take? Which scheme was built? Which provisioning profile was used?  
+---
 = Build Details and Logs
 
 Which commit got built? Who pushed? How long did the build take? Which

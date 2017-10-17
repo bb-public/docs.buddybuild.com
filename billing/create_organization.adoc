@@ -1,3 +1,9 @@
+--- 
+titletext: Adding a new organzation to your account
+description: >
+  Create organizations within buddybuild to organize apps and streamline build
+  configurations by assigning defaults to all new apps added.
+---
 = Create an organization
 
 A buddybuild organization ties together:
