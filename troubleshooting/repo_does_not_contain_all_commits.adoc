@@ -16,23 +16,23 @@ insufficient information available from the optimized repository:
 == Workarounds
 
 * If you need to download another another branch (for example
-  `master`), then execute these commands from a [buddybuild postclone
-  script](https://docs.buddybuild.com/builds/custom_build_steps.html#postclone).
+  `master`), then execute these commands from a
+  link:../builds/custom_build_steps.adoc#postclone[buddybuild postclone script].
 +
 [source,bash]
 ----
-   branchName="master"
-   git remote set-branches --add origin $branchName
-   git fetch origin $branchName:$branchName
+branchName="master"
+git remote set-branches --add origin $branchName
+git fetch origin $branchName:$branchName
 ----
 
 * If you need to download the entire Git history, then execute this
-  command from a [buddybuild postclone script]
-  (https://docs.buddybuild.com/builds/custom_build_steps.html#postclone).
+  command from a
+  link:../builds/custom_build_steps.adoc#postclone[buddybuild postclone script].
 +
 [source,bash]
 ----
-   git fetch --unshallow
+git fetch --unshallow
 ----
 
 [CAUTION]
