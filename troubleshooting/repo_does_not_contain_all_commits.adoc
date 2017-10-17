@@ -21,9 +21,9 @@ insufficient information available from the optimized repository:
 +
 [source,bash]
 ----
-branchName="master"
-git remote set-branches --add origin $branchName
-git fetch origin $branchName:$branchName
+branch="master"
+git remote set-branches --add origin $branch
+git fetch origin $branch:$branch
 ----
 
 * If you need to download the entire Git history, then execute this
