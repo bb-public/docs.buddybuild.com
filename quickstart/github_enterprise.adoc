@@ -7,16 +7,16 @@ webhooks for you, generate commit status, integrate with the GitHub
 issue tracker, enables the pull request flow, synchronizes access
 control for team management and more.
 
+
 Each member of your team that uses buddybuild should go through this
 guide to connect with GitHub Enterprise. This is encouraged so that you
 can take advantage of team management features.
 
-
-== Prerequisite
-
-First make sure you have created an account with buddybuild by signing
-up with link:github.adoc[GitHub], link:bitbucket.adoc[Bitbucket],
-link:gitlab.adoc[GitLab] or by link:ssh.adoc#step1[email].
+The full process to connect to a specific GitHub Enterprise instance
+only needs to be completed once. Afterwards, anyone connecting with the
+same GitHub Enterprise instance (by specifying the same `hostname:port`,
+in step #4) adopts the same connection configuration, and they can skip
+to <<authorize_step,the account authorization step>>.
 
 [CAUTION]
 ====
@@ -27,101 +27,186 @@ Using a self-signed certificate could make it possible for someone to
 spoof your repository and inject malicious code into your builds.
 ====
 
+== Connection steps
 
-== Connect your GitHub Enterprise account
+. If you have not already done so,
+  link:https://dashboard.buddybuild.com/signup[sign up for a buddybuild
+  account].
 
-To connect your GitHub Enterprise account follow this URL:
+. Visit this link:
+  https://dashboard.buddybuild.com/apps/wizard/build/select-source
++
+The **Where is your source code?** screen is displayed:
++
+image:img/screen-select_source.png["The Where is your source code?
+screen", 1280, 555, role="frame"]
 
-https://dashboard.buddybuild.com/apps/wizard/build/select-repo/github-enterprise
+. Click the **GitHub Enterprise** box. The **Connect with GitHub
+Enterprise** screen is displayed:
++
+image:img/screen-connect_with_ghe.png["The Connect with GitHub
+Enterprise screen", 1280, 310, role="frame"]
 
-You will see a dialog with two input fields. If you already know your
-GitHub Enterprise endpoint and have a personal access token, then enter
-those now. Otherwise continue reading the next sections to learn how to
-get the endpoint name and generate a personal access token.
+. Specify the hostname for your GitHub Enterprise instance. If your
+instance uses a non-default HTTPS port, include the port. For example
+`ghe.mycompany.com:1234`.
++
+[IMPORTANT]
+===========
+Your GitHub Enterprise instance needs to be publicly accessible. If
+necessary, adjust your firewall configuration to allow the buddybuild
+fleet of build servers to access your instance. See
+link:../repository/self_hosted.adoc[Self-hosted repositories] for
+details.
 
-image:img/Github-Enterprise-2.png["The Connect with GitHub Enterprise
-screen", 1500, 877]
+Also, if you use private DNS for your instance, use the IP address of
+the server instead of the hostname.
+===========
 
+. image:img/button-continue.png["The Continue button", 84, 42,
+  role="right"]
+  Click the **Continue** button. Two different screens could be
+  displayed here:
++
+--
+[loweralpha]
+. If this is the first time that this GitHub Enterprise instance is
+  being connected, the **Add buddybuild as an OAuth app** screen is
+  displayed:
++
+image:img/screen-add_bb_as_oauth.png["The Add buddybuild as an OAuth app
+screen", 1280, 548, role="frame"]
++
+If you see this screen, continue with <<callback_url_step,step #6>>.
 
-== Configure your GitHub Enterprise endpoint
+. If the GitHub Enterprise instance has been previously connected to
+buddybuild, the **already configured** screen is displayed:
++
+image:img/screen-ghe-already_configured.png["The Your GitHub Enterprise
+instance is already configured! screen", 1280, 548, role="frame"]
++
+If you see this screen, continue with <<authorize_step,step #26>>.
+--
 
-Your GitHub Enterprise endpoint is the hostname part of the URL when you
-visit your repositories in GitHub Enterprise. Copy the hostname part of
-your GitHub Enterprise server URL, which often looks something like
-`git.mycompany.com`. If your server uses a non-default HTTPS port, then
-please also copy the port part of the URL. For example,
-`git.mycompany.com:1234`.
+. [[callback_url_step]] image:img/button-copy_to_clipboard.png["The copy
+  to clipboard button", 39, 42, role="right"]
+  Click the copy to clipboard button beside the **Callback URL** field.
 
-=== Do you have a private DNS?
+. In another browser window or tab, log in to your GitHub Enterprise
+instance.
++
+image:img/screen-ghe-logged_in.png["GitHub Enterprise, just after
+login.", 1280, 467, role="frame"]
 
-Your GitHub Enterprise hostname must be publicly addressable on the
-internet. If you use private DNS for your GitHub Enterprise
-installation, then you can use the IP address of the server instead.
+. image:img/dropdown-ghe-avatar.png["The GitHub Enterprise avatar
+  dropdown menu", 180, 316, role="right"]
+  At the top-right of the screen, click your account avatar. The avatar
+  dropdown menu is displayed.
 
-=== Do you have a firewall configured?
+. Select **Settings**. The **Public profile** screen is displayed:
++
+image:img/screen-ghe-profile_settings.png["The GitHub Enterprise Public
+profile screen", 1280, 649, role="frame"]
 
-If your network infrastructure restricts inbound access over HTTPS from
-a set of IP addresses, then you may need to whitelist the IP addresses
-used by the buddybuild fleet. Please contact us for the latest CIDR
-range used by buddybuild.
+. image:img/panel-ghe-organization_settings.png["The Organization
+  settings panel in GitHub Enterprise", 221, 76, role="right"]
+  At the bottom left of the screen, click the name of the organization
+  that contains one or more repos that buddybuild should access. The
+  **Organization profile** screen for the selected organization is
+  displayed:
++
+image:img/screen-ghe-organization_profile.png["The Organization profile
+screen in GitHub Enterprise", 1280, 526, role="frame"]
 
-== Create a personal access token
+. image:img/button-ghe-oauth_applications.png["The OAuth applications
+  button in GitHub Enterprise", 221, 39, role="right"]
+  In the left navigation bar, click the **OAuth applications** button.
+  The **OAuth applications** screen is displayed:
++
+image:img/screen-ghe-oauth_applications.png["The OAuth applications
+screen in GitHub Enterprise", 1280, 1024, role="frame"]
 
-Navigate to your GitHub Enterprise instance and sign in with your
-individual account credentials. You do not need to sign in with the
-GitHub Enterprise admin account.
+. image:img/button-ghe-register_an_application.png["The Register an
+  application button in GitHub Enterprise", 183, 34, role="right"]
+  Click the **Register an application** button. The **Register a new
+  OAuth application** screen is displayed:
++
+image:img/screen-ghe-register_new_application.png["The Register a new
+OAuth application screen in GitHub Enterprise", 1280, 700,
+role="frame"]
 
-Choose **Settings** from the top right menu under your profile picture.
+. In the **Application name** field, specify a name for the application.
+  We recommend `buddybuild`.
 
-image:img/Github-Enterprise-4.png["The GitHub Enterprise account
-dropdown menu", 1500, 640]
+. Optionally, fill in the **Homepage URL** field. If you do so, we
+  recommend `https://www.buddybuild.com/`.
 
-You will see a list of menu items of the left side of the page. Click on
-**Personal access tokens**. Then create a new token by clicking on
-**Generate new token**.
+. Optionally, fill in the **Application description** field. If you do
+  so, we recommend `The CI/CD solution for mobile developers.`
 
-image:img/Github-Enterprise-5.png["The GitHub Enterprise Personal access
-tokens screen", 1500, 786]
+. Paste the **Callback URL** (that you copied from the **Add buddybuild
+  as an OAuth app** screen) into the **Authorization callback URL**
+  field.
 
-Enter *buddybuild* as the **Token description**.
+. image:img/button-ghe-register_application.png["The Register
+  application button on GitHub Enterprise", 164, 34, role="right"]
+  Click the **Register application** button. The **OAuth application
+  details** screen is displayed:
++
+image:img/screen-ghe-oauth_app_details.png["The details page for the
+OAuth app in GitHub Enterprise", 1280, 1024, role="frame"]
 
-image:img/Github-Enterprise-6.png["The GitHub Enterprise New personal
-access token screen", 1500, 500]
+. Copy the **Client ID** value.
 
-Carefully select the `repo`, `write:repo_hook` and `user` scopes. When
-you are done it should look like this.
+. Switch to the browser window or tab containing the buddybuild **Add
+buddybuild as an OAuth app** screen.
 
-image:img/Github-Enterprise-7.png["The GitHub Enterprise Select scopes
-fields", 1500, 1388]
+. Paste the **Client ID** value into the **Enter your Client ID** field.
 
-[NOTE]
-======
-**What are these scopes used for?**
+. Switch to the browser window or tab containing the GitHub Enterprise
+screen.
 
-The `repo` scope is required so that buddybuild can read from your
-repositories when building your app, post issues to the GitHub issue
-tracker and automatically install the buddybuild SDK if you choose to
-enable those features later.
+. Copy the **Client Secret** value.
 
-The `write:repo_hook` scope is required to automatically configure your
-webhook, so that buddybuild knows when to build your app.
+. Switch to the browser window or tab containing the buddybuild **Add
+buddybuild as an OAuth app** screen.
 
-The `user` scope if required so that buddybuild can access your GitHub
-username for team management features.
-======
+. Paste the **Client Secret** value into the **Enter your Client
+secret** field.
 
-Copy the personal access token, a 40-character hexadecimal string.
+. image:img/button-continue.png["The Continue button", 84, 42,
+  role="right"]
+  Click the **Continue** button. If the connection succeeds, a
+  success screen is displayed:
++
+image:img/screen-connect_to_ghe_success.png["The connection success
+screen", 1280, 531, role="frame"]
++
+At this point, buddybuild can connect to your GitHub Enterprise
+instance, but it is not yet authorized to perform any actions.
 
-image:img/Github-Enterprise-8.png["The GitHub Enterprise Personal access
-tokens screen, with personal access token displayed", 1500, 615]
+. [[authorize_step]] image:img/button-authorize_ghe.png["The Authorize
+  your GitHub Enterprise account button", 326, 42, role="right"]
+  Click the **Authorize your GitHub Enterprise account** button. The
+  GitHub Enterprise authorization screen is displayed:
++
+image:img/screen-ghe-authorize.png["The GitHub Enterprise authorization
+screen", 1280, 686, role="frame"]
 
-In buddybuild, paste the personal access token into the **Enter your
-Personal Access Token** field. Then click **Connect Your GitHub
-Enterprise Repositories**.
+. image:img/button-ghe-authorize_test.png["The Authorize <organization>
+  button", 224, 34, role="right"]
+  Click the **Authorize <organization name>** button (in this example,
+  **Authorize test**).
 
-image:img/Github-Enterprise-3.png["The buddybuild Connect with GitHub
-Enterprise screen, with personal access token posted", 1500, 877]
+That's it! You have now successfully connected buddybuild to your GitHub
+Enterprise instance.
 
-The dialog should close and display a list of your repositories. At this
-point you have successfully completed connecting buddybuild with GitHub
-Enterprise!
+[[the_end]]
+**The next step is to select a repository to build with buddybuild!**
+
+- For iOS apps, continue to the
+  link:ios/select_a_repo_and_app_to_build.adoc[iOS
+  Quickstart]
+
+- For Android apps, continue to the
+  link:android/select_an_app.adoc[Android Quickstart]
