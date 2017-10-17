@@ -1,0 +1,41 @@
+= Repository does not contain full list of commits
+
+For performance reasons, buddybuild downloads only the minimal set
+of branches and commits from the repository. Often this means that
+buddybuild downloads only the HEAD commit for a single branch.
+
+Sometimes development scripts depend on other branches or older
+commits. For example, versioning schemes based on the number of
+commits on a branch, or versioning schemes that depend on the
+output of these commands, will not be accurate since there may be
+insufficient information available from the optimized repository:
+
+* `git describe --tags`
+* `git rev-list --count`
+
+== Workarounds
+
+* If you need to download another another branch (for example
+  `master`), then execute these commands from a
+  link:../builds/custom_build_steps.adoc#postclone[buddybuild postclone script].
++
+[source,bash]
+----
+branch="master"
+git remote set-branches --add origin $branch
+git fetch origin $branch:$branch
+----
+
+* If you need to download the entire Git history, then execute this
+  command from a
+  link:../builds/custom_build_steps.adoc#postclone[buddybuild postclone script].
++
+[source,bash]
+----
+git fetch --unshallow
+----
+
+[CAUTION]
+====
+These workarounds may significantly degrade your build time.
+====
