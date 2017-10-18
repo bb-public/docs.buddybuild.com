@@ -1,8 +1,8 @@
 --- 
-titletext: Inspect Provisioning Profiles for a specfic iOS build 
+titletext: Inspect Provisioning Profiles for a specific iOS build 
 description: >
-  Inspect the exact provisioning profile a specific build was built withand see
-  which devices are enabled, and the entitlements of your App.
+  Inspect a specific build to see the exact provisioning profile it was built
+  with, which devices are enabled, and the entitlements of your App.
 ---
 = Provisioning Profile Inspector
 

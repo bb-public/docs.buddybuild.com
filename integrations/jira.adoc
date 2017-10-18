@@ -1,7 +1,7 @@
 --- 
 titletext: Auto create Jira tickets for crashes and tester feedback
 description: >
-  Buddybuilds user feedback system integrates with Jira. When users send
+  Buddybuild's user feedback system integrates with Jira. When users send
   feedback about your mobile app the feedback is automatically logged as a Jira
   ticket.
 ---

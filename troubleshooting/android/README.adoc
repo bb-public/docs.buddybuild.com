@@ -3,7 +3,7 @@ search: false
 titletext: Troubleshooting Android CI/CD issues
 description: >
   Tips and Tricks for solving Android build errors.  Including Google Play
-  Errors, Andorid / Docker Environment support, displaying build numbers and
+  Errors, Android / Docker Environment support, displaying build numbers and
   more
 ---
 = Android

@@ -1,7 +1,7 @@
 --- 
 titletext: Selecting a iOS App Repo to add to the CI Process
 description: >
-  Select the repository and iOS app that you want to add to the continous
+  Select the repository and iOS app that you want to add to the continuous
   integration process.
 ---
 = Selecting an App

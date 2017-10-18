@@ -1,5 +1,5 @@
 --- 
-titletext: Invite testers to reviece your iOS mobile apps builds 
+titletext: Invite testers to receive your iOS mobile apps builds 
 description: >
   Buddybuild manages Code Signing and Provisioning Profiles complexities to
   create signed device builds, allowing you to send apps to testers easily.

@@ -1,7 +1,7 @@
 --- 
 titletext: Supported Tools and Platforms for Android and Docker
 description: >
-  Android / Docker enivornement tools and platforms supported by buddybuild
+  Android / Docker environment tools and platforms supported by buddybuild
 ---
 = Tools and Platform versions for Android / Docker environment
 

@@ -1,5 +1,5 @@
 --- 
-titletext: How to test iOS and Andorid apps
+titletext: How to test iOS and Android apps
 description: >
   Instructions for iOS and Android mobile app testers on how to install test
   builds that are deployed via buddybuild and how to submit user feedback.

@@ -1,7 +1,7 @@
 --- 
 titletext: How to deploy Android Apps directly to Google Play
 description: >
-  Buddybuild supports both automatic and manual deployments of Andorid Apps to
+  Buddybuild supports both automatic and manual deployments of Android Apps to
   the Google Play store. 
 ---
 = Google Play Overview

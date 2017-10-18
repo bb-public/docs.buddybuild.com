@@ -2,7 +2,7 @@
 titletext: How to add Bitbucket Server Webhook to mobile CI/CD
 description: >
   Use Bitbucket Server Webhooks to notify buddybuild of repo code changes so we
-  can kick off new builds, and update bulid statuses instantly.
+  can kick off new builds, and update build statuses instantly.
 ---
 = Adding a Bitbucket Server Webhook
 

@@ -1,7 +1,7 @@
 --- 
 titletext: Mobile SDK to collect crash reports, feedback, and usage
 description: >
-  The buddbybuild SDK includes a graphical user feedback reporter, a crash
+  The buddybuild SDK includes a graphical user feedback reporter, a crash
   reporting and analysis tool, automatic app updating and usage tracking.
 ---
 = buddybuild SDK

@@ -1,5 +1,5 @@
 --- 
-titletext: How to add a Gitolite repsoitory for mobile CI/CD
+titletext: How to add a Gitolite repository for mobile CI/CD
 description: >
   Add a Gitolite hosted repository to buddybuild using SSH.
 ---

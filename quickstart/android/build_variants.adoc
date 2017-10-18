@@ -1,7 +1,7 @@
 --- 
 titletext: How to select the Android Build Variant to build
 description: >
-  When automating your Androidbuild process, buddybuild allows you to configure
+  When automating your Android build process, buddybuild allows you to configure
   which variants of your application to build and which configurations to apply.
 ---
 = Build Variants

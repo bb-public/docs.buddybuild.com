@@ -1,5 +1,5 @@
 --- 
-titletext: Auto-cancel Builds when new commits are recieved 
+titletext: Auto-cancel Builds when new commits are received 
 description: >
   Prevent builds from stacking up when multiple commits are made in on the same
   branch by auto cancelling pending builds when a new build request is received.
