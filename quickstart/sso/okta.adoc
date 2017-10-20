@@ -5,6 +5,9 @@ visit link:https://www.okta.com/[www.okta.com].
 
 == Connect with Okta
 
+Use the following procedure to connect buddybuild with Okta for SSO.
+After the first step, the remaining steps take 5-10 minutes to complete.
+
 . Contact sales@buddybuild.com. One of our sales administrators needs to
   prepare your buddybuild organization's configuration for SSO. One
   detail you need to provide is the email domain(s) that your users
@@ -20,8 +23,8 @@ visit link:https://www.okta.com/[www.okta.com].
 
 . Select **Manage Org**. The **Manage Organization** screen appears:
 +
-image:../../_img/screen-manage_org.png["The Manage Organization", 1280,
-568, role="frame"]
+image:../../_img/screen-manage_org.png["The Manage Organization screen",
+1280, 589, role="frame"]
 
 . image:../../_img/dropdown-organizations.png["The current
 organization", 206, 40, role="right"]
@@ -48,7 +51,7 @@ the **Upgrade today to configure SSO!** screen is displayed:
 image:img/screen-upgrade_to_get_sso.png["The Upgrade today to configure
 SSO! screen", 1280, 455]
 
-If you see this screen, click the **Connect** button to upgrade your
+If you see this screen, click the **Contact us** button to upgrade your
 organization's account to use SSO!
 ===========
 
@@ -66,9 +69,9 @@ communication with the buddybuild sales engineer.
 . In another browser window or tab, log in to Okta. Typically, Okta
 provides a log in URL that looks like:
 +
-[source,subs="quotes"]
+[source,text]
 ----
-https://_mycompany.okta.com/
+https://mycompany.okta.com/
 ----
 +
 Where _mycompany_ is the identifier for your company/enterprise.
@@ -90,7 +93,7 @@ image:img/screen-okta-classic_ui.png["The Classic UI Dashboard in Okta",
 1280, 617, role="frame"]
 
 . image:img/button-okta-applications.png["The Applications button in
-  Okta", 200, 100, role="frame"]
+  Okta", 87, 26, role="right"]
   Near the top-center of the screen, click the **Applications** buttons.
   The **Applications** screen is displayed:
 +
@@ -98,7 +101,7 @@ image:img/screen-okta-applications.png["The Applications screen in
 Okta", 1280, 741, role="frame"]
 
 . image:img/button-okta-add_application.png["The Add Application
-  button in Okta", 87, 26, role="right"]
+  button in Okta", 135, 26, role="right"]
   Click the **Add Application** button. The **Add Application** screen
   is displayed:
 +
@@ -113,9 +116,14 @@ Okta", 1280, 544, role="frame"]
 image:img/screen-okta-create_application-dialog.png["The Create a New
 Application Integration dialog in Okta", 1280, 704, role="frame"]
 
+. Set the appropriate application values:
++
+--
+[lowerroman]
 . Set the **Platform** dropdown menu to **Web**.
 
 . Select **SAML 2.0** for the **Sign on method** field.
+--
 
 . image:img/button-okta-create.png["The Create button in Okta", 100,
   31, role="right"]
@@ -125,6 +133,10 @@ Application Integration dialog in Okta", 1280, 704, role="frame"]
 image:img/screen-okta-configure_saml_integration.png["The Create SAML
 Integration screen in Okta", 1280, 720, role="frame"]
 
+. Specify the required SSO configuration:
++
+--
+[lowerroman]
 . Enter **buddybuild** into the **App name** field.
 
 . Optionally provide an **App logo**. This is used to help identify the
@@ -133,6 +145,7 @@ Integration screen in Okta", 1280, 720, role="frame"]
 
 . Optionally check the **App visibility** checkboxes. These can be
   changed later.
+--
 
 . image:img/button-okta-next.png["The Next button in Okta", 100, 31,
   role="right"]
@@ -142,6 +155,10 @@ Integration screen in Okta", 1280, 720, role="frame"]
 image:img/screen-okta-configure_saml_integration-settings.png["The
 Configure SAML screen in Okta", 1280, 687, role="frame"]
 
+. Copy the SSO values from buddybuild to Okta:
++
+--
+[lowerroman]
 . Switch to the original browser window or tab, displaying the **Connect
   to your SSO provider** screen in buddybuild.
 
@@ -169,8 +186,9 @@ Configure SAML screen in Okta", 1280, 687, role="frame"]
 
 . Paste the **Audience URI (SP Entity ID)** value into the **Audience
   URI (SP Entity ID)** field.
+--
 
-. image:img/button-okta-next.png["The Next button in Okta", 200, 100,
+. image:img/button-okta-next.png["The Next button in Okta", 100, 31,
   role="right"]
   Scroll to the bottom of the screen and click the **Next** button. The
   **Create SAML Integration** screen updates to request feedback:
@@ -202,6 +220,10 @@ image:img/screen-okta-saml_configuration.png["The How to Configure SAML
 2.0 for buddybuild Application screen in Okta", 1280, 915,
 role="frame"]
 
+. Copy the SSO values from Okta to buddybuild:
++
+--
+[lowerroman]
 . Copy the URL from the **Identity Provider Single Sign-On URL** field.
 
 . Switch to the original browser window or tab, displaying the **Connect
@@ -231,6 +253,7 @@ role="frame"]
 
 . Paste the **X.509 Certificate** value into the **Enter your X.509
   certificate** field.
+--
 +
 At this point, all of the buddybuild SSO fields should be filled in:
 +

@@ -18,8 +18,8 @@ To disconnect the SSO connection:
 
 . Select **Manage Org**. The **Manage Organization** screen appears:
 +
-image:../../_img/screen-manage_org.png["The Manage Organization", 1280,
-568, role="frame"]
+image:../../_img/screen-manage_org.png["The Manage Organization screen",
+1280, 589, role="frame"]
 
 . image:../../_img/dropdown-organizations.png["The current
   organization", 206, 40, role="right"]
