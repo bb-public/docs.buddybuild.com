@@ -36,7 +36,7 @@ IDP-specific instructions.
 To connect buddybuild with your identity provider, the following steps
 need to be completed:
 
-. Contact sales@buddybuild.com. One of our sales administrators needs to
+. Contact sales@buddybuild.com. The buddybuild account team needs to
   prepare your buddybuild organization's configuration for SSO. One
   detail you need to provide is the email domain(s) that your users
   might use to authenticate.
@@ -75,8 +75,8 @@ operational values that need to be copied to the SP (i.e. buddybuild):
 Once you complete this process, your users can now log in to buddybuild
 using your IDP. Also, your users can login using their corporate email
 address, provided it matches the email domain that you agreed upon with
-the buddybuild sales administrator. Any existing logins that your users
-may have been using to access buddybuild continue to work.
+the buddybuild account team. Any existing logins that your users may
+have been using to access buddybuild continue to work.
 
 See link:require.adoc[Require single sign-on (SSO) logins] for the
 procedure that requires your users to authenticate using SSO.

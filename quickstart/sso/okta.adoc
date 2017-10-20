@@ -8,7 +8,7 @@ visit link:https://www.okta.com/[www.okta.com].
 Use the following procedure to connect buddybuild with Okta for SSO.
 After the first step, the remaining steps take 5-10 minutes to complete.
 
-. Contact sales@buddybuild.com. One of our sales administrators needs to
+. Contact sales@buddybuild.com. The buddybuild account team needs to
   prepare your buddybuild organization's configuration for SSO. One
   detail you need to provide is the email domain(s) that your users
   might use to authenticate.
@@ -64,7 +64,7 @@ image:img/screen-connect_to_sso_provider.png["The Connect to your SSO
 provider screen", 1280, 734, role="frame"]
 +
 You should see the enterprise email domains that you specified when
-communication with the buddybuild sales engineer.
+communication with the buddybuild account team.
 
 . In another browser window or tab, log in to Okta. Typically, Okta
 provides a log in URL that looks like:
