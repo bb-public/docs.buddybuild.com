@@ -11,6 +11,10 @@
 .. link:quickstart/github_enterprise.adoc[Connect with GitHub Enterprise]
 .. link:quickstart/gitlab_private.adoc[Connect your privately-hosted
    GitLab instance]
+.. link:quickstart/sso/README.adoc[Single sign on (SSO)]
+... link:quickstart/sso/require.adoc[Require SSO]
+... link:quickstart/sso/disconnect.adoc[Disconnect SSO]
+... link:quickstart/sso/okta.adoc[Okta]
 
 .. link:quickstart/ios/README.adoc[iOS]
 ... link:quickstart/ios/select_a_repo_and_app_to_build.adoc[Selecting an App]
