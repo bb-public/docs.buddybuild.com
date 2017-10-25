@@ -1,7 +1,7 @@
---- 
+---
 titletext: Common iOS build errors
 description: >
-  Tips and Tricks for troubleshooting the most common iOS application build
+  Tips and tricks for troubleshooting the most common iOS application build
   errors.
 ---
 = Common iOS build errors

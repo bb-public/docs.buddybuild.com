@@ -1,7 +1,7 @@
---- 
-titletext: Installing Apple’s Updated Intermediate WWDR Certificated
+---
+titletext: Install Apple's updated, intermediate WWDR certificate
 description: >
-  On February 14th, 2016, the original Apple’s Intermediate WWDR certificate
+  On February 14th, 2016, the original Apple intermediate WWDR certificate
   expired. Make sure you have the latest version of the intermediate certificate.
 ---
 = Installing Apple's Updated Intermediate WWDR Certificate

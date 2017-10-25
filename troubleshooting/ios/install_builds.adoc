@@ -1,8 +1,7 @@
---- 
-titletext: Troubleshooting iOS Mobile App build installations
+---
+titletext: Troubleshoot common issues for installing builds on iOS
 description: >
-  Troubleshoot common iOS build installation issues such as no build available
-  to download, build will not install on device, unable to download app, and more
+  This section covers the most common issue encountered when installing builds on iOS devices.
 ---
 = Trouble installing builds on iOS
 
