@@ -1,8 +1,8 @@
---- 
+---
 titletext: Using Carthage with buddybuild to manage dependencies
 description: >
-  Buddybuild supports using Carthage for managing dependencies.  We recommend you
-  check in Cartfile and Cartfile.resolved files into your source control.
+  Buddybuild supports using Carthage for managing dependencies.  We recommend that
+  you check in the Cartfile and Cartfile.resolved files into your source control.
 ---
 = Carthage
 

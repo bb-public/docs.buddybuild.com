@@ -1,7 +1,7 @@
---- 
-titletext: Accessibility of mobile app Submodules during build
+---
+titletext: Buddybuild automatically clones all submodules defined in your mobile app
 description: >
-  Add the .gitmodules file to our repo and buddybuild will use the Git
+  Add the .gitmodules file to our repo and buddybuild uses the Git
   credentials associated with your account to clone all of the submodules
   automatically.
 ---

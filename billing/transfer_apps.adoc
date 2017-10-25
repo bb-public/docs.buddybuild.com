@@ -1,8 +1,8 @@
---- 
+---
 titletext: Transfer buddybuild apps between organizations
 description: >
-  You can transfer an app from one organization to another. The app will inherit
-  the feature set available in the new organization.
+  You can transfer an app from one organization to another. The app
+  inherits the feature set available in the new organization.
 ---
 = Transfer apps between organizations
 

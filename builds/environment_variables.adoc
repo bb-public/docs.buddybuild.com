@@ -1,8 +1,8 @@
---- 
-titletext: Using Environment Variables to store API Keys and Secrets
+---
+titletext: Using environment variables to store API Keys and secrets
 description: >
-  Environment variables allow API keys and other secrets needed by apps at run
-  time or during a build to be stored without adding them to your repo.
+  Use environment variables to expose custom settings, keys, or other secrets
+  to your app during the build, without committing them to your repository.
 ---
 = Environment Variables
 

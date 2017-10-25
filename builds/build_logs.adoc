@@ -1,8 +1,8 @@
---- 
-titletext: Access logs and detail information for mobile builds
+---
+titletext: Logs and details for each build of your mobile app
 description: >
-  Build details and logs answer: Which commit got built? Who pushed? How long
-  did a build take? Which scheme was built? Which provisioning profile was used?  
+  The build details and logs can help answer the questions: Which commit got built? How
+  long did a build take? Which provisioning profile was used?
 ---
 = Build Details and Logs
 

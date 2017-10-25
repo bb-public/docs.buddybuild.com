@@ -1,8 +1,8 @@
---- 
-titletext: How to add custom scripts to mobile build process
+---
+titletext: How to add custom scripts to the mobile build process
 description: >
-  Buddybuild automatically analyzes your repository and configures the best
-  build settings. Custom scripts can be added and executed during the build.
+  Buddybuild analyzes your repository and configures the build settings.
+  You can customize your mobile build at various stages with custom build scripts.
 ---
 = Custom Build Steps
 

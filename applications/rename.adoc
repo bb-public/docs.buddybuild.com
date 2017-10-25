@@ -1,15 +1,15 @@
---- 
+---
 titletext: Change the display name of your application
 description: >
   You change the name of your app in buddybuild to help distinguish between
-  different versions of your app (alpha, beta, staging, etc.) in pre-production
+  different versions of your app (alpha, beta, staging, etc.).
 ---
 = Rename an app
 
 By default buddybuild uses the same app name set in your project as the
 app display name. However, you may want to change the name of your app
 in buddybuild to help distinguish between different versions of your app
-(alpha, beta, staging, etc.) in pre-production.
+(alpha, beta, staging, etc.).
 
 [NOTE]
 ======

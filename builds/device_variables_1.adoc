@@ -1,8 +1,8 @@
---- 
-titletext: How to create device variable to secure password and keys
+---
+titletext: How to create device variables to secure passwords and keys
 description: >
-  The buddybuild SDK allows you to set device variables to store API keys and
-  other secrets that are needed by your app during the build process and runtime.
+  Define device variables, that can be accessed during the build or at run-time,
+  to store keys, access tokens, or other secrets required by your mobile app.
 ---
 = Device Variables
 

@@ -1,7 +1,7 @@
---- 
+---
 titletext: How to select and change your buddybuild billing plan
 description: >
-  Overview of configuring your buddybuild account's features, billing and payment
+  Overview of configuring your buddybuild account's features, billing, and payment
   options.
 ---
 = Billing and Plans
