@@ -1,6 +1,6 @@
 ---
 search: false
-titletext: iOS Continuous Integration, Delivery, and User Feedback
+titletext: IOS continuous integration, deployment, and user feedback
 description: >
   Buddybuild's platform ties together iOS continuous integration,
   continuous delivery, and feedback into a single platform.

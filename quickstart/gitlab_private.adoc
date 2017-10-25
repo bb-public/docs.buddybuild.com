@@ -1,9 +1,7 @@
---- 
-titletext: Connect your privately-hosted GitLab instance to mobile CI 
+---
+titletext: Connect your privately-hosted GitLab instance to buddybuild
 description: >
-  Guide to connect privately hosted GitLab instance. Buddybuild supports all
-  GitLab products including GitLab Hosted, Community Edition and Enterprise
-  Edition
+  When you connect your privately hosted GitLab instance, buddybuild builds your app every time a commit is pushed.
 ---
 = Connect your privately-hosted GitLab instance
 

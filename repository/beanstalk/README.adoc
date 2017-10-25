@@ -1,8 +1,8 @@
---- 
-titletext: Connecting a Beanstalk repository via SSH for Mobile CI
+---
+titletext: Connect your Beanstalk repository via SSH
 description: >
-  Connect your Beanstalk repo to buddybuild via SSH. Buddybuild will auto create
-  a SSH key to add to your source control and use it to clone your repo.
+  Connect your Beanstalk repository to buddybuild via SSH. Buddybuild auto-creates
+  an SSH key that, allows buddybuild to build your app for you.
 ---
 = Beanstalk repositories
 

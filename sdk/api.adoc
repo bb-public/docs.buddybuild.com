@@ -1,7 +1,7 @@
---- 
-titletext: SDK API used to trigger feedback or add custom metadata
+---
+titletext: Overview of the buddybuild SDK's API capabilities
 description: >
-  Buddybuild's SDK API can be used to consume API Keys and other secrets, set
+  The SDK's API can be used to consume API keys and other secrets, set
   custom feedback triggers, and add custom metadata to feedback and crash
   reports.
 ---

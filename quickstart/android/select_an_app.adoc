@@ -1,8 +1,8 @@
---- 
-titletext: Selecting an Android App Repo to add to the CI Process
+---
+titletext: Select a repository containing an Android app to build
 description: >
-  Once your repo has been imported, you can select which android app code base
-  you want to add to the CI/CD process.
+  When you select a repository containing an Android app, buddybuild
+  automatically analyzes, configures, and starts building your app.
 ---
 = Selecting an App
 

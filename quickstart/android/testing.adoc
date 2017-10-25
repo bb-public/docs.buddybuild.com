@@ -1,8 +1,8 @@
---- 
-titletext: How to add unit tests to Android Continuous Integration
+---
+titletext: How to configure unit tests for your Android apps
 description: >
-  Buddybuild has out of the box support for Android unit tests.  Unit Tests will
-  be automatically run and you can view the results in buddybuild.
+  You can configure whether JUnit unit tests are executed for
+  every build. Tests results are displayed in the buddybuild dashboard.
 ---
 = Testing
 

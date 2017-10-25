@@ -1,7 +1,7 @@
---- 
-titletext: Supported Tools and Platforms for Android and Docker
+---
+titletext: Supported tools and platforms for Android and Docker
 description: >
-  Android / Docker environment tools and platforms supported by buddybuild
+  Android / Docker environment tools and platform versions supported by buddybuild.
 ---
 = Tools and Platform versions for Android / Docker environment
 
@@ -43,9 +43,9 @@ Debian GNU/Linux 8 (jessie)
 | android-10
 android-11
 android-12
-android-13	
+android-13
 android-14
-android-15  
+android-15
 android-16
 android-17
 android-18
@@ -59,11 +59,11 @@ android-24
 | system-images
 | android-22/default/armeabi-v7a
 android-22/default/x86_64
-android-22/google_apis/armeabi-v7a  
+android-22/google_apis/armeabi-v7a
 android-22/google_apis/x86_64
 android-23/default/armeabi-v7a
 android-23/default/x86_64
-android-23/google_apis/armeabi-v7a  
+android-23/google_apis/armeabi-v7a
 android-23/google_apis/x86_64
 
 | extras/m2repository

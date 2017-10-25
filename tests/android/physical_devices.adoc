@@ -1,8 +1,8 @@
---- 
-titletext: Run Android App UI Tests on Physical Devices
+---
+titletext: Run android app UI tests on physical devices
 description: >
-  Ensure Android apps runs on the exact devices owned by your users. Select the
-  physical devices to run UI tests against, and buddybuild automates the rest.
+  UI testing on physical devices ensures that your app runs correctly on the exact devices owned
+  by your users.
 ---
 = UI Tests on Physical Devices
 

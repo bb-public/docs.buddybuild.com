@@ -1,9 +1,8 @@
---- 
-titletext: Run Android App UI Tests on Virtual Devices
+---
+titletext: Run android app UI tests on virtual devices
 description: >
-  Buddybuild support most testing frameworks that  can run on Unix-like
-  operating systems, can be installed during the build or is included in your
-  repo.
+  UI testing on virtual devices ensure that your apps run correctly,
+  without the additional cost of using physical devices.
 ---
 = UI Tests on Virtual Devices
 

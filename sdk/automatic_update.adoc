@@ -1,8 +1,8 @@
---- 
-titletext: Auto update users with in-app prompts for new build
+---
+titletext: Auto-update users with in-app prompts for new builds
 description: >
-  By using the buddybuild SDK, testers will  be notified via an in-app prompt to
-  install a new build once it’s been deployed.
+  The buddybuild SDK's automatic update feature notifies testers with an in-app
+  prompt whenever a new build is available.
 ---
 = Automatic Update
 

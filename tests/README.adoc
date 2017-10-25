@@ -1,8 +1,8 @@
---- 
-titletext: Mobile app test features and frameworks supported
+---
+titletext: Buddybuild's test infrastructure and supported frameworks
 description: >
-  Buddybuild test infrastructure for iOS and Android apps provides code snippets
-  for failed tests, Screenshots for UI tests, detailed call stacks and more.
+  Buddybuild's test infrastructure for iOS and Android apps provides code snippets
+  for failed tests, screenshots for UI tests, detailed call stacks, and more.
 ---
 = Tests
 

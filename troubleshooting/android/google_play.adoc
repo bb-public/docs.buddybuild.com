@@ -1,8 +1,8 @@
---- 
-titletext: How to troubleshoot Google Play Errors
+---
+titletext: How to troubleshoot Google Play errors
 description: >
-  Troubleshooting common Google Play store errors such as track is listed as
-  being "Superseded" by a later track, and uploading a debuggable APK.
+  This section covers how to troubleshoot the most common Google Play store errors
+  such as track is listed as being "Superseded" by a later track.
 ---
 = Google Play Errors
 

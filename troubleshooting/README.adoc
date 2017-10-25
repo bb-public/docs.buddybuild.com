@@ -1,8 +1,8 @@
---- 
+---
 titletext: Troubleshooting iOS and Android CI/CD issues
 description: >
   Troubleshooting common continuous integration and deployment issues for iOS
-  and Android. Including platform specific and development framework issues.
+  and Android. This section includes platform-specific and development-framework issues.
 ---
 = Troubleshooting
 

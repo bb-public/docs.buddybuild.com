@@ -1,8 +1,9 @@
---- 
-titletext: Selecting a iOS App Repo to add to the CI Process
+---
+titletext: Select a repo containing an iOS app to build
 description: >
-  Select the repository and iOS app that you want to add to the continuous
-  integration process.
+  When you select a repository containing an iOS app, buddybuild
+  automatically analyzes, configures, and starts building your app.
+
 ---
 = Selecting an App
 

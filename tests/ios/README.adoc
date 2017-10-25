@@ -1,9 +1,9 @@
 ---
 search: false
-titletext: Overview of iOS Continuous Integration UI and Unit tests
+titletext: Overview of iOS UI and unit tests for continuous integration
 description: >
   Buddybuild has full support for iOS unit tests, provides reports on code
-  coverage and also provides video recording and playback for user testing.
+  coverage, and also provides video recording and playback for user testing.
 ---
 = iOS
 

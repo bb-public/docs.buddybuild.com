@@ -1,8 +1,8 @@
---- 
-titletext: Adding a Beanstalk Webhook to your mobile CI process
+---
+titletext: Add a Beanstalk Webhook to automate your mobile CI process
 description: >
-  Use Beanstalk Webhooks to notify buddybuild of repo code changes so we can
-  kick off new builds, update build statuses and notify testers of latest builds.
+  Use Beanstalk Webhooks to notify buddybuild of repository code changes so that we can
+  kick off new builds, update build statuses, and notify testers.
 ---
 = Adding a Beanstalk Webhook
 

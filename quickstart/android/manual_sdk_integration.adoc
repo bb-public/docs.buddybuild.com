@@ -1,9 +1,8 @@
---- 
-titletext: How to Manually Install the buddybuild Android SDK
+---
+titletext: How to manually install the buddybuild Android SDK
 description: >
-  We highly recommend using the automatic buddybuild Android SDK integration
-  from the buddybuild. However, you can install the buddybuild Android SDK
-  manually
+  We highly recommend using the automatic integration of the buddybuild SDK for Android.
+  However, you can also install the SDK manually.
 ---
 = SDK Manual Integration
 

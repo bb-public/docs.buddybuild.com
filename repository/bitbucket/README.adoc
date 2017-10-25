@@ -1,8 +1,8 @@
---- 
-titletext: How to add a Bitbucket repo to your mobile CI/CD process
+---
+titletext: Connect your Bitbucket repository
 description: >
-  If your repository lives in Bitbucket, you can connect your repository
-  automatically by signing in with Bitbucket, or you can also connect via SSH.
+  When you connect your Bitbucket repository, buddybuild builds your mobile
+  app every time a commit is pushed.
 ---
 = Adding a Bitbucket Repository
 

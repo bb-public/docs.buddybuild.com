@@ -1,8 +1,8 @@
---- 
-titletext: How to connection mobile CI & CD with Bitbucket Server 
+---
+titletext: Connect your Bitbucket Server to buddybuild
 description: >
-  Register with your Bitbucket Server account to associate your iOS and Android
-  mobile app repositories.  Auto build apps every time a commit is pushed.
+  When you connect your Bitbucket account, buddybuild builds your iOS and
+  Android mobile app every time a commit is pushed.
 ---
 = Connect with Bitbucket Server
 
