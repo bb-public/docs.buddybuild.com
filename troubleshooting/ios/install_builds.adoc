@@ -1,72 +1,136 @@
 = Trouble installing builds on iOS
 
+Many different kinds of problems can interfere or prevent installing an
+iOS application onto a device. This page describes a process for
+determining where the problem likely lies, and provides solutions for
+the most common issues.
+
+. Try to install a build. Installation failure could be due to one of
+  these issues:
++
+--
+- <<no_build_available>>
+- <<will_not_install>>
+- <<unable_to_download>>
+- <<nothing_happens>>
+- <<profile_failed>>
+--
+
+. link:getting_device_logs_from_xcode.adoc[Collect the device logs]
+
+. Inspect the logs for errors. If any are found, they should help you
+  determine what the problem is, and hopefully help you figure out a
+  solution.
+
+
+[[no_build_available]]
 == No build available to download
 
-If you have not yet uploaded a
+Installing an iOS app on a particular device requires that the app is
+properly signed. If you have not yet uploaded a
 link:../../deployments/ios/code_signing/README.adoc[code signing
-certificate], buddybuild cannot properly sign your application. This
-means that a successful build cannot be installed on a device, and so
-buddybuild does not make the build artifact available for download.
-This situation does not prevent your tests from running.
+certificate], buddybuild cannot properly sign your application.
+
+This means that a successful build cannot be installed on a device, and
+so buddybuild **does not make the build artifact available for
+download**.
+
+This situation does not prevent your tests from running; instead of
+performing a _device_ build, buddybuild performs a _simulator_ build
+that your tests can use.
 
 
+[[will_not_install]]
 == Build will not install on a device
 
 Almost every case of an app not installing on a device is caused by an
 existing version of the app already installed conflicting with
 buddybuild's attempt to install it.
 
-In particular, buddybuild cannot install on top of an App Store version.
-Please delete any App Store versions before attempting to install an app
-through buddybuild.
+In particular, buddybuild **cannot install on top of an App Store
+version**. Please delete any App Store versions before attempting to
+install an app through buddybuild.
 
 
+[[unable_to_download]]
 == "Unable to Download App" message
 
 This error is quite generic and could be caused by the following
 reasons, but not limited to:
 
-- UDID is not included in the provisioning profile
+- The device's UDID is not included in the provisioning profile.
 
-- The build was incorrectly signed or has broken entitlements
+- The build was incorrectly signed or has broken entitlements.
 
-- Device or iOS version is incompatible with the build
+- The device or iOS version is incompatible with the build.
 
-- Device storage is full
+- The device's storage is full.
 
 - You've reached your device provisioning limit in your Apple Developer
-  Account (See your  "Remaining devices" in your **App Settings >
-  Integrations > Apple Developer Portal**)
+  Account (See your "Remaining devices" in your **App Settings >
+  Integrations > Apple Developer Portal**, in the
+  link:https://dashboard.buddybuild.com/[buddybuild dashboard]).
 
 Sometimes a "Rebuild without cache" might get you going, but if you are
-still experiencing this, we recommend you
+still experiencing this, we recommend that you
 link:getting_device_logs_from_xcode.adoc[get the device logs] and reach
 out to us on Intercom.
 
 
-== Private Browsing
+[[private_browsing]]
+== Private browsing
 
-This issue is caused when opening the link in **Private** mode in
-Safari. Here's how to turn off Private browsing:
+Installation of an app build from buddybuild does not work when Private
+browsing mode is enabled in Safari.
+
+Private browsing mode protects your privacy by not collecting or storing
+certain kinds of personal information, and blocks certain kinds of
+tracking. Buddybuild's app installation process requires some of the
+tracking that Private browsing mode blocks.
+
+Here's how to turn off Private browsing:
 
 . Tap the tabs button (the right-most button in the bottom toolbar below)
 +
-image:img/IMG_3643.png["Buddybuild's Private Browsing error page, as
-displayed on an iPhone", 1242, 2151]
+image:img/screen-ios-safari-private_browsing.png["Buddybuild's Private Browsing
+error page, as displayed on an iPhone", 621, 1076, role="half"]
 
 . Tap on **Private** to deselect it.
 +
-image:img/IMG_3644.png["The iOS Safari Tabs display", 1242, 2208]
+image:img/screen-ios-safari-private_browsing-toggle.png["The iOS Safari Tabs
+display", 621, 1104, role="half"]
 
 . Quit Safari, then click on the install link again.
 
 If you still see this error message, make sure cookies are not disabled
-on your device.
+on your device:
 
-image:img/Allow-Cookies.png["Two iPhone screenshots showing how to
-navigate to Safari's cookie settings", 1032, 903]
+[cols="1a,1a,1a", options="header"]
+|===
+2+^| For iOS 9 and 10
+^| For iOS 11
+
+| image:img/screen-ios09-settings-safari.png["The Safari settings screen
+  in iOS 9", 621, 1104]
+| image:img/screen-ios09-settings-safari-cookies.png["The Safari cookies
+  settings screen in iOS 9", 621, 1104]
+| image:img/screen-ios11-settings-safari.png["The Safari settings screen
+in iOS 11", 621, 1104]
+
+2+|
+. Open the **Settings** app.
+. Tap **Safari**.
+. Tap **Block Cookies**.
+. Make sure that **Always Block** is _not_ set.
+
+|
+. Open the **Settings** app.
+. Tap **Safari**.
+. Make sure that **Block All Cookies** is _not_ set.
+|===
 
 
+[[nothing_happens]]
 == Nothing happens when trying to register the device or to install the app
 
 This issue is caused when opening the link in a
@@ -78,21 +142,30 @@ install from Safari:
 
 image:img/SFSafariViewController.png["Buddybuild's Register Your Device
 screen as displayed on an iPhone, with the 'Install Profile' popup
-displayed", 1242, 2144]
+displayed", 621, 1072, role="half"]
 
 
-=== Profile installation Failed: Couldn't communicate with a helper application
+[[profile_failed]]
+== Profile installation Failed: Couldn't communicate with a helper application
 
 When you get this error while trying to install the buddybuild profile,
 try the following:
 
-- Open the Settings app
+. Open the Settings app.
 
-- Go to **General** > **Profiles** on the device
+. Tap **General**.
 
-- Remove the buddybuild config profile
+. Tap **Profile**.
 
-- Visit https://dashboard.buddybuild.com/reset
+. Tap **buddybuild.com Config**.
 
-- Try to reinstall the build, buddybuild should ask to install the
+. Tap **Remove Profile**.
+
+. Enter your passcode.
+
+. Tap **Remove**.
+
+. Visit https://dashboard.buddybuild.com/reset
+
+. Try to reinstall the build, buddybuild should ask you to install the
   profile again.
