@@ -1,0 +1,75 @@
+= Ruby dependencies
+
+Many tools that conduct or assist various kinds of builds are written in
+link:https://www.ruby-lang.org/[Ruby], a popular open source scripting
+language that balances functional and imperative programming.
+
+As Ruby is evolving fairly rapidly, many Ruby-based tools function best
+(or at all) only with specific versions of Ruby. Buddybuild provides
+Ruby and a number of common Ruby tools, such as Gems and Bundler, but
+these may not be at the versions that are suitable for your project.
+This section describes how to use a specific version of Ruby, and how to
+specify Ruby dependencies.
+
+
+== Ruby version
+
+To specify the version of Ruby to use for your project, use the `chruby`
+command. Using this command requires a
+link:../custom_build_steps.adoc[custom build step]. Which step you use
+depends on when, during the build, that your Ruby-based tools need to
+run. If you're unsure, include the `chruby` command in the
+`buddybuild_postclone.sh` script, which executes immediately after
+cloning your project's source code to the buddybuild build machine:
+
+```bash
+#!/usr/bin/env bash
+
+chruby 2.3.1
+```
+
+This example switches the current `ruby` to version 2.3.1.
+
+If you're using Ruby-based test automation, such as
+link:https://cucumber.io/[Cucumber], it would be better to run `chruby`
+in the `buddybuild_finally.sh` script; time spent switching Ruby
+versions would only be consumed after a successful build.
+
+
+== Gems
+
+The community of Ruby developers shares packages of Ruby code, called
+Gems (available via link:https://rubygems.org/[the RubyGems site]). The
+best practice for managing Ruby dependencies for any project is to use
+link:http://bundler.io/[Bundler], a Ruby Gem manager.
+
+Bundler knows which dependencies your project requires when you specify
+them in a file called `Gemfile`. For example:
+
+```ruby
+source 'https://rubygems.org'
+gem 'nokogiri'
+gem 'rack', '~> 2.0.1'
+gem 'rspec'
+```
+
+In the above example, the dependencies `nokogiri` and `rspec` are
+required but the specific versions do not matter. The `rack` dependency
+requires a version that is at least `2.0.1`, but not higher than `2.1`.
+See link:http://bundler.io/v1.15/gemfile.html[Gemfiles] for more
+information.
+
+To install or update all of the required dependencies, run:
+
+```bash
+bundle install
+```
+
+Bundler records the Gem files that it has installed by created a
+`Gemfile.lock` file. The next time you run the `bundle` command, Bundler
+uses the `Gemfile.lock` file to determine whether any Gems need to be
+updated. If you clone your code to another system, Bundler installs the
+versions of Gems specified in `Gemfile.lock`.
+
+The best practice is to commit both the `Gemfile` and `Gemfile.lock`
+files to your repository.
