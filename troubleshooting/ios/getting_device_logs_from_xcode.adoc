@@ -8,6 +8,15 @@ description: >
 When trying to diagnose why a build does not install or an issue with
 your app or our SDK, it can be useful to retrieve device logs.
 
+[IMPORTANT]
+===========
+Run Xcode and connect your device **before** the events that you wish to
+capture would occur. This is especially important when trying to
+diagnose app installation issues; if you run Xcode and connect your
+device after an installation failure, none of the installation errors
+are recorded.
+===========
+
 . Connect your phone to your laptop and open Xcode
 
 . image:img/menu-xcode_window-devices.png["The Window menu in Xcode",

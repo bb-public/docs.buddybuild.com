@@ -13,6 +13,15 @@ In order to guarantee repeatability in builds -- we recommend you check
 in both your `Cartfile` and `Cartfile.resolved` files into your source
 control.
 
+[IMPORTANT]
+===========
+When Carthage downloads dependencies, they appear in the `Carthage`
+directory. If you commit this directory to your repository, **buddybuild
+does not run the `carthage` command** because it assumes that you have
+taken responsibility for managing the Carthage dependencies.
+===========
+
+
 == Carthage version
 
 You can set the Carthage version that is used on every build in your App
@@ -20,6 +29,7 @@ Settings or in your branch settings.
 
 image:img/Carthage-1.png["The Default build configuration screen", 1500,
 800]
+
 
 == Running a custom Carthage command
 
