@@ -1,6 +1,6 @@
 ---
 search: false
-titletext: Troubleshooting common hybrid mobile app frameworks
+titletext: Troubleshoot common mobile app framework problems
 description: >
   A troubleshooting guide for common Cordova / Ionic and React Native mobile
   application build issues.
