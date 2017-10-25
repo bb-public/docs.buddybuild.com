@@ -12,8 +12,7 @@ control.
 When Carthage downloads dependencies, they appear in the `Carthage`
 directory. If you commit this directory to your repository, **buddybuild
 does not run the `carthage` command** because it assumes that you have
-taken responsibility for managing the Carthage dependencies to optimize
-your build time.
+taken responsibility for managing the Carthage dependencies.
 ===========
 
 
