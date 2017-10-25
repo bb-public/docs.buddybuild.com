@@ -6,8 +6,8 @@ language that balances functional and imperative programming.
 
 As Ruby is evolving fairly rapidly, many Ruby-based tools function best
 (or at all) only with specific versions of Ruby. Buddybuild provides
-Ruby and a number of common Ruby tools, such as Gems and Bundler, but
-these may not be at the versions that are suitable for your project.
+Ruby and a number of common Ruby tools, such as RubyGems and Bundler,
+but these may not be at the versions that are suitable for your project.
 This section describes how to use a specific version of Ruby, and how to
 specify Ruby dependencies.
 
@@ -16,11 +16,13 @@ specify Ruby dependencies.
 
 To specify the version of Ruby to use for your project, use the `chruby`
 command. Using this command requires a
-link:../custom_build_steps.adoc[custom build step]. Which step you use
-depends on when, during the build, that your Ruby-based tools need to
-run. If you're unsure, include the `chruby` command in the
-`buddybuild_postclone.sh` script, which executes immediately after
-cloning your project's source code to the buddybuild build machine:
+link:../custom_build_steps.adoc[custom build step]. Each custom build
+step runs independently, so execute `chruby` in every step that you
+require.
+
+For example, to use a specific version of Ruby immediately after
+buddybuild clones your project's source code, include the `chruby`
+command in the `buddybuild_postclone.sh` script:
 
 ```bash
 #!/usr/bin/env bash
@@ -30,18 +32,13 @@ chruby 2.3.1
 
 This example switches the current `ruby` to version 2.3.1.
 
-If you're using Ruby-based test automation, such as
-link:https://cucumber.io/[Cucumber], it would be better to run `chruby`
-in the `buddybuild_finally.sh` script; time spent switching Ruby
-versions would only be consumed after a successful build.
-
 
 == Gems
 
 The community of Ruby developers shares packages of Ruby code, called
 Gems (available via link:https://rubygems.org/[the RubyGems site]). The
 best practice for managing Ruby dependencies for any project is to use
-link:http://bundler.io/[Bundler], a Ruby Gem manager.
+link:http://bundler.io/[Bundler], a RubyGem manager.
 
 Bundler knows which dependencies your project requires when you specify
 them in a file called `Gemfile`. For example:
@@ -51,12 +48,17 @@ source 'https://rubygems.org'
 gem 'nokogiri'
 gem 'rack', '~> 2.0.1'
 gem 'rspec'
+gem 'danger', '~> 5.5', '>= 5.5.3'
 ```
 
-In the above example, the dependencies `nokogiri` and `rspec` are
-required but the specific versions do not matter. The `rack` dependency
-requires a version that is at least `2.0.1`, but not higher than `2.1`.
-See link:http://bundler.io/v1.15/gemfile.html[Gemfiles] for more
+As you can see, a `Gemfile` lets you express version dependencies in
+different ways. In this example, `nokogiri` and `rspec` are required but
+the specific versions do not matter (the latest version of each gets
+installed). The `rack` dependency requires a version that is at least
+`2.0.1`, but not higher than `2.1`. The `danger` dependency requires a
+version that is at least `5.5` but not as high as `6`, and also must be
+at least `5.5.3`. See
+link:http://bundler.io/v1.15/gemfile.html[Gemfiles] for more
 information.
 
 To install or update all of the required dependencies, run:
