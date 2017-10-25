@@ -48,7 +48,7 @@ tidy:
 	rm -rf _book/CNAME _book/Gemfile _book/Gemfile.lock _book/Makefile _book/_common _book/_dicts _book/deploy.py _book/npm-debug.log _book/package.json _book/package-lock.json _book/rewrites.csv _book/yarn.lock
 
 # 'test' the artifacts
-test: setup spell alt length proof missed
+test: setup spell alt length proof unusedimg missed
 
 # Spell check the source files.
 spell:
@@ -59,6 +59,10 @@ spell:
 # Check for line length violations
 length:
 	@node_modules/gitbook-plugin-buddybuild/scripts/linelength.pl -d . -l 80
+
+# Check for any unused images
+unusedimg:
+	@node_modules/gitbook-plugin-buddybuild/scripts/unused_images.pl -d .
 
 # Check for unspecified image alt tags
 alt:
