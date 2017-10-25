@@ -1,9 +1,9 @@
 ---
 search: false
-titletext: How to do Continuous Deployment for iOS applications 
+titletext: How to do Continuous Deployment for iOS applications
 description: >
-  iOS continuous deployment, no more headaches from code signing and configuring
-  provisioning profiles. Try it today.
+  Buddybuild removes the pain of code signing by automatically uploading
+  certificates and auto-syncing provisioning profiles.
 ---
 = iOS
 

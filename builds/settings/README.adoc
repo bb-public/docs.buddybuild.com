@@ -1,8 +1,8 @@
---- 
-titletext: Apply Default Build settings to all apps in an org
+---
+titletext: Apply default build settings to all apps in an organization
 description: >
-  Org level build settings allow you to set defaults build configurations that
-  get apply to all new apps added or can be apply retroactively to existing apps.
+  Default build settings apply to all new apps added to your organization, and can
+  be applied selectively to existing apps.
 ---
 = Build settings for all apps
 

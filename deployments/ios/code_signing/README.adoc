@@ -1,5 +1,5 @@
---- 
-titletext: Code Signing and Auto Syncing Provisioning Profiles
+---
+titletext: Code signing and auto-syncing of provisioning profiles
 description: >
   Buddybuild takes away the pain of having to deal with code signing by
   automatically uploading certificates and auto-syncing provisioning profiles.

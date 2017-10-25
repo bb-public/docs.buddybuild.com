@@ -1,8 +1,8 @@
---- 
-titletext: How to secure password files with mobile CI/CD
+---
+titletext: Use secure files for file-based secrets: passwords, API tokens, etc.
 description: >
   Store Secrets such as API Keys and Passwords in Secret Files that are not
-  checked into your repository, but are available at build and runtime.
+  checked into your repository, but are available during the build or at run-time.
 ---
 = Secure Files
 

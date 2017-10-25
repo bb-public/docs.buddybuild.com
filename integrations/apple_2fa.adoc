@@ -1,8 +1,8 @@
---- 
-titletext: Using an Apple Account with Two-Factor Authentication
+---
+titletext: Using an Apple account with two-factor authentication (2FA)
 description: >
-  Buddybuild supports direct integration with Apple Developer Portal.  If you
-  are using Two-Factor Authentication then follow this guide to connect.  
+  Buddybuild supports direct integration with the Apple Developer Portal.
+  If you are using two-factor authentication then follow this guide to connect.
 ---
 = Using an Apple Account with Two-Factor Authentication
 

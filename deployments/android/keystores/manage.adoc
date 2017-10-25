@@ -1,8 +1,8 @@
---- 
+---
 titletext: How to override the KeyStore during your Android build
 description: >
-  Upload your own KeyStore and buddybuild will use the uploaded set instead of
-  the auto-generated set to code sign your Android app.
+  Buddybuild can auto-generated a KeyStore for you, or you can upload your own
+  KeyStore that is used during code signing and deployment.
 ---
 = Managing Your KeyStores
 

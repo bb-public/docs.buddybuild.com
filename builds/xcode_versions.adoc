@@ -1,8 +1,8 @@
---- 
+---
 titletext: Testing iOS apps against the latest version of Xcode
 description: >
-  Buddybuild allows you to test your iOS apps against all version of Xcode
-  including the latest beta versions without having to download them locally.
+  Buddybuild allows you to test your iOS apps against all version of Xcode,
+  including the latest beta versions, without having to download them locally.
 ---
 = Xcode Versions and Xcode Preview
 

@@ -1,7 +1,7 @@
---- 
-titletext: How to integrate Meteor into your mobile CI Process
+---
+titletext: How to integrate Meteor into your mobile CI process
 description: >
-  Step by Step instructions to integrate Meteor into your build.
+  Step-by-step instructions to integrate Meteor into your build.
 ---
 = Meteor Setup
 

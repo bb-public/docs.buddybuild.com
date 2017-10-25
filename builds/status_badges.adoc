@@ -1,5 +1,5 @@
---- 
-titletext: Show up to date build status with status badges
+---
+titletext: Show up-to-date build status with status badges
 description: >
   Show up-to-date build status with a buddybuild badge in your repository’s
   README.md. The badge also allows you to navigate between the repo and

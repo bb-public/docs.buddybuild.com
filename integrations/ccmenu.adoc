@@ -1,8 +1,8 @@
---- 
-titletext: CCMenu Support to Display build status in MacOS menu bar 
+---
+titletext: CCMenu support to display build status in macOS menu bar
 description: >
   Get quick access to mobile build statuses. CCMenu displays the build status of
-  your apps on buddybuild as an item in the MacOS menu bar.
+  your apps on buddybuild in your macOS menu bar.
 ---
 = CCMenu
 

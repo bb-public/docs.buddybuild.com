@@ -1,7 +1,7 @@
---- 
-titletext: Auto open a GitHub issue when user feedback is received
+---
+titletext: Automatically open a GitHub issue when user feedback is received
 description: >
-  Buddybuild can be configured to automatically open a Github Issue for each
+  Buddybuild can be configured to automatically open a GitHub Issue for each
   piece of feedback you receive from app testers.
 ---
 = GitHub Issues

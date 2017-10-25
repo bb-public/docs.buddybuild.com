@@ -1,8 +1,8 @@
---- 
-titletext: Integrating mobile user feedback into Pivotal Tracker
+---
+titletext: Automatically create Pivotal Tracker issues for each user feedback
 description: >
-  Buddybuild provides integration with Pivotal Tracker allowing tickets to be
-  open directly from from each piece of feedback received from mobile testers.
+  Buddybuild provides integration with Pivotal Tracker allowing issues to be
+  created directly from each piece of feedback received from mobile testers.
 ---
 = Pivotal Tracker
 

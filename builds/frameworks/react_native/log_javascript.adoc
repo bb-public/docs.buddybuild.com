@@ -1,9 +1,9 @@
---- 
-titletext: Use buddybuild iOS SDK to capture JavaScript logs
+---
+titletext: Log React Native JavaScript using the buddybuild SDK
 description: >
-  Buddybuild's iOS SDK allows you to capture JavaScript logs emitted by
-  console.log, console.error and view them in Crash and Feedback reports
-  logs.
+  Use the buddybuild SDK to capture JavaScript logs emitted by
+  console.log, console.error and view them in Crash and Feedback
+  reports logs.
 ---
 = Log React Native JavaScript using the buddybuild SDK (iOS)
 

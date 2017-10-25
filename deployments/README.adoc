@@ -1,8 +1,8 @@
---- 
-titletext: Continuous Deployment for iOS and Android Applications
+---
+titletext: Continuous deployment for iOS and Android applications
 description: >
-  Remove the complexity of iOS and Android app deployment. iOS and Android
-  Continuous Deployment as it should be: one click to send, one click to install
+  Reduce the complexity of iOS and Android app deployment. iOS and Android
+  Continuous deployment as it should be: one click to send, one click to install.
 ---
 = Deployments
 

@@ -1,9 +1,10 @@
 ---
 search: false
-titletext: Overview of Continuous Deployment for Android Mobile Apps
+titletext: Overview of continuous deployment for android mobile apps
 description: >
-  Android continuous deployment including managing your KeyStores and
-  integrating your Google Play Account for automatic deployments.
+  An overview of buddybuild's continuous deployment process, including management
+  of you KeyStores and integration with your Google Play account for automatic or
+  manual deployments.
 ---
 = Android
 

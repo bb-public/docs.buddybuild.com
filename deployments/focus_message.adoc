@@ -1,8 +1,8 @@
---- 
-titletext: Adding Release Notes to your Mobile Applications
+---
+titletext: Adding release notes to your mobile applications
 description: >
-  Add Release Notes to builds to notify testers which specific areas they should
-  target for feedback or as a change log for your app’s latest features.
+  Add release notes to builds to notify testers which specific areas they should
+  target for feedback, or as a change log for your app’s latest features.
 ---
 = Release Notes
 

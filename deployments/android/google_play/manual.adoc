@@ -1,9 +1,9 @@
---- 
-titletext: Manually deploy Android Mobile Apps to Google Play
-description: >
-  Step by Step instructions on deploying your Android app to Google Play.
 ---
-= Deploying manually to Google Play
+titletext: Manually deploy android mobile apps to the Google Play store
+description: >
+  Step by Step instructions for deploying your Android app to Google Play.
+---
+= Deploying manually to the Google Play store
 
 With buddybuild, you have the ability to manually deploy to Google Play.
 

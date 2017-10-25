@@ -1,8 +1,8 @@
---- 
-titletext: How to integrate Apple Developer Portal with mobile CI/CD
+---
+titletext: How to integrate the Apple Developer Portal with mobile CI/CD
 description: >
   Connect your Apple Developer Portal account to simplify code signing,
-  automatically sync provisioning profiles, and push builds to iTunes &
+  automatically sync provisioning profiles, and push builds to iTunes and
   TestFlight.
 ---
 = Apple Developer Portal

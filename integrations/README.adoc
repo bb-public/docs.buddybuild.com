@@ -1,8 +1,8 @@
---- 
-titletext: How to integrated 3rd party tools into mobile CI/CD
+---
+titletext: How to integrate third-party tools into mobile CI/CD
 description: >
-  Buddybuild has native support for common bug tracking systems such as Jira,
-  Pivotal and Tracker as well as notification systems such as Slack and HipChat.
+  Buddybuild has native support for common bug tracking systems such as JIRA,
+  Pivotal Tracker as well as notification systems such as Slack and HipChat.
 ---
 = Integrations
 

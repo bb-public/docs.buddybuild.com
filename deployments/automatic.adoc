@@ -1,8 +1,8 @@
---- 
-titletext: Using deployment groups to auto deploy mobile apps
+---
+titletext: Use deployment groups to auto-deploy mobile apps
 description: >
   Control who gets what build, by managing testers and beta users with
-  deployment groups. Auto deploy to groups, either per build or on a set
+  deployment groups. Auto-deploy to groups, either per build or on a set
   schedule.
 ---
 = Automatic deployments
