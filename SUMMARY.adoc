@@ -70,9 +70,10 @@
 
 .. link:builds/build_logs.adoc[Build Details and Logs]
 .. link:builds/custom_build_steps.adoc[Custom Build Steps]
-.. link:builds/device_variables_1.adoc[Device Variables]
-.. link:builds/environment_variables.adoc[Environment Variables]
-.. link:builds/secure_files.adoc[Secure Files]
+.. link:builds/secrets/README.adoc[Secrets and variables]
+... link:builds/secrets/device_variables.adoc[Device Variables]
+... link:builds/secrets/environment_variables.adoc[Environment Variables]
+... link:builds/secrets/secure_files.adoc[Secure Files]
 .. link:builds/node.adoc[Node version]
 .. link:builds/provisioning_profile_explorer.adoc[Provisioning Profile
    Inspector]
