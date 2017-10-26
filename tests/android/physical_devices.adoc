@@ -1,3 +1,7 @@
+---
+search:
+    keywords: ['slow']
+---
 = UI Tests on Physical Devices
 
 Ensure your Android app runs seamlessly on the exact devices your user

@@ -1,3 +1,7 @@
+---
+search:
+    keywords: ['slow']
+---
 = UI Tests on Virtual Devices
 
 To ensure that your Android app runs seamlessly on the exact devices
