@@ -1,8 +1,8 @@
 ---
 titletext: Apply default build settings to all apps in an organization
 description: >
-  Default build settings apply to all new apps added to your organization, and can
-  be applied selectively to existing apps.
+  Default build settings apply to all new apps added to your
+  organization, and can be applied selectively to existing apps.
 ---
 = Build settings for all apps
 

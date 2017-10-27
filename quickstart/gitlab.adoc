@@ -1,7 +1,8 @@
 ---
 titletext: Connect your GitLab repository to buddybuild
 description: >
-  When you connect your GitLab repository, buddybuild builds your mobile app every time a commit is pushed.
+  When you connect your GitLab repository, buddybuild builds your mobile
+  app every time a commit is pushed.
 ---
 = Signing up with GitLab
 

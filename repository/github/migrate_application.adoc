@@ -1,8 +1,9 @@
---- 
-titletext: Migrate from GitHub OAuth to GitHub App for Repo Control 
+---
+titletext: Migrate from GitHub OAuth to GitHub App for Repo Control
 description: >
-  If you signed up a GitHub account with buddybuild before May 25th 2017 then
-  this migration guide should be used to move to the new GitHub application.
+  If you signed up a GitHub account with buddybuild before May 25th,
+  2017, then this migration guide should be used to move to the new
+  GitHub application.
 ---
 = Migrate to buddybuild's GitHub Application
 

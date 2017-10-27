@@ -1,5 +1,5 @@
 ---
-titletext: Buddybuild automatically clones all submodules defined in your mobile app
+titletext: Buddybuild automatically clones all defined Git submodules.
 description: >
   Add the .gitmodules file to our repo and buddybuild uses the Git
   credentials associated with your account to clone all of the submodules

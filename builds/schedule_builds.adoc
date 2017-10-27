@@ -1,8 +1,8 @@
---- 
-titletext: How to schedule recurring builds for mobile apps 
+---
+titletext: How to schedule recurring builds for your mobile apps
 description: >
-  Need a new build at a specific time?  You can schedule recurring builds of a
-  specific branch to happen on a set schedule. 
+  Need a new build at a specific time? You can schedule recurring builds
+  of a specific branch to take place on a set schedule.
 ---
 = Scheduling Builds
 

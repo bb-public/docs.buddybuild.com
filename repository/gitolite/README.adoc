@@ -1,16 +1,16 @@
---- 
-titletext: How to add a Gitolite repository for mobile CI/CD
+---
+titletext: Connect your Gitolite repository to buddybuild via SSH
 description: >
-  Add a Gitolite hosted repository to buddybuild using SSH.
+  When you connect your Gitolite repository via SSH, buddybuild creates
+  an SSH key (that you add to Gitolite) in order to build your app.
 ---
 = Adding a Gitolite Repository
 
 This page explains how to add a Gitolite hosted repository to
 buddybuild. Let's get started!
 
-Firstly, if your repository is hosted on a Gitolite server, then you
-will need to link:../../quickstart/ssh.adoc[sign in with an
-email account].
+First, if your repository is hosted on a Gitolite server, then you need
+to link:../../quickstart/ssh.adoc[sign in with an email account].
 
 [NOTE]
 ======
@@ -138,8 +138,14 @@ Now go back to buddybuild and click on the **Build** button.
 image:img/build.png["The buddybuild Connect another Git service screen",
 1500, 765]
 
-Buddybuild will checkout your project code and kick off a simulator
-build. That's it, you're now connected to buddybuild!
+Buddybuild clones your project code and starts a simulator build. The
+build should finish within a few minutes.
 
-The next step is to link:../../quickstart/ios/invite_testers.adoc[invite
-testers] to try out your app.
+That's it! Your Gitolite repository is now connected to buddybuild, and your
+first build is under way. The next steps are:
+
+- link:webhook.adoc[Add a Gitolite webhook] to automatically notify
+  buddybuild of repository changes.
+
+- link:../../quickstart/ios/invite_testers.adoc[invite testers] to try out
+  your app.

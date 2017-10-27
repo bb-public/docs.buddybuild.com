@@ -3,7 +3,7 @@ search: false
 titletext: How to manage mobile app dependencies with buddybuild
 description: >
   How to handle mobile app dependencies including Git submodules, CocoaPods, and
-  Carthage during the Mobile CI/CD process.
+  Carthage during your mobile app's CI/CD process.
 ---
 = Dependencies
 

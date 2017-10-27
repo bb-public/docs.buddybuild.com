@@ -1,8 +1,8 @@
 ---
-titletext: Use secure files for file-based secrets: passwords, API tokens, etc.
+titletext: Use secure files for file-based secrets; passwords, API tokens, etc.
 description: >
-  Store Secrets such as API Keys and Passwords in Secret Files that are not
-  checked into your repository, but are available during the build or at run-time.
+  Store secrets such as API Keys and passwords in secure files that are
+  not checked into your repository, but are available during the build.
 ---
 = Secure Files
 

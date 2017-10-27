@@ -1,7 +1,8 @@
 ---
 titletext: Troubleshoot common issues for installing builds on iOS
 description: >
-  This section covers the most common issue encountered when installing builds on iOS devices.
+  This section covers the most common issue encountered when installing
+  builds on iOS devices.
 ---
 = Trouble installing builds on iOS
 

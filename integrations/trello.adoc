@@ -38,7 +38,7 @@ Next, you'll be prompted to let buddybuild use your account. Select
 
 image:img/Trello---5.jpg["The Trello authorization screen", 3000, 1426]
 
-Next, configure Trello for Feedback and Crash Reports.  You can
+Next, configure Trello for Feedback and Crash Reports. You can
 automatically create issues, and set the default **board**, **list** and
 **labels** for new cards.
 

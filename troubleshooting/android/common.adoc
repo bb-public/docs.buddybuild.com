@@ -1,8 +1,8 @@
 ---
 titletext: How to troubleshoot common Android build errors
 description: >
-  Troubleshooting common Android build issues.  Buddybuild uses Linux machines
-  for building Android apps, with case-sensitive file systems.
+  Troubleshooting common Android build issues. Buddybuild uses Linux
+  machines for building Android apps, with case-sensitive file systems.
 ---
 = Common Android build errors
 

@@ -1,5 +1,5 @@
 ---
-titletext: Manually deploy mobile apps builds to groups or individuals
+titletext: Manually deploy mobile app builds to groups or individuals
 description: >
   Buddybuild allows you to manually deploy a successful build to one of your
   existing groups or to a specific individual, at any time.

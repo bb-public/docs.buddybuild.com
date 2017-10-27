@@ -1,7 +1,7 @@
 ---
-titletext: Run android app UI tests on virtual devices
+titletext: Run Android UI tests on virtual devices
 description: >
-  UI testing on virtual devices ensure that your apps run correctly,
+  UI testing on virtual devices ensures that your apps run correctly,
   without the additional cost of using physical devices.
 ---
 = UI Tests on Virtual Devices

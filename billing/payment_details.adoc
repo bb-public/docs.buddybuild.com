@@ -1,8 +1,8 @@
---- 
+---
 titletext: How to change your buddybuild payment details
 description: >
-  The buddybuild dashboard allows users to update the payment details associated
-  with the organization.
+  The buddybuild dashboard allows you to update the payment details
+  associated with your organization.
 ---
 = Change payment details
 

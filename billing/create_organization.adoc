@@ -1,9 +1,8 @@
 ---
 titletext: Adding a new organization to your account
 description: >
-  Create organizations within buddybuild, to organize apps and streamline build
-  configurations by assigning defaults to all new apps added, or updating
-  settings for existing apps.
+  Create organizations within buddybuild, to organize apps and manage build
+  defaults for new apps, or update settings for existing apps.
 ---
 = Create an organization
 

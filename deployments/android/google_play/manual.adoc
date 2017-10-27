@@ -1,7 +1,8 @@
 ---
-titletext: Manually deploy android mobile apps to the Google Play store
+titletext: Manually deploy Android apps to the Google Play store
 description: >
-  Step by Step instructions for deploying your Android app to Google Play.
+  Step-by-step instructions for deploying your Android app to the Google
+  Play store.
 ---
 = Deploying manually to the Google Play store
 

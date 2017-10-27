@@ -1,7 +1,8 @@
 ---
 titletext: Connect your GitHub Enterprise instance to buddybuild
 description: >
-  When you connect your GitHub Enterprise instance, buddybuild builds your mobile app every time a commit is pushed.
+  When you connect your GitHub Enterprise instance, buddybuild builds
+  your mobile app every time a commit is pushed.
 ---
 = Connect with GitHub Enterprise
 

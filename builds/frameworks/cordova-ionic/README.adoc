@@ -1,8 +1,7 @@
 ---
 titletext: Native support for Cordova / Ionic apps for iOS and Android
 description: >
-  Buddybuild supports Cordova / Ionic apps  for both iOS and Android.
-  Be sure that config.xml, package.json, and www directory are checked into your repository.
+  Buddybuild supports Cordova / Ionic apps for both iOS and Android.
 ---
 = Cordova / Ionic Setup
 
