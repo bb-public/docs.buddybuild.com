@@ -39,7 +39,7 @@ rm -rf BuddyBuildSDK.framework*
 . **Download and unpack the buddybuild SDK**.
 +
 Download and unpack the `BuddyBuildSDK.framework.zip` file into your
-project root directory.
+project root directory:
 +
 [[code-samples]]
 --
