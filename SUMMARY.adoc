@@ -11,6 +11,10 @@
 .. link:quickstart/github_enterprise.adoc[Connect with GitHub Enterprise]
 .. link:quickstart/gitlab_private.adoc[Connect your privately-hosted
    GitLab instance]
+.. link:quickstart/sso/README.adoc[Single sign on (SSO)]
+... link:quickstart/sso/require.adoc[Require SSO]
+... link:quickstart/sso/disconnect.adoc[Disconnect SSO]
+... link:quickstart/sso/okta.adoc[Okta]
 
 .. link:quickstart/ios/README.adoc[iOS]
 ... link:quickstart/ios/select_a_repo_and_app_to_build.adoc[Selecting an App]
@@ -161,6 +165,8 @@
 . link:troubleshooting/README.adoc[Troubleshooting]
 .. link:troubleshooting/user_not_getting_alert_when_a_new_version_of_app_is_available.adoc[User
    not getting alert when a new version of app is available]
+.. link:troubleshooting/repo_does_not_contain_all_commits.adoc[Repository does
+   not contain full list of commits]
 .. link:troubleshooting/ios/README.adoc[iOS]
 ... link:troubleshooting/ios/common_build_errors.adoc[Common iOS build errors]
 ... link:troubleshooting/ios/missing_podfilelock.adoc[Missing Podfile.lock]

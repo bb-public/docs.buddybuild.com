@@ -1,0 +1,103 @@
+= Single sign-on
+
+Single sign-on, or SSO, provides users with the ability to authenticate
+once and access participating applications. The initial authentication
+is performed via an _identity provider_ (IDP), such as
+link:okta.adoc[Okta], OneLogin, Microsoft's ADFS, Ping, or any other
+SAML-based identity service. Participating applications, such as
+buddybuild, are called _service providers_ (SP). Once authenticated, the
+IDP provides the SP with a security token, which conveys authentication
+status and other user-specific details that may be configured in the
+IDP.
+
+For more information on SAML, see:
+link:https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language[Security
+Assertion Markup Language]
+
+Before an SP's users can log in via SSO, the SP must establish a
+relationship with an IDP, so that the SP and IDP can properly
+authenticate each user. This section describes how you can establish
+that relationship between buddybuild and your IDP so that your users can
+enjoy SSO.
+
+[NOTE]
+======
+SSO is only available with a buddybuild **Enterprise** plan. If you are
+interested in SSO for your organization, please contact
+sales@buddybuild.com.
+======
+
+== Outline
+
+The following outline describes the general steps required to create a
+working SSO connection between buddybuild and your IDP. See <<idps>> for
+IDP-specific instructions.
+
+To connect buddybuild with your identity provider, the following steps
+need to be completed:
+
+. Contact sales@buddybuild.com. The buddybuild account team needs to
+  prepare your buddybuild organization's configuration for SSO. One
+  detail you need to provide is the email domain(s) that your users
+  might use to authenticate.
+
+. Once SSO preparation is complete, buddybuild creates two operational
+  values that need to be copied to the IDP:
++
+--
+- A unique, SP-specific **SSO URL**. The IDP uses this URL to coordinate
+  authentication.
+
+- An **Audience URI**. The IDP uses this URL to verify that the SP is the
+  intended recipient of authentication responses.
+--
+
+. In your IDP's interface, you need to create an _application_, a record
+  of the SSO configuration for a specific SP.
++
+When you add the SP's SSO URL and Audience URI (e.g. provided by
+buddybuild) to your application, your IDP creates the following
+operational values that need to be copied to the SP (i.e. buddybuild):
++
+--
+- A unique, IDP-specific **SSO URL**. The SP uses this URL to coordinate
+  authentication.
+
+- An **Issuer URL**. The IDP provides user details via this URL.
+
+- A unique **X.509 certificate**. This is used to encrypt authentication
+  requests and responses.
+--
+
+. In buddybuild, you add the IDP-specific SSO URL, the issuer URL, and
+  the X.509 certificate.
+
+Once you complete this process, your users can now log in to buddybuild
+using your IDP. Also, your users can login using their corporate email
+address, provided it matches the email domain that you agreed upon with
+the buddybuild account team. Any existing logins that your users may
+have been using to access buddybuild continue to work.
+
+See link:require.adoc[Require single sign-on (SSO) logins] for the
+procedure that requires your users to authenticate using SSO.
+
+If you ever need to stop using SSO, see link:disconnect.adoc[Disconnect
+single sign-on (SSO) provider].
+
+
+[IMPORTANT]
+===========
+An SSO user account differs from any other user account in buddybuild.
+When your users transition to using SSO, they need to add their
+link:../ios/select_a_repo_and_app_to_build.adoc[iOS] and
+link:../android/select_an_app.adoc[Android] apps to the SSO user
+account.
+===========
+
+
+[[idps]]
+== Identity providers
+
+Detailed connection instructions are available for the following IDPs:
+
+- link:okta.adoc[Okta]
