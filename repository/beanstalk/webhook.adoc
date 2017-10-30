@@ -1,5 +1,9 @@
 ---
-titletext: Adding a Beanstalk Webhook
+titletext: Add a Beanstalk webhook to automate your mobile app's CI process
+description: >
+  Use Beanstalk Webhooks to notify buddybuild of repository changes, to
+  start new builds, to update build statuses, and to notify testers of
+  new builds.
 ---
 = Adding a Beanstalk Webhook
 

@@ -1,7 +1,14 @@
+---
+titletext: How to add release notes to deployments of your mobile app
+description: >
+  Add release notes to builds to notify testers which specific areas
+  they should target for feedback, or as a change log for your app's
+  latest features.
+---
 = Release Notes
 
 Notify users of recent changes in your app with release notes. They can
-be used to as a change log for your app's latest features, or to notify
+be used as a change log for your app's latest features, or to notify
 testers which specific areas they should target for feedback.
 
 In buddybuild, release notes can be entered in two ways:
@@ -14,7 +21,6 @@ details.
 +
 image:img/Builds---Deploy-Manually---1.png["The build details screen,
 with the Deploy tab selected", 1500, 800]
-
 
 . **The text file within your repository**
 +

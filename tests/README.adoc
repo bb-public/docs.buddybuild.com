@@ -1,3 +1,10 @@
+---
+titletext: Buddybuild's test infrastructure and supported frameworks
+description: >
+  Buddybuild's test infrastructure for iOS and Android provides code
+  snippets for failed tests, screenshots for UI tests, detailed call
+  stacks, and more.
+---
 = Tests
 
 This section covers buddybuild's test infrastructure.

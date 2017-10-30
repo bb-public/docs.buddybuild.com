@@ -1,3 +1,10 @@
+---
+titletext: Send buddybuild notifications to HipChat rooms
+description: >
+  Buddybuild's first-class integration with HipChat provides
+  notifications for build status, feedback submissions, and crash
+  reports directly to rooms.
+---
 = HipChat
 
 HipChat is a chat service designed for groups, providing video chat and
@@ -273,7 +280,7 @@ role="frame"]
 [[pattern]]
 ==== Define a pattern to match
 
-. Click the **Define a pattern to match** tab.  The **Branch pattern
+. Click the **Define a pattern to match** tab. The **Branch pattern
   selection** screen is displayed:
 +
 image:img/screen-choose_branch-pattern.png["The Branch pattern selection
@@ -500,8 +507,8 @@ role="right"]
 
 . Select **Manage Org**. The **Manage Organization** screen appears:
 +
-image:../_img/screen-manage_org.png["The Manage Organization", 1280,
-568, role="frame"]
+image:../_img/screen-manage_org.png["The Manage Organization screen",
+1280, 589, role="frame"]
 
 . image:../_img/button-integrations.png["The Integrations button", 206,
   42, role="right"]

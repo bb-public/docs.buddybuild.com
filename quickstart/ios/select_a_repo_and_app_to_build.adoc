@@ -1,7 +1,11 @@
 ---
-titletext: Selecting an iOS app from the repository
+titletext: Select a repo containing an iOS app to build
+description: >
+  When you select a repository containing an iOS app, buddybuild
+  automatically analyzes, configures, and starts building your app.
+
 ---
-= Selecting an iOS app from the repository
+= Select an iOS app from the repository
 
 Now that we've connected with to your source control system, you'll need
 to select the repository containing your iOS App.

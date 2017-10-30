@@ -1,3 +1,10 @@
+---
+titletext: Troubleshooting iOS and Android CI/CD issues
+description: >
+  Troubleshooting common continuous integration and deployment issues
+  for iOS and Android, including platform-specific and
+  development-framework issues.
+---
 = Troubleshooting
 
 This section covers common problems and errors that buddybuild users
@@ -8,6 +15,8 @@ have encountered, and provides solutions that could help you.
 
 - link:user_not_getting_alert_when_a_new_version_of_app_is_available.adoc[User
   not getting alert when a new version of app is available]
+- link:repo_does_not_contain_all_commits.adoc[Repository does not contain
+  full list of commits]
 
 
 == Platform-specific problems

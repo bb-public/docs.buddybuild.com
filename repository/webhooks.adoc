@@ -1,3 +1,10 @@
+---
+titletext: Using Webhooks for repo code change notifications
+description: >
+  Buddybuild uses Webhooks to start new builds, update build statuses,
+  and notify testers of new builds, whenever changes are committed to
+  your repository.
+---
 = Setting Up a Webhook
 
 A webhook notifies buddybuild of code changes you make to your repo.

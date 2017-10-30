@@ -1,13 +1,14 @@
 ---
-titletext: Adding a Visual Studio Online Webhook
+titletext: Add a Visual Studio Online webhook to your mobile app's CI process
+description: >
+  Use Visual Studio Online webhooks to notify buddybuild of repo code
+  changes so we can kick off new builds, update build statuses.
 ---
-= Adding a Visual Studio Online Webhook
+= Add a Visual Studio Online webhook
 
 We're not currently able to automatically add a webhook with Visual
-Studio Online.
-
-Here are the instructions to do it manually. It should only take a
-couple of minutes.
+Studio Online. Here are the instructions to do it manually. It should
+only take a couple of minutes.
 
 First, go to the project settings, and the **Service Hooks** tab. You
 can create a subscription.
@@ -29,5 +30,5 @@ buddybuild's dashboard.
 image:img/paste-webhook-url.png["The Visual Studio Online Action screen
 for defining a web hooks action", 761, 738]
 
-That's it! Next time you git push to your repo, buddybuild triggers a
+That's it! Next time you `git push` to your repo, buddybuild triggers a
 build.

@@ -1,3 +1,9 @@
+---
+titletext: Build problems due to missing Podfile.lock
+description: >
+  When using CocoaPods, make sure that the Podfile.lock file is committed to
+  your repository, otherwise your builds may fail in buddybuild.
+---
 = Missing Podfile.lock
 
 == Summary

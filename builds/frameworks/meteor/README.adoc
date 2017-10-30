@@ -1,3 +1,8 @@
+---
+titletext: How to integrate Meteor into your mobile app's CI process
+description: >
+  Step-by-step instructions to integrate Meteor into your build.
+---
 = Meteor Setup
 
 While buddybuild natively supports Cordova, additional steps are
@@ -10,7 +15,7 @@ Without it, buddybuild won't be able to build your project.
 
 == New Project
 
-First, we need to tell buddybuild how to build your meteor project.  We
+First, we need to tell buddybuild how to build your meteor project. We
 can do this by having a `buddybuild_postclone.sh` file in the root of your
 repository. You can find more information about our custom build steps
 link:../../custom_build_steps.adoc[here].

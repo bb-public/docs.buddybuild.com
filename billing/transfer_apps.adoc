@@ -1,3 +1,10 @@
+---
+titletext: Transfer apps between buddybuild organizations
+description: >
+  You can transfer an app between buddybuild organizations. When you do
+  so, the app adopts the features and limitations of the new
+  organization's plan.
+---
 = Transfer apps between organizations
 
 Apps that are associated with an organization consume the features and
@@ -14,8 +21,8 @@ organizations, follow along below!
 
 . Select **Manage Org**. The **Manage Organization** screen appears:
 +
-image:../_img/screen-manage_org.png["The Manage Organization", 1280, 568,
-role="frame"]
+image:../_img/screen-manage_org.png["The Manage Organization screen",
+1280, 589, role="frame"]
 
 . image:../_img/dropdown-organizations.png["The current organization", 206,
   40, role="right"]

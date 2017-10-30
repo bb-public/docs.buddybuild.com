@@ -1,3 +1,8 @@
+---
+titletext: React Native support for both iOS and Android
+description: >
+  Buddybuild supports React Native for iOS and Android.
+---
 = React Native
 
 Buddybuild natively supports React Native apps - for both iOS and Android.

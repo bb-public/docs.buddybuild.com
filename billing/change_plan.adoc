@@ -1,3 +1,10 @@
+---
+titletext: How to change your buddybuild billing plan
+description: >
+  Accelerate your mobile app's CI/CD process by adding more concurrent
+  builds, increase the limits on feedback and instant replays, or add
+  other features.
+---
 = Change your plan
 
 If you'd like to change the number of concurrent builds, limits on
@@ -16,8 +23,8 @@ easily by changing the plan associated with each organization.
 
 . Select **Manage Org**. The **Manage Organization** screen appears:
 +
-image:../_img/screen-manage_org.png["The Manage Organization", 1280, 568,
-role="frame"]
+image:../_img/screen-manage_org.png["The Manage Organization screen",
+1280, 589, role="frame"]
 
 . image:../_img/dropdown-organizations.png["The current organization", 206,
   40, role="right"]

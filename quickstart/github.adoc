@@ -1,3 +1,9 @@
+---
+titletext: Connect your GitHub repository to buddybuild
+description: >
+  When you connect your GitHub repository, buddybuild builds your mobile
+  app every time a commit is pushed.
+---
 = Signing up with GitHub
 
 First things first! Let's sign up with buddybuild.

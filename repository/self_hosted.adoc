@@ -23,10 +23,10 @@ link:https://apidocs.buddybuild.com/misc/get-ip_ranges.html[REST API]:
 
 . Fetch the list of buddybuild IP addresses:
 +
-[source,bash]
+[source,bash,subs="quotes"]
 ----
 curl -X GET \
-  -H 'Authorization: Bearer {\{api-access-token}}' \
+  -H 'Authorization: Bearer &lbrace;{api-access-token}}' \
   'https://api.buddybuild.com/v1/ip-ranges'
 ----
 

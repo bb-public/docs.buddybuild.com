@@ -1,12 +1,14 @@
 ---
-titletext: Adding a Kiln Repository
+titletext: Connect your Kiln repository to buddybuild via SSH
+description: >
+  When you connect your Kiln repository via SSH, buddybuild creates an
+  SSH key (that you add to Kiln) in order to build your app.
 ---
-= Adding a Kiln Repository
+= Add a Kiln Repository
 
 If your repository lives in Kiln, you can connect to it via SSH.
-Buddybuild will automatically generate a secure SSH key for you to
-install into your source control system. Buddybuild will use this key to
-clone your repository.
+Buddybuild automatically generates a secure SSH key for you to install
+into Kiln. Buddybuild uses this key to clone your repository.
 
 Let's get started!
 
@@ -89,9 +91,14 @@ Navigate back to buddybuild and click on the **Build** button.
 image:img/build.png["The buddybuild Connect another Git service screen",
 1500, 765]
 
-Buddybuild will checkout your project code and kick off a simulator
-build. The build should finish within a few seconds.
+Buddybuild clones your project code and starts a simulator build. The
+build should finish within a few minutes.
 
-That's it. You're now connected to buddybuild. The next step is to
-link:../../quickstart/ios/invite_testers.adoc[invite testers] to try out
-your app.
+That's it! Your Kiln repository is now connected to buddybuild, and your
+first build is under way. The next steps are:
+
+- link:webhook.adoc[Add a Kiln webhook] to automatically notify
+  buddybuild of repository changes.
+
+- link:../../quickstart/ios/invite_testers.adoc[invite testers] to try out
+  your app.

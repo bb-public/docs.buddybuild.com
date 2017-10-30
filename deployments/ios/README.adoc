@@ -1,6 +1,10 @@
 ---
 titletext: iOS deployments
 search: false
+titletext: How to do Continuous Deployment for iOS applications
+description: >
+  Buddybuild removes the pain of code signing by automatically uploading
+  certificates and auto-syncing provisioning profiles.
 ---
 = iOS deployments
 

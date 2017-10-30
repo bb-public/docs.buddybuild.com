@@ -1,3 +1,9 @@
+---
+titletext: Apply default build settings to all apps in an organization
+description: >
+  Default build settings apply to all new apps added to your
+  organization, and can be applied selectively to existing apps.
+---
 = Build settings for all apps
 
 Each of the available link:../README.adoc[build] settings are
@@ -28,8 +34,8 @@ This page contains the following sub-sections:
 
 . Select **Manage Org**. The **Manage Organization** screen appears:
 +
-image:../../_img/screen-manage_org.png["The Manage Organization", 1280,
-568, role="frame"]
+image:../../_img/screen-manage_org.png["The Manage Organization screen",
+1280, 589, role="frame"]
 
 . image:../../_img/dropdown-organizations.png["The current
 organization", 206, 40, role="right"]
