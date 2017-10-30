@@ -1,3 +1,9 @@
+---
+titletext: Trigger new builds for each pull request and added commit
+description: >
+  Buddybuild triggers a new build whenever a pull request is opened or updated,
+  and whenever new commits are pushed.
+---
 = Pull Requests
 
 Buddybuild triggers a new build whenever a pull request is opened and

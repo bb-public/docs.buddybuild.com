@@ -1,3 +1,9 @@
+---
+titletext: Common causes for Cordova and Ionic build failures
+description: >
+  Tips and tricks for troubleshooting the most common causes of Cordova / Ionic
+  mobile app build failures.
+---
 = Common Cordova / Ionic build errors
 
 We’ve put together a quick guide to help teams troubleshoot the most

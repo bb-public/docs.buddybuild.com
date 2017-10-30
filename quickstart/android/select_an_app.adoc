@@ -1,3 +1,9 @@
+---
+titletext: Select a repository containing an Android app to build
+description: >
+  When you select a repository containing an Android app, buddybuild
+  automatically analyzes, configures, and starts building your app.
+---
 = Selecting an App
 
 Now that we've connected with your Source Control account, you need

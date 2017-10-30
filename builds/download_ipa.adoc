@@ -1,3 +1,10 @@
+---
+titletext: How to download iOS build artifacts
+description: >
+  Buddybuild automatically manages your app bundles and dSYMs securely
+  for you. Download your iOS build artifacts from a build's details
+  page.
+---
 = Downloading build artifacts
 
 Buddybuild automatically manages your app bundles and dSYMs securely for

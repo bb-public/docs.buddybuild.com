@@ -1,3 +1,9 @@
+---
+titletext: Managing your buddybuild Mobile Applications
+description: >
+  The buddybuild dashboard allows you to manage who has access to your apps,
+  rename your apps, change the repo URL, or delete apps
+---
 = Managing your Applications
 
 This section describes how you can manage your applications within the

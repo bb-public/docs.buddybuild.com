@@ -1,3 +1,9 @@
+---
+titletext: How to skip a build for particular mobile app commit
+description: >
+  Add `[ci skip]` to your commit message to skip doing a build for that
+  particular commit.
+---
 = Skipping a Build
 
 If you don’t want to build a particular commit just add `[ci skip]` to

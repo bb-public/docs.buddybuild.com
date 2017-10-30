@@ -1,5 +1,10 @@
 ---
 search: false
+titletext: Overview of continuous deployment for Android apps
+description: >
+  An overview of buddybuild's continuous deployment process, including
+  management of your KeyStores and integration with your Google Play
+  account.
 ---
 = Android
 

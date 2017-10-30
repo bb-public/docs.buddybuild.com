@@ -1,3 +1,9 @@
+---
+titletext: Manage code signing identities and provisioning profiles
+description: >
+  Manage your Code Signing settings right from within buddybuild. Apply
+  settings to individual apps or to all apps within an organization.
+---
 = Managing Certificates and Provisioning Profiles
 
 Manage your Code Signing Identities and Provisioning profiles right from

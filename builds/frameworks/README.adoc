@@ -1,5 +1,9 @@
 ---
 search: false
+titletext: Supported cross-platform mobile development frameworks
+description: >
+  Buddybuild supports cross-platform mobile application frameworks, like React
+  Native, Cordova / Ionic, and Meteor.
 ---
 = Cross-platform frameworks
 

@@ -1,3 +1,9 @@
+---
+titletext: How to create device variables to secure passwords and keys
+description: >
+  Define device variables, that can be accessed during the build or at run-time,
+  to store keys, access tokens, or other secrets required by your mobile app.
+---
 = Device Variables
 
 You might have API keys and other secrets that your app needs to consume

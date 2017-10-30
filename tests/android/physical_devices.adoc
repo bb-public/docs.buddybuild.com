@@ -1,3 +1,9 @@
+---
+titletext: Run Android app UI tests on physical devices
+description: >
+  UI testing on physical devices ensures that your app runs correctly on
+  the exact devices owned by your users.
+---
 = UI Tests on Physical Devices
 
 Ensure your Android app runs seamlessly on the exact devices your user

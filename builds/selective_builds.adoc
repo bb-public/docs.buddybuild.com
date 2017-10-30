@@ -1,3 +1,10 @@
+---
+titletext: Trigger a build only when certain files change
+description: >
+  Selective builds allows you to trigger a build only when certain files
+  change, or to skip builds for commits unrelated to the project's
+  source files.
+---
 = Selective Builds
 
 Selective Builds allows you to trigger a build of an app only when
