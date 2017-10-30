@@ -1,3 +1,9 @@
+---
+titletext: How to configure unit tests for your Android apps
+description: >
+  You can configure whether JUnit unit tests are executed for
+  every build. Tests results are displayed in the buddybuild dashboard.
+---
 = Testing
 
 == Unit Test

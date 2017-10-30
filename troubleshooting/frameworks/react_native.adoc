@@ -1,3 +1,9 @@
+---
+titletext: Troubleshoot the most common React Native build errors
+description: >
+  Tips and tricks for troubleshooting the most common causes of React Native
+  mobile app build failures.
+---
 = Common React Native errors
 
 We’ve put together a quick checklist to help teams troubleshoot the most

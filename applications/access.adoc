@@ -1,3 +1,9 @@
+---
+titletext: Manage access control for your mobile app repositories
+description: >
+  Manage your repository access control by leveraging your Git provider
+  privileges, or by inviting team members directly to buddybuild.
+---
 = Manage App Access
 
 There are two ways to invite team members to collaborate on your app in

@@ -1,4 +1,11 @@
-= Adding a GitLab Webhook
+---
+titletext: Connect a GitLab webhook to automate your mobile app's CI/CD process
+description: >
+  Use Gitlab webhooks to notify buddybuild of repository changes, to
+  start new builds, to update build statuses and to notify testers of
+  new builds.
+---
+= Add a GitLab webhook
 
 A webhook notifies buddybuild of code changes that you make to your repo.
 Whenever a new change is pushed, buddybuild automatically kicks off

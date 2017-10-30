@@ -1,3 +1,9 @@
+---
+titletext: Automatically create Pivotal Tracker issues for each user feedback
+description: >
+  Buddybuild provides integration with Pivotal Tracker allowing issues to be
+  created directly from each piece of feedback received from mobile testers.
+---
 = Pivotal Tracker
 
 Pivotal Tracker is a lightweight, agile project management tool for
@@ -28,7 +34,7 @@ Tracker account**.
 image:img/Pivotal---3.png["The Connect your Pivotal Tracker account
 screen", 1500, 472]
 
-Next, configure Pivotal Tracker for Feedback and Crash Reports.  You can
+Next, configure Pivotal Tracker for Feedback and Crash Reports. You can
 automatically create issues, and select the default project.
 
 image:img/Pivotal---4.png["The Pivotal Tracker integration configuration
