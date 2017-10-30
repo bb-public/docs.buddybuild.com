@@ -1,5 +1,4 @@
 ---
-titletext: iOS deployments
 search: false
 titletext: How to do Continuous Deployment for iOS applications
 description: >
