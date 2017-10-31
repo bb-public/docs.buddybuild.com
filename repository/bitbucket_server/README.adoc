@@ -1,9 +1,18 @@
-= Adding a Bitbucket Server Repository
+---
+titletext: Connect your Bitbucket Server repository to buddybuild via SSH
+description: >
+  We recommend using buddybuild's integration with the Bitbucket Server
+  API to connect your repository. This section covers connecting via
+  SSH.
+---
+= Add a Bitbucket Server Repository
 
 If your repository lives in Bitbucket Server (or Stash), you can sign
 into buddybuild with your email. Buddybuild automatically generates
 a secure SSH key for you to install into your source control system.
 Buddybuild uses this key to clone your repository.
+
+{% include "../../_common/important-ssh_access.adoc" %}
 
 Let's get started!
 
@@ -84,9 +93,14 @@ Navigate back to buddybuild and click on the **Build** button.
 
 image:img/build.png["The buddybuild Connect a Repository screen", 3000, 1948]
 
-Buddybuild will checkout your project code and kick off a simulator
-build. The build should finish within a few seconds.
+Buddybuild clones your project code and starts a simulator build. The
+build should finish within a few minutes.
 
-That's it. You're now connected to buddybuild. The next step is to
-link:../../quickstart/ios/invite_testers.adoc[invite testers] to try out
-your App.
+That's it! Your Bitbucket Server repository is now connected to
+buddybuild, and your first build is under way. The next steps are:
+
+- link:webhook.adoc[Add a Bitbucket server webhook] to automatically notify
+  buddybuild of repository changes.
+
+- link:../../quickstart/ios/invite_testers.adoc[invite testers] to try out
+  your app.

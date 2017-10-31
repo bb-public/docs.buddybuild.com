@@ -1,3 +1,9 @@
+---
+titletext: How to solve build problems with CocoaPods 0.x
+description: >
+  On Nov 11, 2016, CocoaPods introduced a breaking change that affects customers
+  using versions 0.x. Consider upgrading to CocoaPods 1.x.
+---
 = Spec repo not compatible with older CocoaPods versions
 
 On Nov 11, 2016, the CocoaPods team introduced a breaking change that

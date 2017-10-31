@@ -1,3 +1,9 @@
+---
+titletext: How to update your mobile app repo URL
+description: >
+  Changes in the location of your source code hosting provider, or renaming your
+  repo, requires updating the repo clone URL in buddybuild.
+---
 = Change your app's repo URL
 
 If you've changed the location of your source code hosting provider to

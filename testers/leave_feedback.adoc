@@ -1,3 +1,9 @@
+---
+titletext: Allow mobile app testers to send in-app feedback
+description: >
+  Buddybuild's feedback mechanism for mobile testers is simple and easy: take
+  a screenshot, draw a box around the area, enter a comment, and press Return.
+---
 = Leaving Feedback
 
 Notice a typo in your App? Leave feedback for your developers in three

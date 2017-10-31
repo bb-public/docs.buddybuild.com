@@ -1,3 +1,9 @@
+---
+titletext: Connect your privately-hosted GitLab instance to buddybuild
+description: >
+  When you connect your privately-hosted GitLab instance, buddybuild
+  builds your app every time a commit is pushed.
+---
 = Connect your privately-hosted GitLab instance
 
 Use this guide to connect any privately hosted GitLab instance with

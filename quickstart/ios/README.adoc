@@ -1,7 +1,11 @@
 ---
 search: false
+titletext: iOS continuous integration, deployment, and user feedback
+description: >
+  Buddybuild's platform ties together iOS continuous integration,
+  continuous delivery, and feedback into a single platform.
 ---
-= iOS Quickstart
+= iOS quickstart
 
 This section describes how to quickly get started with buddybuild for
 iOS developers:

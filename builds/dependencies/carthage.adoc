@@ -1,3 +1,8 @@
+---
+titletext: Use Carthage with buddybuild to manage dependencies
+description: >
+  Buddybuild supports using Carthage for managing dependencies.
+---
 = Carthage
 
 link:https://github.com/Carthage/Carthage[Carthage] is a fantastic way

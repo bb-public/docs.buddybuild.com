@@ -1,3 +1,9 @@
+---
+titletext: How to enable code coverage for your iOS apps
+description: >
+  See what percentage of your mobile code is covered by your current
+  mobile tests.
+---
 = Code Coverage for iOS apps
 
 Code coverage measures the degree to which your code is tested by a

@@ -1,3 +1,10 @@
+---
+titletext: How to troubleshoot Google Play errors
+description: >
+  This section covers how to troubleshoot the most common Google Play
+  store errors, such as "Track is listed as being 'Superseded' by a later
+  track".
+---
 = Google Play Errors
 
 The number one issue related to Google Play errors occurs when one of

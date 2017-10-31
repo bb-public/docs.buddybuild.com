@@ -1,3 +1,9 @@
+---
+titletext: Connect your Bitbucket repository to buddybuild
+description: >
+  When you connect your Bitbucket account, buddybuild builds your mobile
+  app every time a commit is pushed.
+---
 = Signing up with Bitbucket
 
 First things first! Let's sign up with buddybuild.

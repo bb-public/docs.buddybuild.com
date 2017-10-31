@@ -1,8 +1,14 @@
+---
+titletext: Using CocoaPods to manage dependencies for automated builds
+description: >
+  CocoaPods dependencies are automatically detected, downloaded, and installed
+  during the build process. No configuration changes are needed.
+---
 = CocoaPods
 
 link:http://cocoapods.org/[CocoaPods] are a fantastic way to manage
 dependencies. In buddybuild your CocoaPods dependencies are
-automatically detected, downloaded and installed during the build
+automatically detected, downloaded, and installed during the build
 process. You do not need to make any configuration changes or install a
 buddybuild specific setup script.
 

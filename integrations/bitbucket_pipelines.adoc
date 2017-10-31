@@ -1,3 +1,10 @@
+---
+titletext: Integrate Bitbucket Pipelines to automatically test on push
+description: >
+  Integrating Bitbucket Pipelines with buddybuild's mobile app CI/CD
+  allows you to trigger automatic testing every time you push commits to
+  your code.
+---
 = Bitbucket Pipelines
 
 As a back-end engineer, when you push code to the staging environment,

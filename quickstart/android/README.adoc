@@ -1,7 +1,11 @@
 ---
 search: false
+titletext: Android continuous integration, deployment, and user feedback
+description: >
+  Buddybuild's platform ties together Android continuous integration,
+  continuous delivery, and feedback into a single platform.
 ---
-= Android Quickstart
+= Android quickstart
 
 This section describes how to quickly get started with buddybuild for
 Android developers:

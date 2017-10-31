@@ -1,3 +1,10 @@
+---
+titletext: How to change your buddybuild billing plan
+description: >
+  Accelerate your mobile app's CI/CD process by adding more concurrent
+  builds, increase the limits on feedback and instant replays, or add
+  other features.
+---
 = Change your plan
 
 If you'd like to change the number of concurrent builds, limits on

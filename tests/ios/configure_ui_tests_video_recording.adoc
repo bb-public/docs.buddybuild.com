@@ -1,3 +1,9 @@
+---
+titletext: How to record and reply videos of iOS UI tests
+description: >
+  Use the buddybuild SDK to record video of your iOS UI tests as they execute,
+  and then replay them!
+---
 = Configure your iOS UI tests for Video Replay
 
 The buddybuild SDK is a lightweight yet powerful

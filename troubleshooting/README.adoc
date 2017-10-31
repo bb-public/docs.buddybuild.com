@@ -1,3 +1,10 @@
+---
+titletext: Troubleshooting iOS and Android CI/CD issues
+description: >
+  Troubleshooting common continuous integration and deployment issues
+  for iOS and Android, including platform-specific and
+  development-framework issues.
+---
 = Troubleshooting
 
 This section covers common problems and errors that buddybuild users

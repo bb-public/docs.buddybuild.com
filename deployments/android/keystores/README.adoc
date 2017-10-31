@@ -1,3 +1,9 @@
+---
+titletext: Understanding Android KeyStore basics
+description: >
+  KeyStores are required for installation of Android apps. Buddybuild
+  can manage your Android KeyStores and can auto-generate keystores as needed.
+---
 = KeyStore Basics
 
 Android Applications need to be code signed to be installable on

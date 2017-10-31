@@ -1,3 +1,9 @@
+---
+titletext: Source control systems supported for mobile CI/CD
+description: >
+  Connect buddybuild with Beanstalk, Bitbucket, GitHub, GitLab, Visual
+  Studio Online (TFS), or any other Git-based repository.
+---
 = Source Control Systems
 
 You can sign up with buddybuild using your email to connect with
