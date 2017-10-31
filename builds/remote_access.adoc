@@ -1,0 +1,84 @@
+---
+titletext: 
+description: >
+  
+---
+= Remote access
+
+Remote access is a feature that allows you to access a build machine
+while a build is under way. This can make diagnosing build failures much
+easier than scanning through log files.
+
+[NOTE]
+======
+Remote access is only available to buddybuild customers on a paid plan.
+======
+
+== Connect with remote access
+
+After an initial build completes (successfully, or not), a **Rebuild
+with SSH** button appears on the build details page:
+
+image:img/screen-build_details-with_ssh.png["The build details screen
+with the Rebuild with SSH button", 1280, 1024, role="frame"]
+
+. image:img/button-rebuild_with_ssh.png["The Rebuild with SSH button",
+200, 200, role="right"]
+  Click the **Rebuild with SSH** button. A dialog appears:
++
+image:img/screen-rebuild_with_ssh-dialog.png["The Rebuild with SSH
+dialog", 1280, 1024, role="frame"]
+
+. image:img/button-FIXME.png["The Rebuild button", 200, 200, role="right"]
+  Click the *Rebuild** button.
++
+At this point, buddybuild attempts to acquire your public key from your
+source code repository. If unsuccessful, you cannot use remote access.
++
+If successful, the build begins. After the VM running your build starts
+up, SSH access details appear:
++
+image:img/screen-rebuild_with_ssh-details.png["The SSH access details
+for this build", 1280, 1024, role="frame"]
+
+. Use SSH to connect to the build VM.
++
+image:img/screen/rebuild_with_ssh-terminal.png["A terminal connected via
+SSH", 1280, 1024, role="frame"]
+
+At this point, you can do whatever you need to diagnose your build.
+
+[TIP]
+=====
+buddybuild does not store any changes you make while the build is
+underway. Commit any required changes to your repository so that
+subsequent builds can complete successfully.
+=====
+
+[IMPORTANT]
+===========
+You can use remote access until 20 minutes after the build completes
+(successfully, or not). Once that period has elapsed, the VM is shut
+down.
+===========
+
+== Screen sharing
+
+Screen sharing is enabled during a remote access build. The second IP
+address and port shown is for Remote Desktop Protocol (RDP) connections.
+
+[CAUTION]
+=========
+Be aware that RDP connections to buddybuild VMs are **unencrypted**. If
+you require an encrypted connection, use the X11 protocol forwarding
+facility available via SSH.
+=========
+
+== Directory layout
+
+When you connect to a build VM via remote access, the current directory
+contains:
+
+[source,text]
+----
+----
