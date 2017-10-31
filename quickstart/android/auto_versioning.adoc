@@ -4,7 +4,7 @@ description: >
   Buddybuild can update the Android VersionCode automatically, with
   no repository changes required.
 ---
-= Auto-Versioning
+= Auto-versioning Android builds
 
 == VersionCode
 

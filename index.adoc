@@ -1,3 +1,8 @@
+---
+description: >
+  buddybuild documentation, covers continuous integration (CI) and
+  continuous deployment (CD) topics for Android and iOS developers.
+---
 = buddybuild documentation
 :linkattrs:
 

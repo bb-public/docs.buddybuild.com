@@ -4,7 +4,7 @@ description: >
   We recommend using buddybuild's integration with the Bitbucket API to
   connect your repository. This section covers connecting via SSH.
 ---
-= Adding a Bitbucket Repository
+= Add a Bitbucket Repository
 
 If your repository lives in Bitbucket, you can
 link:../../quickstart/bitbucket.adoc[connect your repository

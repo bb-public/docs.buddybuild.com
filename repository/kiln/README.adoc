@@ -4,7 +4,7 @@ description: >
   When you connect your Kiln repository via SSH, buddybuild creates an
   SSH key (that you add to Kiln) in order to build your app.
 ---
-= Adding a Kiln Repository
+= Add a Kiln Repository
 
 If your repository lives in Kiln, you can connect to it via SSH.
 Buddybuild automatically generates a secure SSH key for you to install

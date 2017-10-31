@@ -5,7 +5,7 @@ description: >
   Buddybuild removes the pain of code signing by automatically uploading
   certificates and auto-syncing provisioning profiles.
 ---
-= iOS
+= iOS deployments
 
 This section covers deployment details specific to iOS applications:
 

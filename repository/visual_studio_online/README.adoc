@@ -5,7 +5,7 @@ description: >
   creates an SSH key (that you add to Visual Studio Online) in order to
   build your app.
 ---
-= Adding a Visual Studio Online Repository
+= Add a Visual Studio Online Repository
 
 If your repository lives in Visual Studio Online / Team Foundation
 Server (TFS), you can connect to it via SSH.

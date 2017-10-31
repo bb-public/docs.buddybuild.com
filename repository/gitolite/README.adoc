@@ -4,7 +4,7 @@ description: >
   When you connect your Gitolite repository via SSH, buddybuild creates
   an SSH key (that you add to Gitolite) in order to build your app.
 ---
-= Adding a Gitolite Repository
+= Add a Gitolite Repository
 
 This page explains how to add a Gitolite hosted repository to
 buddybuild. Let's get started!

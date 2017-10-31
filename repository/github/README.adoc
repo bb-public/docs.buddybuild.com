@@ -4,7 +4,7 @@ description: >
   We recommend using buddybuild's integration with the GitHub API to
   connect your repository. This section covers connecting via SSH.
 ---
-= Adding a GitHub Repository
+= Add a GitHub Repository
 
 If your repository lives in GitHub, you can
 link:../../quickstart/github.adoc[connect your repository

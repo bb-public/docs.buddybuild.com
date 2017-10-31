@@ -5,7 +5,7 @@ description: >
   Buddybuild has full support for iOS unit tests, provides reports on code
   coverage, and also provides video recording and playback for user testing.
 ---
-= iOS
+= iOS tests
 
 This section covers buddybuild's infrastructure for testing iOS
 applications:

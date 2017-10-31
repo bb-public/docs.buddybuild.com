@@ -5,7 +5,7 @@ description: >
   API to connect your repository. This section covers connecting via
   SSH.
 ---
-= Adding a Bitbucket Server Repository
+= Add a Bitbucket Server Repository
 
 If your repository lives in Bitbucket Server (or Stash), you can sign
 into buddybuild with your email. Buddybuild automatically generates

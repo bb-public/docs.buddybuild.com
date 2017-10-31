@@ -1,5 +1,5 @@
 ---
-titletext: Adding a Gitolite webhook to your mobile app's CI process
+titletext: Add a Gitolite webhook to your mobile app's CI process
 description: >
   Use Gitolite Webhooks to notify buddybuild of repo code changes so we
   can kick off new builds, update build statuses and notify testers of
