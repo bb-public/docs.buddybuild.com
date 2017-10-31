@@ -1,3 +1,9 @@
+---
+titletext: How to delete a mobile app from buddybuild
+description: >
+  You can delete apps you no longer need as part of your mobile app's
+  CI/CD process.
+---
 = Delete an app
 
 Here's how to delete an app from buddybuild:

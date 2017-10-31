@@ -1,4 +1,10 @@
-= Deploying automatically to Google Play
+---
+titletext: Deploy Android apps automatically to Google Play
+description: >
+  Buddybuild allows you to automatically deploy your Android apps to the
+  Google Play store for each build, or on a set schedule.
+---
+= Deploy automatically to Google Play
 
 You have the ability to automatically deploy to Google Play -- either per
 build or on a set schedule.

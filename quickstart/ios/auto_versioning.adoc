@@ -1,4 +1,10 @@
-= Auto Versioning
+---
+titletext: Auto-versioning CFBundleVersion for iOS
+description: >
+  Buddybuild can update the iOS CFBundleVersion configurable automatically,
+  with no repository changes required.
+---
+= Auto versioning iOS builds
 
 == CFBundleVersion
 
@@ -30,7 +36,7 @@ screen", 1500, 800]
 == Build number
 
 Every buddybuild build has its own unique build number. Buddybuild
-allows you to choose the build number of the next build. Subsequent
+allows you to choose the build number for the next build. Subsequent
 builds are incremented by 1.
 
 This is can be helpful when you start a new release cycle or sprint. For

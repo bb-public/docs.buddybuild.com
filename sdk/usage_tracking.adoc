@@ -1,3 +1,9 @@
+---
+titletext: How to track user engagement for mobile beta testers
+description: >
+  Buddybuild SDK can track the usage of your mobile app. Get precise metrics on
+  how many people downloaded your mobile app and how many launched it.
+---
 = Usage Tracking
 
 Tracking various levels of engagement across your testers and beta users

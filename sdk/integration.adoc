@@ -1,3 +1,10 @@
+---
+titletext: How to manually install the buddybuild SDK for iOS
+description: >
+  We highly recommend using the automatic buddybuild SDK integration
+  from the buddybuild dashboard. However, you can install the buddybuild
+  SDK manually.
+---
 = SDK Manual Installation (iOS)
 
 We highly recommend using the **automatic** buddybuild SDK integration
@@ -39,7 +46,7 @@ rm -rf BuddyBuildSDK.framework*
 . **Download and unpack the buddybuild SDK**.
 +
 Download and unpack the `BuddyBuildSDK.framework.zip` file into your
-project root directory.
+project root directory:
 +
 [[code-samples]]
 --

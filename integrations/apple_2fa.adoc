@@ -1,3 +1,9 @@
+---
+titletext: Using an Apple account with two-factor authentication (2FA)
+description: >
+  Buddybuild supports direct integration with the Apple Developer Portal.
+  If you are using two-factor authentication then follow this guide to connect.
+---
 = Using an Apple Account with Two-Factor Authentication
 
 Connecting your Apple Developer Portal account to buddybuild allows you
@@ -52,8 +58,8 @@ link:https://support.apple.com/en-us/HT204397[App-Specific Password]
 before deploying your app to iTunes Connect. Here's how to create an
 App-Specific Password:
 
-Log in to your link:https://appleid.apple.com/[Apple ID account].  In
-the **Security** section, under **App-Specific Passwords**, click on
+Log in to your link:https://appleid.apple.com/[Apple ID account]. In the
+**Security** section, under **App-Specific Passwords**, click on
 **Generate Password**.
 
 image:img/Settings---Apple-Developer---apple-account.png["The Apple

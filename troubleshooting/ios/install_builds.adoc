@@ -1,3 +1,9 @@
+---
+titletext: Troubleshoot common issues for installing builds on iOS
+description: >
+  This section covers the most common issue encountered when installing
+  builds on iOS devices.
+---
 = Trouble installing builds on iOS
 
 Many different kinds of problems can interfere or prevent installing an
@@ -50,6 +56,10 @@ buddybuild's attempt to install it.
 In particular, buddybuild **cannot install on top of an App Store
 version**. Please delete any App Store versions before attempting to
 install an app through buddybuild.
+
+Also, when there are pending (or active) iOS updates, it appears that
+app installs are blocked in iOS 11. Make sure that your device is fully
+updated before attempting an app install.
 
 
 [[unable_to_download]]

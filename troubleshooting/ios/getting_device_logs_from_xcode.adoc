@@ -1,3 +1,8 @@
+---
+titletext: How to get device logs from Xcode
+description: >
+  Access Xcode device logs to help diagnose app installation and code issues.
+---
 = Getting device logs from Xcode
 
 When trying to diagnose why a build does not install or an issue with

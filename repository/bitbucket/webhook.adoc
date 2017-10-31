@@ -1,4 +1,11 @@
-= Adding a Bitbucket Webhook
+---
+titletext: Add a Bitbucket webhook to automate your mobile app's CI process
+description: >
+  Use Bitbucket webhooks to notify buddybuild of repository changes, to
+  start new builds, to update build statuses, and to notify testers of
+  new builds.
+---
+= Add a Bitbucket Webhook
 
 A webhook notifies buddybuild of code changes you make to your repo.
 Whenever a new change is pushed, buddybuild will automatically kick off

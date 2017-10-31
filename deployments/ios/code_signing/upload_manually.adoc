@@ -1,3 +1,10 @@
+---
+titletext: How to manually upload iOS code signing certificates
+description: >
+  Buddybuild can manage your code signing by automatically uploading
+  certificates and auto-syncing provisioning profiles, or you can do
+  these manually.
+---
 = Uploading Certificates Manually
 
 == Step 1: Find and Export Your Code Signing Identity

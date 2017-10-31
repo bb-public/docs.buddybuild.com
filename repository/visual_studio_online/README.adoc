@@ -1,11 +1,18 @@
-= Adding a Visual Studio Online Repository
+---
+titletext: Connect your Visual Studio Online repository to buddybuild via SSH
+description: >
+  When you connect your Visual Studio Online repository, buddybuild
+  creates an SSH key (that you add to Visual Studio Online) in order to
+  build your app.
+---
+= Add a Visual Studio Online Repository
 
 If your repository lives in Visual Studio Online / Team Foundation
 Server (TFS), you can connect to it via SSH.
 
 Buddybuild currently requires you to create a personal access token in
-Visual Studio online, then provide us with a git URL for your repo that
-includes this personal access token.
+Visual Studio online, then provide us with a Git URL for your repository
+that includes this personal access token.
 
 It should take about 5 minutes to get signed up. Let's get started!
 
@@ -60,7 +67,7 @@ https://MY_ACCESS_TOKEN@buddybuild.visualstudio.com/DefaultCollection/_git/My%20
 ----
 
 
-== Finishing sign up
+== Finish sign up
 
 Back on buddybuild, paste the HTTPS URL into the git clone URL text box.
 
@@ -72,6 +79,14 @@ Click on the **Build** button.
 image:img/build.png["The buddybuild Connect another Git service screen,
 clicking the I'm ready to build! button", 1500, 765]
 
-That's it! You're done -- we'll start building your repo and in a couple
-of minutes you'll have a working, modern CI, for your iOS or Android
-app.
+Buddybuild clones your project code and starts a simulator build. The
+build should finish within a few minutes.
+
+That's it! Your Visual Studio Online repository is now connected to
+buddybuild, and your first build is under way. The next steps are:
+
+- link:webhook.adoc[Add a Visual Studio Online webhook] to automatically
+  notify buddybuild of repository changes.
+
+- link:../../quickstart/ios/invite_testers.adoc[invite testers] to try out
+  your app.

@@ -1,4 +1,11 @@
-= Adding a Gitolite Webhook
+---
+titletext: Add a Gitolite webhook to your mobile app's CI process
+description: >
+  Use Gitolite Webhooks to notify buddybuild of repo code changes so we
+  can kick off new builds, update build statuses and notify testers of
+  latest builds.
+---
+= Add a Gitolite webhook
 
 A webhook notifies buddybuild of code changes you make to your repo.
 Whenever a new change is pushed to Gitolite, buddybuild will
@@ -15,7 +22,7 @@ link:https://github.com/metajack/notify-webhook[notify-webhook].
 **Only a Gitolite admin user can add a Gitolite webhook**
 ======
 
-== Step 1: Copy the webhook url from buddybuild
+== Step 1: Copy the webhook URL from buddybuild
 
 On the Builds page, in the red banner at the top of the page, click on
 **Resolve this issue.**
@@ -49,9 +56,9 @@ On the Gitolite server modify the`.gitolite.rc` file as follows:
   line in the `gitolite.rc` file or add it to the `ENABLE` list if it
   doesn't exist.
 
-- To enable site-local gitolite code add this line in the rc file,
-  within the `%RC` block, if it's not already present, or uncomment it
-  if it's already present and commented out:
+- To enable site-local gitolite code add this line in the `gitolite.rc`
+  file, within the `%RC` block, if it's not already present, or
+  uncomment it if it's already present and commented out:
 +
 [source,bash]
 LOCAL_CODE => "$rc{GL_ADMIN_BASE}/local",
@@ -95,5 +102,5 @@ repo my-ios-app
 ----
 
 Commit and push the local Gitolite configuration changes to apply the
-settings. The next time you push code to your repository buddybuild will
-automatically build your app. Welcome to mobile continuous integration!
+settings. The next time you push code to your repository buddybuild
+automatically builds your app. Welcome to mobile continuous integration!

@@ -1,7 +1,12 @@
 ---
 search: false
+titletext: Troubleshoot common iOS build errors
+description: >
+  A guide to troubleshooting common iOS build errors. Includes "Missing
+  Podfile.lock file", "Missing scheme", "Getting device logs from
+  Xcode", and more.
 ---
-= iOS
+= iOS troubleshooting
 
 This section covers iOS-specific problems and errors, and provides some
 solutions:

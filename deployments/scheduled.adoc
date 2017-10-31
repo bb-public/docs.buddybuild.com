@@ -1,3 +1,9 @@
+---
+titletext: Schedule recurring deployments to push new mobile builds
+description: >
+  Scheduled recurring deployments let you push new builds to testers
+  at regular intervals.
+---
 = Scheduled Deployments
 
 Scheduled recurring deployments let you push new builds to your testers
