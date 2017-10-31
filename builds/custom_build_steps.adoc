@@ -413,14 +413,13 @@ in the script exits with a non-zero status. If you decide to use `set
 
 set -e
 
-grep "ERROR" *.logs
-scp *.logs user@remote:failures/
+scp user@remote.hostname:currencies.zip .
+unzip currencies.zip
 ----
 
-This example searches for `ERROR` in log files. If there are no error
-messages, `grep` returns a non-zero status and the script terminates. If
-there are errors, the `scp` command copies the log files to a remote
-host for further inspection.
+This example tries to fetch a remote file called `currencies.zip`, and
+then unpacks the ZIP archive. If either command fails, they return a
+non-zero status and the build fails.
 
 
 [[support]]
