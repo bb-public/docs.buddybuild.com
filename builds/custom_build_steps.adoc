@@ -243,8 +243,6 @@ buddybuild does any analysis of what is in the repository.
 The `buddybuild_postclone.sh` script should be in the **root** of your
 repository.
 
-[[code-samples]]
---
 .`buddybuild_postclone.sh`
 [source,bash]
 ----
@@ -261,7 +259,6 @@ export GIT_REVISION_SHA=$(git rev-parse HEAD)
 # in the following format: Author Name &lt;author@example.com&gt;
 export GIT_REVISION_AUTHOR=$(git log -1 --pretty=format:"%an <%ae>")
 ----
---
 
 [IMPORTANT]
 ===========
@@ -289,8 +286,6 @@ automatically installed dependencies (eg. Cocoapods, Carthage, etc.).
 Add the `buddybuild_prebuild.sh` script to your repository, **next to
 your `.xcodeproj` or `build.gradle` files**.
 
-[[code-samples]]
---
 .`buddybuild_prebuild.sh`
 [source,bash]
 ----
@@ -299,7 +294,6 @@ your `.xcodeproj` or `build.gradle` files**.
 # Example for adding a key to the Plist
 /usr/libexec/PlistBuddy -c "Add APP_BRANCH String $BUDDYBUILD_BRANCH"
 ----
---
 
 [NOTE]
 ======
@@ -323,8 +317,6 @@ for any reason, the post-build script **does not run**).
 Add the `buddybuild_postbuild.sh` script to your repository, **next to
 your `.xcodeproj` or `build.gradle` files**.
 
-[[code-samples]]
---
 .`buddybuild_postbuild.sh`
 [source,bash]
 ----
@@ -336,7 +328,6 @@ curl \
  -F "build_number=$BUDDYBUILD_BUILD_NUMBER" \
  -F "https://archiveservice.example.com
 ----
---
 
 [NOTE]
 ======
@@ -362,8 +353,6 @@ operations.
 
 Add the `buddybuild_finally.sh` script to the **root** of your repository.
 
-[[code-samples]]
---
 .`buddybuild_finally.sh`
 [source,bash]
 ----
@@ -372,7 +361,6 @@ Add the `buddybuild_finally.sh` script to the **root** of your repository.
 bundle install
 bundle exec danger --fail-on-errors=true
 ----
---
 
 [NOTE]
 ======
@@ -394,15 +382,13 @@ completes, the build VM is destroyed.
 
 
 [[manual-fail]]
-== Manually failing the build from a custom build step
+== Manually fail the build from a custom build step
 
 When some conditions required for your build to be successful are not
 met, you may want to manually fail the build. To do that, exit from your
 script with a non-zero status code. That is how buddybuild knows that
 the build must fail.
 
-[[code-samples]]
---
 [source,bash]
 ----
 #!/usr/bin/env bash
@@ -414,7 +400,28 @@ if [[ "$BUDDYBUILD_BRANCH" =~ "release" ]]; then
   exit 1
 fi
 ----
---
+
+Another way to fail the build is to use `set -e`. This causes the shell
+that is running your script to exit immediately if one of the commands
+in the script exits with a non-zero status. If you decide to use `set
+-e`, place it before the commands that should cause an immediate exit
+(typically, at the top of the script). For example:
+
+[source,bash]
+----
+#!/usr/bin/env bash
+
+set -e
+
+grep "ERROR" *.logs
+scp *.logs user@remote:failures/
+----
+
+This example searches for `ERROR` in log files. If there are no error
+messages, `grep` returns a non-zero status and the script terminates. If
+there are errors, the `scp` command copies the log files to a remote
+host for further inspection.
+
 
 [[support]]
 == Support
