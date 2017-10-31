@@ -4,7 +4,7 @@ description: >
   We recommend using buddybuild's integration with the GitLab API to
   connect your repository. This section covers connecting via SSH.
 ---
-= Adding a GitLab Repository
+= Add a GitLab Repository
 
 If your repository lives in GitLab, you can
 link:../../quickstart/gitlab_private.adoc[connect your repository

@@ -5,7 +5,7 @@ description: >
   automatically analyzes, configures, and starts building your app.
 
 ---
-= Selecting an App
+= Select an iOS app from the repository
 
 Now that we've connected with to your source control system, you'll need
 to select the repository containing your iOS App.

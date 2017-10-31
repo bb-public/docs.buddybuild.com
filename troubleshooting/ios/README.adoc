@@ -6,7 +6,7 @@ description: >
   Podfile.lock file", "Missing scheme", "Getting device logs from
   Xcode", and more.
 ---
-= iOS
+= iOS troubleshooting
 
 This section covers iOS-specific problems and errors, and provides some
 solutions:

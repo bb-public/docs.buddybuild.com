@@ -5,7 +5,7 @@ description: >
   reports, crash reports, tester usage and analytics, and automatic app
   updates.
 ---
-= Integrate the buddybuild SDK
+= Integrate the buddybuild SDK for iOS
 
 == About the buddybuild SDK
 

@@ -6,7 +6,7 @@ description: >
   management of your KeyStores and integration with your Google Play
   account.
 ---
-= Android
+= Android deployments
 
 This section covers deployment details specific to Android applications:
 
