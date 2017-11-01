@@ -6,6 +6,28 @@ description: >
 ---
 = Auto-versioning Android builds
 
+Android builds use two settings for build versions:
+
+- <<versionname,`VersionName`>> (`android:versionName`) is a string that
+  represents the _friendly_ version identifier that your users see. This
+  could be based on link:http://semver.org/[Semantic Versioning],
+  elements in the link:https://www.ptable.com/[periodic table], or a
+  member of an link:http://www.oreilly.com/animals.csp[animal
+  menagerie].
+
+- <<versioncode,`VersionCode`>> (`android:versionCode`) is an integer
+  value that is used to distinguish _each build_. Android uses this
+  value to determine whether the latest version is installed.
++
+Common practice is to assign large numeric ranges to each kind of
+release you plan to deploy. For example, you might decide that
+100,000-500,000 represents the range for beta releases, and
+1,000,000-2,000,000 represents the range for stable releases. It's
+important to note that Android won't let you update to a build with a
+lower `VersionCode` value.
+
+
+[[versioncode]]
 == VersionCode
 
 Buddybuild can update the `VersionCode` automatically for you. The process
@@ -17,9 +39,11 @@ All you need to do is to turn on **Auto-Versioning** in the settings.
 image:img/Settings---Auto-versioning---Android.png["The Auto-versioning
 screen", 1500, 582]
 
+
+[[versionname]]
 == VersionName
 
-The best practice is to update VersionName in the `build.gradle`, and
+The best practice is to update `VersionName` in the `build.gradle`, and
 Buddybuild simply respects that.
 
 [NOTE]
