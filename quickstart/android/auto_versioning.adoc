@@ -23,8 +23,8 @@ Common practice is to assign large numeric ranges to each kind of
 release you plan to deploy. For example, you might decide that
 100,000-500,000 represents the range for beta releases, and
 1,000,000-2,000,000 represents the range for stable releases. It's
-important to note that Android won't let you update to a build with a
-lower `VersionCode` value.
+important to note that the Google Play Developer Console won't let you
+update to a build with a lower `VersionCode` value.
 
 
 [[version_code]]
@@ -56,6 +56,14 @@ branches and commits from the repository. Often this means that
 buddybuild downloads only the HEAD commit for a single branch. As such,
 there may be insufficient information available from the repository to
 automatically set `VersionName`.
+
+Buddybuild recommends manually specifying the `VersionName`, using
+link:http://semver.org/[Semantic Versioning] and this template:
+
+[source,text]
+----
+versionName = major.minor.versionCode
+----
 ======
 
 One idea is to make use of the environment variables listed here:
