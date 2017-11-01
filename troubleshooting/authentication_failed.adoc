@@ -1,0 +1,29 @@
+= Authentication failed
+
+If your build fails fairly quickly with an error like this:
+
+[source,text]
+----
+fatal: Authentication failed for 'https://repository/organization/repo.git'
+----
+
+The problem is likely due to one of the following issues:
+
+- The user that connected your repository to buddybuild has left your
+  organization and their credentials have been revoked.
+
+- GitHub permissions have changed such that the user who connected your
+  repository no longer has access.
+
+- The personal access token required to access your repo has been
+  revoked.
+
+- The SSH key used to access your repository has been deleted.
+
+- The repository has been renamed, so that the URL listed in the error
+  message is no longer valid.
+
+If possible, you can try to revert the changes that caused these
+problems. Otherwise, you'll need to contact buddybuild support using
+Intercom (click the blue circle in the bottom right) or
+mailto:support@buddybuild.com[via email].
