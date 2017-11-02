@@ -1,0 +1,26 @@
+---
+titletext: How to troubleshoot Android UI test errors
+description: >
+  This section covers how to troubleshoot the most common Android UI test errors.
+---
+= Android UI test errors
+
+[NOTE]
+======
+Buddybuild uses Google's Firebase to run tests.
+======
+
+== Unable to find instrumentation info for `.*`
+
+This indicates that your instrumentation test APK does not have tests or the
+test runner used against your test APK is invalid.
+
+== java.lang.IllegalArgumentException: Unsupported ISO 3166 country:
+
+This indicates that your test is dependent on locales, and the default locale
+configured to be used on Firebase ("en") does not work for your tests.
+
+https://stackoverflow.com/questions/26376439/locale-getdefault-returns-unsuported-invalid-locale-for-currency-getinstance
+
+We plan to eventually roll out a feature to configure the locale for your tests,
+ but in the meantime, please contact us via Intercom to correct for this.
