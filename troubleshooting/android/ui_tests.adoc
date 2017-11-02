@@ -7,7 +7,7 @@ description: >
 
 [NOTE]
 ======
-Buddybuild uses Google's firebase to run tests.
+Buddybuild uses Google's Firebase to run tests.
 ======
 
 == Unable to find instrumentation info for `.*`
@@ -18,7 +18,7 @@ test runner used against your test APK is invalid.
 == java.lang.IllegalArgumentException: Unsupported ISO 3166 country:
 
 This indicates that your test is dependent on locales, and the default locale
-configured to be used on firebase ("en") does not work for your tests.
+configured to be used on Firebase ("en") does not work for your tests.
 
 https://stackoverflow.com/questions/26376439/locale-getdefault-returns-unsuported-invalid-locale-for-currency-getinstance
 
