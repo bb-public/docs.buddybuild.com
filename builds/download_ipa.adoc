@@ -30,3 +30,18 @@ specific build:
 
 image:img/Builds---Details---iOS-Artifacts.png["The build details
 screen, showing the Build Artifacts panel", 1500, 800]
+
+[NOTE]
+======
+IPA files can vary in size depending on the intended deployment.
+
+Typically, the IPAs used for on-device testing are relatively small.
+IPAs for iTunes Connect deployments are notably larger because they have
+to include bitcode and build output for every distribution architecture.
+Once an IPA has been uploaded to iTunes Connect, the App Store rebuilds
+your app into versions optimized for each user's device.
+
+If you want to verify the IPA size locally, archive your app and then
+export the archive for "ad hoc" and then App Store distribution. The App
+Store version will be larger of the two.
+======
