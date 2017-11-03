@@ -109,8 +109,8 @@ is in the `app` folder locally, this variable is set to
 `/Users/buddybuild/workspace/app/build`.
 
 | `BUDDYBUILD_SECURE_FILES`
-| This is the location of your link:secure_files.adoc[secure files] on
-  the VM.
+| This is the location of your link:secrets/secure_files.adoc[secure
+  files] on the VM.
 
 Example: `/Users/buddybuild/secure_files`
 
@@ -229,9 +229,10 @@ instance, you could expose `git` information for the build in the
 [[environment-user]]
 === User-defined variables
 
-You can also define your own link:environment_variables.adoc[environment
-variables] through buddybuild's dashboard. User-defined environment
-variables are stored securely and made available during the build.
+You can also define your own
+link:secrets/environment_variables.adoc[environment variables] through
+buddybuild's dashboard. User-defined environment variables are stored
+securely and made available during the build.
 
 
 [[postclone]]
