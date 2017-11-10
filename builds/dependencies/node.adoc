@@ -2,12 +2,12 @@
 titletext: How to use specific Node.js versions, and private packages
 description: >
   Your project may require a specific version of Node.js. Or, you may
-  need to use private NPM packages. This section shows you how to do
+  need to use private npm packages. This section shows you how to do
   both.
 ---
 = Node.js
 
-Node.js, or just _Node_, is a popular javascript runtime that can be
+Node.js, or just _Node_, is a popular JavaScript runtime that can be
 used for application development or system tools.
 
 This section covers the following topics:
@@ -89,34 +89,33 @@ version.
 
 
 [[private_npm]]
-== Private NPM packages
+== Private npm packages
 
-You can configure buddybuild to use private NPM packages. This makes it
-much easier to mix public packages with custom code you have written
-(but are not ready to share with the NPM community). For more
-information on private packages, see
+You can configure buddybuild to use private npm packages. This makes it
+much easier to mix public packages with custom, private code you have
+written. For more information on private packages, see
 link:https://docs.npmjs.com/private-modules/intro[Working with private
 modules].
 
-Using private NPM packages requires an account on
-link:https://npmjs.com[npmjs.com]. If you do not already have an
+Using private npm packages requires an account on
+link:https://npmjs.com/[npmjs.com]. If you do not already have an
 account, link:https://www.npmjs.com/signup[sign up for a free account].
 
 Once you have an npmjs.com account, you can then acquire the
-`access_token` which gives you access to all NPM packages to which you
+`access_token` which gives you access to all npm packages to which you
 have at least `read` permissions. Then you can set a buddybuild
 environment variable to make the access token available to your build.
 Finally, you can create (or update) the `buddybuild_postclone.sh` script
-to configure NPM to use your access token and install your private
+to configure npm to use your access token and install your private
 package dependencies.
 
 Follow these steps:
 
-. **Capture the NPM access token**:
+. **Capture the npm access token**:
 +
 --
 [loweralpha]
-. From the command line, log in to NPM:
+. From the command line, log in to npm:
 +
 [source,bash]
 ----
@@ -138,7 +137,7 @@ The access token is the value after `_authToken=`, in this case:
 `cb31c41d-3bq8-7285-fe20-361ea25e3c1e`.
 --
 
-. **Set a buddybuild environment variable**, to provide the NPM access
+. **Set a buddybuild environment variable**, to provide the npm access
   token to your build:
 +
 --
@@ -172,7 +171,7 @@ screen", 1280, 1024, role="frame"]
 
 . In the **Name** field, enter `NPM_AUTH_TOKEN`.
 
-. In the **Value** field, enter the NPM access token that you copied
+. In the **Value** field, enter the npm access token that you copied
   previously.
 
 . image:img/button-create.png["The Create button", 61, 30, role="right"]
@@ -197,6 +196,6 @@ npm install
 . Commit the change to `buddybuild_postclone.sh`.
 --
 
-That's it! Your builds now have access to your NPM access token, and
-your app's NPM dependencies are installed, including any private
+That's it! Your builds now have access to your npm access token, and
+your app's npm dependencies are installed, including any private
 packages where you have `read` permissions.
