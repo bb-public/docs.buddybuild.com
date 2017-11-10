@@ -8,7 +8,7 @@ description: >
 
 == Base Image
 
-Debian GNU/Linux 8 (jessie)
+Debian GNU/Linux 9 (stretch)
 
 == Android SDK
 
