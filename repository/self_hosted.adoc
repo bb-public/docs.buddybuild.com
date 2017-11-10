@@ -1,9 +1,8 @@
 ---
 description: >
-  Buddybuild works with any git-based repository. This section covers requirements
+  Buddybuild works with any Git-based repository. This section covers requirements
   for connecting to a self-hosted repository.
 ---
-
 = Self-hosted repositories
 
 Buddybuild works with any git-based repository, over SSH or HTTPS,

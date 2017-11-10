@@ -1,9 +1,8 @@
 ---
 description: >
-  This section covers how to stop using SSO and disconnect the
+  This section covers how to stop using Single sign on and disconnect the
   connection to the identity provider.
 ---
-
 = Disconnect single sign-on (SSO) provider
 
 If you want to stop using SSO, you need to disconnect the connection to

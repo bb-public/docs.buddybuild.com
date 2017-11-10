@@ -3,7 +3,6 @@ description: >
   For performance reasons, buddybuild downloads only the minimal set
   of branches and commits from the repository.
 ---
-
 = Repository does not contain full list of commits
 
 For performance reasons, buddybuild downloads only the minimal set

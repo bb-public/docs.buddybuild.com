@@ -1,9 +1,9 @@
 ---
 description: >
   This section describes the general steps required to create a
-  working SSO connection between buddybuild and your IDP for SSO.
+  working Single sign on connection between buddybuild and
+  your identity provider for SSO.
 ---
-
 = Single sign-on
 
 Single sign-on, or SSO, provides users with the ability to authenticate

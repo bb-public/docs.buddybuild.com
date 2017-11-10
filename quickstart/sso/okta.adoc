@@ -1,9 +1,8 @@
 ---
 description: >
   This section covers the procedure to follow to connect buddybuild
-  with Okta for SSO.
+  with Okta for Single sign on.
 ---
-
 = Setup SSO with Okta
 
 Okta is a US-based identity provider. For more information about Okta,
