@@ -1,0 +1,201 @@
+---
+titletext: How to use specific Node.js versions, and private packages
+description: >
+  Your project may require a specific version of Node.js. Or, you may
+  need to use private npm packages. This section shows you how to do
+  both.
+---
+= Node.js
+
+Node.js, or just _Node_, is a popular JavaScript runtime that can be
+used for application development or system tools.
+
+This section covers the following topics:
+
+- <<node_version>>
+- <<private_npm>>
+
+[[node_version]]
+== Specify the Node version
+
+Node itself is evolving rapidly, which means that new features are
+available regularly. It also means that existing features might change
+or become deprecated. Your use of Node may depend on specific versions
+in order to function correctly. See how to use a specific version of
+Node in the following steps:
+
+. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
+  dashboard].
+
+.  image:../img/button-current_app.png["The Current App button", 123, 64,
+role="right"]
+  Choose the app that requires a specific Node version by moving your
+  pointer over the **current app** button in the top toolbar. The
+  **Apps** dropdown appears:
++
+image:../img/dropdown-apps.png["The Apps dropdown", 361, 526]
+
+. Select the app that needs a specific Node version by clicking it in
+the dropdown. The **Builds** page for your app appears:
++
+image:../img/screen-builds.png["The Builds screen"]
++
+image:../img/field-filter_apps.png["The App dropdown's filter field", 283,
+32, role="right"]
+If you have many apps, you can type the app's name (or portion thereof)
+into the search field; only apps with matching names are displayed.
++
+image:../img/button-sort_order.png["The sort order button", 21, 18,
+role="right"]
+Or, you can click the sort order button to display a select menu of
+sorting approaches. Click the select menu to display all of the
+approaches:
++
+--
+- **Alphabetical (A-Z)** Select to show apps in normal, alphabetical
+  order. This is the default.
+
+- **Alphabetical (Z-A)** Select to show apps in reverse alphabetical
+  order.
+
+- **Created Date** Select to show the most recently added apps first.
+--
+
+. image:../img/button-app_settings.png["The App Settings button", 118, 64,
+role="right"]
+  Click the **App Settings** button in the top toolbar.
+  The **App Settings** screen is displayed:
++
+image:../img/screen-build_settings.png["The App Settings screen", 1280,
+691, role="frame"]
+
+. image:../img/tab-environment.png["The Environment tab", 137, 53,
+role="right"]
+  Click the **Environment** tab. The **Environment** settings are
+  displayed:
++
+image:../img/screen-environment_settings.png["The Environment
+settings", 1280, 619, role="frame"]
+
+. image:../img/dropdown-node_versions.png["The Node versions select menu",
+331, 275, role="right"]
+  Click the **Node version** select menu to display the available Node
+  versions.
+
+. Click the version of Node that you need for your build.
+
+That's it! From now on, builds of your app use the selected Node
+version.
+
+
+[[private_npm]]
+== Private npm packages
+
+You can configure buddybuild to use private npm packages. This makes it
+much easier to mix public packages with custom, private code you have
+written. For more information on private packages, see
+link:https://docs.npmjs.com/private-modules/intro[Working with private
+modules].
+
+Using private npm packages requires an account on
+link:https://npmjs.com/[npmjs.com]. If you do not already have an
+account, link:https://www.npmjs.com/signup[sign up for a free account].
+
+Once you have an npmjs.com account, you can then acquire the
+`access_token` which gives you access to all npm packages to which you
+have at least `read` permissions. Then you can set a buddybuild
+environment variable to make the access token available to your build.
+Finally, you can create (or update) the `buddybuild_postclone.sh` script
+to configure npm to use your access token and install your private
+package dependencies.
+
+Follow these steps:
+
+. **Capture the npm access token**:
++
+--
+[loweralpha]
+. From the command line, log in to npm:
++
+[source,bash]
+----
+npm login
+----
++
+You are prompted for your npmjs.com username, password, and email
+address.
+
+. Copy the access token from `~/.npmrc`.
++
+[source,bash]
+----
+cat ~/.npmrc
+//registry.npmjs.org/:_authToken=cb31c41d-3bq8-7285-fe20-361ea25e3c1e
+----
++
+The access token is the value after `_authToken=`, in this case:
+`cb31c41d-3bq8-7285-fe20-361ea25e3c1e`.
+--
+
+. **Set a buddybuild environment variable**, to provide the npm access
+  token to your build:
++
+--
+[loweralpha]
+. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
+  dashboard].
+
+. image:../img/button-app_settings.png["The App Settings button",
+  118, 64, role="right"]
+  Click **App Settings** button in the top toolbar. The **Default build
+  configuration** screen is displayed:
++
+image:../img/screen-build_settings.png["The Default build configuration
+screen", 1280, 1024, role="frame"]
+
+. image:../img/tab-environment.png["The Environment tab", 137, 52,
+  role="right"]
+  Click the **Environment tab**. The **Environment** settings screen is
+  displayed:
++
+image:../img/screen-environment_settings.png["The Environment
+settings", 1280, 619, role="frame"]
+
+. image:../img/button-configure.png["The Configure button", 81, 30,
+  role="right"]
+  In the **Environment variables** row, click the **Configure** button.
+  The **Environment variables** screen is displayed:
++
+image:img/screen-environment_variables.png["The Environment variables
+screen", 1280, 1024, role="frame"]
+
+. In the **Name** field, enter `NPM_AUTH_TOKEN`.
+
+. In the **Value** field, enter the npm access token that you copied
+  previously.
+
+. image:img/button-create.png["The Create button", 61, 30, role="right"]
+  Click the **Create** button.
+--
+
+. **Configure the build to use the environment variable**:
++
+--
+[loweralpha]
+. Create (or update) the `buddybuild_postclone.sh` script in the root of
+  your app's repository, so that it contains the following lines:
++
+[source,bash]
+----
+#!/usr/bin/env bash
+
+npm config set //registry.npmjs.org/:_authToken $NPM_AUTH_TOKEN
+npm install
+----
+
+. Commit the change to `buddybuild_postclone.sh`.
+--
+
+That's it! Your builds now have access to your npm access token, and
+your app's npm dependencies are installed, including any private
+packages where you have `read` permissions.
