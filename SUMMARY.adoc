@@ -164,6 +164,8 @@
 .. link:billing/payment_details.adoc[Change payment details]
 
 . link:troubleshooting/README.adoc[Troubleshooting]
+.. link:troubleshooting/authentication_failed.adoc[Authentication
+   failed]
 .. link:troubleshooting/user_not_getting_alert_when_a_new_version_of_app_is_available.adoc[User
    not getting alert when a new version of app is available]
 .. link:troubleshooting/repo_does_not_contain_all_commits.adoc[Repository does
