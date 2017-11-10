@@ -1,3 +1,9 @@
+---
+description: >
+  This section provides answers to frequently-asked build questions,
+  like \"How to build a specific commit\".
+---
+
 = Builds FAQ
 
 This section provides answers to frequently-asked build questions. See

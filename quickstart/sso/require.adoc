@@ -1,3 +1,9 @@
+---
+description: >
+  This section covers the procedure to follow to require that
+  your users only use SSO to log into buddybuild.
+---
+
 = Require single sign-on (SSO) logins
 
 If you prefer that your users only use SSO, you can enable **Require
