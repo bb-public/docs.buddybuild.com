@@ -200,7 +200,7 @@ There have been instances where a non-explicit version resulted in a
 plugin being downloaded on buddybuild that is dependent on a newer
 version of a platform tool than what is specified in your `config.xml`.
 
-In these instances, we've had to to ask the customer to update their
+In these instances, we've had to ask the customer to update their
 platform tool versions in their `config.xml`.
 
 [[code-samples]]
