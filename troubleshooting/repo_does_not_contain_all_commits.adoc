@@ -32,7 +32,13 @@ git fetch origin $branch:$branch
 ----
 +
 If you need to download a different branch, change `master` on the first
-line.
+line. For example, to fully populate the branch that buddybuild has
+shallow cloned, change the first line to:
++
+[source,bash]
+----
+branch=$BUDDYBUILD_BRANCH
+----
 
 * If you need to download the entire Git history, then execute this
   command from a
