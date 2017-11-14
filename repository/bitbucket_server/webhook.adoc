@@ -85,9 +85,9 @@ Hooks pane selected and configuring the webhook", 2560, 1238]
 **Step 6: Enter the buddybuild webhook URL**
 Enter the buddybuild webhook URL that you copied from Step 1. Then click
 **Enable** to close the webhook editor dialog and enable. The next time
-that you push code code to your repository buddybuild will create a
-build for your app. Please remember that you will need to install a
-separate webhook for every app in buddybuild.
+that you push code to your repository buddybuild will create a build for
+your app. Please remember that you will need to install a separate
+webhook for every app in buddybuild.
 
 image:img/edit.png["The Bitbucket Post-Receive WebHooks dialog where
 the buddybuild webhook URL can be pasted", 2560, 1276]

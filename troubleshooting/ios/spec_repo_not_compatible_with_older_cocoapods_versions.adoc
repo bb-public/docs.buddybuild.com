@@ -9,7 +9,7 @@ description: >
 On Nov 11, 2016, the CocoaPods team introduced a breaking change that
 affects customers using 0.x versions of CocoaPods.
 
-You can read the the details of this change on their blog here:
+You can read the details of this change on their blog here:
 https://blog.cocoapods.org/Sharding/
 
 If you are using an older version of CocoaPods, you might start seeing
