@@ -60,8 +60,8 @@
 ... link:builds/dependencies/submodules.adoc[Submodules]
 ... link:builds/dependencies/cocoapods.adoc[CocoaPods]
 ... link:builds/dependencies/carthage.adoc[Carthage]
-... link:builds/dependencies/ruby.adoc[Ruby]
 ... link:builds/dependencies/node.adoc[Node.js]
+... link:builds/dependencies/ruby.adoc[Ruby]
 
 .. link:builds/frameworks/README.adoc[Cross-platform frameworks]
 ... link:builds/frameworks/react_native/README.adoc[React Native]

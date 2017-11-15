@@ -11,28 +11,63 @@ but these may not be at the versions that are suitable for your project.
 This section describes how to use a specific version of Ruby, and how to
 specify Ruby dependencies.
 
+The current Ruby versions on buddybuild VMs are:
 
-== Ruby version
+- 2.2.5
+- 2.3.1
+- 2.4.1
 
-To specify the version of Ruby to use for your project, use the `chruby`
-command. Using this command requires a
-link:../custom_build_steps.adoc[custom build step]. Each custom build
-step runs independently, so execute `chruby` in every step that you
-require.
+
+[[switch]]
+== Switch the active version of Ruby
+
+Only one version of Ruby is active at a time. By default, the highest
+available version of Ruby is active when a build VM starts up. If your
+project requires a lower version of Ruby, you can use the `chruby`
+command in a link:../custom_build_steps.adoc[custom build step], to
+switch to the specific version you need. Each custom build step runs
+independently, so execute `chruby` in every step that you require.
 
 For example, to use a specific version of Ruby immediately after
 buddybuild clones your project's source code, include the `chruby`
 command in the `buddybuild_postclone.sh` script:
 
-```bash
+[source,bash]
+----
 #!/usr/bin/env bash
 
 chruby 2.3.1
-```
+----
 
 This example switches the current `ruby` to version 2.3.1.
 
 
+[[install]]
+== Install a specific version of Ruby
+
+If your project requires a version of Ruby that is not already
+installed, use the `ruby-install` command in a
+link:../custom_build_steps.adoc[custom build step], to download and
+install a specific version of Ruby.
+
+Once installed, the selected version of Ruby remains on the build VM
+until your build is complete. However, you would still need to
+<<switch>> at every build step that requires Ruby.
+
+For example, to install a specific version of Ruby immediately after
+buddybuild clones your project's source code, include the `ruby-install`
+and `chruby` commands in the `buddybuild-postclone.sh` script:
+
+[source,bash]
+----
+#!/usr/bin/env bash
+
+ruby-install ruby 2.2.4
+chruby 2.2.4
+----
+
+
+[[gems]]
 == Gems
 
 The community of Ruby developers shares packages of Ruby code, called
