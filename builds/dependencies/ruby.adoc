@@ -8,8 +8,8 @@ As Ruby is evolving fairly rapidly, many Ruby-based tools function best
 (or at all) only with specific versions of Ruby. Buddybuild provides
 Ruby and a number of common Ruby tools, such as RubyGems and Bundler,
 but these may not be at the versions that are suitable for your project.
-This section describes how to use a specific version of Ruby, and how to
-specify Ruby dependencies.
+This section describes how to use a specific version of Ruby, how to
+install a Ruby when necessary, and how to specify Ruby dependencies.
 
 The current Ruby versions on buddybuild VMs are:
 
