@@ -13,20 +13,34 @@ specify Ruby dependencies.
 
 The current Ruby versions on buddybuild VMs are:
 
-- 2.2.5
-- 2.3.1
+[cols="2a,2a"]
+|===
+| iOS builds
+| Android builds
+
+|
 - 2.4.1
+- 2.3.1
+- 2.2.5
+- 2.0.0p648 (active)
+
+|
+- 2.3.3p222 (active)
+- 2.3.1
+- 2.2.5
+
+|===
 
 
 [[switch]]
 == Switch the active version of Ruby
 
-Only one version of Ruby is active at a time. By default, the highest
-available version of Ruby is active when a build VM starts up. If your
-project requires a lower version of Ruby, you can use the `chruby`
-command in a link:../custom_build_steps.adoc[custom build step], to
-switch to the specific version you need. Each custom build step runs
-independently, so execute `chruby` in every step that you require.
+Only one version of Ruby is active at a time; the default active Ruby
+for each platform is noted in the table above. If your project requires
+a different version of Ruby, you can use the `chruby` command in a
+link:../custom_build_steps.adoc[custom build step], to switch to the
+specific version you need. Each custom build step runs independently, so
+execute `chruby` in every step that you require.
 
 For example, to use a specific version of Ruby immediately after
 buddybuild clones your project's source code, include the `chruby`
@@ -65,6 +79,13 @@ and `chruby` commands in the `buddybuild-postclone.sh` script:
 ruby-install ruby 2.2.4
 chruby 2.2.4
 ----
+
+[CAUTION]
+=========
+Installing a new Ruby requires a notable amount of time for each build.
+If possible, try to make your builds succeed with an already-installed
+Ruby to avoid the time required for installation.
+=========
 
 
 [[gems]]
