@@ -109,8 +109,8 @@ is in the `app` folder locally, this variable is set to
 `/Users/buddybuild/workspace/app/build`.
 
 | `BUDDYBUILD_SECURE_FILES`
-| This is the location of your link:secure_files.adoc[secure files] on
-  the VM.
+| This is the location of your link:secrets/secure_files.adoc[secure
+  files] on the VM.
 
 Example: `/Users/buddybuild/secure_files`
 
@@ -229,9 +229,10 @@ instance, you could expose `git` information for the build in the
 [[environment-user]]
 === User-defined variables
 
-You can also define your own link:environment_variables.adoc[environment
-variables] through buddybuild's dashboard. User-defined environment
-variables are stored securely and made available during the build.
+You can also define your own
+link:secrets/environment_variables.adoc[environment variables] through
+buddybuild's dashboard. User-defined environment variables are stored
+securely and made available during the build.
 
 
 [[postclone]]
@@ -243,8 +244,6 @@ buddybuild does any analysis of what is in the repository.
 The `buddybuild_postclone.sh` script should be in the **root** of your
 repository.
 
-[[code-samples]]
---
 .`buddybuild_postclone.sh`
 [source,bash]
 ----
@@ -261,7 +260,6 @@ export GIT_REVISION_SHA=$(git rev-parse HEAD)
 # in the following format: Author Name &lt;author@example.com&gt;
 export GIT_REVISION_AUTHOR=$(git log -1 --pretty=format:"%an <%ae>")
 ----
---
 
 [IMPORTANT]
 ===========
@@ -289,8 +287,6 @@ automatically installed dependencies (eg. Cocoapods, Carthage, etc.).
 Add the `buddybuild_prebuild.sh` script to your repository, **next to
 your `.xcodeproj` or `build.gradle` files**.
 
-[[code-samples]]
---
 .`buddybuild_prebuild.sh`
 [source,bash]
 ----
@@ -299,7 +295,6 @@ your `.xcodeproj` or `build.gradle` files**.
 # Example for adding a key to the Plist
 /usr/libexec/PlistBuddy -c "Add APP_BRANCH String $BUDDYBUILD_BRANCH"
 ----
---
 
 [NOTE]
 ======
@@ -323,8 +318,6 @@ for any reason, the post-build script **does not run**).
 Add the `buddybuild_postbuild.sh` script to your repository, **next to
 your `.xcodeproj` or `build.gradle` files**.
 
-[[code-samples]]
---
 .`buddybuild_postbuild.sh`
 [source,bash]
 ----
@@ -336,7 +329,6 @@ curl \
  -F "build_number=$BUDDYBUILD_BUILD_NUMBER" \
  -F "https://archiveservice.example.com
 ----
---
 
 [NOTE]
 ======
@@ -362,8 +354,6 @@ operations.
 
 Add the `buddybuild_finally.sh` script to the **root** of your repository.
 
-[[code-samples]]
---
 .`buddybuild_finally.sh`
 [source,bash]
 ----
@@ -372,7 +362,6 @@ Add the `buddybuild_finally.sh` script to the **root** of your repository.
 bundle install
 bundle exec danger --fail-on-errors=true
 ----
---
 
 [NOTE]
 ======
@@ -394,15 +383,13 @@ completes, the build VM is destroyed.
 
 
 [[manual-fail]]
-== Manually failing the build from a custom build step
+== Manually fail the build from a custom build step
 
 When some conditions required for your build to be successful are not
 met, you may want to manually fail the build. To do that, exit from your
 script with a non-zero status code. That is how buddybuild knows that
 the build must fail.
 
-[[code-samples]]
---
 [source,bash]
 ----
 #!/usr/bin/env bash
@@ -414,7 +401,27 @@ if [[ "$BUDDYBUILD_BRANCH" =~ "release" ]]; then
   exit 1
 fi
 ----
---
+
+Another way to fail the build is to use `set -e`. This causes the shell
+that is running your script to exit immediately if one of the commands
+in the script exits with a non-zero status. If you decide to use `set
+-e`, place it before the commands that should cause an immediate exit
+(typically, at the top of the script). For example:
+
+[source,bash]
+----
+#!/usr/bin/env bash
+
+set -e
+
+scp user@remote.hostname:currencies.zip .
+unzip currencies.zip
+----
+
+This example tries to fetch a remote file called `currencies.zip`, and
+then unpacks the ZIP archive. If either command fails, they return a
+non-zero status and the build fails.
+
 
 [[support]]
 == Support
