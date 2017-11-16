@@ -1,0 +1,133 @@
+= Ruby dependencies
+
+Many tools that conduct or assist various kinds of builds are written in
+link:https://www.ruby-lang.org/[Ruby], a popular open source scripting
+language that balances functional and imperative programming.
+
+As Ruby is evolving fairly rapidly, many Ruby-based tools function best
+(or at all) only with specific versions of Ruby. Buddybuild provides
+Ruby and a number of common Ruby tools, such as RubyGems and Bundler,
+but these may not be at the versions that are suitable for your project.
+This section describes how to use a specific version of Ruby, how to
+install a Ruby when necessary, and how to specify Ruby dependencies.
+
+The current Ruby versions on buddybuild VMs are:
+
+[cols="2a,2a"]
+|===
+| iOS builds
+| Android builds
+
+|
+- 2.4.1
+- 2.3.1
+- 2.2.5
+- 2.0.0p648 (active)
+
+|
+- 2.3.3p222 (active)
+- 2.3.1
+- 2.2.5
+
+|===
+
+
+[[switch]]
+== Switch the active version of Ruby
+
+Only one version of Ruby is active at a time; the default active Ruby
+for each platform is noted in the table above. If your project requires
+a different version of Ruby, you can use the `chruby` command in a
+link:../custom_build_steps.adoc[custom build step], to switch to the
+specific version you need. Each custom build step runs independently, so
+execute `chruby` in every step that you require.
+
+For example, to use a specific version of Ruby immediately after
+buddybuild clones your project's source code, include the `chruby`
+command in the `buddybuild_postclone.sh` script:
+
+[source,bash]
+----
+#!/usr/bin/env bash
+
+chruby 2.3.1
+----
+
+This example switches the current `ruby` to version 2.3.1.
+
+
+[[install]]
+== Install a specific version of Ruby
+
+If your project requires a version of Ruby that is not already
+installed, use the `ruby-install` command in a
+link:../custom_build_steps.adoc[custom build step], to download and
+install a specific version of Ruby.
+
+Once installed, the selected version of Ruby remains on the build VM
+until your build is complete. However, you would still need to
+<<switch>> at every build step that requires Ruby.
+
+For example, to install a specific version of Ruby immediately after
+buddybuild clones your project's source code, include the `ruby-install`
+and `chruby` commands in the `buddybuild-postclone.sh` script:
+
+[source,bash]
+----
+#!/usr/bin/env bash
+
+ruby-install ruby 2.2.4
+chruby 2.2.4
+----
+
+[CAUTION]
+=========
+Installing a new Ruby requires a notable amount of time for each build.
+If possible, try to make your builds succeed with an already-installed
+Ruby to avoid the time required for installation.
+=========
+
+
+[[gems]]
+== Gems
+
+The community of Ruby developers shares packages of Ruby code, called
+Gems (available via link:https://rubygems.org/[the RubyGems site]). The
+best practice for managing Ruby dependencies for any project is to use
+link:http://bundler.io/[Bundler], a RubyGem manager.
+
+Bundler knows which dependencies your project requires when you specify
+them in a file called `Gemfile`. For example:
+
+```ruby
+source 'https://rubygems.org'
+gem 'nokogiri'
+gem 'rack', '~> 2.0.1'
+gem 'rspec'
+gem 'danger', '~> 5.5', '>= 5.5.3'
+```
+
+As you can see, a `Gemfile` lets you express version dependencies in
+different ways. In this example, `nokogiri` and `rspec` are required but
+the specific versions do not matter (the latest version of each gets
+installed). The `rack` dependency requires a version that is at least
+`2.0.1`, but not higher than `2.1`. The `danger` dependency requires a
+version that is at least `5.5` but not as high as `6`, and also must be
+at least `5.5.3`. See
+link:http://bundler.io/v1.15/gemfile.html[Gemfiles] for more
+information.
+
+To install or update all of the required dependencies, run:
+
+```bash
+bundle install
+```
+
+Bundler records the Gem files that it has installed by created a
+`Gemfile.lock` file. The next time you run the `bundle` command, Bundler
+uses the `Gemfile.lock` file to determine whether any Gems need to be
+updated. If you clone your code to another system, Bundler installs the
+versions of Gems specified in `Gemfile.lock`.
+
+The best practice is to commit both the `Gemfile` and `Gemfile.lock`
+files to your repository.

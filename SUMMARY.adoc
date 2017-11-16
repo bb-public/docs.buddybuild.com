@@ -60,6 +60,8 @@
 ... link:builds/dependencies/submodules.adoc[Submodules]
 ... link:builds/dependencies/cocoapods.adoc[CocoaPods]
 ... link:builds/dependencies/carthage.adoc[Carthage]
+... link:builds/dependencies/node.adoc[Node.js]
+... link:builds/dependencies/ruby.adoc[Ruby]
 
 .. link:builds/frameworks/README.adoc[Cross-platform frameworks]
 ... link:builds/frameworks/react_native/README.adoc[React Native]
@@ -74,7 +76,6 @@
 ... link:builds/secrets/device_variables.adoc[Device Variables]
 ... link:builds/secrets/environment_variables.adoc[Environment Variables]
 ... link:builds/secrets/secure_files.adoc[Secure Files]
-.. link:builds/node.adoc[Node version]
 .. link:builds/provisioning_profile_explorer.adoc[Provisioning Profile
    Inspector]
 .. link:builds/pull_requests.adoc[Pull Requests]
@@ -165,6 +166,8 @@
 .. link:billing/payment_details.adoc[Change payment details]
 
 . link:troubleshooting/README.adoc[Troubleshooting]
+.. link:troubleshooting/authentication_failed.adoc[Authentication
+   failed]
 .. link:troubleshooting/user_not_getting_alert_when_a_new_version_of_app_is_available.adoc[User
    not getting alert when a new version of app is available]
 .. link:troubleshooting/repo_does_not_contain_all_commits.adoc[Repository does

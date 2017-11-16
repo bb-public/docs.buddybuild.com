@@ -1,3 +1,8 @@
+---
+description: >
+  For performance reasons, buddybuild downloads only the minimal set
+  of branches and commits from the repository.
+---
 = Repository does not contain full list of commits
 
 For performance reasons, buddybuild downloads only the minimal set
@@ -15,8 +20,8 @@ insufficient information available from the optimized repository:
 
 == Workarounds
 
-* If you need to download another another branch (for example
-  `master`), then execute these commands from a
+* If you need to download another branch (for example `master`), then
+  execute these commands from a
   link:../builds/custom_build_steps.adoc#postclone[buddybuild postclone script].
 +
 [source,bash]
@@ -24,6 +29,15 @@ insufficient information available from the optimized repository:
 branch="master"
 git remote set-branches --add origin $branch
 git fetch origin $branch:$branch
+----
++
+If you need to download a different branch, change `master` on the first
+line. For example, to fully populate the branch that buddybuild has
+shallow cloned, change the first line to:
++
+[source,bash]
+----
+branch=$BUDDYBUILD_BRANCH
 ----
 
 * If you need to download the entire Git history, then execute this
