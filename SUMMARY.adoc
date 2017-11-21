@@ -87,6 +87,7 @@
 .. link:builds/status_badges.adoc[Status Badges]
 .. link:builds/xcode_versions.adoc[Xcode Versions and Xcode Preview]
 .. link:builds/download_ipa.adoc[Downloading Build Artifacts]
+.. link:builds/remote_access.adoc[Remote access]
 .. link:builds/settings/README.adoc[Build settings for all apps]
 
 . link:tests/README.adoc[Tests]

@@ -1,0 +1,300 @@
+---
+titletext: Access a build machine with SSH while your build is under way
+description: >
+  Debugging builds or fine-tuning custom build steps is much easier when
+  you have access to the build machine while your build is in progress.
+---
+= Remote access
+
+Remote access is a feature that allows you to access a build machine via
+SSH (or screen sharing for iOS builds) while a build is under way. This
+can make diagnosing build failures much easier than scanning through log
+files. Remote access can also reduce the time required to get
+link:custom_build_steps.adoc[custom build steps] working.
+
+[NOTE]
+======
+Remote access is only available to buddybuild customers on a paid plan.
+======
+
+Buddybuild makes access easy: when you rebuild your app with remote
+access enabled, buddybuild collects the public SSH keys stored in your
+source code repository and configures them in the build machine. Once
+the SSH configuration is complete, buddybuild provides the connection
+details so that you can connect right away. Screen sharing access is
+also provided for iOS builds, using the Virtual Network Computing
+protocol (VNC).
+
+You can watch the build progress, tail logs, make adjustments to build
+scripts, anything that would help future builds succeed more often. You
+have up to 20 minutes after the build completes, successfully or
+otherwise, before the VM running your build is retired and deleted.
+
+We ask that you don't abuse this facility. Remote access is provided so
+that you can improve your builds. Undesirable behavior via remote access
+could result in termination of this feature.
+
+[IMPORTANT]
+===========
+When you use remote access, make sure that you commit and push any
+changes you want to keep; nothing is saved when the VM is deleted.
+===========
+
+
+== Connect via remote access
+
+. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
+  dashboard].
+
+. Click the build that you'd like to diagnose with remote access. The
+  build details screen is displayed:
++
+image:img/screen-build_details-with_ssh.png["The build details screen
+with the Rebuild with Remote Access button", 1280, 643, role="frame"]
++
+[IMPORTANT]
+===========
+If you do not see the **Rebuild with Remote Access** button, you should
+contact sales@buddybuild.com to upgrade your plan.
+===========
+
+. image:img/button-rebuild_with_remote_access.png["The Rebuild with
+Remote Access button", 188, 30, role="right"]
+  Click the **Rebuild with Remote Access** button. Buddybuild begins
+  retrieving your public keys:
++
+image:img/screen-remote_access-retrieving_keys.png["The Retrieving your
+keys dialog", 1280, 1024, role="frame"]
++
+What you see next depends on whether there are public keys available or
+not:
++
+--
+[loweralpha]
+. If there are no public keys available in connected source code
+  repositories, the following dialog is displayed:
++
+image:img/screen-remote_access-add_key_dialog.png["The Add a public key
+for Remote Access dialog", 1280, 598, role="frame"]
++
+image:img/button-add_key.png["The Add key button", 70, 30, role="right"]
+Click the **Add key** button to use GitHub's interface to add a public
+key.
+
+. If there are one or more public keys available, the following dialog
+  is displayed:
++
+image:img/screen-remote_access-dialog.png["The Remote Access dialog",
+1280, 1024, role="frame"]
++
+Click the **Manage keys** link to visit the source code provider's key
+management interface.
+--
+
+. image:img/button-rebuild.png["The Rebuild button", 179, 34,
+  role="right"]
+  Once you click the **Rebuild** button, buddybuild starts the build. As
+  soon as the build machine is up and running, buddybuild installs your
+  public key(s) and displays the connection details.
++
+For an iOS build, both the SSH and screen sharing connection details are
+presented:
++
+image:img/panel-remote_access-ios.png["An iOS build's remote access
+connection details", 870, 226, role="frame"]
++
+For an Android build, only the SSH connection details are presented:
++
+image:img/panel-remote_access-android.png["An Android build's remote access
+connection details", 870, 104, role="frame']
+
+. Use SSH to connect to the build VM.
++
+--
+[loweralpha]
+. image:img/button-clipboard.png["The Clipboard button", 14, 15,
+  role="right"]
+  Click the clipboard icon beside the SSH command, to copy the command.
+
+. Open a terminal and paste the command, then press **Return**.
+--
++
+image:img/screen-remote_access-terminal.png["A terminal connected via
+SSH", 570, 438, role="frame"]
+
+At this point, you can do whatever you need to diagnose your build. When
+the 20 minutes after the build completes has expired, the remote access
+connection details panel is replaced with:
+
+image:img/panel-remote_access_no_longer_available.png["The remote access
+is no longer available panel", 1280, 1024, role="frame"]
+
+[IMPORTANT]
+===========
+When you use remote access, make sure that you commit and push any
+changes you want to keep; nothing is saved when the VM is deleted.
+===========
+
+
+[[screenshare]]
+== Screen sharing for iOS builds
+
+Screen sharing is enabled for iOS builds when you rebuild with remote
+access, and uses the Virtual Network Computing (VNC) protocol.
+
+To use screen sharing:
+
+. image:img/button-clipboard.png["The Clipboard button", 14, 15,
+  role="right"]
+  Click the clipboard icon beside the **URL** value, to copy the URL.
+
+. In the MacOS Finder's **Go** menu, select **Connect to server...**.
+  The **Connect to Server** dialog appears:
++
+image:img/dialog-connect_to_server.png["The Connect to Server dialog",
+487, 232, role="frame"]
+
+. In the **Server Address** field, type `vnc://` and then paste the URL.
+  The combined value should look something like:
+  `vnc://access.buddybuild.com:13108`
++
+[NOTE]
+======
+Do not save this connection as a favorite. The build VM is retired and
+deleted 20 minutes after your build completes, and you won't be able to
+access it again after that period.
+======
+
+. image:img/button-finder-connect.png["The Connect button", 83, 20,
+  role="right"]
+  Click the **Connect** button. A dialog appears asking for the name
+  and password to connect to access.buddybuild.com:
++
+image:img/dialog-finder-credentials.png["The Finder's credentials
+dialog", 431, 231, role="frame"]
+
+. In the **Name** field, type `customer` (or copy that value from the
+  **Username** field in your browser).
+
+. image:img/button-clipboard.png["The Clipboard button", 14, 15,
+  role="right"]
+  In your browser, click the clipboard icon beside the **Password**
+  field.
+
+. Paste the password into the **Password** field in the dialog.
+
+. image:img/button-finder-connect.png["The Connect button", 83, 20,
+  role="right"]
+  Click the **Connect** button to start the connection. Another dialog
+  appears asking how you would like to connect:
++
+image:img/dialog-finder-share.png["The Finder's connection mode dialog",
+431, 209, role="frame"]
+
+. image:img/button-finder-connect.png["The Connect button", 83, 20,
+  role="right"]
+  Select **Share the display** and click **Connect**. The shared desktop
+  of the build VM appears:
++
+image:img/screen-screensharing.png["The shared screen of the build VM",
+1024, 836, role="frame"]
+
+You can now operate the build VM as you see fit.
+
+[CAUTION]
+=========
+Be aware that VNC connections to buddybuild VMs are **not encrypted**.
+If you require an encrypted connection, see <<encrypt_vnc>>.
+=========
+
+
+[[encrypt_vnc]]
+== Encrypted VNC connection
+
+The VNC protocol does not include connection encryption. However, you
+can tunnel the VNC connection through the SSH connection.
+
+To setup the SSH tunnel:
+
+. image:img/button-clipboard.png["The Clipboard button", 14, 15,
+  role="right"]
+  Click the clipboard icon beside the SSH command, to copy the command.
+
+. Open a terminal and paste the command. **DO NOT PRESS RETURN YET**.
+
+. Add `-L 5900:localhost:5900` to the command. The full command should
+look something like:
++
+[source,text]
+----
+ssh buddybuild@access.buddybuild.com -p 12160 -L 15900:localhost:5900
+----
++
+This sets up a tunnel from port 15900 on `localhost` (your computer) to
+port 5900 on the build VM, via the SSH connection. We're using 15900 in
+this example instead of 5900, to avoid problems if you have screen
+sharing enabled on your computer.
+
+. Press **Return**. At this point, the SSH connection is established,
+  including the tunnel for the VNC connection.
+
+. Follow the steps in <<screenshare>>, but use the following value for
+  the **Server Address** field instead:
++
+[source,text]
+----
+vnc://localhost:15900
+----
+
+
+== Directory layout
+
+When you connect to a build VM via remote access, the current directory
+contains:
+
+[cols="1a,1a",options="header"]
+|===
+| iOS builds
+| Android builds
+
+|
+[source,text]
+----
+BBCheckCleanDummy.tmp
+Desktop/
+Documents/
+Downloads/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+bin/
+secure_files/
+workspace@
+----
+
+|
+[source,text]
+----
+BBCheckCleanDummy.tmp
+bin/
+gradleArtifacts.tar.gz
+gradleBuildCache.tar.gz
+secure_files/
+src/
+workspace@
+----
+
+|===
+
+Common to both platforms:
+
+- `secure_files` +
+  Any link:secrets/secure_files.adoc[secure files] created in the
+  buddybuild dashboard are copied to this folder at the start of every
+  build.
+
+- `workspace` +
+  Your project's source code is copied to this folder (which is a
+  symlink to `/tmp/sandbox/workspace`).
