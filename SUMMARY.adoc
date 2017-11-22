@@ -131,6 +131,7 @@
 .. link:integrations/itunes_connect.adoc[Apple Developer Portal]
 .. link:integrations/apple_2fa.adoc[Using an Apple Account with
    Two-Factor Authentication]
+.. link:integrations/asana.adoc[Asana]
 .. link:integrations/bitbucket_pipelines.adoc[Bitbucket Pipelines]
 .. link:integrations/ccmenu.adoc[CCMenu]
 .. link:integrations/github_issues.adoc[GitHub Issues]
