@@ -4,7 +4,11 @@ After an app has been built, it is not possible to alter, remove, or
 replace the provisioning profile used during the build. Whenever
 provisioning profile changes are required, your app needs to be rebuilt.
 
-If your app is built with a development provisioning profile, you
-cannot deploy your app to the App Store without rebuilding your app with
-a distribution provisioning profile.
+Xcode lets you create development provisioning profiles on your local
+computer, for deploying apps to connected devices. However, you cannot
+use a development provisioning profile to deploy your app to the App
+Store or to other devices. To deploy to the App Store, or to testers,
+you need to create a distribution provisioning profile in the Apple
+Developer Portal, which requires an active Developer Program
+subscription.
 ===========
