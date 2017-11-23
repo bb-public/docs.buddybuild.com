@@ -3,7 +3,10 @@ titletext: How to contact buddybuild
 description: >
   When you need to discuss your plan, get support for build or
   deployment issues, you can reach buddybuild via Intercom, email,
-  phone, or regular mail.
+  or regular mail.
+keywords: help,support,buddybuild help,buddybuild support,contact,contact buddybuild
+search:
+  keywords: ["support", "help"]
 ---
 = Contact us
 :logo-facebook: pass:[<i class="fa fa-facebook-official"></i>]
@@ -16,9 +19,12 @@ description: >
 
 image:_img/button-intercom.png["The Intercom button", 30, 30,
 role="right"]
-Buddybuild has integrated the Intercom button on most of its pages.
-That's the blue circle icon in the bottom right. Click it to start a
+Intercom is the best way to contact buddybuild; it's the blue circle
+icon in the bottom right of most buddybuild pages. Click it to start a
 discussion; we're happy to help!
+
+If, for any reason, the Intercom icon is not visible, contact us via
+email!
 
 
 [[mail]]
