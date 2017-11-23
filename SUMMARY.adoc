@@ -17,22 +17,22 @@
 ... link:quickstart/sso/okta.adoc[Okta]
 
 .. link:quickstart/ios/README.adoc[iOS]
-... link:quickstart/ios/select_a_repo_and_app_to_build.adoc[Selecting an App]
-... link:quickstart/ios/invite_testers.adoc[Inviting Testers]
+... link:quickstart/ios/select_a_repo_and_app_to_build.adoc[Selecting an app]
+... link:quickstart/ios/invite_testers.adoc[Inviting testers]
 ... link:quickstart/ios/integrate_sdk.adoc[Integrating SDK]
-... link:quickstart/ios/apple_developer_portal_sync.adoc[Auto-Syncing
-    Provisioning Profiles]
-... link:quickstart/ios/auto_versioning.adoc[Auto Versioning]
+... link:quickstart/ios/apple_developer_portal_sync.adoc[Auto-syncing
+    provisioning profiles]
+... link:quickstart/ios/auto_versioning.adoc[Auto versioning]
 
 .. link:quickstart/android/README.adoc[Android]
-... link:quickstart/android/select_an_app.adoc[Selecting an App]
+... link:quickstart/android/select_an_app.adoc[Selecting an app]
 ... link:quickstart/android/integrate_sdk.adoc[Integrating SDK]
-... link:quickstart/android/manual_sdk_integration.adoc[SDK Manual Integration]
-... link:quickstart/android/auto_versioning.adoc[Auto Versioning]
-... link:quickstart/android/build_variants.adoc[Build Variants]
+... link:quickstart/android/manual_sdk_integration.adoc[SDK manual integration]
+... link:quickstart/android/auto_versioning.adoc[Auto versioning]
+... link:quickstart/android/build_variants.adoc[Build variants]
 ... link:quickstart/android/testing.adoc[Testing]
 
-. link:repository/README.adoc[Source Control Systems]
+. link:repository/README.adoc[Source control systems]
 .. link:repository/self_hosted.adoc[Self-hosted repositories]
 .. link:repository/beanstalk/README.adoc[Beanstalk]
 ... link:repository/beanstalk/webhook.adoc[Webhook]
@@ -70,56 +70,56 @@
 ... link:builds/frameworks/cordova-ionic/README.adoc[Cordova / Ionic]
 ... link:builds/frameworks/meteor/README.adoc[Meteor]
 
-.. link:builds/build_logs.adoc[Build Details and Logs]
-.. link:builds/custom_build_steps.adoc[Custom Build Steps]
+.. link:builds/build_logs.adoc[Build details and logs]
+.. link:builds/custom_build_steps.adoc[Custom build steps]
 .. link:builds/secrets/README.adoc[Secrets and variables]
-... link:builds/secrets/device_variables.adoc[Device Variables]
-... link:builds/secrets/environment_variables.adoc[Environment Variables]
-... link:builds/secrets/secure_files.adoc[Secure Files]
-.. link:builds/provisioning_profile_explorer.adoc[Provisioning Profile
-   Inspector]
-.. link:builds/pull_requests.adoc[Pull Requests]
-.. link:builds/schedule_builds.adoc[Scheduling Builds]
-.. link:builds/skip_a_build.adoc[Skipping a Build]
-.. link:builds/auto-cancel_builds.adoc[Auto-cancel Builds]
-.. link:builds/disable_a_build.adoc[Disable a Build]
-.. link:builds/selective_builds.adoc[Selective Builds]
-.. link:builds/status_badges.adoc[Status Badges]
-.. link:builds/xcode_versions.adoc[Xcode Versions and Xcode Preview]
-.. link:builds/download_ipa.adoc[Downloading Build Artifacts]
+... link:builds/secrets/device_variables.adoc[Device variables]
+... link:builds/secrets/environment_variables.adoc[Environment variables]
+... link:builds/secrets/secure_files.adoc[Secure files]
+.. link:builds/provisioning_profile_explorer.adoc[Provisioning profile
+   inspector]
+.. link:builds/pull_requests.adoc[Pull requests]
+.. link:builds/schedule_builds.adoc[Scheduling builds]
+.. link:builds/skip_a_build.adoc[Skipping a build]
+.. link:builds/auto-cancel_builds.adoc[Auto-cancel builds]
+.. link:builds/disable_a_build.adoc[Disable a build]
+.. link:builds/selective_builds.adoc[Selective builds]
+.. link:builds/status_badges.adoc[Status badges]
+.. link:builds/xcode_versions.adoc[Xcode versions and Xcode preview]
+.. link:builds/download_ipa.adoc[Downloading build artifacts]
 .. link:builds/remote_access.adoc[Remote access]
 .. link:builds/settings/README.adoc[Build settings for all apps]
 
 . link:tests/README.adoc[Tests]
 .. link:tests/frameworks.adoc[Supported frameworks]
 .. link:tests/ios/README.adoc[iOS]
-... link:tests/ios/tests.adoc[Unit Tests]
-... link:tests/ios/code_coverage.adoc[Code Coverage]
+... link:tests/ios/tests.adoc[Unit tests]
+... link:tests/ios/code_coverage.adoc[Code coverage]
 ... link:tests/ios/configure_ui_tests_video_recording.adoc[Configure UI
-    tests for Video Replay]
+    tests for video replay]
 
 .. link:tests/android/README.adoc[Android]
-... link:tests/android/physical_devices.adoc[UI Tests on Physical Devices]
-... link:tests/android/virtual_devices.adoc[UI Tests on Virtual Devices]
+... link:tests/android/physical_devices.adoc[UI tests on physical devices]
+... link:tests/android/virtual_devices.adoc[UI tests on virtual devices]
 
 . link:deployments/README.adoc[Deployments]
 .. link:deployments/automatic.adoc[Automatic]
 .. link:deployments/manual.adoc[Manual]
 .. link:deployments/scheduled.adoc[Scheduled]
-.. link:deployments/focus_message.adoc[Release Notes]
+.. link:deployments/focus_message.adoc[Release notes]
 .. link:deployments/ios/README.adoc[iOS]
-... link:deployments/ios/code_signing/README.adoc[Code Signing]
+... link:deployments/ios/code_signing/README.adoc[Code signing]
 .... link:deployments/ios/code_signing/upload_manually.adoc[Upload
-     Certificates Manually]
+     certificates manually]
 .... link:deployments/ios/code_signing/certificate_management.adoc[Managing
-     Certificates and Provisioning Profiles]
+     certificates and provisioning profiles]
 .... link:deployments/ios/code_signing/create_a_code_signing_identity.adoc[Creating
-     a Code Signing Identity]
+     a code signing identity]
 ... link:deployments/ios/itunes_connect.adoc[iTunes Connect]
 
 .. link:deployments/android/README.adoc[Android]
 ... link:deployments/android/keystores/README.adoc[KeyStores]
-.... link:deployments/android/keystores/manage.adoc[Managing Your KeyStores]
+.... link:deployments/android/keystores/manage.adoc[Manage your KeyStores]
 
 ... link:deployments/android/google_play/README.adoc[Google Play]
 .... link:deployments/android/google_play/developer_console.adoc[Create
@@ -128,9 +128,9 @@
 .... link:deployments/android/google_play/manual.adoc[Manual]
 
 . link:integrations/README.adoc[Integrations]
-.. link:integrations/itunes_connect.adoc[Apple Developer Portal]
+.. link:integrations/itunes_connect.adoc[Apple developer portal]
 .. link:integrations/apple_2fa.adoc[Using an Apple Account with
-   Two-Factor Authentication]
+   two-factor authentication]
 .. link:integrations/asana.adoc[Asana]
 .. link:integrations/bitbucket_pipelines.adoc[Bitbucket Pipelines]
 .. link:integrations/ccmenu.adoc[CCMenu]
@@ -143,24 +143,24 @@
 .. link:integrations/settings/README.adoc[Integration settings for all apps]
 
 . link:sdk/README.adoc[buddybuild SDK]
-.. link:sdk/automatic_update.adoc[Automatic Update]
-.. link:sdk/feedback_reporter.adoc[Feedback Reporter]
-.. link:sdk/usage_tracking.adoc[Usage Tracking]
-.. link:sdk/feature_settings.adoc[Feature Settings]
-.. link:sdk/integration.adoc[Manual Installation (iOS)]
+.. link:sdk/automatic_update.adoc[Automatic update]
+.. link:sdk/feedback_reporter.adoc[Feedback reporter]
+.. link:sdk/usage_tracking.adoc[Usage tracking]
+.. link:sdk/feature_settings.adoc[Feature settings]
+.. link:sdk/integration.adoc[Manual installation (iOS)]
 .. link:sdk/api.adoc[SDK API]
 
-. link:testers/README.adoc[Tester's Manual]
-.. link:testers/install_builds.adoc[Installing Builds from buddybuild]
-.. link:testers/leave_feedback.adoc[Leaving Feedback]
+. link:testers/README.adoc[Tester's manual]
+.. link:testers/install_builds.adoc[Installing builds from buddybuild]
+.. link:testers/leave_feedback.adoc[Leaving feedback]
 
-. link:applications/README.adoc[Managing your Applications]
-.. link:applications/access.adoc[Manage Access]
+. link:applications/README.adoc[Managing your applications]
+.. link:applications/access.adoc[Manage access]
 .. link:applications/rename.adoc[Rename]
 .. link:applications/change_repo_url.adoc[Change repo URL]
 .. link:applications/delete.adoc[Delete]
 
-. link:billing/README.adoc[Billing and Plans]
+. link:billing/README.adoc[Billing and plans]
 .. link:billing/create_organization.adoc[Create an organization]
 .. link:billing/change_plan.adoc[Change your plan]
 .. link:billing/transfer_apps.adoc[Transfer apps between organizations]
@@ -171,8 +171,8 @@
    failed]
 .. link:troubleshooting/user_not_getting_alert_when_a_new_version_of_app_is_available.adoc[User
    not getting alert when a new version of app is available]
-.. link:troubleshooting/repo_does_not_contain_all_commits.adoc[Repository does
-   not contain full list of commits]
+.. link:troubleshooting/repo_does_not_contain_all_commits.adoc[Repository
+   does not contain full list of commits]
 .. link:troubleshooting/ios/README.adoc[iOS]
 ... link:troubleshooting/ios/common_build_errors.adoc[Common iOS build errors]
 ... link:troubleshooting/ios/missing_podfilelock.adoc[Missing Podfile.lock]
@@ -183,18 +183,18 @@
 ... link:troubleshooting/ios/spec_repo_not_compatible_with_older_cocoapods_versions.adoc[Spec
     repo not compatible with older CocoaPods versions]
 ... link:troubleshooting/ios/install_updated_wwdr_cert.adoc[Installing
-    Apple's Updated Intermediate WWDR Certificate]
+    Apple's updated intermediate WWDR certificate]
 ... link:troubleshooting/ios/core_data-generated_classes_not_found_by_xcode_8_during_the_build.adoc[Core
-    Data generated classes not found by Xcode 8 during the build]
+    Data-generated classes not found by Xcode 8 during the build]
 
 .. link:troubleshooting/android/README.adoc[Android]
 ... link:troubleshooting/android/common.adoc[Common Android build errors]
 ... link:troubleshooting/android/docker_environment.adoc[Tools and
-    Platform versions for Android / Docker environment]
-... link:troubleshooting/android/google_play.adoc[Google Play Errors]
-... link:troubleshooting/android/ui_tests.adoc[Android UI Test Errors]
+    platform versions for Android / Docker environment]
+... link:troubleshooting/android/google_play.adoc[Google Play errors]
+... link:troubleshooting/android/ui_tests.adoc[Android UI test errors]
 ... link:troubleshooting/android/build_number_without_sdk.adoc[Displaying
-    Build Number in an Android App without SDK Integration]
+    the build number in an Android app without SDK integration]
 
 .. link:troubleshooting/frameworks/README.adoc[Frameworks]
 ... link:troubleshooting/frameworks/cordova_ionic.adoc[Common Cordova /
@@ -202,4 +202,5 @@
 ... link:troubleshooting/frameworks/react_native.adoc[Common React
     Native errors]
 
+. link:contact.adoc[Contact us]
 . link:https://apidocs.buddybuild.com/[REST API]

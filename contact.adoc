@@ -1,0 +1,63 @@
+---
+titletext: How to contact buddybuild
+description: >
+  When you need to discuss your plan, get support for build or
+  deployment issues, you can reach buddybuild via Intercom, email,
+  or regular mail.
+keywords: help,support,buddybuild help,buddybuild support,contact,contact buddybuild
+search:
+  keywords: ["support", "help"]
+---
+= Contact us
+:logo-facebook: pass:[<i class="fa fa-facebook-official"></i>]
+:logo-linkedin: pass:[<i class="fa fa-linkedin-square"></i>]
+:logo-twitter: pass:[<i class="fa fa-twitter-square"></i>]
+
+
+[[intercom]]
+== Intercom
+
+image:_img/button-intercom.png["The Intercom button", 30, 30,
+role="right"]
+Intercom is the best way to contact buddybuild; it's the blue circle
+icon in the bottom right of most buddybuild pages. Click it to start a
+discussion; we're happy to help!
+
+If, for any reason, the Intercom icon is not visible, contact us via
+email!
+
+
+[[mail]]
+pass:[
+<iframe
+  class="right frame"
+  width="440"
+  height="470"
+  frameborder="0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCyL_Ouv67Q2qc0LYCjYU0Uf46FSYw72QQ&q=buddybuild,128+west+pender+street,vancouver,bc,canada&attribution_source=buddybuild&attribution_web_url=https://www.buddybuild.com/"
+  allowfullscreen>
+</iframe>]
+
+== Mailing address
+
+buddybuild +
+#401–128 West Pender Street +
+Vancouver, BC +
+V6B 1R8
+
+
+[[email]]
+== Email
+
+Sales: sales@buddybuild.com +
+Support: support@buddybuild.com +
+General: team@buddybuild.com
+
+
+[[social]]
+== Social media
+
+link:https://www.linkedin.com/company/buddybuild-com[{logo-linkedin}
+LinkedIn] +
+link:http://www.twitter.com/buddybuild/[{logo-twitter} Twitter] +
+link:https://www.facebook.com/Buddybuild-885496158166821/timeline/[{logo-facebook} Facebook]
