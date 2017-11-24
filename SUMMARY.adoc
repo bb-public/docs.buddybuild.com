@@ -202,5 +202,7 @@
 ... link:troubleshooting/frameworks/react_native.adoc[Common React
     Native errors]
 
+.. link:troubleshooting/jira.adoc[JIRA]
+
 . link:contact.adoc[Contact us]
 . link:https://apidocs.buddybuild.com/[REST API]
