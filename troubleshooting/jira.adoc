@@ -48,7 +48,7 @@ Field Configuration screen in JIRA", 1280, 624, role="frame"]
 +
 image:img/panel-jira-field_configuration-description.png["The
 description area within the Field configuration screen in JIRA", 941,
-34, role="frame"]
+34]
 
 . To the right of the **Description** subtitle, click the **Renderers**
   link. The **Edit Field Rendered: Description** screen is displayed:
