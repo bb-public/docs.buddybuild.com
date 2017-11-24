@@ -153,3 +153,11 @@ image:img/Settings---Jira-Issues---11.png["The JIRA Issues screen",
 
 That's it! Buddybuild is now connected to your JIRA. We automatically
 create an issue for every piece of feedback you receive.
+
+[NOTE]
+======
+Buddybuild sends user feedback to JIRA as Markdown-formatted content,
+which requires the Wiki Style Renderer. If you see Markdown markup in
+buddybuild-initiated issues, please ask your JIRA administrator to
+link:../troubleshooting/jira.adoc[enable the Wiki Style Renderer].
+======
