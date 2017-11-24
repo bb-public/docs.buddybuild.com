@@ -1,0 +1,70 @@
+---
+titletext: Troubleshooting JIRA issues
+description: >
+  Troubleshooting common JIRA issues.
+---
+= JIRA
+
+== Feedback screenshots do not appear in buddybuild-generated issue descriptions
+
+If you have enabled the link:../integrations/jira.adoc[JIRA
+integration], and are finding that buddybuild-generated issues for
+feedback do not have visible screenshots, the problem may be that the
+issue descriptions are configured to render as plain text.
+
+To correct this problem:
+
+. Log in to your JIRA instance as a user with JIRA administrator
+  privileges.
+
+. image:img/button-jira-gear.png["The JIRA gear button", 46, 40,
+  role="right"]
+  At the right of the top menu bar, click the gear icon. The
+  **Administration** dropdown menu appears:
++
+image:img/dropdown-jira-administration.png["The Administration dropdown
+menu in JIRA", 184, 314, role="frame"]
+
+. Select **Issues**. The **Issues** administration screen is displayed:
++
+image:img/screen-jira-administration-issues.png["The Issues
+administration screen in JIRA", 1280, 624, role="frame"]
+
+. In the left navigation bar, within the **Fields** section, click the
+  **Field configurations** link. The **View Field configurations**
+  screen is displayed:
++
+image:img/screen-jira-administration-field_configurations.png["The View
+Field Configurations screen in JIRA", 1280, 624, role="frame"]
+
+. Click the **Configure** link to the right of the **Default Field
+  Configuration** label. The **View Field Configuration** screen is
+  displayed:
++
+image:img/screen-jira-administration-field_configuration.png["The View
+Field Configuration screen in JIRA", 1280, 624, role="frame"]
+
+. Scroll down to the **Description** area:
++
+image:img/panel-jira-field_configuration-description.png["The
+description area within the Field configuration screen in JIRA", 941,
+34, role="frame"]
+
+. To the right of the **Description** subtitle, click the **Renderers**
+  link. The **Edit Field Rendered: Description** screen is displayed:
++
+image:img/screen-jira-administration-edit_field_renderer-description.png["The
+Edit Field Renderer: Description screen in JIRA", 1280, 465,
+role="frame"]
+
+. In the **Active Renderer** selection menu, select **Wiki Style
+  Renderer**.
+
+. image:img/button-jira-update.png["The Update button in JIRA", 67,
+  30, role="right"]
+  Click the **Update** button to use the **Wiki Style Renderer** for
+  issue descriptions.
+
+That's it! The screenshots that are included with feedback issues should
+now display as images.
+
