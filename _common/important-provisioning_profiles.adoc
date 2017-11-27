@@ -4,7 +4,27 @@ After an app has been built, it is not possible to alter, remove, or
 replace the provisioning profile used during the build. Whenever
 provisioning profile changes are required, your app needs to be rebuilt.
 
-If your app is built with a development provisioning profile, you
-cannot deploy your app to the App Store without rebuilding your app with
-a distribution provisioning profile.
+Xcode lets you create development provisioning profiles on your local
+computer, for deploying apps to connected devices. However, you cannot
+use a development provisioning profile to deploy your app to the App
+Store or to other devices.
+
+To upload your app to the App Store, the app must be signed with an App
+Store provisioning profile. If you have your code signing type set to
+**iOS Distribution** and you have an Apple Developer Portal Connection,
+buddybuild automatically generates App Store provisioning profiles for
+you, and uses those to build a version of your app compatible with the
+App Store.
+
+Getting App Store signed builds requires:
+
+- an **iPhone Distribution** code signing identity to be present in
+  buddybuild for the correct Apple Developer Team,
+
+- the code signing type in Xcode is set to **iPhone Distribution**,
+
+- an Apple Developer Portal Connection for the same Apple Developer Team.
+
+If, for any reason, you are not able to add an Apple Developer Portal
+Connection, please link:{{readme.path}}/contact.adoc[contact us].
 ===========
