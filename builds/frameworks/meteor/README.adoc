@@ -52,3 +52,10 @@ screen", 748, 1194]
 For iOS projects, you should select the workspace project, the one not
 within a `.meteor` folder. For Android, you can select the Android
 project.
+
+== Errors and Common Build Failures ==
+When trying to build an app, you might find that the build fails with an error that looks like
+`error: ios: platform is already added`
+This is an indication that meteor believes your iOS project has already been added, however in all likelihood, you have your `ios` folder set to be ignored in git.
+
+The solution here, would either be to run `meteor remove-platform ios` during the postclone script, or to locally run the command then commit the changes, so that buddybuild is able to start from a consistent state on every build
