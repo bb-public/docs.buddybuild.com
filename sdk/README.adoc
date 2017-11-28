@@ -1,8 +1,8 @@
 ---
 titletext: The buddybuild SDK collects crash reports, feedback, usage
 description: >
-  The buddybuild SDK includes a graphical user feedback reporter, a crash
-  reporting and analysis tool, automatic app updating, and usage tracking.
+  The buddybuild SDK includes a graphical user feedback reporter, crash
+  reports, instant replays, automatic app updating and usage tracking.
 ---
 = buddybuild SDK
 
@@ -14,11 +14,13 @@ with new features.
 
 This section includes the following topics:
 
-- link:automatic_update.adoc[Automatic Update]
-- link:feedback_reporter.adoc[Feedback Reporter]
-- link:usage_tracking.adoc[Usage Tracking]
-- link:feature_settings.adoc[Feature Settings]
-- link:integration.adoc[Manual Installation (iOS)]
+- link:automatic_update.adoc[Automatic update]
+- link:feedback_reporter.adoc[Feedback reporter]
+- link:crash_reporter.adoc[Crash reporter]
+- link:instant_replay.adoc[Instant replay]
+- link:usage_tracking.adoc[Usage tracking]
+- link:feature_settings.adoc[Feature settings]
+- link:integration.adoc[Manual installation (iOS)]
 - link:api.adoc[SDK API]
 
 The SDK includes a lot of functionality in a small package; including

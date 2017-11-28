@@ -4,14 +4,14 @@ description: >
   The buddybuild SDK's automatic update feature notifies testers with an in-app
   prompt whenever a new build is available.
 ---
-= Automatic Update
+= Automatic update
 
 Receiving feedback on old builds is pointless -- you've probably already
 fixed the issue you've received feedback on! It is crucial to keep your
 testers and beta users updated on the very latest builds.
 
-Using the buddybuild SDK, testers will receive an in-app prompt to
-install a new build once it’s been deployed.
+Using the buddybuild SDK, testers receive an in-app prompt to
+install a new build once it has been deployed.
 
 [NOTE]
 ======
@@ -25,10 +25,3 @@ install a new build once it’s been deployed.
 Once deployments have been set up, simply
 link:../quickstart/ios/integrate_sdk.adoc[integrate the buddybuild SDK]
 into your app to enable the **Automatic Update** feature.
-
-The SDK also offers several other features in addition to Automatic
-Updates. Follow the links below to learn more about you can supercharge
-your app with the buddybuild SDK.
-
-- link:feedback_reporter.adoc[Feedback Reporter]
-- link:usage_tracking.adoc[Usage Tracking]

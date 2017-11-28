@@ -1,0 +1,33 @@
+---
+titletext: Should your app crash, a report is sent to buddybuild
+description: >
+  The buddybuild SDK crash reporter automatically sends a report should
+  your app crash. You can browse crash reports and dig into the details
+  of each crash.
+---
+= Crash reporter
+
+Once your app builds, it may still contain bugs that cause it to crash.
+Ideally, you want to discover when and how your app crashes before you
+make it publicly available.
+
+The buddybuild SDK contains a crash reporter: should your SDK-enabled
+app crash, a crash report is sent to buddybuild. This makes it easier
+for your testers, since if they encounter a crash during testing, the
+crash report is automatically created.
+
+If you enable link:instant_replay.adoc[instant replay for crash
+reports], your crash reports are accompanied by up to 15 seconds of
+video demonstrating the actions taken by the tester that lead to the
+crash.
+
+The buddybuild dashboard lets you browse crash reports and dig into the
+details of each crash. When you configure an integration with GitHub
+Issues, JIRA, Slack, Pivotal Tracker, or Asana, buddybuild can send you
+notifications for crash reports.
+
+To enable the crash reporter, follow the procedure described in
+link:feature_settings.adoc[Feature settings], and ensure that the
+**Crash reporter** setting is enabled.
+
+FIXME: Include a screenshot of a crash report.

@@ -5,7 +5,7 @@ description: >
   from the buddybuild dashboard. However, you can install the buddybuild
   SDK manually.
 ---
-= SDK Manual Installation (iOS)
+= SDK manual installation (iOS)
 
 We highly recommend using the **automatic** buddybuild SDK integration
 right from the buddybuild dashboard.
@@ -174,5 +174,5 @@ git push
 ----
 --
 
-That's it! Your code push will be picked up by buddybuild. Subsequent
-builds of your App will now have the SDK integrated!
+That's it! Your code push is picked up by buddybuild, and subsequent builds
+of your app have the SDK integrated.
