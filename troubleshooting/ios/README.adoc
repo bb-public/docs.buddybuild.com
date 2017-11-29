@@ -16,7 +16,6 @@ solutions:
 - link:missing_schemes.adoc[Missing schemes]
 - link:getting_device_logs_from_xcode.adoc[Getting device logs from Xcode]
 - link:install_builds.adoc[Install builds]
-- link:app_crash_on_launch.adoc[App crash on launch]
 - link:spec_repo_not_compatible_with_older_cocoapods_versions.adoc[Spec
   repo not compatible with older CocoaPods versions]
 - link:install_updated_wwdr_cert.adoc[Installing Apple's Updated

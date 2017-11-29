@@ -15,6 +15,7 @@ errors:
 - <<error1>>
 - <<error2>>
 - <<error3>>
+- <<error4>>
 
 See <<errors>> for coverage of specific errors.
 
@@ -67,14 +68,11 @@ issues when building on buddybuild.
 
 For example:
 
-[[code-samples]]
---
 .Wildcard Dependency
 [source,groovy]
 ----
 compile('com.facebook.android:facebook-android-sdk:4.+')
 ----
---
 
 [[error3]]
 == Make sure your app is configured to generate an offline bundle
@@ -91,8 +89,6 @@ debug/development variants.
 The code below provides an example as to how to generate an offline
 bundle for a debug variant.
 
-[[code-samples]]
---
 [source,groovy]
 ----
 project.ext.react = [
@@ -103,7 +99,25 @@ project.ext.react = [
 
 apply from: "../../node_modules/react-native/react.gradle"
 ----
---
+
+[[error4]]
+== App crash on launch
+
+If your React Native app crashes on launch, and the
+link:../../sdk/README.adoc[buddybuild SDK] has not been installed, it
+may not be obvious where to start looking to diagnose the problem.
+
+The most common cause of this issue is a missing `main.jsbundle` file.
+Local builds appear to work because the file is available. When the file
+is missing from your repository, buddybuild can successfully build your
+React Native app but the app crashes on launch.
+
+To confirm the exact cause of a crash on launch, examination of the
+device's logs is necessary. If the buddybuild SDK has been installed,
+you can check the dashboard for a crash report. Otherwise, see
+link:../ios/getting_device_logs_from_xcode.adoc[getting device logs from
+Xcode].
+
 
 [[errors]]
 == Troubleshooting Errors
@@ -215,13 +229,10 @@ This generally is a result of version mismatches. The
 reference its `facebook-android-sdk` version dependency, and depending
 on the version picked up, it can cause failures.
 
-[[code-samples]]
---
 [source,groovy]
 ----
 compile('com.facebook.android:facebook-android-sdk:4.+')
 ----
---
 
 The following Stack Overflow article explains the issue and resolutions
 in more detail:

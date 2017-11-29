@@ -38,8 +38,6 @@ have encountered, and provides solutions that could help you.
 
 - link:ios/install_builds.adoc[Install builds]
 
-- link:ios/app_crash_on_launch.adoc[App crash on launch]
-
 - link:ios/spec_repo_not_compatible_with_older_cocoapods_versions.adoc[Spec
   repo not compatible with older CocoaPods versions]
 
