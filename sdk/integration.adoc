@@ -1,47 +1,48 @@
 ---
-titletext: How to manually install the buddybuild SDK for iOS
+titletext: How to manually integrate the buddybuild SDK
 description: >
   We highly recommend using the automatic buddybuild SDK integration
-  from the buddybuild dashboard. However, you can install the buddybuild
-  SDK manually.
+  from the buddybuild dashboard. However, you can integrate the
+  buddybuild SDK manually.
 ---
-= SDK Manual Installation (iOS)
+= Manual integration of the buddybuild SDK
 
 We highly recommend using the **automatic** buddybuild SDK integration
-right from the buddybuild dashboard.
+right from the buddybuild dashboard. See the instructions
+link:../quickstart/ios/integrate_sdk.adoc[for iOS] or
+link:../quickstart/android/integrate_sdk.adoc[for Android].
 
-However, if you wish to install the buddybuild SDK **manually**, follow
-the steps on this page.
+However, if you wish to integrate the buddybuild SDK **manually**,
+follow the platform-specific steps on this page:
+
+- <<ios>>
+- <<android>>
+
+
+[[ios]]
+== iOS integration steps pass:[<i class="fa fa-apple"></i>]
 
 [NOTE]
 ======
 **Use CocoaPods?**
 
 Include the link:http://cocoapods.org/pods/BuddyBuildSDK[BuddyBuildSDK]
-pod in your Podfile and move on to link:#add-frameworks[Step 4]
+pod in your Podfile and move on to <<add-frameworks,Step 4>>.
 ======
-
-== Manual integration steps
 
 . **Navigate to your repository root directory**.
 +
-[[code-samples]]
---
 [source,bash]
 ----
 cd myAwesomeApp
 ----
---
 
 . **Remove any previous version of the buddybuild SDK**.
 +
-[[code-samples]]
---
 [source,bash]
 ----
 rm -rf BuddyBuildSDK.framework*
 ----
---
 
 . **Download and unpack the buddybuild SDK**.
 +
@@ -49,16 +50,12 @@ Download and unpack the
 link:https://s3-us-west-2.amazonaws.com/buddybuild-sdk-builds/master/BuddyBuildSDK.framework.zip[`BuddyBuildSDK.framework.zip`]
 file into your project's root directory:
 +
-[[code-samples]]
---
 [source,bash]
 ----
 wget https://s3-us-west-2.amazonaws.com/buddybuild-sdk-builds/master/BuddyBuildSDK.framework.zip
 unzip BuddyBuildSDK.framework.zip
 rm -f BuddyBuildSDK.framework.zip
 ----
---
-
 
 . [[add-frameworks]] **Add iOS frameworks**
 +
@@ -142,37 +139,127 @@ BuddyBuildSDK.setup()
 
 . **Run your application in Xcode**.
 
-. **Verify that the SDK is installed and working**.
+. **Verify that the SDK is integrated and working**.
 +
 In the Xcode output pane you should see the following log line, which
 indicates that the buddybuild SDK has been successfully integrated.
 +
-[[code-samples]]
---
 .When running on a physical device
 [source,text]
 ----
 2015-10-05 15:34:48.693 myAwesomeApp[25126:526527] BuddybuildSDK : Successfully integrated. Feedback tool, crash reporting and other features are disabled for local builds. Please build with https://dashboard.buddybuild.com to enable.
 ----
-
++
 .When running in a simulator
 [source,text]
 ----
 2015-10-05 15:33:24.562 myAwesomeApp[25126:526527] BuddybuildSDK : Disabled in the simulator
 ----
---
 
-. **Commit the change and push to your repo**.
+. **Commit the changes and push to your repository**.
 +
-[[code-samples]]
---
 [source,bash]
 ----
 git add --all
 git commit -m 'Adding buddybuild SDK'
 git push
 ----
---
 
-That's it! Your code push will be picked up by buddybuild. Subsequent
-builds of your App will now have the SDK integrated!
+That's it! The SDK is now integrated into your iOS app, and becomes
+active in subsequent builds, including the build started by your code
+push.
+
+
+[[android]]
+== Android integration steps pass:[<i class="fa fa-android"></i>]
+
+[TIP]
+=====
+As of November 2017, the buddybuild SDK for Android contains 279
+methods.
+=====
+
+. **Add plugins to `build.gradle`**
++
+In order to pull in the plugins needed to build the app with the SDK,
+add the following line to your `build.gradle` file:
++
+[source,json]
+----
+repositories {
+    jcenter()
+
+    maven {
+        url 'https://dl.bintray.com/buddybuild/maven'
+    }
+}
+
+dependencies {
+    compile 'com.buddybuild:sdk:0.0.84@aar'
+    compile 'com.squareup:seismic:1.0.2'
+    compile 'com.faendir:acra:4.10.0'
+}
+----
++
+[TIP]
+=====
+Two things to note here:
+
+. You can put the `repositories` section in the base `build.gradle` file,
+  but you need to put it under the `allprojects` section.
+
+. Note the `@aar` at the end of `com.buddybuild:sdk:0.0.84`
+=====
+
+. **Add Permissions to `AndroidManifest.xml`**
++
+The following permissions allow the SDK to send feedback, as well as to
+collect adb logs in case of app crash:
++
+[source,xml]
+----
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.READ_LOGS"/>
+----
+
+. **Setup the SDK on `Application.onCreate()`**
++
+One last thing to do is to start up the SDK upon app start. All you need
+to do is to add **BuddyBuild.setup(this)** to your **Application**
+class.
++
+[WARNING]
+=========
+This does **not** work properly when added to the **main activity**
+class.
+=========
++
+[source,java]
+----
+package buddybuild.com.helloworldandroid;
+
+import android.app.Application;
+import com.buddybuild.sdk.BuddyBuild;
+
+public class MainApplication extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        BuddyBuild.setup(this);
+    }
+}
+----
+
+. **Commit the changes and push to your repository**.
++
+[source,bash]
+----
+git add --all
+git commit -m 'Adding buddybuild SDK'
+git push
+----
+
+That's it! The SDK is now integrated into your Android app, and becomes
+active in subsequent builds, including the build started by your code
+push.

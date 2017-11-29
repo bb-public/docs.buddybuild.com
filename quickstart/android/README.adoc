@@ -12,6 +12,5 @@ Android developers:
 
 - link:select_an_app.adoc[Selecting an App]
 - link:integrate_sdk.adoc[Integrating SDK]
-- link:manual_sdk_integration.adoc[SDK Manual Integration]
 - link:auto_versioning.adoc[Auto Versioning]
 - link:build_variants.adoc[Build Variants]
