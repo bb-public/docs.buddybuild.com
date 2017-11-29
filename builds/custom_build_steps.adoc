@@ -43,6 +43,8 @@ This page contains several sub-sections:
 - <<postbuild>>
 - <<finally>>
 - <<manual-fail>>
+- <<fabric>>
+- <<aws>>
 - <<support>>
 
 
@@ -421,6 +423,122 @@ unzip currencies.zip
 This example tries to fetch a remote file called `currencies.zip`, and
 then unpacks the ZIP archive. If either command fails, they return a
 non-zero status and the build fails.
+
+
+[[fabric]]
+== Upload dSYMs to Fabric
+
+link:https://get.fabric.io/[Fabric] is a platform that helps mobile
+teams build better apps. Many iOS developers use Fabric's
+link:http://try.crashlytics.com/[Crashlytics] kit to process crash
+reports. In order to use Crashlytics, the debug symbols file (dSYM) file
+needs to be uploaded.
+
+The dSYM file is only generated when the **Strip Debug Symbols** setting
+is enabled in Xcode, in the build settings of your project. This setting
+is an optimization, as symbols can add a notable amount to the size of
+your compiled binary, and removal makes it much harder for others to
+reverse engineer your code.
+
+When **Strip Debug Symbols** is enabled, the symbol names of objects
+within your app are removed from the compiled binary, and are written to
+the dSYM file. The dSYM file is useful for re-symbolicating crash
+reports.
+
+Fabric includes an `upload-symbols` script that you can call anywhere in
+your build process to upload your dSYMs. That script is included in
+Fabric's CocoaPod payload at `$PODS_ROOT/Fabric/upload-symbols`.
+
+To upload your dSYMs to Fabric:
+
+. Create (or update) `buddybuild_postbuild.sh` in the root of your
+  repository so that it contains the following lines:
++
+[source,bash]
+----
+#!/usr/bin/env bash
+
+echo "Uploading IPAs and dSYMs to Crashlytics"
+
+CRASHLYTICS_API_KEY=Your_API_key
+echo "Uploading to Fabric via command line"
+$BUDDYBUILD_WORKSPACE/Pods/Fabric/upload-symbols -a $CRASHLYTICS_API_KEY -p ios $BUDDYBUILD_PRODUCT_DIR/dSYMs
+----
+
+. Commit the changes to your repository:
++
+[source,bash]
+----
+git add buddybuild_finally.sh
+git commit -m "Copy assets to S3"
+git push
+----
+
+. Ensure that **Build for archive** is enabled in the buddybuild
+  Dashboard for your app. If this setting is not enabled, the `dSYMs`
+  directory is not created and so nothing can be uploaded to
+  Crashlytics.
+
+For more information, see Crashlytics'
+link:https://docs.fabric.io/apple/crashlytics/advanced-setup.html[Advanced
+Setup].
+
+
+[[aws]]
+== Upload build artifacts to Amazon S3
+
+If your builds produce assets that you'd like to use in other contexts,
+you need to upload those assets to some persistent storage because the
+buddybuild VM used to build your app is deleted upon build completion;
+only app binaries, test results, and logs are normally saved.
+
+You can use the `buddybuild_finally.sh` custom script to copy assets to
+persistent storage such as Amazon's Simple Storage Service, or S3. The
+following example uses
+link:secrets/environment_variables.adoc[environment variables] to
+provide your Amazon AWS credentials, and the `awscli` tool to perform
+the upload to S3.
+
+. Setup the following environment variables in the buddybuild dashboard,
+  using the appropriate values for your AWS account:
++
+--
+- `AWS_ACCESS_KEY_ID`: your AWS access key.
+- `AWS_SECRET_ACCESS_KEY`: your AWS secret access key.
+- `AWS_DEFAULT_REGION`: defaults to `us-west-2`.
+--
+
+. Create (or update) `buddybuild_finally.sh` in the root of your
+  repository so that it contains the following lines:
++
+[source,bash]
+----
+#!/usr/bin/env bash
+
+pip install awscli
+aws s3 cp my_build_asset.file s3://mybucket/
+----
++
+Replace `my_build_asset.file` with the filename of a build artifact that
+you wish to copy to S3. Replace `mybucket` with the identifier for the
+destination bucket on S3. Add as many `aws` commands as required to copy
+each build artifact.
+
+. Commit the changes to your repository:
++
+[source,bash]
+----
+git add buddybuild_finally.sh
+git commit -m "Copy assets to S3"
+git push
+----
+
+For more information, see:
+
+- link:http://docs.aws.amazon.com/AmazonS3/latest/gsg/GetStartedWithS3.html[Getting
+  Started with Amazon Simple Storage Service]
+- link:http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html[What
+  Is the AWS Command Line Interface?]
 
 
 [[support]]
