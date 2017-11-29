@@ -3,7 +3,7 @@ titletext: How to integrate Meteor into your mobile app's CI process
 description: >
   Step-by-step instructions to integrate Meteor into your build.
 ---
-= Meteor Setup
+= Meteor setup
 
 While buddybuild natively supports Cordova, additional steps are
 required to integrate Meteor into your build.
@@ -13,7 +13,7 @@ project, excluding the `local` folder as buddybuild doesn't need it.
 Without it, buddybuild won't be able to build your project.
 
 
-== New Project
+== New project
 
 First, we need to tell buddybuild how to build your meteor project. We
 can do this by having a `buddybuild_postclone.sh` file in the root of your
@@ -52,3 +52,24 @@ screen", 748, 1194]
 For iOS projects, you should select the workspace project, the one not
 within a `.meteor` folder. For Android, you can select the Android
 project.
+
+
+== Errors and common build failures
+
+When trying to build an app, you might find that the build fails with an
+error that looks like `error: ios: platform is already added`.
+
+This is an indication that Meteor believes that your iOS project has
+already been added, however in all likelihood, you have your `ios`
+folder set to be ignored in Git.
+
+The solution is to run `meteor remove-platform ios`, in one of two
+variations:
+
+. You can run the command from your `buddybuild_postclone.sh` script.
+
+. You can run the command locally, remove the `ios` folder from your
+  `.gitignore`, and then commit the changes.
+
+Either variation allows buddybuild to start with a consistent state for
+every build.

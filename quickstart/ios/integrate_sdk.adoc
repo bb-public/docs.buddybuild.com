@@ -9,14 +9,16 @@ description: >
 
 == About the buddybuild SDK
 
+pass:[<i class="fa fa-apple fa-3x right"></i>]
 The buddybuild SDK is a lightweight yet powerful suite of tools that
 integrates seamlessly into your application. The SDK includes a
 graphical feedback reporter, a crash reporting and analysis tool,
 automatic app updating and usage tracking. The SDK is regularly updated
 with new features.
 
-The buddybuild SDK is available for both iOS and Android platforms and
-enables the following features:
+The buddybuild SDK is available for both iOS and
+link:../android/integrate_sdk.adoc[Android] platforms and enables the
+following features:
 
 [NOTE]
 ======

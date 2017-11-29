@@ -19,15 +19,15 @@
 .. link:quickstart/ios/README.adoc[iOS]
 ... link:quickstart/ios/select_a_repo_and_app_to_build.adoc[Selecting an app]
 ... link:quickstart/ios/invite_testers.adoc[Inviting testers]
-... link:quickstart/ios/integrate_sdk.adoc[Integrating SDK]
+... link:quickstart/ios/integrate_sdk.adoc[Integrate the SDK for iOS]
 ... link:quickstart/ios/apple_developer_portal_sync.adoc[Auto-syncing
     provisioning profiles]
 ... link:quickstart/ios/auto_versioning.adoc[Auto versioning]
 
 .. link:quickstart/android/README.adoc[Android]
 ... link:quickstart/android/select_an_app.adoc[Selecting an app]
-... link:quickstart/android/integrate_sdk.adoc[Integrating SDK]
-... link:quickstart/android/manual_sdk_integration.adoc[SDK manual integration]
+... link:quickstart/android/integrate_sdk.adoc[Integrate the SDK for
+    Android]
 ... link:quickstart/android/auto_versioning.adoc[Auto versioning]
 ... link:quickstart/android/build_variants.adoc[Build variants]
 ... link:quickstart/android/testing.adoc[Testing]
@@ -149,7 +149,7 @@
 .. link:sdk/instant_replay.adoc[Instant replay]
 .. link:sdk/usage_tracking.adoc[Usage tracking]
 .. link:sdk/feature_settings.adoc[Feature settings]
-.. link:sdk/integration.adoc[Manual installation (iOS)]
+.. link:sdk/integration.adoc[Manual integration]
 .. link:sdk/api.adoc[SDK API]
 
 . link:testers/README.adoc[Tester's manual]

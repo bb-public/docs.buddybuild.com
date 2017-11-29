@@ -35,7 +35,6 @@ This section describes how to quickly get started using buddybuild.
 |
 - link:android/select_an_app.adoc[Selecting an App]
 - link:android/integrate_sdk.adoc[Integrating SDK]
-- link:android/manual_sdk_integration.adoc[SDK Manual Integration]
 - link:android/auto_versioning.adoc[Auto Versioning]
 - link:android/build_variants.adoc[Build Variants]
 
