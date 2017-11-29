@@ -222,7 +222,7 @@ collect adb logs in case of app crash:
 <uses-permission android:name="android.permission.READ_LOGS"/>
 ----
 
-. **Setup the SDK on `Application.onCreate()`**
+. **Setup the SDK in `Application.onCreate()`**
 +
 One last thing to do is to start up the SDK upon app start. All you need
 to do is to add **BuddyBuild.setup(this)** to your **Application**
