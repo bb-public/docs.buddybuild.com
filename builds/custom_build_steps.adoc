@@ -492,9 +492,9 @@ you need to upload those assets to some persistent storage because the
 buddybuild VM used to build your app is deleted upon build completion;
 only app binaries, test results, and logs are normally saved.
 
-You can use the `buddybuild_finally.sh` custom script to copy assets to
-persistent storage such as Amazon's Simple Storage Service, or S3. The
-following example uses
+You can use the `buddybuild_postbuild.sh` custom script to copy assets
+to persistent storage such as Amazon's Simple Storage Service, or S3.
+The following example uses
 link:secrets/environment_variables.adoc[environment variables] to
 provide your Amazon AWS credentials, and the `awscli` tool to perform
 the upload to S3.
@@ -508,14 +508,13 @@ the upload to S3.
 - `AWS_DEFAULT_REGION`: defaults to `us-west-2`.
 --
 
-. Create (or update) `buddybuild_finally.sh` in the root of your
+. Create (or update) `buddybuild_postbuild.sh` in the root of your
   repository so that it contains the following lines:
 +
 [source,bash]
 ----
 #!/usr/bin/env bash
 
-pip install awscli
 aws s3 cp my_build_asset.file s3://mybucket/
 ----
 +
