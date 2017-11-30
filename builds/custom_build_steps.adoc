@@ -462,7 +462,7 @@ echo "Uploading IPAs and dSYMs to Crashlytics"
 
 CRASHLYTICS_API_KEY=Your_API_key
 echo "Uploading to Fabric via command line"
-$BUDDYBUILD_WORKSPACE/Pods/Fabric/upload-symbols -a $CRASHLYTICS_API_KEY -p ios $BUDDYBUILD_PRODUCT_DIR/dSYMs
+$BUDDYBUILD_WORKSPACE/Fabric.framework/run $CRASHLYTICS_API_KEY
 ----
 
 . Commit the changes to your repository:
