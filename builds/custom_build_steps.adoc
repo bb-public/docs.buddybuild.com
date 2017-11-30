@@ -470,7 +470,7 @@ $BUDDYBUILD_WORKSPACE/Fabric.framework/run $CRASHLYTICS_API_KEY
 [source,bash]
 ----
 git add buddybuild_finally.sh
-git commit -m "Copy assets to S3"
+git commit -m "Copy dSYMs to Crashlytics"
 git push
 ----
 
