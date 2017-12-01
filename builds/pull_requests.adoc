@@ -66,27 +66,37 @@ image:img/Builds---Settings---Build-pushes-override.png["The Override
 build configuration area, with Build pushes option selected", 1500, 542]
 
 
+[[cross-repo]]
 == Cross-repository pull requests
 
 By default, cross-repository pull requests are disabled in buddybuild.
-To enable this feature, first click the **configure** link beneath the
-**Build pull requests** option. Then enable the **Build cross-repository
-pull requests** setting in the dialog that appears.
+This is a security feature. See link:secrets/README.adoc[Build secrets]
+for details.
 
-image:img/Builds---Settings---Pull-Requests-toggle.png["The Build pull
-requests toggle", 1500, 183]
+To enable this feature:
 
-Buddybuild offers two options that let you control which repositories
-you would like to build pull requests from:
+. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
+  dashboard].
 
-- If the **Build all forked repositories** setting is enabled,
-  buddybuild creates a new build for all incoming pull requests,
-  regardless of which organization or repository it came from.
+. image:img/button-app_settings.png["The App Settings
+  button", 118, 64, role="right"]
+  Click **App Settings** button in the top toolbar. The **Default build
+  configuration** screen is displayed:
++
+image:img/screen-build_settings.png["The Default
+build configuration screen", 1280, 1024, role="frame"]
 
-- For fine-grained control over which repositories buddybuild builds
-  pull requests for, you can disable the **Build all forked
-  repositories** setting and then enable pull requests from forks that
-  you trust.
+. In the **Build pull requests** row, click the **Configure** link. The
+**Configure cross-repository pull requests** dialog is displayed:
++
+image:img/dialog-configure_cross_repo_pull_requests.png["The Configure
+cross-repository pull requests dialog", 1280, 1024, role="frame"]
 
-image:img/Builds---Settings---Pull-Requests-forked-repos.png["The Build
-all forked repositories option", 1500, 542]
+. Click the toggle beside **Build cross-repository pull requests** to
+  enable building of cross-repository pull requests.
+
+. Either click the toggle beside **Build all forked repositories** to
+  enable building of all forked repositories, or click the toggle beside
+  any specific forked repositories listed.
+
+{% include "../_common/warning-cross_repo_builds.adoc" %}
