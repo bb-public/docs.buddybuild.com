@@ -1,0 +1,11 @@
+[WARNING]
+=========
+Enabling cross-repository pull request builds means that you _trust_ the
+forked repositories and their users. Trusting a forked repository
+increases your security risk. When you configure buddybuild to build
+pull requests, users with access to the forked repository can create a
+pull request that adds/changes a
+link:{{readme.path}}/../builds/custom_build_steps.adoc[custom build
+step] such that it can capture secrets, source code, etc., and can
+potentially be used to gain full access to your main repository.
+=========
