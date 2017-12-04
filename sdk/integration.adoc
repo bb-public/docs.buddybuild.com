@@ -190,14 +190,13 @@ repositories {
     jcenter()
 
     maven {
-        url 'https://dl.bintray.com/buddybuild/maven'
+      url 'https://dl.bintray.com/buddybuild/maven'
     }
 }
 
 dependencies {
-    compile 'com.buddybuild:sdk:0.0.84@aar'
+    compile 'com.buddybuild:sdk:0.1.9@aar'
     compile 'com.squareup:seismic:1.0.2'
-    compile 'com.faendir:acra:4.10.0'
 }
 ----
 +
@@ -208,7 +207,7 @@ Two things to note here:
 . You can put the `repositories` section in the base `build.gradle` file,
   but you need to put it under the `allprojects` section.
 
-. Note the `@aar` at the end of `com.buddybuild:sdk:0.0.84`
+. Note the `@aar` at the end of `com.buddybuild:sdk:0.1.9@aar`
 =====
 
 . **Add Permissions to `AndroidManifest.xml`**
