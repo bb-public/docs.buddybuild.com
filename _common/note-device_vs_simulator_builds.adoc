@@ -1,0 +1,23 @@
+[NOTE]
+======
+When you upload your certificates to buddybuild, your app transitions
+from using simulator builds to using device builds. Device builds
+typically take longer than simulator builds, for several reasons:
+
+- Code signing
+- Provisioning profile management
+- dSYM management
+- Deployment (not possible for simulator builds)
+- Archive builds (multiple architectures, bitcode, plus additional
+  iTunes Connect requirements).
+
+If you need faster builds while working on new features or bug fixes,
+you can disable **Build for archive** in your app's build settings. You
+need to re-enable this setting when you are preparing to deploy to
+iTunes Connect.
+
+You could also use a branch override setting, so that **Build for
+archive** is only enabled for your `master` branch; development branches
+would use simulator builds, and only your `master` branch would use a
+device build.
+======
