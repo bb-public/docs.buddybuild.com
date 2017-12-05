@@ -4,9 +4,9 @@ When the `OS_ACTIVITY_MODE` environment variable is set to `disabled`,
 this removes all system logs. It also removes `NSLog` from your
 application on iOS 11.
 
-The solution is to set `OS_ACTIVITY_MODE=default`, which continues to
-remove all system logs, but keeps `NSLog` and screenshots can be
-successfully generated.
+The solution is to set `OS_ACTIVITY_MODE` to `default`. `default`
+also removes all system logs, but keeps `NSLog` and the log lines
+containing the paths to the generated screenshots.
 
 To specify/change the setting for `OS_ACTIVITY_MODE` in Xcode, follow
 these steps:
