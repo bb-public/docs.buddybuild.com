@@ -195,7 +195,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.buddybuild:sdk:0.1.9@aar'
+    compile 'com.buddybuild:sdk:0.1.12@aar'
     compile 'com.squareup:seismic:1.0.2'
 }
 ----
@@ -207,7 +207,7 @@ Two things to note here:
 . You can put the `repositories` section in the base `build.gradle` file,
   but you need to put it under the `allprojects` section.
 
-. Note the `@aar` at the end of `com.buddybuild:sdk:0.1.9@aar`
+. Note the `@aar` at the end of `com.buddybuild:sdk:0.1.12@aar`
 =====
 
 . **Add Permissions to `AndroidManifest.xml`**
