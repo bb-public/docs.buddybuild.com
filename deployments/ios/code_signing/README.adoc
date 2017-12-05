@@ -42,6 +42,9 @@ pain. Use the link:../../../quickstart/ios/invite_testers.adoc[Automatic
 Cert-Uploader] to quickly and easily upload the relevant certificates to
 buddybuild.
 
+{% include "../../../_common/note-device_vs_simulator_builds.adoc" %}
+
+
 == Provisioning Profiles
 
 Development devices also need to be included in the Provisioning Profile
