@@ -11,7 +11,7 @@ successfully generated.
 To specify/change the setting for `OS_ACTIVITY_MODE` in Xcode, follow
 these steps:
 
-. Open **Product** menu and select **Scheme -> Edit Scheme...**. The
+. Open the **Product** menu and select **Scheme -> Edit Scheme...**. The
   scheme dialog appears:
 +
 image:img/dialog-edit_scheme.png["The Edit Scheme dialog", 896, 505,
