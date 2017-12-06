@@ -179,7 +179,7 @@
 ... link:troubleshooting/ios/missing_schemes.adoc[Missing schemes]
 ... link:troubleshooting/ios/getting_device_logs_from_xcode.adoc[Getting
     device logs from Xcode]
-... link:troubleshooting/ios/install_builds.adoc[Installing builds]
+... link:troubleshooting/ios/install_builds.adoc[Install builds]
 ... link:troubleshooting/ios/spec_repo_not_compatible_with_older_cocoapods_versions.adoc[Spec
     repo not compatible with older CocoaPods versions]
 ... link:troubleshooting/ios/install_updated_wwdr_cert.adoc[Installing

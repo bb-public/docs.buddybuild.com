@@ -36,7 +36,7 @@ have encountered, and provides solutions that could help you.
 
 - link:ios/getting_device_logs_from_xcode.adoc[Getting device logs from Xcode]
 
-- link:ios/install_builds.adoc[Installing builds]
+- link:ios/install_builds.adoc[Install builds]
 
 - link:ios/spec_repo_not_compatible_with_older_cocoapods_versions.adoc[Spec
   repo not compatible with older CocoaPods versions]
