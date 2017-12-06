@@ -186,6 +186,8 @@
     Apple's updated intermediate WWDR certificate]
 ... link:troubleshooting/ios/core_data-generated_classes_not_found_by_xcode_8_during_the_build.adoc[Core
     Data-generated classes not found by Xcode 8 during the build]
+... link:troubleshooting/ios/fbsnapshottestcase.adoc[FBSnapshotTestCase
+    images missing from test results]
 
 .. link:troubleshooting/android/README.adoc[Android]
 ... link:troubleshooting/android/common.adoc[Common Android build errors]

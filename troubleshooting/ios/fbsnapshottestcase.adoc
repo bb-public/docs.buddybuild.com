@@ -1,0 +1,25 @@
+= FBSnapshotTestCase images missing from test results
+
+When the `OS_ACTIVITY_MODE` environment variable is set to `disabled`,
+this removes all system logs. It also removes `NSLog` from your
+application on iOS 11.
+
+The solution is to set `OS_ACTIVITY_MODE` to `default`. `default`
+also removes all system logs, but keeps `NSLog` and the log lines
+containing the paths to the generated screenshots.
+
+To specify/change the setting for `OS_ACTIVITY_MODE` in Xcode, follow
+these steps:
+
+. Open the **Product** menu and select **Scheme -> Edit Scheme...**. The
+  scheme dialog appears:
++
+image:img/dialog-edit_scheme.png["The Edit Scheme dialog", 896, 505,
+role="frame"]
+
+. Click **Run** in the left-hand panel of the dialog.
+
+. Click **Arguments** in the top navigation of the dialog.
+
+. In the **Environment Variables** pane, create/set the value for
+  `OS_ACTIVITY_MODE` to `default`.
