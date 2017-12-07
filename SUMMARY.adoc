@@ -181,13 +181,15 @@
 ... link:troubleshooting/ios/missing_schemes.adoc[Missing schemes]
 ... link:troubleshooting/ios/getting_device_logs_from_xcode.adoc[Getting
     device logs from Xcode]
-... link:troubleshooting/ios/install_builds.adoc[Installing builds]
+... link:troubleshooting/ios/install_builds.adoc[Install builds]
 ... link:troubleshooting/ios/spec_repo_not_compatible_with_older_cocoapods_versions.adoc[Spec
     repo not compatible with older CocoaPods versions]
 ... link:troubleshooting/ios/install_updated_wwdr_cert.adoc[Installing
     Apple's updated intermediate WWDR certificate]
 ... link:troubleshooting/ios/core_data-generated_classes_not_found_by_xcode_8_during_the_build.adoc[Core
     Data-generated classes not found by Xcode 8 during the build]
+... link:troubleshooting/ios/fbsnapshottestcase.adoc[FBSnapshotTestCase
+    images missing from test results]
 
 .. link:troubleshooting/android/README.adoc[Android]
 ... link:troubleshooting/android/common.adoc[Common Android build errors]

@@ -1,14 +1,14 @@
 [NOTE]
 ======
-**SDK features for App Store and TestFlight Deployments**
+**SDK features for iOS App Store and TestFlight Deployments**
 
-App Store installs have all buddybuild SDK features **disabled** except
-for crash reporting. The SDK determines whether an install is from the
-App Store by checking the NSBundle's `appStoreReceiptURL`; only App
-Store installed have the URL filled in.
+iOS App Store installs have all buddybuild SDK features **disabled**
+except for crash reporting. The SDK determines whether an install is
+from the iOS App Store by checking the NSBundle's `appStoreReceiptURL`;
+only iOS App Store-installed apps have the URL filled in.
 
-TestFlight builds deployed with buddybuild have all of the buddybuild
-SDK features that were enabled. If you don't want your TestFlight
+TestFlight builds deployed by buddybuild have all of the buddybuild SDK
+features that were enabled. If you don't want your TestFlight
 deployments to have these features, you must turn them off in the
 link:https://dashboard.buddybuild.com/[buddybuild dashboard] and submit
 a new build to TestFlight.
