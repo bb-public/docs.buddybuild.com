@@ -56,6 +56,7 @@ Buddybuild supports a variety of test frameworks, with automatic
 detection and execution of **XCTest**, **XCUITest**, and **JUnit**
 tests. link:frameworks.adoc[Supported frameworks] can be invoked using
 link:../builds/custom_build_steps.adoc[custom build steps].
+link:custom.adoc[Custom test reporting] is also available.
 
 
 == Platform-specific testing topics

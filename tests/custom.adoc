@@ -1,0 +1,54 @@
+---
+titletext: Custom test reporting
+description: >
+  Run most any third-party or homegrown test framework and have the test
+  results appear directly in the buddybuild dashboard.
+---
+= Custom test reporting
+
+Buddybuild automatically runs, parses, and displays test results from
+native test frameworks for iOS (XCTest and XCUITest) and Android
+(JUnit). If you're using a third-party or homegrown test framework (one
+that is not listed in buddybuild's link:frameworks.adoc[supported test
+frameworks]), you can continue using your test framework and have the
+results appear directly in the buddybuild dashboard; it's easy!
+
+. **Install the test framework and its dependencies**
++
+You have several options, depending on the nature of your test
+framework:
++
+--
+[loweralpha]
+. Some test frameworks can be installed simply by declaring them as
+  dependencies of your project.
+
+. If your test framework is homegrown, commit it within your project or
+  use a git submodule.
+
+. For any other framework, include commands in the
+  link:../builds/custom_build_steps.adoc#postbuild[`buddybuild_postbuild.sh`]
+  script that fetch and install your test framework.
+--
+
+. **Configure and execute your tests via the
+  link:../builds/custom_build_steps.adoc#postbuild[`buddybuild_postbuild.sh`]
+  script**
+
+. **Store the test results in JUnit format in a user-defined folder
+  within the `buddybuild_artifacts` folder**
++
+Test results can be in XML or JSON format. The folder name that you
+choose informs the name of the that appears on the **Build Details**
+screen. For example, if the test results are stored in
+`buddybuild_artifacts/Jest`, the test results appear in a tab named
+`Jest`:
++
+image:img/screen-tests-jest.png["The Jest test results", 1280, 472,
+role="frame"]
+
+
+Buddybuild provides a
+link:https://github.com/buddybuild/Custom-Testing[helpful GitHub
+repository] containing sample projects that demonstrate how to integrate
+some of the most common third-party test frameworks into buddybuild.
