@@ -14,7 +14,8 @@ link:custom_build_steps.adoc[custom build steps] working.
 
 [NOTE]
 ======
-Remote access is only available to buddybuild customers on a paid plan.
+Remote access is only available to buddybuild customers on a Business
+plan, or higher.
 ======
 
 Buddybuild makes access easy: when you rebuild your app with remote
