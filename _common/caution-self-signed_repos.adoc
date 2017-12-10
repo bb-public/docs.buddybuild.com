@@ -1,0 +1,8 @@
+[CAUTION]
+=========
+Buddybuild rejects connecting to repositories via HTTPS that are
+provisioned with self-signed certificates.
+
+Using a self-signed certificate could make it possible for someone to
+spoof your repository and inject malicious code into your builds.
+=========
