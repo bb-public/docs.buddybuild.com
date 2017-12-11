@@ -4,15 +4,13 @@ description: >
   When you connect your GitHub repository, buddybuild builds your mobile
   app every time a commit is pushed.
 ---
-= Signing up with GitHub
+= Sign up with GitHub
 
-First things first! Let's sign up with buddybuild.
-
-Signing up with buddybuild via GitHub allows buddybuild to access your
-iOS App's source code. Buddybuild will associate with your repository
-and build your App every time a commit is pushed by you or your team --
-ensuring you always have a green build that you can deploy to your
-testers.
+When you sign up to buddybuild via GitHub, you allow buddybuild to
+access your app's source code. Buddybuild associates with your
+repository and builds your app every time a commit is pushed, by you or
+your team. This ensures that you always have a green build that you can
+deploy to your testers.
 
 [NOTE]
 ======
@@ -21,36 +19,67 @@ testers.
 Follow the instructions link:ssh.adoc[here] to get started.
 ======
 
-[CAUTION]
-====
-Buddybuild rejects connecting to repositories via HTTPS that are
-provisioned with self-signed certificates.
+{% include "../_common/caution-self-signed_repos.adoc" %}
 
-Using a self-signed certificate could make it possible for someone to
-spoof your repository and inject malicious code into your builds.
-====
+Let's get started:
 
+. Visit the buddybuild link:https://dashboard.buddybuild.com/signup[Sign
+  up page]:
++
+image:../_img/screen-sign_up.png["The Sign up screen", 1280, 550,
+role="frame"]
 
-== Step 1: Signing up with an existing service
+. image:img/button-signup-github.png["The GitHub button", 140, 42,
+  role="right"]
+  Click the **GitHub** button.
 
-Let's get started by visiting the
-link:https://dashboard.buddybuild.com/signup[Sign up page].
+. If you are not already signed into GitHub, the GitHub **Sign In**
+  screen is displayed:
++
+image:img/screen-gh-login.png["The GitHub Sign In screen", 1280, 697,
+role="frame"]
++
+image:img/button-gh-sign_in.png["The GitHub Sign In button", 266, 34,
+role="right"]
+Enter your username and password, then click **Sign In**.
 
-Simply click on the **GitHub** button to sign up with your credentials.
+. The **Welcome to buddybuild!** screen is displayed:
++
+image:img/screen-welcome_and_connect_gh.png["The Welcome to buddybuild!
+screen", 1280, 399, role="frame"]
++
+image:img/button-connect_your_gh_repos.png["The Connect your GitHub
+repositories button", 250, 42, role="right"]
+Click the **Connect your GitHub repositories** button. The GitHub
+**Install** screen is displayed:
++
+image:img/screen-gh-install.png["The GitHub Install screen", 1280, 962,
+role="frame"]
 
-image:img/sign_up-github.png["The Sign up screen", 3000, 1600]
+. Choose whether to give buddybuild access to **All repositories** or
+  **Only select repositories**. Buddybuild recommends that you choose
+  only the repositories that contain your mobile app and its
+  dependencies.
++
+To select repositories, click the **Select repositories** field, and
+start typing the name of a repository; matching repositories appear
+below the field. You can use the arrow keys, or your pointer, to select
+a repo. When you select a repo, it appears below the field.
++
+image:img/field-gh-select_repos.png["The Select repositories field in
+GitHub", 461, 93]
++
+Repeat the repository selection to build up the list of repositories
+that buddybuild should access. To remove a repository from the list,
+click the **`X`** icon to the right of the repository to be removed.
 
-
-== Step 2: Enter Credentials
-
-Enter your GitHub credentials and Sign in.
-
-image:img/github_oauth-1.png["The Sign in the GitHub screen", 3000,
-1600]
+. image:img/button-gh-install.png["The Install button on GitHub", 91,
+  34, role="right"]
+  Click the **Install** button to complete the connection to buddybuild.
 
 That's it! You're now connected to buddybuild!
 
-**The next step is to select a repository to build with buddybuild!**
+Next up: **Select a repository to build with buddybuild!**
 
 - For iOS apps, continue to the
   link:ios/select_a_repo_and_app_to_build.adoc[iOS
