@@ -87,7 +87,7 @@ Under the section **Getting started**, click on **Connect Personal
 Access Token**.
 
 image:img/Bitbucket-Server-7.png["The buddybuild add-on screen in
-Bitbucket, clicking on the Generate token button", 1500, 548]
+Bitbucket, clicking on the Generate token button", 1500, 786]
 
 Next, generate your personal access token by clicking on **Generate
 token.**

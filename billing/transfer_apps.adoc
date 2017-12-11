@@ -22,7 +22,7 @@ organizations, follow along below!
 . Select **Manage Org**. The **Manage Organization** screen appears:
 +
 image:../_img/screen-manage_org.png["The Manage Organization screen",
-1280, 589, role="frame"]
+1280, 650, role="frame"]
 
 . image:../_img/dropdown-organizations.png["The current organization", 206,
   40, role="right"]
@@ -50,7 +50,7 @@ apps to be displayed.
 The **Switch Organizations** screen is displayed:
 +
 image:img/screen-switch_organizations.png["The Switch Organizations
-screen", 1280, 590, role="frame"]
+screen", 1280, 591, role="frame"]
 
 . Use the dropdown menu to select the organization which should receive
   the app.

@@ -36,12 +36,12 @@ A list of integrations is displayed. Select the integration button that
 is labeled **Modular Webhooks**.
 
 image:img/modular-webhooks.png["The Beanstalk Integrations screen, with
-the Modular Webhooks integration selected", 2558, 1156]
+the Modular Webhooks integration selected", 1279, 578]
 
 Next, select the **Add a webhook** button.
 
 image:img/settings-integration.png["The Beanstalk Modular Webhooks
-screen", 2554, 1158]
+screen", 1277, 579]
 
 In the webhook dialog that appears, perform the following steps:
 

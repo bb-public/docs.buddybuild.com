@@ -30,7 +30,7 @@ To require SSO logins, follow these steps:
 . Select **Manage Org**. The **Manage Organization** screen appears:
 +
 image:../../_img/screen-manage_org.png["The Manage Organization screen",
-1280, 589, role="frame"]
+1280, 650, role="frame"]
 
 . image:../../_img/dropdown-organizations.png["The current
 organization", 206, 40, role="right"]
@@ -41,7 +41,7 @@ organization", 206, 40, role="right"]
 . Select the organization that needs SSO configuration.
 
 . image:../../_img/panel-organization_settings.png["The Organization
-  Settings panel", 206, 200, role="right"]
+  Settings panel", 206, 296, role="right"]
   On the left side of the screen, find the **Organization Settings**
   links. Click **Single sign-on (SSO)**. The **SSO settings** screen is
   displayed:

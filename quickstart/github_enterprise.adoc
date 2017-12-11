@@ -89,7 +89,7 @@ If you see this screen, continue with <<callback_url_step,step #6>>.
 buddybuild, the **already configured** screen is displayed:
 +
 image:img/screen-ghe-already_configured.png["The Your GitHub Enterprise
-instance is already configured! screen", 1280, 548, role="frame"]
+instance is already configured! screen", 1280, 531, role="frame"]
 +
 If you see this screen, continue with <<authorize_step,step #26>>.
 --
@@ -130,7 +130,7 @@ screen in GitHub Enterprise", 1280, 526, role="frame"]
   The **OAuth applications** screen is displayed:
 +
 image:img/screen-ghe-oauth_applications.png["The OAuth applications
-screen in GitHub Enterprise", 1280, 1024, role="frame"]
+screen in GitHub Enterprise", 1280, 482, role="frame"]
 
 . image:img/button-ghe-register_an_application.png["The Register an
   application button in GitHub Enterprise", 183, 34, role="right"]
@@ -160,7 +160,7 @@ role="frame"]
   details** screen is displayed:
 +
 image:img/screen-ghe-oauth_app_details.png["The details page for the
-OAuth app in GitHub Enterprise", 1280, 1024, role="frame"]
+OAuth app in GitHub Enterprise", 1280, 550, role="frame"]
 
 . Copy the **Client ID** value.
 
@@ -197,7 +197,7 @@ instance, but it is not yet authorized to perform any actions.
   GitHub Enterprise authorization screen is displayed:
 +
 image:img/screen-ghe-authorize.png["The GitHub Enterprise authorization
-screen", 1280, 686, role="frame"]
+screen", 1280, 668, role="frame"]
 
 . image:img/button-ghe-authorize_test.png["The Authorize <organization>
   button", 224, 34, role="right"]

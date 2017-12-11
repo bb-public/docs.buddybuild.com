@@ -65,7 +65,7 @@ not compatible with buddybuild.
 =========
 
 image:img/install.png["The Bitbucket Administration screen showing the
-Atlassian Marketplace's Web Post Hooks Plugin", 2560, 1218]
+Atlassian Marketplace's Web Post Hooks Plugin", 1280, 609]
 
 **Step 5: Configure the Post-Receive WebHooks**
 From your repository settings page, select the **Post-Receive WebHooks**
@@ -80,7 +80,7 @@ not compatible with buddybuild.
 =========
 
 image:img/configure.png["The Bitbucket project settings screen, with the
-Hooks pane selected and configuring the webhook", 2560, 1238]
+Hooks pane selected and configuring the webhook", 1280, 619]
 
 **Step 6: Enter the buddybuild webhook URL**
 Enter the buddybuild webhook URL that you copied from Step 1. Then click
@@ -90,4 +90,4 @@ your app. Please remember that you will need to install a separate
 webhook for every app in buddybuild.
 
 image:img/edit.png["The Bitbucket Post-Receive WebHooks dialog where
-the buddybuild webhook URL can be pasted", 2560, 1276]
+the buddybuild webhook URL can be pasted", 1280, 638]

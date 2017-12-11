@@ -50,7 +50,7 @@ changes you want to keep; nothing is saved when the VM is deleted.
   build details screen is displayed:
 +
 image:img/screen-build_details-with_ssh.png["The build details screen
-with the Rebuild with Remote Access button", 1280, 643, role="frame"]
+with the Rebuild with Remote Access button", 1280, 559, role="frame"]
 +
 [IMPORTANT]
 ===========
@@ -64,7 +64,7 @@ Remote Access button", 188, 30, role="right"]
   retrieving your public keys:
 +
 image:img/screen-remote_access-retrieving_keys.png["The Retrieving your
-keys dialog", 1280, 1024, role="frame"]
+keys dialog", 1280, 420, role="frame"]
 +
 What you see next depends on whether there are public keys available or
 not:
@@ -85,7 +85,7 @@ key.
   is displayed:
 +
 image:img/screen-remote_access-dialog.png["The Remote Access dialog",
-1280, 1024, role="frame"]
+1280, 616, role="frame"]
 +
 Click the **Manage keys** link to visit the source code provider's key
 management interface.
@@ -127,7 +127,7 @@ the 20 minutes after the build completes has expired, the remote access
 connection details panel is replaced with:
 
 image:img/panel-remote_access_no_longer_available.png["The remote access
-is no longer available panel", 1280, 1024, role="frame"]
+is no longer available panel", 870, 100, role="frame"]
 
 [IMPORTANT]
 ===========

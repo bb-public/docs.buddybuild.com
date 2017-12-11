@@ -14,7 +14,7 @@ these steps:
 . Open the **Product** menu and select **Scheme -> Edit Scheme...**. The
   scheme dialog appears:
 +
-image:img/dialog-edit_scheme.png["The Edit Scheme dialog", 896, 505,
+image:img/dialog-edit_scheme.png["The Edit Scheme dialog", 897, 505,
 role="frame"]
 
 . Click **Run** in the left-hand panel of the dialog.
