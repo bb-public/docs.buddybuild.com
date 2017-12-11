@@ -40,7 +40,7 @@ page.
   configuration** screen is displayed:
 +
 image:img/screen-build_settings.png["The Default build configuration
-screen", 1280, 1024, role="frame"]
+screen", 1280, 739, role="frame"]
 
 . image:img/button-integrations.png["The Integrations button", 210, 42,
   role="right"]
@@ -49,7 +49,7 @@ screen", 1280, 1024, role="frame"]
   displayed:
 +
 image:img/screen-apple_dev_connection.png["The Apple Dev Connection
-screen", 1280, 734, role="frame"]
+screen", 1280, 765, role="frame"]
 
 . image:img/button-slack.png["The Slack button", 210, 32, role="right"]
   In the left navigation, click the **Slack** button. The **Slack**
@@ -61,7 +61,7 @@ role="frame"]
 If you have previously configured Slack, you might instead see:
 +
 image:img/screen-slack-configured.png["The Slack screen with existing
-configuration", 1280, 1024, role="frame"]
+configuration", 1280, 734, role="frame"]
 
 
 [[connect]]
@@ -94,7 +94,7 @@ as required.
 screen is displayed:
 +
 image:img/screen-slack-login.png["The Slack authentication screen",
-1280, 1024, role="frame"]
+1280, 534, role="frame"]
 +
 Enter your Slack team, email address, and then password to login to
 Slack.
@@ -103,7 +103,7 @@ Slack.
 is displayed:
 +
 image:img/screen-slack-authorize.png["The Slack authorization screen",
-1280, 568, role="frame"]
+1280, 593, role="frame"]
 
 . image:img/button-slack-authorize.png["The Slack authorize button",
   200, 36, role="right"]
@@ -120,11 +120,11 @@ confirmation screen", 1280, 451, role="frame"]
 --
 [loweralpha]
 . image:img/button-share_with_all_apps.png["The Yes, share with all apps
-  button", 230, 41, role="right"]
+  button", 230, 42, role="right"]
   Click the **Yes, share with all apps** button if you want to use this
   Slack connection with all apps.
 
-. image:img/button-no_thanks.png["The No thanks! button", 230, 41,
+. image:img/button-no_thanks.png["The No thanks! button", 230, 42,
   role="right"]
   Click the **No thanks!** button if you want to use this Slack
   connection with only the current app.
@@ -166,7 +166,7 @@ You can configure notifications for all branches.
   configuration panel:
 +
 image:img/panel-slack-all_branches-unconfigured.png["The All branches
-notifications configuration panel", 900, 446, role="frame"]
+notifications configuration panel", 900, 279, role="frame"]
 
 . Continue with <<channel>>.
 
@@ -222,7 +222,7 @@ role="frame"]
   selection** screen is displayed:
 +
 image:img/screen-choose_branch-pattern.png["The Branch pattern selection
-screen", 1280, 484, role="frame"]
+screen", 1280, 514, role="frame"]
 
 . Click the **branch filter field** and enter the pattern that the
 desired branches should match; the list of branches displays only
@@ -366,7 +366,7 @@ configuration options:
 [[feedback]]
 === Feedback notifications
 
-image:img/tab-notifications-feedback.png["The Feedback tab", 598, 240,
+image:img/tab-notifications-feedback.png["The Feedback tab", 598, 146,
 role="frame"]
 
 - **User Feedback**: Click the toggle button to enable/disable
@@ -461,7 +461,7 @@ role="right"]
 . Select **Manage Org**. The **Manage Organization** screen appears:
 +
 image:../_img/screen-manage_org.png["The Manage Organization screen",
-1280, 589, role="frame"]
+1280, 650, role="frame"]
 
 . image:../_img/button-integrations.png["The Integrations button", 206,
   42, role="right"]
@@ -475,7 +475,7 @@ screen", 1280, 569, role="frame"]
   In the left navigation, click the **Slack** button. The **Slack**
   screen is displayed, showing all of the shared Slack teams:
 +
-image:../_img/screen-slack.png["The Slack screen", 1280, 1024,
+image:../_img/screen-slack.png["The Slack screen", 1280, 569,
 role="frame"]
 
 . image:img/button-trashcan.png["The Trashcan icon", 57, 47, role="right"]
@@ -483,7 +483,7 @@ role="frame"]
   delete. A delete confirmation dialog appears:
 +
 image:img/screen-slack-delete_confirmation.png["The Slack connection
-delete confirmation dialog", 1280, 1024, role="frame"]
+delete confirmation dialog", 1280, 569, role="frame"]
 
 . image:img/button-delete_confirmation-delete_slack_team.png["The Delete
   Slack team button", 249, 42, role="right"]

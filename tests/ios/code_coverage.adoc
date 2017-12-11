@@ -4,7 +4,7 @@ description: >
   See what percentage of your mobile code is covered by your current
   mobile tests.
 ---
-= Code Coverage for iOS apps
+= Code coverage for iOS apps
 
 Code coverage measures the degree to which your code is tested by a
 particular test suite.
@@ -14,59 +14,60 @@ Code coverage gives you a record of all code branches passed over by
 your tests and provides insight into exactly how much of your code base
 is being exercised during testing.
 
-Here’s how to enable Code Coverage for your iOS app:
+Here’s how to enable code coverage for your iOS app:
 
-- In Xcode, from the **Product** menu, choose **Scheme** and **Edit
-  Scheme**
+. In Xcode, from the **Product** menu, choose **Scheme -> Edit Scheme**.
 
-- Select the **Test** tab in the left column
+. Select the **Test** tab in the left column.
 
-- Toggle on the **Gather coverage data** checkbox
+. Toggle on the **Gather coverage data** checkbox.
 
-image:img/6.png[]
+image:img/6.png["The Edit Scheme dialog in Xcode, with the Test panel
+selected", 1400, 353]
 
-Now that Code Coverage is enabled in Xcode, the next step is to enable
+Now that code coverage is enabled in Xcode, the next step is to enable
 Tests in buddybuild.
 
-- First, navigate to your app in buddybuild.
+. First, navigate to your app in buddybuild.
 
-- Next, simply click on **Settings** (the "Gear" icon in the header bar)
-  and switch on **Tests**.
+. Click the **Settings** button (the _gear_ icon in the header bar).
 
-image:img/Settings-Tests.png[]
+. Click the **Test** toggle.
++
+image:img/Settings-Tests.png["The Tests toggle in the build settings",
+1400, 416]
 
 You'll now be presented with code coverage reports in the buddybuild
 dashboard (the **Coverage** column):
 
-image:img/Builds_landing-Coverage_column.png[]
+image:img/Builds_landing-Coverage_column.png["The builds screen, with
+the Coverage column displayed", 1400, 351]
 
 You can also dig into the build details by selecting the **Code
 Coverage** tab to see the breakdown:
 
-image:img/Builds_details-Code_coverage_page.png[]
+image:img/Builds_details-Code_coverage_page.png["The build details
+screen, with the Code Coverage tab selected", 1400, 550]
+
 
 == Want to exclude your CocoaPods dependencies from Code Coverage?
 
-You can exclude your Pods from Code Coverage by adding the following
-post install script in your **Podfile**.
+You can exclude your Pods from code coverage by adding the following
+post install script in your **Podfile**:
 
-[[code-samples]]
---
-.Podfile
 [source,bash]
 ----
 post_install do |installer|
 
-# Disable code coverage for all Pods and Pods Project
-installer.pods_project.targets.each do |target|
+  # Disable code coverage for all Pods and Pods Project
+  installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-        config.build_settings['CLANG_ENABLE_CODE_COVERAGE'] = 'NO'
+      config.build_settings['CLANG_ENABLE_CODE_COVERAGE'] = 'NO'
     end
-end
-installer.pods_project.build_configurations.each do |config|
-    config.build_settings['CLANG_ENABLE_CODE_COVERAGE'] = 'NO'
-end
-end
-----
---
+  end
 
+  installer.pods_project.build_configurations.each do |config|
+    config.build_settings['CLANG_ENABLE_CODE_COVERAGE'] = 'NO'
+  end
+end
+--

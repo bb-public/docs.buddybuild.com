@@ -25,7 +25,7 @@ If you do not see your scheme, it is very likely because the target of
 the app in buddybuild is not included in the **Build** section of the
 scheme you are trying to use.
 
-image:img/Screen-Shot-2016-05-31-at-5.51.42-PM.png[The Xcode schemes
+image:img/Screen-Shot-2016-05-31-at-5.51.42-PM.png["The Xcode schemes
 dialog, with the Build section selected", 889, 630]
 
 Please check that the scheme matches the target of the app in

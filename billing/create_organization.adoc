@@ -26,7 +26,7 @@ A buddybuild organization ties together:
 . Select **Manage Org**. The **Manage Organization** screen appears:
 +
 image:../_img/screen-manage_org.png["The Manage Organization screen",
-1280, 589, role="frame"]
+1280, 650, role="frame"]
 
 . image:../_img/dropdown-organizations.png["The current organization", 206,
 40, role="right"]
@@ -46,7 +46,7 @@ screen", 1280, 561, role="frame"]
 . Give your new organization a name and click **Continue**.
   The **Plan Pricing** screen is displayed:
 +
-image:img/screen-plan_pricing.png["The Plan Pricing screen", 1280, 952,
+image:img/screen-plan_pricing.png["The Plan Pricing screen", 1280, 983,
 role="frame"]
 
 . Select from one of our plans by clicking the appropriate **Choose
@@ -60,7 +60,7 @@ link:mailto:support@buddybuild.com[get in touch!]
 The **Payment details** screen is displayed:
 +
 image:img/screen-payment_details.png["The Payment Details screen", 1280,
-1024, role="frame"]
+551, role="frame"]
 
 . Enter your payment details, and click **Save Payment Info**.
   The **Payment Summary** screen is displayed:

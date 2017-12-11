@@ -33,7 +33,7 @@ Next, select **Connect Your Account**.
 
 image:img/Deployments---auto-deploy-to-Google-Play---1.png["The
 Deployment screen, with the Deploy to Google Play tab selected ,clicking
-the Connect Your Account button", 1500, 529]
+the Connect Your Account button", 1500, 800]
 
 Authenticate with Google Play by clicking **select a file**, and
 locating the **Google Private Key (.JSON) **that you created and

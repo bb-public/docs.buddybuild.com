@@ -35,7 +35,7 @@ This page contains the following sub-sections:
 . Select **Manage Org**. The **Manage Organization** screen appears:
 +
 image:../../_img/screen-manage_org.png["The Manage Organization screen",
-1280, 589, role="frame"]
+1280, 650, role="frame"]
 
 . image:../../_img/dropdown-organizations.png["The current
 organization", 206, 40, role="right"]
@@ -51,7 +51,7 @@ organization", 206, 40, role="right"]
   Click **Builds**. The **Build Configurations** screen is displayed:
 +
 image:img/screen-build_configurations.png["The Build Configurations
-screen", role="frame"]
+screen", 1280, 822, role="frame"]
 
 . Make adjustments as necessary to the build settings for all apps.
 +
@@ -70,7 +70,7 @@ screen", role="frame"]
 --
 
 image:img/screen-build_configurations-environment.png["The Environment
-settings screen",role="frame"]
+settings screen", 1280, 987, role="frame"]
 
 Generic app settings are grouped together under the **iOS & Android**
 sub-heading. Settings specific to iOS builds or Android builds are
@@ -112,7 +112,8 @@ image:img/dropdown-magic_wand.png["The magic wand's dropdown menu",
   receive the new setting. When you choose this item, the **Select
   apps** screen is displayed:
 +
-image:img/screen-select_apps.png["The Select apps screen", 1280, role="frame"]
+image:img/screen-select_apps.png["The Select apps screen", 1280, 545,
+role="frame"]
 +
 Use the search field to show only matching apps.
 +

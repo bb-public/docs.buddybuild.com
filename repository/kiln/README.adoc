@@ -31,12 +31,12 @@ top-right for the **Clone URL**. Click on the dropdown menu and select
 **SSH**.
 
 image:img/clone_url-ssh.png["The Kiln project page, with clone selection
-dropdown menu active", 1447, 383]
+dropdown menu active", 724, 192]
 
 Highlight and copy the **SSH** clone URL.
 
 image:img/clone_url.png["The Kiln project page with SSH-based clone URL
-selected", 986, 328]
+selected", 493, 164]
 
 Head over to dashboard, visit
 link:https://dashboard.buddybuild.com/apps/wizard/build/select-source[Select
@@ -63,20 +63,20 @@ Navigate to your Kiln Account by first selecting your account photo, and
 then select **SSH Keys**.
 
 image:img/ssh_keys.png["The Kiln project screen, with user-specific menu
-active", 1068, 349]
+active", 534, 175]
 
 Next, select **Add a New Key**.
 
-image:img/add_new_ssh_key.png["The Kiln SSH keys screen", 1777, 713]
+image:img/add_new_ssh_key.png["The Kiln SSH keys screen", 889, 357]
 
 Paste the copied SSH key into the **Public Key** field and enter
 **Buddybuild** as the name.
 
-image:img/paste-ssh-key.png["The Kiln Add a New Key dialog", 1576, 837]
+image:img/paste-ssh-key.png["The Kiln Add a New Key dialog", 788, 419]
 
 Next, click **Save Key**.
 
-image:img/save-key.png["The Kiln Save Key button", 1023, 286]
+image:img/save-key.png["The Kiln Save Key button", 512, 143]
 
 [WARNING]
 =========
