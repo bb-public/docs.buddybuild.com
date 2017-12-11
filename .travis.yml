@@ -9,6 +9,8 @@ addons:
   apt:
     packages:
     - hunspell
+    - libjpeg8
+    - libpng3
     - python3-pip
 branches:
   only:
