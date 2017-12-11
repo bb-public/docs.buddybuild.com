@@ -9,7 +9,7 @@ addons:
   apt:
     packages:
     - hunspell
-    - libjpeg8
+    - python3-pip
 branches:
   only:
   - master
