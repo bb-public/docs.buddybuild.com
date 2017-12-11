@@ -22,9 +22,9 @@ endif
 # GitBook setup
 setup_gitbook:
 	./node_modules/.bin/gitbook install
-	cd ./node_modules/gitbook-plugin-theme-buddybuild && npm install
-	cd ./node_modules/gitbook-plugin-lunr && npm install
-	cd ./node_modules/gitbook-plugin-search && npm install
+	cd ./node_modules/gitbook-plugin-theme-buddybuild && yarn install
+	cd ./node_modules/gitbook-plugin-lunr && yarn install
+	cd ./node_modules/gitbook-plugin-search && yarn install
 
 # Asciidoctor setup
 setup_asciidoctor:
