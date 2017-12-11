@@ -28,7 +28,7 @@ link:../quickstart/android/integrate_sdk.adoc[Android; just enable it!]
   configuration** screen is displayed:
 +
 image:../integrations/img/screen-build_settings.png["The Default build
-configuration screen", 1280, 1024, role="frame"]
+configuration screen", 1280, 739, role="frame"]
 
 . image:img/button-buddybuild_sdk.png["The Buddybuild SDK button", 210,
   42, role="right"]

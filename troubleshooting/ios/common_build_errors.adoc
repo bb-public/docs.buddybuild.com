@@ -170,8 +170,8 @@ To access the logs:
 
 . Navigate to the build log page.
 
-. image:img/dropdown-download_logs.png["The Download logs dropdown", 248,
-  302, role="float right"]
+. image:img/dropdown-download_logs.png["The Download logs dropdown", 257,
+  315, role="float right"]
   Click **Download logs** on the right side of the page.
 
 . Select an available log to download.

@@ -37,7 +37,7 @@ Developer Account screen", 1500, 800]
 Enter your Apple ID and password, then select **Store Credentials**.
 
 image:img/Settings---Apple-Developer---credentials.png["The Connect your
-account screen", 3000, 1600]
+account screen", 1500, 800]
 
 [NOTE]
 ======

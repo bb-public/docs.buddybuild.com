@@ -102,6 +102,8 @@
 ... link:tests/android/physical_devices.adoc[UI tests on physical devices]
 ... link:tests/android/virtual_devices.adoc[UI tests on virtual devices]
 
+.. link:tests/custom.adoc[Custom test reporting]
+
 . link:deployments/README.adoc[Deployments]
 .. link:deployments/automatic.adoc[Automatic]
 .. link:deployments/manual.adoc[Manual]

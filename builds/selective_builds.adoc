@@ -30,26 +30,29 @@ link:skip_a_build.adoc[Skipping a build].
 
 . Visit link:https://dashboard.buddybuild.com/[the buddybuild dashboard].
 
-. image:img/button-app_settings.png[App Settings
-  button,118,64,role="right thumb"]
+. image:img/button-app_settings.png["App Settings button", 118, 64,
+  role="right thumb"]
   Click **App Settings** in the top navigation bar. The **App Settings**
   page is displayed:
 +
-image:img/page-app_settings.png[App Settings page,role="frame"]
+image:img/page-app_settings.png["App Settings page", 1024, 630,
+role="frame"]
 
-. image:img/button-configure.png[Configure button,81,30,role="right"]
+. image:img/button-configure.png["Configure button", 81,
+  30,role="right"]
   Find the **Selective Builds** row in the build configurations, and
   click the **Configure** button on the right side of the row. The
   **Enable selective builds** page is displayed:
 +
 image:img/page-build_skipping-disabled.png["Enable Selective Builds
-page", role="frame"]
+page", 1080, 450, role="frame"]
 
-. image:img/button-toggle.png[Toggle button,33,16,role="right"]
+. image:img/button-toggle.png["Toggle button", 33, 16, role="right"]
   Click the toggle button to enable selective builds. One of the lower
   panels becomes enabled:
 +
-image:img/page-build_skipping-enabled.png[Selective Builds enabled,role="frame"]
+image:img/page-build_skipping-enabled.png["Selective Builds enabled",
+1080, 450, role="frame"]
 
 . Choose an approach: **Only build...** or **Do not build...**:
 +
@@ -66,22 +69,22 @@ image:img/page-build_skipping-enabled.png[Selective Builds enabled,role="frame"]
 Only one approach can be active — when you choose an approach, the
 other approach becomes disabled.
 
-. image:img/button-add.png[Add button,61,30,role="right"]
+. image:img/button-add.png["Add button", 61, 30, role="right"]
   To add a pattern, type the pattern into the input field and click the
   **Add** button. The pattern is added to the list of patterns.
 +
-image:img/button-trashcan.png[Trashcan button,12,17,role="right"]
+image:img/button-trashcan.png["Trashcan button", 13, 17, role="right"]
 Or to delete a pattern, click the **trashcan** icon beside the pattern
 you wish to remove. The pattern is removed from the list of patterns.
 
-. image:img/button-close.png[Close button,38,38,role="right"]
+. image:img/button-close.png["Close button", 38, 38, role="right"]
   Once you have finished configuring selective build patterns, click the
   **Close** button near the top-right of the page. The **App Settings**
   page is displayed, and the current approach and patterns are indicated
   in the **Selective Builds** row:
 +
 image:img/panel-selective_builds.png["The Selective Builds row,
-indicating the active approach and patterns",990,60]
+indicating the active approach and patterns", 940, 60]
 
 
 [[examples]]

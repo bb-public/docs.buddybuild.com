@@ -83,14 +83,14 @@ To enable this feature:
   Click **App Settings** button in the top toolbar. The **Default build
   configuration** screen is displayed:
 +
-image:img/screen-build_settings.png["The Default
-build configuration screen", 1280, 1024, role="frame"]
+image:img/screen-build_settings.png["The Default build configuration
+screen", 1280, 691, role="frame"]
 
 . In the **Build pull requests** row, click the **Configure** link. The
 **Configure cross-repository pull requests** dialog is displayed:
 +
 image:img/dialog-configure_cross_repo_pull_requests.png["The Configure
-cross-repository pull requests dialog", 1280, 1024, role="frame"]
+cross-repository pull requests dialog", 1280, 717, role="frame"]
 
 . Click the toggle beside **Build cross-repository pull requests** to
   enable building of cross-repository pull requests.
