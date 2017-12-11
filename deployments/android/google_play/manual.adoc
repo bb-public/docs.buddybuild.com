@@ -26,7 +26,7 @@ Log in to buddybuild and head over to the Builds page by selecting
 Next, click on the successful build you want to deploy.
 
 image:img/Builds---Android---Point---Details.png["The buddybuild
-dashboard", 1500, 483]
+dashboard", 1500, 800]
 
 Navigate to the **Google Play** tab and click **select a file**. Locate
 and upload the **Google Private Key** (`.JSON` file) that was
@@ -35,7 +35,7 @@ automatically downloaded when you created a Service Account.
 Click **Connect with Google Play**.
 
 image:img/Builds---Details---Google-Play---JSON.png["The Google Play
-screen", 3000, 1600]
+screen", 1500, 800]
 
 Once the Google Private Key (`.JSON`) file has been uploaded
 successfully, you'll see a success message.

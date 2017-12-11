@@ -86,7 +86,7 @@ image:img/paste-ssh-key.png["The GitLab SSH Keys screen", 3000, 1180]
 Next, click **Add Key.**
 
 image:img/build.png["The buddybuild Connect another Git service screen",
-3000, 800]
+1500, 765]
 
 [WARNING]
 =========

@@ -24,7 +24,7 @@ easily by changing the plan associated with each organization.
 . Select **Manage Org**. The **Manage Organization** screen appears:
 +
 image:../_img/screen-manage_org.png["The Manage Organization screen",
-1280, 589, role="frame"]
+1280, 650, role="frame"]
 
 . image:../_img/dropdown-organizations.png["The current organization", 206,
   40, role="right"]
@@ -34,14 +34,14 @@ image:../_img/screen-manage_org.png["The Manage Organization screen",
 
 . Select the organization that requires a plan change.
 
-. image:img/panel-plan_summary.png["The Plan Summary", 250, 333,
+. image:img/panel-plan_summary.png["The Plan Summary", 250, 343,
   role="right"]
   On the right side of screen, find the **Plan Summary**. Click the
   **Change plan** button. The **Plan Pricing** screen, with your
   current plan in view, is displayed:
 +
 image:img/screen-plan_pricing-current.png["The Plan Pricing screen, with
-current plan",1280,920,role="frame"]
+current plan", 1280, 981, role="frame"]
 
 . Select from one of our plans by clicking the appropriate **Choose
   plan** button, including the free tier. If you'd prefer to discuss a

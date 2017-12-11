@@ -5,6 +5,8 @@ os:
   - linux
 node_js:
   - 7
+env:
+  - PERL5LIB=/home/travis/perl5/lib/perl5
 addons:
   apt:
     packages:
@@ -17,6 +19,7 @@ before_install:
   - pip3 install requests
   - pip install --upgrade --user awscli
   - bundle install
+  - PERL_MM_USE_DEFAULT=1 perl -MCPAN -e 'install Image::TIFF'
 script:
   - make test
 after_success:

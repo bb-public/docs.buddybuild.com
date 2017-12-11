@@ -69,7 +69,7 @@ screen", 1280, 780, role="frame"]
   account** dialog is displayed.
 +
 image:img/screen-api-create_service_account_dialog.png["The Create
-service account dialog", 1280, 736, role="frame"]
+service account dialog", 1280, 780, role="frame"]
 
 . In the **Service account name** field, specify the name for this
   service account.
@@ -91,7 +91,7 @@ service account dialog", 1280, 736, role="frame"]
   created** dialog is displayed:
 +
 image:img/screen-api-create_service_account_dialog-created.png["The
-Service account created dialog", 1280, 1024, role="frame"].
+Service account created dialog", 1280, 736, role="frame"].
 +
 [IMPORTANT]
 ===========

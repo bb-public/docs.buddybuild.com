@@ -29,7 +29,7 @@ After the first step, the remaining steps take 5-10 minutes to complete.
 . Select **Manage Org**. The **Manage Organization** screen appears:
 +
 image:../../_img/screen-manage_org.png["The Manage Organization screen",
-1280, 589, role="frame"]
+1280, 650, role="frame"]
 
 . image:../../_img/dropdown-organizations.png["The current
 organization", 206, 40, role="right"]
@@ -40,7 +40,7 @@ organization", 206, 40, role="right"]
 . Select the organization that needs SSO configuration.
 
 . image:../../_img/panel-organization_settings.png["The Organization
-  Settings panel", 206, 200, role="right"]
+  Settings panel", 206, 296, role="right"]
   On the left side of the screen, find the **Organization Settings**
   links. Click **Single sign-on (SSO)**. The **Connect to your SSO
   provider** screen is displayed:
@@ -106,7 +106,7 @@ image:img/screen-okta-applications.png["The Applications screen in
 Okta", 1280, 741, role="frame"]
 
 . image:img/button-okta-add_application.png["The Add Application
-  button in Okta", 135, 26, role="right"]
+  button in Okta", 135, 31, role="right"]
   Click the **Add Application** button. The **Add Application** screen
   is displayed:
 +
@@ -279,7 +279,7 @@ provider! screen", 1280, 402, role="frame"]
   logins?** screen is displayed:
 +
 image:img/screen-require_sso_choice.png["The Would you like to require
-SSO logins?", 1280, 402, role="frame"]
+SSO logins?", 1280, 521, role="frame"]
 +
 Here you need to choice whether to require SSO logins or not:
 +

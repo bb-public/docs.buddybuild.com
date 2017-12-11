@@ -29,15 +29,15 @@ window in Xcode", 829, 494, role="frame"]
 
 . Select your device from the left panel.
 
-. image:img/button-logs_toggle.png["The toggle logs button",
-role="right"]
+. image:img/button-logs_toggle.png["The toggle logs button", 15, 12,
+  role="right"]
   Make sure that the logs are expanded. If they are not, press the small
   up arrow in the bottom left corner of the main pane.
 +
 image:img/window-devices_and_simulators-logs.png["The Devices and Simulators
 window in Xcode, with logs displayed", 829, 494, role="frame"]
 
-. image:img/button-save_console.png["The Save Console button",
-role="right"]
+. image:img/button-save_console.png["The Save Console button", 13, 13,
+  role="right"]
   Click the **Save Console** button (at the bottom right) to save the
   log information within the console.

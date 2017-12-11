@@ -35,7 +35,7 @@ page.
   configuration** screen is displayed:
 +
 image:img/screen-build_settings.png["The Default build configuration
-screen", 1280, 1024, role="frame"]
+screen", 1280, 739, role="frame"]
 
 . image:img/button-integrations.png["The Integrations button", 210, 42,
   role="right"]
@@ -44,19 +44,19 @@ screen", 1280, 1024, role="frame"]
   displayed:
 +
 image:img/screen-apple_dev_connection.png["The Apple Dev Connection
-screen", 1280, 734, role="frame"]
+screen", 1280, 765, role="frame"]
 
 . image:img/button-asana.png["The Asana button", 210, 32, role="right"]
   In the left navigation, click the **Asana** button. The **Asana**
   screen is displayed:
 +
-image:img/screen-asana-unconfigured.png["The Asana screen", 1280, 734,
+image:img/screen-asana-unconfigured.png["The Asana screen", 1280, 765,
 role="frame"]
 +
 If you have previously configured Asana, you might instead see:
 +
 image:img/screen-asana-connected.png["The Asana screen with existing
-configuration", 1280, 1024, role="frame"]
+configuration", 1280, 765, role="frame"]
 
 
 [[connect]]
@@ -73,7 +73,7 @@ and a specific Asana project.
 --
 [loweralpha]
 . image:img/button-connect_with_asana.png["The Connect with Asana
-  button", 154, 42, role="right"]
+  button", 158, 42, role="right"]
   If you _do not_ already have an Asana connection configured, click
   the **Connect with Asana** button, and proceed to the next numbered
   step.
@@ -97,7 +97,7 @@ In** to login to Asana.
   is displayed:
 +
 image:img/screen-asana-authorize.png["The Asana Grant Permission screen",
-1280, 568, role="frame"]
+1280, 575, role="frame"]
 
 . image:img/button-asana-allow.png["The Asana Allow button", 60, 30,
   role="right"]
@@ -140,7 +140,7 @@ for Crash Reports screen", 1280, 616, role="frame"]
   is displayed:
 +
 image:img/screen-asana-connection_confirmation.png["The Connection
-confirmation screen", 1280, 1024, role="frame"]
+confirmation screen", 1280, 477, role="frame"]
 +
 At this point, you can choose whether the configuration you just created
 should become the default for any new apps that you add to buddybuild:
@@ -148,18 +148,18 @@ should become the default for any new apps that you add to buddybuild:
 --
 [loweralpha]
 . image:img/button-asana-default_integration.png["The Yes, save as a
-  default integration button", 200, 200, role="right"]
+  default integration button", 242, 42, role="right"]
   Click **Yes, save as a default integration** to make the Asana
   configuration the default for new apps.
 
-. image:img/button-no_thanks.png["The No thanks! button", 200, 200,
+. image:img/button-no_thanks.png["The No thanks! button", 230, 42,
   role="right"]
   Click **No thanks!** to defer configuring defaults until another time.
 --
 +
 After clicking either button, the **Asana** screen is displayed:
 +
-image:img/screen-asana-connected.png["The Asana screen", 1280, 1024,
+image:img/screen-asana-connected.png["The Asana screen", 1280, 765,
 role="frame"]
 
 At this point, the initial connection process is complete! You can
@@ -208,7 +208,7 @@ panel", 900, 46]
 The panel is replace by a confirmation panel:
 
 image:img/panel-asana-delete_confirmation.png["The Connection delete
-confirmation panel"]
+confirmation panel", 900, 46]
 
 Click **Delete** to delete the connection to Asana, or **Cancel** to
 keep the configuration.

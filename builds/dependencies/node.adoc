@@ -38,10 +38,11 @@ image:../img/dropdown-apps.png["The Apps dropdown", 361, 526]
 . Select the app that needs a specific Node version by clicking it in
 the dropdown. The **Builds** page for your app appears:
 +
-image:../img/screen-builds.png["The Builds screen"]
+image:../img/screen-builds.png["The Builds screen", 1280, 381,
+role="frame"]
 +
-image:../img/field-filter_apps.png["The App dropdown's filter field", 283,
-32, role="right"]
+image:../img/field-filter_apps.png["The App dropdown's filter field",
+283, 32, role="right"]
 If you have many apps, you can type the app's name (or portion thereof)
 into the search field; only apps with matching names are displayed.
 +
@@ -151,9 +152,9 @@ The access token is the value after `_authToken=`, in this case:
   configuration** screen is displayed:
 +
 image:../img/screen-build_settings.png["The Default build configuration
-screen", 1280, 1024, role="frame"]
+screen", 1280, 691, role="frame"]
 
-. image:../img/tab-environment.png["The Environment tab", 137, 52,
+. image:../img/tab-environment.png["The Environment tab", 137, 53,
   role="right"]
   Click the **Environment tab**. The **Environment** settings screen is
   displayed:
@@ -167,7 +168,7 @@ settings", 1280, 619, role="frame"]
   The **Environment variables** screen is displayed:
 +
 image:img/screen-environment_variables.png["The Environment variables
-screen", 1280, 1024, role="frame"]
+screen", 1280, 518, role="frame"]
 
 . In the **Name** field, enter `NPM_AUTH_TOKEN`.
 

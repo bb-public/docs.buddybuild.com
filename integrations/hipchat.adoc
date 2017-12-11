@@ -40,7 +40,7 @@ page.
   build configuration** screen is displayed:
 +
 image:img/screen-build_settings.png["The Default build configuration
-screen", 1280, 737, role="frame"]
+screen", 1280, 739, role="frame"]
 
 . image:img/button-integrations.png["The Integrations button", 210, 42,
   role="right"]
@@ -49,7 +49,7 @@ screen", 1280, 737, role="frame"]
   displayed:
 +
 image:img/screen-apple_dev_connection.png["The Apple Dev Connection
-screen", 1280,734, role="frame"]
+screen", 1280, 765, role="frame"]
 
 . image:img/button-hipchat.png["The HipChat button", 210, 32, role="right"]
   In the left navigation, click the **HipChat** button. The **HipChat**
@@ -116,7 +116,7 @@ Click the **Install new integrations** button.
 In either case, the **Integrations showcase** screen is displayed:
 +
 image:img/screen-hipchat-integrations.png["The Integrations showcase
-screen", 1280, 565, role="frame"]
+screen", 1280, 585, role="frame"]
 
 . image:img/button-hipchat-build_your_own.png["The Build your own
   integration button", 320, 150, role="right"]
@@ -228,7 +228,7 @@ You can configure notifications for all branches.
   configuration panel:
 +
 image:img/panel-hipchat-all_branches-unconfigured.png["The All branches
-notifications configuration panel", 900, 446, role="frame"]
+notifications configuration panel", 900, 279, role="frame"]
 
 . Continue with <<room>>.
 
@@ -284,7 +284,7 @@ role="frame"]
   selection** screen is displayed:
 +
 image:img/screen-choose_branch-pattern.png["The Branch pattern selection
-screen", 1280, 484, role="frame"]
+screen", 1280, 514, role="frame"]
 
 . Click the **branch filter field** and enter the pattern that the
 desired branches should match; the list of branches displays only
@@ -300,7 +300,7 @@ accordingly.
   now includes a pattern-specific notifications configuration panel:
 +
 image:img/panel-hipchat-pattern-unconfigured.png["A pattern-specific
-notifications configuration panel", 900, 232, role="frame"]
+notifications configuration panel", 900, 249, role="frame"]
 
 . Continue with <<room>>.
 
@@ -312,13 +312,13 @@ This section describes how to select the HipChat room to which
 buddybuild should send notifications.
 
 . image:img/button-hipchat-room_dropdown.png["The Room selection
-  dropdown", 208, 46, role="right"]
+  dropdown", 208, 57, role="right"]
   In the appropriate notifications configuration panel,
   click the **Room selection** dropdown. The **Room selection
   menu** is displayed.
 
 . image:img/dropdown-hipchat-room.png["The Room selection menu",
-  219, 187, role="right"]
+  219, 204, role="right"]
   Select the channel to which buddybuild should send notifications. The
   **Notifications configuration** tabs become enabled:
 +
@@ -413,7 +413,7 @@ configuration options:
 [[feedback]]
 === Feedback notifications
 
-image:img/tab-notifications-feedback.png["The Feedback tab", 598, 240,
+image:img/tab-notifications-feedback.png["The Feedback tab", 598, 146,
 role="frame"]
 
 - **User Feedback**: Click the toggle button to enable/disable
@@ -508,7 +508,7 @@ role="right"]
 . Select **Manage Org**. The **Manage Organization** screen appears:
 +
 image:../_img/screen-manage_org.png["The Manage Organization screen",
-1280, 589, role="frame"]
+1280, 650, role="frame"]
 
 . image:../_img/button-integrations.png["The Integrations button", 206,
   42, role="right"]
@@ -551,7 +551,7 @@ image:img/button-delete_confirmation-cancel.png["The Cancel button",
 . Click the **Connected rooms** tab. The connected room are displayed:
 +
 image:img/panel-hipchat-connected_rooms.png["The list of connected rooms",
-905, 219]
+905, 214]
 
 . image:img/button-trashcan.png["The Trashcan icon", 57, 47, role="right"]
   Click the **Trashcan** icon beside the room connection you wish to
