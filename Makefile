@@ -66,7 +66,7 @@ repeats:
 
 # Check for incorrect image sizes
 imgsize:
-	@node_modules/gitbook-plugin-buddybuild/scripts/imgsize.pl -v -d .
+	@node_modules/gitbook-plugin-buddybuild/scripts/imgsize.pl -d .
 
 # Check for any unused images
 unusedimg:
