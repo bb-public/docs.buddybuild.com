@@ -7,9 +7,13 @@ description: >
 = Quickstart
 
 This section describes how to quickly get started using buddybuild.
+Overall, the process involves a few steps:
 
-== Connect buddybuild to your project repository, one of:
 
+. **Connect buddybuild to your project's source code provider**
++
+Buddybuild supports:
++
 - link:bitbucket.adoc[Bitbucket]
 - link:bitbucket_server.adoc[Bitbucket Server]
 - link:github.adoc[GitHub]
@@ -17,6 +21,50 @@ This section describes how to quickly get started using buddybuild.
 - link:gitlab.adoc[GitLab]
 - link:gitlab_private.adoc[a privately-hosted GitLab instance]
 - link:ssh.adoc[SSH (most other repositories)]
+
+. **Choose a repository
+  (link:ios/select_a_repo_and_app_to_build.adoc[iOS] or
+  link:android/select_an_app.adoc[Android])**
++
+Buddybuild examines your repository and automatically configures builds
+based on the configuration that you have setup.
++
+[NOTE]
+======
+If you have both iOS and Android versions of your app in a single
+repository, or if you have multiple build targets defined for your iOS
+app, you need to complete the Quickstart process once for each
+platform/target.
+======
+
+. link:ios/invite_testers.adoc[**Invite testers**]
++
+This step prepares your app for deployment to your testers. For iOS
+projects, this involves uploading code signing identities.
+
+Optional additional steps include:
+
+. **Integrate the buddybuild SDK (link:ios/integrate_sdk.adoc[iOS] or
+  link:android/integrate_sdk.adoc[Android])**
++
+The buddybuild SDK adds useful features that makes it easy to
+gather feedback from your testers, and to collect crash reports.
+
+. **Auto-versioning (link:ios/auto_versioning.adoc[iOS] or
+  link:android/auto_versioning.adoc[Android])**
++
+Buddybuild can automatically update the build version, which helps
+inform your testers when a new version is available.
+
+. link:android/testing.adoc[**Unit tests**]
++
+Buddybuild can automatically detect any unit tests included in your
+project; we have a list of link:../tests/frameworks.adoc[supported
+frameworks], and link:tests/custom.adoc[instructions] for integrating
+unsupported test frameworks. Unit tests are disabled by default, to
+ensure that your builds complete as quickly as possible, but you can
+enable them at any time.
+
 
 == Device-specific topics
 
