@@ -393,8 +393,8 @@ whether your build, test execution, or deployment was successful or not.
 One example would be to use `buddybuild_finally.sh` to integrate
 Danger (a CI automation tool) as part of your build, so that it can
 apply its set of rules whether the build succeeds or fails. See our
-link:https://www.buddybuild.com/blog/using-danger-with-buddybuild/[blog
-post "Using Danger with buddybuild"] for details.
+link:https://www.buddybuild.com/blog/using-danger-ci-with-buddybuild[blog
+post "How to use Danger with buddybuild"] for details.
 
 It is also your last opportunity to upload any build artifacts to any
 service integrations that you may have; once `buddybuild_finally.sh`
