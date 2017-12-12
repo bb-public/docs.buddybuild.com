@@ -94,10 +94,8 @@ single sign-on (SSO) provider].
 [IMPORTANT]
 ===========
 An SSO user account differs from any other user account in buddybuild.
-When your users transition to using SSO, they need to add their
-link:../ios/select_a_repo_and_app_to_build.adoc[iOS] and
-link:../android/select_an_app.adoc[Android] apps to the SSO user
-account.
+When your users transition to using SSO, they need to
+link:../../select.adoc[add their apps] to the SSO user account.
 ===========
 
 

@@ -66,7 +66,7 @@ Enabling the SDK requires code changes in your iOS Application. We can
 make these changes automatically so you don't have to! Enable the
 buddybuild SDK in just two easy steps.
 
-{% include "../../_common/note-sdk-ios-app_store_deployments.adoc" %}
+{% include "/_common/note-sdk-ios-app_store_deployments.adoc" %}
 
 
 [[step1]]

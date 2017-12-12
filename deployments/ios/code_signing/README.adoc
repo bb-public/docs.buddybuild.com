@@ -42,7 +42,7 @@ pain. Use the link:../../../quickstart/ios/invite_testers.adoc[Automatic
 Cert-Uploader] to quickly and easily upload the relevant certificates to
 buddybuild.
 
-{% include "../../../_common/note-device_vs_simulator_builds.adoc" %}
+{% include "/_common/note-device_vs_simulator_builds.adoc" %}
 
 
 == Provisioning Profiles
@@ -65,4 +65,4 @@ the
 link:../../../quickstart/ios/apple_developer_portal_sync.adoc[Auto-Syncing
 Provisioning Profiles] feature to take advantage of this functionality!
 
-{% include "../../../_common/important-provisioning_profiles.adoc" %}
+{% include "/_common/important-provisioning_profiles.adoc" %}

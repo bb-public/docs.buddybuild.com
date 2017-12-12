@@ -58,7 +58,7 @@ builds to -- which brings us to the next step!
 image:img/Onboarding---cert-tool-success.png["The Apple Developer Portal
 Synced screen", 1500, 800]
 
-{% include "../../_common/note-device_vs_simulator_builds.adoc" %}
+{% include "/_common/note-device_vs_simulator_builds.adoc" %}
 
 
 == Step 2: Invite Testers

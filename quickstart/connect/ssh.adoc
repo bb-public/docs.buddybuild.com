@@ -12,7 +12,7 @@ SSH. Buddybuild automatically generates an SSH key for you to install
 into your source control system. Buddybuild uses this key to clone your
 repository.
 
-{% include "../_common/important-ssh_access.adoc" %}
+{% include "/_common/important-ssh_access.adoc" %}
 
 Let's get started!
 
@@ -47,14 +47,14 @@ service screen", 1500, 765]
 **Need help finding the Git Clone URL? Select your source control system
 for specific instructions.**
 
-- link:../repository/beanstalk/README.adoc[Beanstalk]
-- link:../repository/bitbucket/README.adoc[Bitbucket]
-- link:../repository/github/README.adoc[GitHub]
-- link:../repository/gitlab/README.adoc[GitLab]
-- link:../repository/gitolite/README.adoc[Gitolite]
-- link:../repository/kiln/README.adoc[Kiln]
-- link:../repository/visual_studio_online/README.adoc[Visual Studio
-  Online / Team Foundation Server (TFS)]
+- link:{{readme.path}}/repository/beanstalk/README.adoc[Beanstalk]
+- link:{{readme.path}}/repository/bitbucket/README.adoc[Bitbucket]
+- link:{{readme.path}}/repository/github/README.adoc[GitHub]
+- link:{{readme.path}}/repository/gitlab/README.adoc[GitLab]
+- link:{{readme.path}}/repository/gitolite/README.adoc[Gitolite]
+- link:{{readme.path}}/repository/kiln/README.adoc[Kiln]
+- link:{{readme.path}}/repository/visual_studio_online/README.adoc[Visual
+  Studio Online / Team Foundation Server (TFS)]
 ======
 
 If your repo is public, buddybuild can immediately start a build. Click
@@ -75,11 +75,11 @@ screen, with the SSH key selected", 1500, 765]
 **Need help adding the SSH key to your source control system? Select
 your source control system for specific instructions.**
 
-- link:../repository/beanstalk/README.adoc[Beanstalk]
-- link:../repository/gitlab/README.adoc[GitLab]
-- link:../repository/gitolite/README.adoc[Gitolite]
-- link:../repository/visual_studio_online/README.adoc[Visual Studio
-  Online / Team Foundation Server (TFS)]
+- link:{{readme.path}}/repository/beanstalk/README.adoc[Beanstalk]
+- link:{{readme.path}}/repository/gitlab/README.adoc[GitLab]
+- link:{{readme.path}}/repository/gitolite/README.adoc[Gitolite]
+- link:{{readme.path}}/repository/visual_studio_online/README.adoc[Visual
+  Studio Online / Team Foundation Server (TFS)]
 ======
 
 [IMPORTANT]
@@ -95,11 +95,5 @@ Once the key is installed, navigate back to buddybuild and click the
 
 That's it! You're now connected to buddybuild!
 
-**The next step is to select a repository to build with buddybuild!**
-
-- For iOS apps, continue to the
-  link:ios/select_a_repo_and_app_to_build.adoc[iOS
-  Quickstart]
-
-- For Android apps, continue to the
-  link:android/select_an_app.adoc[Android Quickstart]
+The next step is to link:../select.adoc[select a repository to build
+with buddybuild!]

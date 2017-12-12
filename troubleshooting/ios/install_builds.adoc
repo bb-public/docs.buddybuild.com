@@ -45,7 +45,7 @@ This situation does not prevent your tests from running; instead of
 performing a _device_ build, buddybuild performs a _simulator_ build
 that your tests can use.
 
-{% include "../../_common/note-device_vs_simulator_builds.adoc" %}
+{% include "/_common/note-device_vs_simulator_builds.adoc" %}
 
 
 [[will_not_install]]

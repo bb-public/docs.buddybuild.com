@@ -3,21 +3,28 @@
 . link:index.adoc[Welcome to buddybuild!]
 
 . link:quickstart/README.adoc[Quickstart]
-.. link:quickstart/github.adoc[Sign up with GitHub]
-.. link:quickstart/gitlab.adoc[Sign up with GitLab]
-.. link:quickstart/ssh.adoc[Sign up with SSH]
-.. link:quickstart/bitbucket.adoc[Sign up with Bitbucket]
-.. link:quickstart/bitbucket_server.adoc[Connect with Bitbucket Server]
-.. link:quickstart/github_enterprise.adoc[Connect with GitHub Enterprise]
-.. link:quickstart/gitlab_private.adoc[Connect your privately-hosted
-   GitLab instance]
-.. link:quickstart/sso/README.adoc[Single sign on (SSO)]
-... link:quickstart/sso/require.adoc[Require SSO]
-... link:quickstart/sso/disconnect.adoc[Disconnect SSO]
-... link:quickstart/sso/okta.adoc[Okta]
+
+.. link:quickstart/connect/README.adoc[Sign up and connect buddybuild to
+   your source control]
+... link:quickstart/connect/github.adoc[GitHub]
+... link:quickstart/connect/gitlab.adoc[GitLab]
+... link:quickstart/connect/ssh.adoc[SSH]
+... link:quickstart/connect/bitbucket.adoc[Bitbucket]
+... link:quickstart/connect/bitbucket_server.adoc[Bitbucket
+    Server]
+... link:quickstart/connect/github_enterprise.adoc[GitHub
+    Enterprise]
+... link:quickstart/connect/gitlab_private.adoc[Privately-hosted GitLab
+    instance]
+
+... link:quickstart/connect/sso/README.adoc[Single sign on (SSO)]
+.... link:quickstart/connect/sso/require.adoc[Require SSO]
+.... link:quickstart/connect/sso/disconnect.adoc[Disconnect SSO]
+.... link:quickstart/connect/sso/okta.adoc[Okta]
+
+.. link:quickstart/select.adoc[Select a repository/app to build]
 
 .. link:quickstart/ios/README.adoc[iOS]
-... link:quickstart/ios/select_a_repo_and_app_to_build.adoc[Selecting an app]
 ... link:quickstart/ios/invite_testers.adoc[Inviting testers]
 ... link:quickstart/ios/integrate_sdk.adoc[Integrate the SDK for iOS]
 ... link:quickstart/ios/apple_developer_portal_sync.adoc[Auto-syncing
@@ -25,12 +32,12 @@
 ... link:quickstart/ios/auto_versioning.adoc[Auto versioning]
 
 .. link:quickstart/android/README.adoc[Android]
-... link:quickstart/android/select_an_app.adoc[Selecting an app]
 ... link:quickstart/android/integrate_sdk.adoc[Integrate the SDK for
     Android]
 ... link:quickstart/android/auto_versioning.adoc[Auto versioning]
 ... link:quickstart/android/build_variants.adoc[Build variants]
-... link:quickstart/android/testing.adoc[Testing]
+
+.. link:quickstart/tests.adoc[Tests]
 
 . link:repository/README.adoc[Source control systems]
 .. link:repository/self_hosted.adoc[Self-hosted repositories]

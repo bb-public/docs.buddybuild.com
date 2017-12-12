@@ -21,26 +21,26 @@ After the first step, the remaining steps take 5-10 minutes to complete.
 . Once SSO preparation is complete, log in to the
   link:https://dashboard.buddybuild.com/[buddybuild dashboard].
 
-. image:../../_img/dropdown-user-manage_org.png["Select Manage Org in
-  the avatar dropdown", 121, 207, role="right"]
+. image:{{readme.path}}/_img/dropdown-user-manage_org.png["Select Manage
+  Org in the avatar dropdown", 121, 207, role="right"]
   Move your mouse pointer over your avatar in the top right corner. A
   dropdown menu appears.
 
 . Select **Manage Org**. The **Manage Organization** screen appears:
 +
-image:../../_img/screen-manage_org.png["The Manage Organization screen",
-1280, 650, role="frame"]
+image:{{readme.path}}/_img/screen-manage_org.png["The Manage
+Organization screen", 1280, 650, role="frame"]
 
-. image:../../_img/dropdown-organizations.png["The current
-organization", 206, 40, role="right"]
+. image:{{readme.path}}/_img/dropdown-organizations.png["The current
+  organization", 206, 40, role="right"]
   In the left navigation, a dropdown menu exists with the current
   organization selected. Click the dropdown menu to list all of the
   organizations that you currently belong to.
 
 . Select the organization that needs SSO configuration.
 
-. image:../../_img/panel-organization_settings.png["The Organization
-  Settings panel", 206, 296, role="right"]
+. image:{{readme.path}}/_img/panel-organization_settings.png["The
+  Organization Settings panel", 206, 296, role="right"]
   On the left side of the screen, find the **Organization Settings**
   links. Click **Single sign-on (SSO)**. The **Connect to your SSO
   provider** screen is displayed:

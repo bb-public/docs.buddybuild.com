@@ -29,7 +29,7 @@ meteor build $PLATFORM --server $SERVER
 ----
 
 Once you have that file in your repository, follow the steps to
-link:../../../quickstart/android/select_an_app.adoc[sign up with
+link:{{readme.path}}/quickstart/connect/README.adoc[sign up with
 buddybuild]. Your first build will fail, because buddybuild doesn't yet
 know about the `$PLATFORM` and `$SERVER` environment variables we are
 using in the `buddybuild_postclone.sh` script.

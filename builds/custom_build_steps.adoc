@@ -5,7 +5,7 @@ description: >
   You can customize your build at various stages with custom build
   scripts.
 ---
-= Custom Build Steps
+= Custom build steps
 
 Buddybuild automatically analyzes your repository and automatically
 configures itself with the best build settings. However, if you require
@@ -49,13 +49,13 @@ This page contains several sub-sections:
 
 
 [[environment]]
-== Environment Variables
+== Environment variables
 
-{% include "../_common/important-environment_variable_scope.adoc" %}
+{% include "/_common/important-environment_variable_scope.adoc" %}
 
 
 [[environment-common]]
-=== Common buddybuild Variables
+=== Common buddybuild variables
 
 [cols="a,10a",options="header"]
 |===
@@ -279,6 +279,12 @@ Some things you might want to do in a post-clone step:
   build)
 ===========
 
+[TIP]
+=====
+See the <<environment>> section if you need to access environment
+variables in the `buddybuild_postclone.sh` script.
+=====
+
 
 [[prebuild]]
 == Pre-build script
@@ -309,6 +315,12 @@ While you can use this to populate API keys or credentials, you can also
 access device keys that you've added on the dashboard through the
 BuddyBuildSDK without doing any custom build steps.
 ======
+
+[TIP]
+=====
+See the <<environment>> section if you need to access environment
+variables in the `buddybuild_prebuild.sh` script.
+=====
 
 
 [[postbuild]]
@@ -347,6 +359,12 @@ various service integrations you might have.
 If the post-build step is not running for you, please check that you
 have code signing set up.
 
+[TIP]
+=====
+See the <<environment>> section if you need to access environment
+variables in the `buddybuild_postbuild.sh` script.
+=====
+
 
 [[finally]]
 == Finally script
@@ -382,6 +400,12 @@ It is also your last opportunity to upload any build artifacts to any
 service integrations that you may have; once `buddybuild_finally.sh`
 completes, the build VM is destroyed.
 ======
+
+[TIP]
+=====
+See the <<environment>> section if you need to access environment
+variables in the `buddybuild_finally.sh` script.
+=====
 
 
 [[manual-fail]]

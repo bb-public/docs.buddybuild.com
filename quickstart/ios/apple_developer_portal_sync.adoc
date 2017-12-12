@@ -14,7 +14,7 @@ profiles can be a huge pain. Buddybuild can manage this entire process
 for you. All we need to manage your provisioning profiles on your behalf
 are your Apple Developer Credentials.
 
-{% include "../../_common/important-provisioning_profiles.adoc" %}
+{% include "/_common/important-provisioning_profiles.adoc" %}
 
 Let's get started!
 

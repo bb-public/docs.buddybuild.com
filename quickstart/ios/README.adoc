@@ -10,7 +10,6 @@ description: >
 This section describes how to quickly get started with buddybuild for
 iOS developers:
 
-- link:select_a_repo_and_app_to_build.adoc[Selecting an App]
 - link:invite_testers.adoc[Inviting Testers]
 - link:integrate_sdk.adoc[Integrating SDK]
 - link:apple_developer_portal_sync.adoc[Auto_Syncing Provisioning Profiles]

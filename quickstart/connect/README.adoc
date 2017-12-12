@@ -1,0 +1,32 @@
+---
+titletext: Sign up and connect buddybuild to your source code repository
+description: >
+  Buddybuild supports Bitbucket, Bitbucket Server, GitHub, GitHub
+  Enterprise, GitLab, a privately-hosted GitLab instance, and SSH (most
+  other repositories).
+---
+= Sign up and connect buddybuild to your source control
+
+To build your project, buddybuild needs access to your source code.
+
+Buddybuild has first-class integrations with GitHub, GitLab, and
+Bitbucket that provide source control, pull requests, issues, user
+management, and more.
+
+If you're not using one of the major repository providers, buddybuild
+works with any Git-based repository provider, even if you self-host,
+albeit with slightly less automation.
+
+Choose one of the following to sign up and connect buddybuild to your
+repository:
+
+- link:bitbucket.adoc[Bitbucket]
+- link:bitbucket_server.adoc[Bitbucket Server]
+- link:github.adoc[GitHub]
+- link:github_enterprise.adoc[GitHub Enterprise]
+- link:gitlab.adoc[GitLab]
+- link:gitlab_private.adoc[a privately-hosted GitLab instance]
+- link:ssh.adoc[SSH (most other repositories)]
+
+For teams that require it, see link:sso/README.adoc[Single sign-on
+(SSO)] for details.

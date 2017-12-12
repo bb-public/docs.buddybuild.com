@@ -19,14 +19,14 @@ deploy to your testers.
 Follow the instructions link:ssh.adoc[here] to get started.
 ======
 
-{% include "../_common/caution-self-signed_repos.adoc" %}
+{% include "/_common/caution-self-signed_repos.adoc" %}
 
 Let's get started:
 
 . Visit the buddybuild link:https://dashboard.buddybuild.com/signup[Sign
   up page]:
 +
-image:../_img/screen-sign_up.png["The Sign up screen", 1280, 550,
+image:../../_img/screen-sign_up.png["The Sign up screen", 1280, 550,
 role="frame"]
 
 . image:img/button-signup-github.png["The GitHub button", 140, 42,
@@ -79,11 +79,5 @@ click the **`X`** icon to the right of the repository to be removed.
 
 That's it! You're now connected to buddybuild!
 
-Next up: **Select a repository to build with buddybuild!**
-
-- For iOS apps, continue to the
-  link:ios/select_a_repo_and_app_to_build.adoc[iOS
-  Quickstart]
-
-- For Android apps, continue to the
-  link:android/select_an_app.adoc[Android Quickstart]
+The next step is to link:../select.adoc[select a repository to build
+with buddybuild!]

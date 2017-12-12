@@ -53,11 +53,5 @@ image:img/Gitlab---OAuth-2.png["The GitLab authorization screen", 3000, 1796]
 
 That's it! You're now connected to buddybuild!
 
-**The next step is to select a repository to build with buddybuild!**
-
-- For iOS apps, continue to the
-  link:ios/select_a_repo_and_app_to_build.adoc[iOS
-  Quickstart]
-
-- For Android apps, continue to the
-  link:android/select_an_app.adoc[Android Quickstart]
+The next step is to link:../select.adoc[select a repository to build
+with buddybuild!]

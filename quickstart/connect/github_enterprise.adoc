@@ -62,8 +62,8 @@ instance uses a non-default HTTPS port, include the port. For example
 Your GitHub Enterprise instance needs to be publicly accessible. If
 necessary, adjust your firewall configuration to allow the buddybuild
 fleet of build servers to access your instance. See
-link:../repository/self_hosted.adoc[Self-hosted repositories] for
-details.
+link:{{readme.path}}/repository/self_hosted.adoc[Self-hosted
+repositories] for details.
 
 Also, if you use private DNS for your instance, use the IP address of
 the server instead of the hostname.
@@ -208,11 +208,5 @@ That's it! You have now successfully connected buddybuild to your GitHub
 Enterprise instance.
 
 [[the_end]]
-**The next step is to select a repository to build with buddybuild!**
-
-- For iOS apps, continue to the
-  link:ios/select_a_repo_and_app_to_build.adoc[iOS
-  Quickstart]
-
-- For Android apps, continue to the
-  link:android/select_an_app.adoc[Android Quickstart]
+The next step is to link:../select.adoc[select a repository to build
+with buddybuild!]
