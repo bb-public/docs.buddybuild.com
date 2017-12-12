@@ -60,7 +60,7 @@ inform your testers when a new version is available.
 +
 Buddybuild can automatically detect any unit tests included in your
 project; we have a list of link:../tests/frameworks.adoc[supported
-frameworks], and link:tests/custom.adoc[instructions] for integrating
+frameworks], and link:../tests/custom.adoc[instructions] for integrating
 unsupported test frameworks. Unit tests are disabled by default, to
 ensure that your builds complete as quickly as possible, but you can
 enable them at any time.
