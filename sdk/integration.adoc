@@ -195,7 +195,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.buddybuild:sdk:0.1.12@aar'
+    compile 'com.buddybuild:sdk:0.1.15@aar'
     compile 'com.squareup:seismic:1.0.2'
 }
 ----
@@ -207,7 +207,7 @@ Two things to note here:
 . You can put the `repositories` section in the base `build.gradle` file,
   but you need to put it under the `allprojects` section.
 
-. Note the `@aar` at the end of `com.buddybuild:sdk:0.1.12@aar`
+. Note the `@aar` at the end of `com.buddybuild:sdk:0.1.15@aar`
 =====
 
 . **Add Permissions to `AndroidManifest.xml`**
@@ -245,7 +245,14 @@ public class MainApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        BuddyBuild.setup(this);
+        // Buddybuild runs a separate process for crash reporting.
+        // We recommend that customers exit onCreate() if executing in
+        // that process.
+        // BuddyBuild.setup() returns false if this Application instance
+        // is running in the crash reporting process.
+        if (!BuddyBuild.setup(this)) {
+            return;
+        }
     }
 }
 ----
