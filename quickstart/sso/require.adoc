@@ -6,9 +6,8 @@ description: >
 = Require single sign-on (SSO) logins
 
 If you prefer that your users only use SSO, you can enable **Require
-SSO**, which prevents users from logging in from an enterprise email
-domain, or accessing applications associated with your SSO organization
-in buddybuild.
+SSO**, which means that users can only log in to buddybuild using their
+corporate email or through their identity provider.
 
 [IMPORTANT]
 ===========
