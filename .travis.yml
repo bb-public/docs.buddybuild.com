@@ -4,7 +4,7 @@ language: node_js
 os:
   - linux
 node_js:
-  - 7
+  - 8
 env:
   - PERL5LIB=/home/travis/perl5/lib/perl5
 addons:
