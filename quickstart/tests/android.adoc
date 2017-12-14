@@ -1,67 +1,24 @@
 ---
-titletext: How to configure unit tests for your apps
+titletext: How to configure unit tests for your Android apps
 description: >
   You can configure whether unit tests are executed for every build.
   Tests results are displayed in the buddybuild dashboard.
 ---
-= Tests
+= Android test configuration
 
-Buddybuild supports unit tests right out of the box, and here's how to
-set them up:
-
-. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
-  dashboard]. The list of builds is displayed:
-+
-image:img/screen-builds.png["The list of builds", 1280, 300,
-role="frame"]
-
-. image:img/button-gear.png["The gear button", 38, 32, role="right"]
-  Click the _gear_ button to the right of a build. The **Build
-  configuration** screen is displayed:
-+
-image:img/screen-build_configuration.png["The build configuration
-screen", 1280, 737, role="frame"]
-
-. image:img/button-test_settings.png["The Test settings button", 240,
-  42, role="right"]
-  In the left-hand navigation panel, click the **Test settings** button.
-  The **Test configuration** screen is displayed, which varies for
-  <<ios,iOS>> and <<android,Android>> apps.
-+
-[NOTE]
-======
-When you make changes to the test configuration, you need to kick off a
-new build before you can see the effect of the changes. Either click
-**Build Now** or push a new change to your app's repository to start a
-new build.
-
-Once your tests have run, click on a specific build to view the **Build
-details** screen. Alongside the **Details** and **Logs** tabs, there are
-one or more tabs for each kind of test run during the build:
-
-image:img/screen-build_details-tests.png["The Build details screen with
-a tests tab selected", 1280, 587, role="frame"]
-======
-
-
-[[ios]]
-== iOS test configuration
-
-image:img/screen-test_configuration-ios.png["The Test configuration
-screen for iOS apps", 1280, 393, role="frame"]
-
-
-[[android]]
-== Android test configuration
+See link:README.adoc[Tests] for the steps to access the Android test
+configuration screen:
 
 image:img/screen-test_configuration-android.png["The Test configuration
 screen for Android apps", 1280, 511, role="frame"]
 
-=== Lint
+
+== Lint
 
 Click the toggle on to run a source code analysis with each build.
 
-=== Run unit tests
+
+== Run unit tests
 
 image:img/button-configure.png["The configure button", 80, 30,
 role="right"]
@@ -79,7 +36,8 @@ image:img/button-x.png["The X button", 38, 38, role="right"]
 When you are done, click the **`X`** button, at the top right of the
 screen, to return to the **Test configuration** screen.
 
-=== Run UI tests on physical devices
+
+== Run UI tests on physical devices
 
 Click the **Configure** button to access the **UI tests on physical
 devices** screen.
@@ -115,7 +73,8 @@ image:img/button-x.png["The X button", 38, 38, role="right"]
 When you are done, click the **`X`** button, at the top right of the
 screen, to return to the **Test configuration** screen.
 
-=== Run UI tests on virtual devices
+
+== Run UI tests on virtual devices
 
 Click the **Configure** button to access the **UI tests on virtual
 devices** screen.
@@ -152,9 +111,13 @@ When you are done, click the **`X`** button, at the top right of the
 screen, to return to the **Test configuration** screen.
 
 
-=== Treat Android UI tests as warnings
+== Treat Android UI tests as warnings
 
 Normally, when your UI tests fail, your build is also marked as failed.
 Failed builds cannot be deployed to testers. Use this setting to mark
 builds as successful and make them deployable, even when your UI tests
 fail.
+
+image:img/button-x.png["The X button", 38, 38, role="right"]
+When you are done, click the **`X`** button, at the top right of the
+screen, to return to the **Test configuration** screen.

@@ -1,0 +1,70 @@
+---
+titletext: Auto-updating Android VersionCode with no repo changes
+description: >
+  Buddybuild can update the Android VersionCode automatically, with
+  no repository changes required.
+---
+= Auto-versioning Android builds
+
+Android builds use two settings for build versions:
+
+- <<version_name,`VersionName`>> (`android:versionName`) is a string that
+  represents the _friendly_ version identifier that your users see. This
+  could be based on link:http://semver.org/[Semantic Versioning],
+  elements in the link:https://www.ptable.com/[periodic table], or a
+  member of an link:http://www.oreilly.com/animals.csp[animal
+  menagerie].
+
+- <<version_code,`VersionCode`>> (`android:versionCode`) is an integer
+  value that is used to distinguish _each build_. Android uses this
+  value to determine whether the latest version is installed.
++
+Common practice is to assign large numeric ranges to each kind of
+release you plan to deploy. For example, you might decide that
+100,000-500,000 represents the range for beta releases, and
+1,000,000-2,000,000 represents the range for stable releases. It's
+important to note that the Google Play Developer Console won't let you
+update to a build with a lower `VersionCode` value.
+
+
+[[version_code]]
+== VersionCode
+
+Buddybuild can update the `VersionCode` automatically for you. The process
+is done on the fly, does not require write access to the repo, and no
+changes will be committed back to the repo.
+
+All you need to do is to turn on **Auto-Versioning** in the settings.
+
+image:img/Settings---Auto-versioning---Android.png["The Auto-versioning
+screen", 1500, 582]
+
+
+[[version_name]]
+== VersionName
+
+The best practice is to update `VersionName` in the `build.gradle`, and
+Buddybuild simply respects that.
+
+[NOTE]
+======
+We do not recommend using the output from `git describe --tags` to
+inform the value of `VersionName`.
+
+For performance reasons, buddybuild downloads only the minimal set of
+branches and commits from the repository. Often this means that
+buddybuild downloads only the HEAD commit for a single branch. As such,
+there may be insufficient information available from the repository to
+automatically set `VersionName`.
+
+Buddybuild recommends manually specifying the `VersionName`, using
+link:http://semver.org/[Semantic Versioning] and this template:
+
+[source,text]
+----
+versionName = major.minor.versionCode
+----
+======
+
+One idea is to make use of the environment variables listed here:
+link:../../builds/custom_build_steps.adoc[Custom Build Steps]

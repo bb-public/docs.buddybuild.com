@@ -1,0 +1,56 @@
+---
+titletext: How to configure unit tests for your iOS apps
+description: >
+  You can configure whether unit tests are executed for every build.
+  Tests results are displayed in the buddybuild dashboard.
+---
+= iOS test configuration
+
+See link:README.adoc[Tests] for the steps to access the iOS test
+configuration screen:
+
+image:img/screen-test_configuration-ios.png["The Test configuration
+screen for iOS apps", 1280, 393, role="frame"]
+
+
+[[runtests]]
+== Run Tests
+
+Click the **Configure** button to access the **Run tests** screen.
+
+image:img/screen-test_configuration-ios-virtual.png["The Run tests
+screen for iOS apps", 1280, 587, role="frame"]
+
+Buddybuild maintains a pool of simulators of Apple devices, with a
+selection of iOS versions. You can select which simulators to use when
+running your UI tests.
+
+On this screen, you can:
+
+--
+[loweralpha]
+. Enable or disable all simulator testing. To do so, click
+the **Run tests** toggle.
+
+. image:img/tooltip-device_limit.png["The device limit tooltip", 200,
+  119, role="right"]
+  Select which simulators to use for UI testing.
++
+Buddybuild plans have limits on the number of simulators that can be
+used for each build. If you try to enable more simulators than the
+number supported by your plan, a tooltip appears warning you of the
+limitation.
+--
+
+image:img/button-x.png["The X button", 38, 38, role="right"]
+When you are done, click the **`X`** button, at the top right of the
+screen, to return to the **Test configuration** screen.
+
+
+== Only run Tests
+
+When you have at least one simulator selected in <<runtests>>, the
+**Only run Tests** option is available. Once enabled, **Only run Tests**
+causes the build to create an executable, which is only used for tests;
+no IPA is created, so deployment to testers or to the App store is not
+possible.

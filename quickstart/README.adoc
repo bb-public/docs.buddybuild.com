@@ -55,7 +55,7 @@ gather feedback from your testers, and to collect crash reports.
 Buddybuild can automatically update the build version, which helps
 inform your testers when a new version is available.
 
-. link:tests.adoc[**Unit tests**]
+. link:tests/README.adoc[**Unit tests**]
 +
 Buddybuild can automatically detect any unit tests included in your
 project; we have a list of link:../tests/frameworks.adoc[supported

@@ -24,6 +24,17 @@
 
 .. link:quickstart/select.adoc[Select a repository/app to build]
 
+.. link:quickstart/invite_testers.adoc[Invite testers]
+
+.. link:quickstart/integrate_sdk/README.adoc[Integrate the buddybuild
+SDK]
+... link:quickstart/integrate_sdk/ios.adoc[iOS]
+... link:quickstart/integrate_sdk/android.adoc[Android]
+
+.. link:quickstart/auto_version/README.adoc[Auto version your builds]
+... link:quickstart/auto_version/ios.adoc[iOS]
+... link:quickstart/auto_version/android.adoc[Android]
+
 .. link:quickstart/ios/README.adoc[iOS]
 ... link:quickstart/ios/invite_testers.adoc[Inviting testers]
 ... link:quickstart/ios/integrate_sdk.adoc[Integrate the SDK for iOS]
@@ -37,7 +48,9 @@
 ... link:quickstart/android/auto_versioning.adoc[Auto versioning]
 ... link:quickstart/android/build_variants.adoc[Build variants]
 
-.. link:quickstart/tests.adoc[Tests]
+.. link:quickstart/tests/README.adoc[Tests]
+... link:quickstart/tests/ios.adoc[iOS]
+... link:quickstart/tests/android.adoc[Android]
 
 . link:repository/README.adoc[Source control systems]
 .. link:repository/self_hosted.adoc[Self-hosted repositories]

@@ -1,0 +1,10 @@
+---
+titletext:
+description: >
+  FIXME...
+---
+= Auto-version your builds
+
+link:ios.adoc[for iOS]
+
+link:android.adoc[for Android]
