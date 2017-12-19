@@ -24,33 +24,23 @@
 
 .. link:quickstart/select.adoc[Select a repository/app to build]
 
-.. link:quickstart/invite_testers.adoc[Invite testers]
-
-.. link:quickstart/integrate_sdk/README.adoc[Integrate the buddybuild
-SDK]
-... link:quickstart/integrate_sdk/ios.adoc[iOS]
-... link:quickstart/integrate_sdk/android.adoc[Android]
-
-.. link:quickstart/auto_version/README.adoc[Auto version your builds]
-... link:quickstart/auto_version/ios.adoc[iOS]
-... link:quickstart/auto_version/android.adoc[Android]
-
 .. link:quickstart/ios/README.adoc[iOS]
-... link:quickstart/ios/invite_testers.adoc[Inviting testers]
 ... link:quickstart/ios/integrate_sdk.adoc[Integrate the SDK for iOS]
-... link:quickstart/ios/apple_developer_portal_sync.adoc[Auto-syncing
-    provisioning profiles]
+... link:quickstart/ios/apple_developer_portal.adoc[Connect to the Apple
+    Developer Portal]
+... link:quickstart/ios/upload_certificates.adoc[Upload your iOS
+    certificates]
+... link:quickstart/ios/invite_testers.adoc[Invite testers]
 ... link:quickstart/ios/auto_versioning.adoc[Auto versioning]
+... link:quickstart/ios/tests.adoc[Tests]
 
 .. link:quickstart/android/README.adoc[Android]
 ... link:quickstart/android/integrate_sdk.adoc[Integrate the SDK for
     Android]
+... link:quickstart/android/invite_testers.adoc[Invite testers]
 ... link:quickstart/android/auto_versioning.adoc[Auto versioning]
 ... link:quickstart/android/build_variants.adoc[Build variants]
-
-.. link:quickstart/tests/README.adoc[Tests]
-... link:quickstart/tests/ios.adoc[iOS]
-... link:quickstart/tests/android.adoc[Android]
+... link:quickstart/android/tests.adoc[Tests]
 
 . link:repository/README.adoc[Source control systems]
 .. link:repository/self_hosted.adoc[Self-hosted repositories]

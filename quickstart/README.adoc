@@ -55,7 +55,8 @@ gather feedback from your testers, and to collect crash reports.
 Buddybuild can automatically update the build version, which helps
 inform your testers when a new version is available.
 
-. link:tests/README.adoc[**Unit tests**]
+. **Tests (link:ios/tests.adoc[iOS] or
+  link:android/tests.adoc[Android]))
 +
 Buddybuild can automatically detect any unit tests included in your
 project; we have a list of link:../tests/frameworks.adoc[supported
@@ -73,14 +74,19 @@ enable them at any time.
 | For link:android/README.adoc[Android developers]
 
 |
-- link:ios/invite_testers.adoc[Inviting Testers]
-- link:ios/integrate_sdk.adoc[Integrating SDK]
-- link:ios/apple_developer_portal_sync.adoc[Auto-syncing Provisioning Profiles]
-- link:ios/auto_versioning.adoc[Auto Versioning]
+- link:ios/integrate_sdk.adoc[Integrate SDK]
+- link:ios/apple_developer_portal.adoc[Connect to the Apple Developer
+  Portal]
+- link:ios/upload_certificates.adoc[Upload your iOS certificates]
+- link:ios/invite_testers.adoc[Invite testers]
+- link:ios/auto_versioning.adoc[Auto-version builds]
+- link:ios/tests.adoc[Tests]
 
 |
-- link:android/integrate_sdk.adoc[Integrating SDK]
-- link:android/auto_versioning.adoc[Auto Versioning]
-- link:android/build_variants.adoc[Build Variants]
+- link:android/integrate_sdk.adoc[Integrate SDK]
+- link:android/invite_testers.adoc[Invite testers]
+- link:android/auto_versioning.adoc[Auto-version builds]
+- link:android/build_variants.adoc[Build variants]
+- link:android/tests.adoc[Tests]
 
 |===

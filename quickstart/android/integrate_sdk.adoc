@@ -80,31 +80,47 @@ link:{{readme.path}}/sdk/usage_tracking.adoc[Learn more.]
 
 == How to install
 
-Enabling the buddybuild Android SDK requires no code changes. Enabling
-the SDK is as simple as clicking a button.
+Integrating the buddybuild SDK into your Android app requires no code
+changes, and requires only a few steps:
 
+. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
+  dashboard]. The list of builds is displayed:
++
+image:../img/screen-builds.png["The list of builds", 1280, 300,
+role="frame"]
 
-=== Step 1: Configure SDK Installation
+. image:../img/button-feedback.png["The Feedback button", 98, 64,
+  role="right"]
+  Click the **Feedback** button in the top navigation bar. The
+  **Feedback** screen is displayed:
++
+image:../img/screen-feedback.png["The Feedback screen", 1280, 1315,
+role="frame"]
 
-On your App's page, under the **Feedback** tab, click on the **Try the
-buddybuild SDK** button.
+. image:../img/button-install_the_sdk.png["The Install the SDK button",
+  152, 42, role="right"]
+  Click the **Install the SDK** button. The **Install the SDK** screen
+  is displayed:
++
+image:../img/screen-install_sdk.png["The Install the SDK screen", 1280,
+579, role="frame"]
 
-image:img/SDK---Android-Install-Button.png["The screen asking you to
-install the SDK", 1500, 869]
-
-
-=== Step 2: Enable the SDK
-
-Enable the SDK in whatever branch you'd like. Typically, the SDK will be
-used by your testers, so you'll want to enable the SDK on the branches
-that deploy to your testers.
-
-image:img/SDK---Turn-on-branch-Android.png["The Install the SDK screen",
-1500, 667]
+. image:../img/button-install.png["The Install button", 57, 30,
+  role="right"]
+  Click the **Install** button beside each branch that should have the
+  buddybuild SDK integrated. Typically, the SDK is used by your testers,
+  so install the SDK on the branches that deploy to your testers.
++
+The branch's entry in the list is replaced with a notice indicating that
+a new build has been started:
++
+image:../img/panel-build_kicked_off.png["The build kicked off panel", 728,
+132]
 
 That's it! A new build is kicked off with the SDK enabled. Install this
 build on your device. Open your app and shake your device. See what
 happens!
 
-You're all set now to deploy your app broadly to all your testers and to
-receive graphically annotated feedback from them!
+You're all set now to deploy your app broadly to all
+link:invite_testers.adoc[your testers] and to receive graphically
+annotated feedback from them!

@@ -60,45 +60,59 @@ they tested. Correlate this with feedback and crash reports to
 understand your customers' experience.
 link:../../sdk/usage_tracking.adoc[Learn more.]
 
-== How to install
+== How to integrate
 
 Enabling the SDK requires code changes in your iOS Application. We can
 make these changes automatically so you don't have to! Enable the
-buddybuild SDK in just two easy steps.
+buddybuild SDK in just four easy steps.
+
+. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
+  dashboard]. The list of builds is displayed:
++
+image:../img/screen-builds.png["The list of builds", 1280, 300,
+role="frame"]
+
+. image:../img/button-feedback.png["The Feedback button", 98, 64,
+  role="right"]
+  Click the **Feedback** button in the top navigation bar. The
+  **Feedback** screen is displayed:
++
+image:../img/screen-feedback.png["The Feedback screen", 1280, 1315,
+role="frame"]
+
+. image:../img/button-install_the_sdk.png["The Install the SDK button",
+  152, 42, role="right"]
+  Click the **Install the SDK** button. The **Install the SDK** screen
+  is displayed:
++
+image:../img/screen-install_sdk.png["The Install the SDK screen", 1280,
+579, role="frame"]
+
+. image:../img/button-install.png["The Install button", 57, 30,
+  role="right"]
+  Click the **Install** button beside each branch that should have the
+  buddybuild SDK integrated. Typically, the SDK is used by your testers,
+  so install the SDK on the branches that deploy to your testers.
++
+The branch's entry in the list is replaced with a notice indicating that
+a new build has been started:
++
+image:../img/panel-build_kicked_off.png["The build kicked off panel", 728,
+132]
+
+That's it! A new build is kicked off with the SDK enabled. Install this
+build on your device. Open your app and take a screenshot -- and see
+what happens!
 
 {% include "/_common/note-sdk-ios-app_store_deployments.adoc" %}
-
-
-[[step1]]
-=== Step 1: Configure SDK Installation
-
-On your App's page, under the **Feedback** tab, click on the **Try the
-buddybuild SDK** button.
-
-image:img/SDK---iOS-Install-Button.png["The SDK screen, when it is not
-yet installed", 1500, 792]
-
-
-[[step2]]
-=== Step 2: Install the SDK
-
-Install the SDK in whatever branch you'd like. Typically, the SDK is
-used by your testers, so install the SDK on the branches that deploy to
-your testers.
-
-image:img/SDK---Turn-on-branch.png["The Install the SDK screen", 1500, 677]
-
-That's it! A new build will be kicked off with the SDK enabled. Install
-this build on your device. Open your app and take a screenshot -- and
-see what happens!
 
 You're all set now to deploy your app broadly to all your testers. There
 is just one more thing.
 
 Typically, development and testing devices need to be manually added to
-your provisioning profiles before they will accept deployed builds. This
+your provisioning profiles before they can accept deployed builds. This
 requires app developers to acquire the UDID (the device unique id) of
-the testing devices from the testers and then add them to the
+the testing devices from the testers, and then add them to the
 provisioning profiles used to build the app. This process is manual and
 is the source of a lot of headache for developers.
 
@@ -106,7 +120,7 @@ We've automated this process as well. Buddybuild can acquire UDIDs of
 your testers' devices, add them to your provisioning profiles completely
 automatically and transparently.
 
-To enable this, connect your link:apple_developer_portal_sync.adoc[Apple
+To enable this, connect your link:apple_developer_portal.adoc[Apple
 Developer account] with buddybuild.
 
 [NOTE]

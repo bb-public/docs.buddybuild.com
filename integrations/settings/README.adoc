@@ -85,11 +85,11 @@ Find coverage of each integration's settings below:
 Buddybuild can automatically sync with your Apple Developer Portal
 account(s). With this integration, buddybuild can:
 
-- link:../../quickstart/ios/apple_developer_portal_sync.adoc[Automatically
+- link:{{readme.path}}/quickstart/ios/apple_developer_portal.adoc[Automatically
   sync your Provisioning Profiles]
 
-- link:../../deployments/ios/itunes_connect.adoc[Upload specific builds
-  to iTunes Connect and TestFlight]
+- link:{{readme.path}}/deployments/ios/itunes_connect.adoc[Upload
+  specific builds to iTunes Connect and TestFlight]
 
 The settings screen lets you connect multiple accounts:
 

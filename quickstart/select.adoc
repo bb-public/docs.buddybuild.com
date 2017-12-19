@@ -6,7 +6,7 @@ description: >
 ---
 = Select a repository and app to build
 
-Now that we've connected with your source control account, you need
+Now that we've connected with your source control account, you need to
 select the repository containing your app.
 
 . link:connect/README.adoc[Sign up with buddybuild] if you haven't
