@@ -125,7 +125,7 @@ Guide].
 . Run the following command:
 +
 [source,bash]
-curl -Ls http://tools.buddybuild.com.s3-website-us-west-2.amazonaws.com/UpdateSDK | sh
+curl -Ls https://tools.buddybuild.com/UpdateSDK | sh
 
 . Commit and push the changes.
 
