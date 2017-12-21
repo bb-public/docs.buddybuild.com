@@ -28,20 +28,32 @@ Integrating the buddybuild SDK will increase the size of the resulting
 `.ipa` by less than 1 MB.
 ======
 
+
 === Feedback Reporter
 
-With buddybuild, you simply take a screenshot to share feedback. Our
-feedback reporter sends graphically annotated screenshots, feedback
-notes and device metadata to your team. Integrate with GitHub, JIRA and
+With the buddybuild SDK, you simply take a screenshot to share feedback.
+Our feedback reporter sends graphically annotated screenshots, feedback
+notes and device metadata to your team. Integrate with GitHub, JIRA, and
 Pivotal Tracker to track feedback as issues.
-link:../../sdk/feedback_reporter.adoc[Learn more.]
+link:../../sdk/feedback_reporter.adoc[Learn more].
+
+
+=== Crash Reporter
+
+With the buddybuild SDK, should your app crash, a crash report is sent
+to buddybuild. You can browse crash reports and dig into the details of
+each crash.
+link:../../sdk/crash_reporter.adoc[Learn more].
+
 
 === Instant Replay
 
 No more emailing testers for repro steps. Along with each crash report,
-buddybuild will also attach a 15 second video of your testers'
-interactions with your App's UI right up to the point where it crashed
--- allowing you to instantly see what they did to cause a crash.
+buddybuild also attaches a 15-second video of your testers' interactions
+with your app's UI, right up to the point where it crashed -- allowing
+you to instantly see what they did to cause a crash.
+link:../../sdk/instant_replay.adoc[Learn more].
+
 
 === Automatic Update
 
@@ -50,7 +62,8 @@ fixed the issue you've received feedback on! It is crucial to keep your
 testers and beta users updated on the very latest builds. If a newer
 build is available, the buddybuild SDK can automatically prompt to
 install the latest version of your app.
-link:../../sdk/automatic_update.adoc[Learn more.]
+link:../../sdk/automatic_update.adoc[Learn more].
+
 
 === Usage Tracking
 
@@ -58,7 +71,8 @@ Know when your testers download and launch your app in real time.
 Identify who tested your app, when they launched it and what version
 they tested. Correlate this with feedback and crash reports to
 understand your customers' experience.
-link:../../sdk/usage_tracking.adoc[Learn more.]
+link:../../sdk/usage_tracking.adoc[Learn more].
+
 
 == How to install
 

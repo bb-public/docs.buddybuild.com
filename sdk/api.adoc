@@ -37,7 +37,7 @@ However, if you send out a build to a mailing list, or through
 TestFlight or the App Store we are unable to infer who they are. If you
 see 'Unknown User' this is likely the cause.
 
-Often you'll know the identity of your user, for example, after they've
+Often you know the identity of your user, for example, after they have
 logged in. You can provide buddybuild a callback to identify the current
 user.
 
@@ -75,7 +75,7 @@ BuddyBuildSDK.setup()
 ----
 --
 
-If you return an empty string, buddybuild will fall back to the original
+If you return an empty string, buddybuild falls back to the original
 behavior.
 
 == Access API keys and other variables
@@ -149,7 +149,7 @@ BuddyBuildSDK.setMetadataObject("Login Page", forKey: "CurrentState")
 ----
 --
 
-Now when your app crashes, or your users submit feedback, you'll see
+Now when your app crashes, or your users submit feedback, you can see
 this metadata when viewing the details in the dashboard.
 
 image:img/Pasted-image-at-2016_06_22-04_08-PM.png["A screen showing the

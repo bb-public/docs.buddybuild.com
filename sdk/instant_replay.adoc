@@ -1,0 +1,108 @@
+---
+titletext: Automatically capture a short video leading up to a crash
+description: >
+  The buddybuild SDK instant replay captures up to 15 seconds of video,
+  demonstrating the actions that lead to a crash in your app.
+---
+= Instant replay
+
+Instant replay, when enabled, records up to 15 seconds of video taken up
+to the point where a user sends feedback (on iOS), or when your app
+crashes. Such video can be very useful in confirming the behavior in
+your app that your testers describe. For crash reports, it may be more
+important as a tester might not recall all of the interactions that led
+to the crash.
+
+With few limitations (<<differences,see below>>), instant replay records
+all user interactions with your app, including touches, swipes, keyboard
+use, etc. While recording, your users should not notice any performance
+degradation, unless your app updates the screen rapidly.
+
+To enable instant replay for crash reports, follow the procedure
+described in link:feature_settings.adoc[Feature settings], and ensure
+that both the **Crash reporter** and **Instant Replay for crash
+reports** settings are enabled.
+
+FIXME: Include a GIF/video of feedback, or a crash report.
+
+
+[[differences]]
+== Differences between instant replay on iOS and Android
+
+There are a number of differences between the instant replay
+implementations for iOS and Android. The following table identifies and
+describes those differences.
+
+[cols="1a,1a", options="header"]
+|===
+| iOS builds
+| Android builds
+
+2+^| **First launch**
+
+|
+No permissions dialog is displayed.
+
+|
+A permissions dialog appears, asking the user to allow screen recording.
+
+If the user taps **Cancel**, or touches outside of the dialog, the
+dialog is dismissed and is presented again when the main app activity is
+resumed.
+
+Buddybuild recommends that testers check the **Don't show again**
+checkbox, and then tap **Accept**.
+
+2+^| **Touches**
+
+|
+All taps, touches, holds, swipes, pinches, and spreads are captured.
+
+|
+Only touches are recorded, due to several limitations within Android and
+how the buddybuild SDK integrates with your app.
+
+2+^| **Rotations**
+
+|
+Rotations are **not** captured.
+
+|
+Rotations are captured.
+
+2+^| **Crash report uploads**
+
+|
+Crash reports are initiated when your app is relaunched after a crash
+event.
+
+|
+Crash reports begin uploading, in the background, immediately after the
+crash event.
+
+2+^| **Privacy**
+
+|
+Screen recording continues to occur while the app is in the background,
+for a maximum of 15 seconds. During this time, the screen is blacked out
+until the app comes back into the foreground.
+
+|
+Screen recording continues to occur while the app is in the background,
+for a maximum of 15 seconds. During this time, the screen is blacked out
+until the app comes back into the foreground.
+
+Android does not currently support view blocking. Keyboard activity is
+captured, including within password and other private fields.
+
+2+^| **Performance**
+
+|
+Screen recording may impact the performance of apps involving
+significant screen activity.
+
+|
+Media projection, which is very fast, is used to capture screen
+activity. There should be no noticeable performance impact.
+
+|===

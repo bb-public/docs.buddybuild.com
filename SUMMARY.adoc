@@ -147,6 +147,8 @@
 . link:sdk/README.adoc[buddybuild SDK]
 .. link:sdk/automatic_update.adoc[Automatic update]
 .. link:sdk/feedback_reporter.adoc[Feedback reporter]
+.. link:sdk/crash_reporter.adoc[Crash reporter]
+.. link:sdk/instant_replay.adoc[Instant replay]
 .. link:sdk/usage_tracking.adoc[Usage tracking]
 .. link:sdk/feature_settings.adoc[Feature settings]
 .. link:sdk/integration.adoc[Manual integration]
