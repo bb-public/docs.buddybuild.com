@@ -3,14 +3,21 @@ titletext: Inspect provisioning profiles for a specific iOS build
 description: >
   Inspect a specific build to see the exact provisioning profile
   that it was built with, which devices are enabled, and view the
-  entitlements of your App.
+  entitlements of your app.
 ---
-= Provisioning Profile Inspector
+= Provisioning profile inspector
 
 Buddybuild allows you to inspect the exact provisioning profile a
 specific build was built with.
 
-See exactly which devices are enabled, and the entitlements of your App.
+[IMPORTANT]
+===========
+This feature is **not available** for auto-generated provisioning
+profiles. Inspection only works for provisioning profiles that you
+upload.
+===========
+
+See exactly which devices are enabled, and the entitlements of your app.
 
 Navigate to the build details page of a particular build and then click
 on **View Details** under the **Code Signing and Versioning** section to
@@ -35,3 +42,4 @@ Lastly, find out what **entitlements** are configured for your App!
 image:img/Settings---prov-profile-details---entitlements.png["The iOS
 Team Provisioning Profile screen, with the Entitlements tab selected",
 1500, 800]
+
