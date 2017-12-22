@@ -14,52 +14,52 @@ your testers have the very latest changes.
 
 Let's get started!
 
-On the **Builds** page you will notice a big red banner labeled
-*Looking for builds to be kicked off automatically?* To get started
-click the **Resolve this issue** button.
-
+. On the **Builds** page you will notice a big red banner labeled
+  *Looking for builds to be kicked off automatically?* To get started
+  click the **Resolve this issue** button.
++
 image:../img/resolve-banner.png["The auto-build resolution banner in the
 buddybuild dashboard", 1500, 298]
 
-In the dialog box that appears, **select and copy the webhook URL**.
-This URL is specific to your app and is used to identify your app when
-sending webhooks from Kiln.
+. In the dialog box that appears, **select and copy the webhook URL**.
 
-image:../img/modal.png["The webhook URL dialog", 1500, 838]
-
-Navigate to your Kiln repository. On the top navigation bar, select
-**Settings.**
-
+. Navigate to your Kiln repository. On the top navigation bar, select
+  **Settings.**
++
 image:img/click-settings.png["The Kiln project screen", 962, 317]
 
-Click the **web hooks** link under the section **Web Hooks**.
-
+. Click the **web hooks** link under the section **Web Hooks**.
++
 image:img/click-web-hooks.png["The Kiln settings screen", 1083, 597]
 
-Click the **Create a new web hook...** button.
-
+. Click the **Create a new web hook...** button.
++
 image:img/click-create-web-hook.png["The Kiln web hooks screen", 1007,
 287]
 
-Enter a name for the web hook, and then set the web hook **Type** to
-**Custom**.
-
+. Enter a name for the web hook, and then set the web hook **Type** to
+  **Custom**.
++
 image:img/set-web-hook-name.png["The Kiln web hook creation screen",
 1283, 566]
 
-Paste the URL you first copied into the **URL** field.
-
+. Paste the URL you first copied into the **URL** field.
++
 image:img/paste-webhook-url.png["The Kiln web hook URL field", 856, 266]
 
-In the **Repositories** field, start typing the name of your repository,
-then select it. Remember that the buddybuild webhook URL is specific to
-your app, so you must create a new web hook in Kiln for each app, even
-if your repository contains multiple apps.
-
+. In the **Repositories** field, start typing the name of your repository,
+then select it.
++
+Remember that the buddybuild webhook URL is specific to your app, so you
+must create a new web hook in Kiln for each app, even if your repository
+contains multiple apps.
++
 image:img/set-repositories.png["The Kiln web hook repository trigger
 field", 814, 160]
 
-Finally, click the **Create web hook** button. You're now done!
-
+. Click the **Create web hook** button.
++
+You're now done!
++
 image:img/create-web-hook.png["The Kiln Create web hook button", 817,
 227]
