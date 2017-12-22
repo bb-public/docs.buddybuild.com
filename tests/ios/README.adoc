@@ -2,16 +2,16 @@
 search: false
 titletext: Overview of iOS UI and unit tests for continuous integration
 description: >
-  Buddybuild has full support for iOS unit tests, provides reports on code
-  coverage, and also provides video recording and playback for user testing.
+  Buddybuild has full support for iOS, tvOS, and watchOS unit tests,
+  provides reports on code coverage, plus video recording and playback
+  for user testing.
 ---
 = iOS tests
 
-This section covers buddybuild's infrastructure for testing iOS
-applications:
+This section covers buddybuild's infrastructure for testing iOS, tvOS,
+and watchOS applications:
 
 - link:tests.adoc[Unit tests]
 - link:code_coverage.adoc[Code coverage]
 - link:configure_ui_tests_video_recording.adoc[Configure UI tests for
   video replay]
-
