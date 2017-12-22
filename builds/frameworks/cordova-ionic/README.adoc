@@ -17,13 +17,12 @@ ready to onboard onto buddybuild.
 
 . The `www` directory is checked into your repository
 
-After you've confirmed that both of those conditions have been meet,
-you're ready to add them to buddybuild!
+After you've confirmed that both of those conditions have been met,
+you're ready to link:{{readme.path}}/quickstart/select.adoc[add them to
+buddybuild!]
 
-Instructions for how to add apps to buddybuild can be found here:
-link:../../../quickstart/android/select_an_app.adoc[Sign up with buddybuild]
+NOTE: You need to add each platform as a separate app in buddybuild.
 
-NOTE: You'll need to add each platform as a separate app in buddybuild.
 
 == Does your app require custom tasks?
 
@@ -32,8 +31,6 @@ correctly configure or setup your Cordova / Ionic application, the
 recommended solution is to add a **postinstall** step to your
 `package.json` file.
 
-[[code-samples]]
---
 .package.json
 [source,json]
 ----
@@ -43,9 +40,8 @@ recommended solution is to add a **postinstall** step to your
   }
 }
 ----
---
 
 There's also a hook to do any further configuration in the midst of us
 running our Cordova workflow. By adding a `buddybuild_midcordova.sh`
-script, you can do arbitrary stuff such as gulp tasks etc. before we
-start adding your platform and generating resources.
+script, you can perform arbitrary operations, such as gulp tasks etc.,
+before we start adding your platform and generating resources.

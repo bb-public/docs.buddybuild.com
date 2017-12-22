@@ -1,0 +1,99 @@
+---
+titletext: Connect your repository using SSH
+description: >
+  If your repository lives in Beanstalk or your own source control system, use
+  these step-by step instruction signing up with buddybuild using SSH.
+---
+= Signing up with SSH
+
+If your repository lives in link:https://beanstalkapp.com/[Beanstalk] or
+your own source control system, you can sign up with buddybuild using
+SSH. Buddybuild automatically generates an SSH key for you to install
+into your source control system. Buddybuild uses this key to clone your
+repository.
+
+{% include "/_common/important-ssh_access.adoc" %}
+
+Let's get started!
+
+[[step1]]
+== Step 1: Sign up with email
+
+Let's get started by visiting the
+link:https://dashboard.buddybuild.com/signup[Sign up page].
+
+Create a new buddybuild account by entering your email and desired
+password, then click on the **Sign up with Email** button.
+
+image:img/sign_up-email.png["The buddybuild Sign up screen", 3000, 1600]
+
+On the next screen, select **Add with SSH.**
+
+image:img/First-Build---Select-Source---SSH.png["The buddybuild Select
+source screen", 1500, 800]
+
+
+[[step2]]
+== Step 2: Enter the SSH Git Clone URL
+
+Navigate to your source control system and copy the SSH git clone URL.
+Paste this URL into buddybuild.
+
+image:img/SSH---git-clone-URL.png["The buddybuild Connect another Git
+service screen", 1500, 765]
+
+[NOTE]
+======
+**Need help finding the Git Clone URL? Select your source control system
+for specific instructions.**
+
+- link:{{readme.path}}/repository/beanstalk/README.adoc[Beanstalk]
+- link:{{readme.path}}/repository/bitbucket/README.adoc[Bitbucket]
+- link:{{readme.path}}/repository/github/README.adoc[GitHub]
+- link:{{readme.path}}/repository/gitlab/README.adoc[GitLab]
+- link:{{readme.path}}/repository/gitolite/README.adoc[Gitolite]
+- link:{{readme.path}}/repository/kiln/README.adoc[Kiln]
+- link:{{readme.path}}/repository/visual_studio_online/README.adoc[Visual
+  Studio Online / Team Foundation Server (TFS)]
+======
+
+If your repo is public, buddybuild can immediately start a build. Click
+the build button to complete sign up.
+
+If your repo is private, you need to install an SSH key. This SSH key
+authenticates and authorizes buddybuild to checkout your source code.
+
+
+[[step3]]
+== Step 3: Add the SSH Key to Your Account Settings in your Source Control System
+
+image:img/SSH---key.png["The buddybuild Connect another Git service
+screen, with the SSH key selected", 1500, 765]
+
+[NOTE]
+======
+**Need help adding the SSH key to your source control system? Select
+your source control system for specific instructions.**
+
+- link:{{readme.path}}/repository/beanstalk/README.adoc[Beanstalk]
+- link:{{readme.path}}/repository/gitlab/README.adoc[GitLab]
+- link:{{readme.path}}/repository/gitolite/README.adoc[Gitolite]
+- link:{{readme.path}}/repository/visual_studio_online/README.adoc[Visual
+  Studio Online / Team Foundation Server (TFS)]
+======
+
+[IMPORTANT]
+===========
+**Public Repo?**
+
+You don't need to perform this step if your repository is public. Simply
+click the **Build** button.
+===========
+
+Once the key is installed, navigate back to buddybuild and click the
+**Build** button.
+
+That's it! You're now connected to buddybuild!
+
+The next step is to link:../select.adoc[select a repository to build
+with buddybuild!]

@@ -36,7 +36,8 @@ curl -X GET \
 ----
 
 Once your firewall allows connections from buddybuild, you can
-link:../quickstart/ssh.adoc[connect your repo via SSH].
+link:{{readme.path}}/quickstart/connect/ssh.adoc[connect your repo via
+SSH].
 
 
 == VPN connections

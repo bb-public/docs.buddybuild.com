@@ -1,0 +1,212 @@
+---
+titletext: Connect your GitHub Enterprise instance to buddybuild
+description: >
+  When you connect your GitHub Enterprise instance, buddybuild builds
+  your mobile app every time a commit is pushed.
+---
+= Connect with GitHub Enterprise
+
+Connecting with GitHub Enterprise grants buddybuild access to your
+repository so that it can build your app when you push code to your
+repository. Connecting also grants buddybuild API access to manage
+webhooks for you, generate commit status, integrate with the GitHub
+issue tracker, enables the pull request flow, synchronizes access
+control for team management and more.
+
+
+Each member of your team that uses buddybuild should go through this
+guide to connect with GitHub Enterprise. This is encouraged so that you
+can take advantage of team management features.
+
+The full process to connect to a specific GitHub Enterprise instance
+only needs to be completed once. Afterwards, anyone connecting with the
+same GitHub Enterprise instance (by specifying the same `hostname:port`,
+in step #4) adopts the same connection configuration, and they can skip
+to <<authorize_step,the account authorization step>>.
+
+[CAUTION]
+====
+Buddybuild rejects connecting to repositories via HTTPS that are
+provisioned with self-signed certificates.
+
+Using a self-signed certificate could make it possible for someone to
+spoof your repository and inject malicious code into your builds.
+====
+
+== Connection steps
+
+. If you have not already done so,
+  link:https://dashboard.buddybuild.com/signup[sign up for a buddybuild
+  account].
+
+. Visit this link:
+  https://dashboard.buddybuild.com/apps/wizard/build/select-source
++
+The **Where is your source code?** screen is displayed:
++
+image:img/screen-select_source.png["The Where is your source code?
+screen", 1280, 555, role="frame"]
+
+. Click the **GitHub Enterprise** box. The **Connect with GitHub
+Enterprise** screen is displayed:
++
+image:img/screen-connect_with_ghe.png["The Connect with GitHub
+Enterprise screen", 1280, 310, role="frame"]
+
+. Specify the hostname for your GitHub Enterprise instance. If your
+instance uses a non-default HTTPS port, include the port. For example
+`ghe.mycompany.com:1234`.
++
+[IMPORTANT]
+===========
+Your GitHub Enterprise instance needs to be publicly accessible. If
+necessary, adjust your firewall configuration to allow the buddybuild
+fleet of build servers to access your instance. See
+link:{{readme.path}}/repository/self_hosted.adoc[Self-hosted
+repositories] for details.
+
+Also, if you use private DNS for your instance, use the IP address of
+the server instead of the hostname.
+===========
+
+. image:img/button-continue.png["The Continue button", 84, 42,
+  role="right"]
+  Click the **Continue** button. Two different screens could be
+  displayed here:
++
+--
+[loweralpha]
+. If this is the first time that this GitHub Enterprise instance is
+  being connected, the **Add buddybuild as an OAuth app** screen is
+  displayed:
++
+image:img/screen-add_bb_as_oauth.png["The Add buddybuild as an OAuth app
+screen", 1280, 548, role="frame"]
++
+If you see this screen, continue with <<callback_url_step,step #6>>.
+
+. If the GitHub Enterprise instance has been previously connected to
+buddybuild, the **already configured** screen is displayed:
++
+image:img/screen-ghe-already_configured.png["The Your GitHub Enterprise
+instance is already configured! screen", 1280, 531, role="frame"]
++
+If you see this screen, continue with <<authorize_step,step #26>>.
+--
+
+. [[callback_url_step]] image:img/button-copy_to_clipboard.png["The copy
+  to clipboard button", 39, 42, role="right"]
+  Click the copy to clipboard button beside the **Callback URL** field.
+
+. In another browser window or tab, log in to your GitHub Enterprise
+instance.
++
+image:img/screen-ghe-logged_in.png["GitHub Enterprise, just after
+login.", 1280, 467, role="frame"]
+
+. image:img/dropdown-ghe-avatar.png["The GitHub Enterprise avatar
+  dropdown menu", 180, 316, role="right"]
+  At the top-right of the screen, click your account avatar. The avatar
+  dropdown menu is displayed.
+
+. Select **Settings**. The **Public profile** screen is displayed:
++
+image:img/screen-ghe-profile_settings.png["The GitHub Enterprise Public
+profile screen", 1280, 649, role="frame"]
+
+. image:img/panel-ghe-organization_settings.png["The Organization
+  settings panel in GitHub Enterprise", 221, 76, role="right"]
+  At the bottom left of the screen, click the name of the organization
+  that contains one or more repos that buddybuild should access. The
+  **Organization profile** screen for the selected organization is
+  displayed:
++
+image:img/screen-ghe-organization_profile.png["The Organization profile
+screen in GitHub Enterprise", 1280, 526, role="frame"]
+
+. image:img/button-ghe-oauth_applications.png["The OAuth applications
+  button in GitHub Enterprise", 221, 39, role="right"]
+  In the left navigation bar, click the **OAuth applications** button.
+  The **OAuth applications** screen is displayed:
++
+image:img/screen-ghe-oauth_applications.png["The OAuth applications
+screen in GitHub Enterprise", 1280, 482, role="frame"]
+
+. image:img/button-ghe-register_an_application.png["The Register an
+  application button in GitHub Enterprise", 183, 34, role="right"]
+  Click the **Register an application** button. The **Register a new
+  OAuth application** screen is displayed:
++
+image:img/screen-ghe-register_new_application.png["The Register a new
+OAuth application screen in GitHub Enterprise", 1280, 700,
+role="frame"]
+
+. In the **Application name** field, specify a name for the application.
+  We recommend `buddybuild`.
+
+. Optionally, fill in the **Homepage URL** field. If you do so, we
+  recommend `https://www.buddybuild.com/`.
+
+. Optionally, fill in the **Application description** field. If you do
+  so, we recommend `The CI/CD solution for mobile developers.`
+
+. Paste the **Callback URL** (that you copied from the **Add buddybuild
+  as an OAuth app** screen) into the **Authorization callback URL**
+  field.
+
+. image:img/button-ghe-register_application.png["The Register
+  application button on GitHub Enterprise", 164, 34, role="right"]
+  Click the **Register application** button. The **OAuth application
+  details** screen is displayed:
++
+image:img/screen-ghe-oauth_app_details.png["The details page for the
+OAuth app in GitHub Enterprise", 1280, 550, role="frame"]
+
+. Copy the **Client ID** value.
+
+. Switch to the browser window or tab containing the buddybuild **Add
+buddybuild as an OAuth app** screen.
+
+. Paste the **Client ID** value into the **Enter your Client ID** field.
+
+. Switch to the browser window or tab containing the GitHub Enterprise
+screen.
+
+. Copy the **Client Secret** value.
+
+. Switch to the browser window or tab containing the buddybuild **Add
+buddybuild as an OAuth app** screen.
+
+. Paste the **Client Secret** value into the **Enter your Client
+secret** field.
+
+. image:img/button-continue.png["The Continue button", 84, 42,
+  role="right"]
+  Click the **Continue** button. If the connection succeeds, a
+  success screen is displayed:
++
+image:img/screen-connect_to_ghe_success.png["The connection success
+screen", 1280, 531, role="frame"]
++
+At this point, buddybuild can connect to your GitHub Enterprise
+instance, but it is not yet authorized to perform any actions.
+
+. [[authorize_step]] image:img/button-authorize_ghe.png["The Authorize
+  your GitHub Enterprise account button", 326, 42, role="right"]
+  Click the **Authorize your GitHub Enterprise account** button. The
+  GitHub Enterprise authorization screen is displayed:
++
+image:img/screen-ghe-authorize.png["The GitHub Enterprise authorization
+screen", 1280, 668, role="frame"]
+
+. image:img/button-ghe-authorize_test.png["The Authorize <organization>
+  button", 224, 34, role="right"]
+  Click the **Authorize <organization name>** button (in this example,
+  **Authorize test**).
+
+That's it! You have now successfully connected buddybuild to your GitHub
+Enterprise instance.
+
+[[the_end]]
+The next step is to link:../select.adoc[select a repository to build
+with buddybuild!]

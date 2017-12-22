@@ -1,8 +1,9 @@
 ---
 titletext: How to connect your mobile app repositories to buddybuild
 description: >
-  Buddybuild supports Bitbucket, Bitbucket Server, GitHub, GitHub Enterprise,
-  GitLab, a privately-hosted GitLab instance, and SSH (most other repositories).
+  Buddybuild supports Bitbucket, Bitbucket Server, GitHub, GitHub
+  Enterprise, GitLab, a privately-hosted GitLab instance, and SSH (most
+  other repositories).
 ---
 = Quickstart
 
@@ -10,21 +11,19 @@ This section describes how to quickly get started using buddybuild.
 Overall, the process involves a few steps:
 
 
-. **Connect buddybuild to your project's source code provider**
+. **Connect buddybuild to your project's source control**
 +
-Buddybuild supports:
+Buddybuild supports the follow source control providers:
 +
-- link:bitbucket.adoc[Bitbucket]
-- link:bitbucket_server.adoc[Bitbucket Server]
-- link:github.adoc[GitHub]
-- link:github_enterprise.adoc[GitHub Enterprise]
-- link:gitlab.adoc[GitLab]
-- link:gitlab_private.adoc[a privately-hosted GitLab instance]
-- link:ssh.adoc[SSH (most other repositories)]
+- link:connect/bitbucket.adoc[Bitbucket]
+- link:connect/bitbucket_server.adoc[Bitbucket Server]
+- link:connect/github.adoc[GitHub]
+- link:connect/github_enterprise.adoc[GitHub Enterprise]
+- link:connect/gitlab.adoc[GitLab]
+- link:connect/gitlab_private.adoc[a privately-hosted GitLab instance]
+- link:connect/ssh.adoc[SSH (most other repositories)]
 
-. **Choose a repository
-  (link:ios/select_a_repo_and_app_to_build.adoc[iOS] or
-  link:android/select_an_app.adoc[Android])**
+. link:select.adoc[**Choose a repository**]
 +
 Buddybuild examines your repository and automatically configures builds
 based on the configuration that you have setup.
@@ -56,7 +55,8 @@ gather feedback from your testers, and to collect crash reports.
 Buddybuild can automatically update the build version, which helps
 inform your testers when a new version is available.
 
-. link:android/testing.adoc[**Unit tests**]
+. **Tests (link:ios/tests.adoc[iOS] or
+  link:android/tests.adoc[Android]))
 +
 Buddybuild can automatically detect any unit tests included in your
 project; we have a list of link:../tests/frameworks.adoc[supported
@@ -74,16 +74,19 @@ enable them at any time.
 | For link:android/README.adoc[Android developers]
 
 |
-- link:ios/select_a_repo_and_app_to_build.adoc[Selecting an App]
-- link:ios/invite_testers.adoc[Inviting Testers]
-- link:ios/integrate_sdk.adoc[Integrating SDK]
-- link:ios/apple_developer_portal_sync.adoc[Auto-syncing Provisioning Profiles]
-- link:ios/auto_versioning.adoc[Auto Versioning]
+- link:ios/integrate_sdk.adoc[Integrate SDK]
+- link:ios/apple_developer_portal.adoc[Connect to the Apple Developer
+  Portal]
+- link:ios/upload_certificates.adoc[Upload your iOS certificates]
+- link:ios/invite_testers.adoc[Invite testers]
+- link:ios/auto_versioning.adoc[Auto-version builds]
+- link:ios/tests.adoc[Tests]
 
 |
-- link:android/select_an_app.adoc[Selecting an App]
-- link:android/integrate_sdk.adoc[Integrating SDK]
-- link:android/auto_versioning.adoc[Auto Versioning]
-- link:android/build_variants.adoc[Build Variants]
+- link:android/integrate_sdk.adoc[Integrate SDK]
+- link:android/invite_testers.adoc[Invite testers]
+- link:android/auto_versioning.adoc[Auto-version builds]
+- link:android/build_variants.adoc[Build variants]
+- link:android/tests.adoc[Tests]
 
 |===

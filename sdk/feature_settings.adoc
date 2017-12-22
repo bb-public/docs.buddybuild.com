@@ -13,9 +13,9 @@ on your desired branch. No code changes are required to integrate the
 buddybuild SDK for
 link:../quickstart/android/integrate_sdk.adoc[Android; just enable it!]
 
-{% include "../_common/note-sdk-ios-app_store_deployments.adoc" %}
+{% include "/_common/note-sdk-ios-app_store_deployments.adoc" %}
 
-{% include "../_common/warning-sdk-android-disable_for_production.adoc" %}
+{% include "/_common/warning-sdk-android-disable_for_production.adoc" %}
 
 == Configure SDK feature settings
 
