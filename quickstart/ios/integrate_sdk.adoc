@@ -93,6 +93,10 @@ image:../img/screen-install_sdk.png["The Install the SDK screen", 1280,
   Click the **Install** button beside each branch that should have the
   buddybuild SDK integrated. Typically, the SDK is used by your testers,
   so install the SDK on the branches that deploy to your testers.
+  Buddybuild automatically makes the code changes and commits them to
+  the selected branch. Note that if you integrate the SDK on the
+  `master` branch, the SDK is included in all new branches based on
+  `master` thereafter.
 +
 The branch's entry in the list is replaced with a notice indicating that
 a new build has been started:

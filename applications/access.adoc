@@ -25,10 +25,10 @@ buddybuild!
 If you have signed up for buddybuild with
 link:/quickstart/connect/github.adoc[GitHub],
 link:/quickstart/connect/bitbucket.adoc[Bitbucket] or
-link:/quickstart/connect/gitlab.adoc[GitLab] OAUTH, buddybuild
-automatically allows repository collaborators access to your app! These
-members simply need to sign up with buddybuild, and they will
-automatically see the app.
+link:/quickstart/connect/gitlab.adoc[GitLab], buddybuild automatically
+allows repository collaborators access to your app! These members simply
+need to sign up with buddybuild, and they will automatically see the
+app.
 
 First, select **App Settings** in the global navigation.
 

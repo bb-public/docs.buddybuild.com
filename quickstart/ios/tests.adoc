@@ -75,9 +75,9 @@ screen, to return to the **Test configuration** screen.
 +
 When you have at least one simulator selected in <<run_tests,**Run
 Tests**>>, the **Only run Tests** option is available. Once enabled,
-**Only run Tests** causes the build to create an executable, which is
-only used for tests; no IPA is created, so deployment to testers or to
-the App store is not possible.
+**Only run Tests** results in a build that is only used for tests; no
+IPA is created, so deployment to testers or to the App store is not
+possible.
 --
 
 [NOTE]
