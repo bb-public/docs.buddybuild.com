@@ -51,7 +51,7 @@ This page contains several sub-sections:
 [[environment]]
 == Environment variables
 
-{% include "../_common/important-environment_variable_scope.adoc" %}
+{% include "/_common/important-environment_variable_scope.adoc" %}
 
 
 [[environment-common]]

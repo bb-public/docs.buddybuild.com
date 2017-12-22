@@ -7,12 +7,13 @@ description: >
 = Code Signing 101
 
 Buddybuild takes away the pain of having to deal with code signing by
-link:../../../quickstart/ios/invite_testers.adoc[automatically uploading
-certificates] and
-link:../../../quickstart/ios/apple_developer_portal_sync.adoc[auto-syncing
+link:{{readme.path}}/quickstart/ios/upload_certificates.adoc[automatically
+uploading certificates] and
+link:{{readme.path}}/quickstart/ios/apple_developer_portal.adoc[auto-syncing
 provisioning profiles] so you can focus on building great apps instead.
 
 If you'd like to learn more about code signing, read on.
+
 
 == Certificates and Private Keys
 
@@ -38,11 +39,12 @@ them for installation.
 
 Buddybuild creates builds on your behalf, so we need access to your
 developer identities in order to sign builds. Managing these can be a
-pain. Use the link:../../../quickstart/ios/invite_testers.adoc[Automatic
+pain. Use the
+link:{{readme.path}}/quickstart/ios/upload_certificates.adoc[Automatic
 Cert-Uploader] to quickly and easily upload the relevant certificates to
 buddybuild.
 
-{% include "../../../_common/note-device_vs_simulator_builds.adoc" %}
+{% include "/_common/note-device_vs_simulator_builds.adoc" %}
 
 
 == Provisioning Profiles
@@ -62,7 +64,7 @@ following:
 
 Buddybuild can also transparently manage these for you. Simply enable
 the
-link:../../../quickstart/ios/apple_developer_portal_sync.adoc[Auto-Syncing
+link:{{readme.path}}/quickstart/ios/apple_developer_portal.adoc[Auto-Syncing
 Provisioning Profiles] feature to take advantage of this functionality!
 
-{% include "../../../_common/important-provisioning_profiles.adoc" %}
+{% include "/_common/important-provisioning_profiles.adoc" %}

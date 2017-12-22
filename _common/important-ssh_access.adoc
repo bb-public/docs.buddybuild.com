@@ -3,16 +3,16 @@
 Buddybuild has first-class integrations with the following repo
 providers:
 
-- link:{{readme.path}}/quickstart/github.adoc[GitHub],
-  link:{{readme.path}}/quickstart/github_enterprise.adoc[GitHub
+- link:{{readme.path}}/quickstart/connect/github.adoc[GitHub],
+  link:{{readme.path}}/quickstart/connect/github_enterprise.adoc[GitHub
   Enterprise]
 
-- link:{{readme.path}}/quickstart/gitlab.adoc[GitLab],
-  link:{{readme.path}}/quickstart/gitlab_private.adoc[GitLab
+- link:{{readme.path}}/quickstart/connect/gitlab.adoc[GitLab],
+  link:{{readme.path}}/quickstart/connect/gitlab_private.adoc[GitLab
   self-hosted]
 
-- link:{{readme.path}}/quickstart/bitbucket.adoc[Bitbucket],
-  link:{{readme.path}}/quickstart/bitbucket_server.adoc[Bitbucket
+- link:{{readme.path}}/quickstart/connect/bitbucket.adoc[Bitbucket],
+  link:{{readme.path}}/quickstart/connect/bitbucket_server.adoc[Bitbucket
   Server]
 
 Buddybuild's integrations provide the following features:

@@ -7,11 +7,14 @@ description: >
 ---
 = iOS quickstart
 
-This section describes how to quickly get started with buddybuild for
-iOS developers:
+This section describes the iOS-specific steps to enable buddybuild
+features:
 
-- link:select_a_repo_and_app_to_build.adoc[Selecting an App]
-- link:invite_testers.adoc[Inviting Testers]
-- link:integrate_sdk.adoc[Integrating SDK]
-- link:apple_developer_portal_sync.adoc[Auto_Syncing Provisioning Profiles]
-- link:auto_versioning.adoc[Auto Versioning]
+- link:integrate_sdk.adoc[Integrate the buddybuild SDK]
+- link:apple_developer_portal.adoc[Connect to the Apple
+  Developer Portal]
+- link:upload_certificates.adoc[Upload your iOS
+  certificates]
+- link:invite_testers.adoc[Invite testers]
+- link:auto_versioning.adoc[Auto-version builds]
+- link:tests.adoc[Tests]

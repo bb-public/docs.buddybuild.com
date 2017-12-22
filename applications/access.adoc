@@ -23,9 +23,9 @@ buddybuild!
 == Option 1: Automatic team member access with GitHub, Bitbucket or GitLab
 
 If you have signed up for buddybuild with
-link:../quickstart/github.adoc[GitHub],
-link:../quickstart/bitbucket.adoc[Bitbucket] or
-link:../quickstart/gitlab.adoc[GitLab] OAUTH, buddybuild automatically
+link:/quickstart/connect/github.adoc[GitHub],
+link:/quickstart/connect/bitbucket.adoc[Bitbucket] or
+link:/quickstart/connect/gitlab.adoc[GitLab], buddybuild automatically
 allows repository collaborators access to your app! These members simply
 need to sign up with buddybuild, and they will automatically see the
 app.

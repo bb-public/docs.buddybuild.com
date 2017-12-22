@@ -99,4 +99,4 @@ cross-repository pull requests dialog", 1280, 717, role="frame"]
   enable building of all forked repositories, or click the toggle beside
   any specific forked repositories listed.
 
-{% include "../_common/warning-cross_repo_builds.adoc" %}
+{% include "/_common/warning-cross_repo_builds.adoc" %}

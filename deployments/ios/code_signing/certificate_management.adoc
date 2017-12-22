@@ -32,7 +32,7 @@ image:img/Settings---Code-Signing---quick.png["The Upload certificates
 and provisioning profiles screen", 1500, 800]
 
 We highly recommend letting buddybuild
-link:../../../quickstart/ios/apple_developer_portal_sync.adoc[automatically
+link:{{readme.path}}/quickstart/ios/apple_developer_portal.adoc[automatically
 manage your provisioning profiles] for you.
 
 However if you want to manage them yourself, you can add, update or
