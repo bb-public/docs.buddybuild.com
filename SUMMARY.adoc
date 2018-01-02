@@ -89,6 +89,7 @@
 .. link:builds/provisioning_profile_explorer.adoc[Provisioning profile
    inspector]
 .. link:builds/pull_requests.adoc[Pull requests]
+.. link:builds/danger.adoc[Danger]
 .. link:builds/schedule_builds.adoc[Scheduling builds]
 .. link:builds/skip_a_build.adoc[Skipping a build]
 .. link:builds/auto-cancel_builds.adoc[Auto-cancel builds]
