@@ -1,0 +1,115 @@
+---
+titletext: Invite testers to try your Android app
+description: >
+  Buddybuild manages code signing complexities to create signed device
+  builds, allowing you to send apps to testers easily.
+---
+= Invite testers to try your Android app
+
+This section is for Android apps. If your app is an iOS app, skip this
+section and see link:../ios/invite_testers.adoc[Invite testers to try
+your iOS app].
+
+pass:[<i class="fa fa-android fa-3x right"></i>]
+Now that we have a green build of your app, the next step is to deploy
+it to your testers:
+
+. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
+  dashboard]. The list of builds is displayed:
++
+image:../img/screen-builds.png["The list of builds", 1280, 300,
+role="frame"]
+
+. image:../img/button-deployments.png["The Deployments button", 121,
+  64, role="right"]
+  Click the **Deployments** button in the top navigation bar. The
+  **Deployments** screen is displayed:
++
+image:img/screen-deployments.png["The Deployments screen", 1280, 515,
+role="frame"]
++
+The screen shows the initial deployment group that buddybuild created
+for you, called _The Team_, and your email address is included as a
+member of the deployment group.
+
+. Specify the deployment options:
++
+--
+[loweralpha]
+. image:img/select-frequency.png["The Frequency select menu", 270, 175,
+  role="right"]
+  **Frequency**
++
+Click the **Frequency** select menu, to choose between:
++
+****
+- **Each build** +
+  Every time your repository for your app is updated with a new commit,
+  buddybuild starts a new build.
+
+- image:img/select-frequency-scheduled.png["The Frequency select menu,
+  with Scheduled selected", 270, 343, role="right"]
+  **Scheduled** +
+  Builds occur each day that you select, at the specified time (with
+  timezone).
+
+- **Manually** +
+  Builds only occur when you trigger them by clicking the **Build now**
+  button in the dashboard.
+****
+
+. image:img/select-branch.png["The From Branch select menu", 444, 134,
+  role="right"]
+  **From Branch**
++
+Click the **From Branch** select menu to choose a branch to build and
+deploy.
+
+. image:img/select-variants.png["The With Variants select menu", 444,
+  134, role="right"]
+  **With Variants**
++
+Click the **With Variants** select menu to choose one or more variants
+to build and deploy.
+--
+
+. Specify the email addresses of the testers that should belong to this
+  deployment group.
++
+Click the **Add a new email** field, and enter one or more email
+addresses (separated by commas), then press **Return**.
++
+image:../img/button-trashcan.png["The Trashcan button", 13, 17,
+role="right"]
+If you need to remove an email address from the deployment group, click
+the trashcan button to the right of the email address to be removed.
+
+. image:img/button-new_email_group.png["The New email group button",
+  136, 30, role="right"]
+  If you need to vary the schedule, branch, or variant among groups of
+  users, click the **New email group** button to create a new deployment
+  group.
++
+image:../img/button-pencil.png["The Pencil icon", 16, 16, role="right"]
+To edit the name of a deployment group, click the pencil button and edit
+the group's name as required.
+
+Once you're done configuring your groups, your testers receive an email
+notification when a build matching the deployment group settings
+succeeds. You can click the **Build now** button in the dashboard to
+build and deploy your app right away.
+
+[NOTE]
+======
+**Wondering what your testers receive?**
+
+Follow the link:../../testers/install_builds.adoc[Tester's
+Manual] to see their experience.
+======
+
+That's it! Now that we have device builds going out to your testers,
+you'll now want a way to solicit feedback from them.
+
+Next, you may want to link:auto_versioning.adoc[auto-version builds],
+specify link:build_variants.adoc[build variants], or enable
+link:tests.adoc[tests].

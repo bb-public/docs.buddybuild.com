@@ -1,0 +1,76 @@
+---
+titletext: Select a repository containing an app to build
+description: >
+  When you select a repository containing an app, buddybuild
+  automatically analyzes, configures, and starts building your app.
+---
+= Select a repository and app to build
+
+Now that we've connected with your source control account, you need to
+select the repository containing your app.
+
+. link:connect/README.adoc[Sign up with buddybuild] if you haven't
+  done so already.
+
+. Once you have connected buddybuild to your source code provider, the
+  **Add an app** screen appears:
++
+image:img/screen-add_an_app.png["The Add an app screen", 1280, 480,
+role="frame"]
+
+. Select a repository containing the app you want buddybuild to build by
+clicking the circle to the left of the repository name. The repository
+becomes highlighted:
++
+image:img/panel-selected_app.png["A selected app is highlighted", 841,
+53]
++
+If multiple apps exist in your repository, you need to select which one
+to build; **each platform (iOS, tvOS, watchOS, or Android) and build
+target must be added to buddybuild as a separate app**. If you have a
+single app, it is automatically detected and buddybuild kick offs a
+build.
+
+. image:img/button-add_app.png["The Add app button", 72, 30,
+  role="right"]
+  Click the **Add app** button. The **Preparing to build your app...**
+  screen appears:
++
+image:img/screen-preparing-securing.png["The Preparing to build your
+app... screen, securing a build environment", 1280, 450, role="frame"]
++
+Once the build environment has been secured, buddybuild retrieves your
+source code:
++
+image:img/screen-preparing-retrieving.png["The Preparing to build your
+app... screen, retrieving your source code", 1280, 447, role="frame"]
++
+Once your source code has been retrieved, buddybuild analyzes your
+source code to determine the optimal settings for the build:
++
+image:img/screen-preparing-scanning.png["The Preparing to build your
+app...  screen, scanning your source code", 1280, 450, role="frame"]
++
+Once the analysis completes, buddybuild starts to build your app:
++
+image:img/screen-building_app.png["Creating a build of your app screen",
+1280, 703, role="frame"]
++
+Finally, when the build is complete, the build completion screen is
+displayed:
++
+image:img/screen-build_success.png["The build success screen", 1280,
+478, role="frame"]
++
+Buddybuild also sends you an email to let you know about the build status:
++
+image:img/screen-email-build_success.png["The build status email
+message", 651, 690, role="frame"]
++
+When you open the email message on your mobile device, tapping the
+**Take me to the build** button initiates installation of the app.
+
+That's it! You've built your app with buddybuild.
+See how easy that was? There is just one more simple step -- **integrate
+the buddybuild SDK, for link:ios/integrate_sdk.adoc[iOS] or
+link:android/integrate_sdk.adoc[Android], into your app**.

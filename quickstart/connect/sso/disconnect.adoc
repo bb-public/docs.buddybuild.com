@@ -1,0 +1,74 @@
+---
+description: >
+  This section covers how to stop using Single sign on and disconnect the
+  connection to the identity provider.
+---
+= Disconnect single sign-on (SSO) provider
+
+If you want to stop using SSO, you need to disconnect the connection to
+the identity provider (IDP). You can make SSO logins non-functional by
+disabling or deleting the application in the IDP interface, but
+buddybuild would not allow your users to login (it would try and fail to
+authenticate with the IDP).
+
+To disconnect the SSO connection:
+
+. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
+  dashboard].
+
+. image:{{readme.path}}/_img/dropdown-user-manage_org.png["Select Manage
+  Org in the avatar dropdown", 121, 207, role="right"]
+  Move your mouse pointer over your avatar in the top right corner. A
+  dropdown menu appears.
+
+. Select **Manage Org**. The **Manage Organization** screen appears:
++
+image:{{readme.path}}/_img/screen-manage_org.png["The Manage
+Organization screen", 1280, 650, role="frame"]
+
+. image:{{readme.path}}/_img/dropdown-organizations.png["The current
+  organization", 206, 40, role="right"]
+  In the left navigation, a dropdown menu exists with the current
+  organization selected. Click the dropdown menu to list all of the
+  organizations that you currently belong to.
+
+. Select the organization that needs SSO configuration.
+
+. image:{{readme.path}}/_img/panel-organization_settings.png["The
+  Organization Settings panel", 206, 296, role="right"]
+  On the left side of the screen, find the **Organization Settings**
+  links. Click **Single sign-on (SSO)**. The **SSO settings** screen is
+  displayed:
++
+image:img/screen-sso_settings.png["The SSO settings screen", 1280, 455,
+role="frame"]
+
+. image:img/tab-identity_provider_connection.png["The Identity provider
+  connection tab", 343, 61, role="right"]
+  Click the **Identity provider connection** tab. The **Identity
+  provider connection** screen is displayed:
++
+image:img/screen-identity_provider_connection.png["The Identity provider
+connection screen", 1280, 455, role="frame"]
+
+. image:img/button-disconnect_sso_provider.png["The Disconnect SSO
+  provider button", 170, 30, role="right"]
+  Click the **Disconnect SSO provider** button. The **Disconnect SSO
+  provider** dialog is displayed:
++
+image:img/screen-identity_provider_connection-disconnect_dialog.png["The
+Disconnect SSO Provider dialog", 1280, 656, role="frame"]
+
+. image:img/button-yes_disconnect_sso_provider.png["The Yes, disconnect
+  SSO provider button", 260, 42, role="right"]
+  Click the **Yes, disconnect SSO provider** button to confirm that you
+  want to disconnect the connection to your IDP.
++
+[IMPORTANT]
+===========
+When you disconnect the SSO connection, all users connected with SSO
+logins are immediately disconnected, and their SSO logins no longer
+work.
+===========
+
+That's it!

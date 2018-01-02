@@ -6,11 +6,12 @@ description: >
 ---
 = Configure your iOS UI tests for Video Replay
 
-The buddybuild SDK is a lightweight yet powerful
-link:../../quickstart/ios/integrate_sdk.adoc[suite of tools] that
-integrates seamlessly into your application. Among the many features
-the SDK provides, you can use the buddybuild SDK to record video of your
-UI tests as they execute.
+The buddybuild SDK is a lightweight yet powerful suite of tools that
+integrates seamlessly into your application. Among the many features the
+SDK provides, you can use the buddybuild SDK to record video of your UI
+tests as they execute. It is available for
+link:{{readme.path}}/quickstart/ios/integrate_sdk.adoc[iOS] and
+link:{{readme.path}}/quickstart/android/integrate_sdk.adoc[Android].
 
 Here are the step-by-step instructions to configure the SDK in your UI
 tests target:
@@ -21,10 +22,9 @@ tests target:
 The SDK needs to be integrated into your main app prior to configuring
 video recording for your UI tests target.
 
-We highly recommend using the
-link:../../quickstart/ios/integrate_sdk.adoc#step2[**automatic** buddybuild
-SDK integration] right from your dashboard. However, if you wish to
-install the buddybuild SDK **manually**, follow
+We highly recommend using the **automatic** buddybuild SDK integration
+right from your dashboard. However, if you wish to install the
+buddybuild SDK **manually**, follow
 link:../../sdk/integration.adoc[these steps].
 
 [[step2]]

@@ -7,10 +7,11 @@ description: >
 ---
 = Android quickstart
 
-This section describes how to quickly get started with buddybuild for
-Android developers:
+This section describes the Android-specific steps to enable buddybuild
+features:
 
-- link:select_an_app.adoc[Selecting an App]
-- link:integrate_sdk.adoc[Integrating SDK]
-- link:auto_versioning.adoc[Auto Versioning]
-- link:build_variants.adoc[Build Variants]
+- link:integrate_sdk.adoc[Integrate the buddybuild SDK]
+- link:invite_testers.adoc[Invite testers]
+- link:auto_versioning.adoc[Auto-versioning your builds]
+- link:build_variants.adoc[Build variants]
+- link:tests.adoc[Tests]

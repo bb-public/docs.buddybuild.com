@@ -10,7 +10,7 @@ description: >
 Buddybuild can automatically sync with your Apple Developer Portal
 account. With this integration, buddybuild can:
 
-- link:../quickstart/ios/apple_developer_portal_sync.adoc[Automatically
+- link:../quickstart/ios/apple_developer_portal.adoc[Automatically
   sync your Provisioning Profiles]
 
 - link:../deployments/ios/itunes_connect.adoc[Upload specific builds to

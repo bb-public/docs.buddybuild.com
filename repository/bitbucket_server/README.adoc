@@ -12,7 +12,7 @@ into buddybuild with your email. Buddybuild automatically generates
 a secure SSH key for you to install into your source control system.
 Buddybuild uses this key to clone your repository.
 
-{% include "../../_common/important-ssh_access.adoc" %}
+{% include "/_common/important-ssh_access.adoc" %}
 
 Let's get started!
 

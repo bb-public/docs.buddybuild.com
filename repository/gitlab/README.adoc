@@ -7,14 +7,14 @@ description: >
 = Add a GitLab Repository
 
 If your repository lives in GitLab, you can
-link:../../quickstart/gitlab_private.adoc[connect your repository
-automatically], or connect via SSH if you prefer.
+link:{{readme.path}}/quickstart/connect/gitlab_private.adoc[connect your
+repository automatically], or connect via SSH if you prefer.
 
 If you prefer SSH, buddybuild automatically generates a secure SSH key
 for you to install into your source control system. Buddybuild uses this
 key to clone your repository.
 
-{% include "../../_common/important-ssh_access.adoc" %}
+{% include "/_common/important-ssh_access.adoc" %}
 
 Let's get started!
 
@@ -110,5 +110,5 @@ first build is under way. The next steps are:
 - link:webhook.adoc[Add a GitLab webhook] to automatically notify
   buddybuild of repository changes.
 
-- link:../../quickstart/ios/invite_testers.adoc[invite testers] to try out
-  your app.
+- link:{{readme.path}}/quickstart/ios/invite_testers.adoc[invite
+  testers] to try out your app.

@@ -24,10 +24,10 @@ The SDK needs to be integrated into your main app prior to configuring
 React Native JavaScript logging.
 
 We highly recommend using the
-link:../../../quickstart/ios/integrate_sdk.adoc#step2[**automatic**
+link:{{readme.path}}/quickstart/ios/integrate_sdk.adoc[**automatic**
 buddybuild SDK integration] right from your dashboard. However, if you
 wish to install the buddybuild SDK **manually**, follow
-link:../../../sdk/integration.adoc[these steps].
+link:{{readme.path}}/sdk/integration.adoc[these steps].
 
 
 == Step 2: Get the latest version
