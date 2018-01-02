@@ -166,8 +166,10 @@ following examples for inspiration.
 === Use Danger to ensure that coding style is respected
 
 link:https://github.com/realm/SwiftLint[Swiftlint] is a tool that uses
-Clang and SourceKit to parse your source files and check them against a
-set of rules that you can fully customize.
+link:https://clang.llvm.org/[Clang] and
+link:https://github.com/apple/swift/tree/master/tools/SourceKit[SourceKit]
+to parse your source files and check them against a set of rules that
+you can fully customize.
 
 This example demonstrates how to add Swiftlint to Danger:
 
@@ -241,8 +243,9 @@ git commit -m 'Add xcov to Danger.'
 ----
 
 Now, whenever you create a pull request, Danger checks the level of code
-coverage in your projects and **fails the build** if the percentage fall
-below the value for `minimum_coverage_percentage` (30% in this case):
+coverage in your projects and **fails the build** if the percentage
+falls below the value for `minimum_coverage_percentage` (30% in this
+case):
 
 image:img/panel-danger-xcov.png["Danger reporting the code coverage
 percentage from xcov", 760, 353, role="frame"]
