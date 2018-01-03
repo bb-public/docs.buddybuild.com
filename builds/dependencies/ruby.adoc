@@ -13,7 +13,7 @@ install a Ruby when necessary, and how to specify Ruby dependencies.
 
 The current Ruby versions on buddybuild VMs are:
 
-[cols="2a,2a"]
+[cols="1a,1a", options="header"]
 |===
 | iOS builds
 | Android builds
