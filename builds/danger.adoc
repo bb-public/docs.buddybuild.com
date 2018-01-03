@@ -1,7 +1,9 @@
 ---
-titletext:
+titletext: Use Danger in your builds to automate CI practices
 description: >
-  Blah blah
+  Use Danger to automate CI practices, such as testing code style
+  consistency, measuring code coverage, or reminding developers to
+  update release notes.
 ---
 = Danger
 
