@@ -2,7 +2,8 @@
 titletext: Code signing and auto-syncing of provisioning profiles
 description: >
   Buddybuild takes away the pain of having to deal with code signing by
-  automatically uploading certificates and auto-syncing provisioning profiles.
+  automatically uploading certificates and auto-syncing provisioning
+  profiles.
 ---
 = Code Signing 101
 
@@ -11,6 +12,13 @@ link:{{readme.path}}/quickstart/ios/upload_certificates.adoc[automatically
 uploading certificates] and
 link:{{readme.path}}/quickstart/ios/apple_developer_portal.adoc[auto-syncing
 provisioning profiles] so you can focus on building great apps instead.
+
+If you do not setup code signing, buddybuild can only perform
+_simulator_ builds of your app; that's a build that can only run in an
+Xcode's device simulator. For simulator builds, your unit and UI
+tests can be run to verify the functionality of your app, however a
+simulator build cannot be deployed to testers or published to the App
+Store.
 
 If you'd like to learn more about code signing, read on.
 
