@@ -27,6 +27,6 @@ scheduled deployment selected, and the scheduling dropdown menu
 displayed", 1500, 494]
 
 That's it! Builds of that branch will now be deployed according to your
-set schedule. Each build is only be deployed to a group once, so your
-testers won’t be spammed if no new builds have been created since the
+set schedule. Each build is only deployed to a group once, so your
+testers won't be spammed if no new builds have been created since the
 last deployment.
