@@ -1,8 +1,9 @@
 [NOTE]
 ======
 When you upload your certificates to buddybuild, your app transitions
-from using simulator builds to using device builds. Device builds
-typically take longer than simulator builds, for several reasons:
+from using simulator builds to using device builds (a required step
+before publishing to the App Store). Device builds typically take longer
+than simulator builds, for several reasons:
 
 - Code signing
 - Provisioning profile management
