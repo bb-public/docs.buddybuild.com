@@ -329,8 +329,8 @@ variables in the `buddybuild_prebuild.sh` script.
 The post-build script runs after a successful build (if the build fails,
 for any reason, the post-build script **does not run**).
 
-Add the `buddybuild_postbuild.sh` script to your repository, **next to
-your `.xcodeproj` or `build.gradle` files**.
+Add the `buddybuild_postbuild.sh` script to the **root** of your
+repository.
 
 .`buddybuild_postbuild.sh`
 [source,bash]
@@ -354,6 +354,21 @@ various service integrations you might have.
 - If you want to archive the `.ipa` / `.dSYM` files for yourself
 
 - Sending build artifacts to another service
+
+Another example would be to use `buddybuild_postbuild.sh` to integrate
+link:https://github.com/danger/danger[Danger] (a CI automation tool) as
+part of your build, so that it can apply its set of rules:
+
+.`buddybuild_postbuild.sh`
+[source,bash]
+----
+#!/usr/bin/env bash
+
+bundle install
+bundle exec danger --fail-on-errors=true
+----
+
+See link:danger.adoc[Danger] for details.
 ======
 
 If the post-build step is not running for you, please check that you
@@ -374,31 +389,18 @@ operations.
 
 Add the `buddybuild_finally.sh` script to the **root** of your repository.
 
-.`buddybuild_finally.sh`
-[source,bash]
-----
-#!/usr/bin/env bash
-
-bundle install
-bundle exec danger --fail-on-errors=true
-----
-
 [NOTE]
 ======
 **`buddybuild_finally.sh` examples**
 
 You would use this script to perform any required operations,
 whether your build, test execution, or deployment was successful or not.
+You cannot use `buddybuild_finally.sh` to fail a build; it has already
+completed successfully by the time this script is run.
 
-One example would be to use `buddybuild_finally.sh` to integrate
-Danger (a CI automation tool) as part of your build, so that it can
-apply its set of rules whether the build succeeds or fails. See our
-link:https://www.buddybuild.com/blog/using-danger-ci-with-buddybuild[blog
-post "How to use Danger with buddybuild"] for details.
-
-It is also your last opportunity to upload any build artifacts to any
-service integrations that you may have; once `buddybuild_finally.sh`
-completes, the build VM is destroyed.
+It is your last opportunity to upload any build artifacts to any service
+integrations that you may have; once `buddybuild_finally.sh` completes,
+the build VM is destroyed.
 ======
 
 [TIP]

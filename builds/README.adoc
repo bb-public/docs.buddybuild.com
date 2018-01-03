@@ -86,16 +86,17 @@ Here is a high-level summary of buddybuild's build process:
   link:build_logs.adoc[Build details and logs] +
   link:custom_build_steps.adoc[Custom build steps] +
   link:secrets/environment_variables.adoc[Environment variables] +
-  link:secrets/secure_files.adoc[Secure files]
-  link:pull_requests.adoc[Pull requests]
-  link:schedule_builds.adoc[Scheduling builds]
-  link:skip_a_build.adoc[Skipping a build]
-  link:auto-cancel_builds.adoc[Auto-cancel builds]
-  link:disable_a_build.adoc[Disable a build]
+  link:secrets/secure_files.adoc[Secure files] +
+  link:pull_requests.adoc[Pull requests] +
+  link:danger.adoc[Danger] +
+  link:schedule_builds.adoc[Scheduling builds] +
+  link:skip_a_build.adoc[Skipping a build] +
+  link:auto-cancel_builds.adoc[Auto-cancel builds] +
+  link:disable_a_build.adoc[Disable a build] +
   link:selective_builds.adoc[Selective builds]
 
 | link:secrets/device_variables.adoc[Device variables] +
-  link:xcode_versions.adoc[Xcode versions and Xcode preview]
+  link:xcode_versions.adoc[Xcode versions and Xcode preview] +
   link:provisioning_profile_explorer.adoc[Provisioning profile
   inspector]
 |===
