@@ -36,7 +36,7 @@ can generate one with the following command:
 ----
 keytool -genkey -v -keystore release.keystore -storepass android \
         -alias androidreleasekey -keypass android \
-        -keyalg RSA -keysize 2048 -validity 10000
+        -keyalg RSA -keysize 2048 -storetype jks -validity 10000
 ----
 
 Where:
@@ -60,6 +60,10 @@ Where:
 
 `-keysize 2048`::
   Specifies the size of the key in bits (`2048`).
+
+`-storetype jks`::
+  Specifies the type of KeyStore to produce (`jks` means "Java
+  KeyStore").
 
 `-validity 10000`::
   Specifies the number of years (`10000`) that this key should be valid.
