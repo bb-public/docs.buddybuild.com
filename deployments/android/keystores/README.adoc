@@ -2,27 +2,76 @@
 titletext: Understanding Android KeyStore basics
 description: >
   KeyStores are required for installation of Android apps. Buddybuild
-  can manage your Android KeyStores and can auto-generate keystores as needed.
+  can manage your Android KeyStores and can auto-generate debug
+  KeyStores as needed.
 ---
-= KeyStore Basics
+= KeyStore basics
 
 Android Applications need to be code signed to be installable on
 devices. The signing identities are bundled in a Java KeyStore file --
 typically with the extension `.keystore` or `.jks`.
 
-Debug builds are typically code signed with an auto-generated KeyStore.
-Release builds -- like the ones that eventually end up in the Play Store
--- will require to be code signed with a KeyStore that is associated
-with a Developer.
+Debug builds are typically code signed with an auto-generated _debug_
+KeyStore. Release builds -- like the ones that eventually end up in the
+Play Store -- must be code signed with a _release_ KeyStore that is
+associated with a Developer.
 
-Typically, your KeyStores will be checked into your source control
-repository. The repo's build.gradle file will reference these KeyStores
+Typically, your KeyStores should be checked into your source control
+repository. The repo's `build.gradle` file references these KeyStores
 for each product flavor and build type.
 
-Buddybuild will auto-generate KeyStores for you. So you'll typically
-never have to manage KeyStores yourself. But if you already have a
-KeyStore that identifies you or your development team, you can upload
-this to buddybuild. Every subsequent build of your app will pick up your
-uploaded KeyStores.
+Buddybuild auto-generates _debug_ KeyStores for you. So you'll typically
+never have to manage KeyStores yourself when deploying your app to
+testers.
+
+If you already have a KeyStore that identifies you or your development
+team, you can upload this to buddybuild. Every subsequent build of your
+app uses your uploaded KeyStores.
+
+If you want to publish your app to the Google Play store, a _release_
+KeyStore is required. If you do not already have a release KeyStore, you
+can generate one with the following command:
+
+[source,bash]
+----
+keytool -genkey -v -keystore release.keystore -storepass android \
+        -alias androidreleasekey -keypass android \
+        -keyalg RSA -keysize 2048 -storetype jks -validity 10000
+----
+
+Where:
+
+`-keystore release.keystore`::
+  Specifies the name (`release.keystore`) of the KeyStore.
+
+`-storepass android`::
+  Specifies the password (`android`) for the KeyStore.
+
+`-alias androidreleasekey`::
+  Specifies an name (`androidreleasekey`) for this specific key in the
+  KeyStore.
+
+`-keypass android`::
+  Specifies the password (`android`) for this specific key in the
+  KeyStore.
+
+`-keyalg RSA`::
+  Specifies the algorithm (`RSA`) to use when generating the key.
+
+`-keysize 2048`::
+  Specifies the size of the key in bits (`2048`).
+
+`-storetype jks`::
+  Specifies the type of KeyStore to produce (`jks` means "Java
+  KeyStore").
+
+`-validity 10000`::
+  Specifies the number of years (`10000`) that this key should be valid.
 
 To upload your own KeyStores, follow the guide link:manage.adoc[here].
+
+For more information on Android app signing, see
+link:https://developer.android.com/studio/publish/app-signing.html[Sign
+Your App] in the
+link:https://developer.android.com/studio/index.html[Android Studio]
+documentation.

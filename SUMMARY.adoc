@@ -89,6 +89,7 @@
 .. link:builds/provisioning_profile_explorer.adoc[Provisioning profile
    inspector]
 .. link:builds/pull_requests.adoc[Pull requests]
+.. link:builds/danger.adoc[Danger]
 .. link:builds/schedule_builds.adoc[Scheduling builds]
 .. link:builds/skip_a_build.adoc[Skipping a build]
 .. link:builds/auto-cancel_builds.adoc[Auto-cancel builds]
@@ -130,7 +131,7 @@
 ... link:deployments/ios/itunes_connect.adoc[iTunes Connect]
 
 .. link:deployments/android/README.adoc[Android]
-... link:deployments/android/keystores/README.adoc[KeyStores]
+... link:deployments/android/keystores/README.adoc[KeyStore basics]
 .... link:deployments/android/keystores/manage.adoc[Manage your KeyStores]
 
 ... link:deployments/android/google_play/README.adoc[Google Play]
