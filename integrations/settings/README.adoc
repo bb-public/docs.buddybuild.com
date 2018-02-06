@@ -1,8 +1,9 @@
 ---
 titletext: Apply CI/CD third party integrations to all new apps
 description: >
-  Buddybuild integration settings for the Apple Developer Portal, HipChat, JIRA,
-  Pivotal Tracker, and Slack can be set in one place and applied to all apps.
+  Buddybuild integration settings for the Apple Developer Portal,
+  HipChat, Jira, Pivotal Tracker, and Slack can be set in one place and
+  applied to all apps.
 ---
 = Integration settings for all apps
 
@@ -15,7 +16,7 @@ any applications that already exist within an organization.
 Integration settings that can be applied to all apps are available for
 the following integrations: the link:../itunes_connect.adoc[Apple
 Developer Portal], link:../hipchat.adoc[HipChat],
-link:../jira.adoc[JIRA], link:../pivotal_tracker.adoc[Pivotal Tracker],
+link:../jira.adoc[Jira], link:../pivotal_tracker.adoc[Pivotal Tracker],
 and link:../slack.adoc[Slack]. For the remaining integrations, the
 settings need to be configured for each individual app.
 
@@ -115,15 +116,15 @@ Learn more about the settings for link:../hipchat.adoc[HipChat].
 
 
 [[jira]]
-== JIRA Issues
+== Jira Issues
 
-JIRA is a powerful issues and project tracker used by many agile teams.
-Buddybuild's integration can automatically open a JIRA issue for each
+Jira is a powerful issues and project tracker used by many agile teams.
+Buddybuild's integration can automatically open a Jira issue for each
 piece of feedback and crash report that you receive for your apps.
 
-image:img/screen-jira.png["The JIRA settings", 1280, 716, role="frame"]
+image:img/screen-jira.png["The Jira settings", 1280, 716, role="frame"]
 
-Learn more about the settings for link:../jira.adoc[JIRA].
+Learn more about the settings for link:../jira.adoc[Jira].
 
 
 [[pivotal]]

@@ -27,7 +27,7 @@ image:img/Feedback---Received.png["A collection of feedback screenshots
 and comments", 3000, 1600]
 
 Buddybuild marshals the feedback into whatever form works best for you
--- Email, Slack, JIRA or even GitHub issues right in your project's
+-- Email, Slack, Jira, or even GitHub issues right in your project's
 repo!
 
 image:img/github_issues.png["Feedback from a specific user, showing the
