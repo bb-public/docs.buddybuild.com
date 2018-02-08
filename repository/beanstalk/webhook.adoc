@@ -14,50 +14,49 @@ and your testers have the very latest builds.
 
 Let's get started!
 
-On the **Builds** page, in the red banner at the top of the page, click
-on **Resolve this issue**.
-
+. On the **Builds** page, in the red banner at the top of the page, click
+  **Resolve this issue**.
++
 image:../img/resolve-banner.png["The auto-build resolution banner in the
 buddybuild dashboard", 1500, 298]
 
-In the dialog box that appears, **select and copy the webhook URL**.
-This URL is specific to your app and is used to identify your app when
-sending webhooks from Beanstalk.
+. In the dialog box that appears, **select and copy the webhook URL**.
 
-image:../img/modal.png["The webhook URL dialog", 1500, 838]
-
-Navigate to your Beanstalk repository. In the top navigation, select
-**Settings**. Then select **Integration**.
-
+. Navigate to your Beanstalk repository. In the top navigation, select
+  **Settings**. Then select **Integration**.
++
 image:img/integ.png["The Beanstalk Settings navigation area with the
 Integration tab selected", 1276, 145]
 
-A list of integrations is displayed. Select the integration button that
-is labeled **Modular Webhooks**.
-
+. A list of integrations is displayed. Select the integration button that
+  is labeled **Modular Webhooks**.
++
 image:img/modular-webhooks.png["The Beanstalk Integrations screen, with
 the Modular Webhooks integration selected", 1279, 578]
 
-Next, select the **Add a webhook** button.
-
+. Select the **Add a webhook** button.
++
 image:img/settings-integration.png["The Beanstalk Modular Webhooks
 screen", 1277, 579]
 
-In the webhook dialog that appears, perform the following steps:
+. In the webhook dialog that appears, perform the following steps:
++
+--
+[loweralpha]
+. Name the webhook *buddybuild*.
 
-- Name the webhook *buddybuild*.
+. Paste the buddybuild webhook URL you first copied into the **URL** field.
 
-- Paste the buddybuild webhook URL you first copied into the **URL** field.
-
-- Select the *push*, *create_branch*, *delete_branch*, *create_tag* and
+. Select the *push*, *create_branch*, *delete_branch*, *create_tag* and
   *delete_tag* webhook triggers.
 
-- Then click **Activate**
-
+. Click **Activate**
+--
++
 image:img/paste-hook.png["The Beanstalk Setup Modular Webhooks screen",
 798, 851]
 
-Finally, click **Finish** to complete the Beanstalk webhook setup.
-
+. Click **Finish** to complete the Beanstalk webhook setup.
++
 image:img/webhook-done.png["The Beanstalk Integrate with Modular
 Webhooks screen", 1114, 610]
