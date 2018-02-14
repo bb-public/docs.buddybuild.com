@@ -13,30 +13,43 @@ install a Ruby when necessary, and how to specify Ruby dependencies.
 
 The current Ruby versions on buddybuild VMs are:
 
-[cols="1a,1a", options="header"]
+[cols="1a,1a,1a"]
 |===
-| iOS builds
-| Android builds
+2+h| iOS builds
+.2+h| Android builds
+
+| Sierra
+| High Sierra
 
 |
 - 2.5.0
 - 2.4.3
-- 2.4.1 (Deprecated)
+- 2.4.1
 - 2.3.6
-- 2.3.1 (Deprecated)
+- 2.3.1
 - 2.2.9
-- 2.2.5 (Deprecated)
+- 2.2.5
 - 2.0.0p648 (active)
 
 |
 - 2.5.0
 - 2.4.3
-- 2.4.1 (Deprecated)
+- 2.4.1
 - 2.3.6
 - 2.3.3p222 (active)
-- 2.3.1 (Deprecated)
+- 2.3.1
 - 2.2.9
-- 2.2.5 (Deprecated)
+- 2.2.5
+
+|
+- 2.5.0
+- 2.4.3
+- 2.4.1
+- 2.3.6
+- 2.3.3p222 (active)
+- 2.3.1
+- 2.2.9
+- 2.2.5
 
 |===
 
