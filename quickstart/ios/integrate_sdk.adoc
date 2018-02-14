@@ -32,7 +32,7 @@ Integrating the buddybuild SDK will increase the size of the resulting
 
 With buddybuild, you simply take a screenshot to share feedback. Our
 feedback reporter sends graphically annotated screenshots, feedback
-notes and device metadata to your team. Integrate with GitHub, JIRA and
+notes and device metadata to your team. Integrate with GitHub, Jira, and
 Pivotal Tracker to track feedback as issues.
 link:../../sdk/feedback_reporter.adoc[Learn more.]
 

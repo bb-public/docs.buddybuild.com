@@ -149,7 +149,7 @@
 .. link:integrations/ccmenu.adoc[CCMenu]
 .. link:integrations/github_issues.adoc[GitHub Issues]
 .. link:integrations/hipchat.adoc[HipChat]
-.. link:integrations/jira.adoc[JIRA]
+.. link:integrations/jira.adoc[Jira]
 .. link:integrations/pivotal_tracker.adoc[Pivotal Tracker]
 .. link:integrations/slack.adoc[Slack]
 .. link:integrations/trello.adoc[Trello]
@@ -216,7 +216,7 @@
 ... link:troubleshooting/frameworks/react_native.adoc[Common React
     Native errors]
 
-.. link:troubleshooting/jira.adoc[JIRA]
+.. link:troubleshooting/jira.adoc[Jira]
 
 . link:contact.adoc[Contact us]
 . link:https://apidocs.buddybuild.com/[REST API]

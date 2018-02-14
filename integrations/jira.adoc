@@ -1,14 +1,14 @@
 ---
-titletext: Auto create JIRA tickets for crashes and tester feedback
+titletext: Auto create Jira tickets for crashes and tester feedback
 description: >
-  Buddybuild's feedback system integrates with JIRA. When users send
+  Buddybuild's feedback system integrates with Jira. When users send
   feedback about your mobile app, the feedback is automatically logged
-  as a JIRA ticket.
+  as a Jira ticket.
 ---
-= JIRA
+= Jira
 
-JIRA is a powerful issues and project tracker used by a lot of agile
-teams. Buddybuild can be configured to automatically open a JIRA issue
+Jira is a powerful issues and project tracker used by a lot of agile
+teams. Buddybuild can be configured to automatically open a Jira issue
 for each piece of feedback and crash report you receive on your app.
 
 [NOTE]
@@ -18,146 +18,273 @@ for each piece of feedback and crash report you receive on your app.
 You can read more about it here: link:https://confluence.atlassian.com/display/APPLINKS/OAuth+security+for+application+links[OAuth security for application links]
 ======
 
-Start by launching the buddybuild dashboard and clicking on **App
-Settings**.
+. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
+  dashboard].
 
-image:img/Builds---Settings.png["The buddybuild dashboard", 1500, 483]
+. image:../builds/img/button-app_settings.png["The App Settings button",
+  118, 64, role="right"]
+  Click **App Settings** button in the top toolbar. The **Default build
+  configuration** screen is displayed:
++
+image:img/screen-build_settings.png["The Default build configuration
+screen", 1280, 739, role="frame"]
 
-In the left navigation, select **Integrations**, then **JIRA Issues**.
+. image:img/button-integrations.png["The Integrations button", 210, 42,
+  role="right"]
+  In the left navigation bar, click the **Integrations** button. The
+  first of the **Integrations** screens (**Apple Dev Connection**) is
+  displayed:
++
+image:img/screen-apple_dev_connection.png["The Apple Dev Connection
+screen", 1280, 765, role="frame"]
 
-image:img/Settings---JIRA-Issues---menu.png["The JIRA Issues button",
-1500, 800]
+. image:img/button-jira_issues.png["The Jira Issues button", 210, 32,
+  role="right"]
+  In the left navigation, click the **Jira Issues** button. The **Jira**
+  screen is displayed:
++
+image:img/screen-jira-connect.png["The Jira screen", 1280, 765,
+role="frame"]
++
+If you have previously configured Jira, you might instead see:
++
+image:img/screen-jira-configured.png["The Jira screen with existing
+configuration", 1280, 765, role="frame"]
 
-Enter your **JIRA base URL** in the specified field. Take note of your
-**Consumer key**, **Public key** and **Consumer callback URL,** as
-you'll need it for the next step.
+. Enter the URL for your Jira instance into the **Jira base URL** field.
 
-image:img/Settings---Jira-Issues---1.png["The Connect your JIRA account
-screen", 1500, 800]
+. In a new browser window or tab, log in to your Jira instance. The Jira
+  dashboard is displayed:
++
+image:{{readme.path}}/_img/screen-jira-dashboard.png["The Jira
+dashboard with the new Jira experience", 1280, 398, role="frame"]
 
+. image:{{readme.path}}/_img/button-jira-settings.png["The Settings
+  button in Jira", 208, 40, role="right"]
+  In the navigation sidebar on the left, click the **Settings** button.
+  The sidebar updates to show the **Settings** options:
++
+image:{{readme.path}}/_img/panel-jira-settings.png["The Settings
+panel in Jira", 304, 458, role="frame"]
 
-== Edit your JIRA application configuration
+. image:img/button-jira_new-applications.png["The Applications button in
+  Jira", 208, 40, role="right"]
+  Click the **Applications** button. The sidebar updates to show the
+  **Applications** options:
++
+image:img/panel-jira_new-applications.png["The Applications panel in
+Jira", 304, 448, role="frame"]
 
-Open JIRA in a new tab. Click on the **Settings** icon and select
-**Applications**.
+. image:img/button-jira_new-application_links.png["The Application links
+  button in Jira", 208, 40, role="right"]
+  Click the **Application links** button. The **Configure Application
+  Links** screen is displayed:
++
+image:img/screen-jira_new-configure_application_links.png["The Configure
+Application Links screen in Jira", 1280, 448, role="frame"]
 
-image:img/Settings---Jira-Issues---2.png["The Administration dropdown
-menu in JIRA", 1500, 800]
-
-
-== Create a new application link
-
-In the left navigation, click on **Application links**. Next, copy the
-dashboard URL below into the Application URL field and click on **Create
-New Link**.
-
-[WARNING]
-=========
-**What if I have multiple JIRA integrations with buddybuild?**
+. Copy the following URL into the **Application URL** field:
++
+[source,bash]
+----
+https://dashboard.buddybuild.com/
+----
++
+[TIP]
+=====
+**What if I have multiple Jira integrations with buddybuild?**
 
 You can append your app id to the URL, e.g.:
 
+[source,bash]
+----
 https://dashboard.buddybuild.com/57acc935dfda60010066a000
-=========
-
-[source,xml]
 ----
-https://dashboard.buddybuild.com
-----
+=====
 
-image:img/Settings---Jira-Issues---3.png["The Configure Application
-Links screen in JIRA", 1500, 800]
+. image:img/button-jira-create_new_link.png["The Create new link button
+  in Jira", 129, 32, role="right"]
+  Click the **Create new link** button. The **Configure Application
+  URL** dialog is displayed, containing a warning about receiving
+  no response:
++
+image:img/dialog-jira-no_response.png["The Configure Application URL
+dialog with 'no response' warning in Jira", 506, 359, role="frame"]
++
+Ignore the warning.
 
+. image:img/button-jira-continue.png["The Continue button in Jira", 81,
+  32, role="right"]
+  Click the **Continue** button. The **Link applications** dialog is
+  displayed:
++
+image:img/dialog-jira-link_applications.png["The Link applications dialog
+in Jira", 506, 646, role="frame"]
 
-== Click Continue
+. Enter a name for this application connection into the **Application
+  Name** field. We recommend `buddybuild`. If you customized the
+  **Application URL** to include the buddybuild app identifier,
+  include the name of your app. For example: `buddybuild - my app`.
 
-Ignore the warning and click **Continue**.
+. image:img/button-jira-continue.png["The Continue button in Jira", 81,
+  32, role="right"]
+  Click the **Continue** button. The **Configure Application Links**
+  screen is re-displayed, including the just-created link:
++
+image:img/screen-jira-configure_application_links-created.png["The
+Configure Application Links screen in Jira, including the newly-created
+link", 1280, 448, role="frame"]
 
-image:img/Settings---Jira-Issues---4.png["The Configure Application URL
-dialog in JIRA", 1500, 800]
+. image:img/button-jira-pencil.png["The pencil button in Jira", 13,
+  13, role="right"]
+  Click the **pencil** icon to the right of the just-created link. The
+  **Configure** dialog is displayed:
++
+image:img/dialog-jira-configure.png["The Configure dialog in Jira", 806,
+562, role="frame"]
 
+. Click the **Incoming Authentication** button on the left side of the
+  dialog. The dialog updates to show the **Incoming Authentication**
+  fields:
++
+image:img/dialog-jira-configure-incoming.png["The Configure dialog in
+Jira, with the Incoming Authentication fields displayed", 806, 562,
+role="frame"]
 
-== Enter app name and continue
+. Copy configuration from the browser window or tab containing the
+buddybuild dashboard into the Jira dialog:
++
+--
+[loweralpha]
+. Copy the **Consumer key** value from buddybuild into the **Consumer
+  Key** field in Jira.
 
-Use **buddybuild** as the Application Name. A new Application Link will
-be created.
+. Copy the **Public key** value from buddybuild into the **Public Key**
+  field in Jira. You have to scroll down in the **Configure** dialog to
+  see the **Public Key** field.
 
-image:img/Settings---Jira-Issues---5.png["The Application configuration
-dialog in JIRA", 1500, 688]
+. Copy the **Consumer callback URL** value from buddybuild into the
+  **Consumer Callback URL** field in Jira.
+--
 
+. Enter a name into the **Consumer Name** field. We recommend
+  `buddybuild`.
 
-== Edit the application link
+. Optionally enter a description for this application into the
+  **Description** field.
 
-Edit the newly created application link.
+. image:img/button-jira-save.png["The Save button in Jira", 54, 30,
+  role="right"]
+  Click the **Save** button at the bottom of the dialog. The **Configure
+  Application Links** screen is re-displayed.
++
+At this point, the configuration in Jira is complete.
 
-image:img/Settings---Jira-Issues---6.png["The Configure Application
-Links screen in JIRA", 1500, 674]
+. Switch back to the browser window/tab containing the buddybuild
+  dashboard.
 
+. image:img/button-connect_jira_account.png["The Connect JIRA account
+  button", 172, 42, role="right"]
+  Click the **Connect JIRA account** button. The **Jira Authorization**
+  screen is displayed:
++
+image:img/screen-jira-authorize.png["The Jira authorize screen", 1280,
+377, role="frame"]
 
-== Configure the incoming authentication
+. image:img/button-jira-allow.png["The Allow button in Jira", 55, 30,
+  role="right"]
+  Click the **Allow** button to permit buddybuild to create issues in
+  Jira for feedback and crash reports. The **Configure JIRA for
+  Feedback** screen is displayed:
++
+image:img/screen-configure_jira_for_feedback.png["The Configure JIRA for
+Feedback screen", 1280, 727, role="frame"]
 
-Navigate to the Incoming Authentication Section.
-
-image:img/Settings---Jira-Issues---7.png["The Configure application
-dialog in JIRA", 1500, 491]
-
-
-== Paste in your keys and callback URL
-
-Buddybuild generates your Public Key, your Consumer Key, and the
-Consumer callback URL. Navigate to buddybuild, copy the above items from
-the JIRA Issues settings page and paste them into your JIRA Application.
-
-Use **buddybuild** as the consumer name.
-
-image:img/Settings---Jira-Issues---8.png["The Configure application
-dialog in JIRA, with details filled in", 1500, 513]
-
-
-== Navigate back to buddybuild and click Connect
-
-Now that you have JIRA configured, head back over to buddybuild and
-click on **Connect JIRA account**.
-
-image:img/Settings---Jira-Issues---9.png["The Connect your JIRA account
-screen in buddybuild", 1500, 865]
-
-
-== Authorize buddybuild to connect to your JIRA
-
-Click on the **Allow** button.
-
-image:img/Settings---Jira-Issues---10.png["The JIRA application
-authorization screen", 1500, 800]
-
-
-== Select your JIRA project and issue type
-
-Next, configure JIRA for Feedback and Crash Reports. You can
-automatically create issues, and set the default **project**, **type**
-and **reporter** for new issues.
-
+. Select the project, type of issue, reporter plugin, and priority for
+  issues. The selections are defined in your Jira instance. Check the
+  **Automatically creates issues for Feedback** to enable automatic
+  issue creation whenever feedback is received.
++
 [NOTE]
 ======
 **Permission to modify reporter**
 
 By default, users without administrator privileges **cannot** modify the
 reporter when creating an issue. If you want to use another reporter,
-please make sure that the JIRA account you used on buddybuild has the
-permission to do so -- if not, you can let the JIRA board administrator
+please make sure that the Jira account you used on buddybuild has the
+permission to do so -- if not, you can let the Jira board administrator
+set the permission for you in **project settings**.
+======
++
+When you have completed your selections, the **Continue** button becomes
+active:
++
+image:img/screen-configure_jira_for_feedback-configured.png["The
+Configure JIRA for Feedback screen, with selections made", 1280, 723,
+role="frame"]
+
+. Click the **Continue** button. The **Configure JIRA for Crash
+Reports** screen is displayed:
++
+image:img/screen-configure_jira_for_crash_reports.png["The Configure
+JIRA for Crash Reports screen", 1280, 723, role="frame"]
+
+. Select the project, type of issue, reporter plugin, and priority for
+  issues. The selections are defined in your Jira instance. Check the
+  **Automatically creates issues for Crash Reports** to enable automatic
+  issue creation whenever crash reports are received.
++
+[NOTE]
+======
+**Permission to modify reporter**
+
+By default, users without administrator privileges **cannot** modify the
+reporter when creating an issue. If you want to use another reporter,
+please make sure that the Jira account you used on buddybuild has the
+permission to do so -- if not, you can let the Jira board administrator
 set the permission for you in **project settings**.
 ======
 
-image:img/Settings---Jira-Issues---11.png["The JIRA Issues screen",
-1500, 865]
+. Click **Continue**. The integration confirmation screen is displayed:
++
+image:img/screen-jira_confirmation.png["The integration confirmation
+screen for Jira", 1280, 477, role="frame"]
 
-That's it! Buddybuild is now connected to your JIRA. We automatically
-create an issue for every piece of feedback you receive.
+. Here you have a choice:
++
+The project, type of issue, reporter plugin, and issue priority
+selections you made, for both feedback and crash reports, can become the
+default for all new apps that you might add to buddybuild.
++
+--
+[loweralpha]
+. image:img/button-asana-default_integration.png["The Yes, save as
+  default integration button", 242, 42, role="right"]
+  To make your selections the default, click the **Yes, save as a
+  default integration** button.
+
+. image:img/button-no_thanks.png["The No thanks! button", 230, 42,
+  role="right"]
+  To use the selections just for this app, click the **No thanks!**
+button.
+--
++
+Once you have made your choice, the **JIRA Issues** screen is displayed,
+showing the active configuration:
++
+image:img/screen-jira-configured.png["The JIRA Issues screen", 1280,
+765, role="frame"]
+
+That's it! Buddybuild is now connected to your Jira. Feel free to adjust
+the configuration at any time; adjustments affects all subsequent
+feedback or crash report events. Remove the integration by clicking the
+trashcan icon.
 
 [NOTE]
 ======
-Buddybuild sends user feedback to JIRA as Markdown-formatted content,
+Buddybuild sends user feedback to Jira as Markdown-formatted content,
 which requires the Wiki Style Renderer. If you see Markdown markup in
-buddybuild-initiated issues, please ask your JIRA administrator to
+buddybuild-initiated issues, please ask your Jira administrator to
 link:../troubleshooting/jira.adoc[enable the Wiki Style Renderer].
 ======
+
