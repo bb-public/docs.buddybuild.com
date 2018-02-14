@@ -11,6 +11,14 @@ If you'd like to change the number of concurrent builds, limits on
 feedback and instant replays, or any other features, you can do so
 easily by changing the plan associated with each organization.
 
+[IMPORTANT]
+===========
+Buddybuild's support for Free Starter Plans will be discontinued on
+March 1, 2018. In preparation, plan upgrades for Free Starter Plans are
+no longer being accepted.
+===========
+
+
 == Let's get started!
 
 . Log in to the link:https://dashboard.buddybuild.com/[buddybuild

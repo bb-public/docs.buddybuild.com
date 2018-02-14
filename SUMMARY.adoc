@@ -174,7 +174,6 @@
 .. link:applications/delete.adoc[Delete]
 
 . link:billing/README.adoc[Billing and plans]
-.. link:billing/create_organization.adoc[Create an organization]
 .. link:billing/change_plan.adoc[Change your plan]
 .. link:billing/transfer_apps.adoc[Transfer apps between organizations]
 .. link:billing/payment_details.adoc[Change payment details]
