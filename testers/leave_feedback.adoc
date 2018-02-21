@@ -9,7 +9,7 @@ description: >
 Notice a typo in your App? Leave feedback for your developers in three
 short steps:
 
-. Take a screenshot (iOS) or shake the device (Android)
+. Take a screenshot
 . Draw a box around the area you would like to highlight
 . Enter a comment for your developers and hit send!
 

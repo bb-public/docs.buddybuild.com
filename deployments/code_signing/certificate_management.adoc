@@ -1,0 +1,39 @@
+---
+titletext: Manage code signing identities and provisioning profiles
+description: >
+  Manage your Code Signing settings right from within buddybuild. Apply
+  settings to individual apps or to all apps within an organization.
+---
+= Managing Certificates and Provisioning Profiles
+
+Manage your Code Signing Identities and Provisioning profiles right from
+within buddybuild.
+
+First, select the **App Settings** button.
+
+image:img/Builds---Settings.png["The buddybuild dashboard", 1500, 483]
+
+In the left navigation, select **Build settings**, then **Code
+signing**.
+
+image:img/Settings---Code-Signing---menu.png["The Code signing button",
+1500, 760]
+
+If your Code Signing Identities need to be updated, click **Upload new
+certificates.**
+
+image:img/Settings---Code-Signing.png["The Upload new certificates
+button", 1500, 317]
+
+Next, use the **Automatic-Cert Uploader ** by copying the command and
+running it in terminal.
+
+image:img/Settings---Code-Signing---quick.png["The Upload certificates
+and provisioning profiles screen", 1500, 800]
+
+We highly recommend letting buddybuild
+link:{{readme.path}}/quickstart/apple_developer_portal.adoc[automatically
+manage your provisioning profiles] for you.
+
+However if you want to manage them yourself, you can add, update or
+delete specific profiles in this panel.

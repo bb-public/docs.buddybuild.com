@@ -1,0 +1,99 @@
+---
+titletext: Invite testers to try your iOS app
+description: >
+  Buddybuild manages code signing and provisioning profiles complexities to
+  create signed device builds, allowing you to send apps to testers easily.
+---
+= Invite testers to try your iOS app
+
+If you have not already done so, complete
+link:apple_developer_portal.adoc[Connect to the Apple Developer Portal],
+and link:upload_certificates.adoc[Upload your iOS certificates].
+
+You should see the **Invite testers** screen:
+
+image:img/screen-invite_testers.png["The Invite testers screen", 1280,
+491, role="frame"]
+
+The screen shows the initial deployment group that buddybuild created
+for you, called _The Team_, and your email address is included as a
+member of the deployment group.
+
+. Specify the deployment options:
++
+--
+[loweralpha]
+. image:img/select-frequency.png["The Frequency select menu", 110, 112,
+  role="right"]
+  **Frequency**
++
+Click the **each build** link to display a select menu for the frequency
+of builds. Choose between:
++
+****
+- **each build** +
+  Every time your repository for your app is updated with a new commit,
+  buddybuild starts a new build.
+
+- image:img/select-frequency-scheduled.png["The Frequency select menu,
+  with Scheduled selected", 248, 145, role="right"]
+  **scheduled** +
+  When you choose **scheduled**, a tooltip appears allowing you to
+  specify on which days builds should occur, and at a specific time
+  (with timezone).
+
+- **manually** +
+  Builds only occur when you trigger them by clicking the **Build now**
+  button in the dashboard.
+****
+
+. image:img/select-branch.png["The From Branch select menu", 114, 75,
+  role="right"]
+  **Branch**
++
+Click the **master** link to display a select menu for the branch to
+build. Choose between **any branch** or a specific branch, that should
+be built and deployed to your testers.
+
+. image:img/select-scheme.png["The Scheme select menu", 154, 112,
+  role="right"]
+  **With Variants**
++
+Click the scheme link (**m2048** in this example) to display a select
+menu for the scheme to build. Choose the scheme that should be built and
+deployed to your testers.
+--
+
+. Specify the email addresses of the testers that should belong to this
+  deployment group.
++
+Click the **Add a new email** field, and enter one or more email
+addresses (separated by commas), then press **Return**.
++
+image:img/button-trashcan.png["The Trashcan button", 13, 17,
+role="right"]
+If you need to remove an email address from the deployment group, click
+the trashcan button to the right of the email address to be removed.
+
+. image:img/button-pencil.png["The Pencil icon", 16, 16, role="right"]
+  To edit the name of the  deployment group, click the pencil button and
+  edit the group's name as required.
+
+Once you're done configuring your group, your testers receive an email
+notification when a build matching the deployment group settings
+succeeds. You can click the **Build now** button in the dashboard to
+build and deploy your app right away.
+
+[NOTE]
+======
+**Wondering what your testers receive?**
+
+Follow the link:../../testers/install_builds.adoc[Tester's
+Manual] to see their experience.
+======
+
+That's it! Now that we have device builds going out to your testers,
+you'll now want a way to solicit feedback from them.
+
+Next, you may want to link:auto_versioning.adoc[auto-version builds], or
+enable link:tests.adoc[tests].

@@ -2,20 +2,17 @@
 titletext: Configure buddybuild SDK feature settings
 description: >
   Configure which buddybuild SDK features to include when
-  builds are deployed from buddybuild, for both iOS and Android.
+  builds are deployed from buddybuild.
 ---
 = SDK Feature Settings
 
 Buddybuild lets you select which SDK features to include when builds are
 deployed from buddybuild. In order to have these features available,
-link:../quickstart/ios/integrate_sdk.adoc[integrate the buddybuild SDK]
-on your desired branch. No code changes are required to integrate the
-buddybuild SDK for
-link:../quickstart/android/integrate_sdk.adoc[Android; just enable it!]
+link:../quickstart/integrate_sdk.adoc[integrate the buddybuild SDK]
+on your desired branch.
 
 {% include "/_common/note-sdk-ios-app_store_deployments.adoc" %}
 
-{% include "/_common/warning-sdk-android-disable_for_production.adoc" %}
 
 == Configure SDK feature settings
 
@@ -53,9 +50,8 @@ screen, when not configured", 1280, 579, role="frame"]
 +
 image:img/button-install_sdk.png["The Install the buddybuild SDK
 button", 202, 42, role="right"]
-  If so, click the **Install the buddybuild SDK** button. The follow the
-  instructions for link:../quickstart/ios/integrate_sdk.adoc[iOS
-  integration], or link:../quickstart/android/integrate_sdk.adoc[Android
+  If so, click the **Install the buddybuild SDK** button. Then follow the
+  instructions for link:../quickstart/integrate_sdk.adoc[sdk
   integration].
 
 . If you have installed the buddybuild SDK on at least one branch, you

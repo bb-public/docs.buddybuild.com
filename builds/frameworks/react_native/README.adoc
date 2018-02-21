@@ -1,20 +1,18 @@
 ---
-titletext: React Native support for both iOS and Android
+titletext: React Native support for iOS
 description: >
-  Buddybuild supports React Native for iOS and Android.
+  Buddybuild supports React Native for iOS.
 ---
 = React Native
 
-Buddybuild natively supports React Native apps -- for both iOS and
-Android.
+Buddybuild natively supports React Native apps for iOS.
 
 There are two steps to make sure that your React Native project is ready
 to onboard onto buddybuild.
 
-- Run **react-native run-android** or **react-native run-ios**
+- Run `react-native run-ios`
 
-- Ensure that you can build and run the project in **Android Studio** or
-  **Xcode**
+- Ensure that you can build and run the project in **Xcode**
 
 After you've confirmed that both of those conditions have been meet,
 you're ready to link:{{readme.path}}/quickstart/select.adoc[add them to

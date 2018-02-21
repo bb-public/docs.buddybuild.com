@@ -88,5 +88,5 @@ buddybuild, and your first build is under way. The next steps are:
 - link:webhook.adoc[Add a Visual Studio Online webhook] to automatically
   notify buddybuild of repository changes.
 
-- link:../../quickstart/ios/invite_testers.adoc[invite testers] to try out
-  your app.
+- link:{{readme.path}}/quickstart/invite_testers.adoc[invite testers] to
+  try out your app.

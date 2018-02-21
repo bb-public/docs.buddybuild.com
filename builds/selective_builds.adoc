@@ -12,8 +12,8 @@ certain files are changed.
 
 This is useful when:
 
-- You have multiple apps in single git repository (iOS and Android, or
-  multiple apps share some common files in your repository).
+- You have multiple apps in single git repository, or multiple apps
+  share some common files in your repository.
 
 - You want to skip builds for committed files that are unrelated to your
   project's source files. For example, `README.md` or `.gitignore`.

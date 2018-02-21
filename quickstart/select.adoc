@@ -26,10 +26,9 @@ image:img/panel-selected_app.png["A selected app is highlighted", 841,
 53]
 +
 If multiple apps exist in your repository, you need to select which one
-to build; **each platform (iOS, tvOS, watchOS, or Android) and build
-target must be added to buddybuild as a separate app**. If you have a
-single app, it is automatically detected and buddybuild kick offs a
-build.
+to build; **each platform (iOS, tvOS, watchOS) and build target must be
+added to buddybuild as a separate app**. If you have a single app, it is
+automatically detected and buddybuild kick offs a build.
 
 . image:img/button-add_app.png["The Add app button", 72, 30,
   role="right"]
@@ -70,7 +69,6 @@ message", 651, 690, role="frame"]
 When you open the email message on your mobile device, tapping the
 **Take me to the build** button initiates installation of the app.
 
-That's it! You've built your app with buddybuild.
-See how easy that was? There is just one more simple step -- **integrate
-the buddybuild SDK, for link:ios/integrate_sdk.adoc[iOS] or
-link:android/integrate_sdk.adoc[Android], into your app**.
+That's it! You've built your app with buddybuild. See how easy that was?
+There is just one more simple step --
+link:integrate_sdk.adoc[**integrate the buddybuild SDK**] into your app.

@@ -30,33 +30,28 @@ based on the configuration that you have setup.
 +
 [NOTE]
 ======
-If you have both iOS and Android versions of your app in a single
-repository, or if you have multiple build targets defined for your iOS
-app, you need to complete the Quickstart process once for each
-platform/target.
+If you have multiple build targets defined for your iOS app, you need to
+complete the Quickstart process once for each target.
 ======
 
-. link:ios/invite_testers.adoc[**Invite testers**]
+. link:invite_testers.adoc[**Invite testers**]
 +
 This step prepares your app for deployment to your testers. For iOS
 projects, this involves uploading code signing identities.
 
 Optional additional steps include:
 
-. **Integrate the buddybuild SDK (link:ios/integrate_sdk.adoc[iOS] or
-  link:android/integrate_sdk.adoc[Android])**
+. link:integrate_sdk.adoc[**Integrate the buddybuild SDK**]
 +
 The buddybuild SDK adds useful features that makes it easy to
 gather feedback from your testers, and to collect crash reports.
 
-. **Auto-versioning (link:ios/auto_versioning.adoc[iOS] or
-  link:android/auto_versioning.adoc[Android])**
+. link:auto_versioning.adoc[**Auto-versioning**]
 +
 Buddybuild can automatically update the build version, which helps
 inform your testers when a new version is available.
 
-. **Tests (link:ios/tests.adoc[iOS] or
-  link:android/tests.adoc[Android]))
+. link:tests.adoc[**Tests**]
 +
 Buddybuild can automatically detect any unit tests included in your
 project; we have a list of link:../tests/frameworks.adoc[supported
@@ -66,27 +61,8 @@ ensure that your builds complete as quickly as possible, but you can
 enable them at any time.
 
 
-== Device-specific topics
+== Additional topics
 
-[cols="1a,1a",options="header"]
-|===
-| For link:ios/README.adoc[iOS developers]
-| For link:android/README.adoc[Android developers]
-
-|
-- link:ios/integrate_sdk.adoc[Integrate SDK]
-- link:ios/apple_developer_portal.adoc[Connect to the Apple Developer
+- link:apple_developer_portal.adoc[Connect to the Apple Developer
   Portal]
-- link:ios/upload_certificates.adoc[Upload your iOS certificates]
-- link:ios/invite_testers.adoc[Invite testers]
-- link:ios/auto_versioning.adoc[Auto-version builds]
-- link:ios/tests.adoc[Tests]
-
-|
-- link:android/integrate_sdk.adoc[Integrate SDK]
-- link:android/invite_testers.adoc[Invite testers]
-- link:android/auto_versioning.adoc[Auto-version builds]
-- link:android/build_variants.adoc[Build variants]
-- link:android/tests.adoc[Tests]
-
-|===
+- link:upload_certificates.adoc[Upload your iOS certificates]

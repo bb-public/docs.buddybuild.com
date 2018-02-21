@@ -72,9 +72,9 @@ screen", 1280, 822, role="frame"]
 image:img/screen-build_configurations-environment.png["The Environment
 settings screen", 1280, 987, role="frame"]
 
-Generic app settings are grouped together under the **iOS & Android**
-sub-heading. Settings specific to iOS builds or Android builds are
-groups together under the **iOS-specific** and **Android-specific**
+Generic app settings are grouped together under the **iOS &
+Android** sub-heading. Settings specific to iOS builds or Android builds
+are groups together under the **iOS-specific** and **Android-specific**
 sub-headings respectively.
 
 
@@ -101,12 +101,7 @@ image:img/dropdown-magic_wand.png["The magic wand's dropdown menu",
   all applications connected to the current organization.
 
 - **Apply to all existing iOS apps**: applies the associated setting to
-  all iOS applications connected to the current organization. Android
-  application configuration is not affected.
-
-- **Apply to all existing Android apps**: applies the associated setting
-  to all Android applications connected to the current organization.
-  iOS application configuration is not affected.
+  all iOS applications connected to the current organization.
 
 - **Select apps to apply to...**: lets you choose which apps should
   receive the new setting. When you choose this item, the **Select

@@ -1,8 +1,8 @@
 ---
 titletext: Connect your Bitbucket Server to buddybuild
 description: >
-  When you connect your Bitbucket account, buddybuild builds your iOS and
-  Android mobile app every time a commit is pushed.
+  When you connect your Bitbucket account, buddybuild builds your mobile
+  app every time a commit is pushed.
 ---
 = Connect with Bitbucket Server
 

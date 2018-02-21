@@ -1,0 +1,78 @@
+---
+titletext: Code signing and auto-syncing of provisioning profiles
+description: >
+  Buddybuild takes away the pain of having to deal with code signing by
+  automatically uploading certificates and auto-syncing provisioning
+  profiles.
+---
+= Code Signing 101
+
+Buddybuild takes away the pain of having to deal with code signing by
+link:{{readme.path}}/quickstart/upload_certificates.adoc[automatically
+uploading certificates] and
+link:{{readme.path}}/quickstart/apple_developer_portal.adoc[auto-syncing
+provisioning profiles] so you can focus on building great apps instead.
+
+If you do not setup code signing, buddybuild can only perform
+_simulator_ builds of your app; that's a build that can only run in an
+Xcode's device simulator. For simulator builds, your unit and UI
+tests can be run to verify the functionality of your app, however a
+simulator build cannot be deployed to testers or published to the App
+Store.
+
+If you'd like to learn more about code signing, read on.
+
+
+== Certificates and Private Keys
+
+Device builds on iOS are required to be signed with a developer's
+certificate. Code signing allows iOS devices to verify the app
+developer's identity, and that the app has not been tampered with.
+
+Developer identities are tied to two artifacts -- a certificate and a
+private key that unlocks the certificate. Both these artifacts are
+probably already present if you've ever deployed builds to a device.
+
+Typically, there are two types of certificates available to iOS
+developers -- one is a development certificate used for local development
+and testing -- the other is a distribution certificate meant for builds
+destined for the App Store.
+
+If you're part of the Apple Enterprise program, you also have an
+Enterprise Distribution certificate that allows you to deploy apps
+within your enterprise.
+
+You must code sign iOS applications before any iOS devices will accept
+them for installation.
+
+Buddybuild creates builds on your behalf, so we need access to your
+developer identities in order to sign builds. Managing these can be a
+pain. Use the
+link:{{readme.path}}/quickstart/upload_certificates.adoc[Automatic
+Cert-Uploader] to quickly and easily upload the relevant certificates to
+buddybuild.
+
+{% include "/_common/note-device_vs_simulator_builds.adoc" %}
+
+
+== Provisioning Profiles
+
+Development devices also need to be included in the Provisioning Profile
+of the development-signed app bundle before they can accept them for
+installation.
+
+Provisioning profiles are generated and signed by Apple. Any
+modifications -- like adding a new device UDID -- requires the
+following:
+
+- A request to Apple to regenerate the profile,
+- Download and installation of the generated profile on to your
+  development machine,
+- Rebuilding your app with the updated profile.
+
+Buddybuild can also transparently manage these for you. Simply enable
+the
+link:{{readme.path}}/quickstart/apple_developer_portal.adoc[Auto-Syncing
+Provisioning Profiles] feature to take advantage of this functionality!
+
+{% include "/_common/important-provisioning_profiles.adoc" %}

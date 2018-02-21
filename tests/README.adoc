@@ -1,9 +1,8 @@
 ---
 titletext: Buddybuild's test infrastructure and supported frameworks
 description: >
-  Buddybuild's test infrastructure for iOS and Android provides code
-  snippets for failed tests, screenshots for UI tests, detailed call
-  stacks, and more.
+  Buddybuild's test infrastructure provides code snippets for failed
+  tests, screenshots for UI tests, detailed call stacks, and more.
 ---
 = Tests
 
@@ -59,20 +58,9 @@ link:../builds/custom_build_steps.adoc[custom build steps].
 link:custom.adoc[Custom test reporting] is also available.
 
 
-== Platform-specific testing topics
+== Specific testing topics
 
-[cols="1a,1a", options="header"]
-|===
-| iOS
-| Android
-
-|
-- link:ios/tests.adoc[Unit tests]
-- link:ios/code_coverage.adoc[Code coverage]
-- link:ios/configure_ui_tests_video_recording.adoc[Configure UI tests
+- link:tests.adoc[Unit tests]
+- link:code_coverage.adoc[Code coverage]
+- link:configure_ui_tests_video_recording.adoc[Configure UI tests
   for video replay]
-
-|
-- link:android/physical_devices.adoc[UI tests on physical devices]
-- link:android/virtual_devices.adoc[UI tests on virtual devices]
-|===

@@ -39,7 +39,6 @@ $ ssh git@my.company.com info
 Hello Richie, this is git@my.company.com running gitolite3 v3.6.5-4-g6ed0156 on git 2.8.0
 
  R W  my-ios-app
- R W  my-android-app
 ----
 
 Head over to dashboard, visit
@@ -145,5 +144,5 @@ first build is under way. The next steps are:
 - link:webhook.adoc[Add a Gitolite webhook] to automatically notify
   buddybuild of repository changes.
 
-- link:{{readme.path}}/quickstart/ios/invite_testers.adoc[invite
+- link:{{readme.path}}/quickstart/invite_testers.adoc[invite
   testers] to try out your app.

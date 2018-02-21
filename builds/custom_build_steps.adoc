@@ -35,8 +35,6 @@ This page contains several sub-sections:
 
 - <<environment>>
 ** <<environment-common>>
-** <<environment-ios>>
-** <<environment-android>>
 ** <<environment-user>>
 - <<postclone>>
 - <<prebuild>>
@@ -105,11 +103,6 @@ Example: `526`
 
 Example: `/Users/buddybuild/workspace`
 
-For Android, the build output folder is in the exact relative location
-as in your local environment. For example, if the `build` output folder
-is in the `app` folder locally, this variable is set to
-`/Users/buddybuild/workspace/app/build`.
-
 | `BUDDYBUILD_SECURE_FILES`
 | This is the location of your link:secrets/secure_files.adoc[secure
   files] on the VM.
@@ -145,16 +138,6 @@ Possible values:
   build is triggered by the
   link:https://apidocs.buddybuild.com/builds/post-trigger.html[buddybuild
   API]
-|===
-
-
-[[environment-ios]]
-=== iOS-specific variables
-
-[cols="a,10a", options="header"]
-|===
-| Variable Name
-| Description
 
 | `BUDDYBUILD_IPA_PATH`
 | Only available in post-build. Includes the filename in the path.
@@ -184,37 +167,6 @@ Example: `/tmp/sandbox/app/test`
 
 Inside you will find multiple files related to tests including
 `Coverage.profdata`.
-|===
-
-
-[[environment-android]]
-=== Android-specific variables
-
-[cols="a,10a", options="header"]
-|===
-| Variable Name
-| Description
-
-| `BUDDYBUILD_APKS_DIR`
-| This is the location of `.apk` files generated during the build.
-  Useful if you need to apply further processing to these files.
-
-Example: `/tmp/sandbox/app/apks`
-
-| `BUDDYBUILD_VARIANTS`
-| The list of the variants being built.
-
-Example: `release`
-
-| `ANDROID_HOME`
-| The path to the Android SDK.
-
-Example: `/Users/buddybuild/.android-sdk`
-
-| `ANDROID_NDK_HOME`
-| The path to the Android NDK.
-
-Example: `/Users/buddybuild/android-ndk-r10e`
 |===
 
 

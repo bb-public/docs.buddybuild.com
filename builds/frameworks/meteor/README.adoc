@@ -37,11 +37,9 @@ using in the `buddybuild_postclone.sh` script.
 image:img/Screen-Shot-2017-05-08-at-15.23.31.png["The build failure
 screen", 828, 772]
 
-The `$PLATFORM` variable should be either **ios** or **android**,
-depending on which platform you want to build this project for. The
-`$SERVER` variable should represent your development server in the
-format server:port. Once you've added those 2 variables, retry the
-build.
+The `$PLATFORM` variable should be **ios**. The `$SERVER` variable
+should represent your development server in the format `server:port`.
+Once you've added those 2 variables, retry the build.
 
 Buddybuild detects many apps and frameworks within your project; make
 sure to select the correct one.
@@ -49,10 +47,8 @@ sure to select the correct one.
 image:img/Screen-Shot-2017-05-08-at-15.39.53.png["The app selection
 screen", 748, 1194]
 
-For iOS projects, you should select the workspace project, the one not
-within a `.meteor` folder. For Android, you can select the Android
-project.
-
+You should select the workspace project, the one not within a `.meteor`
+folder.
 
 == Errors and common build failures
 
