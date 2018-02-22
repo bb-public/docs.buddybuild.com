@@ -33,7 +33,7 @@ role="right"]
   pointer over the **current app** button in the top toolbar. The
   **Apps** dropdown appears:
 +
-image:../img/dropdown-apps.png["The Apps dropdown", 361, 526]
+image:../img/dropdown-apps.png["The Apps dropdown", 362, 608]
 
 . Select the app that needs a specific Node version by clicking it in
 the dropdown. The **Builds** page for your app appears:

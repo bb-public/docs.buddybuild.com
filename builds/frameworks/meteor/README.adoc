@@ -45,7 +45,7 @@ Buddybuild detects many apps and frameworks within your project; make
 sure to select the correct one.
 
 image:img/Screen-Shot-2017-05-08-at-15.39.53.png["The app selection
-screen", 748, 1194]
+screen", 748, 1062]
 
 You should select the workspace project, the one not within a `.meteor`
 folder.

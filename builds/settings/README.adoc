@@ -51,7 +51,7 @@ organization", 206, 40, role="right"]
   Click **Builds**. The **Build Configurations** screen is displayed:
 +
 image:img/screen-build_configurations.png["The Build Configurations
-screen", 1280, 822, role="frame"]
+screen", 1280, 718, role="frame"]
 
 . Make adjustments as necessary to the build settings for all apps.
 +
@@ -67,15 +67,10 @@ screen", 1280, 822, role="frame"]
   role="right"]
   Settings that apply throughout the build's execution appear in the
   **Environment tab**.
---
-
++
 image:img/screen-build_configurations-environment.png["The Environment
-settings screen", 1280, 987, role="frame"]
-
-Generic app settings are grouped together under the **iOS &
-Android** sub-heading. Settings specific to iOS builds or Android builds
-are groups together under the **iOS-specific** and **Android-specific**
-sub-headings respectively.
+settings screen", 1280, 779, role="frame"]
+--
 
 
 [[apply]]
@@ -92,7 +87,7 @@ To apply any specific setting to already-configured applications:
   to one or more applications. A drop-down menu appears:
 +
 image:img/dropdown-magic_wand.png["The magic wand's dropdown menu",
-230, 178]
+230, 119]
 
 . Select one of the options from the dropdown menu:
 +
@@ -100,14 +95,11 @@ image:img/dropdown-magic_wand.png["The magic wand's dropdown menu",
 - **Apply to all existing apps**: applies the associated setting to
   all applications connected to the current organization.
 
-- **Apply to all existing iOS apps**: applies the associated setting to
-  all iOS applications connected to the current organization.
-
 - **Select apps to apply to...**: lets you choose which apps should
   receive the new setting. When you choose this item, the **Select
   apps** screen is displayed:
 +
-image:img/screen-select_apps.png["The Select apps screen", 1280, 545,
+image:img/screen-select_apps.png["The Select apps screen", 1280, 438,
 role="frame"]
 +
 Use the search field to show only matching apps.
