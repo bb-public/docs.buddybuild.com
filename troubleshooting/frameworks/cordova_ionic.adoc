@@ -230,7 +230,7 @@ folder and then commit the change.
 
 === error: The app icon set named "AppIcon" did not have any applicable content.
 
-This indicates that the ios platform tools version we're using is
+This indicates that the iOS platform tools version we're using is
 incompatible with your project. In these instances, the best way to
 guarantee that buddybuild is using the exact version you're using is to
 ensure that there's the below entry in your `config.xml`:
