@@ -1,7 +1,7 @@
 ---
 description: >
   buddybuild documentation, covers continuous integration (CI) and
-  continuous deployment (CD) topics for Android and iOS developers.
+  continuous deployment (CD) topics for mobile app developers.
 ---
 = buddybuild documentation
 :linkattrs:
@@ -16,7 +16,7 @@ Welcome to buddybuild docs!
 [.land-subhead]
 pass:[<nobr>]Buddybuild is a pass:[<wbr/>]continuous integration (CI),
 pass:[<wbr/>]continuous deployment (CD), pass:[<wbr/>]and user feedback
-platform pass:[<wbr/>]for iOS and Android pass:[<wbr/>]development teams.
+platform pass:[<wbr/>]for mobile development teams.
 
 [.call-to-action]
 link:quickstart/README.adoc[Let’s begin!, role="button"]
@@ -28,34 +28,20 @@ Popular Docs
 --
 
 [.popular-doc]
-.link:troubleshooting/ios/install_builds.adoc[Trouble installing builds on iOS]
+.link:troubleshooting/install_builds.adoc[Trouble installing builds on iOS]
 ****
 link:troubleshooting/README.adoc[Troubleshooting]
 ➛
-link:troubleshooting/ios/README.adoc[iOS]
-➛
-link:troubleshooting/ios/install_builds.adoc[Trouble installing builds
+link:troubleshooting/install_builds.adoc[Trouble installing builds
 on iOS]
 ****
 
 [.popular-doc]
-.link:troubleshooting/ios/common_build_errors.adoc[Common iOS build errors]
+.link:troubleshooting/common_build_errors.adoc[Common iOS build errors]
 ****
 link:troubleshooting/README.adoc[Troubleshooting]
 ➛
-link:troubleshooting/ios/README.adoc[iOS]
-➛
-link:troubleshooting/ios/common_build_errors.adoc[Common iOS build errors]
-****
-
-[.popular-doc]
-.link:troubleshooting/android/common.adoc[Common Android build errors]
-****
-link:troubleshooting/README.adoc[Troubleshooting]
-➛
-link:troubleshooting/android/README.adoc[Android]
-➛
-link:troubleshooting/android/common.adoc[Common Android build errors]
+link:troubleshooting/common_build_errors.adoc[Common build errors]
 ****
 
 [.popular-doc]
@@ -69,8 +55,8 @@ link:builds/custom_build_steps.adoc[Custom Build Steps]
 [.show-more-extra]
 --
 [.popular-doc]
-.link:troubleshooting/frameworks/cordova_ionic.adoc[Common Cordova /
-Ionic build errors]
+. link:troubleshooting/frameworks/cordova_ionic.adoc[Common Cordova
+/ Ionic build errors]
 ****
 link:troubleshooting/README.adoc[Troubleshooting]
 ➛
@@ -81,23 +67,19 @@ Ionic build errors]
 ****
 
 [.popular-doc]
-.link:quickstart/ios/integrate_sdk.adoc[Integrating SDK]
+.link:quickstart/integrate_sdk.adoc[Integrating SDK]
 ****
 link:quickstart/README.adoc[Quickstart]
 ➛
-link:quickstart/ios/README.adoc[iOS]
-➛
-link:quickstart/ios/integrate_sdk.adoc[Integrating SDK]
+link:quickstart/integrate_sdk.adoc[Integrating SDK]
 ****
 
 [.popular-doc]
-.link:troubleshooting/ios/missing_schemes.adoc[Missing schemes]
+.link:troubleshooting/missing_schemes.adoc[Missing schemes]
 ****
 link:troubleshooting/README.adoc[Troubleshooting]
 ➛
-link:troubleshooting/ios/README.adoc[iOS]
-➛
-link:troubleshooting/ios/missing_schemes.adoc[Missing Schemes]
+link:troubleshooting/missing_schemes.adoc[Missing Schemes]
 ****
 
 [.popular-doc]

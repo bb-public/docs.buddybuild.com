@@ -1,0 +1,82 @@
+---
+titletext: Invite testers to try your iOS app
+description: >
+  Buddybuild manages code signing and provisioning profiles complexities to
+  create signed device builds, allowing you to send apps to testers easily.
+---
+= Connect to the Apple Developer Portal
+
+It can also be painful and confusing to managing device universal
+identifiers (UDIDs) and your provisioning profiles. Once your Apple
+Developer Portal connection is set up, buddybuild automatically manages
+those changes on your behalf, any time you make changes to your roster
+of testers.
+
+If you have not done so already, link:connect/README.adoc[Sign up and
+connect buddybuild to your source control] and then
+link:select.adoc[Select a repository/app to build].
+
+. After you link:select.adoc[add an iOS app to buddybuild], you should
+  see the **Ready to try on a device** dialog:
++
+image:img/dialog-ready_to_try_on_device.png["The Ready to try on a
+device dialog", 1280, 780, role="frame"]
++
+--
+[loweralpha]
+. image:img/button-invite_a_few_testers.png["The Invite a few testers
+  button", 270, 43, role="right"]
+  If so, click the **Invite a few testers** button.
+
+. image:img/button-deployments.png["The Deployments button", 121, 64,
+  role="right"]
+  If not click the **Deployments** button in the top navigation bar.
+--
++
+Whichever button you clicked, you should now see the **Invite testers in
+3 easy steps** screen:
++
+image:img/screen-invite_testers_3_steps.png["The Invite testers in 3
+easy steps screen", 1280, 551, role="frame"]
+
+. image:img/button-set_up_code-signing.png["The Set up code-signing
+  button", 156, 42, role="right"]
+  Click the **Set up code-signing** button. The **Connect with Apple
+  Developer Portal** screen is displayed:
++
+image:img/screen-connect_with_apple_developer_portal.png["The Connect
+with Apple Developer Portal screen", 1280, 647, role="frame"]
+
+. image:img/button-connect.png["The Connect button", 268, 37,
+  role="right"]
+  Enter your Apple ID and password, then click the **Connect** button.
++
+--
+[loweralpha]
+. If you have two-factor authentication enabled for your Apple ID, a
+**Two-Factor Authentication** notice screen is displayed, reminding you
+that logins require a new verification code every 30 days:
++
+image:img/screen-2fa_warning.png["The Two Factor Authentication notice
+screen", 1280, 640, role="frame"]
+
+. image:img/button-continue_to_enter_2fa.png["The Continue to enter your
+  verification code button", 322, 37, role="right"]
+  If you see this screen, click the **Continue to enter your
+  verification code** button. The **Two-factor authentication** screen
+  is displayed:
++
+image:img/screen-enter_2fa.png["The Two-factor verification screen",
+1280, 377, role="frame"]
+
+. Enter the two-factor verification code that Apple has sent to your
+  laptop or mobile device.
+--
++
+The **Upload certificates** screen is displayed:
++
+image:img/screen-upload_certificates.png["The Upload Certificates
+screen", 1280, 581, role="frame"]
+
+You are now connected to the Apple Developer Portal! Continue with
+link:upload_certificates.adoc[Upload your iOS certificates].

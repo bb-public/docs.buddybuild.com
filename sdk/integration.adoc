@@ -7,20 +7,14 @@ description: >
 ---
 = Manual integration of the buddybuild SDK
 
-We highly recommend using the **automatic** buddybuild SDK integration
-right from the buddybuild dashboard. See the instructions
-link:../quickstart/ios/integrate_sdk.adoc[for iOS] or
-link:../quickstart/android/integrate_sdk.adoc[for Android].
-
-However, if you wish to integrate the buddybuild SDK **manually**,
-follow the platform-specific steps on this page:
-
-- <<ios>>
-- <<android>>
+We highly recommend using the
+link:../quickstart/integrate_sdk.adoc[**automatic** buddybuild SDK
+integration] right from the buddybuild dashboard. However, if you wish
+to integrate the buddybuild SDK **manually**, follow the steps on this
+page:
 
 
-[[ios]]
-== iOS integration steps pass:[<i class="fa fa-apple"></i>]
+== Manual integration steps
 
 [NOTE]
 ======
@@ -166,106 +160,5 @@ git push
 ----
 
 That's it! The SDK is now integrated into your iOS app, and becomes
-active in subsequent builds, including the build started by your code
-push.
-
-
-[[android]]
-== Android integration steps pass:[<i class="fa fa-android"></i>]
-
-[TIP]
-=====
-As of November 2017, the buddybuild SDK for Android contains 279
-methods.
-=====
-
-. **Add plugins to `build.gradle`**
-+
-In order to pull in the plugins needed to build the app with the SDK,
-add the following line to your `build.gradle` file:
-+
-[source,json]
-----
-repositories {
-    jcenter()
-
-    maven {
-      url 'https://dl.bintray.com/buddybuild/maven'
-    }
-}
-
-dependencies {
-    compile 'com.buddybuild:sdk:0.1.20@aar'
-    compile 'com.squareup:seismic:1.0.2'
-}
-----
-+
-[TIP]
-=====
-Two things to note here:
-
-. You can put the `repositories` section in the base `build.gradle` file,
-  but you need to put it under the `allprojects` section.
-
-. Note the `@aar` at the end of `com.buddybuild:sdk:0.1.20@aar`
-=====
-
-. **Add Permissions to `AndroidManifest.xml`**
-+
-The following permissions allow the SDK to send feedback, as well as to
-collect adb logs in case of app crash:
-+
-[source,xml]
-----
-<uses-permission android:name="android.permission.INTERNET"/>
-<uses-permission android:name="android.permission.READ_LOGS"/>
-----
-
-. **Setup the SDK in `Application.onCreate()`**
-+
-One last thing to do is to start up the SDK upon app start. All you need
-to do is to add **BuddyBuild.setup(this)** to your **Application**
-class.
-+
-[WARNING]
-=========
-This does **not** work properly when added to the **main activity**
-class.
-=========
-+
-[source,java]
-----
-package buddybuild.com.helloworldandroid;
-
-import android.app.Application;
-import com.buddybuild.sdk.BuddyBuild;
-
-public class MainApplication extends Application {
-    @Override
-    public void onCreate() {
-        super.onCreate();
-
-        // Buddybuild runs a separate process for crash reporting.
-        // We recommend that customers exit onCreate() if executing in
-        // that process.
-        // BuddyBuild.setup() returns false if this Application instance
-        // is running in the crash reporting process.
-        if (!BuddyBuild.setup(this)) {
-            return;
-        }
-    }
-}
-----
-
-. **Commit the changes and push to your repository**.
-+
-[source,bash]
-----
-git add --all
-git commit -m 'Adding buddybuild SDK'
-git push
-----
-
-That's it! The SDK is now integrated into your Android app, and becomes
 active in subsequent builds, including the build started by your code
 push.

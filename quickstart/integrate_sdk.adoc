@@ -1,0 +1,151 @@
+---
+titletext: How to integrate buddybuild's SDK for iOS
+description: >
+  Integrate the buddybuild SDK for iOS to access graphical user feedback
+  reports, crash reports, tester usage and analytics, and automatic app
+  updates.
+---
+= Integrate the buddybuild SDK for iOS
+
+== About the buddybuild SDK
+
+The buddybuild SDK is a lightweight yet powerful suite of tools that
+integrates seamlessly into your application. The SDK includes a
+graphical feedback reporter, a crash reporting and analysis tool,
+automatic app updating and usage tracking. The SDK is regularly updated
+with new features.
+
+The buddybuild SDK enables the following features:
+
+[NOTE]
+======
+**File size of the buddybuild SDK**
+
+Integrating the buddybuild SDK will increase the size of the resulting
+`.ipa` by less than 1 MB.
+======
+
+=== Feedback Reporter
+
+With buddybuild, you simply take a screenshot to share feedback. Our
+feedback reporter sends graphically annotated screenshots, feedback
+notes and device metadata to your team. Integrate with GitHub, Jira, and
+Pivotal Tracker to track feedback as issues.
+link:../../sdk/feedback_reporter.adoc[Learn more.]
+
+=== Instant Replay
+
+No more emailing testers for repro steps. Along with each crash report,
+buddybuild will also attach a 15 second video of your testers'
+interactions with your App's UI right up to the point where it crashed
+-- allowing you to instantly see what they did to cause a crash.
+
+=== Automatic Update
+
+Receiving feedback on old builds is pointless -- you've probably already
+fixed the issue you've received feedback on! It is crucial to keep your
+testers and beta users updated on the very latest builds. If a newer
+build is available, the buddybuild SDK can automatically prompt to
+install the latest version of your app.
+link:../../sdk/automatic_update.adoc[Learn more.]
+
+=== Usage Tracking
+
+Know when your testers download and launch your app in real time.
+Identify who tested your app, when they launched it and what version
+they tested. Correlate this with feedback and crash reports to
+understand your customers' experience.
+link:../../sdk/usage_tracking.adoc[Learn more.]
+
+== How to integrate
+
+Enabling the SDK requires code changes in your iOS Application. We can
+make these changes automatically so you don't have to! Enable the
+buddybuild SDK in just four easy steps.
+
+. Log in to the link:https://dashboard.buddybuild.com/[buddybuild
+  dashboard]. The list of builds is displayed:
++
+image:img/screen-builds.png["The list of builds", 1280, 300,
+role="frame"]
+
+. image:img/button-feedback.png["The Feedback button", 98, 64,
+  role="right"]
+  Click the **Feedback** button in the top navigation bar. The
+  **Feedback** screen is displayed:
++
+image:img/screen-feedback.png["The Feedback screen", 1280, 1315,
+role="frame"]
+
+. image:img/button-install_the_sdk.png["The Install the SDK button",
+  152, 42, role="right"]
+  Click the **Install the SDK** button. The **Install the SDK** screen
+  is displayed:
++
+image:img/screen-install_sdk.png["The Install the SDK screen", 1280,
+579, role="frame"]
+
+. image:img/button-install.png["The Install button", 57, 30,
+  role="right"]
+  Click the **Install** button beside each branch that should have the
+  buddybuild SDK integrated. Typically, the SDK is used by your testers,
+  so install the SDK on the branches that deploy to your testers.
+  Buddybuild automatically makes the code changes and commits them to
+  the selected branch. Note that if you integrate the SDK on the
+  `master` branch, the SDK is included in all new branches based on
+  `master` thereafter.
++
+The branch's entry in the list is replaced with a notice indicating that
+a new build has been started:
++
+image:img/panel-build_kicked_off.png["The build kicked off panel", 728,
+132]
+
+That's it! A new build is kicked off with the SDK enabled. Install this
+build on your device. Open your app and take a screenshot -- and see
+what happens!
+
+{% include "/_common/note-sdk-ios-app_store_deployments.adoc" %}
+
+You're all set now to deploy your app broadly to all your testers. There
+is just one more thing.
+
+Typically, development and testing devices need to be manually added to
+your provisioning profiles before they can accept deployed builds. This
+requires app developers to acquire the UDID (the device unique id) of
+the testing devices from the testers, and then add them to the
+provisioning profiles used to build the app. This process is manual and
+is the source of a lot of headache for developers.
+
+We've automated this process as well. Buddybuild can acquire UDIDs of
+your testers' devices, add them to your provisioning profiles completely
+automatically and transparently.
+
+To enable this, connect your link:apple_developer_portal.adoc[Apple
+Developer account] with buddybuild.
+
+[NOTE]
+======
+**Prefer to manually integrate the SDK?**
+
+Follow the link:../../sdk/integration.adoc[Manual SDK Integration
+Guide].
+======
+
+[[update]]
+=== Update the SDK
+
+. Open the Terminal and `cd` to your root directory of your repo.
+
+. Run the following command:
++
+[source,bash]
+curl -Ls https://tools.buddybuild.com/UpdateSDK | sh
+
+. Commit and push the changes.
+
+[[uninstall]]
+=== Uninstall the SDK
+
+If for some reason, you wish to uninstall the SDK, you simply need to
+revert the commit which installed it in the first place.

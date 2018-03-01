@@ -9,11 +9,11 @@ description: >
 Connecting your Apple Developer Portal account to buddybuild allows you
 to:
 
-- link:{{readme.path}}/quickstart/ios/apple_developer_portal.adoc[Automatically
+- link:{{readme.path}}/quickstart/apple_developer_portal.adoc[Automatically
   sync your Provisioning Profiles]
 
-- link:../deployments/ios/itunes_connect.adoc[Upload specific builds to
-  iTunes Connect and TestFlight]
+- link:{{readme.path}}/deployments/itunes_connect.adoc[Upload specific
+  builds to iTunes Connect and TestFlight]
 
 In order to enable this integration, buddybuild will require your Apple
 Developer Portal credentials. If you're using two factor authentication

@@ -1,37 +1,18 @@
 ---
-titletext: Continuous deployment for iOS and Android applications
+titletext: Continuous deployment for mobile applications
 description: >
-  Reduce the complexity of iOS and Android app deployment. iOS and
-  Android continuous deployment as it should be: one click to send, one
-  click to install.
+  Reduce the complexity of mobile app deployment. Continuous deployment
+  as it should be: one click to send, one click to install.
 ---
 = Deployments
 
 This section covers everything you need to know to deploy builds of your
-project, including deploying builds to your testers, or to online stores
-(iOS App Store, via iTunes Connect, and Google Play).
-
-== General deployment information
+project, including deploying builds to your testers, or to the App Store
+via iTunes Connect.
 
 - link:automatic.adoc[Automatic deployments]
 - link:manual.adoc[Manual deployments]
 - link:scheduled.adoc[Scheduled deployments]
 - link:focus_message.adoc[Release Notes]
-
-== Platform-specific information
-
-[cols="1a,1a", options="header"]
-|===
-| iOS
-| Android
-
-|
-- link:ios/README.adoc[Overview]
-- link:ios/code_signing/README.adoc[Code Signing]
-- link:ios/itunes_connect.adoc[Deploy to iTunes Connect]
-
-|
-- link:android/README.adoc[Overview]
-- link:android/keystores/README.adoc[KeyStores]
-- link:android/google_play/README.adoc[Google Play]
-|===
+- link:code_signing/README.adoc[Code Signing]
+- link:itunes_connect.adoc[Deploy to iTunes Connect]

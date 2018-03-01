@@ -6,8 +6,6 @@ description: >
   repository.
 ---
 = Supported frameworks
-:logo-apple: pass:[<i class="fa fa-apple"></i>]
-:logo-android: pass:[<i class="fa fa-android"></i>]
 
 There are many, many testing frameworks available, from popular
 cross-platform frameworks, to custom testing infrastructure that could
@@ -19,164 +17,75 @@ buddybuild provided these conditions are met:
 - The framework is available for installation whenever your app is
   built, or you have included it within your project's source code.
 
-- The framework runs on a Unix-like operating system; Mac OS for iOS
-  projects, and Linux for Android projects.
+- The framework runs on a Unix-like operating system.
 
 == Auto-configure tests
 
 The following test frameworks are automatically recognized by
 buddybuild, and are setup and executed as part of your build:
 
-[cols="1a,1a", options="header"]
-|===
-| iOS
-| Android
-
-|
 - link:https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/01-introduction.html[XCTest]
 
 - link:https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/09-ui_testing.html[XCUITest]
 
-|
-- link:http://junit.org/[JUnit]
-|===
 
 == Non-native frameworks
 
 The following test frameworks are known to work with buddybuild,
 provided that you include the appropriate integration within your
-project. {logo-apple} indicates iOS compatibility, {logo-android}
-indicates Android compatibility.
+project.
 
-[cols="5a,^1a,^1a", options="header"]
-|===
-| Framework
-| iOS
-| Android
-
-| link:http://calaba.sh/[Calabash]
+- link:http://calaba.sh/[Calabash]
   (link:https://github.com/BuddyBuild/Custom-Testing/tree/master/Calabash[example
   integration])
-| {logo-apple}
-| {logo-android}
 
-| link:http://pivotal.github.io/cedar/[Cedar]
-| {logo-apple}
-|
+- link:http://pivotal.github.io/cedar/[Cedar]
 
-| link:https://cucumber.io/[Cucumber]
-  (link:https://github.com/BuddyBuild/Custom-Testing/tree/master/Cucumber[example
-  integration])
-|
-| {logo-android}
+- link:https://github.com/google/EarlGrey[EarlGrey]
 
-| link:https://github.com/google/EarlGrey[EarlGrey]
-| {logo-apple}
-|
+- link:https://github.com/specta/expecta[Expecta]
 
-| link:https://developer.android.com/training/testing/espresso/index.html[Espresso]
-|
-| {logo-android}
+- link:https://github.com/facebook/ios-snapshot-test-case[FBSnapshotTestCase]
 
-| link:https://github.com/specta/expecta[Expecta]
-| {logo-apple}
-|
+- link:http://testingwithfrank.github.io/[Frank]
 
-| link:https://github.com/facebook/ios-snapshot-test-case[FBSnapshotTestCase]
-| {logo-apple}
-|
-
-| link:https://firebase.google.com/products/test-lab/[Firebase Test Lab]
-|
-| {logo-android}
-
-| link:http://testingwithfrank.github.io/[Frank]
-| {logo-apple}
-| {logo-android}
-
-| link:https://jasmine.github.io/[Jasmine]
+- link:https://jasmine.github.io/[Jasmine]
   (link:https://github.com/BuddyBuild/Custom-Testing/tree/master/Jasmine[example
   integration])
-| {logo-apple}
-| {logo-android}
 
-| link:https://facebook.github.io/jest/[Jest]
+- link:https://facebook.github.io/jest/[Jest]
   (link:https://github.com/BuddyBuild/Custom-Testing/tree/master/Jest[example
   integration])
-| {logo-apple}
-| {logo-android}
 
-| link:https://karma-runner.github.io/1.0/index.html[Karma]
-| {logo-apple}
-| {logo-android}
+- link:https://karma-runner.github.io/1.0/index.html[Karma]
 
-| link:https://github.com/kif-framework/KIF[KIF]
-| {logo-apple}
-|
+- link:https://github.com/kif-framework/KIF[KIF]
 
-| link:https://github.com/kiwi-bdd/Kiwi[Kiwi]
-| {logo-apple}
-|
+- link:https://github.com/kiwi-bdd/Kiwi[Kiwi]
 
-| link:https://mochajs.org/[Mocha]
+- link:https://mochajs.org/[Mocha]
   (link:https://github.com/BuddyBuild/Custom-Testing/tree/master/Mocha[example
   integration])
-| {logo-apple}
-| {logo-android}
 
-| link:http://ocmock.org/[OCMock]
-| {logo-apple}
-|
+- link:http://ocmock.org/[OCMock]
 
-| link:http://www.sente.ch/software/ocunit/[OCUnit]
-| {logo-apple}
-|
+- link:http://www.sente.ch/software/ocunit/[OCUnit]
 
-| link:http://www.protractortest.org/[Protractor]
-| {logo-apple}
-| {logo-android}
+- link:http://www.protractortest.org/[Protractor]
 
-| link:https://github.com/Quick/Quick[Quick]
-| {logo-apple}
-|
+- link:https://github.com/Quick/Quick[Quick]
 
-| link:https://github.com/specta/specta[Specta]
-| {logo-apple}
-|
+- link:https://github.com/specta/specta[Specta]
 
-| link:https://github.com/inkling/Subliminal[Subliminal]
-| {logo-apple}
-|
+- link:https://github.com/inkling/Subliminal[Subliminal]
 
-| link:https://developer.android.com/training/testing/ui-automator.html[UI
-Automator]
-|
-| {logo-android}
+- link:https://developer.apple.com/documentation/xctest[XCTest]
 
-| link:https://developer.apple.com/documentation/xctest[XCTest]
-| {logo-apple}
-|
-
-| link:http://www.methodsandtools.com/tools/zucchini.php[Zucchini]
-| {logo-apple}
-|
-|===
+- link:http://www.methodsandtools.com/tools/zucchini.php[Zucchini]
 
 
 == Testing tools
 
-The following are tools that aid in performing various kinds of testing.
-{logo-apple} indicates iOS compatibility, {logo-android} indicates
-Android compatibility.
+The following are tools that aid in performing various kinds of testing:
 
-[cols="5a,^1a,^1a", options="header"]
-|===
-| Framework
-| iOS
-| Android
-
-| link:http://appium.io/[Appium]
-| {logo-apple}
-| {logo-android}
-
-|===
+- link:http://appium.io/[Appium]

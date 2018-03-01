@@ -23,7 +23,7 @@ install a new build once it’s been deployed.
 ======
 
 Once deployments have been set up, simply
-link:../quickstart/ios/integrate_sdk.adoc[integrate the buddybuild SDK]
+link:../quickstart/integrate_sdk.adoc[integrate the buddybuild SDK]
 into your app to enable the **Automatic Update** feature.
 
 The SDK also offers several other features in addition to Automatic

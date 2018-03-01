@@ -85,5 +85,5 @@ your first build is under way. The next steps are:
 - link:webhook.adoc[Add a Beanstalk webhook] to automatically notify
   buddybuild of repository changes.
 
-- link:../../quickstart/ios/invite_testers.adoc[invite testers] to try out
+- link:../../quickstart/invite_testers.adoc[invite testers] to try out
   your app.

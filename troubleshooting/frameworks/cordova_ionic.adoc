@@ -1,8 +1,8 @@
 ---
 titletext: Common causes for Cordova and Ionic build failures
 description: >
-  Tips and tricks for troubleshooting the most common causes of Cordova / Ionic
-  mobile app build failures.
+  Tips and tricks for troubleshooting the most common causes of Cordova
+  / Ionic mobile app build failures.
 ---
 = Common Cordova / Ionic build errors
 
@@ -30,14 +30,11 @@ perform the following steps:
 
 === Install Cordova and Ionic dependencies
 
-[[code-samples]]
---
 [source,bash]
 ----
 npm uninstall -g ionic cordova
 npm install -g cordova@{selectedCordovaVersion} ionic@{selectedIonicVersion}
 ----
---
 
 === Install node dependencies
 
@@ -45,89 +42,75 @@ In addition to installing node dependencies, you can be execute
 postInstall tasks that perform additional setup required for buddybuild
 to build your application.
 
-[[code-samples]]
---
 [source,bash]
 ----
 npm install
 ----
---
+
 
 === Install Bower dependency
 
 We'll only install Bower if you've there's a `bower.json` file checked
 into your project.
 
-[[code-samples]]
---
 [source,bash]
 ----
 if [ -e bower.json ]; then bower install; fi
 ----
---
+
 
 === Rebuild node-sass dependency
 
 If the node version or platform has changes, we'll rebuild `node-sass`.
 
-[[code-samples]]
---
 [source,bash]
 ----
 npm rebuild node-sass
 ----
---
+
 
 === Add Cordova / Ionic platforms if necessary
 
 If you haven't checked in your platforms folder, buddybuild will perform
 a "platform add" on your behalf.
 
-[[code-samples]]
---
 [source,bash]
 ----
 if [ ! -d "./platforms/{platform}" ]; then {framework} platform add {platform}; fi
 ----
---
+
 
 === Restore platforms/plugins/resources (Ionic projects only)
 
 We'll restore your plugins/resources to ensure they're correctly setup
 in your repository so buddybuild can build your application.
 
-[[code-samples]]
---
 [source,bash]
 ----
 if [ {framework} eq 'ionic' ]; then ionic state restore --plugins && ionic resources; fi
 ----
---
+
 
 === Prepare platform
 
 This is the final step to ensure buddybuild can build your application.
 
-[[code-samples]]
---
 [source,bash]
 ----
 {framework} build {platform}
 ----
---
+
 
 === Pseudocode Script
 
 Here's a summary of the steps buddybuild performs when preparing to
 build your Cordova / Ionic app.
 
-[[code-samples]]
---
 [source,bash]
 ----
 # variables
 framework = ['ionic' OR 'cordova']
-platform = ['ios' OR 'android']
+platform = ['ios']
 
 # Install core dependencies
 npm uninstall -g cordova ionic
@@ -151,7 +134,7 @@ if [ {framework} eq 'ionic' ]; then ionic state restore --plugins && ionic resou
 # prepare/build platform
 {framework} build {platform}
 ----
---
+
 
 == Troubleshooting Build Failures:
 
@@ -160,6 +143,7 @@ Here's what you can to do quickly diagnose and likely resolve build errors:
 - Clone your repo and check if your app builds locally
 - Double check your third party dependencies
 - Double check your platform tool versions and folders
+
 
 === Clone your repo and check if your app builds locally
 
@@ -180,6 +164,7 @@ to date:
 - Make sure to run the same series of commands used in buddybuild's
   Cordova / Ionic setup in the same order on your local machine.
 
+
 === Double check your third party dependencies
 
 ==== Node (package.json)
@@ -189,6 +174,7 @@ versions of package dependencies (i.e. using carets `^` and tildes `~`).
 This might result in failed builds because different versions of
 dependencies are being installed on buddybuild than what is being used
 on your local machine.
+
 
 ==== Cordova / Ionic plugins (config.xml)
 
@@ -203,20 +189,18 @@ version of a platform tool than what is specified in your `config.xml`.
 In these instances, we've had to ask the customer to update their
 platform tool versions in their `config.xml`.
 
-[[code-samples]]
---
 [source,xml]
 ----
-    <engine name="android" spec="<insert version>" />
     <engine name="ios" spec="<insert version>" />
 ----
---
+
 
 ==== Dependency Post-Installation Steps
 
 There have been instances where a customer's dependency invokes an
 executable as a **postInstall task** (i.e. running CocoaPods). This can
 lead to issues depending on the version of the executable being run.
+
 
 === Double check your platform tool versions and folders
 
@@ -227,37 +211,16 @@ Also, make sure that there are engine entries in your config.xml for all
 your platforms of interest. This guarantees that buddybuild is using the
 exact platform tool versions that you're using locally.
 
-[[code-samples]]
---
 [source,xml]
 ----
-    <engine name="android" spec="<insert version>" />
     <engine name="ios" spec="<insert version>" />
 ----
---
 
 We have also noticed instances where the platform tool versions
 specified in the `config.xml` are incompatible with the project and
 needed to be either upgraded or downgraded.
 
 == Troubleshooting Common Errors
-
-=== Error retrieving parent for item: No resource found that matches the given name 'android:...'.
-
-Typically, this error indicates that the Cordova Android tool version
-specified in your `config.xml` is incompatible with your
-project/plugins/dependencies on a fresh clone and installation.
-
-To resolve this, update the Android tool spec to the latest version
-available for Android in your `config.xml`.
-
-[[code-samples]]
---
-[source,xml]
-----
-    <engine name="android" spec="<insert version>" />
-----
---
 
 === MainActivity.java:*: error: package org.apache.cordova does not exist
 
@@ -267,18 +230,16 @@ folder and then commit the change.
 
 === error: The app icon set named "AppIcon" did not have any applicable content.
 
-This indicates that the ios platform tools version we're using is
+This indicates that the iOS platform tools version we're using is
 incompatible with your project. In these instances, the best way to
 guarantee that buddybuild is using the exact version you're using is to
 ensure that there's the below entry in your `config.xml`:
 
-[[code-samples]]
---
 [source,xml]
 ----
     <engine name="ios" spec="<insert version>" />
 ----
---
+
 
 === Cannot find module 'shelljs'
 
@@ -291,11 +252,13 @@ the following:
 * `www` folder
 * `config.xml`
 
+
 === Error: Cannot find module 'unorm'
 
 This generally indicates that there's an issue with your committed
 platform directory. It's generally recommended to not commit the
 directory unless you have to.
+
 
 === Error: Source path does not exist: resources/{platform}/icon/drawable-hdpi-icon.png
 
@@ -305,6 +268,7 @@ is to make sure the icon resources directory is already submitted for
 the platform in question at "resources/{platform}/icon" by using "ionic
 resources {platform}"
 
+
 === "Caught exception: undefined" when building plugins
 
 This indicates a failure that's been masked by the ionic CLI while
@@ -313,12 +277,14 @@ buddybuild support so that they can attempt to manually add the plugins
 using "cordova plugin add <pluginname>" and determine the actual error
 message.
 
+
 === Failure to build a committed platform directory
 
 Generally, committing any platforms directory is unnecessary and tends
 to lead to build issues on CI systems. It's recommended that you delete
 it as we automatically add the platforms directory on your behalf if
 it's not already present.
+
 
 === fatal error: 'Cordova/CDVPlugin.h' file not found
 
@@ -331,19 +297,6 @@ the following:
 * `www` folder
 * `config.xml`
 
-=== net::ERR_FILE_NOT_FOUND (\file:///android_asset/www/index.html)
-
-This indicates that the version of ionic cli set for you app is
-outdated. We have noticed that ionic cli 2.0.0 was not copying assets
-correctly into the www folder during an ionic build.
-
-=== Error: Android SDK not found. Make sure that it is installed. If it is not at the default location, set the ANDROID_HOME environment variable.
-
-This indicates that the version of the Cordova Android tools is too old
-for our environment.
-
-Make sure that the version of Cordova Android Tools is > 6.2.0+ under the
-**Settings** tab.
 
 === Error: Cannot find `plugin.xml` for plugin "blah". Please try adding it again.
 

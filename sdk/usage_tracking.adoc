@@ -16,8 +16,8 @@ image:img/Builds---Deploy-History.png[The build details page with the
 Deploy tab selected and showing Deployment history", 1500, 615]
 
 To enable this feature, simply
-link:../quickstart/ios/integrate_sdk.adoc[integrate the buddybuild SDK]
-into your App.
+link:{{readme.path}}/quickstart/integrate_sdk.adoc[integrate the
+buddybuild SDK] into your App.
 
 The SDK also offers several other features in addition to Usage
 Tracking. Follow the links below to learn more about you can

@@ -18,10 +18,10 @@ process -- which disincentivizes testers from leaving feedback.
 
 The buddybuild SDK feedback reporter offers a way of submitting feedback
 painlessly right from within your app, as soon as an issue is noticed by
-your beta user. From anywhere within your app, taking a screenshot on
-iOS, or shaking your device on Android, brings up the **Feedback
-Reporter**. Beta users can annotate the screenshot and add a comment --
-providing you the exact context you need to iterate on your App.
+your beta user. From anywhere within your app, taking a screenshot
+brings up the **Feedback Reporter**. Beta users can annotate the
+screenshot and add a comment -- providing you the exact context you need
+to iterate on your app.
 
 image:img/Feedback---Received.png["A collection of feedback screenshots
 and comments", 3000, 1600]
@@ -34,7 +34,7 @@ image:img/github_issues.png["Feedback from a specific user, showing the
 captured screenshot and comment", 1500, 900]
 
 To enable this feature,
-link:../quickstart/ios/integrate_sdk.adoc[integrate the buddybuild SDK]
+link:../quickstart/integrate_sdk.adoc[integrate the buddybuild SDK]
 into your App.
 
 The SDK also offers several other features in addition to the Visual

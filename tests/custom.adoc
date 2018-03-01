@@ -7,11 +7,11 @@ description: >
 = Custom test reporting
 
 Buddybuild automatically runs, parses, and displays test results from
-native test frameworks for iOS (XCTest and XCUITest) and Android
-(JUnit). If you're using a third-party or homegrown test framework (one
-that is not listed in buddybuild's link:frameworks.adoc[supported test
-frameworks]), you can continue using your test framework and have the
-results appear directly in the buddybuild dashboard; it's easy!
+XCTest and XCUITest. If you're using a third-party or homegrown test
+framework (one that is not listed in buddybuild's
+link:frameworks.adoc[supported test frameworks]), you can continue using
+your test framework and have the results appear directly in the
+buddybuild dashboard; it's easy!
 
 . **Install the test framework and its dependencies**
 +

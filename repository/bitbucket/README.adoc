@@ -110,5 +110,5 @@ your first build is under way. The next steps are:
 - link:webhook.adoc[Add a Bitbucket webhook] to automatically notify
   buddybuild of repository changes.
 
-- link:{{readme.path}}/quickstart/ios/invite_testers.adoc[invite
+- link:{{readme.path}}/quickstart/invite_testers.adoc[invite
   testers] to try out your app.

@@ -39,18 +39,9 @@ make builds for old branches less visible:
 In the link:custom_build_steps.adoc#postclone[`buddybuild_postclone.sh`]
 script, add the following line (depending on the type of build):
 
-- **iOS builds**
-+
 [source,bash]
 ----
 sudo systemsetup -settimezone America/Toronto
-----
-
-- **Android builds**
-+
-[source,bash]
-----
-sudo cp /etc/share/zoneinfo/America/Toronto /etc/localtime
 ----
 
 See the

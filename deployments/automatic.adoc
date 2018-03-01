@@ -58,8 +58,7 @@ one or more branches that you would like to automatically deploy from.
 image:img/Deployments---automatic---2.png["The Create Deployment Target
 screen, with the branch selector dropdown open", 1500, 709]
 
-Next, select one or more schemes (iOS) or variants (Android) that you
-would like to deploy.
+Next, select one or more schemes that you would like to deploy.
 
 [NOTE]
 ======

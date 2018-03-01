@@ -1,5 +1,5 @@
 ---
-titletext: How to install iOS and Android development builds on tester devices
+titletext: How to install development builds on tester devices
 description: >
   Instructions for completing device registration and installing builds for
   testers, who can then begin exercising your app and sending you feedback.

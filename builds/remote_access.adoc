@@ -96,18 +96,11 @@ management interface.
   role="right"]
   Once you click the **Rebuild** button, buddybuild starts the build. As
   soon as the build machine is up and running, buddybuild installs your
-  public key(s) and displays the connection details.
-+
-For an iOS build, both the SSH and screen sharing connection details are
-presented:
+  public key(s) and displays the connection details. Both the SSH and
+  screen sharing connection details are presented:
 +
 image:img/panel-remote_access-ios.png["An iOS build's remote access
 connection details", 870, 226, role="frame"]
-+
-For an Android build, only the SSH connection details are presented:
-+
-image:img/panel-remote_access-android.png["An Android build's remote access
-connection details", 870, 104, role="frame']
 
 . Use SSH to connect to the build VM.
 +
@@ -253,12 +246,6 @@ vnc://localhost:15900
 When you connect to a build VM via remote access, the current directory
 contains:
 
-[cols="1a,1a",options="header"]
-|===
-| iOS builds
-| Android builds
-
-|
 [source,text]
 ----
 BBCheckCleanDummy.tmp
@@ -274,22 +261,6 @@ bin/
 secure_files/
 workspace@
 ----
-
-|
-[source,text]
-----
-BBCheckCleanDummy.tmp
-bin/
-gradleArtifacts.tar.gz
-gradleBuildCache.tar.gz
-secure_files/
-src/
-workspace@
-----
-
-|===
-
-Common to both platforms:
 
 - `secure_files` +
   Any link:secrets/secure_files.adoc[secure files] created in the

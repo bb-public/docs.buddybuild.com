@@ -13,7 +13,7 @@ users, use the **Deployments** tab.
 
 [NOTE]
 If you have not yet uploaded a
-link:../deployments/ios/code_signing/README.adoc[code signing
+link:../deployments/code_signing/README.adoc[code signing
 certificate], buddybuild cannot properly sign your application. This
 means that a successful build cannot be installed on a device, and so
 buddybuild does not make the build artifact available for download.
@@ -21,7 +21,7 @@ This situation does not prevent your tests from running.
 
 Buddybuild can automatically collect your crash reports and symbolicate
 them with your App's dSYMs producing human-readable crash reports. To
-enable this feature, link:../quickstart/ios/integrate_sdk.adoc[integrate
+enable this feature, link:../quickstart/integrate_sdk.adoc[integrate
 the buddybuild SDK].
 
 You never have to manage your artifacts yourself. However, if you

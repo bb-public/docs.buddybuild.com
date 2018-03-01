@@ -8,7 +8,7 @@ description: >
 = Log React Native JavaScript using the buddybuild SDK (iOS)
 
 The buddybuild SDK is a lightweight yet powerful
-link:../../../quickstart/ios/integrate_sdk.adoc[suite of tools] that
+link:../../../quickstart/integrate_sdk.adoc[suite of tools] that
 integrates seamlessly into your application. Among the many features
 the SDK provides, you can use the buddybuild SDK to capture JavaScript
 logs in the Crash and Feedback reports logs.
@@ -24,7 +24,7 @@ The SDK needs to be integrated into your main app prior to configuring
 React Native JavaScript logging.
 
 We highly recommend using the
-link:{{readme.path}}/quickstart/ios/integrate_sdk.adoc[**automatic**
+link:{{readme.path}}/quickstart/integrate_sdk.adoc[**automatic**
 buddybuild SDK integration] right from your dashboard. However, if you
 wish to install the buddybuild SDK **manually**, follow
 link:{{readme.path}}/sdk/integration.adoc[these steps].
@@ -32,7 +32,7 @@ link:{{readme.path}}/sdk/integration.adoc[these steps].
 
 == Step 2: Get the latest version
 
-Follow link:../../../quickstart/ios/integrate_sdk.adoc#update[these
+Follow link:../../../quickstart/integrate_sdk.adoc#update[these
 instructions] to update the SDK on your local machine.
 
 

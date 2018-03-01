@@ -1,5 +1,5 @@
 ---
-titletext: How to automate the build process for iOS and Android apps
+titletext: How to automate the build process for your mobile apps
 description: >
   Buddybuild is the only continuous integration platform purpose-built
   for mobile apps, streamlining the build process while allowing full
