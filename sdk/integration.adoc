@@ -51,7 +51,7 @@ unzip BuddyBuildSDK.framework.zip
 rm -f BuddyBuildSDK.framework.zip
 ----
 
-. [[add-frameworks]] **Add iOS frameworks**
+. [[add-frameworks]] **Add frameworks**
 +
 ****
 [loweralpha]
@@ -159,6 +159,5 @@ git commit -m 'Adding buddybuild SDK'
 git push
 ----
 
-That's it! The SDK is now integrated into your iOS app, and becomes
-active in subsequent builds, including the build started by your code
-push.
+That's it! The SDK is now integrated into your app, and becomes active
+in subsequent builds, including the build started by your code push.

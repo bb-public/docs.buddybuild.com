@@ -1,11 +1,11 @@
 ---
-titletext: How to integrate buddybuild's SDK for iOS
+titletext: How to integrate buddybuild's SDK
 description: >
-  Integrate the buddybuild SDK for iOS to access graphical user feedback
+  Integrate the buddybuild SDK to access graphical user feedback
   reports, crash reports, tester usage and analytics, and automatic app
   updates.
 ---
-= Integrate the buddybuild SDK for iOS
+= Integrate the buddybuild SDK
 
 == About the buddybuild SDK
 
@@ -59,9 +59,9 @@ link:../../sdk/usage_tracking.adoc[Learn more.]
 
 == How to integrate
 
-Enabling the SDK requires code changes in your iOS Application. We can
-make these changes automatically so you don't have to! Enable the
-buddybuild SDK in just four easy steps.
+Enabling the SDK requires code changes in your application. We can make
+these changes automatically so you don't have to! Enable the buddybuild
+SDK in just four easy steps.
 
 . Log in to the link:https://dashboard.buddybuild.com/[buddybuild
   dashboard]. The list of builds is displayed:

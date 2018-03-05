@@ -1,20 +1,20 @@
 ---
-titletext: Invite testers to try your iOS app
+titletext: Upload your iOS certificates
 description: >
   Buddybuild manages code signing and provisioning profiles complexities to
   create signed device builds, allowing you to send apps to testers easily.
 ---
 = Upload your iOS certificates
 
-Before we can invite testers to test your iOS app, buddybuild requires
+Before we can invite testers to test your app, buddybuild requires
 your link:{{readme.path}}/deployments/code_signing/README.adoc[Code
 Signing Identities and Provisioning Profiles] to create signed device
 builds.
 
-All apps to be installed on iOS devices must be signed with a
-code-signing identity. Buddybuild cannot create a code-signing identity
-for you, you need to do that through Xcode, or the Apple Developer
-Portal. For more information, see
+All apps to be installed on devices must be signed with a code-signing
+identity. Buddybuild cannot create a code-signing identity for you, you
+need to do that through Xcode, or the Apple Developer Portal. For more
+information, see
 link:https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html[Maintaining
 Your Signing Identities and Certificates] in Apple's documentation.
 
@@ -72,11 +72,11 @@ screen", 1280, 564, role="frame"]
 . image:img/button-invite_testers.png["The Invite testers button", 112,
   42, role="right"]
   Click the **Invite testers** button to continue with
-  link:invite_testers.adoc[Invite testers to try your iOS app].
+  link:invite_testers.adoc[Invite testers to try your app].
 
 {% include "/_common/note-device_vs_simulator_builds.adoc" %}
 
 Once the upload is complete, buddybuild has everything it needs to
 perform device builds. Now all we need is a set of emails to send these
 builds to -- continue with link:invite_testers.adoc[Invite testers to
-try your iOS app].
+try your app].

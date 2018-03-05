@@ -1,11 +1,11 @@
 ---
-titletext: React Native support for iOS
+titletext: React Native support
 description: >
-  Buddybuild supports React Native for iOS.
+  Buddybuild supports React Native.
 ---
 = React Native
 
-Buddybuild natively supports React Native apps for iOS.
+Buddybuild natively supports React Native apps.
 
 There are two steps to make sure that your React Native project is ready
 to onboard onto buddybuild.

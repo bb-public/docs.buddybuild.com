@@ -1,13 +1,13 @@
 ---
-titletext: Troubleshoot common issues for installing builds on iOS
+titletext: Troubleshoot common issues for installing builds
 description: >
   This section covers the most common issue encountered when installing
-  builds on iOS devices.
+  builds on devices.
 ---
-= Trouble installing builds on iOS
+= Trouble installing builds
 
 Many different kinds of problems can interfere or prevent installing an
-iOS application onto a device. This page describes a process for
+application onto a device. This page describes a process for
 determining where the problem likely lies, and provides solutions for
 the most common issues.
 
@@ -32,7 +32,7 @@ the most common issues.
 [[no_build_available]]
 == No build available to download
 
-Installing an iOS app on a particular device requires that the app is
+Installing an app on a particular device requires that the app is
 properly signed. If you have not yet uploaded a
 link:{{readme.path}}/deployments/code_signing/README.adoc[code signing
 certificate], buddybuild cannot properly sign your application.
@@ -59,9 +59,9 @@ In particular, buddybuild **cannot install on top of an App Store
 version**. Please delete any App Store versions before attempting to
 install an app through buddybuild.
 
-Also, when there are pending (or active) iOS updates, it appears that
-app installs are blocked. Make sure that your device is fully updated
-before attempting an app install.
+Also, when there are pending (or active) updates, it appears that app
+installs are blocked. Make sure that your device is fully updated before
+attempting an app install.
 
 
 [[unable_to_download]]

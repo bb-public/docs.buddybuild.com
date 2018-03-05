@@ -1,5 +1,5 @@
 ---
-titletext: Invite testers to try your iOS app
+titletext: Invite testers to try your app
 description: >
   Buddybuild manages code signing and provisioning profiles complexities to
   create signed device builds, allowing you to send apps to testers easily.
@@ -16,7 +16,7 @@ If you have not done so already, link:connect/README.adoc[Sign up and
 connect buddybuild to your source control] and then
 link:select.adoc[Select a repository/app to build].
 
-. After you link:select.adoc[add an iOS app to buddybuild], you should
+. After you link:select.adoc[add an app to buddybuild], you should
   see the **Ready to try on a device** dialog:
 +
 image:img/dialog-ready_to_try_on_device.png["The Ready to try on a

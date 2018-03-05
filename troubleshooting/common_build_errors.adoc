@@ -1,10 +1,10 @@
 ---
-titletext: Common iOS build errors
+titletext: Common build errors
 description: >
-  Tips and tricks for troubleshooting the most common iOS application build
+  Tips and tricks for troubleshooting the most common application build
   errors.
 ---
-= Common iOS build errors
+= Common build errors
 
 We’ve put together a quick checklist to help teams troubleshoot the most
 common causes for build failures.

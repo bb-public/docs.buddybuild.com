@@ -18,7 +18,7 @@ have encountered, and provides solutions that could help you.
 - link:repo_does_not_contain_all_commits.adoc[Repository does not contain
   full list of commits]
 
-- link:common_build_errors.adoc[Common iOS build errors]
+- link:common_build_errors.adoc[Common build errors]
 
 - link:missing_podfilelock.adoc[Missing Podfile.lock]
 

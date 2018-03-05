@@ -16,7 +16,7 @@ Welcome to buddybuild docs!
 [.land-subhead]
 pass:[<nobr>]Buddybuild is a pass:[<wbr/>]continuous integration (CI),
 pass:[<wbr/>]continuous deployment (CD), pass:[<wbr/>]and user feedback
-platform pass:[<wbr/>]for mobile development teams.
+platform pass:[<wbr/>]for iOS development teams.
 
 [.call-to-action]
 link:quickstart/README.adoc[Let’s begin!, role="button"]
@@ -28,16 +28,15 @@ Popular Docs
 --
 
 [.popular-doc]
-.link:troubleshooting/install_builds.adoc[Trouble installing builds on iOS]
+.link:troubleshooting/install_builds.adoc[Trouble installing builds]
 ****
 link:troubleshooting/README.adoc[Troubleshooting]
 ➛
-link:troubleshooting/install_builds.adoc[Trouble installing builds
-on iOS]
+link:troubleshooting/install_builds.adoc[Trouble installing builds]
 ****
 
 [.popular-doc]
-.link:troubleshooting/common_build_errors.adoc[Common iOS build errors]
+.link:troubleshooting/common_build_errors.adoc[Common build errors]
 ****
 link:troubleshooting/README.adoc[Troubleshooting]
 ➛

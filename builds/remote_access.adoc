@@ -6,9 +6,9 @@ description: >
 ---
 = Remote access
 
-Remote access is a feature that allows you to access a build machine via
-SSH (or screen sharing for iOS builds) while a build is under way. This
-can make diagnosing build failures much easier than scanning through log
+Remote access is a feature that allows you to access a build machine, via
+SSH or screen sharing, while a build is under way. This can make
+diagnosing build failures much easier than scanning through log
 files. Remote access can also reduce the time required to get
 link:custom_build_steps.adoc[custom build steps] working.
 
@@ -23,8 +23,7 @@ access enabled, buddybuild collects the public SSH keys stored in your
 source code repository and configures them in the build machine. Once
 the SSH configuration is complete, buddybuild provides the connection
 details so that you can connect right away. Screen sharing access is
-also provided for iOS builds, using the Virtual Network Computing
-protocol (VNC).
+also provided, using the Virtual Network Computing protocol (VNC).
 
 You can watch the build progress, tail logs, make adjustments to build
 scripts, anything that would help future builds succeed more often. You
@@ -99,7 +98,7 @@ management interface.
   public key(s) and displays the connection details. Both the SSH and
   screen sharing connection details are presented:
 +
-image:img/panel-remote_access-ios.png["An iOS build's remote access
+image:img/panel-remote_access-ios.png["A build's remote access
 connection details", 870, 226, role="frame"]
 
 . Use SSH to connect to the build VM.
@@ -131,9 +130,9 @@ changes you want to keep; nothing is saved when the VM is deleted.
 
 
 [[screenshare]]
-== Screen sharing for iOS builds
+== Screen sharing for builds
 
-Screen sharing is enabled for iOS builds when you rebuild with remote
+Screen sharing is enabled for builds when you rebuild with remote
 access, and uses the Virtual Network Computing (VNC) protocol.
 
 To use screen sharing:

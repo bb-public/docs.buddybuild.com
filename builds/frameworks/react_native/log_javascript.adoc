@@ -5,7 +5,7 @@ description: >
   console.log, console.error and view them in Crash and Feedback
   reports logs.
 ---
-= Log React Native JavaScript using the buddybuild SDK (iOS)
+= Log React Native JavaScript using the buddybuild SDK
 
 The buddybuild SDK is a lightweight yet powerful
 link:../../../quickstart/integrate_sdk.adoc[suite of tools] that

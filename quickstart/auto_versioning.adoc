@@ -1,10 +1,10 @@
 ---
-titletext: Auto-versioning CFBundleVersion for iOS
+titletext: Auto-versioning CFBundleVersion
 description: >
-  Buddybuild can update the iOS CFBundleVersion configurable automatically,
+  Buddybuild can update the CFBundleVersion configurable automatically,
   with no repository changes required.
 ---
-= Auto-version iOS builds
+= Auto-version builds
 
 == CFBundleVersion
 
