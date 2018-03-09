@@ -9,7 +9,7 @@ description: >
 First things first! Let's sign up with buddybuild.
 
 Signing up with buddybuild via GitLab allows buddybuild to access your
-iOS apps' source code. Buddybuild associates with your repository, and
+apps' source code. Buddybuild associates with your repository, and
 builds your app every time a commit is pushed by you or your team --
 ensuring that you always have a green build that you can deploy to your
 testers.

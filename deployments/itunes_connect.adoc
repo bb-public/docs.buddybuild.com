@@ -1,8 +1,8 @@
 ---
-titletext: Auto-deploy successful iOS app builds to iTunes Connect
+titletext: Auto-deploy successful app builds to iTunes Connect
 description: >
-  Buddybuild can automatically deploy successful builds to iTunes Connect in
-  order to submit your app to TestFlight or to the App Store.
+  Buddybuild can automatically deploy successful builds to iTunes
+  Connect in order to submit your app to TestFlight or to the App Store.
 ---
 = Deploy to iTunes Connect
 

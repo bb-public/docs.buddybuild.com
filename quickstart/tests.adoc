@@ -1,5 +1,5 @@
 ---
-titletext: How to configure unit tests for your iOS apps
+titletext: How to configure unit tests for your apps
 description: >
   You can configure whether unit tests are executed for every build.
   Tests results are displayed in the buddybuild dashboard.
@@ -30,7 +30,7 @@ screen", 1280, 737, role="frame"]
   The **Test configuration** screen is displayed:
 +
 image:img/screen-test_configuration-ios.png["The Test configuration
-screen for iOS apps", 1280, 393, role="frame"]
+screen", 1280, 393, role="frame"]
 +
 The options available are:
 +
@@ -42,7 +42,7 @@ role="right"]
 Click the **Configure** button to access the **Run tests** screen.
 +
 image:img/screen-test_configuration-ios-virtual.png["The Run tests
-screen for iOS apps", 1280, 587, role="frame"]
+screen", 1280, 587, role="frame"]
 +
 Buddybuild maintains a pool of simulators of Apple devices, with a
 selection of iOS versions. You can select which simulators to use when

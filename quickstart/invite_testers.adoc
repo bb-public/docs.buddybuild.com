@@ -1,10 +1,10 @@
 ---
-titletext: Invite testers to try your iOS app
+titletext: Invite testers to try your app
 description: >
   Buddybuild manages code signing and provisioning profiles complexities to
   create signed device builds, allowing you to send apps to testers easily.
 ---
-= Invite testers to try your iOS app
+= Invite testers to try your app
 
 If you have not already done so, complete
 link:apple_developer_portal.adoc[Connect to the Apple Developer Portal],

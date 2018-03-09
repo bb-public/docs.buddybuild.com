@@ -1,5 +1,5 @@
 ---
-titletext: How to troubleshoot missing schemes for iOS builds
+titletext: How to troubleshoot missing schemes
 description: >
   A scheme ties together a target with a build configuration. This
   section describes how to ensure that you are not missing any schemes.

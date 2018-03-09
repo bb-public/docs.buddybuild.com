@@ -30,14 +30,14 @@ based on the configuration that you have setup.
 +
 [NOTE]
 ======
-If you have multiple build targets defined for your iOS app, you need to
+If you have multiple build targets defined for your app, you need to
 complete the Quickstart process once for each target.
 ======
 
 . link:invite_testers.adoc[**Invite testers**]
 +
-This step prepares your app for deployment to your testers. For iOS
-projects, this involves uploading code signing identities.
+This step prepares your app for deployment to your testers, which
+involves uploading code signing identities.
 
 Optional additional steps include:
 

@@ -1,10 +1,10 @@
 ---
-titletext: How to enable code coverage for your iOS apps
+titletext: How to enable code coverage for your apps
 description: >
   See what percentage of your mobile code is covered by your current
   mobile tests.
 ---
-= Code coverage for iOS apps
+= Code coverage for your apps
 
 Code coverage measures the degree to which your code is tested by a
 particular test suite.
@@ -14,7 +14,7 @@ Code coverage gives you a record of all code branches passed over by
 your tests and provides insight into exactly how much of your code base
 is being exercised during testing.
 
-Here’s how to enable code coverage for your iOS app:
+Here’s how to enable code coverage for your app:
 
 . In Xcode, from the **Product** menu, choose **Scheme -> Edit Scheme**.
 

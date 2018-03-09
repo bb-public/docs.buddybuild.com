@@ -407,7 +407,7 @@ non-zero status and the build fails.
 == Upload dSYMs to Fabric
 
 link:https://get.fabric.io/[Fabric] is a platform that helps mobile
-teams build better apps. Many iOS developers use Fabric's
+teams build better apps. Many developers use Fabric's
 link:http://try.crashlytics.com/[Crashlytics] kit to process crash
 reports. In order to use Crashlytics, the debug symbols file (dSYM) file
 needs to be uploaded.

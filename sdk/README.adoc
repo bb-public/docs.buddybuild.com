@@ -18,7 +18,7 @@ This section includes the following topics:
 - link:feedback_reporter.adoc[Feedback Reporter]
 - link:usage_tracking.adoc[Usage Tracking]
 - link:feature_settings.adoc[Feature Settings]
-- link:integration.adoc[Manual Installation (iOS)]
+- link:integration.adoc[Manual Installation]
 - link:api.adoc[SDK API]
 
 The SDK includes a lot of functionality in a small package; including

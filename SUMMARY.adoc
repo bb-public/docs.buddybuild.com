@@ -24,7 +24,7 @@
 
 .. link:quickstart/select.adoc[Select a repository/app to build]
 
-.. link:quickstart/integrate_sdk.adoc[Integrate the SDK for iOS]
+.. link:quickstart/integrate_sdk.adoc[Integrate the SDK]
 .. link:quickstart/apple_developer_portal.adoc[Connect to the Apple
    Developer Portal]
 .. link:quickstart/upload_certificates.adoc[Upload your iOS
@@ -67,7 +67,7 @@
 .. link:builds/frameworks/README.adoc[Cross-platform frameworks]
 ... link:builds/frameworks/react_native/README.adoc[React Native]
 .... link:builds/frameworks/react_native/log_javascript.adoc[Log
-     JavaScript using the buddybuild SDK (iOS)]
+     JavaScript using the buddybuild SDK]
 ... link:builds/frameworks/cordova-ionic/README.adoc[Cordova / Ionic]
 ... link:builds/frameworks/meteor/README.adoc[Meteor]
 
@@ -163,7 +163,7 @@
 .. link:troubleshooting/repo_does_not_contain_all_commits.adoc[Repository
    does not contain full list of commits]
 
-.. link:troubleshooting/common_build_errors.adoc[Common iOS build errors]
+.. link:troubleshooting/common_build_errors.adoc[Common build errors]
 .. link:troubleshooting/missing_podfilelock.adoc[Missing Podfile.lock]
 .. link:troubleshooting/missing_schemes.adoc[Missing schemes]
 .. link:troubleshooting/getting_device_logs_from_xcode.adoc[Getting

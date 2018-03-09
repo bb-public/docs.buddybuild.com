@@ -1,8 +1,8 @@
 ---
-titletext: How to create a code signing identity for iOS apps
+titletext: How to create a code signing identity for your apps
 description: >
-  Step-by-step instructions for creating an iOS code signing
-  identity for your apps.
+  Step-by-step instructions for creating a code signing identity for
+  your apps.
 ---
 = Creating a Code Signing Identity
 
