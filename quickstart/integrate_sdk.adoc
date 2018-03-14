@@ -128,8 +128,8 @@ Developer account] with buddybuild.
 ======
 **Prefer to manually integrate the SDK?**
 
-Follow the link:../../sdk/integration.adoc[Manual SDK Integration
-Guide].
+Follow the link:{{readme.path}}/sdk/integration.adoc[Manual SDK
+Integration guide].
 ======
 
 [[update]]
