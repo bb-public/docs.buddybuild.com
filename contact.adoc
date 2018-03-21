@@ -3,7 +3,7 @@ titletext: How to contact buddybuild
 description: >
   When you need to discuss your plan, get support for build or
   deployment issues, you can reach buddybuild via Intercom, email,
-  or regular mail.
+  or social media.
 keywords: help,support,buddybuild help,buddybuild support,contact,contact buddybuild
 search:
   keywords: ["support", "help"]
