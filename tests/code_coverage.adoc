@@ -20,10 +20,12 @@ Here’s how to enable code coverage for your app:
 
 . Select the **Test** tab in the left column.
 
-. Toggle on the **Gather coverage data** checkbox.
-
-image:img/6.png["The Edit Scheme dialog in Xcode, with the Test panel
-selected", 1400, 353]
+. Toggle on the **Gather coverage for** checkbox, and specify which
+  targets should report code coverage with the select box to the right
+  of the checkbox.
++
+image:img/xcode-scheme-code_coverage.png["The Edit Scheme dialog in
+Xcode, with the Test panel's Options tab selected", 856, 224]
 
 Now that code coverage is enabled in Xcode, the next step is to enable
 Tests in buddybuild.
@@ -70,4 +72,4 @@ post_install do |installer|
     config.build_settings['CLANG_ENABLE_CODE_COVERAGE'] = 'NO'
   end
 end
---
+----
