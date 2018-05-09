@@ -40,9 +40,10 @@ spoof your repository and inject malicious code into your builds.
 
 == Connect your GitLab account
 
-To connect your privately hosted GitLab instance follow this URL:
+To connect your privately hosted GitLab instance follow this URL,
+then select the **GitLab Self-Hosted** option.
 
-https://dashboard.buddybuild.com/apps/wizard/build/select-repo/gitlab-enterprise
+https://dashboard.buddybuild.com/apps/wizard/build/select-source
 
 You will see a dialog with two input fields. If you already know your
 **GitLab instance endpoint** and have a **personal access token**, then
