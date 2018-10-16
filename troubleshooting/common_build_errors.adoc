@@ -71,24 +71,15 @@ In Xcode you can do this by navigating to **Product > Archive** then
 select "**Export...**" and follow the onscreen instructions to finalize
 exporting.
 
-image:https://s3-us-west-2.amazonaws.com/www.buddybuild.com/blog/engineering/iOS+Troubleshooting+Guide/8.png[]
-
-image:https://s3-us-west-2.amazonaws.com/www.buddybuild.com/blog/engineering/iOS+Troubleshooting+Guide/9.png[]
-
 And finally, if your builds succeed locally but still fail on
 buddybuild, run the same `xcodebuild` command from buddybuild on your
 Mac to make sure that there are no discrepancies.
-
-image:https://s3-us-west-2.amazonaws.com/www.buddybuild.com/blog/engineering/iOS+Troubleshooting+Guide/3.jpg[]
-
 
 [[schemes]]
 == Share your schemes
 
 Sharing your schemes ensures that buddybuild uses the correct build
 configurations (like test targets) for your builds.
-
-image:https://s3-us-west-2.amazonaws.com/www.buddybuild.com/blog/engineering/iOS+Troubleshooting+Guide/4.jpg[]
 
 To share your scheme:
 
@@ -108,8 +99,6 @@ buddybuild can use them.
 
 If your app has tests, make sure they run successfully on your Mac or
 local machine.
-
-image:https://s3-us-west-2.amazonaws.com/www.buddybuild.com/blog/engineering/iOS+Troubleshooting+Guide/5.jpg[]
 
 If your tests are failing locally because of a known issue and you still
 want to them to run in buddybuild, you can always opt to treat them as
