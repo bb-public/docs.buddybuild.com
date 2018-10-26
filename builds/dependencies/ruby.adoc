@@ -29,6 +29,7 @@ The current Ruby versions on buddybuild VMs are:
 - 2.0.0p648 (active)
 
 |
+- 2.5.1
 - 2.5.0
 - 2.4.3
 - 2.4.1
