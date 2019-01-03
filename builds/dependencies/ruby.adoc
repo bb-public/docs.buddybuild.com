@@ -34,10 +34,10 @@ command in the `buddybuild_postclone.sh` script:
 ----
 #!/usr/bin/env bash
 
-chruby 2.3.1
+chruby 2.5.1
 ----
 
-This example switches the current `ruby` to version 2.3.1.
+This example switches the current `ruby` to version 2.5.1.
 
 
 [[install]]
