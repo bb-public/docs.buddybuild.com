@@ -13,34 +13,8 @@ install a Ruby when necessary, and how to specify Ruby dependencies.
 
 The current Ruby versions on buddybuild VMs are:
 
-[cols="1a,1a", options="header"]
-|===
-| Sierra
-| High Sierra
-
-|
-- 2.5.0
-- 2.4.3
-- 2.4.1
-- 2.3.6
-- 2.3.1
-- 2.2.9
-- 2.2.5
-- 2.0.0p648 (active)
-
-|
+- 2.3.7p456 (active)
 - 2.5.1
-- 2.5.0
-- 2.4.3
-- 2.4.1
-- 2.3.6
-- 2.3.3p222 (active)
-- 2.3.1
-- 2.2.9
-- 2.2.5
-
-|===
-
 
 [[switch]]
 == Switch the active version of Ruby
