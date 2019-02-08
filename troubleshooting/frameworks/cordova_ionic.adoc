@@ -306,4 +306,4 @@ checked in. When we attempt to add the appropriate platform using
 directory if the plugins directory is already present.
 
 Our recommendation is to either fix the checked in plugins directory or
-remote it altogether.
+remove it altogether.
