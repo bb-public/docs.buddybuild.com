@@ -518,6 +518,20 @@ For more information, see:
   Is the AWS Command Line Interface?]
 
 
+[[swiftlint]]
+== Installing Swiftlint
+
+link:https://github.com/realm/SwiftLint[Swiftlint] is a tool to enforce Swift style and conventions. You can install it manually
+from a custom build step:
+
+[source,bash]
+----
+brew install swiftlint
+----
+
+If you're running SwiftLint as part of an **Xcode Run Script phase**, you will need either a `buddybuild_postclone.sh` file or a `buddybuild_prebuild.sh` one.
+For more information, see link:https://github.com/realm/SwiftLint[the official documentation].
+
 [[support]]
 == Support
 
