@@ -45,6 +45,7 @@ share:
 image:img/manage-schemes-2.png[The Manage Schemes dialog in Xcode", 776,
 440]
 
-Once you've changed this, commit and push the changes with git. After
+Once you've changed this, commit the scheme to your **default branch**,
+(usually `master` or `develop`) and push the changes with git. After
 buddybuild has built that commit you will see the schemes available in
 buddybuild.
