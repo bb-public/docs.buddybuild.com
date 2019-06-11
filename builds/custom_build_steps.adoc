@@ -320,7 +320,6 @@ bundle install
 bundle exec danger --fail-on-errors=true
 ----
 
-See link:danger.adoc[Danger] for details.
 ======
 
 If the post-build step is not running for you, please check that you

@@ -84,7 +84,6 @@ Here is a high-level summary of buddybuild's build process:
 - link:secrets/secure_files.adoc[Secure files]
 - link:secrets/device_variables.adoc[Device variables]
 - link:pull_requests.adoc[Pull requests]
-- link:danger.adoc[Danger]
 - link:schedule_builds.adoc[Scheduling builds]
 - link:skip_a_build.adoc[Skipping a build]
 - link:auto-cancel_builds.adoc[Auto-cancel builds]
