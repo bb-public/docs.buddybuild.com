@@ -85,16 +85,6 @@ link:quickstart/ios/integrate_sdk.adoc[Integrating SDK]
 [.show-more]
 link:#[Show More]
 
-
-[.community]
-.Ask the Community!
---
-Can’t find your answer here? Explore our
-http://discuss.buddybuild.com/[Discussion forum] or join our
-https://buddybuild.slack.com/[Slack community]. For more help, send us a
-message via intercom.
---
-
 [.seo]
 .Start using buddybuild today
 ****
