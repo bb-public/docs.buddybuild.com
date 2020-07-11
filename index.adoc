@@ -102,13 +102,3 @@ link:troubleshooting/frameworks/react_native.adoc[Common React Native errors]
 
 [.show-more]
 link:#[Show More]
-
-
-[.community]
-.Ask the Community!
---
-Can’t find your answer here? Explore our
-https://discuss.buddybuild.com/[Discussion forum] or join our
-https://buddybuild.slack.com/[Slack community]. For more help, send us a
-message via intercom.
---
