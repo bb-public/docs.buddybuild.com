@@ -27,7 +27,7 @@
     "lodash.flatten": "^4.4.0",
     "lodash.foreach": "^4.5.0",
     "lodash.map": "^4.6.0",
-    "lodash.merge": "^4.6.0",
+    "lodash.merge": "^4.6.2",
     "lodash.pick": "^4.4.0",
     "lodash.reduce": "^4.6.0",
     "lodash.reject": "^4.6.0",
